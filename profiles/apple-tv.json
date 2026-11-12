@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "hubbo:apple-tv",
+  "revision": 3,
+  "source": "hubbo",
+  "manufacturer": "Apple",
+  "model": "Apple TV",
+  "kind": "streamer",
+  "platform": "ble_hid",
+  "commands": {
+    "DirectionUp": { "page": "consumer", "usage": "0x0042" },
+    "DirectionDown": { "page": "consumer", "usage": "0x0043" },
+    "DirectionLeft": { "page": "consumer", "usage": "0x0044" },
+    "DirectionRight": { "page": "consumer", "usage": "0x0045" },
+    "Select": { "page": "consumer", "usage": "0x0041" },
+    "Back": { "page": "consumer", "usage": "0x0223" },
+    "Home": { "page": "consumer", "usage": "0x0040" },
+    "ControlCenter": { "page": "consumer", "usage": "0x0040", "hold_ms": 1000 },
+    "PlayPause": { "page": "consumer", "usage": "0x00CD" },
+    "FastForward": { "page": "consumer", "usage": "0x00B3" },
+    "Rewind": { "page": "consumer", "usage": "0x00B4" },
+    "Stop": { "page": "consumer", "usage": "0x00B7" },
+    "NextTrack": { "page": "consumer", "usage": "0x00B5" },
+    "PreviousTrack": { "page": "consumer", "usage": "0x00B6" },
+    "VolumeUp": { "page": "consumer", "usage": "0x00E9" },
+    "VolumeDown": { "page": "consumer", "usage": "0x00EA" },
+    "Mute": { "page": "consumer", "usage": "0x00E2" }
+  },
+  "buttons": {
+    "menu": "Home"
+  },
+  "power": {
+    "type": "none"
+  },
+  "timing": {
+    "key_delay_ms": 100
+  },
+  "meta": {
+    "confidence": "high",
+    "sources": [
+      "Harmony archive: Harmony Pro / BT Apple TV 5 (globalDeviceId 499023, codeset da382813fec6b000), Logitech's shipped Bluetooth profile: arrows, Select, Back, Home, Play/Pause, FastForward, Rewind, Stop, volume, power steps and timing",
+      "Harmonizer spike on a tvOS 4K: arrows, Select, Back (0x223), Home (0x40), Play/Pause, NextTrack/PreviousTrack, volume",
+      "hubbo-firmware BLE HID research, 2026-11-10",
+      "Board test on the user's Apple TV, 2026-11-11: the Control Center sleep sequence"
+    ],
+    "notes": [
+      "Logitech's profile also has Menu = 0x223, the same key as Back (the old Siri Remote's Menu button). It's left out so the remote's Menu button falls through to Home; Back covers 0x223.",
+      "Play and Pause are both 0xCD (Play/Pause) in Logitech's profile. Here there is one PlayPause command, and the remote's Play and Pause buttons fall back to it.",
+      "Volume and Mute go to the TV or receiver over HDMI-CEC, so they only work when CEC is on.",
+      "No power control (user, 2026-11-11). Apple TV wakes on any key and sleeps on its own timer, and the only sleep path over Bluetooth goes through Control Center's menu, which breaks with tvOS changes.",
+      "History: Logitech's off steps (hold Home 2 s, wait 200 ms, Select) don't sleep current tvOS. A board-tested sequence (hold Home 2 s, wait 800 ms, Down, wait 200 ms, Select) worked on 2026-11-11 but depends on Control Center's layout, so it was dropped.",
+      "Logitech's six app-launch inputs (Home x3, then arrows) are left out: they depend on the home-screen layout."
+    ],
+    "verify": [
+      "FastForward, Rewind and Stop on the board (Logitech has them, the spike didn't run them)",
+      "Mute 0xE2 (low confidence)",
+      "ControlCenter: Home held 1 s"
+    ]
+  }
+}

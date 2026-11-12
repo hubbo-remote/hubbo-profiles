@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "hubbo:android-tv",
+  "revision": 1,
+  "source": "hubbo",
+  "manufacturer": "Google",
+  "model": "Android TV / Google TV",
+  "kind": "streamer",
+  "platform": "ble_hid",
+  "commands": {
+    "DirectionUp": { "page": "consumer", "usage": "0x0042" },
+    "DirectionDown": { "page": "consumer", "usage": "0x0043" },
+    "DirectionLeft": { "page": "consumer", "usage": "0x0044" },
+    "DirectionRight": { "page": "consumer", "usage": "0x0045" },
+    "Select": { "page": "consumer", "usage": "0x0041" },
+    "Back": { "page": "consumer", "usage": "0x0224" },
+    "Home": { "page": "consumer", "usage": "0x0223" },
+    "Menu": { "page": "consumer", "usage": "0x0040" },
+    "Search": { "page": "consumer", "usage": "0x0221" },
+    "Info": { "page": "consumer", "usage": "0x01BD" },
+    "Guide": { "page": "consumer", "usage": "0x008D" },
+    "PlayPause": { "page": "consumer", "usage": "0x00CD" },
+    "Stop": { "page": "consumer", "usage": "0x00B7" },
+    "FastForward": { "page": "consumer", "usage": "0x00B3" },
+    "Rewind": { "page": "consumer", "usage": "0x00B4" },
+    "NextTrack": { "page": "consumer", "usage": "0x00B5" },
+    "PreviousTrack": { "page": "consumer", "usage": "0x00B6" },
+    "Record": { "page": "consumer", "usage": "0x00B2" },
+    "VolumeUp": { "page": "consumer", "usage": "0x00E9" },
+    "VolumeDown": { "page": "consumer", "usage": "0x00EA" },
+    "Mute": { "page": "consumer", "usage": "0x00E2" },
+    "ChannelUp": { "page": "consumer", "usage": "0x009C" },
+    "ChannelDown": { "page": "consumer", "usage": "0x009D" },
+    "Sleep": { "page": "consumer", "usage": "0x0034" },
+    "Backspace": { "page": "keyboard", "usage": "0x2A" },
+    "1": { "page": "keyboard", "usage": "0x1E" },
+    "2": { "page": "keyboard", "usage": "0x1F" },
+    "3": { "page": "keyboard", "usage": "0x20" },
+    "4": { "page": "keyboard", "usage": "0x21" },
+    "5": { "page": "keyboard", "usage": "0x22" },
+    "6": { "page": "keyboard", "usage": "0x23" },
+    "7": { "page": "keyboard", "usage": "0x24" },
+    "8": { "page": "keyboard", "usage": "0x25" },
+    "9": { "page": "keyboard", "usage": "0x26" },
+    "0": { "page": "keyboard", "usage": "0x27" }
+  },
+  "buttons": {
+    "menu": "Home"
+  },
+  "power": {
+    "type": "discrete",
+    "on": [{ "command": "Home" }],
+    "off": [{ "command": "Sleep" }],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100
+  },
+  "meta": {
+    "confidence": "medium",
+    "sources": [
+      "Harmony archive: Sagemcom / TestBT DIW387 (codeset 22af4b4a34dfb828), a Logitech Bluetooth test device on Android TV: arrows, OK 0x41, Back 0x224, Home 0x223, Info 0x1BD, Mic 0x221, Ch 0x9C/0x9D, Record, Sleep 0x34, digits on the keyboard page",
+      "Harmony archive: NVIDIA / SHIELD TV (globalDeviceId 334356) and Google / Chromecast with Google TV: power on = Home, off = Sleep, powerOnDelay 1500 ms; their codesets are placeholders",
+      "Linux hid-input and AOSP Generic.kl key mappings, from memory and unverified: Stop, Next/Previous, Menu 0x40, Guide 0x8D",
+      "hubbo-firmware BLE HID research, 2026-11-10"
+    ],
+    "notes": [
+      "Search is 0x221 (AC Search). Logitech's test device calls it Mic; it opens the Assistant on Google TV.",
+      "The Harmony Companion remote has no Home button, so the remote's Menu button goes to Home. Menu (0x40) is still a command for activities that want it.",
+      "Colour keys are left out: the Sagemcom device puts them on operator-specific F-keys.",
+      "Sleep 0x34 is used over System Power 0x30, which is untested."
+    ],
+    "verify": [
+      "Sleep 0x34 puts the SHIELD to sleep, and Home wakes it",
+      "Menu 0x40, Guide 0x8D and Info 0x1BD do something useful on Google TV (low confidence)",
+      "on_delay_ms: Home to picture after overnight sleep, including the Bluetooth reconnect"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "id": "hubbo:fire-tv",
+  "revision": 1,
+  "source": "hubbo",
+  "manufacturer": "Amazon",
+  "model": "Fire TV",
+  "kind": "streamer",
+  "platform": "ble_hid",
+  "commands": {
+    "DirectionUp": { "page": "consumer", "usage": "0x0042" },
+    "DirectionDown": { "page": "consumer", "usage": "0x0043" },
+    "DirectionLeft": { "page": "consumer", "usage": "0x0044" },
+    "DirectionRight": { "page": "consumer", "usage": "0x0045" },
+    "Select": { "page": "keyboard", "usage": "0x58" },
+    "Back": { "page": "consumer", "usage": "0x0224" },
+    "Home": { "page": "consumer", "usage": "0x0223" },
+    "QuickSettings": { "page": "consumer", "usage": "0x0223", "hold_ms": 1000 },
+    "Menu": { "page": "consumer", "usage": "0x0040" },
+    "PlayPause": { "page": "consumer", "usage": "0x00CD" },
+    "FastForward": { "page": "consumer", "usage": "0x00B3" },
+    "Rewind": { "page": "consumer", "usage": "0x00B4" },
+    "VolumeUp": { "page": "consumer", "usage": "0x00E9" },
+    "VolumeDown": { "page": "consumer", "usage": "0x00EA" },
+    "Mute": { "page": "consumer", "usage": "0x00E2" },
+    "Sleep": { "page": "consumer", "usage": "0x0034" },
+    "Backspace": { "page": "keyboard", "usage": "0x2A" }
+  },
+  "buttons": {
+    "menu": "Home"
+  },
+  "power": {
+    "type": "discrete",
+    "on": [{ "command": "Home" }],
+    "off": [{ "command": "Home" }, { "delay_ms": 500 }, { "command": "Sleep" }],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100
+  },
+  "meta": {
+    "confidence": "medium",
+    "sources": [
+      "Harmony archive: Harmony Beta / Test Amazon (codeset 6c77b6a40588fd83), a Logitech test device: Home 0x223, OK = keypad Enter (keyboard 0x58), Delete = Backspace (keyboard 0x2A), Play/Pause, volume, Mute, Sleep 0x34. It has no arrows and no Back.",
+      "Harmony archive: Amazon / Fire TV (globalDeviceId 260742): power on = Home, off = Home then Sleep, powerOnDelay 1500 ms; codeset is a placeholder",
+      "Android key mappings (Fire OS is Android), from memory and unverified: arrows, Back 0x224, Menu 0x40, FastForward, Rewind",
+      "hubbo-firmware BLE HID research, 2026-11-10"
+    ],
+    "notes": [
+      "Select follows Logitech (keypad Enter). Consumer 0x41 likely works too; Android treats both as a confirm key.",
+      "Logitech's Delete is the keyboard's Backspace, named Backspace here.",
+      "There is no HID usage for Alexa or the microphone.",
+      "The 500 ms gap in the off steps is a guess; Logitech's device lists Home then Sleep with no delay.",
+      "Fire TV sticks may not answer a key after deep sleep."
+    ],
+    "verify": [
+      "Select: keyboard 0x58 against consumer 0x41",
+      "Arrows and Back (not in any Logitech Fire TV data)",
+      "QuickSettings: Home held 1 s",
+      "Power on from deep sleep, and on_delay_ms"
+    ]
+  }
+}
