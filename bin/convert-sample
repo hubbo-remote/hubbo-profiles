@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Throwaway: convert the sample Harmony devices into samples/harmony/ (see tools/harmony_sample.py).
+# The archive is mounted read-only from where it is; nothing from it is copied except the output.
+set -euo pipefail
+root="$(cd "$(dirname "$0")/.." && pwd)"
+archive="${HARMONY_ARCHIVE:-$HOME/src/hubbo/logitech-harmony-ir-archive-main}"
+image=hubbo-devices-tools
+docker image inspect "$image" >/dev/null 2>&1 ||
+  docker build -q -t "$image" "$root/tools" >/dev/null
+devices=("$@")
+[ ${#devices[@]} -gt 0 ] || devices=(
+  devices/Apple/Apple_TV_4K_4th_generation.json
+  devices/LG/OLED55C1PUB.json
+)
+exec docker run --rm -u "$(id -u):$(id -g)" -v "$root:/repo" -v "$archive:/archive:ro" "$image" \
+  python -I tools/harmony_sample.py /archive samples/harmony "${devices[@]}"
