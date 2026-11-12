@@ -9,7 +9,7 @@ Nothing is committed; the repo has no remote. Everything validates.
 - `docs/spec.md`; schemas in `schema/` (profile, kinds, buttons; draft 2020-12).
 - `kinds.json`: 39 kinds, each `{id, label, harmony: [deviceType...]}`. The hub validates
   `device.kind` against it and serves it.
-- `buttons.json`: 38 fillable remote buttons, each `{button, role: watch|volume, hold, candidates}`.
+- `buttons.json`: 38 fillable remote buttons, each `{button, role: watch|volume, candidates}`.
   The web admin's wizard reads it.
 - `tools/validate.py` + `tools/Dockerfile` (python:3.12-slim, jsonschema 4.23.0), run by
   `bin/validate`. It checks both tables first, then profiles against them. `--hashes` prints
@@ -31,11 +31,9 @@ Nothing is committed; the repo has no remote. Everything validates.
   tv 1+13; streamer 35+51+52+63; console 9+23 (samples of both are mainstream consoles); computer
   8+10 (desktop vs laptop). `speaker` has no Harmony code (it's for HA speakers). 59 (Nest) →
   climate; 999 (Z-Wave switches and locks) → switch; test codes 0, 49, 57, 60, 66 → other.
-- **Button holds:** d-pad, skip FF/Rew, channel up/down, volume up/down, and menu (user's board
-  test, 2026-11-11: holding Menu = Home must reach the Apple TV to open Control Center and sleep
-  it; same for the Fire TV/Android TV quick menus). Everything else taps
-  (Select stays a tap: a held Select would trigger tvOS long-press menus and clash with hold
-  triggers).
+- **No per-button hold flag** (hubbo, 2026-11-12). Remote buttons pass straight through (down is
+  key down, up is key up) unless a Long press is bound, so the device decides what a hold does.
+  `hold` was removed from buttons.json; it had marked the d-pad, skip, channel, volume and menu.
 - **Generic platform profiles, no inheritance, no aliases, no pairing field** (user). Search uses
   manufacturer and model only. A specific device is a complete copy.
 - **One platform per profile.** **Commands:** name → encoding (ble_hid `{page, usage}`, ir
