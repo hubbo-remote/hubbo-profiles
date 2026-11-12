@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hubbo.dev/schema/buttons/1.json",
+  "title": "Hubbo remote button table",
+  "description": "Which profile command each remote button gets, its wizard role, and whether it repeats while held. See docs/spec.md section 8.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "buttons"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "buttons": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["button", "role", "hold", "candidates"],
+        "properties": {
+          "button": {
+            "enum": ["up", "down", "left", "right", "select", "menu", "back", "exit", "info", "guide",
+                     "dvr", "play", "pause", "stop", "record", "skip_forward", "skip_backward",
+                     "red", "green", "yellow", "blue", "number_0", "number_1", "number_2", "number_3",
+                     "number_4", "number_5", "number_6", "number_7", "number_8", "number_9",
+                     "number_dot_dash", "number_enter", "channel_up", "channel_down",
+                     "volume_up", "volume_down", "mute"]
+          },
+          "role": { "enum": ["watch", "volume"] },
+          "hold": { "type": "boolean" },
+          "candidates": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": { "type": "string", "pattern": "^[A-Za-z0-9]{1,32}$" }
+          }
+        }
+      }
+    }
+  }
+}

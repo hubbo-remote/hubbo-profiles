@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hubbo.dev/schema/kinds/1.json",
+  "title": "Hubbo device kinds",
+  "description": "Every device kind: its id, display label and the Harmony deviceType codes that map to it. See docs/spec.md section 2.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "kinds"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "kinds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "label", "harmony"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z][a-z0-9_]{0,31}$" },
+          "label": { "type": "string", "minLength": 1, "maxLength": 32 },
+          "harmony": { "type": "array", "uniqueItems": true, "items": { "type": "integer" } }
+        }
+      }
+    }
+  }
+}
