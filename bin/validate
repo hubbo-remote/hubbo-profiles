@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Validate device profiles in Docker. With no arguments: everything in profiles/ and samples/.
+# Paths are relative to the repo root.
+set -euo pipefail
+root="$(cd "$(dirname "$0")/.." && pwd)"
+image=hubbo-devices-tools
+docker image inspect "$image" >/dev/null 2>&1 ||
+  docker build -q -t "$image" "$root/tools" >/dev/null
+exec docker run --rm -u "$(id -u):$(id -g)" -v "$root:/repo:ro" "$image" python -I tools/validate.py "$@"
