@@ -80,9 +80,11 @@ Names are 1-32 ASCII letters and digits (`DirectionUp`, `InputHdmi1`, `0`), uniq
 Use the vocabulary in section 8 where a name fits. A command may carry a `label` (1-32
 characters) when the original name had punctuation, such as `SAP/*` → `SAP`.
 
-A tap sends the command once. While the remote button is held, the hub holds the key (Bluetooth) or
-keeps repeating it (IR) until release. `hold_ms` on a command (1-10,000) makes a tap a long press of
-that length, as with Apple TV's Control Center (Home held 1 s).
+A remote button passes straight through: its press is the key's press and its release is the
+key's release (Bluetooth holds the key down; IR keeps sending the repeat-section). What a hold does
+is up to the device. `hold_ms` on a command (1-10,000) makes it a long press of that length on its
+own, as with Apple TV's Control Center (Home held 1 s); it's for steps and for binding the long
+press to a button as a single command.
 
 ### `ble_hid`
 
@@ -208,18 +210,18 @@ fallbacks below resolve them.
 remote. One row per remote button that can be filled:
 
 ```json
-{ "button": "back", "role": "watch", "hold": false, "candidates": ["Back", "Exit", "Return"] }
+{ "button": "back", "role": "watch", "candidates": ["Back", "Exit", "Return"] }
 ```
 
 - `button`: the hub's button name (`core/src/remote/button.cpp`).
 - `role`: `watch` (navigation, playback, colours, number pad, channels: the "what are you watching
   on?" device) or `volume` (volume up/down and mute).
-- `hold`: the button is bound as press down / press up, so the device sees the real hold (a
-  repeat, or its own long press): the d-pad, skip (fast forward and rewind), channel up/down,
-  volume up/down, and `menu` (on streamers it's Home, and holding Home opens Apple TV's Control
-  Center or the Fire TV and Android TV quick menus). The rest are taps.
 - `candidates`: the device gets the first one its profile has, ignoring case; none means the button
   stays empty.
+
+Every filled button passes through to the device (section 3), so a held d-pad repeats and a held
+Menu (Home on streamers) opens Apple TV's Control Center or the Fire TV and Android TV quick menus,
+unless a Long press is bound on that button.
 
 Notes: the hub's skip buttons send HID Fast Forward and Rewind, so they try those first. Buttons not
 in the table (`off`, `music`, `tv`, `movie`, `light_1`, `light_2`, `plus`, `minus`, `switch_1`,

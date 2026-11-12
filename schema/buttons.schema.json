@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://hubbo.dev/schema/buttons/1.json",
   "title": "Hubbo remote button table",
-  "description": "Which profile command each remote button gets, its wizard role, and whether it repeats while held. See docs/spec.md section 8.",
+  "description": "Which profile command each remote button gets, and its wizard role. See docs/spec.md section 8.",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "buttons"],
@@ -14,7 +14,7 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["button", "role", "hold", "candidates"],
+        "required": ["button", "role", "candidates"],
         "properties": {
           "button": {
             "enum": ["up", "down", "left", "right", "select", "menu", "back", "exit", "info", "guide",
@@ -25,7 +25,6 @@
                      "volume_up", "volume_down", "mute"]
           },
           "role": { "enum": ["watch", "volume"] },
-          "hold": { "type": "boolean" },
           "candidates": {
             "type": "array",
             "minItems": 1,
