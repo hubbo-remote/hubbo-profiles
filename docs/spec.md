@@ -53,7 +53,7 @@ There are no floats. Unknown fields are errors.
 | `revision` | yes | Integer from 1, bumped whenever the profile changes. |
 | `source` | yes | `hubbo` (written in this repo), `harmony` (converted) or `user` (made on a hub, later). Must match the `id` prefix. |
 | `manufacturer`, `model` | yes | Display names, 1-64 characters. Search matches these two and nothing else. |
-| `kind` | yes | An `id` from `kinds.json`: one kind per Harmony device type (`tv`, `streamer`, `receiver`, `projector`...), each with a display label. `switch` is a home-control switch; `hdmi_switch` is the AV one. A label, icon and browse category, never behaviour. |
+| `kind` | yes | An `id` from `kinds.json`: one kind per Harmony device type (`tv`, `streamer`, `receiver`, `projector`...), each with a display label, plus a few for Home Assistant devices with no Harmony type (`speaker`, `fan`, `cover`, `scene`, `script`). `switch` is a home-control switch; `hdmi_switch` is the AV one. A label, icon and browse category, never behaviour. |
 | `platform` | yes | How the hub drives it, using the hub's platform names: `ble_hid` (Bluetooth keyboard), `ir`. `network` is reserved. |
 
 One profile has one platform. An Apple TV over Bluetooth and over IR are two profiles, because the
