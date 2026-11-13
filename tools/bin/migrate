@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Apply a migration (tools/migrations/v<N>-to-v<M>.py) to every profile and codeset, then rehash. In Docker.
+set -euo pipefail
+. "$(dirname "$0")/lib.sh"
+[ $# -eq 1 ] || { echo "usage: tools/bin/migrate tools/migrations/v<N>-to-v<M>.py" >&2; exit 2; }
+in_docker rw python tools/migrate.py "$1"

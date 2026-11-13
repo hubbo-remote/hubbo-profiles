@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Build the search index from the profiles into build/index/ (or the folder given), in Docker.
+set -euo pipefail
+. "$(dirname "$0")/lib.sh"
+in_docker build python tools/build_index.py "$@"

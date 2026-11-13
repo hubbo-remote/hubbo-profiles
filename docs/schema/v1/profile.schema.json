@@ -10,7 +10,7 @@
     "schema_version": { "const": 1 },
     "id": {
       "type": "string",
-      "pattern": "^(hubbo|harmony|user):[a-z0-9][a-z0-9.-]{0,47}$"
+      "pattern": "^(harmony:[0-9]{1,48}|(hubbo|user):[a-z0-9][a-z0-9.-]{0,47})$"
     },
     "revision": { "type": "integer", "minimum": 1 },
     "source": { "enum": ["hubbo", "harmony", "user"] },
@@ -43,7 +43,7 @@
         "additionalProperties": false,
         "required": ["name", "steps"],
         "properties": {
-          "name": { "type": "string", "minLength": 1, "maxLength": 32 },
+          "name": { "type": "string", "minLength": 1, "maxLength": 64 },
           "steps": { "$ref": "#/$defs/steps" }
         }
       }

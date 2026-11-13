@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Rewrite profile and codeset files in the repository's file format (default: the whole tree). In Docker.
+set -euo pipefail
+. "$(dirname "$0")/lib.sh"
+in_docker rw python tools/format.py "$@"

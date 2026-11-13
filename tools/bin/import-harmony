@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Import the Harmony archive into profiles/harmony/ and codesets/ (done once; see tools/harmony-import.md).
+# Refuses if profiles/harmony/ exists, unless --replace. The archive is mounted read-only from where
+# it is and never copied. Set HARMONY_ARCHIVE to move it.
+set -euo pipefail
+. "$(dirname "$0")/lib.sh"
+archive="${HARMONY_ARCHIVE:-$HOME/src/hubbo/logitech-harmony-ir-archive-main}"
+EXTRA_MOUNTS=(-v "$archive:/archive:ro")
+in_docker rw python tools/import_harmony.py /archive "$@"

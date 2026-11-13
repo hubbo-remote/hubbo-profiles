@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# After editing a codeset by hand: move it to its new name, repoint the profiles that use it (bumping
+# their revisions) and delete codesets nothing uses. In Docker.
+set -euo pipefail
+. "$(dirname "$0")/lib.sh"
+in_docker rw python tools/migrate.py --rehash

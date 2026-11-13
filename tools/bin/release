@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Make the bulk-download archive build/release/<name>.tar.gz from the committed tree plus a fresh
+# index. In Docker. Name defaults to hubbo-profiles-<short commit>.
+set -euo pipefail
+. "$(dirname "$0")/lib.sh"
+name="${1:-hubbo-profiles-$(git -C "$root" rev-parse --short HEAD)}"
+in_docker build python tools/release.py "$name"

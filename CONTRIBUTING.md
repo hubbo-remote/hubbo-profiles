@@ -1,37 +1,94 @@
 # Contributing
 
-Fixes and new device profiles are welcome. Profiles are released under CC0 (public domain), so by
-sending one you agree to that.
+Thank you for helping. Every fix makes a device work for everyone who owns one, long after the
+remote that came with it is gone. You don't need to be a programmer: a clear report helps too.
 
-## A key doesn't work
+- [Report a problem (no code needed)](#report-a-problem-no-code-needed)
+- [Fix a profile](#fix-a-profile)
+- [Add a device](#add-a-device)
+- [Check your change](#check-your-change)
+- [What makes a good profile](#what-makes-a-good-profile)
+- [Propose a change to the spec](#propose-a-change-to-the-spec)
 
-Open an issue with the "A key doesn't work" template: the device, the profile you picked, the key,
-and what happened.
+## Report a problem (no code needed)
 
-## Improve a profile
+[Open an issue](https://github.com/maddox/hubbo-profiles/issues/new/choose) and pick a template:
+a button doesn't work, a device is missing, or something else is wrong. Give the manufacturer and
+model (usually on a sticker on the back), the profile you used and what happened.
 
-Edit the file in `profiles/`, bump its `revision`, and add where the fix came from to
-`meta.sources` (for example "tested on a SHIELD TV Pro, 2026-11"). If you tested it on a device,
-remove it from `meta.verify`.
+## Fix a profile
+
+1. **Find the file.** The id gives the path: `hubbo:apple-tv` is `profiles/hubbo/apple-tv.json`,
+   and `harmony:498661` is `profiles/harmony/498/498661.json`. No id? Search the catalog site or
+   this repository for the model.
+2. **Edit it**, on GitHub with the pencil button or in a clone.
+3. **Raise its `revision` by one.**
+4. **Say where the fix came from** in `meta.sources`, such as `"Tested on an LG OLED55C1, 2026-11"`.
+5. **Open a pull request.**
+
+Many Harmony devices share a codeset (`"codeset": "<id>"`, stored in
+`codesets/<first two characters>/<id>.json`):
+
+- to fix a code for **every device that shares it**, edit the codeset file and say so in the pull
+  request; a maintainer renames it and updates its devices;
+- to fix it for **one device**, replace `"codeset": "<id>"` in that device's file with
+  `"commands": { ... }` copied from the codeset, and edit there.
 
 ## Add a device
 
-The generic profiles (Apple TV, Android TV / Google TV, Fire TV, Bluetooth keyboard) cover most
-devices. Add a device of its own only when it differs: an extra key, other power steps or timing.
+1. **Copy the closest profile:** a generic one from `profiles/hubbo/` for a Bluetooth streamer, or
+   a device of the same kind and manufacturer for infrared.
+2. **Save it as `profiles/hubbo/<manufacturer>-<model>.json`**, lowercase with dashes.
+3. **Set** `id` (`hubbo:<manufacturer>-<model>`), `revision` 1, `source` `"hubbo"`,
+   `manufacturer`, `model` and `kind`.
+4. **Change what differs:** commands, power, timing, inputs.
+5. **Fill in `meta`:** `confidence` (`high` if tested on the device), `sources`, and in `verify`
+   anything not yet tested.
+6. **If it replaces a Harmony device,** delete that file and set `meta.harmony.global_device_id`.
 
-1. Copy the closest generic profile to `profiles/<manufacturer>-<model>.json`.
-2. Set `id` (`hubbo:<manufacturer>-<model>`, lowercase), `revision` 1, `manufacturer` and `model`.
-3. Change what differs. Use command names from the vocabulary in `docs/spec.md` (section 8) where
-   one fits.
-4. Fill in `meta`: `confidence`, `sources`, and anything you couldn't test in `verify`.
+## Check your change
 
-Every profile is complete on its own; there's no inheritance.
+Every pull request is checked automatically:
 
-## Check it
+- the profile matches the [specification](docs/spec.md) and its schema;
+- every command a step, input, channel or button names exists;
+- the file is where its id says, and the id is unique;
+- a changed profile has a higher `revision`.
 
-```sh
-bin/validate                          # everything
-bin/validate profiles/my-device.json  # one file
-```
+A failed check says what to fix. To run the checks yourself, see the
+[maintainer notes](tools/README.md#validate) (they need only Docker).
 
-It runs in Docker, so nothing needs installing. CI will run the same check on every pull request.
+## What makes a good profile
+
+- **Standard command names** from the [vocabulary](docs/spec.md#command-names) (`DirectionUp`,
+  `Select`, `Back`, `VolumeUp`, `InputHdmi1`), so remote buttons fill themselves. Different keys
+  keep different names: `Back`, `Exit` and `Return` are three keys.
+- **Other names** are fine for other keys: letters and digits, up to 32. Put the remote's own
+  spelling in `label` if it has punctuation.
+- **The kind** from [`kinds.json`](docs/schema/v1/kinds.json): the main thing the device is.
+- **Power on that's safe to repeat:** a real on command or wake key if there is one; `toggle` if
+  there's only a toggle; never steps that move through a menu.
+- **Direct inputs** (`InputHdmi1`), not cycling.
+- **Only what you know works,** with `confidence` and `sources` that say how you know.
+
+## Propose a change to the spec
+
+1. **Open an issue** with the "Spec change" template: the problem, a real device that needs it,
+   and the change.
+2. **Once agreed, one pull request carries it:**
+   - the [specification](docs/spec.md) text, with the version raised by one;
+   - a new `docs/schema/v<N+1>/` (earlier folders never change);
+   - a [changelog](docs/changelog.md) entry: what changed, why, and what it means for profiles;
+   - the migration that moves every profile to the new version, and the migrated profiles.
+
+Any change to what a valid profile is counts, however small. A rewording that keeps the meaning
+doesn't: it's noted in the changelog under the current version.
+
+## License
+
+Everything here is public domain under [CC0 1.0](LICENSE), and contributions are released the
+same way.
+
+---
+
+[← Docs](docs/README.md) · Previous: [Changelog](docs/changelog.md)

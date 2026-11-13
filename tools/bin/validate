@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Validate the tables, profiles and codesets in Docker. With no arguments: the whole tree.
+# validate <paths>: only those (relative to the repo root). validate --since <ref>: what changed
+# since a git ref, plus the revision rule (what CI runs). --hashes: id, revision, sha256, path.
+set -euo pipefail
+. "$(dirname "$0")/lib.sh"
+in_docker ro python tools/validate.py "$@"

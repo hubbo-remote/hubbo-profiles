@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Print the tools image name, building it first if this Dockerfile version isn't built yet.
+set -euo pipefail
+root="$(cd "$(dirname "$0")/../.." && pwd)"
+image="hubbo-profiles-tools:$(sha256sum "$root/tools/Dockerfile" | cut -c1-12)"
+docker image inspect "$image" >/dev/null 2>&1 || docker build -q -t "$image" "$root/tools" >/dev/null
+echo "$image"
