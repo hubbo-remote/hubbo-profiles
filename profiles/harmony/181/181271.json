@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181271",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KV-M2101D",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f074ff6a4c439087",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KV-M2101D.json"
+    ],
+    "harmony": {
+      "global_device_id": 181271,
+      "device_type": 1,
+      "codeset": "a291d68186464ea3"
+    }
+  }
+}

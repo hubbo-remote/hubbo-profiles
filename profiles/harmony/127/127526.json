@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:127526",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "HT 510",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "e4e680707cc9fc21",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn",
+        "hold_ms": 2000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/HT_510.json"
+    ],
+    "harmony": {
+      "global_device_id": 127526,
+      "device_type": 7,
+      "codeset": "705c327df5940dfb"
+    }
+  }
+}

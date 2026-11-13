@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:105570",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "VSX-AX2AV (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "782849cf31de1b37",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Sat",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/VSX-AX2AV_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 105570,
+      "device_type": 5,
+      "codeset": "b86876ec54f92f8b"
+    }
+  }
+}

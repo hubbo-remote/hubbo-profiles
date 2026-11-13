@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:175437",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "EP-1080",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a69d1d51611602ef",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "SVideo",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "VGA1",
+      "steps": [
+        {
+          "command": "InputVga1"
+        }
+      ]
+    },
+    {
+      "name": "VGA2",
+      "steps": [
+        {
+          "command": "InputVga2"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/EP-1080.json"
+    ],
+    "harmony": {
+      "global_device_id": 175437,
+      "device_type": 7,
+      "codeset": "55b3679220ffbee1"
+    }
+  }
+}

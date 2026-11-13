@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "harmony:264725",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Auralic",
+  "model": "ARIES",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "d6f4bc2aa42bfcfc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "OK"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AES/EBS",
+      "steps": [
+        {
+          "command": "InputAesBbs"
+        }
+      ]
+    },
+    {
+      "name": "COAX",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "TOS",
+      "steps": [
+        {
+          "command": "InputTos"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Auralic/ARIES.json"
+    ],
+    "harmony": {
+      "global_device_id": 264725,
+      "device_type": 33,
+      "codeset": "fbf0da9e7042c124"
+    }
+  }
+}

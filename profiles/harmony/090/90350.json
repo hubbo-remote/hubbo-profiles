@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:90350",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Halcro",
+  "model": "MC-50",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4c1876265981f426",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Halcro/MC-50.json"
+    ],
+    "harmony": {
+      "global_device_id": 90350,
+      "device_type": 19,
+      "codeset": "7733455046dc00f6"
+    }
+  }
+}

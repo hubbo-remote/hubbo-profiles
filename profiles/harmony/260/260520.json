@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260520",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sangean",
+  "model": "WFT-1Di",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "623a19348568de2e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "Music Player",
+      "steps": [
+        {
+          "command": "InputMusicPlayer"
+        }
+      ]
+    },
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "AUX In",
+      "steps": [
+        {
+          "command": "InputAuxIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sangean/WFT-1Di.json"
+    ],
+    "harmony": {
+      "global_device_id": 260520,
+      "device_type": 33,
+      "codeset": "f0ccd557000f4639"
+    }
+  }
+}

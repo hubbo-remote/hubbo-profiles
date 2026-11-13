@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:71173",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tokaï",
+  "model": "LTV-5578 NTX",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6ed9dcc759b3363e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "5"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tokai/LTV-5578_NTX.json"
+    ],
+    "harmony": {
+      "global_device_id": 71173,
+      "device_type": 1,
+      "codeset": "b7bf9558218fa9f0"
+    }
+  }
+}

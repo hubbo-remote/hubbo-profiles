@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68609",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "LH-T300SC",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f36a1eacb3949d85",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Band",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/LH-T300SC.json"
+    ],
+    "harmony": {
+      "global_device_id": 68609,
+      "device_type": 22,
+      "codeset": "bf1f636ce0f0e3d5"
+    }
+  }
+}

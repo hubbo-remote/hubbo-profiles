@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162920",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Ellion",
+  "model": "DVR-960E",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "2a51cc504e5c044d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Analog TV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Scart AV",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Ellion/DVR-960E.json"
+    ],
+    "harmony": {
+      "global_device_id": 162920,
+      "device_type": 34,
+      "codeset": "79931956b1efa41b"
+    }
+  }
+}

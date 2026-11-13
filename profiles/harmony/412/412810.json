@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:412810",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "24LF454B",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "0464f6f7d122e89c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/24LF454B.json"
+    ],
+    "harmony": {
+      "global_device_id": 412810,
+      "device_type": 1,
+      "codeset": "faf95623db3d1c20"
+    }
+  }
+}

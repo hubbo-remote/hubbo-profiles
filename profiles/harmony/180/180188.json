@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180188",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "WS-32M206T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "908e67348593eae4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "EXT2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "EXT3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "SVideo",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/WS-32M206T.json"
+    ],
+    "harmony": {
+      "global_device_id": 180188,
+      "device_type": 1,
+      "codeset": "fdbcbfbc4e31f4ec"
+    }
+  }
+}

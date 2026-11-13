@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201775",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "LT-42DT8ZJ",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c336e56b396fe0b9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "6"
+        }
+      ]
+    },
+    {
+      "name": "E1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "E2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "E3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "E4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "E5 HDMI",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/LT-42DT8ZJ.json"
+    ],
+    "harmony": {
+      "global_device_id": 201775,
+      "device_type": 1,
+      "codeset": "599baf87dc25fa0c"
+    }
+  }
+}

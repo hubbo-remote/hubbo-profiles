@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121521",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Akai",
+  "model": "AM-2400",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0b132a6580805fdb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Source",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape-1/MD",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    },
+    {
+      "name": "AV-1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV-2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Tape-2/Monitor",
+      "steps": [
+        {
+          "command": "InputTape202"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Akai/AM-2400.json"
+    ],
+    "harmony": {
+      "global_device_id": 121521,
+      "device_type": 5,
+      "codeset": "827c41a8a313f307"
+    }
+  }
+}

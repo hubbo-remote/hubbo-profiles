@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:392357",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "essence",
+  "model": "HDACC",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a9d1540f75f15169",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "FRONT",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/essence/HDACC.json"
+    ],
+    "harmony": {
+      "global_device_id": 392357,
+      "device_type": 19,
+      "codeset": "0f62747963e0b858"
+    }
+  }
+}

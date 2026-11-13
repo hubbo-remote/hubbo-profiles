@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "id": "harmony:126723",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "VPL-HS50A",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f982b81732fedc1f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 1",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Input-A",
+      "steps": [
+        {
+          "command": "InputA"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 2",
+      "steps": [
+        {
+          "command": "InputSVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Digital/HDMI",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "MS",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/VPL-HS50A.json"
+    ],
+    "harmony": {
+      "global_device_id": 126723,
+      "device_type": 7,
+      "codeset": "8dba09308eb1a9db"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:97399",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Krell",
+  "model": "EVO-202",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9c9e0115e31f9f9c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Krell/EVO-202.json"
+    ],
+    "harmony": {
+      "global_device_id": 97399,
+      "device_type": 5,
+      "codeset": "17b07a8c58fb2778"
+    }
+  }
+}

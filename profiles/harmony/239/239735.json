@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "harmony:239735",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sansui",
+  "model": "HDLCDVD325A",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "8b09339f288f69e6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputSelect"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputSelect"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputSelect"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputSelect"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputSelect"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputSelect"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputSelect"
+        },
+        {
+          "command": "6"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputSelect"
+        },
+        {
+          "command": "7"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sansui/HDLCDVD325A.json"
+    ],
+    "harmony": {
+      "global_device_id": 239735,
+      "device_type": 37,
+      "codeset": "e5acaed6f802d5c7"
+    }
+  }
+}

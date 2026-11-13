@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:117554",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "PrimeView",
+  "model": "PV-42TRV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f161a4c93e62b3b8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Multimedia"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/PrimeView/PV-42TRV.json"
+    ],
+    "harmony": {
+      "global_device_id": 117554,
+      "device_type": 13,
+      "codeset": "788c26bf70302373"
+    }
+  }
+}

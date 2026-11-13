@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143622",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TViX HD M-4000SA",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "488fa51b4dc467e3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "EXT1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "EXT2",
+      "steps": [
+        {
+          "command": "InputAudio"
+        }
+      ]
+    },
+    {
+      "name": "EXT3",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TViX_HD_M-4000SA.json"
+    ],
+    "harmony": {
+      "global_device_id": 143622,
+      "device_type": 35,
+      "codeset": "a6e36e255732f926"
+    }
+  }
+}

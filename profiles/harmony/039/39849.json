@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:39849",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "MX-MD70R",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "4d85b0b6689d8d0f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/MX-MD70R.json"
+    ],
+    "harmony": {
+      "global_device_id": 39849,
+      "device_type": 5,
+      "codeset": "46b9b8cec847f95a"
+    }
+  }
+}

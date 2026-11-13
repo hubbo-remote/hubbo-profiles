@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:175975",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "A-H380",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "5379997a35675145",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "AUX1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/A-H380.json"
+    ],
+    "harmony": {
+      "global_device_id": 175975,
+      "device_type": 19,
+      "codeset": "630889a60679743e"
+    }
+  }
+}

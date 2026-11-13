@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:255759",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Microlab",
+  "model": "M-700U",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a643d83054d3888f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "USB/SD",
+      "steps": [
+        {
+          "command": "InputUsbSd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Microlab/M-700U.json"
+    ],
+    "harmony": {
+      "global_device_id": 255759,
+      "device_type": 5,
+      "codeset": "11ee914fb5c9f4d4"
+    }
+  }
+}

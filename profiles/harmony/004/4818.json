@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:4818",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Arcam",
+  "model": "Alpha AV50",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "eb2e217fa47baeb7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Arcam/Alpha_AV50.json"
+    ],
+    "harmony": {
+      "global_device_id": 4818,
+      "device_type": 19,
+      "codeset": "2efd5f4214b4ac0d"
+    }
+  }
+}

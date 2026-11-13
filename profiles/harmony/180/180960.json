@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180960",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cablecom",
+  "model": "DVR8485",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "3135f85f067e9c63",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cablecom/DVR8485.json"
+    ],
+    "harmony": {
+      "global_device_id": 180960,
+      "device_type": 18,
+      "codeset": "bcc2fc32f611cb2a"
+    }
+  }
+}

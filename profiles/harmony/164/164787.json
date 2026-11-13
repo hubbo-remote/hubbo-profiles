@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "harmony:164787",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KDL-32S5550",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "62681f741f589ff8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "Analog"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "Digital"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KDL-32S5550.json"
+    ],
+    "harmony": {
+      "global_device_id": 164787,
+      "device_type": 1,
+      "codeset": "dcb808c44e645cce"
+    }
+  }
+}

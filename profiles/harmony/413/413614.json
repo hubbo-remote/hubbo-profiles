@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:413614",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Peachtree",
+  "model": "M24",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b60dd5ef936c7c35",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Peachtree/M24.json"
+    ],
+    "harmony": {
+      "global_device_id": 413614,
+      "device_type": 19,
+      "codeset": "ac150c10117d1da3"
+    }
+  }
+}

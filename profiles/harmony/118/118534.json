@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118534",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hewlett Packard",
+  "model": "LC-3760N",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "713707bd7a6b449f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner1"
+        }
+      ]
+    },
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4 (HDMI 1)",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Input 5 (HDMI 2)",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hewlett_Packard/LC-3760N.json"
+    ],
+    "harmony": {
+      "global_device_id": 118534,
+      "device_type": 1,
+      "codeset": "89b812489deb6d26"
+    }
+  }
+}

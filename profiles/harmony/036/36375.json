@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:36375",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "AV-5005",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9cd3e79fab205a6f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCdMd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tape2/VCR",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputDvdLd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/AV-5005.json"
+    ],
+    "harmony": {
+      "global_device_id": 36375,
+      "device_type": 5,
+      "codeset": "b8db576dcb1eab08"
+    }
+  }
+}

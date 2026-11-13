@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137942",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EMP-550",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "67a99e8b071ce461",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EMP-550.json"
+    ],
+    "harmony": {
+      "global_device_id": 137942,
+      "device_type": 7,
+      "codeset": "a22d8a29b0ba4706"
+    }
+  }
+}

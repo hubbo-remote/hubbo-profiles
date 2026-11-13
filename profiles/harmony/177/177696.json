@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:177696",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "WD510U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "2c30370fff2d506b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 60000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/WD510U.json"
+    ],
+    "harmony": {
+      "global_device_id": 177696,
+      "device_type": 7,
+      "codeset": "e1ee2f1b3d63b523"
+    }
+  }
+}

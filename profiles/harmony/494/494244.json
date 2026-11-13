@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:494244",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-HTB250",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "bc23c1619a7a27e2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI (ARC)",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-HTB250.json"
+    ],
+    "harmony": {
+      "global_device_id": 494244,
+      "device_type": 19,
+      "codeset": "6aa42dd3b58055ed"
+    }
+  }
+}

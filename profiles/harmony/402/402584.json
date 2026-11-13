@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:402584",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Blaupunkt",
+  "model": "iMS DVD 10",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "3799edc29cb73d67",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTunerBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsbSd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Blaupunkt/iMS_DVD_10.json"
+    ],
+    "harmony": {
+      "global_device_id": 402584,
+      "device_type": 22,
+      "codeset": "0179ceb621d5e7ff"
+    }
+  }
+}

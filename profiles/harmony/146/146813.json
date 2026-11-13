@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:146813",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "STR-DG500",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e20767055a00f0a1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "MD/Tape",
+      "steps": [
+        {
+          "command": "InputMdTape"
+        }
+      ]
+    },
+    {
+      "name": "SA-CD/CD",
+      "steps": [
+        {
+          "command": "InputSaCdCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/STR-DG500.json"
+    ],
+    "harmony": {
+      "global_device_id": 146813,
+      "device_type": 5,
+      "codeset": "8716474da39973a2"
+    }
+  }
+}

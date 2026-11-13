@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:497737",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "Q1P1504 Z650",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0b3226aa2b1fd846",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/DVI",
+      "steps": [
+        {
+          "command": "InputHdmiDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/Q1P1504_Z650.json"
+    ],
+    "harmony": {
+      "global_device_id": 497737,
+      "device_type": 7,
+      "codeset": "0b96b8f7d870500e"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147134",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "PJ-TX100U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1d00daad3f795e77",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "steps": [
+        {
+          "command": "Auto"
+        }
+      ]
+    },
+    {
+      "name": "Componet",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/PJ-TX100U.json"
+    ],
+    "harmony": {
+      "global_device_id": 147134,
+      "device_type": 7,
+      "codeset": "b512355ebdbb25b8"
+    }
+  }
+}

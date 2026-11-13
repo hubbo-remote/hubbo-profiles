@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:274982",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HW-JM25",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d7388d8af375aeca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "D.IN",
+      "steps": [
+        {
+          "command": "InputDIn"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV SoundConnect",
+      "steps": [
+        {
+          "command": "InputTvSound"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HW-JM25.json"
+    ],
+    "harmony": {
+      "global_device_id": 274982,
+      "device_type": 19,
+      "codeset": "5b4d052b43680a32"
+    }
+  }
+}

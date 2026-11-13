@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:255999",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "LE27T61BC",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9885d7596f63ae29",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "EXT 2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/LE27T61BC.json"
+    ],
+    "harmony": {
+      "global_device_id": 255999,
+      "device_type": 1,
+      "codeset": "4fd44b769dfc8d00"
+    }
+  }
+}

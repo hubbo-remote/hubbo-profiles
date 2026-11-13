@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:30441",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "42PD3",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2c799dece6603536",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DTV 1",
+      "steps": [
+        {
+          "command": "HD1"
+        }
+      ]
+    },
+    {
+      "name": "DTV 2",
+      "steps": [
+        {
+          "command": "HD2"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "Video1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "SVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/42PD3.json"
+    ],
+    "harmony": {
+      "global_device_id": 30441,
+      "device_type": 13,
+      "codeset": "f99dd97d02dc89f6"
+    }
+  }
+}

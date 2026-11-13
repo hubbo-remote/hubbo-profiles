@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:491663",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "CMT-FX250",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "69f40e0558333e0d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTunerBand"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/CMT-FX250.json"
+    ],
+    "harmony": {
+      "global_device_id": 491663,
+      "device_type": 21,
+      "codeset": "a7182646d57343ce"
+    }
+  }
+}

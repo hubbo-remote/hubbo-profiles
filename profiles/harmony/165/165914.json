@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165914",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hisense",
+  "model": "HSPDH10620AB",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3f3bac6574bbbf5e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hisense/HSPDH10620AB.json"
+    ],
+    "harmony": {
+      "global_device_id": 165914,
+      "device_type": 1,
+      "codeset": "c66a387c36a6787f"
+    }
+  }
+}

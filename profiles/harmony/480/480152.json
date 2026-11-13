@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480152",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "HECO",
+  "model": "Ascada 2.0",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "29e47e452407f2f3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/HECO/Ascada_2.0.json"
+    ],
+    "harmony": {
+      "global_device_id": 480152,
+      "device_type": 19,
+      "codeset": "e2a79325c1df59d5"
+    }
+  }
+}

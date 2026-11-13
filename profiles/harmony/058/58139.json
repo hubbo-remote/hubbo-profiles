@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58139",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TX-32PG30F",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cb385827a58d5677",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      },
+      {
+        "delay_ms": 6000
+      },
+      {
+        "command": "TvVideo"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "Red"
+        },
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "Green"
+        },
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "AV 3",
+      "steps": [
+        {
+          "command": "Yellow"
+        },
+        {
+          "command": "Yellow"
+        },
+        {
+          "command": "Yellow"
+        },
+        {
+          "command": "Yellow"
+        }
+      ]
+    },
+    {
+      "name": "AV 4",
+      "steps": [
+        {
+          "command": "Blue"
+        },
+        {
+          "command": "Blue"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TX-32PG30F.json"
+    ],
+    "harmony": {
+      "global_device_id": 58139,
+      "device_type": 1,
+      "codeset": "b9c65377979efc87"
+    }
+  }
+}

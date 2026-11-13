@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157915",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DVR-RT601",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "d018d2362085b6c0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VHS",
+      "steps": [
+        {
+          "command": "InputVhs"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DVR-RT601.json"
+    ],
+    "harmony": {
+      "global_device_id": 157915,
+      "device_type": 47,
+      "codeset": "88ff9edb0f25a5e4"
+    }
+  }
+}

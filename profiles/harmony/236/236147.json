@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:236147",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Audionet",
+  "model": "DNC",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7396d2ede8aeef91",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "DNCPowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "DNCPowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 0,
+    "input_delay_ms": 2000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "InputDigital1",
+      "steps": [
+        {
+          "command": "DNCOne"
+        }
+      ]
+    },
+    {
+      "name": "InputDigital2",
+      "steps": [
+        {
+          "command": "DNCTwo"
+        }
+      ]
+    },
+    {
+      "name": "InputDigital3",
+      "steps": [
+        {
+          "command": "DNCThree"
+        }
+      ]
+    },
+    {
+      "name": "InputDigital4",
+      "steps": [
+        {
+          "command": "DNCFour"
+        }
+      ]
+    },
+    {
+      "name": "InputDigital5",
+      "steps": [
+        {
+          "command": "DNCFive"
+        }
+      ]
+    },
+    {
+      "name": "InputStreaming",
+      "steps": [
+        {
+          "command": "DNCSix"
+        }
+      ]
+    },
+    {
+      "name": "InputUSBAudio",
+      "steps": [
+        {
+          "command": "DNCSeven"
+        }
+      ]
+    },
+    {
+      "name": "InputFMRadio",
+      "steps": [
+        {
+          "command": "DNCEight"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Audionet/DNC.json"
+    ],
+    "harmony": {
+      "global_device_id": 236147,
+      "device_type": 5,
+      "codeset": "3344f7e76e91ff39"
+    }
+  }
+}

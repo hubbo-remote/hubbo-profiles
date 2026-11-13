@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:266931",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Peachtree",
+  "model": "nova220SE",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "1153d899d6e9cbf7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "OPT 1",
+      "steps": [
+        {
+          "command": "InputOpt1"
+        }
+      ]
+    },
+    {
+      "name": "OPT 2",
+      "steps": [
+        {
+          "command": "InputOpt2"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Peachtree/nova220SE.json"
+    ],
+    "harmony": {
+      "global_device_id": 266931,
+      "device_type": 19,
+      "codeset": "025db8f0948c4eae"
+    }
+  }
+}

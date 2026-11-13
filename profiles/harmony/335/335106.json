@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:335106",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "P1341W",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "2975595176d5f81e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/P1341W.json"
+    ],
+    "harmony": {
+      "global_device_id": 335106,
+      "device_type": 7,
+      "codeset": "22ae4e3ba1ab683b"
+    }
+  }
+}

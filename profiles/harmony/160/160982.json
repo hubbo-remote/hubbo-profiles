@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "harmony:160982",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "UA55B8000XM",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1ca7ea647b464426",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1/DVI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "USB1",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "USB2",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Source"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/UA55B8000XM.json"
+    ],
+    "harmony": {
+      "global_device_id": 160982,
+      "device_type": 1,
+      "codeset": "e1838a4a78799fc4"
+    }
+  }
+}

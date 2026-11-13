@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:43192",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Theater Innovations",
+  "model": "TI-6000S",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0a3b2019fff6c43e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCD\\CD",
+      "steps": [
+        {
+          "command": "InputVcdCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "5.1 CH",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Theater_Innovations/TI-6000S.json"
+    ],
+    "harmony": {
+      "global_device_id": 43192,
+      "device_type": 19,
+      "codeset": "6da2588a9d756edc"
+    }
+  }
+}

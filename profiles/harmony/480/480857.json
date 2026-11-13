@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480857",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tibo",
+  "model": "Plus 3",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "28f8c6b13b11cd3f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "OPT1",
+      "steps": [
+        {
+          "command": "InputOpt1"
+        }
+      ]
+    },
+    {
+      "name": "OPT2",
+      "steps": [
+        {
+          "command": "InputOpt2"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tibo/Plus_3.json"
+    ],
+    "harmony": {
+      "global_device_id": 480857,
+      "device_type": 19,
+      "codeset": "f6f1df9b315735fc"
+    }
+  }
+}

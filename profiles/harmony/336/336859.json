@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336859",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Boxlight",
+  "model": "P12 BIW",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "3aa4fe2f8a5f0447",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA 1",
+      "steps": [
+        {
+          "command": "InputVga1"
+        }
+      ]
+    },
+    {
+      "name": "VGA 2",
+      "steps": [
+        {
+          "command": "InputVga2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Boxlight/P12_BIW.json"
+    ],
+    "harmony": {
+      "global_device_id": 336859,
+      "device_type": 7,
+      "codeset": "490d4c369570fc5e"
+    }
+  }
+}

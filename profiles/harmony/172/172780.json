@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172780",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-D42PT84E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "53c5d40304ca73fa",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn",
+        "hold_ms": 2000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "AV2S",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputPc"
+        },
+        {
+          "command": "TV"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-D42PT84E.json"
+    ],
+    "harmony": {
+      "global_device_id": 172780,
+      "device_type": 1,
+      "codeset": "ee520ac898846db4"
+    }
+  }
+}

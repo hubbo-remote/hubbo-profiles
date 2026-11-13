@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141163",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "XB12",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "99cdded77245f466",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Portable",
+      "steps": [
+        {
+          "command": "InputPortable"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/XB12.json"
+    ],
+    "harmony": {
+      "global_device_id": 141163,
+      "device_type": 22,
+      "codeset": "87bb1765dbff81ac"
+    }
+  }
+}

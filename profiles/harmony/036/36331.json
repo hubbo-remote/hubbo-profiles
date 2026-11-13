@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:36331",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "NS-AP16",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9cd3e79fab205a6f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCdMd"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTvDbs"
+        }
+      ]
+    },
+    {
+      "name": "DVD Recorder",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/NS-AP16.json"
+    ],
+    "harmony": {
+      "global_device_id": 36331,
+      "device_type": 19,
+      "codeset": "b8db576dcb1eab08"
+    }
+  }
+}

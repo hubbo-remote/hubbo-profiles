@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203312",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RE-44NZ23RB",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1b754f2dd9b5429a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "AV 3",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    },
+    {
+      "name": "AV 4",
+      "steps": [
+        {
+          "command": "InputAv4"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 4",
+      "steps": [
+        {
+          "command": "InputAv4"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RE-44NZ23RB.json"
+    ],
+    "harmony": {
+      "global_device_id": 203312,
+      "device_type": 1,
+      "codeset": "528dc59bb0413a1b"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:38978",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hyundai",
+  "model": "HY4210",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "98eab4bb31ff1102",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hyundai/HY4210.json"
+    ],
+    "harmony": {
+      "global_device_id": 38978,
+      "device_type": 13,
+      "codeset": "a4d37731e8a69136"
+    }
+  }
+}

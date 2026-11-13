@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "harmony:90605",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "WS-32Z4HF",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "044a2650185d9c30",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "av 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "av2",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "av3",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "dvd",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/WS-32Z4HF.json"
+    ],
+    "harmony": {
+      "global_device_id": 90605,
+      "device_type": 1,
+      "codeset": "7d1b900fade05ce8"
+    }
+  }
+}

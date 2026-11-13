@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:235294",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "HTD-K200E",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b7b7c9914fdafca6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/HTD-K200E.json"
+    ],
+    "harmony": {
+      "global_device_id": 235294,
+      "device_type": 22,
+      "codeset": "969fb866d14f6b83"
+    }
+  }
+}

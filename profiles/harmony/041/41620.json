@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "harmony:41620",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Finlux",
+  "model": "CTW-2827TN",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "2808dd74a2ec4bff",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TvCable",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "TvAuto",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "TvAntenna",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Finlux/CTW-2827TN.json"
+    ],
+    "harmony": {
+      "global_device_id": 41620,
+      "device_type": 37,
+      "codeset": "34bc1da920df0ba8"
+    }
+  }
+}

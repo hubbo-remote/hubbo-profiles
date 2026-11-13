@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:213077",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "HD-22",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "c5e79d06258b2d12",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputDSub"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/HD-22.json"
+    ],
+    "harmony": {
+      "global_device_id": 213077,
+      "device_type": 7,
+      "codeset": "10a4271090059fe3"
+    }
+  }
+}

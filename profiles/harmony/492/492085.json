@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:492085",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD 44102",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "73349cbb047e448f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "HDMI ARC",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD_44102.json"
+    ],
+    "harmony": {
+      "global_device_id": 492085,
+      "device_type": 19,
+      "codeset": "2338e1b39d4fe964"
+    }
+  }
+}

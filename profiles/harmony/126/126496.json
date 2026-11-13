@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:126496",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aiwa",
+  "model": "XR-MD50",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "b1d01023106f91ec",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX/Video",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aiwa/XR-MD50.json"
+    ],
+    "harmony": {
+      "global_device_id": 126496,
+      "device_type": 21,
+      "codeset": "82f08c1873ad681d"
+    }
+  }
+}

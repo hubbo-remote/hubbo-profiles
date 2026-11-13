@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:71434",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Niles",
+  "model": "ZR-4630AV",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "907e573554f880e6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Video 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Niles/ZR-4630AV.json"
+    ],
+    "harmony": {
+      "global_device_id": 71434,
+      "device_type": 5,
+      "codeset": "ce85356be7409998"
+    }
+  }
+}

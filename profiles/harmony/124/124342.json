@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:124342",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "SX-253",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ed74f5ada9f4965b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Ld",
+      "steps": [
+        {
+          "command": "InputLdSatVdp"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/SX-253.json"
+    ],
+    "harmony": {
+      "global_device_id": 124342,
+      "device_type": 5,
+      "codeset": "eb501f77c3515b11"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:413341",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nubert",
+  "model": "nuPro AS-450",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e8714b6f4fc46e9c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Spdif",
+      "steps": [
+        {
+          "command": "InputSpdif"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nubert/nuPro_AS-450.json"
+    ],
+    "harmony": {
+      "global_device_id": 413341,
+      "device_type": 19,
+      "codeset": "bbd0e97aa4d76d9c"
+    }
+  }
+}

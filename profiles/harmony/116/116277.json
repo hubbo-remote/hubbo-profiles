@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116277",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Integra",
+  "model": "DTR-5.6",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ecd560dc62732842",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "XM",
+      "steps": [
+        {
+          "command": "InputAm"
+        },
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Video 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Multi Channel",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Integra/DTR-5.6.json"
+    ],
+    "harmony": {
+      "global_device_id": 116277,
+      "device_type": 5,
+      "codeset": "e9934c51f75dc85f"
+    }
+  }
+}

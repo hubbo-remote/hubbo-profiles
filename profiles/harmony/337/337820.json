@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:337820",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SPYCAT",
+  "model": "Linux E2",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "3d75b0971a56190c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SPYCAT/Linux_E2.json"
+    ],
+    "harmony": {
+      "global_device_id": 337820,
+      "device_type": 18,
+      "codeset": "05648bd337e743d2"
+    }
+  }
+}

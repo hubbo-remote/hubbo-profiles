@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168574",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sumvision",
+  "model": "Cyclone MKV",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "f1a9f3dd38025e9f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "All",
+      "steps": [
+        {
+          "command": "InputAll"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sumvision/Cyclone_MKV.json"
+    ],
+    "harmony": {
+      "global_device_id": 168574,
+      "device_type": 35,
+      "codeset": "1ca552802f39dae2"
+    }
+  }
+}

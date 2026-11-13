@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176384",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-HT995W",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "2f2b436770d94cf7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "D-IN",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "MUSIC Player",
+      "steps": [
+        {
+          "command": "InputDigital"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-HT995W.json"
+    ],
+    "harmony": {
+      "global_device_id": 176384,
+      "device_type": 22,
+      "codeset": "2b3996775b8c1021"
+    }
+  }
+}

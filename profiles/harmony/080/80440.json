@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:80440",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Insignia",
+  "model": "NS-FTV27",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8ffc4ce3eea5e6aa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "ANT",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "COMPONENT",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Insignia/NS-FTV27.json"
+    ],
+    "harmony": {
+      "global_device_id": 80440,
+      "device_type": 1,
+      "codeset": "2ce844161e120eaa"
+    }
+  }
+}

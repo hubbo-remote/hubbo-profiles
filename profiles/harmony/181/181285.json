@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181285",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "32MF231D/37",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c1ae5b6ce6a6cab4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputAv4"
+        }
+      ]
+    },
+    {
+      "name": "Side",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/32MF231D_37.json"
+    ],
+    "harmony": {
+      "global_device_id": 181285,
+      "device_type": 1,
+      "codeset": "9d27d0cb299ab8f3"
+    }
+  }
+}

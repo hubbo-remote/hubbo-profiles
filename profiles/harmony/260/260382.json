@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260382",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NAD",
+  "model": "D 1050",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "45f2fbeaad211040",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "COAX 1",
+      "steps": [
+        {
+          "command": "InputCoax1"
+        }
+      ]
+    },
+    {
+      "name": "COAX 2",
+      "steps": [
+        {
+          "command": "InputCoax2"
+        }
+      ]
+    },
+    {
+      "name": "OPT 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "OPT 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NAD/D_1050.json"
+    ],
+    "harmony": {
+      "global_device_id": 260382,
+      "device_type": 19,
+      "codeset": "1d3e7b9d0c2f64a8"
+    }
+  }
+}

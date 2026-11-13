@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "harmony:136892",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acoustic Solutions",
+  "model": "LCD1515F",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d8adf6c11e4c52b2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acoustic_Solutions/LCD1515F.json"
+    ],
+    "harmony": {
+      "global_device_id": 136892,
+      "device_type": 1,
+      "codeset": "cb07fef1459fc1e6"
+    }
+  }
+}

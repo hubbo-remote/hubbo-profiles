@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:11271",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pinnacle",
+  "model": "Show Center",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "30d99dc3b7bea44b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Home",
+      "steps": [
+        {
+          "command": "InputHome"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pinnacle/Show_Center.json"
+    ],
+    "harmony": {
+      "global_device_id": 11271,
+      "device_type": 35,
+      "codeset": "19840eac82159a6d"
+    }
+  }
+}

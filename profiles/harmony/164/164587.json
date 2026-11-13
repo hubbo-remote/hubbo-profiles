@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:164587",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TViX HD M-6600A",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "0a19ecb0e0683f60",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "InputHDTV"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TViX_HD_M-6600A.json"
+    ],
+    "harmony": {
+      "global_device_id": 164587,
+      "device_type": 35,
+      "codeset": "17ff6aa171fedff8"
+    }
+  }
+}

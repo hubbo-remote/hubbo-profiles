@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:266660",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "oCOSMO",
+  "model": "CB301523",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4182ba9ff297eb25",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/oCOSMO/CB301523.json"
+    ],
+    "harmony": {
+      "global_device_id": 266660,
+      "device_type": 19,
+      "codeset": "3cae40ca3f7a7d94"
+    }
+  }
+}

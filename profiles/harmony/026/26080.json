@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:26080",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PT-M1083",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a02c11a9763f53c4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 9000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PT-M1083.json"
+    ],
+    "harmony": {
+      "global_device_id": 26080,
+      "device_type": 7,
+      "codeset": "c0f7c31198088f0a"
+    }
+  }
+}

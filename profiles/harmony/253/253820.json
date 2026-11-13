@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:253820",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-BZT800",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "686114ed6ba38119",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-BZT800.json"
+    ],
+    "harmony": {
+      "global_device_id": 253820,
+      "device_type": 34,
+      "codeset": "b001f9a297a715ef"
+    }
+  }
+}

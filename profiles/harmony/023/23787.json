@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "harmony:23787",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Telefunken",
+  "model": "F531-CA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "baf18b19f876bc06",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1 Video",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Telefunken/F531-CA.json"
+    ],
+    "harmony": {
+      "global_device_id": 23787,
+      "device_type": 1,
+      "codeset": "652a0b7b021f2b5d"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129744",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universal Multimedia",
+  "model": "MVP-3042",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6ed9dcc759b3363e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "tv",
+      "steps": [
+        {
+          "command": "PP"
+        }
+      ]
+    },
+    {
+      "name": "video",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universal_Multimedia/MVP-3042.json"
+    ],
+    "harmony": {
+      "global_device_id": 129744,
+      "device_type": 1,
+      "codeset": "b7bf9558218fa9f0"
+    }
+  }
+}

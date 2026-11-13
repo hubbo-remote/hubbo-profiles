@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:256945",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NAD",
+  "model": "D 7050",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9e6f3eac04cb34fa",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Coaxial 1",
+      "steps": [
+        {
+          "command": "InputCoax1"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial 2",
+      "steps": [
+        {
+          "command": "InputCoax2"
+        }
+      ]
+    },
+    {
+      "name": "Optical 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "AirPlay",
+      "steps": [
+        {
+          "command": "InputAirplay"
+        }
+      ]
+    },
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    },
+    {
+      "name": "BlueTooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NAD/D_7050.json"
+    ],
+    "harmony": {
+      "global_device_id": 256945,
+      "device_type": 5,
+      "codeset": "583949fe1155314c"
+    }
+  }
+}

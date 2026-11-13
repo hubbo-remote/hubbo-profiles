@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "harmony:164482",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KDL-40S5500",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cf1a384ae709c434",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi1",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi2",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Digital Tuner",
+      "steps": [
+        {
+          "command": "Digital"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KDL-40S5500.json"
+    ],
+    "harmony": {
+      "global_device_id": 164482,
+      "device_type": 1,
+      "codeset": "3fac3dc5b3c91214"
+    }
+  }
+}

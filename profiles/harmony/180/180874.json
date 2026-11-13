@@ -1,0 +1,250 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180874",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HT-AS720S",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b563e9f398461b06",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "7.1CH",
+      "steps": [
+        {
+          "command": "Input71CH"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD Analog",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputCd"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputMode"
+        }
+      ]
+    },
+    {
+      "name": "CD Coaxial",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputCd"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputMode"
+        },
+        {
+          "command": "InputMode"
+        }
+      ]
+    },
+    {
+      "name": "DVD HDMI1",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputDvd"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputMode"
+        }
+      ]
+    },
+    {
+      "name": "DVD Analog",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputDvd"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputMode"
+        },
+        {
+          "command": "InputMode"
+        }
+      ]
+    },
+    {
+      "name": "DVD Optical1",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputDvd"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputMode"
+        },
+        {
+          "command": "InputMode"
+        },
+        {
+          "command": "InputMode"
+        }
+      ]
+    },
+    {
+      "name": "Sat HDMI2",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputSat"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputMode"
+        }
+      ]
+    },
+    {
+      "name": "Sat Analog",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputSat"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputMode"
+        },
+        {
+          "command": "InputMode"
+        }
+      ]
+    },
+    {
+      "name": "Sat Optical2",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputSat"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputMode"
+        },
+        {
+          "command": "InputMode"
+        },
+        {
+          "command": "InputMode"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HT-AS720S.json"
+    ],
+    "harmony": {
+      "global_device_id": 180874,
+      "device_type": 5,
+      "codeset": "4cc1607dc89b3574"
+    }
+  }
+}

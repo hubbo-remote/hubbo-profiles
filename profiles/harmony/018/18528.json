@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:18528",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "MT2000",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "85d8eee3aa91079c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Mono",
+      "steps": [
+        {
+          "command": "InputMono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/MT2000.json"
+    ],
+    "harmony": {
+      "global_device_id": 18528,
+      "device_type": 21,
+      "codeset": "c1e106b3b694cb24"
+    }
+  }
+}

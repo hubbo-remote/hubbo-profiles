@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:94102",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "STAV-3900",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "cfa97177c07323b1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV/SAT",
+      "steps": [
+        {
+          "command": "InputTvSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD/LD",
+      "steps": [
+        {
+          "command": "InputDvdLd"
+        }
+      ]
+    },
+    {
+      "name": "VCR/DVR",
+      "steps": [
+        {
+          "command": "InputVcrDvr"
+        }
+      ]
+    },
+    {
+      "name": "CD-R/TAPE/MD",
+      "steps": [
+        {
+          "command": "InputCdrTape"
+        }
+      ]
+    },
+    {
+      "name": "TV CONT",
+      "steps": [
+        {
+          "command": "InputTvSat"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/STAV-3900.json"
+    ],
+    "harmony": {
+      "global_device_id": 94102,
+      "device_type": 5,
+      "codeset": "e6face03f110538c"
+    }
+  }
+}

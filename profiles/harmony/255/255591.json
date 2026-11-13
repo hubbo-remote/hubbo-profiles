@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:255591",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Topping",
+  "model": "TP32",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2e9f87be3af11fbb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Topping/TP32.json"
+    ],
+    "harmony": {
+      "global_device_id": 255591,
+      "device_type": 19,
+      "codeset": "e4526ba4d889cdd7"
+    }
+  }
+}

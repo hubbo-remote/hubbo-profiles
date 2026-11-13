@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:264666",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Changhong",
+  "model": "LED42YC2000UA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ff05ed67394f8695",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Changhong/LED42YC2000UA.json"
+    ],
+    "harmony": {
+      "global_device_id": 264666,
+      "device_type": 1,
+      "codeset": "addc964a45cf65c5"
+    }
+  }
+}

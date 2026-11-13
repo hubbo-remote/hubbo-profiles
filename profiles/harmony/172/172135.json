@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172135",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "AX-M71",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "26f21e836606cdd6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/AX-M71.json"
+    ],
+    "harmony": {
+      "global_device_id": 172135,
+      "device_type": 21,
+      "codeset": "b72a0b3b7cc5168c"
+    }
+  }
+}

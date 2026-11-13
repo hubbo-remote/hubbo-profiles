@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:209889",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RT-2910",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "2ffc8d5d096b5c56",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Game/Line-In",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "BD",
+      "steps": [
+        {
+          "command": "InputBd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SAT/CAB",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RT-2910.json"
+    ],
+    "harmony": {
+      "global_device_id": 209889,
+      "device_type": 5,
+      "codeset": "1ba82bfde8e3b259"
+    }
+  }
+}

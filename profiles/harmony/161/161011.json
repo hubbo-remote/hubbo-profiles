@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:161011",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Auvisio",
+  "model": "TRUE VISION 1080P",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "5931b70fd8e3aaf1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Auvisio/TRUE_VISION_1080P.json"
+    ],
+    "harmony": {
+      "global_device_id": 161011,
+      "device_type": 35,
+      "codeset": "74bfba86664b3993"
+    }
+  }
+}

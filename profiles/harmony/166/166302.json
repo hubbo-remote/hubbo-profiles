@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:166302",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KV-D3431D",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "55ed9b2afe6cfaec",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KV-D3431D.json"
+    ],
+    "harmony": {
+      "global_device_id": 166302,
+      "device_type": 1,
+      "codeset": "9f2107c8d3d91a7c"
+    }
+  }
+}

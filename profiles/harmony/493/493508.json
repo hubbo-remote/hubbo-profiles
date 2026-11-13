@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493508",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ONN",
+  "model": "100004120",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2e2bf3ced06c3900",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ONN/100004120.json"
+    ],
+    "harmony": {
+      "global_device_id": 493508,
+      "device_type": 19,
+      "codeset": "75a1807014a64053"
+    }
+  }
+}

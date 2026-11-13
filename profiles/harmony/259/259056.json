@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259056",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SunBriteTV",
+  "model": "3260HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f3eb52b11df104f7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SunBriteTV/3260HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 259056,
+      "device_type": 1,
+      "codeset": "0d161f2fd0ce9b1e"
+    }
+  }
+}

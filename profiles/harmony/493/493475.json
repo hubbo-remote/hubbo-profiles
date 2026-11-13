@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493475",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "70UM7170DUA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "eff6afcad5e94405",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Smart TV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Home"
+        }
+      ]
+    },
+    {
+      "name": "PrimeVideo",
+      "steps": [
+        {
+          "command": "PrimeVideo"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/70UM7170DUA.json"
+    ],
+    "harmony": {
+      "global_device_id": 493475,
+      "device_type": 1,
+      "codeset": "17c08aeace6f66f9"
+    }
+  }
+}

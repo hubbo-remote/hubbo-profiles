@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:219015",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RC689D",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "070c7ccac5c38438",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RC689D.json"
+    ],
+    "harmony": {
+      "global_device_id": 219015,
+      "device_type": 47,
+      "codeset": "0d5f8b787e6c0784"
+    }
+  }
+}

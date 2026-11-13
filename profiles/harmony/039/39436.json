@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:39436",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "PDP-503CMX",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "bc331cc8feae15eb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB (D-Sub)",
+      "steps": [
+        {
+          "command": "InputRGBDSub"
+        }
+      ]
+    },
+    {
+      "name": "RGB (BNC)",
+      "steps": [
+        {
+          "command": "InputRGBBNC"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "Input 5",
+      "steps": [
+        {
+          "command": "Input5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/PDP-503CMX.json"
+    ],
+    "harmony": {
+      "global_device_id": 39436,
+      "device_type": 13,
+      "codeset": "005d7481a0654448"
+    }
+  }
+}

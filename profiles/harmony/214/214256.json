@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:214256",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Princeton",
+  "model": "PAV-MP1",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "f7c5a0aec4a54a1b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "All",
+      "steps": [
+        {
+          "command": "InputAll"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Princeton/PAV-MP1.json"
+    ],
+    "harmony": {
+      "global_device_id": 214256,
+      "device_type": 35,
+      "codeset": "1554ec17c74f972c"
+    }
+  }
+}

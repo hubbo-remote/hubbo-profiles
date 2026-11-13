@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:492828",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Atoll",
+  "model": "PR200 Signature",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "8959fae222f8455a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "ByPass",
+      "steps": [
+        {
+          "command": "InputByPass"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Atoll/PR200_Signature.json"
+    ],
+    "harmony": {
+      "global_device_id": 492828,
+      "device_type": 19,
+      "codeset": "3053d9af2992cd7f"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:479097",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Wotmic",
+  "model": "A12C",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e4826c7bca5baa1d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Wotmic/A12C.json"
+    ],
+    "harmony": {
+      "global_device_id": 479097,
+      "device_type": 19,
+      "codeset": "31296fd925ba8f44"
+    }
+  }
+}

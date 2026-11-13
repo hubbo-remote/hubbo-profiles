@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158291",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Funai",
+  "model": "DRV-A3635",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "1ec31cdcce38afd5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "VCR"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Funai/DRV-A3635.json"
+    ],
+    "harmony": {
+      "global_device_id": 158291,
+      "device_type": 25,
+      "codeset": "e3e36bf3e020f315"
+    }
+  }
+}

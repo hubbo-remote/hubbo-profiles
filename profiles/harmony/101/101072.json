@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101072",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vtrek",
+  "model": "VSA-D8",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4bd5bbeac0ba77f3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VCD/CD",
+      "steps": [
+        {
+          "command": "InputVCDCD"
+        }
+      ]
+    },
+    {
+      "name": "DVD/LD",
+      "steps": [
+        {
+          "command": "InputDvdLd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "AC-3/DTS",
+      "steps": [
+        {
+          "command": "AC3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vtrek/VSA-D8.json"
+    ],
+    "harmony": {
+      "global_device_id": 101072,
+      "device_type": 19,
+      "codeset": "c1fba3e13c3ab11b"
+    }
+  }
+}

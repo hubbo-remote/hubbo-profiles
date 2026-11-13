@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:491698",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "New1",
+  "model": "301PN",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "71a6eb40ff636e18",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/New1/301PN.json"
+    ],
+    "harmony": {
+      "global_device_id": 491698,
+      "device_type": 30,
+      "codeset": "5a8650b985d59d74"
+    }
+  }
+}

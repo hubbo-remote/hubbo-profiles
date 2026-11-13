@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269291",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "TestInput1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "99ec2056cbeb47b9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "7",
+      "steps": [
+        {
+          "command": "7"
+        }
+      ]
+    },
+    {
+      "name": "6",
+      "steps": [
+        {
+          "command": "6"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/TestInput1.json"
+    ],
+    "harmony": {
+      "global_device_id": 269291,
+      "device_type": 1,
+      "codeset": "0c5e74e260d3b3b1"
+    }
+  }
+}

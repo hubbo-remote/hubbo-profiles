@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34648",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Theater Research",
+  "model": "TR-503",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b3b2d6544106bd5f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "5.1Ch",
+      "steps": [
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    },
+    {
+      "name": "3D",
+      "steps": [
+        {
+          "command": "Input3D"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Theater_Research/TR-503.json"
+    ],
+    "harmony": {
+      "global_device_id": 34648,
+      "device_type": 19,
+      "codeset": "49a78d9a8b443dc6"
+    }
+  }
+}

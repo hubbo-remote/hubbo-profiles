@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:33686",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "SE-CH515D",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3f6cffb165cce61e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/SE-CH515D.json"
+    ],
+    "harmony": {
+      "global_device_id": 33686,
+      "device_type": 19,
+      "codeset": "f9a908ad1a90b823"
+    }
+  }
+}

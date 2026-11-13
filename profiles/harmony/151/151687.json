@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:151687",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Akai",
+  "model": "AMC-3000",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "6561fa024f459bab",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "XBox 360",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Akai/AMC-3000.json"
+    ],
+    "harmony": {
+      "global_device_id": 151687,
+      "device_type": 36,
+      "codeset": "613e5587fbcb793a"
+    }
+  }
+}

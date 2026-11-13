@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135500",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "VR-5080",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7b8034467d3d62b0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "Input10"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO1",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO2",
+      "steps": [
+        {
+          "command": "Input12"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO3",
+      "steps": [
+        {
+          "command": "Input11"
+        }
+      ]
+    },
+    {
+      "name": "DVD/6ch",
+      "steps": [
+        {
+          "command": "Input13"
+        }
+      ]
+    },
+    {
+      "name": "AV AUX",
+      "steps": [
+        {
+          "command": "Input6"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/VR-5080.json"
+    ],
+    "harmony": {
+      "global_device_id": 135500,
+      "device_type": 5,
+      "codeset": "e9363af3c9deed6e"
+    }
+  }
+}

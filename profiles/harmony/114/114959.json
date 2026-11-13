@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:114959",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "SP-ST1W",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ddb7bb79ab362ab7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DBS",
+      "steps": [
+        {
+          "command": "InputTVDSS"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputAMFM"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/SP-ST1W.json"
+    ],
+    "harmony": {
+      "global_device_id": 114959,
+      "device_type": 19,
+      "codeset": "d5a8b4ee00337f17"
+    }
+  }
+}

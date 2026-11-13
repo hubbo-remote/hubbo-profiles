@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "id": "harmony:98243",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "AVR-2309CI",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0f63f2a45bd2d18c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDP",
+      "steps": [
+        {
+          "command": "InputHdp"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "TV/CBL",
+      "steps": [
+        {
+          "command": "InputTvCbl"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "CD-R/Tape",
+      "steps": [
+        {
+          "command": "InputCdrTape"
+        }
+      ]
+    },
+    {
+      "name": "Sat/Tu",
+      "steps": [
+        {
+          "command": "InputSatTu12"
+        }
+      ]
+    },
+    {
+      "name": "V.Aux",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/AVR-2309CI.json"
+    ],
+    "harmony": {
+      "global_device_id": 98243,
+      "device_type": 5,
+      "codeset": "b90cd51e37aef2cf"
+    }
+  }
+}

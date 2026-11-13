@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:74371",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "Sovereign Entre MR-H1",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "f2899364b8f00869",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "Movies"
+        }
+      ]
+    },
+    {
+      "name": "OpenGlobe",
+      "steps": [
+        {
+          "command": "OpenGlobe"
+        }
+      ]
+    },
+    {
+      "name": "Pass Through",
+      "steps": [
+        {
+          "command": "PassThru"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/Sovereign_Entre_MR-H1.json"
+    ],
+    "harmony": {
+      "global_device_id": 74371,
+      "device_type": 33,
+      "codeset": "5d1668e08b8b68fd"
+    }
+  }
+}

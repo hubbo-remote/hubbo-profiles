@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:73363",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "XMS",
+  "model": "XMS-968",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "971d2e2a71d05ade",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/XMS/XMS-968.json"
+    ],
+    "harmony": {
+      "global_device_id": 73363,
+      "device_type": 19,
+      "codeset": "39e8eb88b0c37437"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:125993",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Real Life",
+  "model": "RD-8606",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "33c4524afe8aa1c4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "CD/AUX",
+      "steps": [
+        {
+          "command": "InputCdAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Real_Life/RD-8606.json"
+    ],
+    "harmony": {
+      "global_device_id": 125993,
+      "device_type": 19,
+      "codeset": "06fe8bca15457b5a"
+    }
+  }
+}

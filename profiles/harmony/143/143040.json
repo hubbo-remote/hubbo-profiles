@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143040",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "CA-DXU10",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "0a8dc4906a39147e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/CA-DXU10.json"
+    ],
+    "harmony": {
+      "global_device_id": 143040,
+      "device_type": 22,
+      "codeset": "43ba5f876091bb11"
+    }
+  }
+}

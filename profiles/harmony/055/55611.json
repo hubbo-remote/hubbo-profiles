@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:55611",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "MU-50PZ90MQ",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4afb7df38ee4f8e5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerOff",
+        "hold_ms": 1500
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputDVIDTV"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/MU-50PZ90MQ.json"
+    ],
+    "harmony": {
+      "global_device_id": 55611,
+      "device_type": 13,
+      "codeset": "e1cf59d13c6d5673"
+    }
+  }
+}

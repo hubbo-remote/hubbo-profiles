@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154200",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DCS",
+  "model": "Scarlantti Transport",
+  "kind": "cd_player",
+  "platform": "ir",
+  "codeset": "89291aad30de6efa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SaCD",
+      "steps": [
+        {
+          "command": "InputSacd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DCS/Scarlantti_Transport.json"
+    ],
+    "harmony": {
+      "global_device_id": 154200,
+      "device_type": 3,
+      "codeset": "3690b33f6b7650a0"
+    }
+  }
+}

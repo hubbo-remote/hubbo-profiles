@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "harmony:223562",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GoVideo",
+  "model": "DV2157",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "ff02cd77d2e7bc8c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GoVideo/DV2157.json"
+    ],
+    "harmony": {
+      "global_device_id": 223562,
+      "device_type": 25,
+      "codeset": "3f62943e13849e6e"
+    }
+  }
+}

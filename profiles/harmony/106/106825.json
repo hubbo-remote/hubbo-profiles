@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:106825",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "SE-A800S",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9fec9826e15f52d5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TAPE1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "TAPE2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/SE-A800S.json"
+    ],
+    "harmony": {
+      "global_device_id": 106825,
+      "device_type": 5,
+      "codeset": "7731b5093c36fbee"
+    }
+  }
+}

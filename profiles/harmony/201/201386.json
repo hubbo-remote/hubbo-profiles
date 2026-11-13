@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201386",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "LCD-6520L",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "404913cdc02ca754",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgbHv"
+        }
+      ]
+    },
+    {
+      "name": "DVD/HD",
+      "steps": [
+        {
+          "command": "InputDvdHd"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/LCD-6520L.json"
+    ],
+    "harmony": {
+      "global_device_id": 201386,
+      "device_type": 13,
+      "codeset": "4885f712c11ecc23"
+    }
+  }
+}

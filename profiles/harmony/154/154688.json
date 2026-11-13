@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154688",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vanco",
+  "model": "281444",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "e3e49631883922a8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input1",
+      "steps": [
+        {
+          "command": "SourceCh1"
+        }
+      ]
+    },
+    {
+      "name": "Input2",
+      "steps": [
+        {
+          "command": "SourceCh2"
+        }
+      ]
+    },
+    {
+      "name": "Input3",
+      "steps": [
+        {
+          "command": "SourceCh3"
+        }
+      ]
+    },
+    {
+      "name": "Input4",
+      "steps": [
+        {
+          "command": "SourceCh4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vanco/281444.json"
+    ],
+    "harmony": {
+      "global_device_id": 154688,
+      "device_type": 30,
+      "codeset": "c5754a6ca200b568"
+    }
+  }
+}

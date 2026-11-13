@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135044",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Millenium Theater Systems",
+  "model": "MTS-3200",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "6a2bac6670b6af40",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 5000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Audio1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Audio2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "DVD1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "DVD2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Millenium_Theater_Systems/MTS-3200.json"
+    ],
+    "harmony": {
+      "global_device_id": 135044,
+      "device_type": 22,
+      "codeset": "a1a088e6ff086b43"
+    }
+  }
+}

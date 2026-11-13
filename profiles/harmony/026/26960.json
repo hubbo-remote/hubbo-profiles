@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "harmony:26960",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "42FD9934/17S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f29a59a94ccfae2c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerOn"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/42FD9934_17S.json"
+    ],
+    "harmony": {
+      "global_device_id": 26960,
+      "device_type": 13,
+      "codeset": "f85bada5f8fd15c8"
+    }
+  }
+}

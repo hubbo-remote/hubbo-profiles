@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:132750",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Electrocompaniet",
+  "model": "PI-2",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "8f77dc03622179c9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV/VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "CDR/MD",
+      "steps": [
+        {
+          "command": "InputCdrTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Electrocompaniet/PI-2.json"
+    ],
+    "harmony": {
+      "global_device_id": 132750,
+      "device_type": 19,
+      "codeset": "5af41a1aeabccc84"
+    }
+  }
+}

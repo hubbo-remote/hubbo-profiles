@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168500",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Genius",
+  "model": "SW-HF5.1 6000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9b83f5f94d1c1179",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Genius/SW-HF5.1_6000.json"
+    ],
+    "harmony": {
+      "global_device_id": 168500,
+      "device_type": 19,
+      "codeset": "ad904967fccb45ae"
+    }
+  }
+}

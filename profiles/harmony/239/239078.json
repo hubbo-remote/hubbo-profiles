@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:239078",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MaxDigital",
+  "model": "XP1000",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "5e1ccf683cd4f0d4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MaxDigital/XP1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 239078,
+      "device_type": 18,
+      "codeset": "5c33c47f191337d3"
+    }
+  }
+}

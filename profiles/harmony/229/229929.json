@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:229929",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RC-499H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "5290c5f5cd3c2f53",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "CHO3",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "COMPONET",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "SVIDEO",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputNext2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RC-499H.json"
+    ],
+    "harmony": {
+      "global_device_id": 229929,
+      "device_type": 34,
+      "codeset": "a9a4056d09e2d7ab"
+    }
+  }
+}

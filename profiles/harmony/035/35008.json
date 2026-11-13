@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:35008",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hyundai",
+  "model": "HPT-4250H",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "de796182d5a5c39b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "InputHD"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "Digital RGB",
+      "steps": [
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Analog RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "S-VHS",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hyundai/HPT-4250H.json"
+    ],
+    "harmony": {
+      "global_device_id": 35008,
+      "device_type": 1,
+      "codeset": "7bf2a6c8b27b7b52"
+    }
+  }
+}

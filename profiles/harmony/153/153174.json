@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153174",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "HD65",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0f5e095e4734618f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "D-Sub",
+      "steps": [
+        {
+          "command": "InputDSub"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/HD65.json"
+    ],
+    "harmony": {
+      "global_device_id": 153174,
+      "device_type": 7,
+      "codeset": "c8c5c5005d511549"
+    }
+  }
+}

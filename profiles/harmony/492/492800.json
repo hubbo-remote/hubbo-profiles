@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:492800",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Amazon",
+  "model": "B01JFER19Y",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "959f0803f6ac89dc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Amazon/B01JFER19Y.json"
+    ],
+    "harmony": {
+      "global_device_id": 492800,
+      "device_type": 19,
+      "codeset": "7a5ee832a50bd8ab"
+    }
+  }
+}

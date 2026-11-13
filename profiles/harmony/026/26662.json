@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:26662",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "PD425S20W",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "de796182d5a5c39b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "HD",
+      "steps": [
+        {
+          "command": "InputHD"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "RGb",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/PD425S20W.json"
+    ],
+    "harmony": {
+      "global_device_id": 26662,
+      "device_type": 1,
+      "codeset": "7bf2a6c8b27b7b52"
+    }
+  }
+}

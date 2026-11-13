@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:108798",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "VRS-6100",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "82dfef50484f9fc7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd6Ch"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "F. Aux",
+      "steps": [
+        {
+          "command": "InputFrontAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/VRS-6100.json"
+    ],
+    "harmony": {
+      "global_device_id": 108798,
+      "device_type": 5,
+      "codeset": "0c351a012f79ffd9"
+    }
+  }
+}

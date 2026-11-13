@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:280863",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "40LH5300",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "000420452798a1f3",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/40LH5300.json"
+    ],
+    "harmony": {
+      "global_device_id": 280863,
+      "device_type": 1,
+      "codeset": "e22a74a01a158625"
+    }
+  }
+}

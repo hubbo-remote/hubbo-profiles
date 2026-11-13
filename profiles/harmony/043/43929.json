@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:43929",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Digital Optical",
+  "model": "40R4-3300R",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "361053dfc2ea91b2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Digital_Optical/40R4-3300R.json"
+    ],
+    "harmony": {
+      "global_device_id": 43929,
+      "device_type": 30,
+      "codeset": "4ae8d5d851bdc93d"
+    }
+  }
+}

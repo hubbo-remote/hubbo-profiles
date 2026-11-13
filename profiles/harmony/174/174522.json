@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174522",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MC147/12",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "5ce006262d3f401c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MC147_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 174522,
+      "device_type": 21,
+      "codeset": "277210aeabc25f38"
+    }
+  }
+}

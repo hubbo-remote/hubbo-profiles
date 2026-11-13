@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:106787",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denver",
+  "model": "MC-7150",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "da7c5be5c0186e2a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denver/MC-7150.json"
+    ],
+    "harmony": {
+      "global_device_id": 106787,
+      "device_type": 22,
+      "codeset": "64ed4b73ce129dfa"
+    }
+  }
+}

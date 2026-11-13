@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141358",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Manley",
+  "model": "Wave",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3b62606f825469fb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Manley/Wave.json"
+    ],
+    "harmony": {
+      "global_device_id": 141358,
+      "device_type": 19,
+      "codeset": "c7795af7c147005e"
+    }
+  }
+}

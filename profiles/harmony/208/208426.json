@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:208426",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "HD-67",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f452bcdc9c2de587",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/HD-67.json"
+    ],
+    "harmony": {
+      "global_device_id": 208426,
+      "device_type": 7,
+      "codeset": "11e64bdc60c3203e"
+    }
+  }
+}

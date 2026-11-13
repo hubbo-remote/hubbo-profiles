@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:51491",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HT-DDW660",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0e8735489c4b7c01",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HT-DDW660.json"
+    ],
+    "harmony": {
+      "global_device_id": 51491,
+      "device_type": 5,
+      "codeset": "bfb400893cdfaa30"
+    }
+  }
+}

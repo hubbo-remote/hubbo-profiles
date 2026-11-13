@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:78670",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "XR-Z82",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "abaab128bb81f953",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tape2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputDatVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/XR-Z82.json"
+    ],
+    "harmony": {
+      "global_device_id": 78670,
+      "device_type": 21,
+      "codeset": "87cc62f264fe91f7"
+    }
+  }
+}

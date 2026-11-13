@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:160969",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Signal Path International",
+  "model": "NOVA",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e5168334ac9d21ee",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "COAX 1",
+      "steps": [
+        {
+          "command": "InputCoax1"
+        }
+      ]
+    },
+    {
+      "name": "COAX 2",
+      "steps": [
+        {
+          "command": "InputCoax2"
+        }
+      ]
+    },
+    {
+      "name": "OPT 1",
+      "steps": [
+        {
+          "command": "InputOpt1"
+        }
+      ]
+    },
+    {
+      "name": "OPT 2",
+      "steps": [
+        {
+          "command": "InputOpt2"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "AUX 3/HT",
+      "steps": [
+        {
+          "command": "InputAux3HT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Signal_Path_International/NOVA.json"
+    ],
+    "harmony": {
+      "global_device_id": 160969,
+      "device_type": 19,
+      "codeset": "82a9044fb6147fb8"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269993",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "TestSanyo",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "d013fe8006251b96",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/TestSanyo.json"
+    ],
+    "harmony": {
+      "global_device_id": 269993,
+      "device_type": 47,
+      "codeset": "3ad0cedbe4048f64"
+    }
+  }
+}

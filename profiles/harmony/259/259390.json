@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259390",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Krell",
+  "model": "S-550i",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "11e645d0db972956",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "1S",
+      "steps": [
+        {
+          "command": "InputS1"
+        }
+      ]
+    },
+    {
+      "name": "2S",
+      "steps": [
+        {
+          "command": "InputS2"
+        }
+      ]
+    },
+    {
+      "name": "3S",
+      "steps": [
+        {
+          "command": "InputS3"
+        }
+      ]
+    },
+    {
+      "name": "1B",
+      "steps": [
+        {
+          "command": "InputB1"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Krell/S-550i.json"
+    ],
+    "harmony": {
+      "global_device_id": 259390,
+      "device_type": 5,
+      "codeset": "d1ee227bb8729a08"
+    }
+  }
+}

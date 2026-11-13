@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:30048",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "DV6T999B",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "e0e689b1e31fafa3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/DV6T999B.json"
+    ],
+    "harmony": {
+      "global_device_id": 30048,
+      "device_type": 25,
+      "codeset": "8e2c79ae98e1e6ff"
+    }
+  }
+}

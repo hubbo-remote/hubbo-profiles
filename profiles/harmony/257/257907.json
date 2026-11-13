@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "harmony:257907",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "TestSharpRU2",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "44d3820b645959d3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 18000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputExt4"
+        }
+      ]
+    },
+    {
+      "name": "PC IN",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputExt5"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputExt6"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputExt7"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/TestSharpRU2.json"
+    ],
+    "harmony": {
+      "global_device_id": 257907,
+      "device_type": 1,
+      "codeset": "950c1a287e92055b"
+    }
+  }
+}

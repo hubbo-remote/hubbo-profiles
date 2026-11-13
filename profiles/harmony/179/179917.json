@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179917",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "DLA-HD550",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "df6ecba2be9f824d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/DLA-HD550.json"
+    ],
+    "harmony": {
+      "global_device_id": 179917,
+      "device_type": 7,
+      "codeset": "14ce4f7d7f6fc02d"
+    }
+  }
+}

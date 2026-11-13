@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:16564",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "W52LCD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dfa4bef198391f7b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    },
+    {
+      "name": "Comp 1",
+      "steps": [
+        {
+          "command": "InputComp1"
+        }
+      ]
+    },
+    {
+      "name": "Comp 2",
+      "steps": [
+        {
+          "command": "InputComp2"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/W52LCD.json"
+    ],
+    "harmony": {
+      "global_device_id": 16564,
+      "device_type": 1,
+      "codeset": "72c4dacfbb3035c8"
+    }
+  }
+}

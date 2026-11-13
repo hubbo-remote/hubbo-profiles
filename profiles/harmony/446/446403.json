@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:446403",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "CAS-1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "1b222813196ab917",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "USB A",
+      "steps": [
+        {
+          "command": "InputUsbA"
+        }
+      ]
+    },
+    {
+      "name": "USB B",
+      "steps": [
+        {
+          "command": "InputUsbB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/CAS-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 446403,
+      "device_type": 19,
+      "codeset": "8b058e43ba4782b6"
+    }
+  }
+}

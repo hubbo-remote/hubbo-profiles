@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116021",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CAV",
+  "model": "AV-786A",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "f8024365c6ea950c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX-1",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "AUX-2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "AUX-3",
+      "steps": [
+        {
+          "command": "InputAux3"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputLaserdisc"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CAV/AV-786A.json"
+    ],
+    "harmony": {
+      "global_device_id": 116021,
+      "device_type": 5,
+      "codeset": "95794b882595f00a"
+    }
+  }
+}

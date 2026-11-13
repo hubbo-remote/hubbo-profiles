@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153692",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "P-1166",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "d2e00d5fef2258c6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "delay_ms": 7000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "Source",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/P-1166.json"
+    ],
+    "harmony": {
+      "global_device_id": 153692,
+      "device_type": 7,
+      "codeset": "d5870a5e94a8dd4f"
+    }
+  }
+}

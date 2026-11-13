@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:236482",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "XL-DH320NH",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "1e0f39b39faa8fad",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AudioIn",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/XL-DH320NH.json"
+    ],
+    "harmony": {
+      "global_device_id": 236482,
+      "device_type": 21,
+      "codeset": "7f7c0c57f8c4573e"
+    }
+  }
+}

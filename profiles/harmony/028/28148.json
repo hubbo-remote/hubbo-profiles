@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:28148",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lexicon",
+  "model": "MC-4",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9383e03a7285e60a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD1",
+      "steps": [
+        {
+          "command": "InputDvd1"
+        }
+      ]
+    },
+    {
+      "name": "DVD2",
+      "steps": [
+        {
+          "command": "InputDvd2"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lexicon/MC-4.json"
+    ],
+    "harmony": {
+      "global_device_id": 28148,
+      "device_type": 19,
+      "codeset": "a2678790c3753622"
+    }
+  }
+}

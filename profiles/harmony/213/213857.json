@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:213857",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TVonics",
+  "model": "DTR-Z500HD",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "fcd183b3a24ea26a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DTT",
+      "steps": [
+        {
+          "command": "InputDtt"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TVonics/DTR-Z500HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 213857,
+      "device_type": 35,
+      "codeset": "9decd5ac280f1e9a"
+    }
+  }
+}

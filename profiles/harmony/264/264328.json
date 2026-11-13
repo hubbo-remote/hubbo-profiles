@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "id": "harmony:264328",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "39PFL4208T/12",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "84e44a676471cc4e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 14000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmiSide"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmiSide"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI Side",
+      "steps": [
+        {
+          "command": "InputHdmiSide"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "Smart TV",
+      "steps": [
+        {
+          "command": "SmartTv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/39PFL4208T_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 264328,
+      "device_type": 1,
+      "codeset": "ea89c2da74a102dc"
+    }
+  }
+}

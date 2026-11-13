@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:261027",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DCM109/79",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "49082d00ed951141",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "MP3-LINK",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DCM109_79.json"
+    ],
+    "harmony": {
+      "global_device_id": 261027,
+      "device_type": 21,
+      "codeset": "02c755742924ff3d"
+    }
+  }
+}

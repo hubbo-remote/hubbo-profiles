@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263741",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Akira",
+  "model": "SB-3DB01A",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d65f34912939300e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line 1",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "Line 2",
+      "steps": [
+        {
+          "command": "InputLine2"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Akira/SB-3DB01A.json"
+    ],
+    "harmony": {
+      "global_device_id": 263741,
+      "device_type": 19,
+      "codeset": "c894f4f1139fccdd"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:28455",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "HD ProWide",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "42c75012c9e6ac9a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/HD_ProWide.json"
+    ],
+    "harmony": {
+      "global_device_id": 28455,
+      "device_type": 7,
+      "codeset": "15945804f4c66687"
+    }
+  }
+}

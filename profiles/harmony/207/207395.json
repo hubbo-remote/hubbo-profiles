@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:207395",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sherwood",
+  "model": "RX-671",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "8a7f1a441ef666b6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sherwood/RX-671.json"
+    ],
+    "harmony": {
+      "global_device_id": 207395,
+      "device_type": 5,
+      "codeset": "75673d98a2a207b4"
+    }
+  }
+}

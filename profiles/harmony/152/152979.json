@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:152979",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "NV-VP31GL",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "143a9a5034a3464b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/NV-VP31GL.json"
+    ],
+    "harmony": {
+      "global_device_id": 152979,
+      "device_type": 25,
+      "codeset": "6842f80b2ca4b98b"
+    }
+  }
+}

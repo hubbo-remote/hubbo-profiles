@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:301165",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "SC-LX59 (Zone 3)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "562885288c330119",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT/CBL",
+      "steps": [
+        {
+          "command": "InputSatCbl"
+        }
+      ]
+    },
+    {
+      "name": "DVR/BDR",
+      "steps": [
+        {
+          "command": "InputDvrBdr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/SC-LX59_Zone_3.json"
+    ],
+    "harmony": {
+      "global_device_id": 301165,
+      "device_type": 5,
+      "codeset": "23f6d10c06933466"
+    }
+  }
+}

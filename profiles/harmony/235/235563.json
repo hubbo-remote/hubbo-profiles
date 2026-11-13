@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:235563",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tibo",
+  "model": "PP100",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ac6094b1ee0df5ca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line In 1",
+      "steps": [
+        {
+          "command": "InputLineIn1"
+        }
+      ]
+    },
+    {
+      "name": "Line In 2",
+      "steps": [
+        {
+          "command": "InputLineIn2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tibo/PP100.json"
+    ],
+    "harmony": {
+      "global_device_id": 235563,
+      "device_type": 19,
+      "codeset": "a866faf7ce8e7210"
+    }
+  }
+}

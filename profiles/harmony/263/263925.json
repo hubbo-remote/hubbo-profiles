@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263925",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-42LB261U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "699b866c01b337c6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2/MHL",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Component/AV",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "USB(Photos)",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Ent"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-42LB261U.json"
+    ],
+    "harmony": {
+      "global_device_id": 263925,
+      "device_type": 1,
+      "codeset": "811a1af97f9b6a54"
+    }
+  }
+}

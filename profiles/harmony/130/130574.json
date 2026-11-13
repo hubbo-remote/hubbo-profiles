@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:130574",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "McCormack",
+  "model": "DNA-125",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "7c0a75f91e7bf16b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Satellite",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "Cable",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/McCormack/DNA-125.json"
+    ],
+    "harmony": {
+      "global_device_id": 130574,
+      "device_type": 19,
+      "codeset": "b33d4214a7073656"
+    }
+  }
+}

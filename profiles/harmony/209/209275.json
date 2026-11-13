@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:209275",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-HTB10",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e37c19254656db6a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "InputBDDVD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-HTB10.json"
+    ],
+    "harmony": {
+      "global_device_id": 209275,
+      "device_type": 19,
+      "codeset": "ca2d5ed9d8a36732"
+    }
+  }
+}

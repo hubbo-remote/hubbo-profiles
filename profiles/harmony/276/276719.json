@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "id": "harmony:276719",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "24PFL4208K",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "309097bb7755984e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 24000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Satellite",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Smart Tv",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "SmartTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/24PFL4208K.json"
+    ],
+    "harmony": {
+      "global_device_id": 276719,
+      "device_type": 1,
+      "codeset": "b458c2debb5aaf9c"
+    }
+  }
+}

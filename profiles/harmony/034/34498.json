@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34498",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "VSX-D7TX",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "cfa97177c07323b1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD/LD",
+      "steps": [
+        {
+          "command": "InputDvdLd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcrDvr"
+        }
+      ]
+    },
+    {
+      "name": "CDR",
+      "steps": [
+        {
+          "command": "InputCdrTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TV/SAT",
+      "steps": [
+        {
+          "command": "InputTvSat"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputTvSat"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/VSX-D7TX.json"
+    ],
+    "harmony": {
+      "global_device_id": 34498,
+      "device_type": 5,
+      "codeset": "e6face03f110538c"
+    }
+  }
+}

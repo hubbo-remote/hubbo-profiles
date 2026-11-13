@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:18837",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "17PF9937",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f29a59a94ccfae2c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputAv4"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HD",
+      "steps": [
+        {
+          "command": "InputAv4"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/17PF9937.json"
+    ],
+    "harmony": {
+      "global_device_id": 18837,
+      "device_type": 1,
+      "codeset": "f85bada5f8fd15c8"
+    }
+  }
+}

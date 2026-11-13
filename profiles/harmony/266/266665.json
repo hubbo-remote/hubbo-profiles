@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:266665",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "iLive",
+  "model": "ITB284B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "48f51cfcc29d19b8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/iLive/ITB284B.json"
+    ],
+    "harmony": {
+      "global_device_id": 266665,
+      "device_type": 19,
+      "codeset": "9b41bb74c3bd3b05"
+    }
+  }
+}

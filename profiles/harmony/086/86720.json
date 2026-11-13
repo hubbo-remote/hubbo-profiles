@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:86720",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "FW35",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "b5a47e9af758e182",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux/AV",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/FW35.json"
+    ],
+    "harmony": {
+      "global_device_id": 86720,
+      "device_type": 21,
+      "codeset": "5c1f30890a3765a9"
+    }
+  }
+}

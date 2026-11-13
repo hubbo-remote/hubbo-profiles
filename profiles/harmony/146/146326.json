@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:146326",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FW398C",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "fc54dc2d3b456f4f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FW398C.json"
+    ],
+    "harmony": {
+      "global_device_id": 146326,
+      "device_type": 21,
+      "codeset": "420931af705d6e59"
+    }
+  }
+}

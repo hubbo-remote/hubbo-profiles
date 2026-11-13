@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:10570",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "DSC400",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "26b5ad0e29ca57c5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX/TV",
+      "steps": [
+        {
+          "command": "InputAuxTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/DSC400.json"
+    ],
+    "harmony": {
+      "global_device_id": 10570,
+      "device_type": 22,
+      "codeset": "2ea33551aca7db60"
+    }
+  }
+}

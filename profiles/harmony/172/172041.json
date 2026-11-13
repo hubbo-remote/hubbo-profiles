@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172041",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RT-2870",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "beb07e91c6568f7e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AM/FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Sat",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Usb",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "LineIn",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RT-2870.json"
+    ],
+    "harmony": {
+      "global_device_id": 172041,
+      "device_type": 5,
+      "codeset": "de196c26015f7339"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:30608",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Genexxa",
+  "model": "STA 5500",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9c7a2a5f6820d493",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Genexxa/STA_5500.json"
+    ],
+    "harmony": {
+      "global_device_id": 30608,
+      "device_type": 5,
+      "codeset": "3e8a792ae42bc38d"
+    }
+  }
+}

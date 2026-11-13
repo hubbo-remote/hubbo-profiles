@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:200738",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cablecom",
+  "model": "UPC-Mediabox",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "ceedc45a58964698",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cablecom/UPC-Mediabox.json"
+    ],
+    "harmony": {
+      "global_device_id": 200738,
+      "device_type": 18,
+      "codeset": "fa5424070b8a048b"
+    }
+  }
+}

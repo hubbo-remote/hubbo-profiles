@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:271858",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "UE48H5003AW",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2dc9b50012ad154c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT",
+      "steps": [
+        {
+          "command": "InputExt"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "MediaP"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/UE48H5003AW.json"
+    ],
+    "harmony": {
+      "global_device_id": 271858,
+      "device_type": 1,
+      "codeset": "44e8f9bf1b3c0605"
+    }
+  }
+}

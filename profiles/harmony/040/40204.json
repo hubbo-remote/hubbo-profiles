@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40204",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Diamond",
+  "model": "DV42P1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f5292c49701532cb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB1",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Video4",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Diamond/DV42P1.json"
+    ],
+    "harmony": {
+      "global_device_id": 40204,
+      "device_type": 13,
+      "codeset": "28fcdefab117117b"
+    }
+  }
+}

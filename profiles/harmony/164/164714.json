@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:164714",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-C4254U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "bf094b190eeb29cb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "Input 5",
+      "steps": [
+        {
+          "command": "Input5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-C4254U.json"
+    ],
+    "harmony": {
+      "global_device_id": 164714,
+      "device_type": 1,
+      "codeset": "f4b83faee92b72b4"
+    }
+  }
+}

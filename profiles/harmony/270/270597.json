@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270597",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "VisionMax",
+  "model": "HD-3K",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "82af571fc4bc63d0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "SV",
+      "steps": [
+        {
+          "command": "InputSv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/VisionMax/HD-3K.json"
+    ],
+    "harmony": {
+      "global_device_id": 270597,
+      "device_type": 7,
+      "codeset": "c3131d88b3a782e9"
+    }
+  }
+}

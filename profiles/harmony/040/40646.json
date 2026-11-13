@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40646",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-15E1M",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4b1afc428d496516",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "Teletext"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-15E1M.json"
+    ],
+    "harmony": {
+      "global_device_id": 40646,
+      "device_type": 1,
+      "codeset": "5e78bea4e0d3150a"
+    }
+  }
+}

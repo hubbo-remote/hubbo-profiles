@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144762",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "B & K",
+  "model": "Reference 20 (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "f1e23e11f1bd02f4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Sat",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/B_K/Reference_20_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 144762,
+      "device_type": 5,
+      "codeset": "0e0546db560f1ba3"
+    }
+  }
+}

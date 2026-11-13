@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:52865",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LH-C6237",
+  "kind": "home_theater_vcr",
+  "platform": "ir",
+  "codeset": "ee0fe1178f31f899",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVhs"
+        }
+      ]
+    },
+    {
+      "name": "RADIO",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LH-C6237.json"
+    ],
+    "harmony": {
+      "global_device_id": 52865,
+      "device_type": 32,
+      "codeset": "c68f3e4e44634ffe"
+    }
+  }
+}

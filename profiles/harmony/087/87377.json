@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:87377",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "FH-E705C",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "5e6974976a272898",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "BandNext"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/FH-E705C.json"
+    ],
+    "harmony": {
+      "global_device_id": 87377,
+      "device_type": 21,
+      "codeset": "f03591bd93da074d"
+    }
+  }
+}

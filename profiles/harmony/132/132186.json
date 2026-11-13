@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:132186",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Electrohome",
+  "model": "DVC-510E",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "64d364a44d0f3159",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Electrohome/DVC-510E.json"
+    ],
+    "harmony": {
+      "global_device_id": 132186,
+      "device_type": 25,
+      "codeset": "9aa20b5f80b82c14"
+    }
+  }
+}

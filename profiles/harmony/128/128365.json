@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:128365",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "MFX-450",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "4837b51dabe1e0ab",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "CDR/Tape",
+      "steps": [
+        {
+          "command": "InputCdrTape"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/MFX-450.json"
+    ],
+    "harmony": {
+      "global_device_id": 128365,
+      "device_type": 5,
+      "codeset": "50d6f7e17f993ef7"
+    }
+  }
+}

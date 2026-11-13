@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95967",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "SU-V470",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "dc94baeb4021a2b6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tv/Vcr",
+      "steps": [
+        {
+          "command": "InputTvVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/SU-V470.json"
+    ],
+    "harmony": {
+      "global_device_id": 95967,
+      "device_type": 19,
+      "codeset": "80096ed803421098"
+    }
+  }
+}

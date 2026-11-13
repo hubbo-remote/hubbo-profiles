@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:48769",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "P50W38",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4afb7df38ee4f8e5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB-1",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDVIDTV"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/P50W38.json"
+    ],
+    "harmony": {
+      "global_device_id": 48769,
+      "device_type": 13,
+      "codeset": "e1cf59d13c6d5673"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:209084",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "FD630U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "4750dee394c0f5db",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 60000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Computer 1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer 2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/FD630U.json"
+    ],
+    "harmony": {
+      "global_device_id": 209084,
+      "device_type": 7,
+      "codeset": "a37fece8d5ede2f4"
+    }
+  }
+}

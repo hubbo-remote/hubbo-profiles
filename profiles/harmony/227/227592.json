@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:227592",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "HD83",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1d5178b0f5b0b360",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/HD83.json"
+    ],
+    "harmony": {
+      "global_device_id": 227592,
+      "device_type": 7,
+      "codeset": "b30c5f6415a0423d"
+    }
+  }
+}

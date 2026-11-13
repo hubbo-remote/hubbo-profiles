@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "harmony:164092",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "RS2745 C208",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c0b7681889c29ab5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "Menu"
+      },
+      {
+        "command": "DirectionRight"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "DirectionLeft"
+        }
+      ]
+    },
+    {
+      "name": "Aux/Vcr",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "DirectionRight"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/RS2745_C208.json"
+    ],
+    "harmony": {
+      "global_device_id": 164092,
+      "device_type": 1,
+      "codeset": "ab949ed9af78a67c"
+    }
+  }
+}

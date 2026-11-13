@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:17890",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "CA-MXS2BK",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "54de96f4df742af9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tape2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video/AUX",
+      "steps": [
+        {
+          "command": "InputVideoAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/CA-MXS2BK.json"
+    ],
+    "harmony": {
+      "global_device_id": 17890,
+      "device_type": 21,
+      "codeset": "0e7862b3f555c788"
+    }
+  }
+}

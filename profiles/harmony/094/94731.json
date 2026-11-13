@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:94731",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "XV-HTD50",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "edb6c1a073ed8c26",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/LD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner/Band",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV/AUX",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/XV-HTD50.json"
+    ],
+    "harmony": {
+      "global_device_id": 94731,
+      "device_type": 22,
+      "codeset": "5e21f5670ee3b64b"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129312",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "CX-790",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ed74f5ada9f4965b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputLdSatVdp"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "TAPE 1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "TAPE 2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/CX-790.json"
+    ],
+    "harmony": {
+      "global_device_id": 129312,
+      "device_type": 5,
+      "codeset": "eb501f77c3515b11"
+    }
+  }
+}

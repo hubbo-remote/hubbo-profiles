@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:218516",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "DVD-SH895A",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "be06df4ce140214d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/DVD-SH895A.json"
+    ],
+    "harmony": {
+      "global_device_id": 218516,
+      "device_type": 34,
+      "codeset": "8f74d0575bafd458"
+    }
+  }
+}

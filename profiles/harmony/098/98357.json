@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:98357",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vector Research",
+  "model": "VRX-3500A",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b98acf3781b557a8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vector_Research/VRX-3500A.json"
+    ],
+    "harmony": {
+      "global_device_id": 98357,
+      "device_type": 5,
+      "codeset": "a830139bdd72b23f"
+    }
+  }
+}

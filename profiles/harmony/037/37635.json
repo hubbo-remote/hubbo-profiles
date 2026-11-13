@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "harmony:37635",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TX-29AD50F",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cb385827a58d5677",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 600
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 3000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TX-29AD50F.json"
+    ],
+    "harmony": {
+      "global_device_id": 37635,
+      "device_type": 1,
+      "codeset": "b9c65377979efc87"
+    }
+  }
+}

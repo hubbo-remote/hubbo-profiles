@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "harmony:61424",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bryston",
+  "model": "B-100",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6911cda8732a5d27",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux/Phono",
+      "steps": [
+        {
+          "command": "InputAuxPhono"
+        }
+      ]
+    },
+    {
+      "name": "InputAnalog/Digital",
+      "steps": [
+        {
+          "command": "AnalogDigitalToggle"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Digital 1",
+      "steps": [
+        {
+          "command": "InputDigital1"
+        }
+      ]
+    },
+    {
+      "name": "Digital 2",
+      "steps": [
+        {
+          "command": "InputDigital2"
+        }
+      ]
+    },
+    {
+      "name": "Digital 3",
+      "steps": [
+        {
+          "command": "InputDigital3"
+        }
+      ]
+    },
+    {
+      "name": "Digital 4",
+      "steps": [
+        {
+          "command": "InputDigital4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bryston/B-100.json"
+    ],
+    "harmony": {
+      "global_device_id": 61424,
+      "device_type": 19,
+      "codeset": "84f79dded573ec89"
+    }
+  }
+}

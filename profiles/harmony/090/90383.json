@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:90383",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "CA-MXKC45",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "53618252c0a310dc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/CA-MXKC45.json"
+    ],
+    "harmony": {
+      "global_device_id": 90383,
+      "device_type": 21,
+      "codeset": "2eb64bfae7b3590a"
+    }
+  }
+}

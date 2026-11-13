@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57710",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "LVP-X200A",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "dba7318051f84d69",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/LVP-X200A.json"
+    ],
+    "harmony": {
+      "global_device_id": 57710,
+      "device_type": 7,
+      "codeset": "7f6ad99263f1ecb6"
+    }
+  }
+}

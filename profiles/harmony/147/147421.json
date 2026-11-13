@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147421",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Onkyo",
+  "model": "TX-SR602",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "400a0409a0e1ad94",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Video 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Video 5",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "AM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Onkyo/TX-SR602.json"
+    ],
+    "harmony": {
+      "global_device_id": 147421,
+      "device_type": 5,
+      "codeset": "8b2bc8147db1a5b7"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180517",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Emerson",
+  "model": "EWR10D4",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "231092606a2439c0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "L1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "L2",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Emerson/EWR10D4.json"
+    ],
+    "harmony": {
+      "global_device_id": 180517,
+      "device_type": 34,
+      "codeset": "910ee67e381f8bdf"
+    }
+  }
+}

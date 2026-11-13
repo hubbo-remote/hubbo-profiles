@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:238822",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "PL-42E91H",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6bf1078a41a8970a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/PL-42E91H.json"
+    ],
+    "harmony": {
+      "global_device_id": 238822,
+      "device_type": 1,
+      "codeset": "74bacb8f96cadcdc"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135251",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HCD-VX255",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "7083647d917751a3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner FM",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Tuner AM",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Tv/Vcr",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HCD-VX255.json"
+    ],
+    "harmony": {
+      "global_device_id": 135251,
+      "device_type": 22,
+      "codeset": "d54af5d2399451ae"
+    }
+  }
+}

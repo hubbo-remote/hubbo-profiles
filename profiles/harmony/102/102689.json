@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102689",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "XD350U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "e35af41c6e7089ee",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer 1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer 2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/XD350U.json"
+    ],
+    "harmony": {
+      "global_device_id": 102689,
+      "device_type": 7,
+      "codeset": "4bafe7dfcc51202b"
+    }
+  }
+}

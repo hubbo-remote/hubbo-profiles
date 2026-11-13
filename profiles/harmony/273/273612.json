@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273612",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eiki",
+  "model": "LC-XBL21",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "81e000b0570d9441",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Computer 1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer 2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eiki/LC-XBL21.json"
+    ],
+    "harmony": {
+      "global_device_id": 273612,
+      "device_type": 7,
+      "codeset": "7a02cd1f40986f3c"
+    }
+  }
+}

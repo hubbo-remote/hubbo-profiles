@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267817",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sherwood",
+  "model": "S-3",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e8be24322f6a3afd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sherwood/S-3.json"
+    ],
+    "harmony": {
+      "global_device_id": 267817,
+      "device_type": 19,
+      "codeset": "ff914109d3cabb1b"
+    }
+  }
+}

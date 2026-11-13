@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "id": "harmony:279911",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "UN55KU7500F",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ad78ec53fab14223",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "SmartHub",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Home"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        }
+      ]
+    },
+    {
+      "name": "Ambient",
+      "steps": [
+        {
+          "command": "Ambient"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/UN55KU7500F.json"
+    ],
+    "harmony": {
+      "global_device_id": 279911,
+      "device_type": 1,
+      "codeset": "57888785e581bcd9"
+    }
+  }
+}

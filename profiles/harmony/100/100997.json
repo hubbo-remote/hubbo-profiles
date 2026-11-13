@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:100997",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Blaupunkt",
+  "model": "IS-6352VT",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1abcd0ff7a8f434b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Blaupunkt/IS-6352VT.json"
+    ],
+    "harmony": {
+      "global_device_id": 100997,
+      "device_type": 1,
+      "codeset": "6ec13fcaf3f066dd"
+    }
+  }
+}

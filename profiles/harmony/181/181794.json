@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181794",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "CMT-BX3",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "1359e287dad551cf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/CMT-BX3.json"
+    ],
+    "harmony": {
+      "global_device_id": 181794,
+      "device_type": 21,
+      "codeset": "2330f17ac9548828"
+    }
+  }
+}

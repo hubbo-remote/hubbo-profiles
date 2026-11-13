@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167384",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "AVR-788",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0f600e5792d37e28",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOnMainZone"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOffMainZone"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "DVD/HDP",
+      "steps": [
+        {
+          "command": "InputDvdHdp"
+        }
+      ]
+    },
+    {
+      "name": "TV/CBL",
+      "steps": [
+        {
+          "command": "InputTvCbl"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "V.Aux",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    },
+    {
+      "name": "CD-R/Tape",
+      "steps": [
+        {
+          "command": "InputCdrTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "SAT TU",
+      "steps": [
+        {
+          "command": "InputSatTu"
+        }
+      ]
+    },
+    {
+      "name": "QuickSelect 1",
+      "steps": [
+        {
+          "command": "QuickSelect1"
+        }
+      ]
+    },
+    {
+      "name": "QuickSelect 2",
+      "steps": [
+        {
+          "command": "QuickSelect2"
+        }
+      ]
+    },
+    {
+      "name": "QuickSelect 3",
+      "steps": [
+        {
+          "command": "QuickSelect3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/AVR-788.json"
+    ],
+    "harmony": {
+      "global_device_id": 167384,
+      "device_type": 5,
+      "codeset": "465b8608c3cab7e2"
+    }
+  }
+}

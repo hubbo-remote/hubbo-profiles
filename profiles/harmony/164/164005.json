@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:164005",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vision Quest",
+  "model": "PVR-5000",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "fd70b90be8744286",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Source",
+      "steps": [
+        {
+          "command": "Source"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DV",
+      "steps": [
+        {
+          "command": "InputDVUSB"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vision_Quest/PVR-5000.json"
+    ],
+    "harmony": {
+      "global_device_id": 164005,
+      "device_type": 34,
+      "codeset": "dc80a64063f666c0"
+    }
+  }
+}

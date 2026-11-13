@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "harmony:232754",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "L40A105E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9364503f0c5f07a1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "6"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "7"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/L40A105E.json"
+    ],
+    "harmony": {
+      "global_device_id": 232754,
+      "device_type": 1,
+      "codeset": "d83047fd01926e56"
+    }
+  }
+}

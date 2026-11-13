@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:52866",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "AVR-885S (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a14a1af917c70525",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/AVR-885S_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 52866,
+      "device_type": 5,
+      "codeset": "329e81e6e8d93c1b"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:24485",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "CD-BA300",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "e571572a281e93a1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/CD-BA300.json"
+    ],
+    "harmony": {
+      "global_device_id": 24485,
+      "device_type": 21,
+      "codeset": "9142c6493519da27"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:96528",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "VSX-812",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ed74f5ada9f4965b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV/SAT",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD-R/TAPE",
+      "steps": [
+        {
+          "command": "InputCdr2"
+        }
+      ]
+    },
+    {
+      "name": "VCR/DVR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/VSX-812.json"
+    ],
+    "harmony": {
+      "global_device_id": 96528,
+      "device_type": 5,
+      "codeset": "eb501f77c3515b11"
+    }
+  }
+}

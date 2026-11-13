@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336563",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "EXIBEL",
+  "model": "BX3100",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0ecd0055a6c568e1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/EXIBEL/BX3100.json"
+    ],
+    "harmony": {
+      "global_device_id": 336563,
+      "device_type": 19,
+      "codeset": "612fca5846b1a4fc"
+    }
+  }
+}

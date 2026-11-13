@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:16932",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "STR-840P",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "02ae6000ff71bbc0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "MD/Tape",
+      "steps": [
+        {
+          "command": "InputMdTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/STR-840P.json"
+    ],
+    "harmony": {
+      "global_device_id": 16932,
+      "device_type": 22,
+      "codeset": "00d6e4c40d829653"
+    }
+  }
+}

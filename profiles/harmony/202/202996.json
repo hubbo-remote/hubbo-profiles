@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202996",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-50PE80",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "75b55f2a9eea6939",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-50PE80.json"
+    ],
+    "harmony": {
+      "global_device_id": 202996,
+      "device_type": 1,
+      "codeset": "4d9e5abdadb430d6"
+    }
+  }
+}

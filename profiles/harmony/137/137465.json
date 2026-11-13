@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137465",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Insignia",
+  "model": "NS-H4005",
+  "kind": "home_theater_vcr",
+  "platform": "ir",
+  "codeset": "2fbf6dd8f8a2022e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Insignia/NS-H4005.json"
+    ],
+    "harmony": {
+      "global_device_id": 137465,
+      "device_type": 32,
+      "codeset": "413a8e6299d5a766"
+    }
+  }
+}

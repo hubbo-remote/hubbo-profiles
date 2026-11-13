@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158137",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "DVD-VR300",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "a4fe5a6112ab5067",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/DVD-VR300.json"
+    ],
+    "harmony": {
+      "global_device_id": 158137,
+      "device_type": 47,
+      "codeset": "d909fc621feb244f"
+    }
+  }
+}

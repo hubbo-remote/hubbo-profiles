@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:115192",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Westinghouse",
+  "model": "LVM-32W2",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "123a062ac4c51104",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "YPBPR 1",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "YPBPR 2",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "S Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Westinghouse/LVM-32W2.json"
+    ],
+    "harmony": {
+      "global_device_id": 115192,
+      "device_type": 13,
+      "codeset": "8aa2a505003f3e05"
+    }
+  }
+}

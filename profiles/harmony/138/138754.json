@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138754",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "PLC-55",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0e371f6218fffb8e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/PLC-55.json"
+    ],
+    "harmony": {
+      "global_device_id": 138754,
+      "device_type": 7,
+      "codeset": "10dfd707d9264c0a"
+    }
+  }
+}

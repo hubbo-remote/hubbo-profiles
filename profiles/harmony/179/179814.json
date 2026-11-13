@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179814",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pace",
+  "model": "DC-621KU",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "4eea8ac8a2721170",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pace/DC-621KU.json"
+    ],
+    "harmony": {
+      "global_device_id": 179814,
+      "device_type": 12,
+      "codeset": "7b5028762487e622"
+    }
+  }
+}

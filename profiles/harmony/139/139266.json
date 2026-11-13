@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139266",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Roadstar",
+  "model": "SPK-5600SR",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "f05251cf092bcaed",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Roadstar/SPK-5600SR.json"
+    ],
+    "harmony": {
+      "global_device_id": 139266,
+      "device_type": 19,
+      "codeset": "eda947b0441d5e74"
+    }
+  }
+}

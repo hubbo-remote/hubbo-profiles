@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111044",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vernex",
+  "model": "VHP-420PDP",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "de796182d5a5c39b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "HD",
+      "steps": [
+        {
+          "command": "InputHD"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "CATV",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vernex/VHP-420PDP.json"
+    ],
+    "harmony": {
+      "global_device_id": 111044,
+      "device_type": 1,
+      "codeset": "7bf2a6c8b27b7b52"
+    }
+  }
+}

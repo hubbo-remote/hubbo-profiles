@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173111",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "42LB4D",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4afb7df38ee4f8e5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 7000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Ant",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Cable",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "RGB/PC",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "delay_ms": 1200
+        },
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/42LB4D.json"
+    ],
+    "harmony": {
+      "global_device_id": 173111,
+      "device_type": 1,
+      "codeset": "e1cf59d13c6d5673"
+    }
+  }
+}

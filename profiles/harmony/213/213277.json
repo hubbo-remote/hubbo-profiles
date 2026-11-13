@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:213277",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "NP305",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "3a328f469a1ddca4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Computer 1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "SVideo",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Computer 2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/NP305.json"
+    ],
+    "harmony": {
+      "global_device_id": 213277,
+      "device_type": 7,
+      "codeset": "ea6e6eb77d0af6f8"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121529",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "55-SBX59B",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e2fbfb7fd11a3f24",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 13000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Antenna B",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "Antenna A",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/55-SBX59B.json"
+    ],
+    "harmony": {
+      "global_device_id": 121529,
+      "device_type": 1,
+      "codeset": "6dba21347d5a81d3"
+    }
+  }
+}

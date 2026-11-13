@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:349073",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vizio",
+  "model": "SB3621n-E8",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d77089efa6986a0c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vizio/SB3621n-E8.json"
+    ],
+    "harmony": {
+      "global_device_id": 349073,
+      "device_type": 19,
+      "codeset": "3234b71471ee3d27"
+    }
+  }
+}

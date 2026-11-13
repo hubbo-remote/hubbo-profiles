@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116719",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "XV-THM303",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "08ca1dc728ced4f0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 0,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DBS",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/XV-THM303.json"
+    ],
+    "harmony": {
+      "global_device_id": 116719,
+      "device_type": 22,
+      "codeset": "b30972693746e9e6"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123067",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "AVR-2703",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0c206214bf5d0566",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/VDP",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV/DBS",
+      "steps": [
+        {
+          "command": "InputTvDbs"
+        }
+      ]
+    },
+    {
+      "name": "VCR-1",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/AVR-2703.json"
+    ],
+    "harmony": {
+      "global_device_id": 123067,
+      "device_type": 5,
+      "codeset": "6c4991df8597c770"
+    }
+  }
+}

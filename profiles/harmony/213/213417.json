@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:213417",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DEH-P4800MP",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ee26e6d3a07293a9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "TuneUp"
+        },
+        {
+          "command": "TuneDown"
+        }
+      ]
+    },
+    {
+      "name": "CD Player",
+      "steps": [
+        {
+          "command": "Source"
+        }
+      ]
+    },
+    {
+      "name": "aux 1",
+      "steps": [
+        {
+          "command": "Source"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DEH-P4800MP.json"
+    ],
+    "harmony": {
+      "global_device_id": 213417,
+      "device_type": 21,
+      "codeset": "f2509d5fc53c5597"
+    }
+  }
+}

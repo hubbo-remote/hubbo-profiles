@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182932",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RTD-315W",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "cec4217716a62833",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AudioIn",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RTD-315W.json"
+    ],
+    "harmony": {
+      "global_device_id": 182932,
+      "device_type": 22,
+      "codeset": "9b413597affce86f"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:55571",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PV-D5796",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "d32a550ca99a739c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Search"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PV-D5796.json"
+    ],
+    "harmony": {
+      "global_device_id": 55571,
+      "device_type": 25,
+      "codeset": "a463629965796891"
+    }
+  }
+}

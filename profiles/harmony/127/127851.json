@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "harmony:127851",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "L26W56W",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dfa4bef198391f7b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "TVComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/L26W56W.json"
+    ],
+    "harmony": {
+      "global_device_id": 127851,
+      "device_type": 1,
+      "codeset": "72c4dacfbb3035c8"
+    }
+  }
+}

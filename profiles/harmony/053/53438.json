@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "harmony:53438",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "P61310JX4",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "4"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputSatCable"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/P61310JX4.json"
+    ],
+    "harmony": {
+      "global_device_id": 53438,
+      "device_type": 1,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

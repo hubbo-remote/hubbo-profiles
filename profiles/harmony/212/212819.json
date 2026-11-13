@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212819",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "CA-NXPS1",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "83e0db4cd7bc277b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "USBMemory",
+      "steps": [
+        {
+          "command": "InputUSBMemory"
+        }
+      ]
+    },
+    {
+      "name": "USB/AUX",
+      "steps": [
+        {
+          "command": "InputUsbAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/CA-NXPS1.json"
+    ],
+    "harmony": {
+      "global_device_id": 212819,
+      "device_type": 21,
+      "codeset": "21b18fda6a2c8ed3"
+    }
+  }
+}

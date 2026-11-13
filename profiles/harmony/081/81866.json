@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:81866",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTS-3400D",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "4e5d3f02fab3c04b",
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTS-3400D.json"
+    ],
+    "harmony": {
+      "global_device_id": 81866,
+      "device_type": 22,
+      "codeset": "ed90fbeb8833b921"
+    }
+  }
+}

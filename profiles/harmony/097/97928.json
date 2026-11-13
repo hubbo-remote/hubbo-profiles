@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "harmony:97928",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HCD-FX500",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "500e702ea2a8772f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner FM",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Tuner AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "XM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HCD-FX500.json"
+    ],
+    "harmony": {
+      "global_device_id": 97928,
+      "device_type": 22,
+      "codeset": "e5dea04a282d4dfc"
+    }
+  }
+}

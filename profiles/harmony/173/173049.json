@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173049",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KDL-40X2000E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c87850860eb571b4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "Digital"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "Digital"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "AV5",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    },
+    {
+      "name": "AV6",
+      "steps": [
+        {
+          "command": "InputVideo6"
+        }
+      ]
+    },
+    {
+      "name": "AV7",
+      "steps": [
+        {
+          "command": "InputVideo7"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputVideo8"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KDL-40X2000E.json"
+    ],
+    "harmony": {
+      "global_device_id": 173049,
+      "device_type": 1,
+      "codeset": "08f0f920a98c48e8"
+    }
+  }
+}

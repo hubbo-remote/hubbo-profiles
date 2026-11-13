@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:152813",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Brookstone",
+  "model": "SongCube",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "22fc2289976fdbfa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "CD RIP",
+      "steps": [
+        {
+          "command": "InputCdRip"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Brookstone/SongCube.json"
+    ],
+    "harmony": {
+      "global_device_id": 152813,
+      "device_type": 21,
+      "codeset": "da2a8753f9f56855"
+    }
+  }
+}

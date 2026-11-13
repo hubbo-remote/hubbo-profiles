@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158295",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-397",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "cab67d05da93108d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-397.json"
+    ],
+    "harmony": {
+      "global_device_id": 158295,
+      "device_type": 5,
+      "codeset": "991023b6dd0f1d90"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153559",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "F27689",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputSatCable"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/F27689.json"
+    ],
+    "harmony": {
+      "global_device_id": 153559,
+      "device_type": 1,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

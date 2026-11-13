@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:67536",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "UMS 4100",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "19f2b1d43b8dec16",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/UMS_4100.json"
+    ],
+    "harmony": {
+      "global_device_id": 67536,
+      "device_type": 21,
+      "codeset": "11acef1637e1766e"
+    }
+  }
+}

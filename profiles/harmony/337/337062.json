@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:337062",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "DSH7",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "55a3f6e8bbc97cd3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "WiFi",
+      "steps": [
+        {
+          "command": "InputWifi"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "LG TV",
+      "steps": [
+        {
+          "command": "InputLgTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Portable",
+      "steps": [
+        {
+          "command": "InputPortable"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/DSH7.json"
+    ],
+    "harmony": {
+      "global_device_id": 337062,
+      "device_type": 19,
+      "codeset": "5206bb4fb9054351"
+    }
+  }
+}

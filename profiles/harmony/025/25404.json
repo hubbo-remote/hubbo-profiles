@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:25404",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GPX",
+  "model": "C1550",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "65aba5aa5312297b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Brightness"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Display"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "Setup"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GPX/C1550.json"
+    ],
+    "harmony": {
+      "global_device_id": 25404,
+      "device_type": 21,
+      "codeset": "58f0ad379ef90c02"
+    }
+  }
+}

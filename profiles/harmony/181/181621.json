@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181621",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "LT-32G80BU",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a0f2eab27f6cadea",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "E1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "E2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "E3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "E4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "E5",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/LT-32G80BU.json"
+    ],
+    "harmony": {
+      "global_device_id": 181621,
+      "device_type": 1,
+      "codeset": "30d363d160daa51d"
+    }
+  }
+}

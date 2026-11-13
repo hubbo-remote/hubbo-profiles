@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:349179",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Peachtree",
+  "model": "SonaDAC",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "bf0167657d4bab2b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial 1",
+      "steps": [
+        {
+          "command": "InputCoaxial1"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial 2",
+      "steps": [
+        {
+          "command": "InputCoaxial2"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Peachtree/SonaDAC.json"
+    ],
+    "harmony": {
+      "global_device_id": 349179,
+      "device_type": 19,
+      "codeset": "659912c34c2049b0"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111813",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "TX-S3079WH",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8f11e1ca15418331",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video1",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2V2"
+        }
+      ]
+    },
+    {
+      "name": "S.Mode",
+      "steps": [
+        {
+          "command": "InputAB"
+        }
+      ]
+    },
+    {
+      "name": "S-Video2",
+      "steps": [
+        {
+          "command": "InputSVideo2V2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/TX-S3079WH.json"
+    ],
+    "harmony": {
+      "global_device_id": 111813,
+      "device_type": 1,
+      "codeset": "506d3365b4d1bf86"
+    }
+  }
+}

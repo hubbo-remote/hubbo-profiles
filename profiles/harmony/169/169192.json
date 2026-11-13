@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169192",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "RDR-VXD655",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "4fd573cbb5b56908",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/RDR-VXD655.json"
+    ],
+    "harmony": {
+      "global_device_id": 169192,
+      "device_type": 47,
+      "codeset": "bd6b7676e8f2c8c6"
+    }
+  }
+}

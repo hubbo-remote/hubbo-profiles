@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139696",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-VP6904",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "89183a75201e6485",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-VP6904.json"
+    ],
+    "harmony": {
+      "global_device_id": 139696,
+      "device_type": 2,
+      "codeset": "3323b71ce0128452"
+    }
+  }
+}

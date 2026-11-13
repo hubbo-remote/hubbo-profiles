@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:18256",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "VSX-33TX",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ed74f5ada9f4965b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD-R/TAPE1/MD",
+      "steps": [
+        {
+          "command": "InputCdr"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR1/DVR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "VCR2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "TV/SAT",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD/LD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/VSX-33TX.json"
+    ],
+    "harmony": {
+      "global_device_id": 18256,
+      "device_type": 5,
+      "codeset": "eb501f77c3515b11"
+    }
+  }
+}

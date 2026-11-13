@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170249",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "SR-5003",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "73842926bdd0f45c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DSS",
+      "steps": [
+        {
+          "command": "InputDss"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "CDR",
+      "steps": [
+        {
+          "command": "InputCdr"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/SR-5003.json"
+    ],
+    "harmony": {
+      "global_device_id": 170249,
+      "device_type": 5,
+      "codeset": "f89ca1cebe80f453"
+    }
+  }
+}

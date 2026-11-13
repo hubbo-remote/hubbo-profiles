@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:25560",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MX-940",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "39d96f22c53fdbf1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MX-940.json"
+    ],
+    "harmony": {
+      "global_device_id": 25560,
+      "device_type": 22,
+      "codeset": "411dc37cc4f4285d"
+    }
+  }
+}

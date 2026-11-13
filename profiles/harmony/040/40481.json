@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40481",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aiwa",
+  "model": "AV-X120U",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ce7b559a6f10b7b6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTapeDeck"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux/TV",
+      "steps": [
+        {
+          "command": "InputVideo1DAT"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "InputVideo2Aux"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aiwa/AV-X120U.json"
+    ],
+    "harmony": {
+      "global_device_id": 40481,
+      "device_type": 5,
+      "codeset": "4283ed095c3fdbf8"
+    }
+  }
+}

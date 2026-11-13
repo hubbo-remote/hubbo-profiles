@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:17724",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NAD",
+  "model": "C420",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "0bded9d5621d6025",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "AM"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NAD/C420.json"
+    ],
+    "harmony": {
+      "global_device_id": 17724,
+      "device_type": 36,
+      "codeset": "d6a4169b3f941623"
+    }
+  }
+}

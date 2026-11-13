@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:497108",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vizio",
+  "model": "M21d-H8",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "93bef19e33df6a41",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "HDMI ARC",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vizio/M21d-H8.json"
+    ],
+    "harmony": {
+      "global_device_id": 497108,
+      "device_type": 19,
+      "codeset": "31092ac36dfe7d57"
+    }
+  }
+}

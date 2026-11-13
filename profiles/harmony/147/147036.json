@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147036",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "YHT-270",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0c281202f9da6197",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "V-AUX",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    },
+    {
+      "name": "D-TV/CBL",
+      "steps": [
+        {
+          "command": "InputDtvCbl"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "MD/CD-R",
+      "steps": [
+        {
+          "command": "InputMdCdr"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "6CH",
+      "steps": [
+        {
+          "command": "InputMultiChannel"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/YHT-270.json"
+    ],
+    "harmony": {
+      "global_device_id": 147036,
+      "device_type": 5,
+      "codeset": "79170af39c69adb4"
+    }
+  }
+}

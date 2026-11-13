@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "harmony:104789",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Emerson",
+  "model": "EWC-2724",
+  "kind": "tv_dvd_vcr",
+  "platform": "ir",
+  "codeset": "d0df26839dbfbb3c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Emerson/EWC-2724.json"
+    ],
+    "harmony": {
+      "global_device_id": 104789,
+      "device_type": 38,
+      "codeset": "558801620cc7077d"
+    }
+  }
+}

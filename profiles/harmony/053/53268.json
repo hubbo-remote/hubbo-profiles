@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:53268",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "VSX-908RDS-G",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ed74f5ada9f4965b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/SAT",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR 2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "VCR 1",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/VSX-908RDS-G.json"
+    ],
+    "harmony": {
+      "global_device_id": 53268,
+      "device_type": 5,
+      "codeset": "eb501f77c3515b11"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57946",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "RXD-F1",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "5bb761b39a27b3aa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/RXD-F1.json"
+    ],
+    "harmony": {
+      "global_device_id": 57946,
+      "device_type": 22,
+      "codeset": "25c00f13d1d5ddb0"
+    }
+  }
+}

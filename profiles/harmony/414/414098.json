@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:414098",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Atoll",
+  "model": "HD100",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0935ac86279eabf0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Line 1",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "Line 2",
+      "steps": [
+        {
+          "command": "InputLine2"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Atoll/HD100.json"
+    ],
+    "harmony": {
+      "global_device_id": 414098,
+      "device_type": 19,
+      "codeset": "4c061fd76154c7cc"
+    }
+  }
+}

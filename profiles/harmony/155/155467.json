@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155467",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Victor",
+  "model": "DLA-HD1",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "ad8597c3bbd9fdb7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 20000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "COMP.",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Victor/DLA-HD1.json"
+    ],
+    "harmony": {
+      "global_device_id": 155467,
+      "device_type": 7,
+      "codeset": "99cadce29ce3d265"
+    }
+  }
+}

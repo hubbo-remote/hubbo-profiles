@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:2336",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Quest",
+  "model": "QSR-1000",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e2ebca66ae69604f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Quest/QSR-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 2336,
+      "device_type": 5,
+      "codeset": "af3ad6124478cc06"
+    }
+  }
+}

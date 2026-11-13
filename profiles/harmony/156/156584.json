@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:156584",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hewlett Packard",
+  "model": "CPTOH-0609",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "590011285bf5beae",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner1"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hewlett_Packard/CPTOH-0609.json"
+    ],
+    "harmony": {
+      "global_device_id": 156584,
+      "device_type": 1,
+      "codeset": "89b0954c5d5210ef"
+    }
+  }
+}

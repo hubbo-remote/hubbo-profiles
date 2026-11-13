@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102381",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "AN-45T1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "908d1e97ea0170a0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "D1",
+      "steps": [
+        {
+          "command": "InputDigital1"
+        }
+      ]
+    },
+    {
+      "name": "D2",
+      "steps": [
+        {
+          "command": "InputDigital2"
+        }
+      ]
+    },
+    {
+      "name": "D3",
+      "steps": [
+        {
+          "command": "InputDigital3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/AN-45T1.json"
+    ],
+    "harmony": {
+      "global_device_id": 102381,
+      "device_type": 19,
+      "codeset": "a49b365499f32328"
+    }
+  }
+}

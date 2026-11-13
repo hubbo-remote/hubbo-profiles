@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:3371",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "SU-A700",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c20bb09f451ce43b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tape2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/SU-A700.json"
+    ],
+    "harmony": {
+      "global_device_id": 3371,
+      "device_type": 19,
+      "codeset": "3e2b74a331288e4d"
+    }
+  }
+}

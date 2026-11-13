@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150336",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "General Electric",
+  "model": "11-8060A",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0494452cd752cb0d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/General_Electric/11-8060A.json"
+    ],
+    "harmony": {
+      "global_device_id": 150336,
+      "device_type": 21,
+      "codeset": "24ba95bc0ca4da77"
+    }
+  }
+}

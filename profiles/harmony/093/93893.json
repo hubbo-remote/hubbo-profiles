@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:93893",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVP721VR/00",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "b3eff0875d4dc0fc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVP721VR_00.json"
+    ],
+    "harmony": {
+      "global_device_id": 93893,
+      "device_type": 25,
+      "codeset": "eabc4b42244a9d9c"
+    }
+  }
+}

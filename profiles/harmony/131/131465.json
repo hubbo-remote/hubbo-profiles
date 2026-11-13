@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:131465",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "LBT-XB20",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "730ac8f50f2bba9a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "Function"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/LBT-XB20.json"
+    ],
+    "harmony": {
+      "global_device_id": 131465,
+      "device_type": 21,
+      "codeset": "1a29a5702871fbe3"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181058",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-496",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9b7d95b465ec5fb3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-496.json"
+    ],
+    "harmony": {
+      "global_device_id": 181058,
+      "device_type": 5,
+      "codeset": "80b8927c0f2b6102"
+    }
+  }
+}

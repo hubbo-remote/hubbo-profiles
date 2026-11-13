@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:70809",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RTD-255",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "7839b3a64416e202",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RTD-255.json"
+    ],
+    "harmony": {
+      "global_device_id": 70809,
+      "device_type": 22,
+      "codeset": "63f43997755daffa"
+    }
+  }
+}

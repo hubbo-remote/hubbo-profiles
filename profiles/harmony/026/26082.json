@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:26082",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Maplin",
+  "model": "L63AB",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "03a76f764fe1bdf9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "CATV",
+      "steps": [
+        {
+          "command": "InputCatv"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Sat",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Maplin/L63AB.json"
+    ],
+    "harmony": {
+      "global_device_id": 26082,
+      "device_type": 30,
+      "codeset": "dec0d3c73ff1ae6b"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123074",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Jwin",
+  "model": "JX-CD3400",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "11c858a57e00a2e3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Jwin/JX-CD3400.json"
+    ],
+    "harmony": {
+      "global_device_id": 123074,
+      "device_type": 21,
+      "codeset": "08eae0261af5af92"
+    }
+  }
+}

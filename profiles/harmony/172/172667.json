@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172667",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "AV-32820",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "973f971513aa63b5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video-1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/AV-32820.json"
+    ],
+    "harmony": {
+      "global_device_id": 172667,
+      "device_type": 1,
+      "codeset": "a43f86123c7686ba"
+    }
+  }
+}

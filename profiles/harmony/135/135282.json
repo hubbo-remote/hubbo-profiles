@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135282",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Psyclone",
+  "model": "PSC-99",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e39e19ec2427c5a6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "PSP",
+      "steps": [
+        {
+          "command": "InputPsp"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Psyclone/PSC-99.json"
+    ],
+    "harmony": {
+      "global_device_id": 135282,
+      "device_type": 35,
+      "codeset": "5e430b3ae8a85ec5"
+    }
+  }
+}

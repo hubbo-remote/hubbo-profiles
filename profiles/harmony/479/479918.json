@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:479918",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MonoPrice",
+  "model": "SB-200",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "dbaa468721153ea0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "Bluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "HDMI ARC",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MonoPrice/SB-200.json"
+    ],
+    "harmony": {
+      "global_device_id": 479918,
+      "device_type": 19,
+      "codeset": "594de57e7b01a02e"
+    }
+  }
+}

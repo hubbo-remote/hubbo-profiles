@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202358",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "Z19LCD3-UA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7f2cc7dfa8c44c74",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "RGB-PC",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/Z19LCD3-UA.json"
+    ],
+    "harmony": {
+      "global_device_id": 202358,
+      "device_type": 1,
+      "codeset": "49f1b743de79a141"
+    }
+  }
+}

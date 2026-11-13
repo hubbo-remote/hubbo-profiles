@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336673",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Twin-Star International",
+  "model": "TS-1206",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9e445061315be650",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Twin-Star_International/TS-1206.json"
+    ],
+    "harmony": {
+      "global_device_id": 336673,
+      "device_type": 19,
+      "codeset": "d4c76574c0d6c5b7"
+    }
+  }
+}

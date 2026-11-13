@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273111",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTL2101A/79",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9056576918fac723",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AudioIn",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTL2101A_79.json"
+    ],
+    "harmony": {
+      "global_device_id": 273111,
+      "device_type": 19,
+      "codeset": "3ce3e4d38358573f"
+    }
+  }
+}

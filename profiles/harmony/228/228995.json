@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:228995",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "CT-2196-T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7e45bea15e4f07f7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/CT-2196-T.json"
+    ],
+    "harmony": {
+      "global_device_id": 228995,
+      "device_type": 1,
+      "codeset": "b9765de045afcfc4"
+    }
+  }
+}

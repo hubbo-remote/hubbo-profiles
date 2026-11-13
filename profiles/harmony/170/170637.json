@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170637",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KV-29E1D",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f3db642c0adae72d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "YC2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "YC3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KV-29E1D.json"
+    ],
+    "harmony": {
+      "global_device_id": 170637,
+      "device_type": 1,
+      "codeset": "80ad28d46729bf3a"
+    }
+  }
+}

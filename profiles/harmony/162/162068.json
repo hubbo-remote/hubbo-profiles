@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162068",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Gradiente",
+  "model": "HTS-100",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "4882362a25923a63",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Gradiente/HTS-100.json"
+    ],
+    "harmony": {
+      "global_device_id": 162068,
+      "device_type": 22,
+      "codeset": "fdea55d3f0c63270"
+    }
+  }
+}

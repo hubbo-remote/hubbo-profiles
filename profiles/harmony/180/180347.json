@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180347",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Advance Acoustic",
+  "model": "MPP-206",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d8356576630fae96",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Advance_Acoustic/MPP-206.json"
+    ],
+    "harmony": {
+      "global_device_id": 180347,
+      "device_type": 19,
+      "codeset": "b2febecf94b628ae"
+    }
+  }
+}

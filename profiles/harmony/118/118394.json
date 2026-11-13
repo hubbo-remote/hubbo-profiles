@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118394",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "AV-32X35HUE",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a23b3b00d4d9328f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 9000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "E1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "E2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "E3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "E4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/AV-32X35HUE.json"
+    ],
+    "harmony": {
+      "global_device_id": 118394,
+      "device_type": 1,
+      "codeset": "4aa23c9dc04fab6c"
+    }
+  }
+}

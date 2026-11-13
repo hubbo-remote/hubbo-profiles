@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "id": "harmony:140898",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "P50H4011A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "be9b913ae2d6ac8b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 2000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Input-Front",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI-Front",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Air/Cable",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/P50H4011A.json"
+    ],
+    "harmony": {
+      "global_device_id": 140898,
+      "device_type": 1,
+      "codeset": "0ee98237f6bb88e5"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:10545",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Audio Innovations",
+  "model": "Alto AM1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "146218e770da43b2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape Mon",
+      "steps": [
+        {
+          "command": "InputTapeMon"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Audio_Innovations/Alto_AM1.json"
+    ],
+    "harmony": {
+      "global_device_id": 10545,
+      "device_type": 19,
+      "codeset": "67691e8aa56b6bdf"
+    }
+  }
+}

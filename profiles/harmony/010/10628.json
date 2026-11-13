@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:10628",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Linn",
+  "model": "Wakonda",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "90d1aafc6e7f1802",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Phono/Aux 2",
+      "steps": [
+        {
+          "command": "Input10"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Linn/Wakonda.json"
+    ],
+    "harmony": {
+      "global_device_id": 10628,
+      "device_type": 19,
+      "codeset": "dffb5926579390ff"
+    }
+  }
+}

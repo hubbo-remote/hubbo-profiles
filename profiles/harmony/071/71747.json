@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:71747",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RP-9340",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "9f545df6cdc58d56",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RP-9340.json"
+    ],
+    "harmony": {
+      "global_device_id": 71747,
+      "device_type": 22,
+      "codeset": "36f20212babdcded"
+    }
+  }
+}

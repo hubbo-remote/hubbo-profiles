@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:159707",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panamax",
+  "model": "M5500-EX",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "1d03a0c0a2d261cd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "InputHdmi1"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Component 3",
+      "steps": [
+        {
+          "command": "InputComponent3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panamax/M5500-EX.json"
+    ],
+    "harmony": {
+      "global_device_id": 159707,
+      "device_type": 30,
+      "codeset": "dda509295c10c930"
+    }
+  }
+}

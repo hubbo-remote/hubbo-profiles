@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "harmony:70728",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LXI",
+  "model": "580.55127790",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "cdd9dee6e7fe8042",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna/Cable",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LXI/580.55127790.json"
+    ],
+    "harmony": {
+      "global_device_id": 70728,
+      "device_type": 15,
+      "codeset": "f30f0f0d8bab4418"
+    }
+  }
+}

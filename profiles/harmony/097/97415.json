@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:97415",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eycos",
+  "model": "E800SF",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "928612e76af44b4f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "Exit"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eycos/E800SF.json"
+    ],
+    "harmony": {
+      "global_device_id": 97415,
+      "device_type": 16,
+      "codeset": "f9f81eae700f6e94"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:134783",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "D-1LA",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "d36851e3de2ddeb9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Comp",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/D-1LA.json"
+    ],
+    "harmony": {
+      "global_device_id": 134783,
+      "device_type": 7,
+      "codeset": "48a86b556b2d42b0"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137084",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Victor",
+  "model": "MX-S55MD",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "fb2162ab6a488261",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Victor/MX-S55MD.json"
+    ],
+    "harmony": {
+      "global_device_id": 137084,
+      "device_type": 21,
+      "codeset": "c4650ca5587b7e3f"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58684",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EMP-3500",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1d5cbfdaebd2b6fb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EMP-3500.json"
+    ],
+    "harmony": {
+      "global_device_id": 58684,
+      "device_type": 7,
+      "codeset": "3a4676e7caaab82f"
+    }
+  }
+}

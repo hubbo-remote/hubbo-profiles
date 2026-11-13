@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:16838",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hauppauge",
+  "model": "WinTV-PVR-500MCE",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "6092ffcead96bb85",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hauppauge/WinTV-PVR-500MCE.json"
+    ],
+    "harmony": {
+      "global_device_id": 16838,
+      "device_type": 18,
+      "codeset": "e3ebe7a61383bea8"
+    }
+  }
+}

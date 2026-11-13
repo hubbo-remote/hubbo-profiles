@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202916",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Muvid",
+  "model": "MC-DVD 3062",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "ac0e85088ff08be7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Muvid/MC-DVD_3062.json"
+    ],
+    "harmony": {
+      "global_device_id": 202916,
+      "device_type": 22,
+      "codeset": "b1e4462bb01a9e53"
+    }
+  }
+}

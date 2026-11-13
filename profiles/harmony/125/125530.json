@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:125530",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "MFM-HT25",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ee109f392b83b901",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "PC 1",
+      "steps": [
+        {
+          "command": "InputPc1"
+        }
+      ]
+    },
+    {
+      "name": "PC 2",
+      "steps": [
+        {
+          "command": "InputPc2"
+        }
+      ]
+    },
+    {
+      "name": "Video 1/2",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/MFM-HT25.json"
+    ],
+    "harmony": {
+      "global_device_id": 125530,
+      "device_type": 13,
+      "codeset": "3b94838d92fa1bac"
+    }
+  }
+}

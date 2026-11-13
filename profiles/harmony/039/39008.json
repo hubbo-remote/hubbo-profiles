@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "harmony:39008",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "T+A",
+  "model": "R-1520R",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "51243193ef8703d9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2300
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV/STB",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/T_A/R-1520R.json"
+    ],
+    "harmony": {
+      "global_device_id": 39008,
+      "device_type": 5,
+      "codeset": "f63704393f641ae6"
+    }
+  }
+}

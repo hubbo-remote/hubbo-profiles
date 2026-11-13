@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:392323",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hama",
+  "model": "DT60",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "796475b273035a86",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DAB/FM",
+      "steps": [
+        {
+          "command": "InputDabFm"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "Bluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hama/DT60.json"
+    ],
+    "harmony": {
+      "global_device_id": 392323,
+      "device_type": 36,
+      "codeset": "ae59eaa65ed9798b"
+    }
+  }
+}

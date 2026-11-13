@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:264049",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SignalMAX",
+  "model": "DSR-3190SM",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "2eb449521b0bc844",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SignalMAX/DSR-3190SM.json"
+    ],
+    "harmony": {
+      "global_device_id": 264049,
+      "device_type": 16,
+      "codeset": "4cb4503a25792c3b"
+    }
+  }
+}

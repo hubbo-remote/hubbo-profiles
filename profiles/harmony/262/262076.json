@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "harmony:262076",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "50L2400U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5b29ea63a0d0c67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ANT/CABLE",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "ColorStream HD",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/50L2400U.json"
+    ],
+    "harmony": {
+      "global_device_id": 262076,
+      "device_type": 1,
+      "codeset": "2672bd41d3f9f265"
+    }
+  }
+}

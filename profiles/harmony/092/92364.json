@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:92364",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "YHT-370",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9cd3e79fab205a6f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "MD/CDR",
+      "steps": [
+        {
+          "command": "InputCdMd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner2"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DTV/Cbl",
+      "steps": [
+        {
+          "command": "InputTvDbs"
+        }
+      ]
+    },
+    {
+      "name": "DVR",
+      "steps": [
+        {
+          "command": "InputDvrVcr2"
+        }
+      ]
+    },
+    {
+      "name": "V-Aux",
+      "steps": [
+        {
+          "command": "InputVAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/YHT-370.json"
+    ],
+    "harmony": {
+      "global_device_id": 92364,
+      "device_type": 5,
+      "codeset": "b8db576dcb1eab08"
+    }
+  }
+}

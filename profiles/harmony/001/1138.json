@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:1138",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "YST-99CD",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "47070b94ae13b0e5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "aux a",
+      "steps": [
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "aux b",
+      "steps": [
+        {
+          "command": "5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/YST-99CD.json"
+    ],
+    "harmony": {
+      "global_device_id": 1138,
+      "device_type": 21,
+      "codeset": "59289ecd173a8d35"
+    }
+  }
+}

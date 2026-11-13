@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180104",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ILO",
+  "model": "LCT-32HA36",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b39e70c043dcbd71",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "ChannelUp"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 2500,
+    "ir_repeats": 1
+  },
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ILO/LCT-32HA36.json"
+    ],
+    "harmony": {
+      "global_device_id": 180104,
+      "device_type": 1,
+      "codeset": "54def3ac86eabbd5"
+    }
+  }
+}

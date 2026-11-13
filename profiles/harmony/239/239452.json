@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:239452",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SilverCrest",
+  "model": "SSR 576 A1",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "fcdac40b4ebe3f70",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SilverCrest/SSR_576_A1.json"
+    ],
+    "harmony": {
+      "global_device_id": 239452,
+      "device_type": 16,
+      "codeset": "6b8c3c41828d3cbe"
+    }
+  }
+}

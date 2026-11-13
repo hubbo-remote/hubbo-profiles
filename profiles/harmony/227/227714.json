@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:227714",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Advance Acoustic",
+  "model": "MAP-306",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "94d1fa0c00e67161",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner/PC",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Aux 1/Aux 2",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Advance_Acoustic/MAP-306.json"
+    ],
+    "harmony": {
+      "global_device_id": 227714,
+      "device_type": 19,
+      "codeset": "2d20ad8d8e0d0e8c"
+    }
+  }
+}

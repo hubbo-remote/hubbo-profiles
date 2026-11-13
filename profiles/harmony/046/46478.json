@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:46478",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "PB-6240",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f8692a529d7b184c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/PB-6240.json"
+    ],
+    "harmony": {
+      "global_device_id": 46478,
+      "device_type": 7,
+      "codeset": "256c4ff162379578"
+    }
+  }
+}

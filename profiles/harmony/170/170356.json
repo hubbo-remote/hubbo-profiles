@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170356",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FA911/00S",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "53d9cfd18c2c8577",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FA911_00S.json"
+    ],
+    "harmony": {
+      "global_device_id": 170356,
+      "device_type": 5,
+      "codeset": "c93bde8f278fdbbb"
+    }
+  }
+}

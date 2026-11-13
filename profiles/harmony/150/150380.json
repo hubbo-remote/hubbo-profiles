@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150380",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "W9000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "c48e36021c086731",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComp1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComp2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "RGB HD",
+      "steps": [
+        {
+          "command": "InputRgbHd"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/W9000.json"
+    ],
+    "harmony": {
+      "global_device_id": 150380,
+      "device_type": 7,
+      "codeset": "55dcdaf8a5eba31d"
+    }
+  }
+}

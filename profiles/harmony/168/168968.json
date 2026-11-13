@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168968",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "STR-KG700",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0f4ce2c1d7b75421",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DMPORT",
+      "steps": [
+        {
+          "command": "DmPort"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD/BD",
+      "steps": [
+        {
+          "command": "InputDvdBd"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "SA-CD/CD",
+      "steps": [
+        {
+          "command": "InputSaCdCd"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/STR-KG700.json"
+    ],
+    "harmony": {
+      "global_device_id": 168968,
+      "device_type": 5,
+      "codeset": "e09251aa846cbdcc"
+    }
+  }
+}

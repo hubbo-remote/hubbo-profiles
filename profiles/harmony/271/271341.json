@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:271341",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Musical Fidelity",
+  "model": "m6DAC",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c01829cd183e56ad",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb192"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial 1",
+      "steps": [
+        {
+          "command": "InputCoax1"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial 2",
+      "steps": [
+        {
+          "command": "InputCoax2"
+        }
+      ]
+    },
+    {
+      "name": "AES",
+      "steps": [
+        {
+          "command": "InputAes"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Musical_Fidelity/m6DAC.json"
+    ],
+    "harmony": {
+      "global_device_id": 271341,
+      "device_type": 19,
+      "codeset": "cbe137efaef5734d"
+    }
+  }
+}

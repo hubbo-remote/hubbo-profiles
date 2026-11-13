@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:64924",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "PDP-1110",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ce06699b3ebffb1c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/PDP-1110.json"
+    ],
+    "harmony": {
+      "global_device_id": 64924,
+      "device_type": 1,
+      "codeset": "d0d6f272bb61077f"
+    }
+  }
+}

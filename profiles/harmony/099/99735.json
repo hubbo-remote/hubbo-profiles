@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:99735",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GigaByte",
+  "model": "H663",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "14ab30a345815413",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RecordedTv",
+      "steps": [
+        {
+          "command": "RecordedTV"
+        }
+      ]
+    },
+    {
+      "name": "LiveTv",
+      "steps": [
+        {
+          "command": "Live"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GigaByte/H663.json"
+    ],
+    "harmony": {
+      "global_device_id": 99735,
+      "device_type": 35,
+      "codeset": "bed59aa75555a588"
+    }
+  }
+}

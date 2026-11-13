@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12409",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "RX-DV31SL",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "08ca1dc728ced4f0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DBS",
+      "steps": [
+        {
+          "command": "InputTVDSS"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CDR",
+      "steps": [
+        {
+          "command": "InputCdr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/RX-DV31SL.json"
+    ],
+    "harmony": {
+      "global_device_id": 12409,
+      "device_type": 22,
+      "codeset": "b30972693746e9e6"
+    }
+  }
+}

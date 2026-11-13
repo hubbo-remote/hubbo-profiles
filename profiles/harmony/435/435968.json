@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:435968",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TechniSat",
+  "model": "DIGITRADIO 360 CD",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "7e56aae5de078d20",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "FM/DAB",
+      "steps": [
+        {
+          "command": "InputFmDab"
+        }
+      ]
+    },
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TechniSat/DIGITRADIO_360_CD.json"
+    ],
+    "harmony": {
+      "global_device_id": 435968,
+      "device_type": 21,
+      "codeset": "c0e91d765b3e016f"
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167020",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "26PFL7532D",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e105f7667ad6ccf7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 14000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "EXT 2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "EXT 3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "EXT 4",
+      "steps": [
+        {
+          "command": "InputExt3"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Digital TV",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/26PFL7532D.json"
+    ],
+    "harmony": {
+      "global_device_id": 167020,
+      "device_type": 1,
+      "codeset": "f4f4661af2b0ff07"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:301650",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "49LH5100",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cbcfcd22c55b5367",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/49LH5100.json"
+    ],
+    "harmony": {
+      "global_device_id": 301650,
+      "device_type": 1,
+      "codeset": "d6b2521989b82363"
+    }
+  }
+}

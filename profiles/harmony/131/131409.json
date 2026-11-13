@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:131409",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Arcam",
+  "model": "AVR-350 (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "d621fe71c825c0b3",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Arcam/AVR-350_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 131409,
+      "device_type": 5,
+      "codeset": "5a888f20258273f0"
+    }
+  }
+}

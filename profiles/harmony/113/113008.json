@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:113008",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-E810",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "004b28c92dae30bd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape/MD",
+      "steps": [
+        {
+          "command": "InputTapeMd"
+        }
+      ]
+    },
+    {
+      "name": "Aux/Tv",
+      "steps": [
+        {
+          "command": "InputAuxTv"
+        }
+      ]
+    },
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-E810.json"
+    ],
+    "harmony": {
+      "global_device_id": 113008,
+      "device_type": 5,
+      "codeset": "1fe0b89d837e0065"
+    }
+  }
+}

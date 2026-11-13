@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:77384",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "VHR-775E",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "accd71c54fee8fef",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/VHR-775E.json"
+    ],
+    "harmony": {
+      "global_device_id": 77384,
+      "device_type": 25,
+      "codeset": "8cc9d269119b8903"
+    }
+  }
+}

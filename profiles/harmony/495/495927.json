@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:495927",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "WOHOME",
+  "model": "S9910",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "1fd2ab5bd554d848",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "BTDisc",
+      "steps": [
+        {
+          "command": "InputBTDisc"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/WOHOME/S9910.json"
+    ],
+    "harmony": {
+      "global_device_id": 495927,
+      "device_type": 19,
+      "codeset": "d68709cdea5a4182"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101641",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "WAC700/05",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "b34bc775b05add03",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Center",
+      "steps": [
+        {
+          "command": "InputCenter"
+        }
+      ]
+    },
+    {
+      "name": "Tuner/Aux",
+      "steps": [
+        {
+          "command": "InputTunerAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/WAC700_05.json"
+    ],
+    "harmony": {
+      "global_device_id": 101641,
+      "device_type": 33,
+      "codeset": "edc3e032d3bea56e"
+    }
+  }
+}

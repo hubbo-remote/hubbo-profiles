@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "harmony:18883",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Anthem",
+  "model": "AVM-20 (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "1ae3988e2438e3bc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "6-Ch",
+      "steps": [
+        {
+          "command": "Input6Ch"
+        }
+      ]
+    },
+    {
+      "name": "2-Ch",
+      "steps": [
+        {
+          "command": "Input2Ch"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Anthem/AVM-20_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 18883,
+      "device_type": 5,
+      "codeset": "fc725e2c568d5086"
+    }
+  }
+}

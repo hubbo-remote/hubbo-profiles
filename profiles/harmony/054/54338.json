@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:54338",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "GV-450",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "dbb71df01fa06213",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputAntenna"
+        }
+      ]
+    },
+    {
+      "name": "Line In (Scart)",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/GV-450.json"
+    ],
+    "harmony": {
+      "global_device_id": 54338,
+      "device_type": 2,
+      "codeset": "2c8f7c04208aa295"
+    }
+  }
+}

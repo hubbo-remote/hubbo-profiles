@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150856",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Funai",
+  "model": "H4D-D4482DB",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "2a259ceb9c8151b9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Funai/H4D-D4482DB.json"
+    ],
+    "harmony": {
+      "global_device_id": 150856,
+      "device_type": 34,
+      "codeset": "8c87a0b4e241491a"
+    }
+  }
+}

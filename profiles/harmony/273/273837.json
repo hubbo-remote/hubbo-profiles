@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273837",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "ZS-RS09CP",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "608a5c583997f9e5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "Operate"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputBand"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/ZS-RS09CP.json"
+    ],
+    "harmony": {
+      "global_device_id": 273837,
+      "device_type": 21,
+      "codeset": "7e489209f328ccea"
+    }
+  }
+}

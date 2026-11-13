@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102878",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "XL5950U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "e35af41c6e7089ee",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 60000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/XL5950U.json"
+    ],
+    "harmony": {
+      "global_device_id": 102878,
+      "device_type": 7,
+      "codeset": "4bafe7dfcc51202b"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:65618",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cyrus",
+  "model": "ACA-7.5",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e436f8ca34d74756",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cyrus/ACA-7.5.json"
+    ],
+    "harmony": {
+      "global_device_id": 65618,
+      "device_type": 19,
+      "codeset": "7577f49442e050ca"
+    }
+  }
+}

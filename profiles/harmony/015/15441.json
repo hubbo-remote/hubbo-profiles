@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:15441",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "STR-DE215",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "5c7d6c0ecd3d7fa6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Tape/MD",
+      "steps": [
+        {
+          "command": "InputTapeMD"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/STR-DE215.json"
+    ],
+    "harmony": {
+      "global_device_id": 15441,
+      "device_type": 5,
+      "codeset": "0c7fccd64ef778a4"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:391810",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vivitek",
+  "model": "HK2299",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "2b58a201317d1bbc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vivitek/HK2299.json"
+    ],
+    "harmony": {
+      "global_device_id": 391810,
+      "device_type": 7,
+      "codeset": "67ef6f82716aafd7"
+    }
+  }
+}

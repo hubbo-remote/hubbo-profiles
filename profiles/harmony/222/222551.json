@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:222551",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Arvani",
+  "model": "TA210",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ae15d085ab718fba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "IN",
+      "steps": [
+        {
+          "command": "InputIN"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Arvani/TA210.json"
+    ],
+    "harmony": {
+      "global_device_id": 222551,
+      "device_type": 19,
+      "codeset": "d24e79a8655603a3"
+    }
+  }
+}

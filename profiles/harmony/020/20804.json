@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:20804",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Akai",
+  "model": "AC-M55",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "3775530af17f016e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Akai/AC-M55.json"
+    ],
+    "harmony": {
+      "global_device_id": 20804,
+      "device_type": 21,
+      "codeset": "09f7ea5a924347f5"
+    }
+  }
+}

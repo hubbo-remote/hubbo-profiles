@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:36750",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-S3902U",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "f9ccdb9dfb0f24b2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "L-1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Enter"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "F-1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Enter"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-S3902U.json"
+    ],
+    "harmony": {
+      "global_device_id": 36750,
+      "device_type": 2,
+      "codeset": "0a27841f961215a2"
+    }
+  }
+}

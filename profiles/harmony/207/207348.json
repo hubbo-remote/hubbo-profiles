@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:207348",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "System Fidelity",
+  "model": "SA-270",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "34476f8aace7513d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX1/2",
+      "steps": [
+        {
+          "command": "InputAux12"
+        }
+      ]
+    },
+    {
+      "name": "MP4/iPod",
+      "steps": [
+        {
+          "command": "InputMP4IPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/System_Fidelity/SA-270.json"
+    ],
+    "harmony": {
+      "global_device_id": 207348,
+      "device_type": 19,
+      "codeset": "b27de42babfe80e9"
+    }
+  }
+}

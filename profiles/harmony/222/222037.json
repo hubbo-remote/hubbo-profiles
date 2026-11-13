@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:222037",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "NP3700/12",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "7af148a2c3357aba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "Library",
+      "steps": [
+        {
+          "command": "InputLibrary"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Online Services",
+      "steps": [
+        {
+          "command": "InputOnlineServices"
+        }
+      ]
+    },
+    {
+      "name": "Docking",
+      "steps": [
+        {
+          "command": "InputDocking"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/NP3700_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 222037,
+      "device_type": 33,
+      "codeset": "6126d50f68585f9e"
+    }
+  }
+}

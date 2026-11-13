@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:271326",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "SB3950E1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "759b13b98fdc8937",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/SB3950E1.json"
+    ],
+    "harmony": {
+      "global_device_id": 271326,
+      "device_type": 19,
+      "codeset": "a0b88b397ffe3964"
+    }
+  }
+}

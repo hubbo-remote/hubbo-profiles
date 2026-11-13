@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:230777",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "CSS2123/12",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c7c0ac4535ea6b82",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "MusiciLink",
+      "steps": [
+        {
+          "command": "InputMusiciLink"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/CSS2123_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 230777,
+      "device_type": 19,
+      "codeset": "f95cb285bf3e1cdc"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258592",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "50L1450U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b492baae5dce5141",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ANT/CABLE",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "ColorStream HD",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/50L1450U.json"
+    ],
+    "harmony": {
+      "global_device_id": 258592,
+      "device_type": 1,
+      "codeset": "2e6075c0c4b5c630"
+    }
+  }
+}

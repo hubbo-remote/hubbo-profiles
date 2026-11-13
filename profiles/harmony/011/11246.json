@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "harmony:11246",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Akira",
+  "model": "EPM-600",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "598e9441b6b37786",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputStart"
+        },
+        {
+          "command": "InputSVideo"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputStart"
+        },
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputStart"
+        },
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputStart"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputStart"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Akira/EPM-600.json"
+    ],
+    "harmony": {
+      "global_device_id": 11246,
+      "device_type": 13,
+      "codeset": "2ce55007788dc6ba"
+    }
+  }
+}

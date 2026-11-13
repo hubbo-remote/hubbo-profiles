@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260727",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "EM42FTR",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "db175341f83abc57",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/MHL",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "NumberEnter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/EM42FTR.json"
+    ],
+    "harmony": {
+      "global_device_id": 260727,
+      "device_type": 1,
+      "codeset": "8086f7a2f98937f7"
+    }
+  }
+}

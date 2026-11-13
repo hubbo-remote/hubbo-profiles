@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:253694",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Apex",
+  "model": "ASB-800",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "76e682d42bae3873",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Apex/ASB-800.json"
+    ],
+    "harmony": {
+      "global_device_id": 253694,
+      "device_type": 19,
+      "codeset": "fb953a5566ad9a9e"
+    }
+  }
+}

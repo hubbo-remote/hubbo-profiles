@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:92520",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Advance",
+  "model": "HCS-2000I",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "ffda59fe12ac6324",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "Select"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Advance/HCS-2000I.json"
+    ],
+    "harmony": {
+      "global_device_id": 92520,
+      "device_type": 7,
+      "codeset": "d467d57aad52b6d8"
+    }
+  }
+}

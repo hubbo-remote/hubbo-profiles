@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165986",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "L-37V01",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "28bd125f2240faf6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TVDTT"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "InputAv4"
+        }
+      ]
+    },
+    {
+      "name": "AV5",
+      "steps": [
+        {
+          "command": "InputAv5"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/L-37V01.json"
+    ],
+    "harmony": {
+      "global_device_id": 165986,
+      "device_type": 1,
+      "codeset": "17ae4834e39da4cc"
+    }
+  }
+}

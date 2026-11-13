@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "harmony:151689",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "CCA132AT01",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "6ed9dcc759b3363e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/CCA132AT01.json"
+    ],
+    "harmony": {
+      "global_device_id": 151689,
+      "device_type": 15,
+      "codeset": "b7bf9558218fa9f0"
+    }
+  }
+}

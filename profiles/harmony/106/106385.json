@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:106385",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "SR-DVM700U",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "3d79ddd97c5f0dc1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DV",
+      "steps": [
+        {
+          "command": "InputDv"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTvVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/SR-DVM700U.json"
+    ],
+    "harmony": {
+      "global_device_id": 106385,
+      "device_type": 34,
+      "codeset": "ad170658e248a5db"
+    }
+  }
+}

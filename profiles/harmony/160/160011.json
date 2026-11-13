@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:160011",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Microsoft",
+  "model": "A9O-00009",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d45342b092570265",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "Live TV",
+      "steps": [
+        {
+          "command": "LiveTv"
+        }
+      ]
+    },
+    {
+      "name": "Recorded TV",
+      "steps": [
+        {
+          "command": "RecordedTV"
+        }
+      ]
+    },
+    {
+      "name": "Guide",
+      "steps": [
+        {
+          "command": "Guide"
+        }
+      ]
+    },
+    {
+      "name": "Dvd Menu",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Microsoft/A9O-00009.json"
+    ],
+    "harmony": {
+      "global_device_id": 160011,
+      "device_type": 35,
+      "codeset": "c14a1578ae534a3e"
+    }
+  }
+}

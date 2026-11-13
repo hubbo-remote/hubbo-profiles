@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101413",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GrandTec",
+  "model": "GVC-1000",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "80c2f9d94b778896",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GrandTec/GVC-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 101413,
+      "device_type": 30,
+      "codeset": "06fee3fade9e3713"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251951",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nubert",
+  "model": "OdinTest1101",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a6b5e20cc07ee3c7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nubert/OdinTest1101.json"
+    ],
+    "harmony": {
+      "global_device_id": 251951,
+      "device_type": 1,
+      "codeset": "ec0f11ded657bd17"
+    }
+  }
+}

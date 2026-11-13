@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:228832",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "CSS5123/12",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d127fc391efe8c47",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/CSS5123_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 228832,
+      "device_type": 19,
+      "codeset": "0ca040b233dfa240"
+    }
+  }
+}

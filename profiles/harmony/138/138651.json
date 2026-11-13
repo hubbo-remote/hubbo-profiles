@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138651",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pace",
+  "model": "TDS-470W",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "a39d0a02a0734be6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Sky",
+      "steps": [
+        {
+          "command": "InputSky"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pace/TDS-470W.json"
+    ],
+    "harmony": {
+      "global_device_id": 138651,
+      "device_type": 18,
+      "codeset": "3947ca34e3f9c860"
+    }
+  }
+}

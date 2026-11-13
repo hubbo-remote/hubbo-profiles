@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267397",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "UDA-1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "dbe7da861c401c15",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "USB Rear",
+      "steps": [
+        {
+          "command": "InputUsbRear"
+        }
+      ]
+    },
+    {
+      "name": "USB Front",
+      "steps": [
+        {
+          "command": "InputUsbFront"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/UDA-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 267397,
+      "device_type": 19,
+      "codeset": "7d40246939667425"
+    }
+  }
+}

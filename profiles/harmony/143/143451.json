@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143451",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mx Onda",
+  "model": "MX-MCP886",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "39e858bd4b26ed27",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mx_Onda/MX-MCP886.json"
+    ],
+    "harmony": {
+      "global_device_id": 143451,
+      "device_type": 21,
+      "codeset": "71c1dd8487148677"
+    }
+  }
+}

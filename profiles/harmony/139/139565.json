@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139565",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "LT-47DV8",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5062029203a54b96",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Ext 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Ext 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Ext 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/LT-47DV8.json"
+    ],
+    "harmony": {
+      "global_device_id": 139565,
+      "device_type": 1,
+      "codeset": "27c502b599174a1e"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:76970",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Luxman",
+  "model": "T-007",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6a225a1cab52d6bc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DAT",
+      "steps": [
+        {
+          "command": "InputDat"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "LD/CDV",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "EX-D",
+      "steps": [
+        {
+          "command": "InputExD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Luxman/T-007.json"
+    ],
+    "harmony": {
+      "global_device_id": 76970,
+      "device_type": 5,
+      "codeset": "2ffcd25f49a67d65"
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "harmony:156551",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FR-986/00S",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "429a3d93b45c70eb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTuner",
+        "hold_ms": 1000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 3000
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "CDR/Tape",
+      "steps": [
+        {
+          "command": "InputCdrTape",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "Sat",
+      "steps": [
+        {
+          "command": "InputSat",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd",
+          "hold_ms": 1500
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FR-986_00S.json"
+    ],
+    "harmony": {
+      "global_device_id": 156551,
+      "device_type": 5,
+      "codeset": "657da74652ca31fb"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203515",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "SP-A900B",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "94cb9e240dc76d1c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "InputComp1"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputComp2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/SP-A900B.json"
+    ],
+    "harmony": {
+      "global_device_id": 203515,
+      "device_type": 7,
+      "codeset": "1eaa607107845836"
+    }
+  }
+}

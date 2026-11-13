@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68870",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "CMT-C01",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "27f3ed826b4625eb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTapeB"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/CMT-C01.json"
+    ],
+    "harmony": {
+      "global_device_id": 68870,
+      "device_type": 21,
+      "codeset": "0793ecb38ef4fd2f"
+    }
+  }
+}

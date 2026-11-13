@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179396",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "iconBIT",
+  "model": "HDS5L",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "35440e06ac8ce659",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "Movies"
+        }
+      ]
+    },
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "All"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/iconBIT/HDS5L.json"
+    ],
+    "harmony": {
+      "global_device_id": 179396,
+      "device_type": 35,
+      "codeset": "1d41ed433a395bf5"
+    }
+  }
+}

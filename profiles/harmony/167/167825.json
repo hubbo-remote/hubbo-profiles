@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167825",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Woxter",
+  "model": "VDR-2000 HDD DVBT",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "c7c173129fea8efd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Source"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DV",
+      "steps": [
+        {
+          "command": "InputDVUSB"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputDVUSB"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Woxter/VDR-2000_HDD_DVBT.json"
+    ],
+    "harmony": {
+      "global_device_id": 167825,
+      "device_type": 34,
+      "codeset": "1206f5456ec44d6c"
+    }
+  }
+}

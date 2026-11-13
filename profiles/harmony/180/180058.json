@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180058",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "30HF85",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "76db1319e3c9de64",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "Colorstream HD1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "Colorstream HD2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "6"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/30HF85.json"
+    ],
+    "harmony": {
+      "global_device_id": 180058,
+      "device_type": 1,
+      "codeset": "0edb4b8cd5523cbe"
+    }
+  }
+}

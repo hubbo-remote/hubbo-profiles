@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "harmony:512229",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hisense",
+  "model": "65A53FUA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cba01c33fa3813d7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "Sleep"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Ant/Cable",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "YouTube",
+      "steps": [
+        {
+          "command": "Youtube"
+        }
+      ]
+    },
+    {
+      "name": "Amazon",
+      "steps": [
+        {
+          "command": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Vudu",
+      "steps": [
+        {
+          "command": "Vudu"
+        }
+      ]
+    },
+    {
+      "name": "HiSmart",
+      "steps": [
+        {
+          "command": "HiSmart"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hisense/65A53FUA.json"
+    ],
+    "harmony": {
+      "global_device_id": 512229,
+      "device_type": 1,
+      "codeset": "77d5a73d56c19283"
+    }
+  }
+}

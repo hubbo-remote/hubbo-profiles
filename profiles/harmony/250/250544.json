@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:250544",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "HiMedia",
+  "model": "HD910A",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "b7037ec0c46a5370",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/HiMedia/HD910A.json"
+    ],
+    "harmony": {
+      "global_device_id": 250544,
+      "device_type": 35,
+      "codeset": "f9ebf7da71c5f2ef"
+    }
+  }
+}

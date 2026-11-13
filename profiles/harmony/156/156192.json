@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "id": "harmony:156192",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "QPVision",
+  "model": "QPV-42HDL-05",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7880412f35d069aa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "Scart 1",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "Scart 2",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/QPVision/QPV-42HDL-05.json"
+    ],
+    "harmony": {
+      "global_device_id": 156192,
+      "device_type": 1,
+      "codeset": "ae2735dee8e2eaa5"
+    }
+  }
+}

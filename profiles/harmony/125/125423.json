@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:125423",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Keymat",
+  "model": "Bensten",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "644d71e94c94ad7b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Keymat/Bensten.json"
+    ],
+    "harmony": {
+      "global_device_id": 125423,
+      "device_type": 1,
+      "codeset": "83137c8a6675521f"
+    }
+  }
+}

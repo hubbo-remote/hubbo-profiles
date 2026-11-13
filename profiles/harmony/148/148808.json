@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148808",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HT-DDWG700",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a06335a9835acc9a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DMPORT",
+      "steps": [
+        {
+          "command": "InputDmPort"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD/BD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "SA-CD/CD",
+      "steps": [
+        {
+          "command": "InputSaCdCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HT-DDWG700.json"
+    ],
+    "harmony": {
+      "global_device_id": 148808,
+      "device_type": 5,
+      "codeset": "7cdb304799fb29e0"
+    }
+  }
+}

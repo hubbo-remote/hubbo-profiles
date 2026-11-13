@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:235025",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "VSX-RS320",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "eca7f61c08a2e745",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "BD DVD",
+      "steps": [
+        {
+          "command": "InputBDDVD"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVR",
+      "steps": [
+        {
+          "command": "InputDvr"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "CD-R",
+      "steps": [
+        {
+          "command": "InputCdr"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Portable",
+      "steps": [
+        {
+          "command": "InputPortable"
+        }
+      ]
+    },
+    {
+      "name": "MULTI-IN",
+      "steps": [
+        {
+          "command": "InputMultiIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/VSX-RS320.json"
+    ],
+    "harmony": {
+      "global_device_id": 235025,
+      "device_type": 5,
+      "codeset": "0aec4839d21110a6"
+    }
+  }
+}

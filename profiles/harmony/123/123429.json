@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123429",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hauffman",
+  "model": "9000",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b7f9393d14045bcf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hauffman/9000.json"
+    ],
+    "harmony": {
+      "global_device_id": 123429,
+      "device_type": 22,
+      "codeset": "5bd0a6395ae88fdc"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:78853",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "AX-550RS",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "57d441ad1b49cabf",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1/DAT",
+      "steps": [
+        {
+          "command": "InputTape1Dat"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/AX-550RS.json"
+    ],
+    "harmony": {
+      "global_device_id": 78853,
+      "device_type": 5,
+      "codeset": "e0868415c1a58782"
+    }
+  }
+}

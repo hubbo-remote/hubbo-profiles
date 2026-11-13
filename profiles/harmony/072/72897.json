@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:72897",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sherwood",
+  "model": "AI-1210R",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d8708bb48dafa801",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV/Aux",
+      "steps": [
+        {
+          "command": "InputTvAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR 1",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "VCR 2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sherwood/AI-1210R.json"
+    ],
+    "harmony": {
+      "global_device_id": 72897,
+      "device_type": 19,
+      "codeset": "a62eb7406ccfa050"
+    }
+  }
+}

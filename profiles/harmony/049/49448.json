@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "harmony:49448",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ProScan",
+  "model": "PS36190",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputSatCable"
+        }
+      ]
+    },
+    {
+      "name": "VGA2",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "VGA1",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ProScan/PS36190.json"
+    ],
+    "harmony": {
+      "global_device_id": 49448,
+      "device_type": 1,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

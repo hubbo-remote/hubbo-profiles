@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:151986",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RD-XV48DTKTF",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "749cdd8dd0c722d6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "VCR"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RD-XV48DTKTF.json"
+    ],
+    "harmony": {
+      "global_device_id": 151986,
+      "device_type": 47,
+      "codeset": "5254105af8b53f00"
+    }
+  }
+}

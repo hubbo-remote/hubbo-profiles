@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:140723",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "VSX-AX3",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e0cb2be1086db95f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/LD",
+      "steps": [
+        {
+          "command": "InputDvdLd"
+        }
+      ]
+    },
+    {
+      "name": "TV/SAT",
+      "steps": [
+        {
+          "command": "InputTvSat"
+        }
+      ]
+    },
+    {
+      "name": "VCR 1/DVR",
+      "steps": [
+        {
+          "command": "InputVcr1Dvr"
+        }
+      ]
+    },
+    {
+      "name": "VCR 2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/VSX-AX3.json"
+    ],
+    "harmony": {
+      "global_device_id": 140723,
+      "device_type": 5,
+      "codeset": "4bf10a237d7e3d6b"
+    }
+  }
+}

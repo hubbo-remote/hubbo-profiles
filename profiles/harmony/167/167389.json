@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167389",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Popcorn Hour",
+  "model": "IRK-200",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "cbc22f06a4705bd0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "ALL",
+      "steps": [
+        {
+          "command": "InputAll"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Popcorn_Hour/IRK-200.json"
+    ],
+    "harmony": {
+      "global_device_id": 167389,
+      "device_type": 35,
+      "codeset": "b27338ac58dc29d9"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480813",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Canon",
+  "model": "LV-8225",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "13408ae1d3546b4c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Computer 1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer 2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Canon/LV-8225.json"
+    ],
+    "harmony": {
+      "global_device_id": 480813,
+      "device_type": 7,
+      "codeset": "bed4c8ad97c59dca"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269738",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Apex",
+  "model": "ASB-900",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0767e11ce792c9bd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Apex/ASB-900.json"
+    ],
+    "harmony": {
+      "global_device_id": 269738,
+      "device_type": 19,
+      "codeset": "53eceeab9a79547c"
+    }
+  }
+}

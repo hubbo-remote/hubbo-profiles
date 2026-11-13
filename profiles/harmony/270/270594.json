@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270594",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-48LE653U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5f6f90ab6bbc72b0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input2"
+        },
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input2"
+        },
+        {
+          "command": "Input2"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input4"
+        },
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "Home Network(DLNA)",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input4"
+        },
+        {
+          "command": "Input4"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input8"
+        },
+        {
+          "command": "Input8"
+        }
+      ]
+    },
+    {
+      "name": "Miracast",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input4"
+        },
+        {
+          "command": "Input4"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "SmartCentral",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "SmartCentral"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-48LE653U.json"
+    ],
+    "harmony": {
+      "global_device_id": 270594,
+      "device_type": 1,
+      "codeset": "36bb6ba3e907d56a"
+    }
+  }
+}

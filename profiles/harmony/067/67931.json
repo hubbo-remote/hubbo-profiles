@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:67931",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hauppauge",
+  "model": "WinTV-PVR-150MCE",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d45342b092570265",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hauppauge/WinTV-PVR-150MCE.json"
+    ],
+    "harmony": {
+      "global_device_id": 67931,
+      "device_type": 35,
+      "codeset": "c14a1578ae534a3e"
+    }
+  }
+}

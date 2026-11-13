@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:18387",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optimus",
+  "model": "STA-825",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a619ae9daa928efb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Television",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optimus/STA-825.json"
+    ],
+    "harmony": {
+      "global_device_id": 18387,
+      "device_type": 5,
+      "codeset": "edde9e7a562f0d6b"
+    }
+  }
+}

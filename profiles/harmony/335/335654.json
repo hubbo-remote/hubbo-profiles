@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:335654",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Onkyo",
+  "model": "NS-6170",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9c69e88ce51b1931",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Onkyo/NS-6170.json"
+    ],
+    "harmony": {
+      "global_device_id": 335654,
+      "device_type": 5,
+      "codeset": "9023fc8433104ba1"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179857",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hisense",
+  "model": "PDP-4219EU",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "0af43813accf4312",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Sky",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Xbox",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hisense/PDP-4219EU.json"
+    ],
+    "harmony": {
+      "global_device_id": 179857,
+      "device_type": 1,
+      "codeset": "1493db880298d65d"
+    }
+  }
+}

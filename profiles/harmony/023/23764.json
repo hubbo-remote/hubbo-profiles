@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:23764",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "MHC-G77",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "27f3ed826b4625eb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Deck A",
+      "steps": [
+        {
+          "command": "InputTapeA"
+        }
+      ]
+    },
+    {
+      "name": "Deck B",
+      "steps": [
+        {
+          "command": "InputTapeB"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/MHC-G77.json"
+    ],
+    "harmony": {
+      "global_device_id": 23764,
+      "device_type": 21,
+      "codeset": "0793ecb38ef4fd2f"
+    }
+  }
+}

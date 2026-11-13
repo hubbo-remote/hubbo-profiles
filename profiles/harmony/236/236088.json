@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "id": "harmony:236088",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sceptre",
+  "model": "X425 HDTV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8eb33aa7ebc19a4f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputPc"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sceptre/X425_HDTV.json"
+    ],
+    "harmony": {
+      "global_device_id": 236088,
+      "device_type": 1,
+      "codeset": "039cbf0323ec8318"
+    }
+  }
+}

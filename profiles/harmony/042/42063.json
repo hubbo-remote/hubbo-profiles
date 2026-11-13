@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:42063",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-V67",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9cd3e79fab205a6f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "DVR/VCR2",
+      "steps": [
+        {
+          "command": "InputDvrVcr2"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCdMd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "MD/CDR",
+      "steps": [
+        {
+          "command": "InputMdCdr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DTV/CABLE",
+      "steps": [
+        {
+          "command": "InputTvDbs"
+        }
+      ]
+    },
+    {
+      "name": "V-AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-V67.json"
+    ],
+    "harmony": {
+      "global_device_id": 42063,
+      "device_type": 5,
+      "codeset": "b8db576dcb1eab08"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158339",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bang & Olufsen",
+  "model": "BEOVISION 8",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "bb1dc02fe3064c1d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTv"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVTape"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bang_Olufsen/BEOVISION_8.json"
+    ],
+    "harmony": {
+      "global_device_id": 158339,
+      "device_type": 1,
+      "codeset": "9a6347edbd27a38e"
+    }
+  }
+}

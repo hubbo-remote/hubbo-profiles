@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58177",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Revox",
+  "model": "B-285",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b638a272cc7d2f3d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTuner"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Revox/B-285.json"
+    ],
+    "harmony": {
+      "global_device_id": 58177,
+      "device_type": 5,
+      "codeset": "0ddc8e9f3f859830"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:222232",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Rocketfish",
+  "model": "RF-RBKIT-05A",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "b6a040ce61722efb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input A",
+      "steps": [
+        {
+          "command": "InputA"
+        }
+      ]
+    },
+    {
+      "name": "Input B",
+      "steps": [
+        {
+          "command": "InputB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Rocketfish/RF-RBKIT-05A.json"
+    ],
+    "harmony": {
+      "global_device_id": 222232,
+      "device_type": 30,
+      "codeset": "d10f450afe3c26d8"
+    }
+  }
+}

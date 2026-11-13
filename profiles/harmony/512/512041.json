@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "harmony:512041",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "XR-85X90CK",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2e718ca6157fc0c3",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Channels",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3/ARC",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Android TV",
+      "steps": [
+        {
+          "command": "Home"
+        }
+      ]
+    },
+    {
+      "name": "GooglePlay",
+      "steps": [
+        {
+          "command": "GooglePlay"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/XR-85X90CK.json"
+    ],
+    "harmony": {
+      "global_device_id": 512041,
+      "device_type": 1,
+      "codeset": "1893cb82fdf46a6b"
+    }
+  }
+}

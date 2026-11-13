@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:494254",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MPOW",
+  "model": "BH375A",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "da16e9a2e898b1fd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MPOW/BH375A.json"
+    ],
+    "harmony": {
+      "global_device_id": 494254,
+      "device_type": 19,
+      "codeset": "6f69aee01fdeb62d"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "id": "harmony:55834",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "MT-1000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "6c8c33d2a832c793",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn",
+        "hold_ms": 3000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff",
+        "hold_ms": 6000
+      }
+    ],
+    "on_delay_ms": 20000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Component"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "PC Card Viewer",
+      "steps": [
+        {
+          "command": "InputPcCard"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/MT-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 55834,
+      "device_type": 7,
+      "codeset": "1ada7c6068a3d224"
+    }
+  }
+}

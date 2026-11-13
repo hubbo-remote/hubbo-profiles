@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:497316",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KLV-32R402A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dd21d062a21a4a49",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video/Component",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KLV-32R402A.json"
+    ],
+    "harmony": {
+      "global_device_id": 497316,
+      "device_type": 1,
+      "codeset": "a071dd1bc00b0de3"
+    }
+  }
+}

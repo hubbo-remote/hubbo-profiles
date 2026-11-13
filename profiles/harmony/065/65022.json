@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:65022",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "MD 4096",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "9654e274835de84a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/MD_4096.json"
+    ],
+    "harmony": {
+      "global_device_id": 65022,
+      "device_type": 22,
+      "codeset": "ba5f78be341afe90"
+    }
+  }
+}

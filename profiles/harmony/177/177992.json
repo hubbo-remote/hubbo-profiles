@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "id": "harmony:177992",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "P42H4011",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "be9b913ae2d6ac8b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Input-Front",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI-Front",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Air",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/P42H4011.json"
+    ],
+    "harmony": {
+      "global_device_id": 177992,
+      "device_type": 1,
+      "codeset": "0ee98237f6bb88e5"
+    }
+  }
+}

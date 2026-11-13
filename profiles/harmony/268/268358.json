@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:268358",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lenco",
+  "model": "BTT-1",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "f601356cab9fc3cc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputAudio"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lenco/BTT-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 268358,
+      "device_type": 5,
+      "codeset": "936d0c4d30627482"
+    }
+  }
+}

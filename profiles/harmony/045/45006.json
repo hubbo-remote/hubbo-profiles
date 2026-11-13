@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:45006",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu",
+  "model": "P55X",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7ae15eb9e6a801fd",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB1",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "RGB2",
+      "steps": [
+        {
+          "command": "InputRgb2"
+        }
+      ]
+    },
+    {
+      "name": "RGB3",
+      "steps": [
+        {
+          "command": "InputRGB3"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu/P55X.json"
+    ],
+    "harmony": {
+      "global_device_id": 45006,
+      "device_type": 1,
+      "codeset": "68c2d1d9d943bbf2"
+    }
+  }
+}

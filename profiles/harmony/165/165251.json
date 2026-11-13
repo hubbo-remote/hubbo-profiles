@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165251",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "PD35B50BU",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a23b3b00d4d9328f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "E1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "E2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "E3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "E4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "E5",
+      "steps": [
+        {
+          "command": "Input4"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "Input4"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/PD35B50BU.json"
+    ],
+    "harmony": {
+      "global_device_id": 165251,
+      "device_type": 1,
+      "codeset": "4aa23c9dc04fab6c"
+    }
+  }
+}

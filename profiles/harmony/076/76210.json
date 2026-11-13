@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:76210",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cinemateq",
+  "model": "CT-50HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b9b6305eec15a184",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "YUV 1",
+      "steps": [
+        {
+          "command": "InputYuv1"
+        }
+      ]
+    },
+    {
+      "name": "YUV 2",
+      "steps": [
+        {
+          "command": "InputYuv2"
+        }
+      ]
+    },
+    {
+      "name": "SDI 1",
+      "steps": [
+        {
+          "command": "InputSdi1"
+        }
+      ]
+    },
+    {
+      "name": "Scart 1",
+      "steps": [
+        {
+          "command": "InputScart1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cinemateq/CT-50HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 76210,
+      "device_type": 13,
+      "codeset": "fefdd50c61b24168"
+    }
+  }
+}

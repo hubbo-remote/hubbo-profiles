@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:26856",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Elmo",
+  "model": "EDPX70",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "8536f494b1024491",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB1",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "SVIDEO",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Elmo/EDPX70.json"
+    ],
+    "harmony": {
+      "global_device_id": 26856,
+      "device_type": 7,
+      "codeset": "68dd69b8ac5c9eb8"
+    }
+  }
+}

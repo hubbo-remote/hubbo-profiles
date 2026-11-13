@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:206823",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Westinghouse",
+  "model": "LD-2655VX",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "38d23923d193ee95",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr 1",
+      "steps": [
+        {
+          "command": "InputYPbPr1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Pc",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Westinghouse/LD-2655VX.json"
+    ],
+    "harmony": {
+      "global_device_id": 206823,
+      "device_type": 1,
+      "codeset": "727612dbebb67b4f"
+    }
+  }
+}

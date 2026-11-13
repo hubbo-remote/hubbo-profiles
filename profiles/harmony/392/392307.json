@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:392307",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LUGULAKE",
+  "model": "T-200x",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a06cec777af0ac27",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LUGULAKE/T-200x.json"
+    ],
+    "harmony": {
+      "global_device_id": 392307,
+      "device_type": 5,
+      "codeset": "a6b47a73a16e02dd"
+    }
+  }
+}

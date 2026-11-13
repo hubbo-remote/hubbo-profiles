@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:523662",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teufel",
+  "model": "Ultima 25 Aktiv",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "042e4198662235ed",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teufel/Ultima_25_Aktiv.json"
+    ],
+    "harmony": {
+      "global_device_id": 523662,
+      "device_type": 19,
+      "codeset": "3728f17eb00cd0f9"
+    }
+  }
+}

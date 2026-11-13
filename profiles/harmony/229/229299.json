@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:229299",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KDL-32BX330",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "fa3f492907af66bf",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video/Component",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "NumberEnter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KDL-32BX330.json"
+    ],
+    "harmony": {
+      "global_device_id": 229299,
+      "device_type": 1,
+      "codeset": "5e6d8938cc8d8198"
+    }
+  }
+}

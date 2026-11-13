@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "harmony:88774",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Studio Experience",
+  "model": "55HD",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "ffda59fe12ac6324",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 800
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 500
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 500
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 500
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Studio_Experience/55HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 88774,
+      "device_type": 7,
+      "codeset": "d467d57aad52b6d8"
+    }
+  }
+}

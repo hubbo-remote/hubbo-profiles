@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:256542",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vantage",
+  "model": "ibox",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "0254159fd4e07e8f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "VOD"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "Foxxum"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "My Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "My Radio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vantage/ibox.json"
+    ],
+    "harmony": {
+      "global_device_id": 256542,
+      "device_type": 35,
+      "codeset": "49e576ea7839a36b"
+    }
+  }
+}

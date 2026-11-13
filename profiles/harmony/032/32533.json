@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:32533",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu",
+  "model": "LPF-B601",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "40d9702d1cd0cb5d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "COMP",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu/LPF-B601.json"
+    ],
+    "harmony": {
+      "global_device_id": 32533,
+      "device_type": 7,
+      "codeset": "3b8ca6d108529b56"
+    }
+  }
+}

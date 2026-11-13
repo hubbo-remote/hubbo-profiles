@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:88197",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu",
+  "model": "PDS 5004W",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9601106149198e40",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB1 (DVI)",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "RGB2 (VGA)",
+      "steps": [
+        {
+          "command": "InputRgb2"
+        }
+      ]
+    },
+    {
+      "name": "RGB3 (BNC)",
+      "steps": [
+        {
+          "command": "InputRGB3"
+        }
+      ]
+    },
+    {
+      "name": "Composite Video",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component Video 1",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "component Video 2",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu/PDS_5004W.json"
+    ],
+    "harmony": {
+      "global_device_id": 88197,
+      "device_type": 13,
+      "codeset": "e5ba270b912efcdf"
+    }
+  }
+}

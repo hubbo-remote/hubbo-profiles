@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:72551",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cyrus",
+  "model": "Cyrus 1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "bbfdee566179f65e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAU1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAU2"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cyrus/Cyrus_1.json"
+    ],
+    "harmony": {
+      "global_device_id": 72551,
+      "device_type": 19,
+      "codeset": "f55de6a5c3dfa846"
+    }
+  }
+}

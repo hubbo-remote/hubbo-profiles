@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:37753",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "Z15LA7R",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4afb7df38ee4f8e5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "tuner",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "PC/DVI",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/Z15LA7R.json"
+    ],
+    "harmony": {
+      "global_device_id": 37753,
+      "device_type": 1,
+      "codeset": "e1cf59d13c6d5673"
+    }
+  }
+}

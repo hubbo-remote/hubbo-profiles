@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:120406",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "DVR-HS315",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "0897e3f415230675",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/DVR-HS315.json"
+    ],
+    "harmony": {
+      "global_device_id": 120406,
+      "device_type": 34,
+      "codeset": "f1541464bf2a2f51"
+    }
+  }
+}

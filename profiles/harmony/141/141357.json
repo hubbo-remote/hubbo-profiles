@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141357",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "TXR-3079WHK",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "044a2650185d9c30",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 7000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAntenna"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 1",
+      "steps": [
+        {
+          "command": "InputSVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 2",
+      "steps": [
+        {
+          "command": "InputSVideo2V2"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2V2"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputVideo3V2"
+        }
+      ]
+    },
+    {
+      "name": "Video4",
+      "steps": [
+        {
+          "command": "InputVideo3V2"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent22"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent12"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi",
+      "steps": [
+        {
+          "command": "HDMI1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/TXR-3079WHK.json"
+    ],
+    "harmony": {
+      "global_device_id": 141357,
+      "device_type": 1,
+      "codeset": "7d1b900fade05ce8"
+    }
+  }
+}

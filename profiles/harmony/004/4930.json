@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:4930",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Emerson",
+  "model": "ES2",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "a2d80489d91479b1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Emerson/ES2.json"
+    ],
+    "harmony": {
+      "global_device_id": 4930,
+      "device_type": 21,
+      "codeset": "1213aa0059520c2b"
+    }
+  }
+}

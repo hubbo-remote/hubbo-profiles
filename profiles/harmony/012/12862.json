@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12862",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aurora Multimedia",
+  "model": "TVP-1000 Pro",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "1256c0c7c6be92b3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "S-VID 1",
+      "steps": [
+        {
+          "command": "InputSVID1"
+        }
+      ]
+    },
+    {
+      "name": "S-VID 2",
+      "steps": [
+        {
+          "command": "InputSVID2"
+        }
+      ]
+    },
+    {
+      "name": "RGB/YPbPr",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "ANT 1",
+      "steps": [
+        {
+          "command": "InputAnt1"
+        }
+      ]
+    },
+    {
+      "name": "ANT 2",
+      "steps": [
+        {
+          "command": "SVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aurora_Multimedia/TVP-1000_Pro.json"
+    ],
+    "harmony": {
+      "global_device_id": 12862,
+      "device_type": 30,
+      "codeset": "60f9040bc8988825"
+    }
+  }
+}

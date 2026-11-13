@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500293",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Jamo",
+  "model": "STUDIO SB 36",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "5532456d424ba99f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Jamo/STUDIO_SB_36.json"
+    ],
+    "harmony": {
+      "global_device_id": 500293,
+      "device_type": 19,
+      "codeset": "a39c44d323add272"
+    }
+  }
+}

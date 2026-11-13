@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:204234",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "PGA20",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "2934be595373ac76",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Data 1/Component",
+      "steps": [
+        {
+          "command": "Input5"
+        }
+      ]
+    },
+    {
+      "name": "Data 2",
+      "steps": [
+        {
+          "command": "Input6"
+        }
+      ]
+    },
+    {
+      "name": "Composite video",
+      "steps": [
+        {
+          "command": "Input7"
+        }
+      ]
+    },
+    {
+      "name": "DVD / Satellite",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/PGA20.json"
+    ],
+    "harmony": {
+      "global_device_id": 204234,
+      "device_type": 7,
+      "codeset": "d9662f8fb649a231"
+    }
+  }
+}

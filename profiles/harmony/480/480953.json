@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480953",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dali",
+  "model": "ZENSOR 5 AX",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3084931d76c0335d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dali/ZENSOR_5_AX.json"
+    ],
+    "harmony": {
+      "global_device_id": 480953,
+      "device_type": 19,
+      "codeset": "85f91a8d29adb44e"
+    }
+  }
+}

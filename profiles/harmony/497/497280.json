@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:497280",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vizio",
+  "model": "SB2021n-G6",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "838ebdb0a496e6e0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vizio/SB2021n-G6.json"
+    ],
+    "harmony": {
+      "global_device_id": 497280,
+      "device_type": 19,
+      "codeset": "0e115a1eefefdeed"
+    }
+  }
+}

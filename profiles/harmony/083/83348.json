@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:83348",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Onkyo",
+  "model": "FR-V5",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ecc2c67ddb2cb4c9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CDR",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Onkyo/FR-V5.json"
+    ],
+    "harmony": {
+      "global_device_id": 83348,
+      "device_type": 21,
+      "codeset": "a8bc3ac34180e526"
+    }
+  }
+}

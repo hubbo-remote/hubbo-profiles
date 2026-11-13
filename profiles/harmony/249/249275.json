@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "harmony:249275",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "AVR-E300",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a01173cb239376f3",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CBL/SAT",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Bluray",
+      "steps": [
+        {
+          "command": "InputBluray"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Media Player",
+      "steps": [
+        {
+          "command": "InputMediaPlayer"
+        }
+      ]
+    },
+    {
+      "name": "iPod/USB",
+      "steps": [
+        {
+          "command": "InputIpodUsb"
+        }
+      ]
+    },
+    {
+      "name": "TV Audio",
+      "steps": [
+        {
+          "command": "InputTvAudio"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "Media Server",
+      "steps": [
+        {
+          "command": "InputMediaServer"
+        }
+      ]
+    },
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/AVR-E300.json"
+    ],
+    "harmony": {
+      "global_device_id": 249275,
+      "device_type": 5,
+      "codeset": "d5519ce6104294fe"
+    }
+  }
+}

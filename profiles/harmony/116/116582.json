@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116582",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DC-X99Z",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "aeee0712db54e0a8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "PresetNext"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "CDPlay"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DC-X99Z.json"
+    ],
+    "harmony": {
+      "global_device_id": 116582,
+      "device_type": 21,
+      "codeset": "0578e34e4e0e862b"
+    }
+  }
+}

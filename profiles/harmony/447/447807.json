@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:447807",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Target",
+  "model": "FW-1707",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0d74998301c71654",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Target/FW-1707.json"
+    ],
+    "harmony": {
+      "global_device_id": 447807,
+      "device_type": 5,
+      "codeset": "fefd27161992409c"
+    }
+  }
+}

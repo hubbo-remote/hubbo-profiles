@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:65474",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "SS 3300",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "7b8034467d3d62b0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "Input13"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Sat/Cable",
+      "steps": [
+        {
+          "command": "InputCable"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "Input6"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/SS_3300.json"
+    ],
+    "harmony": {
+      "global_device_id": 65474,
+      "device_type": 22,
+      "codeset": "e9363af3c9deed6e"
+    }
+  }
+}

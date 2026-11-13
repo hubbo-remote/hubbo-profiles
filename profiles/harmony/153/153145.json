@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153145",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pyramid",
+  "model": "PR-530A",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "82880eada5e57e30",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pyramid/PR-530A.json"
+    ],
+    "harmony": {
+      "global_device_id": 153145,
+      "device_type": 19,
+      "codeset": "4f408cc5b711fd05"
+    }
+  }
+}

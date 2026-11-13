@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "id": "harmony:272356",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Westinghouse",
+  "model": "TestHDMI2",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "0c24b90b45677774",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr1",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr2",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        },
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        },
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Westinghouse/TestHDMI2.json"
+    ],
+    "harmony": {
+      "global_device_id": 272356,
+      "device_type": 37,
+      "codeset": "1cd3cc6e9f1cc095"
+    }
+  }
+}

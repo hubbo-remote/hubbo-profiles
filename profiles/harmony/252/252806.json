@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:252806",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "SX-20",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "c2e0e1b855234900",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputFmAm"
+        }
+      ]
+    },
+    {
+      "name": "SACD/CD",
+      "steps": [
+        {
+          "command": "InputSacdCd"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Recorder",
+      "steps": [
+        {
+          "command": "InputRecorder"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/SX-20.json"
+    ],
+    "harmony": {
+      "global_device_id": 252806,
+      "device_type": 5,
+      "codeset": "98dc877e41881aea"
+    }
+  }
+}

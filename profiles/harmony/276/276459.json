@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:276459",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "43UF640T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7638d7b134e4b1fc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "delay_ms": 2000
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Smart TV",
+      "steps": [
+        {
+          "command": "Home"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/43UF640T.json"
+    ],
+    "harmony": {
+      "global_device_id": 276459,
+      "device_type": 1,
+      "codeset": "abb44c95292183bf"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138178",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technosonic",
+  "model": "LCD-1908",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "268bb8904dafcd51",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "0"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technosonic/LCD-1908.json"
+    ],
+    "harmony": {
+      "global_device_id": 138178,
+      "device_type": 1,
+      "codeset": "933075fea8758be5"
+    }
+  }
+}

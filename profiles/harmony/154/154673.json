@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154673",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HDR3700",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "b6fe7202a2f33eb1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HDR3700.json"
+    ],
+    "harmony": {
+      "global_device_id": 154673,
+      "device_type": 34,
+      "codeset": "e235a1d1a768c69c"
+    }
+  }
+}

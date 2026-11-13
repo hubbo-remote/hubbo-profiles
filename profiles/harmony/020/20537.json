@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "harmony:20537",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "F38310JX1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna A",
+      "steps": [
+        {
+          "command": "InputAntennaA"
+        }
+      ]
+    },
+    {
+      "name": "Antenna B",
+      "steps": [
+        {
+          "command": "InputAntennaB"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "Sat",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "6"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/F38310JX1.json"
+    ],
+    "harmony": {
+      "global_device_id": 20537,
+      "device_type": 1,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

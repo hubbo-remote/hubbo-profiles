@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110805",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Scandyna",
+  "model": "The Dock",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "d14b18c543b80f0e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Scandyna/The_Dock.json"
+    ],
+    "harmony": {
+      "global_device_id": 110805,
+      "device_type": 33,
+      "codeset": "0d21c140356e6b63"
+    }
+  }
+}

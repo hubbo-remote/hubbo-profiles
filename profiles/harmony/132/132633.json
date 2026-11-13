@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:132633",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SOYO",
+  "model": "SY-TPT3718",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7e94eb9b2cc22324",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SOYO/SY-TPT3718.json"
+    ],
+    "harmony": {
+      "global_device_id": 132633,
+      "device_type": 1,
+      "codeset": "b6037b1520a95b6e"
+    }
+  }
+}

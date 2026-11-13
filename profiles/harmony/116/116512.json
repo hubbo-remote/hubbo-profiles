@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116512",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "V-4096",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0b132a6580805fdb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/V-4096.json"
+    ],
+    "harmony": {
+      "global_device_id": 116512,
+      "device_type": 19,
+      "codeset": "827c41a8a313f307"
+    }
+  }
+}

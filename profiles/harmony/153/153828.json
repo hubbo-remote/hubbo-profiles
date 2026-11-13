@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153828",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Linn",
+  "model": "Classik Movie",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "8dcfb56aef2a7fa9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Linn/Classik_Movie.json"
+    ],
+    "harmony": {
+      "global_device_id": 153828,
+      "device_type": 22,
+      "codeset": "601d070de82ac67a"
+    }
+  }
+}

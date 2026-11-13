@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173112",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Legend",
+  "model": "LEC-4017",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3593515269575c9b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 100
+      }
+    ],
+    "on_delay_ms": 7000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "RF",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "YPBPR1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "YPBPR2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Legend/LEC-4017.json"
+    ],
+    "harmony": {
+      "global_device_id": 173112,
+      "device_type": 1,
+      "codeset": "b93d24c32807950e"
+    }
+  }
+}

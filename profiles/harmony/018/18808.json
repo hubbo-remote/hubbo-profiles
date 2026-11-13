@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:18808",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Electrohome",
+  "model": "89CE01",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c60d8ab3926f1cf2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "EXT 2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Electrohome/89CE01.json"
+    ],
+    "harmony": {
+      "global_device_id": 18808,
+      "device_type": 1,
+      "codeset": "bfe899831734a253"
+    }
+  }
+}

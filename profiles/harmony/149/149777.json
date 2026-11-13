@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149777",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-V661",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "4aed0e461fab2bd5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2250
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "MD/CD-R",
+      "steps": [
+        {
+          "command": "InputMdCdr"
+        }
+      ]
+    },
+    {
+      "name": "MultiChIn",
+      "steps": [
+        {
+          "command": "InputMultiCh"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "D-TV/CBL",
+      "steps": [
+        {
+          "command": "InputDtvCbl"
+        }
+      ]
+    },
+    {
+      "name": "XM",
+      "steps": [
+        {
+          "command": "InputXm"
+        }
+      ]
+    },
+    {
+      "name": "V-Aux/Dock",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    },
+    {
+      "name": "DVR",
+      "steps": [
+        {
+          "command": "InputDvr"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-V661.json"
+    ],
+    "harmony": {
+      "global_device_id": 149777,
+      "device_type": 5,
+      "codeset": "880f50e1f4f73285"
+    }
+  }
+}

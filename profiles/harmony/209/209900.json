@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:209900",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TVIX Slim S1 DUO",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "8b75fab7fd02249b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "InputHDTV"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TVIX_Slim_S1_DUO.json"
+    ],
+    "harmony": {
+      "global_device_id": 209900,
+      "device_type": 35,
+      "codeset": "1be0f0587a85b2b8"
+    }
+  }
+}

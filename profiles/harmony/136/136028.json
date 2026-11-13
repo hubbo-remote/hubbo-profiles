@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:136028",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ONN",
+  "model": "SW-8411HDR",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "5f40121984cb5a6c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ONN/SW-8411HDR.json"
+    ],
+    "harmony": {
+      "global_device_id": 136028,
+      "device_type": 34,
+      "codeset": "7532cd47632037ad"
+    }
+  }
+}

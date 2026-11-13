@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:26683",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "SV-DVD50",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "92c6b701436aa5af",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Line In 1",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/SV-DVD50.json"
+    ],
+    "harmony": {
+      "global_device_id": 26683,
+      "device_type": 25,
+      "codeset": "30ec9cb54963499c"
+    }
+  }
+}

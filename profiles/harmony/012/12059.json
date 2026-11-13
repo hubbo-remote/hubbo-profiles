@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12059",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Loewe",
+  "model": "ACO9281",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4c84128e9afa2095",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "7"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "9"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "6"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Loewe/ACO9281.json"
+    ],
+    "harmony": {
+      "global_device_id": 12059,
+      "device_type": 1,
+      "codeset": "b62685872b3bb86d"
+    }
+  }
+}

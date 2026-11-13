@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139756",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "PLC-XU111",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "8880e44909e6e47c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Computer 1",
+      "steps": [
+        {
+          "command": "InputPc1"
+        }
+      ]
+    },
+    {
+      "name": "Computer 2",
+      "steps": [
+        {
+          "command": "InputPc2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/PLC-XU111.json"
+    ],
+    "harmony": {
+      "global_device_id": 139756,
+      "device_type": 7,
+      "codeset": "dcd39b83fef18c1a"
+    }
+  }
+}

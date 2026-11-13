@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:32063",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "KRF-V6010",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a9569c494230e2aa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2/Mon",
+      "steps": [
+        {
+          "command": "InputVideo2Mon"
+        }
+      ]
+    },
+    {
+      "name": "DVD/6CHInput",
+      "steps": [
+        {
+          "command": "InputDvd6Ch"
+        }
+      ]
+    },
+    {
+      "name": "Md/Tape",
+      "steps": [
+        {
+          "command": "InputMdTape"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/KRF-V6010.json"
+    ],
+    "harmony": {
+      "global_device_id": 32063,
+      "device_type": 5,
+      "codeset": "ba233f7382da404b"
+    }
+  }
+}

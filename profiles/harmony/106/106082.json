@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "harmony:106082",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "74SR66/02B",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6f43fe9a76c92e36",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat",
+          "hold_ms": 2000
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd",
+          "hold_ms": 2000
+        }
+      ]
+    },
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "InputVcr",
+          "hold_ms": 2000
+        }
+      ]
+    },
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono",
+          "hold_ms": 2000
+        }
+      ]
+    },
+    {
+      "name": "CDR/MD",
+      "steps": [
+        {
+          "command": "InputCdrTape",
+          "hold_ms": 2000
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd",
+          "hold_ms": 2000
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner",
+          "hold_ms": 2000
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/74SR66_02B.json"
+    ],
+    "harmony": {
+      "global_device_id": 106082,
+      "device_type": 5,
+      "codeset": "9147147c878f6704"
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "id": "harmony:21137",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Akai",
+  "model": "PT5299HDX/SMS",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8f11e1ca15418331",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Comp1",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "Comp2",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "HRC (Air)",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Av1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Av2",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Av3",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "S-video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Akai/PT5299HDX_SMS.json"
+    ],
+    "harmony": {
+      "global_device_id": 21137,
+      "device_type": 1,
+      "codeset": "506d3365b4d1bf86"
+    }
+  }
+}

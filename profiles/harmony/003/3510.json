@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:3510",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu",
+  "model": "P42HHA10",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7ae15eb9e6a801fd",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "DVD/DGtec",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Video/Foxtel",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu/P42HHA10.json"
+    ],
+    "harmony": {
+      "global_device_id": 3510,
+      "device_type": 13,
+      "codeset": "68c2d1d9d943bbf2"
+    }
+  }
+}

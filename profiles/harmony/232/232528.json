@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:232528",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "DLA -RS4800",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a2330ff54c91cd7a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/DLA_-RS4800.json"
+    ],
+    "harmony": {
+      "global_device_id": 232528,
+      "device_type": 7,
+      "codeset": "ea85ed68d37f11b7"
+    }
+  }
+}

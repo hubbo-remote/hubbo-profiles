@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260906",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "CP-WU8450",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "b4b058ea819ba83c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Computer IN 1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer IN 2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "InputLan"
+        }
+      ]
+    },
+    {
+      "name": "USB Type A",
+      "steps": [
+        {
+          "command": "InputUsbTypeA"
+        }
+      ]
+    },
+    {
+      "name": "USB Type B",
+      "steps": [
+        {
+          "command": "InputUsbTypeB"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/CP-WU8450.json"
+    ],
+    "harmony": {
+      "global_device_id": 260906,
+      "device_type": 7,
+      "codeset": "82c68bd175dde8d0"
+    }
+  }
+}

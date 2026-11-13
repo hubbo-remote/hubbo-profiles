@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:350109",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "65UJ632T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "962768548797ae69",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Amazon",
+      "steps": [
+        {
+          "command": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/65UJ632T.json"
+    ],
+    "harmony": {
+      "global_device_id": 350109,
+      "device_type": 1,
+      "codeset": "d677a9006cb63121"
+    }
+  }
+}

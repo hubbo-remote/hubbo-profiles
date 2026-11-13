@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:10773",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "TA-AV601",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "5863caabe3655975",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1MD"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/TA-AV601.json"
+    ],
+    "harmony": {
+      "global_device_id": 10773,
+      "device_type": 5,
+      "codeset": "a43550776e4b1311"
+    }
+  }
+}

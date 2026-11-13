@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "harmony:35387",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "60H72",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "55b0bd7da6b85bcc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "ColorStream HD1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "ColorStream HD2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/60H72.json"
+    ],
+    "harmony": {
+      "global_device_id": 35387,
+      "device_type": 1,
+      "codeset": "362eb927ae6329c2"
+    }
+  }
+}

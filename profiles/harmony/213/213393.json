@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:213393",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Koda",
+  "model": "AV-3380",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "acd56078d803293c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Coax 1",
+      "steps": [
+        {
+          "command": "InputCoax1"
+        }
+      ]
+    },
+    {
+      "name": "OPT",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "TV/Sat",
+      "steps": [
+        {
+          "command": "InputTvSat"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Koda/AV-3380.json"
+    ],
+    "harmony": {
+      "global_device_id": 213393,
+      "device_type": 5,
+      "codeset": "cf427e842e7719ae"
+    }
+  }
+}

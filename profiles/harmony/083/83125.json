@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "harmony:83125",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Proxima",
+  "model": "DP-6860",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "7bd715fa492d37dc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2500
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "Computer 2",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Proxima/DP-6860.json"
+    ],
+    "harmony": {
+      "global_device_id": 83125,
+      "device_type": 7,
+      "codeset": "a8b52ce5a79d5d41"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:207074",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "InOutTV",
+  "model": "MEDIACENTER 4G HD",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "bf0564cae3b8492b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "steps": [
+        {
+          "command": "InputCard"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/InOutTV/MEDIACENTER_4G_HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 207074,
+      "device_type": 35,
+      "codeset": "0bdbd5389ea0aa44"
+    }
+  }
+}

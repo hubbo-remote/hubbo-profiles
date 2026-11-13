@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:413915",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "PEAQ",
+  "model": "PPA200-WD",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "14bc13cf051d8d20",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/PEAQ/PPA200-WD.json"
+    ],
+    "harmony": {
+      "global_device_id": 413915,
+      "device_type": 33,
+      "codeset": "d60508e147da5a97"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174282",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sim2",
+  "model": "Domino D60",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "67d4df488e828fd0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Comp1",
+      "steps": [
+        {
+          "command": "InputComp1"
+        }
+      ]
+    },
+    {
+      "name": "Comp2",
+      "steps": [
+        {
+          "command": "InputComp2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "D-SUB",
+      "steps": [
+        {
+          "command": "InputDSub"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sim2/Domino_D60.json"
+    ],
+    "harmony": {
+      "global_device_id": 174282,
+      "device_type": 7,
+      "codeset": "e435ee8dc153201a"
+    }
+  }
+}

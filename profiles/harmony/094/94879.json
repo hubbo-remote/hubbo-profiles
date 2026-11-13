@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "harmony:94879",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Logitech",
+  "model": "Z-5500",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b93e6927fe3bd032",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Stereo 1",
+      "steps": [
+        {
+          "command": "InputCoax"
+        },
+        {
+          "command": "InputDirect"
+        }
+      ]
+    },
+    {
+      "name": "Stereo 2",
+      "steps": [
+        {
+          "command": "InputCoax"
+        },
+        {
+          "command": "InputDirect"
+        },
+        {
+          "command": "InputDirect"
+        }
+      ]
+    },
+    {
+      "name": "Stereo 3",
+      "steps": [
+        {
+          "command": "InputCoax"
+        },
+        {
+          "command": "InputDirect"
+        },
+        {
+          "command": "InputDirect"
+        },
+        {
+          "command": "InputDirect"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Logitech/Z-5500.json"
+    ],
+    "harmony": {
+      "global_device_id": 94879,
+      "device_type": 19,
+      "codeset": "3ad687b79b562751"
+    }
+  }
+}

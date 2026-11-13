@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182673",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RDXV49DTKF",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "48d33406345f199d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RDXV49DTKF.json"
+    ],
+    "harmony": {
+      "global_device_id": 182673,
+      "device_type": 47,
+      "codeset": "bc51a6e3a2b878aa"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138106",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR-3320V/37",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "d7112aa658b842f2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR-3320V_37.json"
+    ],
+    "harmony": {
+      "global_device_id": 138106,
+      "device_type": 47,
+      "codeset": "4fdb6f9b10f3221f"
+    }
+  }
+}

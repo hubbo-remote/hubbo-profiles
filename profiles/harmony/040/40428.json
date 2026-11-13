@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40428",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-20S4US",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f925a66a8d8704f1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "AV 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-20S4US.json"
+    ],
+    "harmony": {
+      "global_device_id": 40428,
+      "device_type": 1,
+      "codeset": "dcf5ea447660479d"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:61217",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Microlab",
+  "model": "X-10D",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ffeae4734cc3ba24",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "5.1 Ch",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "2.0 Ch",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Microlab/X-10D.json"
+    ],
+    "harmony": {
+      "global_device_id": 61217,
+      "device_type": 19,
+      "codeset": "ff05a32fc40c7328"
+    }
+  }
+}

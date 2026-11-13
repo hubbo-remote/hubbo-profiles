@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:350097",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "32LH505A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "10c8e309667f1fef",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/32LH505A.json"
+    ],
+    "harmony": {
+      "global_device_id": 350097,
+      "device_type": 1,
+      "codeset": "65e1ad0ed80deb3e"
+    }
+  }
+}

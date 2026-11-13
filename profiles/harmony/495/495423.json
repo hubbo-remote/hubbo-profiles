@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:495423",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "HD28HDR",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "df89fd561e814750",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2/MHL",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/HD28HDR.json"
+    ],
+    "harmony": {
+      "global_device_id": 495423,
+      "device_type": 7,
+      "codeset": "a0ba86368767638a"
+    }
+  }
+}

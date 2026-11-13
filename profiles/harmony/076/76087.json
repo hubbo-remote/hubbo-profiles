@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "harmony:76087",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "CAV-M1000ES",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b4729e8cf9b090e7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DvdMega",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "CdMega",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "6"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/CAV-M1000ES.json"
+    ],
+    "harmony": {
+      "global_device_id": 76087,
+      "device_type": 5,
+      "codeset": "dbb6da55576a9e8b"
+    }
+  }
+}

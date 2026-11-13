@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:50321",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "PB-6200",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "73dd6e7ed45700ea",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 32000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Analog RGB",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Analog YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Composite Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/PB-6200.json"
+    ],
+    "harmony": {
+      "global_device_id": 50321,
+      "device_type": 7,
+      "codeset": "260d24699f5f1004"
+    }
+  }
+}

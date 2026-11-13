@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143600",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Escient",
+  "model": "MX-531",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "1d1f35842745fab0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Escient/MX-531.json"
+    ],
+    "harmony": {
+      "global_device_id": 143600,
+      "device_type": 22,
+      "codeset": "f46bf17e1865b0e5"
+    }
+  }
+}

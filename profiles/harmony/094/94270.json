@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:94270",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sencor",
+  "model": "SHC-XD120",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f9159e9cc8b387bf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sencor/SHC-XD120.json"
+    ],
+    "harmony": {
+      "global_device_id": 94270,
+      "device_type": 22,
+      "codeset": "8bdd7809050e5b53"
+    }
+  }
+}

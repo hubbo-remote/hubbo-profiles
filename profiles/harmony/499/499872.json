@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:499872",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nedis",
+  "model": "VSWI3473AT",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "9f8a7fd7e42f9f13",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nedis/VSWI3473AT.json"
+    ],
+    "harmony": {
+      "global_device_id": 499872,
+      "device_type": 30,
+      "codeset": "bd11689efe7b64b8"
+    }
+  }
+}

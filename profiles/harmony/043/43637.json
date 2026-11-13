@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:43637",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "PS42D4SXX",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8f11e1ca15418331",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputAntenna"
+        }
+      ]
+    },
+    {
+      "name": "Av1/Av2/sVid/PC",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Ext1/Ext2",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/PS42D4SXX.json"
+    ],
+    "harmony": {
+      "global_device_id": 43637,
+      "device_type": 1,
+      "codeset": "506d3365b4d1bf86"
+    }
+  }
+}

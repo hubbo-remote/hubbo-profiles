@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:46765",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PT-LC76E",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a02c11a9763f53c4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PT-LC76E.json"
+    ],
+    "harmony": {
+      "global_device_id": 46765,
+      "device_type": 7,
+      "codeset": "c0f7c31198088f0a"
+    }
+  }
+}

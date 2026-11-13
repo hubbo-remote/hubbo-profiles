@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180576",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Compro",
+  "model": "NMC-T1000W",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "9f2c3f79ba1b8b58",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Compro/NMC-T1000W.json"
+    ],
+    "harmony": {
+      "global_device_id": 180576,
+      "device_type": 35,
+      "codeset": "599cd81972c4e25c"
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "harmony:183318",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTS3377",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "a686c9c94ef33694",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "SCART IN",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "COAX IN",
+      "steps": [
+        {
+          "command": "InputScart"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Source"
+        }
+      ]
+    },
+    {
+      "name": "OPTI IN",
+      "steps": [
+        {
+          "command": "InputScart"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Source"
+        }
+      ]
+    },
+    {
+      "name": "MP3 Link",
+      "steps": [
+        {
+          "command": "InputScart"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Source"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTS3377.json"
+    ],
+    "harmony": {
+      "global_device_id": 183318,
+      "device_type": 22,
+      "codeset": "0a7f69672ce6ece5"
+    }
+  }
+}

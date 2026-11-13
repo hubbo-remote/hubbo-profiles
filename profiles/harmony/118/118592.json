@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118592",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Telefunken",
+  "model": "P356M",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "387cf71b323038f5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Telefunken/P356M.json"
+    ],
+    "harmony": {
+      "global_device_id": 118592,
+      "device_type": 1,
+      "codeset": "460be05a664c898c"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "harmony:233505",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "pn51e440",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "07acb80730235991",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1/DVI",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "MediaP"
+        }
+      ]
+    },
+    {
+      "name": "Smart Hub",
+      "steps": [
+        {
+          "command": "SmartHub"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/pn51e440.json"
+    ],
+    "harmony": {
+      "global_device_id": 233505,
+      "device_type": 1,
+      "codeset": "12d8987294105bec"
+    }
+  }
+}

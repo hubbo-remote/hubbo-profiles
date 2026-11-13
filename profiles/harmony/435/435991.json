@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:435991",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RSR",
+  "model": "TB355",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "1f1b8e0a26e03f40",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "HDMI Arc",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RSR/TB355.json"
+    ],
+    "harmony": {
+      "global_device_id": 435991,
+      "device_type": 19,
+      "codeset": "450003ea19ba62a9"
+    }
+  }
+}

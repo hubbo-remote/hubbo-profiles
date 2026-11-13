@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176052",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "VSX-817",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a8a149269c1b2967",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 500
+      }
+    ],
+    "on_delay_ms": 4500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/LD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV/SAT",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "CD-R/TAPE/MD",
+      "steps": [
+        {
+          "command": "InputCdr"
+        }
+      ]
+    },
+    {
+      "name": "VCR/DVR",
+      "steps": [
+        {
+          "command": "InputDvrVcr1"
+        }
+      ]
+    },
+    {
+      "name": "DVD 5.1 CH",
+      "steps": [
+        {
+          "command": "InputMultiChannel"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/VSX-817.json"
+    ],
+    "harmony": {
+      "global_device_id": 176052,
+      "device_type": 5,
+      "codeset": "996687293c48111a"
+    }
+  }
+}

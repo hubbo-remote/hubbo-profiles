@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:71733",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "RX-Z71L",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "7b37a0fc1648e7e7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Video1"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/RX-Z71L.json"
+    ],
+    "harmony": {
+      "global_device_id": 71733,
+      "device_type": 21,
+      "codeset": "b039e15e745b7135"
+    }
+  }
+}

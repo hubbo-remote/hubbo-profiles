@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155180",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FR-940 MKII",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6f43fe9a76c92e36",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputLd",
+        "hold_ms": 1500
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle2",
+        "hold_ms": 1200
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner",
+          "hold_ms": 1200
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "Laser Disk",
+      "steps": [
+        {
+          "command": "InputLd",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "V-Aux",
+      "steps": [
+        {
+          "command": "InputAux",
+          "hold_ms": 1500
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FR-940_MKII.json"
+    ],
+    "harmony": {
+      "global_device_id": 155180,
+      "device_type": 5,
+      "codeset": "9147147c878f6704"
+    }
+  }
+}

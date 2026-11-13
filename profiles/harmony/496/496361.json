@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:496361",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nubert",
+  "model": "nuPro X-3000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6ccd18f038421557",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "XLR",
+      "steps": [
+        {
+          "command": "InputXlr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nubert/nuPro_X-3000.json"
+    ],
+    "harmony": {
+      "global_device_id": 496361,
+      "device_type": 19,
+      "codeset": "eee2637cae123df9"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58446",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "32PW9788",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c075fd507a4bb1c7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 13000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "EXT 2",
+      "steps": [
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "EXT 3",
+      "steps": [
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/32PW9788.json"
+    ],
+    "harmony": {
+      "global_device_id": 58446,
+      "device_type": 1,
+      "codeset": "a2b78730ec208857"
+    }
+  }
+}

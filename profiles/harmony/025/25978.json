@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:25978",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "MD41427",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "244db366535d1f4d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Television",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "AV.SV",
+      "steps": [
+        {
+          "command": "InputSv"
+        }
+      ]
+    },
+    {
+      "name": "SCART1",
+      "steps": [
+        {
+          "command": "InputSv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "SCART2",
+      "steps": [
+        {
+          "command": "InputYuv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/MD41427.json"
+    ],
+    "harmony": {
+      "global_device_id": 25978,
+      "device_type": 1,
+      "codeset": "f551a7916886bd26"
+    }
+  }
+}

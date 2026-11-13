@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:54825",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Keene Electronics",
+  "model": "27974R",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "21522540b2d4b32c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CATV",
+      "steps": [
+        {
+          "command": "InputCable"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Keene_Electronics/27974R.json"
+    ],
+    "harmony": {
+      "global_device_id": 54825,
+      "device_type": 30,
+      "codeset": "a13199f0d8ddb30d"
+    }
+  }
+}

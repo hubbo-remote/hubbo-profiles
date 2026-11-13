@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336511",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sumvision",
+  "model": "SUM140601476",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "1f770af7c714b1fb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sumvision/SUM140601476.json"
+    ],
+    "harmony": {
+      "global_device_id": 336511,
+      "device_type": 35,
+      "codeset": "8db384f07222ce98"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:120780",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Goodmans",
+  "model": "GTV-L37W9HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b8941c8067efd8c3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Goodmans/GTV-L37W9HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 120780,
+      "device_type": 1,
+      "codeset": "af47b50875a4e8af"
+    }
+  }
+}

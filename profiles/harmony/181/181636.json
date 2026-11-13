@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181636",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RD-S1004K",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "119f1d7776444ec9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Hdd",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RD-S1004K.json"
+    ],
+    "harmony": {
+      "global_device_id": 181636,
+      "device_type": 34,
+      "codeset": "edaf40a687f78a3d"
+    }
+  }
+}

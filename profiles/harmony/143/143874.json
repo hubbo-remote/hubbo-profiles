@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143874",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "TX-800",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "562645d450a20af5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 32000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/TX-800.json"
+    ],
+    "harmony": {
+      "global_device_id": 143874,
+      "device_type": 7,
+      "codeset": "c03d70b840ba33b7"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:128705",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "SU-688",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9fec9826e15f52d5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/DSS",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/SU-688.json"
+    ],
+    "harmony": {
+      "global_device_id": 128705,
+      "device_type": 19,
+      "codeset": "7731b5093c36fbee"
+    }
+  }
+}

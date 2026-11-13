@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:255480",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HT-CT260H",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ec1ee802dac22c44",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "BT AU",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        },
+        {
+          "command": "InputPrev"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "TV HDMI",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HT-CT260H.json"
+    ],
+    "harmony": {
+      "global_device_id": 255480,
+      "device_type": 5,
+      "codeset": "f5022b026e473c6e"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:208582",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Buffalo",
+  "model": "LT-V 100",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "6bb2c5349e92f3f2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "Movies"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "Photos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Buffalo/LT-V_100.json"
+    ],
+    "harmony": {
+      "global_device_id": 208582,
+      "device_type": 35,
+      "codeset": "8b5d3577fceb346d"
+    }
+  }
+}

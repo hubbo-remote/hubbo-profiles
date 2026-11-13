@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:349723",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "myMatrixTV",
+  "model": "myMatrixTV",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "3ea23da2f565ed7a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Kodi",
+      "steps": [
+        {
+          "command": "Kodi"
+        }
+      ]
+    },
+    {
+      "name": "Apps",
+      "steps": [
+        {
+          "command": "Apps"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "File"
+        }
+      ]
+    },
+    {
+      "name": "Web",
+      "steps": [
+        {
+          "command": "WebBrowser"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/myMatrixTV/myMatrixTV.json"
+    ],
+    "harmony": {
+      "global_device_id": 349723,
+      "device_type": 35,
+      "codeset": "27b42eeb8d45f914"
+    }
+  }
+}

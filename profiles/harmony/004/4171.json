@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:4171",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "TVC-7000",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1abcd0ff7a8f434b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "0"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "A1 (Video)",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "A2 (DVD)",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "AV"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/TVC-7000.json"
+    ],
+    "harmony": {
+      "global_device_id": 4171,
+      "device_type": 1,
+      "codeset": "6ec13fcaf3f066dd"
+    }
+  }
+}

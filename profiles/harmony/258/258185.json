@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258185",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "H561A",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "c4b73ee9607eb7db",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "InputLan"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/H561A.json"
+    ],
+    "harmony": {
+      "global_device_id": 258185,
+      "device_type": 7,
+      "codeset": "400399a97fe11f64"
+    }
+  }
+}

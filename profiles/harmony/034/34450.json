@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34450",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Anthem",
+  "model": "Statement D1",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "1ae3988e2438e3bc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SAT - PC",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "TV - Cable",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "VCR - Yamaha OSD",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "6CH",
+      "steps": [
+        {
+          "command": "Input6Ch"
+        }
+      ]
+    },
+    {
+      "name": "2-CH",
+      "steps": [
+        {
+          "command": "Input2Ch"
+        }
+      ]
+    },
+    {
+      "name": "AUXv- PS 2",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Anthem/Statement_D1.json"
+    ],
+    "harmony": {
+      "global_device_id": 34450,
+      "device_type": 5,
+      "codeset": "fc725e2c568d5086"
+    }
+  }
+}

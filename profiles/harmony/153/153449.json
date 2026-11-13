@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153449",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "TH-P5E",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "08ca1dc728ced4f0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "Pause"
+        }
+      ]
+    },
+    {
+      "name": "AUX DIGITAL",
+      "steps": [
+        {
+          "command": "InputAuxDigital"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/TH-P5E.json"
+    ],
+    "harmony": {
+      "global_device_id": 153449,
+      "device_type": 22,
+      "codeset": "b30972693746e9e6"
+    }
+  }
+}

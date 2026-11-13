@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:105395",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "PD-4230D",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2c799dece6603536",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "Video1"
+        }
+      ]
+    },
+    {
+      "name": "DVD/HD1",
+      "steps": [
+        {
+          "command": "HD1"
+        }
+      ]
+    },
+    {
+      "name": "DVD/HD2",
+      "steps": [
+        {
+          "command": "HD2"
+        }
+      ]
+    },
+    {
+      "name": "DVD/HD3",
+      "steps": [
+        {
+          "command": "HD3"
+        }
+      ]
+    },
+    {
+      "name": "PC/RGB",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/PD-4230D.json"
+    ],
+    "harmony": {
+      "global_device_id": 105395,
+      "device_type": 13,
+      "codeset": "f99dd97d02dc89f6"
+    }
+  }
+}

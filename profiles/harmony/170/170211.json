@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170211",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Olin Ross",
+  "model": "OR-860",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "c59f235372d53e8b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "MP3",
+      "steps": [
+        {
+          "command": "MP3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Olin_Ross/OR-860.json"
+    ],
+    "harmony": {
+      "global_device_id": 170211,
+      "device_type": 5,
+      "codeset": "4967c6754aafa44a"
+    }
+  }
+}

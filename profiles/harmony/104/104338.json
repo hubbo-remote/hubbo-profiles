@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:104338",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Victor",
+  "model": "HR-F7",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "f9ccdb9dfb0f24b2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Line-In",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "Line-In Front",
+      "steps": [
+        {
+          "command": "InputLine2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Victor/HR-F7.json"
+    ],
+    "harmony": {
+      "global_device_id": 104338,
+      "device_type": 2,
+      "codeset": "0a27841f961215a2"
+    }
+  }
+}

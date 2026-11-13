@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:15681",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "SR480",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "370bfdf733f8a410",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    },
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "VCR2",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tape2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/SR480.json"
+    ],
+    "harmony": {
+      "global_device_id": 15681,
+      "device_type": 5,
+      "codeset": "86f3a17e4ba92f5b"
+    }
+  }
+}

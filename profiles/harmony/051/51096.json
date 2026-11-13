@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:51096",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Brandt",
+  "model": "3670MB",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "537aca1437aa3307",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Scart Cable",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Brandt/3670MB.json"
+    ],
+    "harmony": {
+      "global_device_id": 51096,
+      "device_type": 1,
+      "codeset": "a5a3bf562f0cc6bf"
+    }
+  }
+}

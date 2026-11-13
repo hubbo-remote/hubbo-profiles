@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173644",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KEF",
+  "model": "KIT510",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "4139fb61a6f68d72",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Cab/Sat",
+      "steps": [
+        {
+          "command": "InputCabSat"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KEF/KIT510.json"
+    ],
+    "harmony": {
+      "global_device_id": 173644,
+      "device_type": 22,
+      "codeset": "8e9ca6605e03b31f"
+    }
+  }
+}

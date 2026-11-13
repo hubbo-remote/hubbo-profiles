@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:37297",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Projection Design",
+  "model": "Action! Model One MK II",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "2bab9ef231c40019",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Projection_Design/Action_Model_One_MK_II.json"
+    ],
+    "harmony": {
+      "global_device_id": 37297,
+      "device_type": 7,
+      "codeset": "7e6cdab838ab081a"
+    }
+  }
+}

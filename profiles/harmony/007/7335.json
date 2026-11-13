@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:7335",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "C-90S",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "bff5e1d4520c0b1a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VDP",
+      "steps": [
+        {
+          "command": "InputVdp"
+        }
+      ]
+    },
+    {
+      "name": "TV/AUX",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "BAND FM/AM",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "LINE 1",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "DIGITAL 2",
+      "steps": [
+        {
+          "command": "Digital2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/C-90S.json"
+    ],
+    "harmony": {
+      "global_device_id": 7335,
+      "device_type": 19,
+      "codeset": "5bd4de1dc56bbed4"
+    }
+  }
+}

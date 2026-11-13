@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:498635",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "LU951ST",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f61aa47e31d8348d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/LU951ST.json"
+    ],
+    "harmony": {
+      "global_device_id": 498635,
+      "device_type": 7,
+      "codeset": "37fd8b66f59e4730"
+    }
+  }
+}

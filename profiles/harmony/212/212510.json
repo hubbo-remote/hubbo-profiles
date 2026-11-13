@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212510",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technaxx",
+  "model": "HD Motion",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "0909f0ae1b80be8e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Files",
+      "steps": [
+        {
+          "command": "InputFile"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technaxx/HD_Motion.json"
+    ],
+    "harmony": {
+      "global_device_id": 212510,
+      "device_type": 35,
+      "codeset": "4afa7b8a7362fddc"
+    }
+  }
+}

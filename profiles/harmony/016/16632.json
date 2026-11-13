@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:16632",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Gateway",
+  "model": "GTW-L23M103",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a73ba840ef05d2a9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 3500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "YCBCR",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "DVI-D",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "CATV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "ZoomMinus"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Gateway/GTW-L23M103.json"
+    ],
+    "harmony": {
+      "global_device_id": 16632,
+      "device_type": 1,
+      "codeset": "84b035fe368ae2fa"
+    }
+  }
+}

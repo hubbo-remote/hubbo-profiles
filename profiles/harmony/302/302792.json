@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "harmony:302792",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Integra",
+  "model": "DTR-20.2 (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a6cdd9fe87dfe49b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "InputBDDVD"
+        }
+      ]
+    },
+    {
+      "name": "CBL/SAT",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "Port",
+      "steps": [
+        {
+          "command": "InputPort"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "TV/CD",
+      "steps": [
+        {
+          "command": "InputTvCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR/DVR",
+      "steps": [
+        {
+          "command": "InputVcrDvr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Integra/DTR-20.2_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 302792,
+      "device_type": 5,
+      "codeset": "a5b56812a4a153dd"
+    }
+  }
+}

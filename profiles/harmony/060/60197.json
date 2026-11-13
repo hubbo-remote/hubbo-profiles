@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "id": "harmony:60197",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "35AF45",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "55b0bd7da6b85bcc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 1",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 2",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 3",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "COLOURSTREAM",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/35AF45.json"
+    ],
+    "harmony": {
+      "global_device_id": 60197,
+      "device_type": 1,
+      "codeset": "362eb927ae6329c2"
+    }
+  }
+}

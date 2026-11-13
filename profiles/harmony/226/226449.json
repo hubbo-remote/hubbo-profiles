@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226449",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fisher",
+  "model": "TAD-M210",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "e51408974c517d0b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fisher/TAD-M210.json"
+    ],
+    "harmony": {
+      "global_device_id": 226449,
+      "device_type": 21,
+      "codeset": "46030c3126a860ee"
+    }
+  }
+}

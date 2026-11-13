@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12638",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Runco",
+  "model": "PL-61cx",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d8f57f8a6d6d0662",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "SVideoInput"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Comp. HD",
+      "steps": [
+        {
+          "command": "InputHighDefinition"
+        }
+      ]
+    },
+    {
+      "name": "RGB HD",
+      "steps": [
+        {
+          "command": "InputPassThru"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Runco/PL-61cx.json"
+    ],
+    "harmony": {
+      "global_device_id": 12638,
+      "device_type": 13,
+      "codeset": "0d963e846c356141"
+    }
+  }
+}

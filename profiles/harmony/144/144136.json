@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144136",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "RZ-56Z83D7",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dfa4bef198391f7b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CABLE",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/RZ-56Z83D7.json"
+    ],
+    "harmony": {
+      "global_device_id": 144136,
+      "device_type": 1,
+      "codeset": "72c4dacfbb3035c8"
+    }
+  }
+}

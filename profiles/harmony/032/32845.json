@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "harmony:32845",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mark Levinson",
+  "model": "ML-390S",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "f128397e61faf0c7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mark_Levinson/ML-390S.json"
+    ],
+    "harmony": {
+      "global_device_id": 32845,
+      "device_type": 21,
+      "codeset": "2aac6b70c892ebc9"
+    }
+  }
+}

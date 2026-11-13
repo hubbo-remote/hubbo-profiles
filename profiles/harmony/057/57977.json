@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57977",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fidek",
+  "model": "FAV-615",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "5d73cb9d0094689d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "COA1",
+      "steps": [
+        {
+          "command": "InputCoax1"
+        }
+      ]
+    },
+    {
+      "name": "COA2",
+      "steps": [
+        {
+          "command": "InputCoax2"
+        }
+      ]
+    },
+    {
+      "name": "OPT",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fidek/FAV-615.json"
+    ],
+    "harmony": {
+      "global_device_id": 57977,
+      "device_type": 5,
+      "codeset": "ce07e7f449157fb5"
+    }
+  }
+}

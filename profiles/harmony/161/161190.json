@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:161190",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "LT-37XM48",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a66fbbecd4b94b2c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "V3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "V4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "V1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "V2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/LT-37XM48.json"
+    ],
+    "harmony": {
+      "global_device_id": 161190,
+      "device_type": 1,
+      "codeset": "cd840187b769ed8c"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143341",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Rapsody",
+  "model": "RSH-100",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "4a0edecf93d54bd1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Rapsody/RSH-100.json"
+    ],
+    "harmony": {
+      "global_device_id": 143341,
+      "device_type": 35,
+      "codeset": "5c6cb8f2cf609a5d"
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "harmony:117947",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TBM 8E 2285",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cb385827a58d5677",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "Programm1",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TBM_8E_2285.json"
+    ],
+    "harmony": {
+      "global_device_id": 117947,
+      "device_type": 1,
+      "codeset": "b9c65377979efc87"
+    }
+  }
+}

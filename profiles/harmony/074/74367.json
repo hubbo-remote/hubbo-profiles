@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:74367",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Revox",
+  "model": "B150",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "df0539b42782b798",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TAPE1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "TAPE2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Revox/B150.json"
+    ],
+    "harmony": {
+      "global_device_id": 74367,
+      "device_type": 5,
+      "codeset": "57f54dc9b467b00a"
+    }
+  }
+}

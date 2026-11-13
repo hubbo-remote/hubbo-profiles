@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:240804",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teufel",
+  "model": "iTeufel Magnum",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "af38b8df3bf89a52",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "LineIn",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teufel/iTeufel_Magnum.json"
+    ],
+    "harmony": {
+      "global_device_id": 240804,
+      "device_type": 5,
+      "codeset": "5ce6ac1671c13390"
+    }
+  }
+}

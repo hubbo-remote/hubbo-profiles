@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:161991",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "PE-7800",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "5fa77b3beecea6a6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Comp 1",
+      "steps": [
+        {
+          "command": "InputCP"
+        }
+      ]
+    },
+    {
+      "name": "Comp HD",
+      "steps": [
+        {
+          "command": "InputCPHD"
+        }
+      ]
+    },
+    {
+      "name": "RGB HD",
+      "steps": [
+        {
+          "command": "InputRgbHd"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/PE-7800.json"
+    ],
+    "harmony": {
+      "global_device_id": 161991,
+      "device_type": 7,
+      "codeset": "5732a89aa7a4a5d5"
+    }
+  }
+}

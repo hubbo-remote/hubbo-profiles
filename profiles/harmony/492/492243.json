@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "id": "harmony:492243",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KD-75X9500G",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "da6ca0e255575fa1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      },
+      {
+        "delay_ms": 300
+      },
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 300
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Channels",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3/ARC",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Android TV",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "Home"
+        }
+      ]
+    },
+    {
+      "name": "GooglePlay",
+      "steps": [
+        {
+          "command": "GooglePlay"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "GooglePlay"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KD-75X9500G.json"
+    ],
+    "harmony": {
+      "global_device_id": 492243,
+      "device_type": 1,
+      "codeset": "9066346aae4adb2c"
+    }
+  }
+}

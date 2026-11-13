@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:249458",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "RDP-X500IP",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "20d5969831f611da",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/RDP-X500IP.json"
+    ],
+    "harmony": {
+      "global_device_id": 249458,
+      "device_type": 5,
+      "codeset": "fbbcf77407094db3"
+    }
+  }
+}

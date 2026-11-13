@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:82901",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "McIntosh",
+  "model": "CR-7",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4940cc1a0f5b0e1d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "PreAmp",
+      "steps": [
+        {
+          "command": "InputPreamp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/McIntosh/CR-7.json"
+    ],
+    "harmony": {
+      "global_device_id": 82901,
+      "device_type": 19,
+      "codeset": "682801f224407911"
+    }
+  }
+}

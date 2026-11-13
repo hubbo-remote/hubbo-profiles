@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:75923",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BBK Electronics",
+  "model": "LT-2008S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "60b413186e3ce8b3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "MuteOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "tuner",
+      "steps": [
+        {
+          "command": "PowerOn"
+        },
+        {
+          "command": "PowerOff"
+        }
+      ]
+    },
+    {
+      "name": "video",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BBK_Electronics/LT-2008S.json"
+    ],
+    "harmony": {
+      "global_device_id": 75923,
+      "device_type": 1,
+      "codeset": "6b185221f54623fa"
+    }
+  }
+}

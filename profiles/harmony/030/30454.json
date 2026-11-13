@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "harmony:30454",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "Lifestyle 25",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "7f55921e61a17262",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/Lifestyle_25.json"
+    ],
+    "harmony": {
+      "global_device_id": 30454,
+      "device_type": 21,
+      "codeset": "7046697f8a1de02b"
+    }
+  }
+}

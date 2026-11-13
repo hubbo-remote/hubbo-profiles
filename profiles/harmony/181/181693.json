@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181693",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "C-V350",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "52796c859dfed413",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TAPE/MD",
+      "steps": [
+        {
+          "command": "InputTapeMd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "LD/DVD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/C-V350.json"
+    ],
+    "harmony": {
+      "global_device_id": 181693,
+      "device_type": 5,
+      "codeset": "a83ea504ce0c5247"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:94611",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Loewe",
+  "model": "XELOS 5870-ZW",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b009634181b59cc6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 7000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CBL",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "InputAV1",
+      "steps": [
+        {
+          "delay_ms": 100
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "9"
+        }
+      ]
+    },
+    {
+      "name": "InputAV2",
+      "steps": [
+        {
+          "delay_ms": 100
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "8"
+        }
+      ]
+    },
+    {
+      "name": "InputAVS",
+      "steps": [
+        {
+          "delay_ms": 100
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "7"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Loewe/XELOS_5870-ZW.json"
+    ],
+    "harmony": {
+      "global_device_id": 94611,
+      "device_type": 1,
+      "codeset": "2759f601cd7513fd"
+    }
+  }
+}

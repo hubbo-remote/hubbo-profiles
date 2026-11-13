@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165410",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "DAV-HDX500/i",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "7083647d917751a3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner FM",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Tuner AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "XM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Sat/CABLE",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "IMPORT1",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "IMPORT2",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/DAV-HDX500_i.json"
+    ],
+    "harmony": {
+      "global_device_id": 165410,
+      "device_type": 22,
+      "codeset": "d54af5d2399451ae"
+    }
+  }
+}

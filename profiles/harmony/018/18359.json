@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "id": "harmony:18359",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "DLP-50",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8f11e1ca15418331",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 1",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 2",
+      "steps": [
+        {
+          "command": "InputSVideo2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 3",
+      "steps": [
+        {
+          "command": "InputSVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/DLP-50.json"
+    ],
+    "harmony": {
+      "global_device_id": 18359,
+      "device_type": 1,
+      "codeset": "506d3365b4d1bf86"
+    }
+  }
+}

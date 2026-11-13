@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:120800",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "PDP-4270XDE",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3f45340f8bf585c4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "tuner D",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/PDP-4270XDE.json"
+    ],
+    "harmony": {
+      "global_device_id": 120800,
+      "device_type": 1,
+      "codeset": "2b0bb33797ddb4d1"
+    }
+  }
+}

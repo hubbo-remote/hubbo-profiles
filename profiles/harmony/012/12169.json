@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12169",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "CS-32507",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dcc751bec0bc4fdf",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "ANT A",
+      "steps": [
+        {
+          "command": "InputAntA"
+        }
+      ]
+    },
+    {
+      "name": "ANT B",
+      "steps": [
+        {
+          "command": "InputAntB"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "InputAntB"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "EXT 2",
+      "steps": [
+        {
+          "command": "InputAntB"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/CS-32507.json"
+    ],
+    "harmony": {
+      "global_device_id": 12169,
+      "device_type": 1,
+      "codeset": "10822caf600eb1c0"
+    }
+  }
+}

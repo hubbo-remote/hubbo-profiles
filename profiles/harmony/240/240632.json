@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:240632",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD 83067",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "01c1ce6ace8afd7a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD_83067.json"
+    ],
+    "harmony": {
+      "global_device_id": 240632,
+      "device_type": 21,
+      "codeset": "8aa4d9d6c2e27064"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "harmony:38075",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "50V715",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e2fbfb7fd11a3f24",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "Input5"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "INPUT 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "input 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "input 4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "input 5",
+      "steps": [
+        {
+          "command": "Input5"
+        }
+      ]
+    },
+    {
+      "name": "Photo Input",
+      "steps": [
+        {
+          "command": "Input5"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/50V715.json"
+    ],
+    "harmony": {
+      "global_device_id": 38075,
+      "device_type": 1,
+      "codeset": "6dba21347d5a81d3"
+    }
+  }
+}

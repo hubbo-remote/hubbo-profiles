@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:11011",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thule",
+  "model": "AV100S",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "cd3579bf5e4f9c5d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "VolumeUp"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thule/AV100S.json"
+    ],
+    "harmony": {
+      "global_device_id": 11011,
+      "device_type": 19,
+      "codeset": "32a8734bae57778a"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480599",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TechniSat",
+  "model": "DIGITRADIO 361 CD IR",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "e1885d197e4e3471",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD/USB",
+      "steps": [
+        {
+          "command": "InputCdUsb"
+        }
+      ]
+    },
+    {
+      "name": "FM/DAB",
+      "steps": [
+        {
+          "command": "InputFmDab"
+        }
+      ]
+    },
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TechniSat/DIGITRADIO_361_CD_IR.json"
+    ],
+    "harmony": {
+      "global_device_id": 480599,
+      "device_type": 21,
+      "codeset": "522d5f2386484253"
+    }
+  }
+}

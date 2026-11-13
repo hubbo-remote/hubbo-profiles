@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34152",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acoustic Solutions",
+  "model": "DS833",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2abd6f2404b86124",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acoustic_Solutions/DS833.json"
+    ],
+    "harmony": {
+      "global_device_id": 34152,
+      "device_type": 19,
+      "codeset": "d21e90864ce9b094"
+    }
+  }
+}

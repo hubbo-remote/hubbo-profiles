@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226278",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "Powerlite Pro Cinema 6010",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a9d7458b5875154a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "WirelessHD",
+      "steps": [
+        {
+          "command": "InputWirelessHd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/Powerlite_Pro_Cinema_6010.json"
+    ],
+    "harmony": {
+      "global_device_id": 226278,
+      "device_type": 7,
+      "codeset": "b11070f53f6790eb"
+    }
+  }
+}

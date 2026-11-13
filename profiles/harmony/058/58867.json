@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58867",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FW362/22",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "c7136dab3dafa0ff",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1/2",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FW362_22.json"
+    ],
+    "harmony": {
+      "global_device_id": 58867,
+      "device_type": 21,
+      "codeset": "256eff76a21cd021"
+    }
+  }
+}

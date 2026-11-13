@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111346",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "ASE500-U-P9300",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "8d5932462a55091a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "InputPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/ASE500-U-P9300.json"
+    ],
+    "harmony": {
+      "global_device_id": 111346,
+      "device_type": 35,
+      "codeset": "22122a5c2b228a2b"
+    }
+  }
+}

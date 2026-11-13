@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:414304",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Ligawo",
+  "model": "6518775",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "adba34a8579deab2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "Optical 3",
+      "steps": [
+        {
+          "command": "InputOptical3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Ligawo/6518775.json"
+    ],
+    "harmony": {
+      "global_device_id": 414304,
+      "device_type": 30,
+      "codeset": "1f1c7129042dca56"
+    }
+  }
+}

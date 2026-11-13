@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251130",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ZVOX",
+  "model": "ZBASE V320",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "5ac287c3d024fcd1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AnalogInput 1",
+      "steps": [
+        {
+          "command": "InputAnalog1"
+        }
+      ]
+    },
+    {
+      "name": "AnalogInput 2",
+      "steps": [
+        {
+          "command": "InputAnalog2"
+        }
+      ]
+    },
+    {
+      "name": "AnalogInput 3",
+      "steps": [
+        {
+          "command": "InputAnalog3"
+        }
+      ]
+    },
+    {
+      "name": "DigitalInput-Optical",
+      "steps": [
+        {
+          "command": "InputDigitalOptical"
+        }
+      ]
+    },
+    {
+      "name": "DigitalInput-Coaxial",
+      "steps": [
+        {
+          "command": "InputDigitalCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ZVOX/ZBASE_V320.json"
+    ],
+    "harmony": {
+      "global_device_id": 251130,
+      "device_type": 19,
+      "codeset": "5152035ea8e4338a"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:27693",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hyundai",
+  "model": "HLT-2630",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "de796182d5a5c39b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "ZoomOut"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hyundai/HLT-2630.json"
+    ],
+    "harmony": {
+      "global_device_id": 27693,
+      "device_type": 1,
+      "codeset": "7bf2a6c8b27b7b52"
+    }
+  }
+}

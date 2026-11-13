@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:261333",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Paradigm",
+  "model": "Soundscape",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c9d918480264f0f2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Paradigm/Soundscape.json"
+    ],
+    "harmony": {
+      "global_device_id": 261333,
+      "device_type": 19,
+      "codeset": "ff58b724e7d86643"
+    }
+  }
+}

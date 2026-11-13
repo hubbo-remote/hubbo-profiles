@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260560",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Violet 3D",
+  "model": "NEO",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9aaa20c22bf3b0f3",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Violet_3D/NEO.json"
+    ],
+    "harmony": {
+      "global_device_id": 260560,
+      "device_type": 5,
+      "codeset": "f0b00ba0fdedeb3c"
+    }
+  }
+}

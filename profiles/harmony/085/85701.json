@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "id": "harmony:85701",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "AV-32X250EUS",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5062029203a54b96",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "E1 SAT",
+      "steps": [
+        {
+          "command": "Info"
+        },
+        {
+          "command": "Info"
+        },
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "E2 DVD",
+      "steps": [
+        {
+          "command": "Info"
+        },
+        {
+          "command": "Info"
+        },
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "S3",
+      "steps": [
+        {
+          "command": "Info"
+        },
+        {
+          "command": "Info"
+        },
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "S4",
+      "steps": [
+        {
+          "command": "Info"
+        },
+        {
+          "command": "Info"
+        },
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "AV VIDEO",
+      "steps": [
+        {
+          "command": "Info"
+        },
+        {
+          "command": "Info"
+        },
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "01 YLE1",
+      "steps": [
+        {
+          "command": "Info"
+        },
+        {
+          "command": "Info"
+        },
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/AV-32X250EUS.json"
+    ],
+    "harmony": {
+      "global_device_id": 85701,
+      "device_type": 1,
+      "codeset": "27c502b599174a1e"
+    }
+  }
+}

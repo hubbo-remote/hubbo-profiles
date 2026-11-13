@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:335564",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "iSound",
+  "model": "ISOUND- 5378",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "532960acbe1345c6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/iSound/ISOUND-_5378.json"
+    ],
+    "harmony": {
+      "global_device_id": 335564,
+      "device_type": 5,
+      "codeset": "9f845bff9f375b28"
+    }
+  }
+}

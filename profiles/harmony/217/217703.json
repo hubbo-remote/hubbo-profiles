@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:217703",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "PLC-ET30L",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1d7d236a37721edf",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/PLC-ET30L.json"
+    ],
+    "harmony": {
+      "global_device_id": 217703,
+      "device_type": 7,
+      "codeset": "f393184413081d8a"
+    }
+  }
+}

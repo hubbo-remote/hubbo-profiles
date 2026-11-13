@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267550",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HW-F335",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "57f4d6b5f2fcff59",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "D.IN",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputOptical"
+        },
+        {
+          "command": "InputBTUSB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HW-F335.json"
+    ],
+    "harmony": {
+      "global_device_id": 267550,
+      "device_type": 19,
+      "codeset": "a4cc6f6afed3864e"
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "id": "harmony:83757",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "TA-V88ES",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "bcdb5d15c5c45f32",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "DVD/LD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    },
+    {
+      "name": "TV/Sat",
+      "steps": [
+        {
+          "command": "InputTvSat"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "DAT",
+      "steps": [
+        {
+          "command": "InputDat"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "5.1CH",
+      "steps": [
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/TA-V88ES.json"
+    ],
+    "harmony": {
+      "global_device_id": 83757,
+      "device_type": 19,
+      "codeset": "386429fdc3768881"
+    }
+  }
+}

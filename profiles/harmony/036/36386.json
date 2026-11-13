@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:36386",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "A-H500i",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c4d898316abc5569",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "MD/Tape 2",
+      "steps": [
+        {
+          "command": "InputMdTape2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/A-H500i.json"
+    ],
+    "harmony": {
+      "global_device_id": 36386,
+      "device_type": 19,
+      "codeset": "4e1fc4054eb60a6a"
+    }
+  }
+}

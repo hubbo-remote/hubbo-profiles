@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:89159",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EMP715",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0a6249807f3a4e32",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input A",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Input B",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        },
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EMP715.json"
+    ],
+    "harmony": {
+      "global_device_id": 89159,
+      "device_type": 7,
+      "codeset": "94a8106074655b79"
+    }
+  }
+}

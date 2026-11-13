@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95741",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "SL-CH900",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "10b6fcb9238ce40d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Input10"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/SL-CH900.json"
+    ],
+    "harmony": {
+      "global_device_id": 95741,
+      "device_type": 21,
+      "codeset": "5263f5c7f29cfa90"
+    }
+  }
+}

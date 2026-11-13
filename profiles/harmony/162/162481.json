@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162481",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marmitek",
+  "model": "GIGAVIDEO 800",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "261cffe435e447f9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerReceiver"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerTransmitter"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Hdmi1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr1",
+      "steps": [
+        {
+          "command": "InputYPbPr3"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr2",
+      "steps": [
+        {
+          "command": "InputYPbPr4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marmitek/GIGAVIDEO_800.json"
+    ],
+    "harmony": {
+      "global_device_id": 162481,
+      "device_type": 30,
+      "codeset": "1ae7f4a40530a41e"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:240224",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "HiMedia",
+  "model": "HD600F",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "bba44edbfd994137",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/HiMedia/HD600F.json"
+    ],
+    "harmony": {
+      "global_device_id": 240224,
+      "device_type": 35,
+      "codeset": "c0d7ff140477feeb"
+    }
+  }
+}

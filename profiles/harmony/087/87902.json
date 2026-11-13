@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:87902",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "CA-NXMD1",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "fb2162ab6a488261",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Digital In",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/CA-NXMD1.json"
+    ],
+    "harmony": {
+      "global_device_id": 87902,
+      "device_type": 22,
+      "codeset": "c4650ca5587b7e3f"
+    }
+  }
+}

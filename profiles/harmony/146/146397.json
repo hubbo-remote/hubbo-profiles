@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:146397",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "LT-37131A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d70969ad6bded7e2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna A",
+      "steps": [
+        {
+          "command": "InputAntA"
+        }
+      ]
+    },
+    {
+      "name": "Antenna B",
+      "steps": [
+        {
+          "command": "InputAntB"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/LT-37131A.json"
+    ],
+    "harmony": {
+      "global_device_id": 146397,
+      "device_type": 1,
+      "codeset": "26e52b30220913f7"
+    }
+  }
+}

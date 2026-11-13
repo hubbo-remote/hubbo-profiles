@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121944",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "HTS-2600",
+  "kind": "home_theater_vcr",
+  "platform": "ir",
+  "codeset": "87ad8c703d5dd3bb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputTvVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/HTS-2600.json"
+    ],
+    "harmony": {
+      "global_device_id": 121944,
+      "device_type": 32,
+      "codeset": "8c44e1e2a267e86f"
+    }
+  }
+}

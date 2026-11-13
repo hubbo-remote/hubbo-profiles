@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:16065",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ProVideo",
+  "model": "MultiPlexer",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "423da10939a3ccf7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Camera 1",
+      "steps": [
+        {
+          "command": "InputCamera1"
+        }
+      ]
+    },
+    {
+      "name": "Camera 2",
+      "steps": [
+        {
+          "command": "InputCamera2"
+        }
+      ]
+    },
+    {
+      "name": "Camera 3",
+      "steps": [
+        {
+          "command": "InputCamera3"
+        }
+      ]
+    },
+    {
+      "name": "Camera 4",
+      "steps": [
+        {
+          "command": "InputCamera4"
+        }
+      ]
+    },
+    {
+      "name": "Camera 5",
+      "steps": [
+        {
+          "command": "InputCamera5"
+        }
+      ]
+    },
+    {
+      "name": "Camera 6",
+      "steps": [
+        {
+          "command": "InputCamera6"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ProVideo/MultiPlexer.json"
+    ],
+    "harmony": {
+      "global_device_id": 16065,
+      "device_type": 30,
+      "codeset": "157368e4ad5ce167"
+    }
+  }
+}

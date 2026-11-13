@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203957",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DCM713",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "aeed7e0fbe570b3a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DCM713.json"
+    ],
+    "harmony": {
+      "global_device_id": 203957,
+      "device_type": 21,
+      "codeset": "80f33f07534808c5"
+    }
+  }
+}

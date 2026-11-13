@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:92476",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mx Onda",
+  "model": "MX-HT510",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "eff721fd27e4895a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "5.1 Ch",
+      "steps": [
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mx_Onda/MX-HT510.json"
+    ],
+    "harmony": {
+      "global_device_id": 92476,
+      "device_type": 19,
+      "codeset": "337cd6b0ba6c8525"
+    }
+  }
+}

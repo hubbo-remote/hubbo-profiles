@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:233057",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "ex3210",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "389ccf51174ef865",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/ex3210.json"
+    ],
+    "harmony": {
+      "global_device_id": 233057,
+      "device_type": 7,
+      "codeset": "57357007d2938584"
+    }
+  }
+}

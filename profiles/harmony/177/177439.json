@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "harmony:177439",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "DAVHDZ284",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "187334023f82a33d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER FM",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "FunctionUp"
+        }
+      ]
+    },
+    {
+      "name": "TV/VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DMPORT",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "FunctionUp"
+        }
+      ]
+    },
+    {
+      "name": "AUDIO",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "FunctionDown"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/DAVHDZ284.json"
+    ],
+    "harmony": {
+      "global_device_id": 177439,
+      "device_type": 22,
+      "codeset": "52ea2e362bcd23d0"
+    }
+  }
+}

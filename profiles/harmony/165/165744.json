@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165744",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "MD-81733",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "7e945e2e5327f9d5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/MD-81733.json"
+    ],
+    "harmony": {
+      "global_device_id": 165744,
+      "device_type": 34,
+      "codeset": "c4d0b642aa60427c"
+    }
+  }
+}

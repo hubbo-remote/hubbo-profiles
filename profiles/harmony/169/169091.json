@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169091",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "HD-8000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "e7f3ecd2216ee22f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "Select"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Composite Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/HD-8000.json"
+    ],
+    "harmony": {
+      "global_device_id": 169091,
+      "device_type": 7,
+      "codeset": "3d45a77f43ccf420"
+    }
+  }
+}

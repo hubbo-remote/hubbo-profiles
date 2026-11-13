@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "harmony:133359",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Boxlight",
+  "model": "XP-5T",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "42c75012c9e6ac9a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Menu"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "just video",
+      "steps": [
+        {
+          "command": "Input"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Boxlight/XP-5T.json"
+    ],
+    "harmony": {
+      "global_device_id": 133359,
+      "device_type": 7,
+      "codeset": "15945804f4c66687"
+    }
+  }
+}

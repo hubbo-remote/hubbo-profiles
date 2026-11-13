@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270316",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HCD-S20B",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "a3832e4279e45b89",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HCD-S20B.json"
+    ],
+    "harmony": {
+      "global_device_id": 270316,
+      "device_type": 21,
+      "codeset": "0e1eeda7f1ad050f"
+    }
+  }
+}

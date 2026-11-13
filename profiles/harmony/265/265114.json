@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265114",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "DF4700PN",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "ed7290db931bb324",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/DF4700PN.json"
+    ],
+    "harmony": {
+      "global_device_id": 265114,
+      "device_type": 47,
+      "codeset": "3c81377a2bbf2e78"
+    }
+  }
+}

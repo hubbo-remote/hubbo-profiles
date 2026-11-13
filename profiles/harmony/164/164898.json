@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:164898",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teufel",
+  "model": "Theater LT-2+R",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "06fce517e4d0d4e3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teufel/Theater_LT-2_R.json"
+    ],
+    "harmony": {
+      "global_device_id": 164898,
+      "device_type": 5,
+      "codeset": "97df8b32ffa6282b"
+    }
+  }
+}

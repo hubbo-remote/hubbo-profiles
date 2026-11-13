@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:249493",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Matricom",
+  "model": "G-Box Midnight",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "29ea5e8c54c07ba3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Matricom/G-Box_Midnight.json"
+    ],
+    "harmony": {
+      "global_device_id": 249493,
+      "device_type": 35,
+      "codeset": "180617504df70792"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "harmony:145524",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "SMT-6010E",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "767d220c5c2656b3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/SMT-6010E.json"
+    ],
+    "harmony": {
+      "global_device_id": 145524,
+      "device_type": 12,
+      "codeset": "7c3e6576d4c9743b"
+    }
+  }
+}

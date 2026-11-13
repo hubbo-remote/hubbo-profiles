@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212851",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "VGN-AW120D",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "0c44fc9149ae8c1c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/VGN-AW120D.json"
+    ],
+    "harmony": {
+      "global_device_id": 212851,
+      "device_type": 35,
+      "codeset": "a1cd65f7ff979ad7"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158289",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "FreeStyle FS-321 Series II",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4c47ad455bb48c2b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CBL/SAT",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputStored"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/FreeStyle_FS-321_Series_II.json"
+    ],
+    "harmony": {
+      "global_device_id": 158289,
+      "device_type": 19,
+      "codeset": "c2bb39ff523e2d41"
+    }
+  }
+}

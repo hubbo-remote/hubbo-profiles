@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:23047",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RD-X2U",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "09f9f3590131bdbd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RD-X2U.json"
+    ],
+    "harmony": {
+      "global_device_id": 23047,
+      "device_type": 34,
+      "codeset": "19b8550f7979c2c9"
+    }
+  }
+}

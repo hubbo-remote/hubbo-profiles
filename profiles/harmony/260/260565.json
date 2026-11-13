@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260565",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hegel",
+  "model": "P20",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "01580ecc7e31248b",
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Bal",
+      "steps": [
+        {
+          "command": "InputBal1"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputDac"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "HT",
+      "steps": [
+        {
+          "command": "InputHT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hegel/P20.json"
+    ],
+    "harmony": {
+      "global_device_id": 260565,
+      "device_type": 19,
+      "codeset": "5d8fc2b065403fa4"
+    }
+  }
+}

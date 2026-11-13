@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:14979",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Faroudja",
+  "model": "DVP 1010",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "9add7e931d610bc6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "SVideo",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "YCrCb",
+      "steps": [
+        {
+          "command": "InputYCrCb"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Faroudja/DVP_1010.json"
+    ],
+    "harmony": {
+      "global_device_id": 14979,
+      "device_type": 30,
+      "codeset": "34b603ae66ee51fc"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226968",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Redgum",
+  "model": "SG-5500",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ec87afc5922bb47c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Redgum/SG-5500.json"
+    ],
+    "harmony": {
+      "global_device_id": 226968,
+      "device_type": 19,
+      "codeset": "356780c8e6e91783"
+    }
+  }
+}

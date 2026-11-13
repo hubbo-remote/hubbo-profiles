@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:236425",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Maxdome",
+  "model": "Media Center HD TV",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "0955eb1e837b7dd1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Maxdome/Media_Center_HD_TV.json"
+    ],
+    "harmony": {
+      "global_device_id": 236425,
+      "device_type": 18,
+      "codeset": "0c6f5a5bcb34864d"
+    }
+  }
+}

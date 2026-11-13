@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "harmony:257272",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "HECTO",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "287cff5e4c9539fd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "PLEX Media Server",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "RGB-PC",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/HECTO.json"
+    ],
+    "harmony": {
+      "global_device_id": 257272,
+      "device_type": 7,
+      "codeset": "97cb1eba45466eb0"
+    }
+  }
+}

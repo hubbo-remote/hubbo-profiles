@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "harmony:56320",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Gateway",
+  "model": "2800520",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4da0289a41a7b89d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video1",
+      "steps": [
+        {
+          "command": "InputAv2"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "S-Video2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "YCbCr",
+      "steps": [
+        {
+          "command": "InputYCbCr"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Gateway/2800520.json"
+    ],
+    "harmony": {
+      "global_device_id": 56320,
+      "device_type": 1,
+      "codeset": "0cd1e4cf30d96827"
+    }
+  }
+}

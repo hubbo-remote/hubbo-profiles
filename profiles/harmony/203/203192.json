@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203192",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Storex",
+  "model": "storydisk",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "3f385f2bed9dcc53",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "InputFile"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Storex/storydisk.json"
+    ],
+    "harmony": {
+      "global_device_id": 203192,
+      "device_type": 35,
+      "codeset": "52b416b4fda88d53"
+    }
+  }
+}

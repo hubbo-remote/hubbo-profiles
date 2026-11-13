@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:107736",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "HTP-GS1",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "3021f61de050e2f9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 9000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "DVD/DVR",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "XBOX 360",
+      "steps": [
+        {
+          "command": "InputXBox"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/HTP-GS1.json"
+    ],
+    "harmony": {
+      "global_device_id": 107736,
+      "device_type": 5,
+      "codeset": "d2e7bbd74d16d83e"
+    }
+  }
+}

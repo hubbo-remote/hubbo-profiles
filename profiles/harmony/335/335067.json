@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:335067",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Veon",
+  "model": "VN3236SB",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9719dbf4a93d5738",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Veon/VN3236SB.json"
+    ],
+    "harmony": {
+      "global_device_id": 335067,
+      "device_type": 5,
+      "codeset": "ee0dc4a9e995d6d7"
+    }
+  }
+}

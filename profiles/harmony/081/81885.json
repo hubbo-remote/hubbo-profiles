@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:81885",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Targa",
+  "model": "HC-5100X",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "5d6d5c1ef958668e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Targa/HC-5100X.json"
+    ],
+    "harmony": {
+      "global_device_id": 81885,
+      "device_type": 22,
+      "codeset": "39a1daff941a392e"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267963",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nakamichi",
+  "model": "NK12",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "228d8d70895facc0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV HDMI",
+      "steps": [
+        {
+          "command": "InputTvHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "OPT",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nakamichi/NK12.json"
+    ],
+    "harmony": {
+      "global_device_id": 267963,
+      "device_type": 19,
+      "codeset": "d76ed86cd868d4b3"
+    }
+  }
+}

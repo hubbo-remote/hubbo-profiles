@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:224514",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "21-V53B",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a33099051a9511b8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/21-V53B.json"
+    ],
+    "harmony": {
+      "global_device_id": 224514,
+      "device_type": 1,
+      "codeset": "a7b29e16f4c822f3"
+    }
+  }
+}

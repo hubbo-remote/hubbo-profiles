@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176433",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MT Logic",
+  "model": "TXCD-1532",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "765eed1723fead6d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MT_Logic/TXCD-1532.json"
+    ],
+    "harmony": {
+      "global_device_id": 176433,
+      "device_type": 22,
+      "codeset": "ff9569e443554f65"
+    }
+  }
+}

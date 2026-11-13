@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:252832",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Infocus",
+  "model": "SP8600HD3D",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "7376c943b6c85440",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Infocus/SP8600HD3D.json"
+    ],
+    "harmony": {
+      "global_device_id": 252832,
+      "device_type": 7,
+      "codeset": "b8b6d8e303261082"
+    }
+  }
+}

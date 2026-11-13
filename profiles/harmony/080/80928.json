@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:80928",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Elan",
+  "model": "XM-R3",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "622f3937104fe07b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "XM 1",
+      "steps": [
+        {
+          "command": "Zone1"
+        }
+      ]
+    },
+    {
+      "name": "XM 2",
+      "steps": [
+        {
+          "command": "Zone2"
+        }
+      ]
+    },
+    {
+      "name": "XM 3",
+      "steps": [
+        {
+          "command": "Zone3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Elan/XM-R3.json"
+    ],
+    "harmony": {
+      "global_device_id": 80928,
+      "device_type": 36,
+      "codeset": "570b00820ed88456"
+    }
+  }
+}

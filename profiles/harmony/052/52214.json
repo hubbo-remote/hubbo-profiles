@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:52214",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "DV3-S/T",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "ce06699b3ebffb1c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/DV3-S_T.json"
+    ],
+    "harmony": {
+      "global_device_id": 52214,
+      "device_type": 12,
+      "codeset": "d0d6f272bb61077f"
+    }
+  }
+}

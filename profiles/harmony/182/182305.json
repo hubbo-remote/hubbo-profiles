@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182305",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CML",
+  "model": "HDMI-4I2",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "b3b3ba75b9d718de",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input1Output1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "OutputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Input1Output2",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "OutputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Input2Output1",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "OutputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Input2Output2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "OutputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Input3Output1",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "command": "OutputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Input3Output2",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "command": "OutputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Input4Output1",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        },
+        {
+          "command": "OutputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Input4Output2",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        },
+        {
+          "command": "OutputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CML/HDMI-4I2.json"
+    ],
+    "harmony": {
+      "global_device_id": 182305,
+      "device_type": 30,
+      "codeset": "d1d5e1f141438f85"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:53329",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PT-LC50E",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a02c11a9763f53c4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PT-LC50E.json"
+    ],
+    "harmony": {
+      "global_device_id": 53329,
+      "device_type": 7,
+      "codeset": "c0f7c31198088f0a"
+    }
+  }
+}

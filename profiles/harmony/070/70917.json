@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:70917",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "AZ-1155",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "1c5f436379ead13b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/AZ-1155.json"
+    ],
+    "harmony": {
+      "global_device_id": 70917,
+      "device_type": 21,
+      "codeset": "515a19ae9196defe"
+    }
+  }
+}

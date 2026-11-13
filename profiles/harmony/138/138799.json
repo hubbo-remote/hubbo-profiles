@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138799",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Microsoft",
+  "model": "ZV7-00041",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d45342b092570265",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Microsoft/ZV7-00041.json"
+    ],
+    "harmony": {
+      "global_device_id": 138799,
+      "device_type": 35,
+      "codeset": "c14a1578ae534a3e"
+    }
+  }
+}

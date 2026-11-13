@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:246529",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cyrus",
+  "model": "PRE XP D QX",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a5dddb6ce670d2bf",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputCd"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cyrus/PRE_XP_D_QX.json"
+    ],
+    "harmony": {
+      "global_device_id": 246529,
+      "device_type": 19,
+      "codeset": "d6d12edd215b18a6"
+    }
+  }
+}

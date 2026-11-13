@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:15208",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-HS2EB",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "d9c94433eb3aeafe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-HS2EB.json"
+    ],
+    "harmony": {
+      "global_device_id": 15208,
+      "device_type": 34,
+      "codeset": "a9482a53d7de1ea6"
+    }
+  }
+}

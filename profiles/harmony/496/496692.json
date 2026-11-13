@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:496692",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "SA-MT500",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "84545c9479d27c8d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth Audio",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Home Network",
+      "steps": [
+        {
+          "command": "InputHomeNetwork"
+        }
+      ]
+    },
+    {
+      "name": "Music Services List",
+      "steps": [
+        {
+          "command": "InputMusicServices"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/SA-MT500.json"
+    ],
+    "harmony": {
+      "global_device_id": 496692,
+      "device_type": 19,
+      "codeset": "02c9070a06e3adaf"
+    }
+  }
+}

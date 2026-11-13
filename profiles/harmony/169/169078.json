@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169078",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-450",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "91643c42b4bcde75",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO/AUX",
+      "steps": [
+        {
+          "command": "InputVideoAux"
+        }
+      ]
+    },
+    {
+      "name": "TapeMonitor",
+      "steps": [
+        {
+          "command": "InputTapeMon"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-450.json"
+    ],
+    "harmony": {
+      "global_device_id": 169078,
+      "device_type": 5,
+      "codeset": "5df36b891d13745b"
+    }
+  }
+}

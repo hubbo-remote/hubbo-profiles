@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:125714",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LCD-32AX5",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "892a1a565eed2f78",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        }
+      ]
+    },
+    {
+      "name": "INPUT1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "INPUT2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "INPUT3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "INPUT4",
+      "steps": [
+        {
+          "command": "InputExt4"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputExt5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LCD-32AX5.json"
+    ],
+    "harmony": {
+      "global_device_id": 125714,
+      "device_type": 1,
+      "codeset": "1880bf534e517114"
+    }
+  }
+}

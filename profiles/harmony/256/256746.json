@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:256746",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EMP-7900",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "acc3c45d64a466f1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComp"
+        }
+      ]
+    },
+    {
+      "name": "BNC",
+      "steps": [
+        {
+          "command": "InputBnc"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EMP-7900.json"
+    ],
+    "harmony": {
+      "global_device_id": 256746,
+      "device_type": 7,
+      "codeset": "e814fd06624f5b9a"
+    }
+  }
+}

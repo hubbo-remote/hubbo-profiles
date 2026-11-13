@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:64689",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MC-222",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ed55c85c06534e5e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputLDRF"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MC-222.json"
+    ],
+    "harmony": {
+      "global_device_id": 64689,
+      "device_type": 21,
+      "codeset": "155016a07c0e3c60"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:90614",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Netgear",
+  "model": "EVA-700",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d190b4dddec1f5cb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pics",
+      "steps": [
+        {
+          "command": "InputPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Netgear/EVA-700.json"
+    ],
+    "harmony": {
+      "global_device_id": 90614,
+      "device_type": 35,
+      "codeset": "9e26d415103cfd1b"
+    }
+  }
+}

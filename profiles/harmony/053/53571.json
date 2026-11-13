@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:53571",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acoustic Solutions",
+  "model": "SP101",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "67fee422f31b7cfd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acoustic_Solutions/SP101.json"
+    ],
+    "harmony": {
+      "global_device_id": 53571,
+      "device_type": 19,
+      "codeset": "20390bc6648aa94a"
+    }
+  }
+}

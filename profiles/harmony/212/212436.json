@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212436",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Funai",
+  "model": "DPVR-7830D",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "295876e25a40ee10",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Funai/DPVR-7830D.json"
+    ],
+    "harmony": {
+      "global_device_id": 212436,
+      "device_type": 25,
+      "codeset": "e3f8be4daf947bd2"
+    }
+  }
+}

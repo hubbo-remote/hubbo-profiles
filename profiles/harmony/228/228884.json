@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:228884",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD83425",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "b06814462d624701",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD83425.json"
+    ],
+    "harmony": {
+      "global_device_id": 228884,
+      "device_type": 47,
+      "codeset": "ffd199ed2be62b4a"
+    }
+  }
+}

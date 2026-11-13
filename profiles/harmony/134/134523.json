@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:134523",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "RX-8919VBK",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ddb7bb79ab362ab7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAMFM"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputAMFM"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DBS",
+      "steps": [
+        {
+          "command": "InputTvDbs"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/RX-8919VBK.json"
+    ],
+    "harmony": {
+      "global_device_id": 134523,
+      "device_type": 5,
+      "codeset": "d5a8b4ee00337f17"
+    }
+  }
+}

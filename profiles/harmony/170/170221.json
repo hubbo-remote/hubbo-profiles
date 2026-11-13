@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170221",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Rapsody",
+  "model": "N36",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "971fdcc81c5c878a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "NDAS/HDD",
+      "steps": [
+        {
+          "command": "InputNdas"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Playlist/InternetRadio",
+      "steps": [
+        {
+          "command": "Playlist"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Rapsody/N36.json"
+    ],
+    "harmony": {
+      "global_device_id": 170221,
+      "device_type": 35,
+      "codeset": "5463c77edf8fec73"
+    }
+  }
+}

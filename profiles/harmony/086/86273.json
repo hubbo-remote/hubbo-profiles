@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:86273",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "29DZ210S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "efccc0a7cfbe4c27",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/29DZ210S.json"
+    ],
+    "harmony": {
+      "global_device_id": 86273,
+      "device_type": 1,
+      "codeset": "c08fdc61e8eaab82"
+    }
+  }
+}

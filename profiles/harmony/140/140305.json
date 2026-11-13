@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:140305",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Schontech",
+  "model": "SFX 14T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna/Cable",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Schontech/SFX_14T.json"
+    ],
+    "harmony": {
+      "global_device_id": 140305,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

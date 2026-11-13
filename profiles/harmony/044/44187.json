@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "harmony:44187",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TX-42PD50U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cb385827a58d5677",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "6"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TX-42PD50U.json"
+    ],
+    "harmony": {
+      "global_device_id": 44187,
+      "device_type": 1,
+      "codeset": "b9c65377979efc87"
+    }
+  }
+}

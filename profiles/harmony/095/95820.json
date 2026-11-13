@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95820",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "DSP-Z1",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "020b5de383d69684",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputCd2"
+        }
+      ]
+    },
+    {
+      "name": "Satellite",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/DSP-Z1.json"
+    ],
+    "harmony": {
+      "global_device_id": 95820,
+      "device_type": 5,
+      "codeset": "6f7c1a63962a2ffd"
+    }
+  }
+}

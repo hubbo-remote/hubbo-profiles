@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:42926",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "TA-FE370",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0690b5d2cf5c8ba4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tape1/DAT",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tape2/MD",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/TA-FE370.json"
+    ],
+    "harmony": {
+      "global_device_id": 42926,
+      "device_type": 19,
+      "codeset": "40f9866b0ffcef4a"
+    }
+  }
+}

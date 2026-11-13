@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267593",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Niro",
+  "model": "hps1000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "118493363725f42e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Sat/Cable",
+      "steps": [
+        {
+          "command": "InputSatCable"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    },
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Niro/hps1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 267593,
+      "device_type": 19,
+      "codeset": "f6ae1e410f64200e"
+    }
+  }
+}

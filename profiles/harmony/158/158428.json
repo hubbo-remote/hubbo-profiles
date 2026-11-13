@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158428",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "MM-KT10",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "49b06b905451ea2a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/MM-KT10.json"
+    ],
+    "harmony": {
+      "global_device_id": 158428,
+      "device_type": 22,
+      "codeset": "6079b7e750ea4a8c"
+    }
+  }
+}

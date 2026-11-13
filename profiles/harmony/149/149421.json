@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149421",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TDK",
+  "model": "NX-6CD",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "a8248a7e43993126",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Input",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TDK/NX-6CD.json"
+    ],
+    "harmony": {
+      "global_device_id": 149421,
+      "device_type": 21,
+      "codeset": "42df7beb36dfad3a"
+    }
+  }
+}

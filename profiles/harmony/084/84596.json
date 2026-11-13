@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:84596",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nakamichi",
+  "model": "CA-1",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "bdcda3e23a6d15ae",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTapeMonitor"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "VCR2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "VDP",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nakamichi/CA-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 84596,
+      "device_type": 5,
+      "codeset": "0d3e17ed8493804b"
+    }
+  }
+}

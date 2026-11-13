@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118467",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Maxent",
+  "model": "PX-42XP10",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "520e65255e1bae9e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 9000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "COMPONENT 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Maxent/PX-42XP10.json"
+    ],
+    "harmony": {
+      "global_device_id": 118467,
+      "device_type": 1,
+      "codeset": "cc0fffd16849ee28"
+    }
+  }
+}

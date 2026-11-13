@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:105831",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-EBP42F9",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cb385827a58d5677",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 2 A",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Input 2 B",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-EBP42F9.json"
+    ],
+    "harmony": {
+      "global_device_id": 105831,
+      "device_type": 1,
+      "codeset": "b9c65377979efc87"
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "harmony:277249",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "VPL-FHZ55",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f7dff7d56b50b37f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input A",
+      "steps": [
+        {
+          "command": "InputA"
+        }
+      ]
+    },
+    {
+      "name": "Input B",
+      "steps": [
+        {
+          "command": "InputB"
+        }
+      ]
+    },
+    {
+      "name": "Input C",
+      "steps": [
+        {
+          "command": "InputC"
+        }
+      ]
+    },
+    {
+      "name": "Input D",
+      "steps": [
+        {
+          "command": "InputD"
+        }
+      ]
+    },
+    {
+      "name": "Input E",
+      "steps": [
+        {
+          "command": "InputE"
+        }
+      ]
+    },
+    {
+      "name": "Input F",
+      "steps": [
+        {
+          "command": "InputF"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/VPL-FHZ55.json"
+    ],
+    "harmony": {
+      "global_device_id": 277249,
+      "device_type": 7,
+      "codeset": "2e6d7ad553a7f1de"
+    }
+  }
+}

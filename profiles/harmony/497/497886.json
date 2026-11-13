@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:497886",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "PM6007",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a909ef31289cc4d1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 100,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Recorder",
+      "steps": [
+        {
+          "command": "InputRecorder"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/PM6007.json"
+    ],
+    "harmony": {
+      "global_device_id": 497886,
+      "device_type": 19,
+      "codeset": "340549c2d078e866"
+    }
+  }
+}

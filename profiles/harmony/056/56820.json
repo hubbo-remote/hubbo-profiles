@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:56820",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RD-XS24",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "fb5aec3632f2228f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RD-XS24.json"
+    ],
+    "harmony": {
+      "global_device_id": 56820,
+      "device_type": 34,
+      "codeset": "09b31052f6489110"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "harmony:76987",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "TP-4800T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "efccc0a7cfbe4c27",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "List"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "List"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "List"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "List"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "List"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "List"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/TP-4800T.json"
+    ],
+    "harmony": {
+      "global_device_id": 76987,
+      "device_type": 1,
+      "codeset": "c08fdc61e8eaab82"
+    }
+  }
+}

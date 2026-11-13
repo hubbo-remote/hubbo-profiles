@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211728",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-20094",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "60bb7cde65f99904",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputSat"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT Receiver",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-20094.json"
+    ],
+    "harmony": {
+      "global_device_id": 211728,
+      "device_type": 13,
+      "codeset": "0941f96b9c1ebf5a"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167114",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "CP-RX70",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "7bd715fa492d37dc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/CP-RX70.json"
+    ],
+    "harmony": {
+      "global_device_id": 167114,
+      "device_type": 7,
+      "codeset": "a8b52ce5a79d5d41"
+    }
+  }
+}

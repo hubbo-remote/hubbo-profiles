@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12662",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "AV-32WP2-EP",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a23b3b00d4d9328f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 4500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-VHS",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Satellite",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/AV-32WP2-EP.json"
+    ],
+    "harmony": {
+      "global_device_id": 12662,
+      "device_type": 1,
+      "codeset": "4aa23c9dc04fab6c"
+    }
+  }
+}

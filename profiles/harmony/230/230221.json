@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:230221",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "VHP-51",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "338e529c0d2e1f6a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/VHP-51.json"
+    ],
+    "harmony": {
+      "global_device_id": 230221,
+      "device_type": 2,
+      "codeset": "8917d4fd7d26261c"
+    }
+  }
+}

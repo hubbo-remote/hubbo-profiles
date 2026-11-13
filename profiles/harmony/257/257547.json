@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:257547",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Auvio",
+  "model": "SB32200",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "465d702345be454a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Auvio/SB32200.json"
+    ],
+    "harmony": {
+      "global_device_id": 257547,
+      "device_type": 19,
+      "codeset": "822977586ba33380"
+    }
+  }
+}

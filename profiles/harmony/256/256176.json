@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:256176",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "W1500",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "8c7b0b95a74905e6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/W1500.json"
+    ],
+    "harmony": {
+      "global_device_id": 256176,
+      "device_type": 7,
+      "codeset": "faaa1b7e149219fa"
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270825",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "47LY760H",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ca2b885206504017",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Smart TV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Smart"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OKEnter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/47LY760H.json"
+    ],
+    "harmony": {
+      "global_device_id": 270825,
+      "device_type": 1,
+      "codeset": "da41f3c976efbe40"
+    }
+  }
+}

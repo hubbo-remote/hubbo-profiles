@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263267",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "X1383WH",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "72aa3e17316bd4ce",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/MHL",
+      "steps": [
+        {
+          "command": "InputHdmiDvi"
+        }
+      ]
+    },
+    {
+      "name": "USB B",
+      "steps": [
+        {
+          "command": "InputUsbB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/X1383WH.json"
+    ],
+    "harmony": {
+      "global_device_id": 263267,
+      "device_type": 7,
+      "codeset": "04a682f7844c8465"
+    }
+  }
+}

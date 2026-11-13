@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155856",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Emerson",
+  "model": "CKS-1862",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "a2d80489d91479b1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Emerson/CKS-1862.json"
+    ],
+    "harmony": {
+      "global_device_id": 155856,
+      "device_type": 36,
+      "codeset": "1213aa0059520c2b"
+    }
+  }
+}

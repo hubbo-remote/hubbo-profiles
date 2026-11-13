@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269281",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "iLive",
+  "model": "ITB474B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "8e63823773e10319",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/iLive/ITB474B.json"
+    ],
+    "harmony": {
+      "global_device_id": 269281,
+      "device_type": 19,
+      "codeset": "ebf4921b7d58b9eb"
+    }
+  }
+}

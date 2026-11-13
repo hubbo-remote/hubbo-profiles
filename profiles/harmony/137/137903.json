@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137903",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Algolith",
+  "model": "Mosquito HDMI",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "28cd6d74b247b03a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 1 (HDMI)",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2 (HDMI)",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3 (HDMI)",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4 (HDMI)",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "Input 5 (Analog)",
+      "steps": [
+        {
+          "command": "InputAnalog1"
+        }
+      ]
+    },
+    {
+      "name": "Input 6 (Analog)",
+      "steps": [
+        {
+          "command": "InputAnalog1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Algolith/Mosquito_HDMI.json"
+    ],
+    "harmony": {
+      "global_device_id": 137903,
+      "device_type": 30,
+      "codeset": "70d93efb8c8061bf"
+    }
+  }
+}

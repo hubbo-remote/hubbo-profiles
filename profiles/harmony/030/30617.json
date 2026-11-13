@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:30617",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kloss",
+  "model": "KL-I915A",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "0e7c45f489ad601d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Movie(DVD)",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "InputPictures"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kloss/KL-I915A.json"
+    ],
+    "harmony": {
+      "global_device_id": 30617,
+      "device_type": 35,
+      "codeset": "7edda53902359e04"
+    }
+  }
+}

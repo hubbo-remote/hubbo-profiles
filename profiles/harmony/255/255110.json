@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:255110",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Reel Multimedia",
+  "model": "Reelbox Avantgarde III",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "9c78af32cd401ae7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVB",
+      "steps": [
+        {
+          "command": "InputDvb"
+        }
+      ]
+    },
+    {
+      "name": "PVR",
+      "steps": [
+        {
+          "command": "InputPvr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "REEL",
+      "steps": [
+        {
+          "command": "InputReel"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Reel_Multimedia/Reelbox_Avantgarde_III.json"
+    ],
+    "harmony": {
+      "global_device_id": 255110,
+      "device_type": 35,
+      "codeset": "e70d3e30cf3a833b"
+    }
+  }
+}

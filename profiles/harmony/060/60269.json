@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:60269",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EMP-703",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0a6249807f3a4e32",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "S-video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EMP-703.json"
+    ],
+    "harmony": {
+      "global_device_id": 60269,
+      "device_type": 7,
+      "codeset": "94a8106074655b79"
+    }
+  }
+}

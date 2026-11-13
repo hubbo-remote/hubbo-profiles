@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:208118",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR EX769EF",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "6d63baee5209ebd8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR_EX769EF.json"
+    ],
+    "harmony": {
+      "global_device_id": 208118,
+      "device_type": 34,
+      "codeset": "8a8ff5255d04b442"
+    }
+  }
+}

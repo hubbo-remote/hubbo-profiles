@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:78104",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Van Medevoort",
+  "model": "MA-340",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "c7136dab3dafa0ff",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Van_Medevoort/MA-340.json"
+    ],
+    "harmony": {
+      "global_device_id": 78104,
+      "device_type": 5,
+      "codeset": "256eff76a21cd021"
+    }
+  }
+}

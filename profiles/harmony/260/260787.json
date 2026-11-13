@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260787",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acco Nobo",
+  "model": "X20-e",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "204049f143c7c638",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA 1",
+      "steps": [
+        {
+          "command": "InputVga1"
+        }
+      ]
+    },
+    {
+      "name": "VGA 2",
+      "steps": [
+        {
+          "command": "InputVga2"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acco_Nobo/X20-e.json"
+    ],
+    "harmony": {
+      "global_device_id": 260787,
+      "device_type": 7,
+      "codeset": "bcc1c3a0b9789cbd"
+    }
+  }
+}

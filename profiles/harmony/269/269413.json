@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269413",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MediaCom",
+  "model": "MyMovie HD T37",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "f822f1951996edeb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyMovies"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "JukeBox",
+      "steps": [
+        {
+          "command": "Jukebox"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MediaCom/MyMovie_HD_T37.json"
+    ],
+    "harmony": {
+      "global_device_id": 269413,
+      "device_type": 35,
+      "codeset": "ccce9817a4fd19ab"
+    }
+  }
+}

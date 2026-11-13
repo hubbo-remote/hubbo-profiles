@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:127510",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-HT50",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b7f4089c0bc4d630",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-HT50.json"
+    ],
+    "harmony": {
+      "global_device_id": 127510,
+      "device_type": 22,
+      "codeset": "b512a1dc94ac1596"
+    }
+  }
+}

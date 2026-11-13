@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137838",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RD-XS41",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "d07965896ce11cfa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RD-XS41.json"
+    ],
+    "harmony": {
+      "global_device_id": 137838,
+      "device_type": 34,
+      "codeset": "10e5071797cc94aa"
+    }
+  }
+}

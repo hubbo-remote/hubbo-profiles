@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:512221",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "DHT-S217",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2e4e280b4d295d72",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/DHT-S217.json"
+    ],
+    "harmony": {
+      "global_device_id": 512221,
+      "device_type": 19,
+      "codeset": "eabacee3a57751b0"
+    }
+  }
+}

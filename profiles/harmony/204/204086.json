@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:204086",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "SAVA D9000",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "63a2ba4f7e206ce1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/SAVA_D9000.json"
+    ],
+    "harmony": {
+      "global_device_id": 204086,
+      "device_type": 22,
+      "codeset": "828d6c745c92a825"
+    }
+  }
+}

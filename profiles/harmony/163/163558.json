@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163558",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Z-Systems",
+  "model": "RDP-1",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9729fc585b9467ba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "Mute",
+      "steps": [
+        {
+          "command": "InputMute"
+        }
+      ]
+    },
+    {
+      "name": "Gain",
+      "steps": [
+        {
+          "command": "InputGain"
+        }
+      ]
+    },
+    {
+      "name": "Load",
+      "steps": [
+        {
+          "command": "InputLoad"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Z-Systems/RDP-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 163558,
+      "device_type": 5,
+      "codeset": "9550f0f9c40fa705"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:67767",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hisense",
+  "model": "TLM-3777",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c06f9edd0bf7c3d3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "InputHDTV"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hisense/TLM-3777.json"
+    ],
+    "harmony": {
+      "global_device_id": 67767,
+      "device_type": 1,
+      "codeset": "ce936ed9a51c3c5a"
+    }
+  }
+}

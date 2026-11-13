@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:43121",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EMP-7100",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0a6249807f3a4e32",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EMP-7100.json"
+    ],
+    "harmony": {
+      "global_device_id": 43121,
+      "device_type": 7,
+      "codeset": "94a8106074655b79"
+    }
+  }
+}

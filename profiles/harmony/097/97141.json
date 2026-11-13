@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "harmony:97141",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "EU-48",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2a4c0d3f6e9da598",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "0"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/EU-48.json"
+    ],
+    "harmony": {
+      "global_device_id": 97141,
+      "device_type": 1,
+      "codeset": "d08497fe3da74b2f"
+    }
+  }
+}

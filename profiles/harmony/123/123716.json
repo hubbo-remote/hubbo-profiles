@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123716",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BBK Electronics",
+  "model": "BBK-9926",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "b2ad6e11c3f88870",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 20000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "Cable",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Front Comp",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Front S-Video",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Rear Comp",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Rear S-Video",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BBK_Electronics/BBK-9926.json"
+    ],
+    "harmony": {
+      "global_device_id": 123716,
+      "device_type": 25,
+      "codeset": "b78665888d39dedb"
+    }
+  }
+}

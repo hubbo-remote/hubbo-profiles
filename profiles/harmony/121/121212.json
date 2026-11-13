@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121212",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "ZDV-712",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "6571a6cb2aa19d2a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/ZDV-712.json"
+    ],
+    "harmony": {
+      "global_device_id": 121212,
+      "device_type": 25,
+      "codeset": "af0616cbd5f02abc"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144091",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "MFW 82-430/8 Dolby",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ed94afb2b5a05f97",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 17000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Ext1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Ext2",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "CAM",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/MFW_82-430_8_Dolby.json"
+    ],
+    "harmony": {
+      "global_device_id": 144091,
+      "device_type": 1,
+      "codeset": "da3b4773c9329fad"
+    }
+  }
+}

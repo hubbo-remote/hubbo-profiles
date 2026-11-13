@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:5399",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DCS",
+  "model": "Purcell",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "62809e1582c8c0e9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AES",
+      "steps": [
+        {
+          "command": "InputAes"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "Toslink",
+      "steps": [
+        {
+          "command": "InputRca"
+        },
+        {
+          "command": "Input"
+        }
+      ]
+    },
+    {
+      "name": "BNC",
+      "steps": [
+        {
+          "command": "InputBnc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DCS/Purcell.json"
+    ],
+    "harmony": {
+      "global_device_id": 5399,
+      "device_type": 30,
+      "codeset": "36431ba1242d7ea2"
+    }
+  }
+}

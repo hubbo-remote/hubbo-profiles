@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:229460",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "VS 2000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "b2b441ae3d530b8c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/VS_2000.json"
+    ],
+    "harmony": {
+      "global_device_id": 229460,
+      "device_type": 7,
+      "codeset": "01c8d15763045db3"
+    }
+  }
+}

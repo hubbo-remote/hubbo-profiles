@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174230",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Onkyo",
+  "model": "TX-SR575",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "fb305a13792c2e8f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR/DVR",
+      "steps": [
+        {
+          "command": "InputVcrDvr"
+        }
+      ]
+    },
+    {
+      "name": "CBL/SAT",
+      "steps": [
+        {
+          "command": "InputCableSat"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "AM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Onkyo/TX-SR575.json"
+    ],
+    "harmony": {
+      "global_device_id": 174230,
+      "device_type": 5,
+      "codeset": "db7c09f60acc3c6a"
+    }
+  }
+}

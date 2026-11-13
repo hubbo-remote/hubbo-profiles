@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:107489",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "CS-40805",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "19eea5c925def5fe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "ANT A",
+      "steps": [
+        {
+          "command": "InputAntA"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "EXT 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "EXT 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "ANT B",
+      "steps": [
+        {
+          "command": "InputAntB"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/CS-40805.json"
+    ],
+    "harmony": {
+      "global_device_id": 107489,
+      "device_type": 1,
+      "codeset": "08576a3ca3a3f811"
+    }
+  }
+}

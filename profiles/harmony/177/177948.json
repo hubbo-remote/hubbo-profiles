@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "id": "harmony:177948",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sceptre",
+  "model": "X-32BV Naga",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "86cc9f81b4ec4d87",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV(Air)",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV1(CVBS)",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "AV1(S-VIDEO)",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "AV2(CVBS)",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionRight"
+        }
+      ]
+    },
+    {
+      "name": "AV2(S-VIDEO)",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionRight"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "DirectionRight"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionRight"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sceptre/X-32BV_Naga.json"
+    ],
+    "harmony": {
+      "global_device_id": 177948,
+      "device_type": 1,
+      "codeset": "9eaee97beee291ae"
+    }
+  }
+}

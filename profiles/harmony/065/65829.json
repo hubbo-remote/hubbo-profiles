@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:65829",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "TH-A30R",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "0aa077d5eb9750d0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/TH-A30R.json"
+    ],
+    "harmony": {
+      "global_device_id": 65829,
+      "device_type": 22,
+      "codeset": "946542d5a7032a80"
+    }
+  }
+}

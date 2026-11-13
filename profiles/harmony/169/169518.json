@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169518",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Novatron",
+  "model": "IAMM NTD37L",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "05532f01eecb970f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "MOVIE",
+      "steps": [
+        {
+          "command": "Movie"
+        }
+      ]
+    },
+    {
+      "name": "MUSIC",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "PHOTO",
+      "steps": [
+        {
+          "command": "Picture"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Novatron/IAMM_NTD37L.json"
+    ],
+    "harmony": {
+      "global_device_id": 169518,
+      "device_type": 35,
+      "codeset": "263e94e5500ba17c"
+    }
+  }
+}

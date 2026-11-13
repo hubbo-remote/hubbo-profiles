@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "id": "harmony:171860",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "HTR-6140",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "907168800a98e64b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "MD/CD-R",
+      "steps": [
+        {
+          "command": "InputMdCdr"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 10000
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DTV/CBL",
+      "steps": [
+        {
+          "command": "InputDtvCbl"
+        }
+      ]
+    },
+    {
+      "name": "DVR",
+      "steps": [
+        {
+          "command": "InputDvr"
+        }
+      ]
+    },
+    {
+      "name": "V-AUX/DOCK",
+      "steps": [
+        {
+          "command": "InputVAuxDock"
+        }
+      ]
+    },
+    {
+      "name": "XM",
+      "steps": [
+        {
+          "command": "InputXm"
+        }
+      ]
+    },
+    {
+      "name": "SIRIUS",
+      "steps": [
+        {
+          "command": "InputSirius"
+        }
+      ]
+    },
+    {
+      "name": "MultiChannel",
+      "steps": [
+        {
+          "command": "InputMultiChIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/HTR-6140.json"
+    ],
+    "harmony": {
+      "global_device_id": 171860,
+      "device_type": 5,
+      "codeset": "e49bad6c85ea131e"
+    }
+  }
+}

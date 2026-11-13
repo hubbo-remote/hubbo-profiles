@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154096",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "DFX-6705",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "e0456961663d4487",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/DFX-6705.json"
+    ],
+    "harmony": {
+      "global_device_id": 154096,
+      "device_type": 25,
+      "codeset": "85a66776cb288f6e"
+    }
+  }
+}

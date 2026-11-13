@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:262659",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "49LB5500",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7c1f4cd75cf44be1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2(MHL)",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/49LB5500.json"
+    ],
+    "harmony": {
+      "global_device_id": 262659,
+      "device_type": 1,
+      "codeset": "3ae31b72ac4c6cc6"
+    }
+  }
+}

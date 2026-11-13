@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:75896",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Orion",
+  "model": "DVC-5000",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "a5d2cf75f169229e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "VCR"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "TvDvd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Orion/DVC-5000.json"
+    ],
+    "harmony": {
+      "global_device_id": 75896,
+      "device_type": 25,
+      "codeset": "5069f7254d44d287"
+    }
+  }
+}

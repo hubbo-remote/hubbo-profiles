@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101423",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "LTN-325",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "044a2650185d9c30",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputComponent12"
+        },
+        {
+          "command": "InputToggle"
+        },
+        {
+          "command": "InputToggle"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent22"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent12"
+        }
+      ]
+    },
+    {
+      "name": "PC/ DVI",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/LTN-325.json"
+    ],
+    "harmony": {
+      "global_device_id": 101423,
+      "device_type": 1,
+      "codeset": "7d1b900fade05ce8"
+    }
+  }
+}

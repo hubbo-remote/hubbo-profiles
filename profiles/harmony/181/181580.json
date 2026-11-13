@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181580",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "L47V651",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "caa1a69da601245b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 2000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Input3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Input-Front",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi1",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi2",
+      "steps": [
+        {
+          "command": "InputVideo6"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi-Front",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Air",
+      "steps": [
+        {
+          "command": "Exit"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/L47V651.json"
+    ],
+    "harmony": {
+      "global_device_id": 181580,
+      "device_type": 1,
+      "codeset": "20673b12ff24e380"
+    }
+  }
+}

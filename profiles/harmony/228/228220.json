@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:228220",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hyundai",
+  "model": "MBOX R600",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e8d3e6d1d435e6b3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "DTV"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "LAN"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hyundai/MBOX_R600.json"
+    ],
+    "harmony": {
+      "global_device_id": 228220,
+      "device_type": 35,
+      "codeset": "93701b0401c529f1"
+    }
+  }
+}

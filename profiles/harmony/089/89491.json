@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:89491",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bang & Olufsen",
+  "model": "Beomaster 8500",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "4fa2e2f4ff353558",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "2"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bang_Olufsen/Beomaster_8500.json"
+    ],
+    "harmony": {
+      "global_device_id": 89491,
+      "device_type": 5,
+      "codeset": "2c1a4024f9c88cb6"
+    }
+  }
+}

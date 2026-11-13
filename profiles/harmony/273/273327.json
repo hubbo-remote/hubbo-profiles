@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273327",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Martin Logan",
+  "model": "Motion Vision X",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "051d72fb95b333a0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Play-Fi",
+      "steps": [
+        {
+          "command": "InputPlayFi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Martin_Logan/Motion_Vision_X.json"
+    ],
+    "harmony": {
+      "global_device_id": 273327,
+      "device_type": 19,
+      "codeset": "6a1d856a542e89b5"
+    }
+  }
+}

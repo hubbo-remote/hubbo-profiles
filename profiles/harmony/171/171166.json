@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:171166",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "RDR-HXD910",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "f41d739e9eb85864",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/RDR-HXD910.json"
+    ],
+    "harmony": {
+      "global_device_id": 171166,
+      "device_type": 34,
+      "codeset": "67328748a4039f78"
+    }
+  }
+}

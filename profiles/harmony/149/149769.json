@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149769",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "DPL-550HT",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a225f0dc31e52a0e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Sat/Cab",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video/Vcr",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/DPL-550HT.json"
+    ],
+    "harmony": {
+      "global_device_id": 149769,
+      "device_type": 5,
+      "codeset": "bd74702e8dd8fa59"
+    }
+  }
+}

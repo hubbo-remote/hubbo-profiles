@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:124168",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Salora",
+  "model": "28M91",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ae60ca677fbd0cf6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1",
+        "hold_ms": 2500
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2500
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Scart 1",
+      "steps": [
+        {
+          "command": "10"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Scart 2",
+      "steps": [
+        {
+          "command": "10"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Salora/28M91.json"
+    ],
+    "harmony": {
+      "global_device_id": 124168,
+      "device_type": 1,
+      "codeset": "8c8fb4a225b1db6e"
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154935",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "LT-32F80BU",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2a0a26366660eeaa",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "EXT-1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "EXT-2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "EXT-3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "EXT-4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "EXT-5",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/LT-32F80BU.json"
+    ],
+    "harmony": {
+      "global_device_id": 154935,
+      "device_type": 1,
+      "codeset": "149b72680e71fdc8"
+    }
+  }
+}

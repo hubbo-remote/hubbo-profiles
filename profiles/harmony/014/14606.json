@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:14606",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Russound",
+  "model": "SS-4",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "388928e051a0cd25",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Source 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Source 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Source 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Source 4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Russound/SS-4.json"
+    ],
+    "harmony": {
+      "global_device_id": 14606,
+      "device_type": 30,
+      "codeset": "aea42b2eb3acd6ee"
+    }
+  }
+}

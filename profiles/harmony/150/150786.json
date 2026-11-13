@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150786",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Integra",
+  "model": "DHC-9.9",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "402c58fc03a05fa9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR/DVR",
+      "steps": [
+        {
+          "command": "InputVcrDvr"
+        }
+      ]
+    },
+    {
+      "name": "Cable/Sat",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "Game/TV",
+      "steps": [
+        {
+          "command": "InputGameTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Integra/DHC-9.9.json"
+    ],
+    "harmony": {
+      "global_device_id": 150786,
+      "device_type": 5,
+      "codeset": "2c513d5df28e2adb"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147641",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LRY-517",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "5e90d1372aaef0b5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LRY-517.json"
+    ],
+    "harmony": {
+      "global_device_id": 147641,
+      "device_type": 47,
+      "codeset": "00ad9f42ae11c012"
+    }
+  }
+}

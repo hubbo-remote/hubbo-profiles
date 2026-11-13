@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493233",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "4k550",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "384b604f85153391",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/4k550.json"
+    ],
+    "harmony": {
+      "global_device_id": 493233,
+      "device_type": 7,
+      "codeset": "98f8addf861b74f6"
+    }
+  }
+}

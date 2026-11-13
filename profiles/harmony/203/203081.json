@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203081",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hewlett Packard",
+  "model": "PAVILION DV6-1134CA",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "3c5036a15ebd8d9a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "MyTV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "MyDVD",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    },
+    {
+      "name": "MyVideos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "MyMusic",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "MyPictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hewlett_Packard/PAVILION_DV6-1134CA.json"
+    ],
+    "harmony": {
+      "global_device_id": 203081,
+      "device_type": 35,
+      "codeset": "fcd78085263a85d8"
+    }
+  }
+}

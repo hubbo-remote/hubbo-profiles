@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163425",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "32PFL8404H/60",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "bdbd5c33a2c6b013",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 14000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Ext1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "Ext2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "Ext3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HdmiSide",
+      "steps": [
+        {
+          "command": "InputHdmiSide"
+        }
+      ]
+    },
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "SideAV",
+      "steps": [
+        {
+          "command": "InputSide"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputExt1"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/32PFL8404H_60.json"
+    ],
+    "harmony": {
+      "global_device_id": 163425,
+      "device_type": 1,
+      "codeset": "5d81982cef138808"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:53935",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "28PT7109/12",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "22d4707ea73e9e8f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "EXT 2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "EXT 3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/28PT7109_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 53935,
+      "device_type": 1,
+      "codeset": "22e86ac73603d766"
+    }
+  }
+}

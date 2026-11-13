@@ -1,0 +1,222 @@
+{
+  "schema_version": 1,
+  "id": "harmony:497075",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KD-55X706E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9252d89882be1142",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Screen Mirroring",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Apps",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KD-55X706E.json"
+    ],
+    "harmony": {
+      "global_device_id": 497075,
+      "device_type": 1,
+      "codeset": "7022097550372fe4"
+    }
+  }
+}

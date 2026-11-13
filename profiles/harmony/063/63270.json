@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:63270",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AVerMedia",
+  "model": "AVerTV Studio303P",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "fdb7557a3363f511",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/FM",
+      "steps": [
+        {
+          "command": "InputTvFm"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Teletext",
+      "steps": [
+        {
+          "command": "InputTeletext"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputAudio"
+        }
+      ]
+    },
+    {
+      "name": "Full Screen",
+      "steps": [
+        {
+          "command": "FullScreen"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AVerMedia/AVerTV_Studio303P.json"
+    ],
+    "harmony": {
+      "global_device_id": 63270,
+      "device_type": 18,
+      "codeset": "4520105175bf2d39"
+    }
+  }
+}

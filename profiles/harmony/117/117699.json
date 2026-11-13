@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:117699",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SA-HT40PS",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9fec9826e15f52d5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVR/DVD",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TUNER FM1",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER FM2",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SA-HT40PS.json"
+    ],
+    "harmony": {
+      "global_device_id": 117699,
+      "device_type": 5,
+      "codeset": "7731b5093c36fbee"
+    }
+  }
+}

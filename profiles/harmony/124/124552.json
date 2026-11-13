@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "harmony:124552",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Skantic",
+  "model": "32-WB/3",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "ChannelUp"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV-1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV-2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV-F",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "S-VHS",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Skantic/32-WB_3.json"
+    ],
+    "harmony": {
+      "global_device_id": 124552,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:32650",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Russound",
+  "model": "CA4.4i",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a2ef00dcb0ee2462",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input1",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Input2",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Input3",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Input4",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Russound/CA4.4i.json"
+    ],
+    "harmony": {
+      "global_device_id": 32650,
+      "device_type": 19,
+      "codeset": "21909ad7995390bd"
+    }
+  }
+}

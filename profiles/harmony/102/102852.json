@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102852",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "SE2U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "22f9ee3eca1ac495",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/SE2U.json"
+    ],
+    "harmony": {
+      "global_device_id": 102852,
+      "device_type": 7,
+      "codeset": "eb50ca4f9bcca02f"
+    }
+  }
+}

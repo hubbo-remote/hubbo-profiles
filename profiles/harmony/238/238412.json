@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:238412",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "MDT521S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cfc142e3b6327316",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "[RGB1] HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "[RGB2] DVI-D",
+      "steps": [
+        {
+          "command": "InputDviD"
+        }
+      ]
+    },
+    {
+      "name": "[RGB3] D-SUB",
+      "steps": [
+        {
+          "command": "InputDSub"
+        }
+      ]
+    },
+    {
+      "name": "[RGB4] BNC",
+      "steps": [
+        {
+          "command": "InputBnc"
+        }
+      ]
+    },
+    {
+      "name": "[RGB5] CAT5",
+      "steps": [
+        {
+          "command": "InputCat5"
+        }
+      ]
+    },
+    {
+      "name": "[DVD/HD] YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "Video(S)",
+      "steps": [
+        {
+          "command": "InputVideos"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/MDT521S.json"
+    ],
+    "harmony": {
+      "global_device_id": 238412,
+      "device_type": 13,
+      "codeset": "ee195ec32ad3440f"
+    }
+  }
+}

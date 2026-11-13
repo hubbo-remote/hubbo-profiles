@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "harmony:117069",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "32LV67",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "bb2502f479fc02f2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Colorstream",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "6"
+        }
+      ]
+    },
+    {
+      "name": "Antenna 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "7"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/32LV67.json"
+    ],
+    "harmony": {
+      "global_device_id": 117069,
+      "device_type": 37,
+      "codeset": "a4fe879ee93d217b"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:272823",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Advance Acoustic",
+  "model": "X-Uni",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ceca26751266f0cb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Advance_Acoustic/X-Uni.json"
+    ],
+    "harmony": {
+      "global_device_id": 272823,
+      "device_type": 21,
+      "codeset": "b27e0839c4a9e3a9"
+    }
+  }
+}

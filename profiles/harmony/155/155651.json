@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155651",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "CRX-E320",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "9dd3a2b1ab9e5250",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Portable",
+      "steps": [
+        {
+          "command": "InputPortable"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/CRX-E320.json"
+    ],
+    "harmony": {
+      "global_device_id": 155651,
+      "device_type": 21,
+      "codeset": "695bb3f33276ceb5"
+    }
+  }
+}

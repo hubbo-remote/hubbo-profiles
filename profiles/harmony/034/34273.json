@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34273",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sansui",
+  "model": "R-950AV",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "5a70e63ba94262d5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sansui/R-950AV.json"
+    ],
+    "harmony": {
+      "global_device_id": 34273,
+      "device_type": 5,
+      "codeset": "a7d4890b827aa643"
+    }
+  }
+}

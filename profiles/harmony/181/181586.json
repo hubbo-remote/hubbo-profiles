@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181586",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Curtis",
+  "model": "LCD-3202A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9157190e13b56bd5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Curtis/LCD-3202A.json"
+    ],
+    "harmony": {
+      "global_device_id": 181586,
+      "device_type": 1,
+      "codeset": "f374ff647d5b3138"
+    }
+  }
+}

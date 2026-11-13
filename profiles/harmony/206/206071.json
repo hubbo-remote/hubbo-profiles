@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:206071",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Funai",
+  "model": "DRVC-3835",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "56ccd38bf70bb4a1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Funai/DRVC-3835.json"
+    ],
+    "harmony": {
+      "global_device_id": 206071,
+      "device_type": 25,
+      "codeset": "fab09306431308f2"
+    }
+  }
+}

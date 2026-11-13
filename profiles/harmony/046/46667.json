@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:46667",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bang & Olufsen",
+  "model": "Beovision MX 4500",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "bb1dc02fe3064c1d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VTape",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bang_Olufsen/Beovision_MX_4500.json"
+    ],
+    "harmony": {
+      "global_device_id": 46667,
+      "device_type": 1,
+      "codeset": "9a6347edbd27a38e"
+    }
+  }
+}

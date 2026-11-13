@@ -1,0 +1,177 @@
+{
+  "schema_version": 1,
+  "id": "harmony:24049",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Prima",
+  "model": "LC-30B1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "056a6689bbcc8111",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "RF",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Vid 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Vid 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "S vid",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "YPB PR1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "YPB PR2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Prima/LC-30B1.json"
+    ],
+    "harmony": {
+      "global_device_id": 24049,
+      "device_type": 1,
+      "codeset": "9644cd2796c30e97"
+    }
+  }
+}

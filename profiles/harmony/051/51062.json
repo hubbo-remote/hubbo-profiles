@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:51062",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sampo",
+  "model": "LME17S3",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "04baf987b643bfc7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "YCRCB",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "YPRPB",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sampo/LME17S3.json"
+    ],
+    "harmony": {
+      "global_device_id": 51062,
+      "device_type": 1,
+      "codeset": "7bace2e0fb585d61"
+    }
+  }
+}

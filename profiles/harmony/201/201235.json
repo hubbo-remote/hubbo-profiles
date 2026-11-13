@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201235",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MC-230/25",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "f51187e85bfe2eeb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MC-230_25.json"
+    ],
+    "harmony": {
+      "global_device_id": 201235,
+      "device_type": 21,
+      "codeset": "1109fc1a4850bb89"
+    }
+  }
+}

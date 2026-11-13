@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:242270",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aten",
+  "model": "VS-482",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "fbfd65a0e96636f9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Port1",
+      "steps": [
+        {
+          "command": "InputPort1"
+        }
+      ]
+    },
+    {
+      "name": "Port2",
+      "steps": [
+        {
+          "command": "InputPort2"
+        }
+      ]
+    },
+    {
+      "name": "Port3",
+      "steps": [
+        {
+          "command": "InputPort3"
+        }
+      ]
+    },
+    {
+      "name": "Port4",
+      "steps": [
+        {
+          "command": "InputPort4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aten/VS-482.json"
+    ],
+    "harmony": {
+      "global_device_id": 242270,
+      "device_type": 30,
+      "codeset": "0528746d535771ca"
+    }
+  }
+}

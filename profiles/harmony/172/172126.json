@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172126",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teufel",
+  "model": "CONCEPT S SW+R",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9f6acdb5ddb58096",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teufel/CONCEPT_S_SW_R.json"
+    ],
+    "harmony": {
+      "global_device_id": 172126,
+      "device_type": 5,
+      "codeset": "6a166837d2561be2"
+    }
+  }
+}

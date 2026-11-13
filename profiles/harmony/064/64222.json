@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "harmony:64222",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Loewe",
+  "model": "Calida 5063",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b009634181b59cc6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "9"
+        }
+      ]
+    },
+    {
+      "name": "Cinema",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Foxtel",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "4"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Video Games",
+      "steps": [
+        {
+          "command": "5"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "GameCube",
+      "steps": [
+        {
+          "command": "6"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Loewe/Calida_5063.json"
+    ],
+    "harmony": {
+      "global_device_id": 64222,
+      "device_type": 1,
+      "codeset": "2759f601cd7513fd"
+    }
+  }
+}

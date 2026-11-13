@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:210466",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kaiboer",
+  "model": "K500",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "50b6ce77bcb520ec",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "Movie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "Photo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kaiboer/K500.json"
+    ],
+    "harmony": {
+      "global_device_id": 210466,
+      "device_type": 35,
+      "codeset": "30390ff12829c64d"
+    }
+  }
+}

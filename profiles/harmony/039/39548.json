@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:39548",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharper Image",
+  "model": "SA260",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "e3b73e39e9ad624f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharper_Image/SA260.json"
+    ],
+    "harmony": {
+      "global_device_id": 39548,
+      "device_type": 21,
+      "codeset": "de94dafbcc204cb8"
+    }
+  }
+}

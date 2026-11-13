@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:240343",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marusys",
+  "model": "VU+ Solo 2",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "e64318ed16ab6c8f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marusys/VU_Solo_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 240343,
+      "device_type": 18,
+      "codeset": "456ad6aac380912f"
+    }
+  }
+}

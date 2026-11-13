@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176046",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVD-R3510V/12",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "bac0d8aec6b4acba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVD-R3510V_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 176046,
+      "device_type": 47,
+      "codeset": "f813092a033d3ebe"
+    }
+  }
+}

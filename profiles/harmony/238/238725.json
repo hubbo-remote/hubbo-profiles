@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:238725",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "RWi 222",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "277e9f24e321a873",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/RWi_222.json"
+    ],
+    "harmony": {
+      "global_device_id": 238725,
+      "device_type": 5,
+      "codeset": "c0bcbef2813e017d"
+    }
+  }
+}

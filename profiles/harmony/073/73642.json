@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:73642",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Naiko",
+  "model": "N2850W",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6ed9dcc759b3363e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "av1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "av2",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Naiko/N2850W.json"
+    ],
+    "harmony": {
+      "global_device_id": 73642,
+      "device_type": 1,
+      "codeset": "b7bf9558218fa9f0"
+    }
+  }
+}

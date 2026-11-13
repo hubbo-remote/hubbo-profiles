@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170075",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "PLC-XW56",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a079608ffb84569c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/PLC-XW56.json"
+    ],
+    "harmony": {
+      "global_device_id": 170075,
+      "device_type": 7,
+      "codeset": "123f178161d358e4"
+    }
+  }
+}

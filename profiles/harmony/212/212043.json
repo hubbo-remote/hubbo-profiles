@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212043",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Transcend",
+  "model": "T.PHOTO 830",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "5440d118f89a855c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "Photoview"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "Calender",
+      "steps": [
+        {
+          "command": "Calender"
+        }
+      ]
+    },
+    {
+      "name": "Setting",
+      "steps": [
+        {
+          "command": "Setting"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Transcend/T.PHOTO_830.json"
+    ],
+    "harmony": {
+      "global_device_id": 212043,
+      "device_type": 35,
+      "codeset": "c4bdd8539d68c34a"
+    }
+  }
+}

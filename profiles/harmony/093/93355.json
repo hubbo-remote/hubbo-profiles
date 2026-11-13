@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "harmony:93355",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "CP-2846TA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "70df14949ed5aa4f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "Red"
+        },
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "Red"
+        },
+        {
+          "command": "Yellow"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "Red"
+        },
+        {
+          "command": "Blue"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/CP-2846TA.json"
+    ],
+    "harmony": {
+      "global_device_id": 93355,
+      "device_type": 1,
+      "codeset": "4ce8af76454c5ef7"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:39801",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Seleco",
+  "model": "28SS556",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "80050fdb0a368a84",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-VHS",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "BNC 1",
+      "steps": [
+        {
+          "command": "InputBnc1"
+        }
+      ]
+    },
+    {
+      "name": "BNC 2",
+      "steps": [
+        {
+          "command": "InputBnc2"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Seleco/28SS556.json"
+    ],
+    "harmony": {
+      "global_device_id": 39801,
+      "device_type": 7,
+      "codeset": "f4ee0c7b4bbec803"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:104681",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "MX-545",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "c7136dab3dafa0ff",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/MX-545.json"
+    ],
+    "harmony": {
+      "global_device_id": 104681,
+      "device_type": 21,
+      "codeset": "256eff76a21cd021"
+    }
+  }
+}

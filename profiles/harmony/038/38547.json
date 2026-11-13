@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:38547",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "RX-5040",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "4e498089bdebd6cd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/RX-5040.json"
+    ],
+    "harmony": {
+      "global_device_id": 38547,
+      "device_type": 5,
+      "codeset": "2d926ec935d11d7f"
+    }
+  }
+}

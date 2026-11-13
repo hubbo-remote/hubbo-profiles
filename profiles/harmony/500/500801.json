@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500801",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Edifier",
+  "model": "R1700BTs",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "48f5840185945504",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line1",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "Line2",
+      "steps": [
+        {
+          "command": "InputLine2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Edifier/R1700BTs.json"
+    ],
+    "harmony": {
+      "global_device_id": 500801,
+      "device_type": 19,
+      "codeset": "396ccd463e5f52ec"
+    }
+  }
+}

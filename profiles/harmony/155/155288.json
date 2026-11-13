@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155288",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Roberts",
+  "model": "WM-201",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "d4ee6679fc695dc1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "Media Player",
+      "steps": [
+        {
+          "command": "Media"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "Aux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Roberts/WM-201.json"
+    ],
+    "harmony": {
+      "global_device_id": 155288,
+      "device_type": 5,
+      "codeset": "ba67be06fe23304f"
+    }
+  }
+}

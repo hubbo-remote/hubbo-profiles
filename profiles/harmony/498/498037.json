@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:498037",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "James LOUDSPEAKER",
+  "model": "A2.1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "caa2d176df7f2a9e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/James_LOUDSPEAKER/A2.1.json"
+    ],
+    "harmony": {
+      "global_device_id": 498037,
+      "device_type": 19,
+      "codeset": "337b71aefa6cc65f"
+    }
+  }
+}

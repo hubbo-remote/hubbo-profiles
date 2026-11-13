@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168900",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "RD-HA3",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ea550e46286b55fc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Ipod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/RD-HA3.json"
+    ],
+    "harmony": {
+      "global_device_id": 168900,
+      "device_type": 21,
+      "codeset": "23403508b16c43f5"
+    }
+  }
+}

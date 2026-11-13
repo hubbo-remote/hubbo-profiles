@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "harmony:85639",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "R21GG8RTA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "delay_ms": 100
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 100
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/R21GG8RTA.json"
+    ],
+    "harmony": {
+      "global_device_id": 85639,
+      "device_type": 1,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

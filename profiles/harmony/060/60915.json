@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:60915",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Niles",
+  "model": "SI-1200",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "907e573554f880e6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Niles/SI-1200.json"
+    ],
+    "harmony": {
+      "global_device_id": 60915,
+      "device_type": 19,
+      "codeset": "ce85356be7409998"
+    }
+  }
+}

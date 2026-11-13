@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:239752",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pace",
+  "model": "DCR 7111/05",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "f58455517b98bcd0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "UPC",
+      "steps": [
+        {
+          "command": "UPC"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pace/DCR_7111_05.json"
+    ],
+    "harmony": {
+      "global_device_id": 239752,
+      "device_type": 12,
+      "codeset": "b28386b4ae6e5b53"
+    }
+  }
+}

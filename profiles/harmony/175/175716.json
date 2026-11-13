@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:175716",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Auvisio",
+  "model": "PX-2122",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "a9fce289dd4b56c4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "InputFiles"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Auvisio/PX-2122.json"
+    ],
+    "harmony": {
+      "global_device_id": 175716,
+      "device_type": 35,
+      "codeset": "cac07602b900f1fe"
+    }
+  }
+}

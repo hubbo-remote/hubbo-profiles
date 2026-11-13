@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "id": "harmony:247685",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "PN60F5300",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "0b35af8a4d23bada",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2/DVI",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Smart Hub",
+      "steps": [
+        {
+          "command": "SmartHub"
+        }
+      ]
+    },
+    {
+      "name": "Ambient",
+      "steps": [
+        {
+          "command": "Ambient"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/PN60F5300.json"
+    ],
+    "harmony": {
+      "global_device_id": 247685,
+      "device_type": 1,
+      "codeset": "33a6ac7365400056"
+    }
+  }
+}

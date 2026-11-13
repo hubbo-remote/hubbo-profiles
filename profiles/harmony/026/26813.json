@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:26813",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "DAV-SB300",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "a9ee69be52805f2f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Sat",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "Function"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/DAV-SB300.json"
+    ],
+    "harmony": {
+      "global_device_id": 26813,
+      "device_type": 22,
+      "codeset": "65a4cc813be6c508"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:61744",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sim2",
+  "model": "HTL-40 Link",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4d5e885953811be8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "RBG 1",
+      "steps": [
+        {
+          "command": "6"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "RBG 2",
+      "steps": [
+        {
+          "command": "8"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "9"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "5"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Exit"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sim2/HTL-40_Link.json"
+    ],
+    "harmony": {
+      "global_device_id": 61744,
+      "device_type": 1,
+      "codeset": "6afc58a92d043975"
+    }
+  }
+}

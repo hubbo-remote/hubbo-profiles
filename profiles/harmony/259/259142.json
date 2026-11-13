@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259142",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TViX PVR M-4110SH",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "14a8d1daf85bfd7a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputAudio"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TViX_PVR_M-4110SH.json"
+    ],
+    "harmony": {
+      "global_device_id": 259142,
+      "device_type": 35,
+      "codeset": "c26566d259af3dde"
+    }
+  }
+}

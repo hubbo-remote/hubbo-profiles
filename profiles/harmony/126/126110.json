@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:126110",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Digital Projection",
+  "model": "dVision SX+",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "60258f76507ec18c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Digital_Projection/dVision_SX.json"
+    ],
+    "harmony": {
+      "global_device_id": 126110,
+      "device_type": 7,
+      "codeset": "89f98a4c904c048e"
+    }
+  }
+}

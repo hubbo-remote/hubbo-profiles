@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:261909",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Focal",
+  "model": "Dimension",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "928dcbe34bb7f667",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DIGITAL",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Focal/Dimension.json"
+    ],
+    "harmony": {
+      "global_device_id": 261909,
+      "device_type": 19,
+      "codeset": "f70542714607eece"
+    }
+  }
+}

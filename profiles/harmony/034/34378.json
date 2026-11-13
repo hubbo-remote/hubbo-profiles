@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34378",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "MSR140",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9ae5c83c29e229aa",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "AM-FM",
+      "steps": [
+        {
+          "command": "InputAMFM"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/MSR140.json"
+    ],
+    "harmony": {
+      "global_device_id": 34378,
+      "device_type": 5,
+      "codeset": "900f3fa4ccd39ca3"
+    }
+  }
+}

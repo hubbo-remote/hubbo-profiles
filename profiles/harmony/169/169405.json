@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169405",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KV-32LS65E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "76127db4e785dc80",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    },
+    {
+      "name": "Video4",
+      "steps": [
+        {
+          "command": "InputAv4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KV-32LS65E.json"
+    ],
+    "harmony": {
+      "global_device_id": 169405,
+      "device_type": 1,
+      "codeset": "70d9629461f28322"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336103",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "VE282X",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "d1cd0e3e7e52e9f8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer 1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/VE282X.json"
+    ],
+    "harmony": {
+      "global_device_id": 336103,
+      "device_type": 7,
+      "codeset": "a4cca8c15f16091d"
+    }
+  }
+}

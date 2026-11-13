@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480801",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharper Image",
+  "model": "SBT5300",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a12d30629ff35692",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "5.1CH",
+      "steps": [
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharper_Image/SBT5300.json"
+    ],
+    "harmony": {
+      "global_device_id": 480801,
+      "device_type": 19,
+      "codeset": "eb01c3dd466413bb"
+    }
+  }
+}

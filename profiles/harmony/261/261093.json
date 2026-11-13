@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "harmony:261093",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "40L1400u",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f5a145371d90bb10",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 9000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ANT/CABLE",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        }
+      ]
+    },
+    {
+      "name": "ColorStream HD",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/40L1400u.json"
+    ],
+    "harmony": {
+      "global_device_id": 261093,
+      "device_type": 1,
+      "codeset": "6fc5743d858ecd59"
+    }
+  }
+}

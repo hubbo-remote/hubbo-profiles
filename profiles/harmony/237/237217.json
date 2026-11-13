@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:237217",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Argon",
+  "model": "REC3246",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "4882e9b91a16778b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DAB/FM",
+      "steps": [
+        {
+          "command": "InputDabFm"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Argon/REC3246.json"
+    ],
+    "harmony": {
+      "global_device_id": 237217,
+      "device_type": 5,
+      "codeset": "fc92d0b09a401c3f"
+    }
+  }
+}

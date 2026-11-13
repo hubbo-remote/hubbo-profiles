@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173521",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Onkyo",
+  "model": "TX-SR607",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "cb0439a7ce2e4d4d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 7500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD/BD",
+      "steps": [
+        {
+          "command": "InputDvdBd"
+        }
+      ]
+    },
+    {
+      "name": "VCR/DVR",
+      "steps": [
+        {
+          "command": "InputVcrDvr"
+        }
+      ]
+    },
+    {
+      "name": "CBL/SAT",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV/Tape",
+      "steps": [
+        {
+          "command": "InputTvTape"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "Port",
+      "steps": [
+        {
+          "command": "InputPort"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Onkyo/TX-SR607.json"
+    ],
+    "harmony": {
+      "global_device_id": 173521,
+      "device_type": 5,
+      "codeset": "5a1230dd2d2363eb"
+    }
+  }
+}

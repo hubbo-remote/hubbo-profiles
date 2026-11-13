@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:33626",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Techwood",
+  "model": "DVR99",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "0b132a6580805fdb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Sat/Cbl",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Vid 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Ext. 5.1",
+      "steps": [
+        {
+          "command": "InputExt51"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Techwood/DVR99.json"
+    ],
+    "harmony": {
+      "global_device_id": 33626,
+      "device_type": 22,
+      "codeset": "827c41a8a313f307"
+    }
+  }
+}

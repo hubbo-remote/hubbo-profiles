@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:74639",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Buffalo",
+  "model": "PC-P1LAN",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "bdea70e6dcfbe0c6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Buffalo/PC-P1LAN.json"
+    ],
+    "harmony": {
+      "global_device_id": 74639,
+      "device_type": 35,
+      "codeset": "1943fc04b8a38905"
+    }
+  }
+}

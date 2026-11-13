@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154636",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "DSC-1000",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "d8dbae4cb4d3c129",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/DSC-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 154636,
+      "device_type": 22,
+      "codeset": "c5cc2e8fc924b38f"
+    }
+  }
+}

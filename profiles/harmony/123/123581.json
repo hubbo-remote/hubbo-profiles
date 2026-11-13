@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123581",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "ED-3600F",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7699abb1333304f7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/ED-3600F.json"
+    ],
+    "harmony": {
+      "global_device_id": 123581,
+      "device_type": 5,
+      "codeset": "c05948773a7d6958"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:98679",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Venturer",
+  "model": "CD-2610D",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "d1819e287f406d0a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Venturer/CD-2610D.json"
+    ],
+    "harmony": {
+      "global_device_id": 98679,
+      "device_type": 21,
+      "codeset": "dcc67052cffb24bc"
+    }
+  }
+}

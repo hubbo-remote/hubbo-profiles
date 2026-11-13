@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173192",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Syabas",
+  "model": "PopcornHour A-110",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "2e191865ff3e7e6d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "Delete"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "Yellow"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Syabas/PopcornHour_A-110.json"
+    ],
+    "harmony": {
+      "global_device_id": 173192,
+      "device_type": 35,
+      "codeset": "df71d44bc3c98261"
+    }
+  }
+}

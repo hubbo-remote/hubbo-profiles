@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:100654",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "PIVA",
+  "model": "PTV-1502",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "41edca8e7d8a36a2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "DirectionUp"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/PIVA/PTV-1502.json"
+    ],
+    "harmony": {
+      "global_device_id": 100654,
+      "device_type": 37,
+      "codeset": "b9ad1fd9409c986f"
+    }
+  }
+}

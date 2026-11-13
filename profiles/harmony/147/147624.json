@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147624",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DiVinci",
+  "model": "DV-6030",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "77bac1452a2d64a4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DiVinci/DV-6030.json"
+    ],
+    "harmony": {
+      "global_device_id": 147624,
+      "device_type": 5,
+      "codeset": "3db82c58dbc04068"
+    }
+  }
+}

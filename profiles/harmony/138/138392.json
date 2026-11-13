@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138392",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "28CE5591/13B",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b7e158089cc8a912",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antennae",
+      "steps": [
+        {
+          "command": "Display"
+        }
+      ]
+    },
+    {
+      "name": "RGB AUT.CVBS",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/28CE5591_13B.json"
+    ],
+    "harmony": {
+      "global_device_id": 138392,
+      "device_type": 1,
+      "codeset": "b9c71c9667b34975"
+    }
+  }
+}

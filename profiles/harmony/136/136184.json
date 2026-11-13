@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:136184",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Enox",
+  "model": "BLT-7727HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "07728b024a733dbf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Enox/BLT-7727HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 136184,
+      "device_type": 1,
+      "codeset": "52b9fd5eba957bd8"
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "id": "harmony:334123",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "R-N402",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e41d74864ebc21a7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Line 1",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "Line 2",
+      "steps": [
+        {
+          "command": "InputLine2"
+        }
+      ]
+    },
+    {
+      "name": "Line 3",
+      "steps": [
+        {
+          "command": "InputLine3"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "NET",
+      "steps": [
+        {
+          "command": "InputNet"
+        }
+      ]
+    },
+    {
+      "name": "Pandora",
+      "steps": [
+        {
+          "command": "InputPandora"
+        }
+      ]
+    },
+    {
+      "name": "Spotify",
+      "steps": [
+        {
+          "command": "InputSpotify"
+        }
+      ]
+    },
+    {
+      "name": "SiriusXM",
+      "steps": [
+        {
+          "command": "InputSiriusXM"
+        }
+      ]
+    },
+    {
+      "name": "Airplay",
+      "steps": [
+        {
+          "command": "InputAirplay"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/R-N402.json"
+    ],
+    "harmony": {
+      "global_device_id": 334123,
+      "device_type": 5,
+      "codeset": "fc2cbfc43bed5f5b"
+    }
+  }
+}

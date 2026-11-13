@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:36557",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "Lifestyle 23",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "7f55921e61a17262",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AM / FM",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/Lifestyle_23.json"
+    ],
+    "harmony": {
+      "global_device_id": 36557,
+      "device_type": 21,
+      "codeset": "7046697f8a1de02b"
+    }
+  }
+}

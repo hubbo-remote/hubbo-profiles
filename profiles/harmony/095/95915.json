@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95915",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KDE-P50HVX",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "55d0b4a946ef28de",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "コンポーネント1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "コンポーネント2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "コンポーネント4",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "GAME",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KDE-P50HVX.json"
+    ],
+    "harmony": {
+      "global_device_id": 95915,
+      "device_type": 1,
+      "codeset": "13f9d15a6b4cb70c"
+    }
+  }
+}

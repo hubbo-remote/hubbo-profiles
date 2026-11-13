@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116812",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NAD",
+  "model": "C-510",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c9d3da80b64aef77",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AES/ESU",
+      "steps": [
+        {
+          "command": "InputAesEbu"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NAD/C-510.json"
+    ],
+    "harmony": {
+      "global_device_id": 116812,
+      "device_type": 19,
+      "codeset": "f54039b97126d252"
+    }
+  }
+}

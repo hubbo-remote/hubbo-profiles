@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "harmony:235117",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "NP-V300W",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f7d88cbd39bf3989",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn",
+        "hold_ms": 1000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Computer 1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer 2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/NP-V300W.json"
+    ],
+    "harmony": {
+      "global_device_id": 235117,
+      "device_type": 7,
+      "codeset": "460348544bd24df8"
+    }
+  }
+}

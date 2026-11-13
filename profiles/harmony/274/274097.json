@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "harmony:274097",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Apple",
+  "model": "Apple TV (1st generation)",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "f78f81d6bc5c9433",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "Play"
+      }
+    ],
+    "off": [
+      {
+        "command": "Menu",
+        "hold_ms": 2000
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "Select",
+        "hold_ms": 3000
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 0,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Apple/Apple_TV_1st_generation.json"
+    ],
+    "harmony": {
+      "global_device_id": 274097,
+      "device_type": 51,
+      "codeset": "7e98ea380c7ab513"
+    }
+  }
+}

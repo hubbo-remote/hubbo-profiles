@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270887",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-50LB370U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "77c7bf9268ca4d56",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Component/AV",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-50LB370U.json"
+    ],
+    "harmony": {
+      "global_device_id": 270887,
+      "device_type": 1,
+      "codeset": "96e0494004f0ffae"
+    }
+  }
+}

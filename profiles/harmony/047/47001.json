@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:47001",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AOC",
+  "model": "TV2764W",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "46fdad591eaa6d3d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AOC/TV2764W.json"
+    ],
+    "harmony": {
+      "global_device_id": 47001,
+      "device_type": 13,
+      "codeset": "6e1e67f83e9a8841"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168294",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "XL-DK257N",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "cdc73b8b9eb4abdd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/XL-DK257N.json"
+    ],
+    "harmony": {
+      "global_device_id": 168294,
+      "device_type": 21,
+      "codeset": "ecabe5a0536c1c99"
+    }
+  }
+}

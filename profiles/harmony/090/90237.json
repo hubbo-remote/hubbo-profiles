@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:90237",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "AS665C",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "4c5ed6a2aa68554c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/AS665C.json"
+    ],
+    "harmony": {
+      "global_device_id": 90237,
+      "device_type": 21,
+      "codeset": "392934da865d7b0e"
+    }
+  }
+}

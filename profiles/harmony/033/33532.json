@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:33532",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Liquid Video",
+  "model": "LV505A",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f2793cee35100583",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Liquid_Video/LV505A.json"
+    ],
+    "harmony": {
+      "global_device_id": 33532,
+      "device_type": 22,
+      "codeset": "12555442c4ffc2ba"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147552",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "DVR-DV740",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "fae0f1946b782925",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VHS",
+      "steps": [
+        {
+          "command": "InputVhs"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/DVR-DV740.json"
+    ],
+    "harmony": {
+      "global_device_id": 147552,
+      "device_type": 47,
+      "codeset": "dcc051e88c1a4241"
+    }
+  }
+}

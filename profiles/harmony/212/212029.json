@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212029",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MCI730/12",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "5968b7a2a70d67ea",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "MediaLibrary",
+      "steps": [
+        {
+          "command": "InputMediaLibrary"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputFMRadio"
+        }
+      ]
+    },
+    {
+      "name": "InternetRadio",
+      "steps": [
+        {
+          "command": "InternetRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MCI730_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 212029,
+      "device_type": 21,
+      "codeset": "c4424dc63b2e4cf4"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:468850",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "HT2050A",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "6532c0ef73f5aece",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/HT2050A.json"
+    ],
+    "harmony": {
+      "global_device_id": 468850,
+      "device_type": 7,
+      "codeset": "fc7f8fc4ad5229f7"
+    }
+  }
+}

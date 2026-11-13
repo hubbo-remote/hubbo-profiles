@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:222275",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RTS635",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d4b1b92e3501afac",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RTS635.json"
+    ],
+    "harmony": {
+      "global_device_id": 222275,
+      "device_type": 19,
+      "codeset": "f265a7ccdf205b2a"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:72533",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EMP-82",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0a6249807f3a4e32",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Comp1",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "Comp2/YCbCr",
+      "steps": [
+        {
+          "command": "InputEasyMP"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EMP-82.json"
+    ],
+    "harmony": {
+      "global_device_id": 72533,
+      "device_type": 7,
+      "codeset": "94a8106074655b79"
+    }
+  }
+}

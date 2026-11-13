@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "harmony:206980",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Brite-View",
+  "model": "BV-6000P",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "92f1cc389ee6448e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Home",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Brite-View/BV-6000P.json"
+    ],
+    "harmony": {
+      "global_device_id": 206980,
+      "device_type": 35,
+      "codeset": "67316ffa3d90f697"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157509",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "UX-G300",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f857ddf21c70e7f2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner/AudioIn",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/UX-G300.json"
+    ],
+    "harmony": {
+      "global_device_id": 157509,
+      "device_type": 22,
+      "codeset": "ab77d1bbd0c168d1"
+    }
+  }
+}

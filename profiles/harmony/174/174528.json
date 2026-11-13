@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174528",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "IR2BT",
+  "model": "IR2BTci",
+  "kind": "console",
+  "platform": "ir",
+  "codeset": "defc9c5e1f39cf34",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      },
+      {
+        "command": "DirectionDown"
+      },
+      {
+        "command": "DirectionDown"
+      },
+      {
+        "command": "DirectionDown"
+      },
+      {
+        "command": "DirectionUp"
+      },
+      {
+        "command": "X"
+      },
+      {
+        "command": "X"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/IR2BT/IR2BTci.json"
+    ],
+    "harmony": {
+      "global_device_id": 174528,
+      "device_type": 23,
+      "codeset": "207d75a36b6f4b22"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480595",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-HTB200",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c98defa9ea487d0c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI (ARC)",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-HTB200.json"
+    ],
+    "harmony": {
+      "global_device_id": 480595,
+      "device_type": 19,
+      "codeset": "8ad0949aeef16105"
+    }
+  }
+}

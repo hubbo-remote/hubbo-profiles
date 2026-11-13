@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:96857",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Loewe",
+  "model": "ARC332C",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6ed6efb722301761",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputAntA"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputSVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Loewe/ARC332C.json"
+    ],
+    "harmony": {
+      "global_device_id": 96857,
+      "device_type": 1,
+      "codeset": "7e225acc4748e9cb"
+    }
+  }
+}

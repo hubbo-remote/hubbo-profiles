@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:231320",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ProCaster",
+  "model": "AV4737",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7ce34882ca61a01f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "InputBDDVD"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ProCaster/AV4737.json"
+    ],
+    "harmony": {
+      "global_device_id": 231320,
+      "device_type": 5,
+      "codeset": "8bb584d687703528"
+    }
+  }
+}

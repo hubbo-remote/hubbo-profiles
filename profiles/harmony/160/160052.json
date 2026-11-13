@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:160052",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "YSP-1000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "11f6d76f6e68c311",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "STB",
+      "steps": [
+        {
+          "command": "InputStb"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/YSP-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 160052,
+      "device_type": 19,
+      "codeset": "17e1d6086d3a6f4c"
+    }
+  }
+}

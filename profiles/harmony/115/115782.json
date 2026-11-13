@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:115782",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "MHC-RV888D",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "04c5f2163469598f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AMFM",
+      "steps": [
+        {
+          "command": "InputAMFM"
+        }
+      ]
+    },
+    {
+      "name": "TAPEA/B",
+      "steps": [
+        {
+          "command": "InputTapeAB"
+        }
+      ]
+    },
+    {
+      "name": "GAME",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/MHC-RV888D.json"
+    ],
+    "harmony": {
+      "global_device_id": 115782,
+      "device_type": 22,
+      "codeset": "a93bb7418d8f51d8"
+    }
+  }
+}

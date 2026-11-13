@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139667",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RC-195",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "ce1d80515e071521",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RC-195.json"
+    ],
+    "harmony": {
+      "global_device_id": 139667,
+      "device_type": 47,
+      "codeset": "f0682c631f61d543"
+    }
+  }
+}

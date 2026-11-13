@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:264194",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teufel",
+  "model": "Cinebase",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d5b706511de1ae77",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI TV",
+      "steps": [
+        {
+          "command": "InputHdmiTv"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teufel/Cinebase.json"
+    ],
+    "harmony": {
+      "global_device_id": 264194,
+      "device_type": 19,
+      "codeset": "e5c34beaf800a095"
+    }
+  }
+}

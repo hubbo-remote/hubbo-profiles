@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:264427",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CloudNetGo",
+  "model": "CR11S",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "c00ef34bfbd00a5d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Web",
+      "steps": [
+        {
+          "command": "WebBrowser"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Games",
+      "steps": [
+        {
+          "command": "Games"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CloudNetGo/CR11S.json"
+    ],
+    "harmony": {
+      "global_device_id": 264427,
+      "device_type": 35,
+      "codeset": "86889142314a07bb"
+    }
+  }
+}

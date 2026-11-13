@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "harmony:232359",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HW-E550",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "10a8f7c5e9e60f4c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 16000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "D.IN",
+      "steps": [
+        {
+          "command": "InputDIn"
+        },
+        {
+          "command": "InputDIn"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HW-E550.json"
+    ],
+    "harmony": {
+      "global_device_id": 232359,
+      "device_type": 19,
+      "codeset": "d43586e8dae8e4da"
+    }
+  }
+}

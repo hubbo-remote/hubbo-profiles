@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:350170",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "28LB452A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "88be7e8f65bdd764",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/28LB452A.json"
+    ],
+    "harmony": {
+      "global_device_id": 350170,
+      "device_type": 1,
+      "codeset": "a0e3b91b31ee02a3"
+    }
+  }
+}

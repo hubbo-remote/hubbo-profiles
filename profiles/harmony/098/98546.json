@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "harmony:98546",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "14-PT1353/22",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "ChannelUp",
+        "hold_ms": 1000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/14-PT1353_22.json"
+    ],
+    "harmony": {
+      "global_device_id": 98546,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

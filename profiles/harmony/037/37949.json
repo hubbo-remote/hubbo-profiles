@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:37949",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TVIX-M3000F",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "1cefa1ce03e877bb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputAudio"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TVIX-M3000F.json"
+    ],
+    "harmony": {
+      "global_device_id": 37949,
+      "device_type": 33,
+      "codeset": "2af3640f49e668ac"
+    }
+  }
+}

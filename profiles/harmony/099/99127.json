@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:99127",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Viore",
+  "model": "LC-20V21",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "97086616b33c882d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Viore/LC-20V21.json"
+    ],
+    "harmony": {
+      "global_device_id": 99127,
+      "device_type": 1,
+      "codeset": "d37d62d3128bc977"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111707",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "LA-27S7",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8f11e1ca15418331",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Ext.1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Ext.2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputAntenna"
+        }
+      ]
+    },
+    {
+      "name": "Comp",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/LA-27S7.json"
+    ],
+    "harmony": {
+      "global_device_id": 111707,
+      "device_type": 1,
+      "codeset": "506d3365b4d1bf86"
+    }
+  }
+}

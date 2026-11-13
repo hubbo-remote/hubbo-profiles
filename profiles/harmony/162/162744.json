@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162744",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "NV-HV61EF-S",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "29f24cdff0c69545",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/NV-HV61EF-S.json"
+    ],
+    "harmony": {
+      "global_device_id": 162744,
+      "device_type": 2,
+      "codeset": "57a99a02e7accce0"
+    }
+  }
+}

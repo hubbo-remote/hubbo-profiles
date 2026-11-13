@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174963",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Loewe",
+  "model": "NEMOS 32",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b009634181b59cc6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAV2V2"
+        },
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAV2V2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputAV2V2"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "AVS",
+      "steps": [
+        {
+          "command": "InputAV2V2"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Loewe/NEMOS_32.json"
+    ],
+    "harmony": {
+      "global_device_id": 174963,
+      "device_type": 1,
+      "codeset": "2759f601cd7513fd"
+    }
+  }
+}

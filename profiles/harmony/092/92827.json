@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:92827",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu",
+  "model": "PDS-4208",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9601106149198e40",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRGB1DVI"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Wide",
+      "steps": [
+        {
+          "command": "Aspect"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu/PDS-4208.json"
+    ],
+    "harmony": {
+      "global_device_id": 92827,
+      "device_type": 1,
+      "codeset": "e5ba270b912efcdf"
+    }
+  }
+}

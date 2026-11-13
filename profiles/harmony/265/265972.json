@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265972",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "HD-DAC1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "be7a22803576f51a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "USB-DAC",
+      "steps": [
+        {
+          "command": "InputUsbDac"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "iPod/Usb",
+      "steps": [
+        {
+          "command": "InputIpodUsb"
+        }
+      ]
+    },
+    {
+      "name": "OPTICAL 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "OPTICAL 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "COAXIAL",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/HD-DAC1.json"
+    ],
+    "harmony": {
+      "global_device_id": 265972,
+      "device_type": 19,
+      "codeset": "4df4cec2bc8c60d9"
+    }
+  }
+}

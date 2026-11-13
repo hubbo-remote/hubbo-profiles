@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493891",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Qviart",
+  "model": "LUNIX",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "770fb76911360322",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Qviart/LUNIX.json"
+    ],
+    "harmony": {
+      "global_device_id": 493891,
+      "device_type": 18,
+      "codeset": "dc36e8ee7b99893d"
+    }
+  }
+}

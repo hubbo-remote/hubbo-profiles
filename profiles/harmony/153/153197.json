@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153197",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Albrecht",
+  "model": "DR315",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "693a032bd866f486",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Albrecht/DR315.json"
+    ],
+    "harmony": {
+      "global_device_id": 153197,
+      "device_type": 36,
+      "codeset": "93dad1c6dba9ba20"
+    }
+  }
+}

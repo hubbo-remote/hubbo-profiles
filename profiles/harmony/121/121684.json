@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121684",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "SD-400H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "0bcb08f50e3a91c4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "LiveTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/SD-400H.json"
+    ],
+    "harmony": {
+      "global_device_id": 121684,
+      "device_type": 34,
+      "codeset": "c0cf7547d4b4ea5b"
+    }
+  }
+}

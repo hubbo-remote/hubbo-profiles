@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135213",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-V640RDS",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "5f63ecad95b61d18",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "MD/CD-R",
+      "steps": [
+        {
+          "command": "InputMdCdr"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "D-TV/CBL",
+      "steps": [
+        {
+          "command": "InputDtvCbl"
+        }
+      ]
+    },
+    {
+      "name": "V-AUX",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    },
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "VCR2/DVR2",
+      "steps": [
+        {
+          "command": "InputDvrVcr2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-V640RDS.json"
+    ],
+    "harmony": {
+      "global_device_id": 135213,
+      "device_type": 5,
+      "codeset": "aa0c384e569c5548"
+    }
+  }
+}

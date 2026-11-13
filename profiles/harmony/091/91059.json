@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:91059",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "XR-VS500D",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "7b37a0fc1648e7e7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/XR-VS500D.json"
+    ],
+    "harmony": {
+      "global_device_id": 91059,
+      "device_type": 22,
+      "codeset": "b039e15e745b7135"
+    }
+  }
+}

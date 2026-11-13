@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:494216",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bauhn",
+  "model": "ASB-0319",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a9c434576faed5e0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bauhn/ASB-0319.json"
+    ],
+    "harmony": {
+      "global_device_id": 494216,
+      "device_type": 19,
+      "codeset": "9dbb6d5e1946e940"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:238991",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "iLive",
+  "model": "IT202b",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "8d22845d121e5307",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/iLive/IT202b.json"
+    ],
+    "harmony": {
+      "global_device_id": 238991,
+      "device_type": 5,
+      "codeset": "172d00503af54425"
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:215965",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Westinghouse",
+  "model": "LD-2680",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "22cfda8f6ff7bf4f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "YPbPr 1",
+      "steps": [
+        {
+          "command": "InputYPbPr1"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr 2",
+      "steps": [
+        {
+          "command": "InputYPbPr2"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Pc",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "NumberEnter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Westinghouse/LD-2680.json"
+    ],
+    "harmony": {
+      "global_device_id": 215965,
+      "device_type": 1,
+      "codeset": "baa1c3b310ba61e6"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216265",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Luxor",
+  "model": "1806314",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "975447a937fb88a1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      },
+      {
+        "command": "ChannelUp"
+      },
+      {
+        "command": "ChannelDown"
+      },
+      {
+        "command": "Select"
+      }
+    ],
+    "off": [
+      {
+        "command": "Select"
+      },
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "ChannelDown"
+      },
+      {
+        "command": "ChannelUp"
+      },
+      {
+        "command": "Select"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "ch01",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Ext1",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Luxor/1806314.json"
+    ],
+    "harmony": {
+      "global_device_id": 216265,
+      "device_type": 1,
+      "codeset": "85802a2718306665"
+    }
+  }
+}

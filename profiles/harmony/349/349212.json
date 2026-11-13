@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:349212",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "iLive",
+  "model": "ITB296B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c98b7e8233713911",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/iLive/ITB296B.json"
+    ],
+    "harmony": {
+      "global_device_id": 349212,
+      "device_type": 19,
+      "codeset": "3390214d9d0f37cc"
+    }
+  }
+}

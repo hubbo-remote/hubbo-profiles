@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:46309",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GoVideo",
+  "model": "dv1140",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "99ac04d23bad2d96",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GoVideo/dv1140.json"
+    ],
+    "harmony": {
+      "global_device_id": 46309,
+      "device_type": 25,
+      "codeset": "3f6c44da331ca6ae"
+    }
+  }
+}

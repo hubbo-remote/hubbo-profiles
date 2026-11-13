@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173010",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "XA-102",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "b208d957141d449f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/XA-102.json"
+    ],
+    "harmony": {
+      "global_device_id": 173010,
+      "device_type": 21,
+      "codeset": "a2a76b089843e802"
+    }
+  }
+}

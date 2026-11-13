@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:234701",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SpeakerCraft",
+  "model": "CS3",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c8c3593009c10684",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SpeakerCraft/CS3.json"
+    ],
+    "harmony": {
+      "global_device_id": 234701,
+      "device_type": 19,
+      "codeset": "e7273a31c3e1c274"
+    }
+  }
+}

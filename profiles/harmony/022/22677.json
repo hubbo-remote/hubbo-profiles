@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "id": "harmony:22677",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ADS Tech",
+  "model": "HDUP-1500",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "8044eeffe3fc6bb8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Comp 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Comp 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Comp 3",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "S Video 4",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "S Video 5",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "S Video 6",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "6"
+        }
+      ]
+    },
+    {
+      "name": "RCA 7",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "7"
+        }
+      ]
+    },
+    {
+      "name": "RCA 9",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "9"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ADS_Tech/HDUP-1500.json"
+    ],
+    "harmony": {
+      "global_device_id": 22677,
+      "device_type": 12,
+      "codeset": "5dc0657962feb0b0"
+    }
+  }
+}

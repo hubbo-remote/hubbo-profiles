@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:499021",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "NP-UM351W-WK",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "59ebb0ca2ec7ed74",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "USB-A",
+      "steps": [
+        {
+          "command": "InputUsbA"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "InputLan"
+        }
+      ]
+    },
+    {
+      "name": "USB-B",
+      "steps": [
+        {
+          "command": "InputUsbB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/NP-UM351W-WK.json"
+    ],
+    "harmony": {
+      "global_device_id": 499021,
+      "device_type": 7,
+      "codeset": "2246bc43f91eb02c"
+    }
+  }
+}

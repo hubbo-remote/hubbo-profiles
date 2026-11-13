@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:103581",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ELV",
+  "model": "HDMI Umschalter 410RA",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "092363d5a27a52a2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ELV/HDMI_Umschalter_410RA.json"
+    ],
+    "harmony": {
+      "global_device_id": 103581,
+      "device_type": 30,
+      "codeset": "9222e8a29bb981e2"
+    }
+  }
+}

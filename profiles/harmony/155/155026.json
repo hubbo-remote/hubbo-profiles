@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155026",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "D-VR4X",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "f2fbf72f27fa9ab0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/D-VR4X.json"
+    ],
+    "harmony": {
+      "global_device_id": 155026,
+      "device_type": 47,
+      "codeset": "a4ead4b8df9550f4"
+    }
+  }
+}

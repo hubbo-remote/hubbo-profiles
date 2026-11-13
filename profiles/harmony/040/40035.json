@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40035",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "MHC-4800",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "cd3225a9cfd470ab",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TapeA",
+      "steps": [
+        {
+          "command": "InputTapeA"
+        }
+      ]
+    },
+    {
+      "name": "TapeB",
+      "steps": [
+        {
+          "command": "InputTapeB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/MHC-4800.json"
+    ],
+    "harmony": {
+      "global_device_id": 40035,
+      "device_type": 21,
+      "codeset": "63376afc16cf0c25"
+    }
+  }
+}

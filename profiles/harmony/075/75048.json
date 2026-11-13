@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:75048",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Liesegang",
+  "model": "DV-465",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "7bd715fa492d37dc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 31000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Liesegang/DV-465.json"
+    ],
+    "harmony": {
+      "global_device_id": 75048,
+      "device_type": 7,
+      "codeset": "a8b52ce5a79d5d41"
+    }
+  }
+}

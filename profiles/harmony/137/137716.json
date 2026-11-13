@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137716",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "NP-4000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "be506902bff8119b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Computer1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    },
+    {
+      "name": "Computer3",
+      "steps": [
+        {
+          "command": "ImputComputer3"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/NP-4000.json"
+    ],
+    "harmony": {
+      "global_device_id": 137716,
+      "device_type": 7,
+      "codeset": "61597af10d588259"
+    }
+  }
+}

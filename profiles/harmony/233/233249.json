@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "id": "harmony:233249",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "40PFL5007K/12",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a0149895da9ae2b7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI Side",
+      "steps": [
+        {
+          "command": "InputHdmiSide"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Smart TV",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "SmartTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/40PFL5007K_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 233249,
+      "device_type": 1,
+      "codeset": "9f3436461bf6f304"
+    }
+  }
+}

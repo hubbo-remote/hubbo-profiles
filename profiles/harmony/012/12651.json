@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12651",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "42HDM70",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e860b44f5c1349e8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "Video1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "Video2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "Video3"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "Video4"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "RGB1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/42HDM70.json"
+    ],
+    "harmony": {
+      "global_device_id": 12651,
+      "device_type": 13,
+      "codeset": "89bc803338ba5961"
+    }
+  }
+}

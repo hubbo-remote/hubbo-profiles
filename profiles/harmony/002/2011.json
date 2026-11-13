@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:2011",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "A-660",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7b37a0fc1648e7e7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "Function"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "VDP",
+      "steps": [
+        {
+          "command": "InputVdp"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/A-660.json"
+    ],
+    "harmony": {
+      "global_device_id": 2011,
+      "device_type": 5,
+      "codeset": "b039e15e745b7135"
+    }
+  }
+}

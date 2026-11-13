@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "harmony:252937",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "40PFL8008S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5e01eaeceafa9183",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 14000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI Side",
+      "steps": [
+        {
+          "command": "InputHdmiSide1"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "Smart TV",
+      "steps": [
+        {
+          "command": "SmartTv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/40PFL8008S.json"
+    ],
+    "harmony": {
+      "global_device_id": 252937,
+      "device_type": 1,
+      "codeset": "52104ac2b92a93be"
+    }
+  }
+}

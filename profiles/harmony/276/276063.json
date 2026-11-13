@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:276063",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "DRA-N4",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "b0cc06ab84947c3e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "iPod/USB",
+      "steps": [
+        {
+          "command": "InputIpodUsb"
+        }
+      ]
+    },
+    {
+      "name": "Music Server",
+      "steps": [
+        {
+          "command": "InputMusicServer"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/DRA-N4.json"
+    ],
+    "harmony": {
+      "global_device_id": 276063,
+      "device_type": 33,
+      "codeset": "f33cb5b9eb3d86b6"
+    }
+  }
+}

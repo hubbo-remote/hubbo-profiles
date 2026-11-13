@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "harmony:29867",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "40KW610S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "56452357b119b164",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "4"
+        },
+        {
+          "command": "List"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "List"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "4"
+        },
+        {
+          "command": "List"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "List"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "4"
+        },
+        {
+          "command": "List"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "List"
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "steps": [
+        {
+          "command": "4"
+        },
+        {
+          "command": "List"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "List"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/40KW610S.json"
+    ],
+    "harmony": {
+      "global_device_id": 29867,
+      "device_type": 1,
+      "codeset": "8a7900ca2148790d"
+    }
+  }
+}

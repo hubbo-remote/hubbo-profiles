@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180908",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-31842",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "48fdd7c068d2e406",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV/SV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "SCART 1",
+      "steps": [
+        {
+          "command": "InputScart1"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "SCART 2",
+      "steps": [
+        {
+          "command": "InputScart2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-31842.json"
+    ],
+    "harmony": {
+      "global_device_id": 180908,
+      "device_type": 1,
+      "codeset": "f4baad16a8e1149d"
+    }
+  }
+}

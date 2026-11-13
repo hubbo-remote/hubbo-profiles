@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154005",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RCD-103",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "db23380f90b8d20a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RCD-103.json"
+    ],
+    "harmony": {
+      "global_device_id": 154005,
+      "device_type": 21,
+      "codeset": "10add1abbc60a968"
+    }
+  }
+}

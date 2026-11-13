@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118216",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HCD-DX313",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "7083647d917751a3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner FM",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "Function"
+        }
+      ]
+    },
+    {
+      "name": "Tuner AM",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "Function"
+        },
+        {
+          "command": "Function"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HCD-DX313.json"
+    ],
+    "harmony": {
+      "global_device_id": 118216,
+      "device_type": 22,
+      "codeset": "d54af5d2399451ae"
+    }
+  }
+}

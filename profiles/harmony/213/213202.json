@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:213202",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "WAVE MUSIC SYSTEM SOUNDLINK",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "38fdc523e0cf194e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/WAVE_MUSIC_SYSTEM_SOUNDLINK.json"
+    ],
+    "harmony": {
+      "global_device_id": 213202,
+      "device_type": 21,
+      "codeset": "1cf93a049eb3f7d5"
+    }
+  }
+}

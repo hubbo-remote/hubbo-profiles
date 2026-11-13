@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:209980",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Proline",
+  "model": "G2105",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "24000ca31def4ef0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Proline/G2105.json"
+    ],
+    "harmony": {
+      "global_device_id": 209980,
+      "device_type": 1,
+      "codeset": "e60392a66827ad71"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:249581",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "32LN530B",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4c3c91c7874964fb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/32LN530B.json"
+    ],
+    "harmony": {
+      "global_device_id": 249581,
+      "device_type": 1,
+      "codeset": "7bf33e23e8cb4a68"
+    }
+  }
+}

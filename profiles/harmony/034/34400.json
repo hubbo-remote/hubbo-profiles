@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34400",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Rotel",
+  "model": "RC-972",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e1124f7cc7a772b1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Rotel/RC-972.json"
+    ],
+    "harmony": {
+      "global_device_id": 34400,
+      "device_type": 19,
+      "codeset": "86776a6085c35c64"
+    }
+  }
+}

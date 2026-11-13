@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:48135",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FW630",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "e66c7d752f9c4ddf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tape2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "M.Media",
+      "steps": [
+        {
+          "command": "InputMMedia"
+        }
+      ]
+    },
+    {
+      "name": "Tv/Vcr",
+      "steps": [
+        {
+          "command": "TvVcr"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FW630.json"
+    ],
+    "harmony": {
+      "global_device_id": 48135,
+      "device_type": 21,
+      "codeset": "63843120349d64c0"
+    }
+  }
+}

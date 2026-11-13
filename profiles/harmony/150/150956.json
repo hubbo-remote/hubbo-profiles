@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150956",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Storex",
+  "model": "MPiX-357HD",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "93ab35198c4f5f59",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "InputFiles"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Storex/MPiX-357HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 150956,
+      "device_type": 35,
+      "codeset": "602930dfede56284"
+    }
+  }
+}

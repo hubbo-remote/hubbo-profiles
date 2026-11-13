@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172982",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Audio Research",
+  "model": "DAC7",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "685eca130ac87785",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Usb",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Rca",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "Bnc",
+      "steps": [
+        {
+          "command": "InputBnc"
+        }
+      ]
+    },
+    {
+      "name": "Xlr",
+      "steps": [
+        {
+          "command": "InputXlr"
+        }
+      ]
+    },
+    {
+      "name": "Opt",
+      "steps": [
+        {
+          "command": "InputOpt"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Audio_Research/DAC7.json"
+    ],
+    "harmony": {
+      "global_device_id": 172982,
+      "device_type": 19,
+      "codeset": "d47bf8a8304487cd"
+    }
+  }
+}

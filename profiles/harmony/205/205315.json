@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205315",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HBDDZ170",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f4bc5321b35ef60c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2250
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "TV/CABLE",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AUDIOIN",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HBDDZ170.json"
+    ],
+    "harmony": {
+      "global_device_id": 205315,
+      "device_type": 22,
+      "codeset": "1515bd3d2923574f"
+    }
+  }
+}

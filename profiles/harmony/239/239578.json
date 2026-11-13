@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:239578",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-83796",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3fd39fdee36b67e2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-83796.json"
+    ],
+    "harmony": {
+      "global_device_id": 239578,
+      "device_type": 19,
+      "codeset": "aff0ae3d36e9be2c"
+    }
+  }
+}

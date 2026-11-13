@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138067",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LGXBR-446",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "a2c1f17d4a6d3ed6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LGXBR-446.json"
+    ],
+    "harmony": {
+      "global_device_id": 138067,
+      "device_type": 47,
+      "codeset": "f19a3457487e2a26"
+    }
+  }
+}

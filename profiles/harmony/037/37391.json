@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:37391",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MM 7103 VTS",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "244db366535d1f4d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Television",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputSv"
+        }
+      ]
+    },
+    {
+      "name": "High Definition",
+      "steps": [
+        {
+          "command": "InputYuv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MM_7103_VTS.json"
+    ],
+    "harmony": {
+      "global_device_id": 37391,
+      "device_type": 1,
+      "codeset": "f551a7916886bd26"
+    }
+  }
+}

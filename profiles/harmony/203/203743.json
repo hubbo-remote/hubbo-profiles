@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203743",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tandberg",
+  "model": "Arvani Ergosound",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "27068f37eae64efd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input Optical",
+      "steps": [
+        {
+          "command": "InputOpticalIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tandberg/Arvani_Ergosound.json"
+    ],
+    "harmony": {
+      "global_device_id": 203743,
+      "device_type": 19,
+      "codeset": "4d957a615db3bd59"
+    }
+  }
+}

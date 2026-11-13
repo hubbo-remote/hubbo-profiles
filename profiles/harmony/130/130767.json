@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:130767",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "Multisync XG-85",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "ae6280b63e3e5637",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/Multisync_XG-85.json"
+    ],
+    "harmony": {
+      "global_device_id": 130767,
+      "device_type": 7,
+      "codeset": "664b615150a0e4b9"
+    }
+  }
+}

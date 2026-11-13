@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150022",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-XW120",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "0fb6505b7cf6bc99",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputBdSd"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-XW120.json"
+    ],
+    "harmony": {
+      "global_device_id": 150022,
+      "device_type": 34,
+      "codeset": "a15a0cbb952e74ea"
+    }
+  }
+}

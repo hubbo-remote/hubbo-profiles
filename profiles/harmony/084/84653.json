@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:84653",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DCS-353",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "89e3cf141a541095",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DCS-353.json"
+    ],
+    "harmony": {
+      "global_device_id": 84653,
+      "device_type": 22,
+      "codeset": "43cc7dbfc5dd9f56"
+    }
+  }
+}

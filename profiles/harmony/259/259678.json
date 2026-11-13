@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259678",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "40PFL4508K/12",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "0cfa54e9d5731943",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 14000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmiSide"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmiSide"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI Side",
+      "steps": [
+        {
+          "command": "InputHdmiSide"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputHdmiSide"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputHdmiSide"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Smart TV",
+      "steps": [
+        {
+          "command": "SmartTv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/40PFL4508K_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 259678,
+      "device_type": 1,
+      "codeset": "7bbeee4ea6af8875"
+    }
+  }
+}

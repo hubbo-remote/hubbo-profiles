@@ -1,0 +1,242 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260720",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "UN40H6350",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6cf74380b42412dd",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1/DVI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "Smart Hub",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "SmartHub"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/UN40H6350.json"
+    ],
+    "harmony": {
+      "global_device_id": 260720,
+      "device_type": 1,
+      "codeset": "82f9b01c914fefb4"
+    }
+  }
+}

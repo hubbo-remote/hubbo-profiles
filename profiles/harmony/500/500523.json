@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500523",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "coocaa",
+  "model": "Live-3",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d155ffe996229336",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/coocaa/Live-3.json"
+    ],
+    "harmony": {
+      "global_device_id": 500523,
+      "device_type": 19,
+      "codeset": "8fcfb0f99faa90c8"
+    }
+  }
+}

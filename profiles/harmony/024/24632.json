@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "harmony:24632",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HLR5063WX/XAA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8f11e1ca15418331",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1 - n/a",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV2 - VCR",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV 3 - GAME",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 1 - Sat",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 2 - GAME",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 3 - PC",
+      "steps": [
+        {
+          "command": "InputSVideo3"
+        }
+      ]
+    },
+    {
+      "name": "DVI - DVD",
+      "steps": [
+        {
+          "command": "InputSVideo3"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputAntenna"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HLR5063WX_XAA.json"
+    ],
+    "harmony": {
+      "global_device_id": 24632,
+      "device_type": 1,
+      "codeset": "506d3365b4d1bf86"
+    }
+  }
+}

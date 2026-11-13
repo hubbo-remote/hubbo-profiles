@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:69950",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "CT-M511S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "90b99b834e0ac39e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "ChannelUp"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/CT-M511S.json"
+    ],
+    "harmony": {
+      "global_device_id": 69950,
+      "device_type": 1,
+      "codeset": "3eb2ecd2e5cb639d"
+    }
+  }
+}

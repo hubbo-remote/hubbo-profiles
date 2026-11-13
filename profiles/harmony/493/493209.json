@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493209",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "NP-P525UL",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0c42ae6b6b507712",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "HDBaseT",
+      "steps": [
+        {
+          "command": "InputHdBaseT"
+        }
+      ]
+    },
+    {
+      "name": "USB-A",
+      "steps": [
+        {
+          "command": "InputUsbA"
+        }
+      ]
+    },
+    {
+      "name": "Apps",
+      "steps": [
+        {
+          "command": "InputApps"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/NP-P525UL.json"
+    ],
+    "harmony": {
+      "global_device_id": 493209,
+      "device_type": 7,
+      "codeset": "8628d865aaeedf13"
+    }
+  }
+}

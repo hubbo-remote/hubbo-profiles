@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:334457",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Insignia",
+  "model": "NS-SB216",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "657982b45a3eb7cb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Insignia/NS-SB216.json"
+    ],
+    "harmony": {
+      "global_device_id": 334457,
+      "device_type": 19,
+      "codeset": "6d2d92ee94da6870"
+    }
+  }
+}

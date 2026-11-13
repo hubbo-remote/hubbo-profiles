@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:350102",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "32LH520D",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5e80107203a13e88",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/32LH520D.json"
+    ],
+    "harmony": {
+      "global_device_id": 350102,
+      "device_type": 1,
+      "codeset": "7f65d4a81549abd8"
+    }
+  }
+}

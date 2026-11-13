@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:494264",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Topvision",
+  "model": "SD01",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ba082fd45adcbf4f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Topvision/SD01.json"
+    ],
+    "harmony": {
+      "global_device_id": 494264,
+      "device_type": 19,
+      "codeset": "6ee2e57e8e72ea67"
+    }
+  }
+}

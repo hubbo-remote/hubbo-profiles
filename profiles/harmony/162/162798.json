@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162798",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "CSP 630",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "777ba6433b7ff4d4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/CSP_630.json"
+    ],
+    "harmony": {
+      "global_device_id": 162798,
+      "device_type": 22,
+      "codeset": "bff095707cd30c23"
+    }
+  }
+}

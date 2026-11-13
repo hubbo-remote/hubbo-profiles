@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:223297",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Monivision",
+  "model": "DM-5952S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3287440bd14587b0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VGA 1",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "VGA 2",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Monivision/DM-5952S.json"
+    ],
+    "harmony": {
+      "global_device_id": 223297,
+      "device_type": 13,
+      "codeset": "3b294f7a1c3df0b3"
+    }
+  }
+}

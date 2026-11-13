@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:19422",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "VS-8087",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "19eea5c925def5fe",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "ANT B",
+      "steps": [
+        {
+          "command": "InputAntB"
+        }
+      ]
+    },
+    {
+      "name": "ANT A",
+      "steps": [
+        {
+          "command": "InputAntA"
+        }
+      ]
+    },
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3 (Front)",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/VS-8087.json"
+    ],
+    "harmony": {
+      "global_device_id": 19422,
+      "device_type": 1,
+      "codeset": "08576a3ca3a3f811"
+    }
+  }
+}

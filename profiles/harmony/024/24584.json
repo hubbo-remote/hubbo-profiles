@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:24584",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "PX-42XM1G",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2c799dece6603536",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/HD",
+      "steps": [
+        {
+          "command": "HD1"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "RGB/PC",
+      "steps": [
+        {
+          "command": "RGBPCToggle"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/PX-42XM1G.json"
+    ],
+    "harmony": {
+      "global_device_id": 24584,
+      "device_type": 13,
+      "codeset": "f99dd97d02dc89f6"
+    }
+  }
+}

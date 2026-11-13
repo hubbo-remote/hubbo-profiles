@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "harmony:271000",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "40L310U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3496ce8cece6fd97",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ANT/CABLE",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/40L310U.json"
+    ],
+    "harmony": {
+      "global_device_id": 271000,
+      "device_type": 1,
+      "codeset": "72732fb1b99e416c"
+    }
+  }
+}

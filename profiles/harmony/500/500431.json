@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500431",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dingsun",
+  "model": "8541740580",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6a51f667e3b06bf9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Toslink",
+      "steps": [
+        {
+          "command": "InputToslink"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dingsun/8541740580.json"
+    ],
+    "harmony": {
+      "global_device_id": 500431,
+      "device_type": 19,
+      "codeset": "c4a2a40abfdf508d"
+    }
+  }
+}

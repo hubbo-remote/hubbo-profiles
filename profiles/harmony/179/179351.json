@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179351",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-37GD6U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "002d4f311f14f403",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputCard"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "Input5"
+        }
+      ]
+    },
+    {
+      "name": "i.LINK",
+      "steps": [
+        {
+          "command": "InputiLink"
+        }
+      ]
+    },
+    {
+      "name": "CARD",
+      "steps": [
+        {
+          "command": "InputCard"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-37GD6U.json"
+    ],
+    "harmony": {
+      "global_device_id": 179351,
+      "device_type": 1,
+      "codeset": "ec2dc07e9b127983"
+    }
+  }
+}

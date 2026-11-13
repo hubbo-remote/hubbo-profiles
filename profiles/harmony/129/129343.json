@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129343",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-E90H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "0fb6505b7cf6bc99",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-E90H.json"
+    ],
+    "harmony": {
+      "global_device_id": 129343,
+      "device_type": 34,
+      "codeset": "a15a0cbb952e74ea"
+    }
+  }
+}

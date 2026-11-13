@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493773",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hama",
+  "model": "DIT2005M",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "14bf39bb326412d9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Aux In",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hama/DIT2005M.json"
+    ],
+    "harmony": {
+      "global_device_id": 493773,
+      "device_type": 33,
+      "codeset": "0dfa518fced88edf"
+    }
+  }
+}

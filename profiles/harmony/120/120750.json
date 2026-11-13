@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:120750",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Soundwave",
+  "model": "PA-700",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3dd9c3467b07bfeb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "5.1 Ch",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "MD/Tape",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Soundwave/PA-700.json"
+    ],
+    "harmony": {
+      "global_device_id": 120750,
+      "device_type": 19,
+      "codeset": "6c376aed81807d28"
+    }
+  }
+}

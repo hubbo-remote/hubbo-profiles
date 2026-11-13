@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147112",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "HTB-805DV",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "82dfef50484f9fc7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD-DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/HTB-805DV.json"
+    ],
+    "harmony": {
+      "global_device_id": 147112,
+      "device_type": 22,
+      "codeset": "0c351a012f79ffd9"
+    }
+  }
+}

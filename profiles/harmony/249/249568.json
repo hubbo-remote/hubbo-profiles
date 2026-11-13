@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:249568",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Schneider",
+  "model": "STV 553.1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "bdaf3cc501ef25da",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna/Cable",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "VCR1/AUX",
+      "steps": [
+        {
+          "command": "InputVCR1AUX"
+        }
+      ]
+    },
+    {
+      "name": "InputVideo 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Schneider/STV_553.1.json"
+    ],
+    "harmony": {
+      "global_device_id": 249568,
+      "device_type": 1,
+      "codeset": "8129b97a01c838c7"
+    }
+  }
+}

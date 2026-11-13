@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:24713",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "VPL-EX1",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1528c2f1d015c650",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VIDEO 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 2",
+      "steps": [
+        {
+          "command": "InputA"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 3",
+      "steps": [
+        {
+          "command": "InputB"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 4",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/VPL-EX1.json"
+    ],
+    "harmony": {
+      "global_device_id": 24713,
+      "device_type": 7,
+      "codeset": "b90865eb6f51c79f"
+    }
+  }
+}

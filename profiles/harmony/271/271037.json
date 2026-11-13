@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:271037",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PT-RZ470",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "30494ab9ef43055c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "DVI-I",
+      "steps": [
+        {
+          "command": "InputDviI"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Digital Link",
+      "steps": [
+        {
+          "command": "InputDigitalLink"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PT-RZ470.json"
+    ],
+    "harmony": {
+      "global_device_id": 271037,
+      "device_type": 7,
+      "codeset": "5f62f8f175f3d225"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:75339",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Primare",
+  "model": "Master Delay Box",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "5fc8bbedc4cfe0ed",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Primare/Master_Delay_Box.json"
+    ],
+    "harmony": {
+      "global_device_id": 75339,
+      "device_type": 30,
+      "codeset": "ff66379038dc26e3"
+    }
+  }
+}

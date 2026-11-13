@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:413312",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "TH-D337H",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "61fa57ed4685e1c8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "HDMI Arc",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/TH-D337H.json"
+    ],
+    "harmony": {
+      "global_device_id": 413312,
+      "device_type": 19,
+      "codeset": "15f596f7fdaa0aa6"
+    }
+  }
+}

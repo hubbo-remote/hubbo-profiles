@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500858",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DCS",
+  "model": "Scarlatti Master Clock",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c23aeeed88ea1928",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AES1",
+      "steps": [
+        {
+          "command": "InputAes1"
+        }
+      ]
+    },
+    {
+      "name": "AES2",
+      "steps": [
+        {
+          "command": "InputAes2"
+        }
+      ]
+    },
+    {
+      "name": "DualAES",
+      "steps": [
+        {
+          "command": "InputDualAES"
+        }
+      ]
+    },
+    {
+      "name": "RCA1",
+      "steps": [
+        {
+          "command": "InputRCA1"
+        }
+      ]
+    },
+    {
+      "name": "RCA2",
+      "steps": [
+        {
+          "command": "InputRCA2"
+        }
+      ]
+    },
+    {
+      "name": "BNC",
+      "steps": [
+        {
+          "command": "InputBnc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DCS/Scarlatti_Master_Clock.json"
+    ],
+    "harmony": {
+      "global_device_id": 500858,
+      "device_type": 19,
+      "codeset": "fff127666102c67e"
+    }
+  }
+}

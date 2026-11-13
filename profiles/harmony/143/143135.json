@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143135",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-42PWD8GK",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "930cc0189550a365",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SATELLITE",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "DVD/PLAYSTATION",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "CABLE/PC",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-42PWD8GK.json"
+    ],
+    "harmony": {
+      "global_device_id": 143135,
+      "device_type": 1,
+      "codeset": "21d7027d8992f01a"
+    }
+  }
+}

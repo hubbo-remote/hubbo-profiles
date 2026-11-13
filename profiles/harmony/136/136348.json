@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:136348",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "DV200MW8",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "2a78fb892667f8d8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/DV200MW8.json"
+    ],
+    "harmony": {
+      "global_device_id": 136348,
+      "device_type": 25,
+      "codeset": "c31b99ebcba4ff2f"
+    }
+  }
+}

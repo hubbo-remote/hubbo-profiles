@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:89759",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "LT-40DS7BJ",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a23b3b00d4d9328f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Philips",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Pioneer",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "Digital In",
+      "steps": [
+        {
+          "command": "InputDigitalIn"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/LT-40DS7BJ.json"
+    ],
+    "harmony": {
+      "global_device_id": 89759,
+      "device_type": 1,
+      "codeset": "4aa23c9dc04fab6c"
+    }
+  }
+}

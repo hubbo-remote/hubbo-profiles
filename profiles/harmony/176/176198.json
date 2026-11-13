@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176198",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "190TW9FB/00",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9cb6e44354097a5c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "SideHDMI",
+      "steps": [
+        {
+          "command": "InputHdmiSide"
+        }
+      ]
+    },
+    {
+      "name": "Ext1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "Ext3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/190TW9FB_00.json"
+    ],
+    "harmony": {
+      "global_device_id": 176198,
+      "device_type": 1,
+      "codeset": "3771e5bb1084645a"
+    }
+  }
+}

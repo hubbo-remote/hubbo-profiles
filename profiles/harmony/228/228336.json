@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:228336",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Advanced Digital Broadcast",
+  "model": "N82",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "93e4f1c6d17d41df",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Advanced_Digital_Broadcast/N82.json"
+    ],
+    "harmony": {
+      "global_device_id": 228336,
+      "device_type": 35,
+      "codeset": "1f1c0f542172dd41"
+    }
+  }
+}

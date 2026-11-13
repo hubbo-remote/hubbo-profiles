@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101908",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Victor",
+  "model": "DR-HD400",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "fd62cae0ac1d738f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Victor/DR-HD400.json"
+    ],
+    "harmony": {
+      "global_device_id": 101908,
+      "device_type": 34,
+      "codeset": "07d411a7ad4e3b66"
+    }
+  }
+}

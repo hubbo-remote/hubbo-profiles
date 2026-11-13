@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:84413",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HT-KP30",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "3b4a60e95e5ee543",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HT-KP30.json"
+    ],
+    "harmony": {
+      "global_device_id": 84413,
+      "device_type": 22,
+      "codeset": "f42fde5ab649e59a"
+    }
+  }
+}

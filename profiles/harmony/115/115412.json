@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "harmony:115412",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "DV-AC55",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "fd62cae0ac1d738f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3,
+    "start": "NumInput"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/DV-AC55.json"
+    ],
+    "harmony": {
+      "global_device_id": 115412,
+      "device_type": 34,
+      "codeset": "07d411a7ad4e3b66"
+    }
+  }
+}

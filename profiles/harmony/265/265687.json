@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265687",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "M4224C",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "93e56fe9488355e3",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "RGB PC",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/DVI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/M4224C.json"
+    ],
+    "harmony": {
+      "global_device_id": 265687,
+      "device_type": 1,
+      "codeset": "6779d551e7f0699d"
+    }
+  }
+}

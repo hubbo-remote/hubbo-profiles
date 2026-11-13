@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202237",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ViewSonic",
+  "model": "hdmr-2000",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "960ed80bfa8d971d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "InputPictures"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "InputVideos"
+        }
+      ]
+    },
+    {
+      "name": "iRadio",
+      "steps": [
+        {
+          "command": "InputiRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ViewSonic/hdmr-2000.json"
+    ],
+    "harmony": {
+      "global_device_id": 202237,
+      "device_type": 35,
+      "codeset": "f63fb4d977889a88"
+    }
+  }
+}

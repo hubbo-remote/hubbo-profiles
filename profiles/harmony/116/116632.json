@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116632",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hyvision",
+  "model": "MV-190",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e0cc1dc8088f3aab",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Security",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hyvision/MV-190.json"
+    ],
+    "harmony": {
+      "global_device_id": 116632,
+      "device_type": 13,
+      "codeset": "6e14d5fe1c059cd6"
+    }
+  }
+}

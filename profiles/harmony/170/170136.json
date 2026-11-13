@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170136",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Niveus Media",
+  "model": "VAIL",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "c1623f85a2315b2f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Niveus_Media/VAIL.json"
+    ],
+    "harmony": {
+      "global_device_id": 170136,
+      "device_type": 35,
+      "codeset": "345026939c17433d"
+    }
+  }
+}

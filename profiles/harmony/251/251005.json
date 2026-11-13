@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251005",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "HiMedia",
+  "model": "HD560",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "cfe409788512c864",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "steps": [
+        {
+          "command": "InputCard"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/HiMedia/HD560.json"
+    ],
+    "harmony": {
+      "global_device_id": 251005,
+      "device_type": 35,
+      "codeset": "5d3c5911618d8005"
+    }
+  }
+}

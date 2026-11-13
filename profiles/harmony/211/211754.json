@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211754",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TVIX M-6631N",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e840dd3fef9481a8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "InputHDTV"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TVIX_M-6631N.json"
+    ],
+    "harmony": {
+      "global_device_id": 211754,
+      "device_type": 35,
+      "codeset": "7018861b042e3cd2"
+    }
+  }
+}

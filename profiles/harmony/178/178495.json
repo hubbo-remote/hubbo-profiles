@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:178495",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "POWERLITE HOME CINEMA 6500UB",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "18f1f009b8497ab2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/POWERLITE_HOME_CINEMA_6500UB.json"
+    ],
+    "harmony": {
+      "global_device_id": 178495,
+      "device_type": 7,
+      "codeset": "ffaee35e4ce73e36"
+    }
+  }
+}

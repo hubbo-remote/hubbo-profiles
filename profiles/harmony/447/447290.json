@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:447290",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ViewSonic",
+  "model": "VS16907",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "5fbd936aeee364e1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ViewSonic/VS16907.json"
+    ],
+    "harmony": {
+      "global_device_id": 447290,
+      "device_type": 7,
+      "codeset": "4739f1cf28e66e22"
+    }
+  }
+}

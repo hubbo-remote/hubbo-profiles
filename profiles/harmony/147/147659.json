@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147659",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "RX-F10",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "07d13e30b2e0f13b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dvr/Dvd",
+      "steps": [
+        {
+          "command": "InputDvrDvd"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Dbs",
+      "steps": [
+        {
+          "command": "InputDbs"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DvdMulti",
+      "steps": [
+        {
+          "command": "InputDvdMulti"
+        }
+      ]
+    },
+    {
+      "name": "Fm/Am",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/RX-F10.json"
+    ],
+    "harmony": {
+      "global_device_id": 147659,
+      "device_type": 5,
+      "codeset": "5cbcb1ccb1af8fc5"
+    }
+  }
+}

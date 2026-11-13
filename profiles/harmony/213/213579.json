@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:213579",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RD100KB",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "eabf9ea35c9c9639",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RD100KB.json"
+    ],
+    "harmony": {
+      "global_device_id": 213579,
+      "device_type": 34,
+      "codeset": "53218c6c7feab49e"
+    }
+  }
+}

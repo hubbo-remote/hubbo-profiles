@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:90212",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "L1510",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAntennaA"
+        }
+      ]
+    },
+    {
+      "name": "VID1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "CMPST",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/L1510.json"
+    ],
+    "harmony": {
+      "global_device_id": 90212,
+      "device_type": 1,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

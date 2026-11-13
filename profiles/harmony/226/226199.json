@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226199",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AOpen",
+  "model": "EY18",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "05a2bc641d635361",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "InputPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AOpen/EY18.json"
+    ],
+    "harmony": {
+      "global_device_id": 226199,
+      "device_type": 35,
+      "codeset": "1f9a7d70e0f9989a"
+    }
+  }
+}

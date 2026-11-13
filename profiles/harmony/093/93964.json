@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:93964",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hyundai",
+  "model": "HT-04",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4cf1dd2e11b44721",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "6CH",
+      "steps": [
+        {
+          "command": "Input6Ch"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hyundai/HT-04.json"
+    ],
+    "harmony": {
+      "global_device_id": 93964,
+      "device_type": 19,
+      "codeset": "8d7bf40b4ab88f13"
+    }
+  }
+}

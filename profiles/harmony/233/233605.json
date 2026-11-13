@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "id": "harmony:233605",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "UA55ES6200R",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "047003b88941e03b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Smart Hub",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "SmartHub"
+        }
+      ]
+    },
+    {
+      "name": "Ambient",
+      "steps": [
+        {
+          "command": "Ambient"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/UA55ES6200R.json"
+    ],
+    "harmony": {
+      "global_device_id": 233605,
+      "device_type": 1,
+      "codeset": "46438ffca4a60be0"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:209908",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Altibox",
+  "model": "VIP-1960-9",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "811cb4122881df93",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Altibox/VIP-1960-9.json"
+    ],
+    "harmony": {
+      "global_device_id": 209908,
+      "device_type": 18,
+      "codeset": "29dd3d07742b026c"
+    }
+  }
+}

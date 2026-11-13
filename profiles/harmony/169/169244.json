@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169244",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Defender",
+  "model": "HOLLYWOOD 95",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ceecf586f3a7a4c4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "AC3IN",
+      "steps": [
+        {
+          "command": "InputAC3IN"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Defender/HOLLYWOOD_95.json"
+    ],
+    "harmony": {
+      "global_device_id": 169244,
+      "device_type": 5,
+      "codeset": "d18261fc1a9f25af"
+    }
+  }
+}

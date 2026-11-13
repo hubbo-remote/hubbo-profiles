@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40700",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Adcom",
+  "model": "GTP500MKII",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "24a47f6614ac7fb6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video/Tape2",
+      "steps": [
+        {
+          "command": "InputVideoTape2"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Adcom/GTP500MKII.json"
+    ],
+    "harmony": {
+      "global_device_id": 40700,
+      "device_type": 5,
+      "codeset": "8a0347e97fbfb905"
+    }
+  }
+}

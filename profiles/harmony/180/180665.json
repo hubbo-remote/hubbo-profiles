@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180665",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RH-188",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "783106ff0e2ee85b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RH-188.json"
+    ],
+    "harmony": {
+      "global_device_id": 180665,
+      "device_type": 34,
+      "codeset": "22507b0f57241a1c"
+    }
+  }
+}

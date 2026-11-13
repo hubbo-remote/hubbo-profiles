@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "harmony:301293",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LETV",
+  "model": "L553AN",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c609300bec8116ff",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputHdmi"
+        },
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputHdmi"
+        },
+        {
+          "command": "InputHdmi"
+        },
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LETV/L553AN.json"
+    ],
+    "harmony": {
+      "global_device_id": 301293,
+      "device_type": 1,
+      "codeset": "a2639570d76bd07f"
+    }
+  }
+}

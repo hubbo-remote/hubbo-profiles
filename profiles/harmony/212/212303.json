@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212303",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MCI-298/12",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "185dd8f0e591060f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "MediaLibrary",
+      "steps": [
+        {
+          "command": "InputMediaLibrary"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "InternetRadio",
+      "steps": [
+        {
+          "command": "InternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "FMRadio",
+      "steps": [
+        {
+          "command": "InputFMRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MCI-298_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 212303,
+      "device_type": 21,
+      "codeset": "653b819a195cf79f"
+    }
+  }
+}

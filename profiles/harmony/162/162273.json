@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162273",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "PD-35D30ES",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "394bfb71a5c5ade5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "E1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "E2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "E3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "E4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "E5",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/PD-35D30ES.json"
+    ],
+    "harmony": {
+      "global_device_id": 162273,
+      "device_type": 1,
+      "codeset": "1e141627a2349dd4"
+    }
+  }
+}

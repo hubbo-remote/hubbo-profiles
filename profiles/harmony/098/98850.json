@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "id": "harmony:98850",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Astar",
+  "model": "LTV-2701",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "318343e21a666a2f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "Av1",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Av2",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Svid",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "YCbCr",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Astar/LTV-2701.json"
+    ],
+    "harmony": {
+      "global_device_id": 98850,
+      "device_type": 1,
+      "codeset": "a286cf4e04e2f5b9"
+    }
+  }
+}

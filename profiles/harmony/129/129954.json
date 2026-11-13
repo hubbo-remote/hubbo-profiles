@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129954",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "SLV-585HT",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "5923e7f85999476c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Line In 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Line In 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/SLV-585HT.json"
+    ],
+    "harmony": {
+      "global_device_id": 129954,
+      "device_type": 2,
+      "codeset": "2e33c537e5bc45c1"
+    }
+  }
+}

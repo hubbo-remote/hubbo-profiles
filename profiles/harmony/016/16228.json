@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:16228",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "PL-710C",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0a6249807f3a4e32",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/PL-710C.json"
+    ],
+    "harmony": {
+      "global_device_id": 16228,
+      "device_type": 7,
+      "codeset": "94a8106074655b79"
+    }
+  }
+}

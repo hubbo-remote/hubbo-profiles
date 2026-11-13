@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:177983",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "BTM-177",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "d6ec505d5014106f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/BTM-177.json"
+    ],
+    "harmony": {
+      "global_device_id": 177983,
+      "device_type": 21,
+      "codeset": "6f3748a298a587a3"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273193",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "BTS7000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "64e2bd79e77846eb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI Arc",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    },
+    {
+      "name": "COAX",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "AudioIn",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/BTS7000.json"
+    ],
+    "harmony": {
+      "global_device_id": 273193,
+      "device_type": 19,
+      "codeset": "0922d75977c031d1"
+    }
+  }
+}

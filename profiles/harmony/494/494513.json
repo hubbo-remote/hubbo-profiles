@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:494513",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sim2",
+  "model": "NERO 4S",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "42e90a58921cdbcb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "DisplayPort",
+      "steps": [
+        {
+          "command": "InputDisplayPort"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sim2/NERO_4S.json"
+    ],
+    "harmony": {
+      "global_device_id": 494513,
+      "device_type": 7,
+      "codeset": "c9501561f55a30f4"
+    }
+  }
+}

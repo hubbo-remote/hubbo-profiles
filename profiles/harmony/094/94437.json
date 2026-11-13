@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "id": "harmony:94437",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "32LX1R-ZE",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4afb7df38ee4f8e5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 7000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo2"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/32LX1R-ZE.json"
+    ],
+    "harmony": {
+      "global_device_id": 94437,
+      "device_type": 1,
+      "codeset": "e1cf59d13c6d5673"
+    }
+  }
+}

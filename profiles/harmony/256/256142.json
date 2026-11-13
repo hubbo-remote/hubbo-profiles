@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:256142",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SoundGraph",
+  "model": "iMon (Media Center Remote)",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "2734d800a4a25042",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "MyMusic",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "MyPictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "MyRadio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    },
+    {
+      "name": "MyTV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "MyVideos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SoundGraph/iMon_Media_Center_Remote.json"
+    ],
+    "harmony": {
+      "global_device_id": 256142,
+      "device_type": 35,
+      "codeset": "f27624dc46053aee"
+    }
+  }
+}

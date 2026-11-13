@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:146939",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DC146/05",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "2d97cb4ddf306b23",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "IPOD",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DC146_05.json"
+    ],
+    "harmony": {
+      "global_device_id": 146939,
+      "device_type": 21,
+      "codeset": "c5d788b287c1c781"
+    }
+  }
+}

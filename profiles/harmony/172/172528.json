@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172528",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RHT397H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "fe96d709b2719a74",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RHT397H.json"
+    ],
+    "harmony": {
+      "global_device_id": 172528,
+      "device_type": 34,
+      "codeset": "858684838e49cfd7"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:26908",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "ELP-ST12",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "6e4d9201ef6095a9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video/Video",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/ELP-ST12.json"
+    ],
+    "harmony": {
+      "global_device_id": 26908,
+      "device_type": 7,
+      "codeset": "f662bcd6c94f5edc"
+    }
+  }
+}

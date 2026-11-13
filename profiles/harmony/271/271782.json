@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:271782",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DCM186B",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "6ed369d1e4ccf8c6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "iPhone/iPod",
+      "steps": [
+        {
+          "command": "InputiPhoneIPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DCM186B.json"
+    ],
+    "harmony": {
+      "global_device_id": 271782,
+      "device_type": 21,
+      "codeset": "cfbc4d7b53edbbc8"
+    }
+  }
+}

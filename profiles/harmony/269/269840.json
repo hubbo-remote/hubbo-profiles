@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269840",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Loewe",
+  "model": "Individual Slim Frame 46",
+  "kind": "tv_dvr",
+  "platform": "ir",
+  "codeset": "67e1b657c67ff297",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1Dvi"
+        },
+        {
+          "command": "End",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputHdmi1Dvi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2Dvi"
+        },
+        {
+          "command": "End",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputHdmi2Dvi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3Dvi"
+        },
+        {
+          "command": "End",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputHdmi3Dvi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        },
+        {
+          "command": "End",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "PC IN",
+      "steps": [
+        {
+          "command": "InputVga"
+        },
+        {
+          "command": "End",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "AVS",
+      "steps": [
+        {
+          "command": "InputAvs"
+        },
+        {
+          "command": "End",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputAvs"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "End",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "End",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputHdmi1Dvi"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "SPDIF IN",
+      "steps": [
+        {
+          "command": "End",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputHdmi1Dvi"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "Media Net",
+      "steps": [
+        {
+          "command": "Assist"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Loewe/Individual_Slim_Frame_46.json"
+    ],
+    "harmony": {
+      "global_device_id": 269840,
+      "device_type": 48,
+      "codeset": "ce018b9d9068ec4e"
+    }
+  }
+}

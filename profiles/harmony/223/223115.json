@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:223115",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-7317",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "79af836ce25d38ad",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputSat"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "SAT Receiver",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-7317.json"
+    ],
+    "harmony": {
+      "global_device_id": 223115,
+      "device_type": 13,
+      "codeset": "843ce1e9b31004d0"
+    }
+  }
+}

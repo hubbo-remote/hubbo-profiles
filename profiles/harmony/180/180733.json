@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180733",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "WS-55859",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "93410930fa3c1788",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna A",
+      "steps": [
+        {
+          "command": "InputAntennaA"
+        }
+      ]
+    },
+    {
+      "name": "Antenna B",
+      "steps": [
+        {
+          "command": "InputAntennaB"
+        }
+      ]
+    },
+    {
+      "name": "Ant-DTV",
+      "steps": [
+        {
+          "command": "InputAntennaB"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Input 5",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/WS-55859.json"
+    ],
+    "harmony": {
+      "global_device_id": 180733,
+      "device_type": 1,
+      "codeset": "aab32f8ef8479778"
+    }
+  }
+}

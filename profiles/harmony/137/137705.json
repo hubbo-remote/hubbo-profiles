@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137705",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Victor",
+  "model": "UX-E3",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "9f5a6e23c8479e0d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Victor/UX-E3.json"
+    ],
+    "harmony": {
+      "global_device_id": 137705,
+      "device_type": 21,
+      "codeset": "4ffac1071bc0d93b"
+    }
+  }
+}

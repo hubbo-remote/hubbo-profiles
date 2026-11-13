@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:122849",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "PVT-6032",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "abb7b3b609ec773d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/PVT-6032.json"
+    ],
+    "harmony": {
+      "global_device_id": 122849,
+      "device_type": 18,
+      "codeset": "41fc4f1a9a606ad5"
+    }
+  }
+}

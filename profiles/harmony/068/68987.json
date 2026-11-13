@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68987",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "DM33",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "8091a3afb58d86ac",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/DM33.json"
+    ],
+    "harmony": {
+      "global_device_id": 68987,
+      "device_type": 22,
+      "codeset": "3fab65818260658a"
+    }
+  }
+}

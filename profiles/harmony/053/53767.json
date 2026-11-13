@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:53767",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Syntax-Brillian",
+  "model": "LCT-50HV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4afb7df38ee4f8e5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 60000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Syntax-Brillian/LCT-50HV.json"
+    ],
+    "harmony": {
+      "global_device_id": 53767,
+      "device_type": 1,
+      "codeset": "e1cf59d13c6d5673"
+    }
+  }
+}

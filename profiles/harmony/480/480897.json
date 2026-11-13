@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480897",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Target",
+  "model": "HST-200B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e0f048d1b2097d2c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Target/HST-200B.json"
+    ],
+    "harmony": {
+      "global_device_id": 480897,
+      "device_type": 19,
+      "codeset": "c03bc96df5d37bdb"
+    }
+  }
+}

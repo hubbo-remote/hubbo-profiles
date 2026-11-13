@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:275132",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Atoll",
+  "model": "IN200se",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "64f978bbdadbf2ab",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "By-Pass",
+      "steps": [
+        {
+          "command": "InputByPass"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Atoll/IN200se.json"
+    ],
+    "harmony": {
+      "global_device_id": 275132,
+      "device_type": 19,
+      "codeset": "f92f0efdc3760345"
+    }
+  }
+}

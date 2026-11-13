@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:130597",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kirsch",
+  "model": "K-5",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "23500bc9878e7d31",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kirsch/K-5.json"
+    ],
+    "harmony": {
+      "global_device_id": 130597,
+      "device_type": 19,
+      "codeset": "42b9f6dc26c393dd"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:136749",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "3-2-1GSX SL",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "4c47ad455bb48c2b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Stored",
+      "steps": [
+        {
+          "command": "InputStored"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CBL/SAT",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/3-2-1GSX_SL.json"
+    ],
+    "harmony": {
+      "global_device_id": 136749,
+      "device_type": 22,
+      "codeset": "c2bb39ff523e2d41"
+    }
+  }
+}

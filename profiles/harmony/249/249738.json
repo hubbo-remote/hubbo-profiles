@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:249738",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HW-FM35",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e6421d63b3cd34f4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 7000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "D.IN",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputOptical"
+        },
+        {
+          "command": "InputBTUSB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HW-FM35.json"
+    ],
+    "harmony": {
+      "global_device_id": 249738,
+      "device_type": 19,
+      "codeset": "4e4d07a83c9924e0"
+    }
+  }
+}

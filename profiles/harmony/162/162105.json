@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162105",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "MCD-8000",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "9f32173530916003",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/MCD-8000.json"
+    ],
+    "harmony": {
+      "global_device_id": 162105,
+      "device_type": 21,
+      "codeset": "e6545450d132703c"
+    }
+  }
+}

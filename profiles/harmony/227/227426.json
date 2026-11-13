@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:227426",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nobo",
+  "model": "WX28",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "41ef38b8ac86aba8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nobo/WX28.json"
+    ],
+    "harmony": {
+      "global_device_id": 227426,
+      "device_type": 7,
+      "codeset": "1bc81a066b7b9c29"
+    }
+  }
+}

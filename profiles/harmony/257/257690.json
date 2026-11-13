@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "id": "harmony:257690",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "55PFL7008K/12",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c7a8c7867e832ffe",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 24000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "Smart Tv",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "SmartTv"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/55PFL7008K_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 257690,
+      "device_type": 1,
+      "codeset": "a7322ba2332cad62"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129864",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "DV-DH161",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "13826fc0b5b2de3e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/DV-DH161.json"
+    ],
+    "harmony": {
+      "global_device_id": 129864,
+      "device_type": 34,
+      "codeset": "4d467c05b5f9ca4c"
+    }
+  }
+}

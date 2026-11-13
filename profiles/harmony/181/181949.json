@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181949",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Planar",
+  "model": "PDP 42HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "891f42d3740f3586",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "YCbCR",
+      "steps": [
+        {
+          "command": "InputYCbCr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Planar/PDP_42HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 181949,
+      "device_type": 1,
+      "codeset": "06a327d7093cf0bf"
+    }
+  }
+}

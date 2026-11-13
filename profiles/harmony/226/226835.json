@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226835",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GMC",
+  "model": "AVC-S7",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "f189f7ff3f768f4a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 0
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "MyDvd"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "My Movie",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GMC/AVC-S7.json"
+    ],
+    "harmony": {
+      "global_device_id": 226835,
+      "device_type": 35,
+      "codeset": "46efc4dea351eaf2"
+    }
+  }
+}

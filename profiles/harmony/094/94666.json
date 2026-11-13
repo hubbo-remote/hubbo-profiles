@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "id": "harmony:94666",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sim2",
+  "model": "Domino 20",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "4d5e885953811be8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1000
+      },
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1000
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "1 Video",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "2 SVideo",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "3 RGBs 15kHz",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "4 YCrCb 15kHz",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "5 RGBs 32kHz",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "6 YCrCb 32kHz",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "6"
+        }
+      ]
+    },
+    {
+      "name": "7 Graphics RGB",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "7"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sim2/Domino_20.json"
+    ],
+    "harmony": {
+      "global_device_id": 94666,
+      "device_type": 7,
+      "codeset": "6afc58a92d043975"
+    }
+  }
+}

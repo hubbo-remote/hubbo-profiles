@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:26784",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Creative",
+  "model": "Inspire 5.1 Digital 5500",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2cd98addde5fa42f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "LineIn",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Creative/Inspire_5.1_Digital_5500.json"
+    ],
+    "harmony": {
+      "global_device_id": 26784,
+      "device_type": 19,
+      "codeset": "79584a2fe065484c"
+    }
+  }
+}

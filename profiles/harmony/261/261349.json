@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:261349",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technicolor",
+  "model": "TC 7200",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "784895ae6f01807c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technicolor/TC_7200.json"
+    ],
+    "harmony": {
+      "global_device_id": 261349,
+      "device_type": 18,
+      "codeset": "39f3eb133e705127"
+    }
+  }
+}

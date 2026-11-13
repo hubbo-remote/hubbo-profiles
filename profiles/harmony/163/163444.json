@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163444",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "AV-R620",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0089c084ee9cb632",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Vcr/Sat",
+      "steps": [
+        {
+          "command": "InputVcrSat"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/AV-R620.json"
+    ],
+    "harmony": {
+      "global_device_id": 163444,
+      "device_type": 5,
+      "codeset": "58fa8e386d224501"
+    }
+  }
+}

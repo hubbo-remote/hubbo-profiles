@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "harmony:133733",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "SR-6100",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "f8ea79928af3a0aa",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "DSS/VCR2",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputDssVcr2"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/SR-6100.json"
+    ],
+    "harmony": {
+      "global_device_id": 133733,
+      "device_type": 5,
+      "codeset": "9c560aa28754f956"
+    }
+  }
+}

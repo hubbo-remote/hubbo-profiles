@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:222774",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "15EL950N",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2a183868822e875c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/15EL950N.json"
+    ],
+    "harmony": {
+      "global_device_id": 222774,
+      "device_type": 1,
+      "codeset": "3bce584e89b36f30"
+    }
+  }
+}

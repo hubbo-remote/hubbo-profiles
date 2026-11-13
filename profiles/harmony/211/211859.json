@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211859",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AGFAPHOTO",
+  "model": "DV 18909R",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "df59040b107a0909",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AGFAPHOTO/DV_18909R.json"
+    ],
+    "harmony": {
+      "global_device_id": 211859,
+      "device_type": 25,
+      "codeset": "b69268ceeee9fc16"
+    }
+  }
+}

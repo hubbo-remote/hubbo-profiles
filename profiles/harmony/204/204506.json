@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:204506",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "D-VR19DT",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "c070884959c6660a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/D-VR19DT.json"
+    ],
+    "harmony": {
+      "global_device_id": 204506,
+      "device_type": 47,
+      "codeset": "1b28e0d2aace1f14"
+    }
+  }
+}

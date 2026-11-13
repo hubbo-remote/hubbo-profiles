@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "harmony:33746",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Blaupunkt",
+  "model": "MX-72-83",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ed94afb2b5a05f97",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Blaupunkt/MX-72-83.json"
+    ],
+    "harmony": {
+      "global_device_id": 33746,
+      "device_type": 1,
+      "codeset": "da3b4773c9329fad"
+    }
+  }
+}

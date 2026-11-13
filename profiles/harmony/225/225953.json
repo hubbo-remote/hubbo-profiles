@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:225953",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "HD-400S",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "098bec76e3d7b220",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Live"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/HD-400S.json"
+    ],
+    "harmony": {
+      "global_device_id": 225953,
+      "device_type": 34,
+      "codeset": "24de5ce17db1eab6"
+    }
+  }
+}

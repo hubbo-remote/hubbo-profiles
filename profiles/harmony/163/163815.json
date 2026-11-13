@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163815",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "DVD-HR757",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "f0ac32b4e9f9ce91",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/DVD-HR757.json"
+    ],
+    "harmony": {
+      "global_device_id": 163815,
+      "device_type": 34,
+      "codeset": "6d5e278c1d82ad7e"
+    }
+  }
+}

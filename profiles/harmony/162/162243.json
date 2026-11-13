@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162243",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HES2800/12",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "332dd4b7d3e3ef04",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "AudioSource",
+      "steps": [
+        {
+          "command": "InputAudioSource"
+        }
+      ]
+    },
+    {
+      "name": "RADIO",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "MP3 LINK",
+      "steps": [
+        {
+          "command": "InputMp3Link"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HES2800_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 162243,
+      "device_type": 22,
+      "codeset": "a33ee7c1cb04738f"
+    }
+  }
+}

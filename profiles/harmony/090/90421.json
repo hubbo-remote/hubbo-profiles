@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:90421",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DEH-P3700MP",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "98708ad5d4df3874",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVR",
+      "steps": [
+        {
+          "command": "InputDvrVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DEH-P3700MP.json"
+    ],
+    "harmony": {
+      "global_device_id": 90421,
+      "device_type": 21,
+      "codeset": "46535e216039d94b"
+    }
+  }
+}

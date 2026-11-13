@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "harmony:98543",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "LT-26R70",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "839c4a4c7368320a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT-1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "EXT-2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "EXT-3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "EXT-4",
+      "steps": [
+        {
+          "command": "InputExt4"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "AV"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputExt4"
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "command": "6"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/LT-26R70.json"
+    ],
+    "harmony": {
+      "global_device_id": 98543,
+      "device_type": 1,
+      "codeset": "3efbeffb70bde7a1"
+    }
+  }
+}

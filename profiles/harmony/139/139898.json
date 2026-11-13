@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139898",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "AX-300H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "e75a5740703ac6ea",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/AX-300H.json"
+    ],
+    "harmony": {
+      "global_device_id": 139898,
+      "device_type": 34,
+      "codeset": "8ae5ec5dede508c7"
+    }
+  }
+}

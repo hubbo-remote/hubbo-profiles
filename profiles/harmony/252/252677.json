@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:252677",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acesonic",
+  "model": "DGX-212",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "02fb0ed23d457f5b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "SD Card",
+      "steps": [
+        {
+          "command": "InputSdCard"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acesonic/DGX-212.json"
+    ],
+    "harmony": {
+      "global_device_id": 252677,
+      "device_type": 34,
+      "codeset": "b451d2bbc0077027"
+    }
+  }
+}

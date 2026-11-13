@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "harmony:134668",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "MHC-MG110",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "27f3ed826b4625eb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMD1"
+        }
+      ]
+    },
+    {
+      "name": "Tape A",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputMD1"
+        },
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tape B",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputMD1"
+        },
+        {
+          "command": "InputTape"
+        },
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "MD Walkman",
+      "steps": [
+        {
+          "command": "InputMD1"
+        }
+      ]
+    },
+    {
+      "name": "Optical In",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/MHC-MG110.json"
+    ],
+    "harmony": {
+      "global_device_id": 134668,
+      "device_type": 21,
+      "codeset": "0793ecb38ef4fd2f"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162253",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "STR-D425",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "462ad99a1a0758ff",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    },
+    {
+      "name": "1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/STR-D425.json"
+    ],
+    "harmony": {
+      "global_device_id": 162253,
+      "device_type": 5,
+      "codeset": "f5e36fbadb0cee91"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "harmony:23572",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "VPL-DS100",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f982b81732fedc1f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 1",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Input-A",
+      "steps": [
+        {
+          "command": "InputA"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 2",
+      "steps": [
+        {
+          "command": "InputSVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "MS",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/VPL-DS100.json"
+    ],
+    "harmony": {
+      "global_device_id": 23572,
+      "device_type": 7,
+      "codeset": "8dba09308eb1a9db"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "harmony:52427",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Melectronic",
+  "model": "MTS-20D1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7718af63f8ecdd5d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Melectronic/MTS-20D1.json"
+    ],
+    "harmony": {
+      "global_device_id": 52427,
+      "device_type": 1,
+      "codeset": "7973bb74fa53072f"
+    }
+  }
+}

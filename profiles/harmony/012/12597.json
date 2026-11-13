@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12597",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DreamVision",
+  "model": "DL500",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "d8511395ff0bea36",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "Menu"
+      }
+    ],
+    "off": [
+      {
+        "command": "Menu"
+      },
+      {
+        "command": "DirectionDown"
+      },
+      {
+        "command": "DirectionRight"
+      },
+      {
+        "command": "Okay"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DreamVision/DL500.json"
+    ],
+    "harmony": {
+      "global_device_id": 12597,
+      "device_type": 7,
+      "codeset": "a9fc50d13bca5bfb"
+    }
+  }
+}

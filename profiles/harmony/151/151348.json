@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:151348",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Inverto",
+  "model": "IDL-5550",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "cc87e8c3b1ada6cd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Inverto/IDL-5550.json"
+    ],
+    "harmony": {
+      "global_device_id": 151348,
+      "device_type": 16,
+      "codeset": "c03941fb9b39cd1b"
+    }
+  }
+}

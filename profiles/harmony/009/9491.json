@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:9491",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "JSR-635",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b313564696ea84da",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tv/Aux",
+      "steps": [
+        {
+          "command": "InputTvAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Vcr1",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "Vcr2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "Tape Mon",
+      "steps": [
+        {
+          "command": "InputTapeMon"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/JSR-635.json"
+    ],
+    "harmony": {
+      "global_device_id": 9491,
+      "device_type": 5,
+      "codeset": "5e6e5c0ca56d6ed3"
+    }
+  }
+}

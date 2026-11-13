@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95471",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "F38310-YX5",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "0646c9db036b428c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "S-Vid1",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Vid2",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Vid3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Frnt",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Cmpnt",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/F38310-YX5.json"
+    ],
+    "harmony": {
+      "global_device_id": 95471,
+      "device_type": 1,
+      "codeset": "65af1ff0c0db9d7f"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "harmony:240862",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "BH7220C",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "21d94cadfb06c25f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Home",
+      "steps": [
+        {
+          "command": "Home"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Portable",
+      "steps": [
+        {
+          "command": "InputPortable"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "ARC",
+      "steps": [
+        {
+          "command": "InputArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/BH7220C.json"
+    ],
+    "harmony": {
+      "global_device_id": 240862,
+      "device_type": 22,
+      "codeset": "f6d052909a75a5e9"
+    }
+  }
+}

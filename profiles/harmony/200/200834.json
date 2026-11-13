@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:200834",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "UX-L5V",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "e08a9c9b04eb8f0e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AudioIn",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/UX-L5V.json"
+    ],
+    "harmony": {
+      "global_device_id": 200834,
+      "device_type": 22,
+      "codeset": "8be19ae7bf8e3fbf"
+    }
+  }
+}

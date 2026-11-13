@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:77803",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RS-9150A",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "53003eb0fce8c63b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RS-9150A.json"
+    ],
+    "harmony": {
+      "global_device_id": 77803,
+      "device_type": 21,
+      "codeset": "60b6cfdd60bf8f88"
+    }
+  }
+}

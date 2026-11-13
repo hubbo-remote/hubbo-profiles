@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:128525",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pollin",
+  "model": "DR-100",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "e412fd40a80874e0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "RADIO",
+      "steps": [
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pollin/DR-100.json"
+    ],
+    "harmony": {
+      "global_device_id": 128525,
+      "device_type": 16,
+      "codeset": "ffd03aa270606d54"
+    }
+  }
+}

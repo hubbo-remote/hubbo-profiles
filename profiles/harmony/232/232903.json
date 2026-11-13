@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:232903",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "BDV-EF420",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "486dd960d2fd8e15",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "InputBDDVD"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputAudio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/BDV-EF420.json"
+    ],
+    "harmony": {
+      "global_device_id": 232903,
+      "device_type": 22,
+      "codeset": "2b7b39dd79ea8659"
+    }
+  }
+}

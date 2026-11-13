@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139076",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "D34W135",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1500
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "VID1",
+      "steps": [
+        {
+          "command": "InputRgb"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "VID2",
+      "steps": [
+        {
+          "command": "InputRgb"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "InputRgb"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "CMPT1",
+      "steps": [
+        {
+          "command": "InputRgb"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "CMPT2",
+      "steps": [
+        {
+          "command": "InputRgb"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/D34W135.json"
+    ],
+    "harmony": {
+      "global_device_id": 139076,
+      "device_type": 37,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

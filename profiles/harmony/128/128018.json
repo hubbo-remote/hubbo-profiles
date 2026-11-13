@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:128018",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hewlett Packard",
+  "model": "A1445N",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d45342b092570265",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "LiveTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "GreenButton"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "GreenButton"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "GreenButton"
+        }
+      ]
+    },
+    {
+      "name": "Recorded TV",
+      "steps": [
+        {
+          "command": "RecordedTV"
+        }
+      ]
+    },
+    {
+      "name": "Guide",
+      "steps": [
+        {
+          "command": "Guide"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hewlett_Packard/A1445N.json"
+    ],
+    "harmony": {
+      "global_device_id": 128018,
+      "device_type": 35,
+      "codeset": "c14a1578ae534a3e"
+    }
+  }
+}

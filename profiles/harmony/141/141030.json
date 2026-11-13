@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141030",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Matsui",
+  "model": "MAT-26LW507E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b009634181b59cc6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "STB",
+      "steps": [
+        {
+          "command": "InputAntA"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "AVS",
+      "steps": [
+        {
+          "command": "InputAvs"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/DVI",
+      "steps": [
+        {
+          "command": "InputDVIHDMI"
+        }
+      ]
+    },
+    {
+      "name": "COMP.IN",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Matsui/MAT-26LW507E.json"
+    ],
+    "harmony": {
+      "global_device_id": 141030,
+      "device_type": 1,
+      "codeset": "2759f601cd7513fd"
+    }
+  }
+}

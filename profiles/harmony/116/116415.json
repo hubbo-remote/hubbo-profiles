@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116415",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "TH-350",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "08ca1dc728ced4f0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "DBS",
+      "steps": [
+        {
+          "command": "InputTVDSS"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/TH-350.json"
+    ],
+    "harmony": {
+      "global_device_id": 116415,
+      "device_type": 22,
+      "codeset": "b30972693746e9e6"
+    }
+  }
+}

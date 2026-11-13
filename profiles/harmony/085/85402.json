@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:85402",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Akai",
+  "model": "DV-V606N-E1",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "a5d2cf75f169229e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "dvd",
+      "steps": [
+        {
+          "command": "TvDvd"
+        }
+      ]
+    },
+    {
+      "name": "vcr",
+      "steps": [
+        {
+          "command": "VCR"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Akai/DV-V606N-E1.json"
+    ],
+    "harmony": {
+      "global_device_id": 85402,
+      "device_type": 25,
+      "codeset": "5069f7254d44d287"
+    }
+  }
+}

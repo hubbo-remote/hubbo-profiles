@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:55835",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "50PF9956",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f29a59a94ccfae2c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Ant A",
+      "steps": [
+        {
+          "command": "InputTunerA"
+        }
+      ]
+    },
+    {
+      "name": "Ant B",
+      "steps": [
+        {
+          "command": "InputTunerB"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/DVI",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    },
+    {
+      "name": "Side",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/50PF9956.json"
+    ],
+    "harmony": {
+      "global_device_id": 55835,
+      "device_type": 1,
+      "codeset": "f85bada5f8fd15c8"
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147567",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "51S715",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "41a416b78f3d9d95",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 7500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Antenna B",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Antenna A",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Video 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Video 5",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/51S715.json"
+    ],
+    "harmony": {
+      "global_device_id": 147567,
+      "device_type": 1,
+      "codeset": "3e916ddb9f1f4282"
+    }
+  }
+}

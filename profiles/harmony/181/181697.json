@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181697",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "DRA-455",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "63f95db2a786a43f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/DRA-455.json"
+    ],
+    "harmony": {
+      "global_device_id": 181697,
+      "device_type": 5,
+      "codeset": "27f50c0a8d2ad38d"
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155561",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TX-32LX70F",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d204c353c73b41e1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn",
+        "hold_ms": 1000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff",
+        "hold_ms": 1000
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "AV 2/AV 2S",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "AV 3/AV 3S",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TX-32LX70F.json"
+    ],
+    "harmony": {
+      "global_device_id": 155561,
+      "device_type": 1,
+      "codeset": "f145b7e7928e53ca"
+    }
+  }
+}

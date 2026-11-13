@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "harmony:252781",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-V775 (ZONE2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "c008058331b75bc3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AV 5",
+      "steps": [
+        {
+          "command": "InputAv5"
+        }
+      ]
+    },
+    {
+      "name": "AV 6",
+      "steps": [
+        {
+          "command": "InputAv6"
+        }
+      ]
+    },
+    {
+      "name": "Audio 1",
+      "steps": [
+        {
+          "command": "InputAudio1"
+        }
+      ]
+    },
+    {
+      "name": "Audio 2",
+      "steps": [
+        {
+          "command": "InputAudio2"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "NET",
+      "steps": [
+        {
+          "command": "InputNet"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "AM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-V775_ZONE2.json"
+    ],
+    "harmony": {
+      "global_device_id": 252781,
+      "device_type": 5,
+      "codeset": "21f5c59d9780ecf7"
+    }
+  }
+}

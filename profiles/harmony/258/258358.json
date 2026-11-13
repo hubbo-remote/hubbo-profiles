@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258358",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Insignia",
+  "model": "NS-SH513",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "d8586db35525c2e9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Insignia/NS-SH513.json"
+    ],
+    "harmony": {
+      "global_device_id": 258358,
+      "device_type": 21,
+      "codeset": "ce5ed07d6a0f8161"
+    }
+  }
+}

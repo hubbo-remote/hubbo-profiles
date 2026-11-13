@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:75334",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "H57-DLP",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "7632358710663f39",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVI-A",
+      "steps": [
+        {
+          "command": "InputDVIA"
+        }
+      ]
+    },
+    {
+      "name": "DVI-D",
+      "steps": [
+        {
+          "command": "InputDVID"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/H57-DLP.json"
+    ],
+    "harmony": {
+      "global_device_id": 75334,
+      "device_type": 7,
+      "codeset": "cab487432d9723df"
+    }
+  }
+}

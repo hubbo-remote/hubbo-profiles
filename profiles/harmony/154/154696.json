@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154696",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DCS",
+  "model": "Scarlatti DAC",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c3762ec77046b3db",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AES1",
+      "steps": [
+        {
+          "command": "InputAes1"
+        }
+      ]
+    },
+    {
+      "name": "AES2",
+      "steps": [
+        {
+          "command": "InputAes2"
+        }
+      ]
+    },
+    {
+      "name": "DUAL AES",
+      "steps": [
+        {
+          "command": "InputDualAES"
+        }
+      ]
+    },
+    {
+      "name": "RCA1",
+      "steps": [
+        {
+          "command": "InputRCA1"
+        }
+      ]
+    },
+    {
+      "name": "RCA2",
+      "steps": [
+        {
+          "command": "InputRCA2"
+        }
+      ]
+    },
+    {
+      "name": "1394-0",
+      "steps": [
+        {
+          "command": "Input13940"
+        }
+      ]
+    },
+    {
+      "name": "1394-1",
+      "steps": [
+        {
+          "command": "Input13941"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DCS/Scarlatti_DAC.json"
+    ],
+    "harmony": {
+      "global_device_id": 154696,
+      "device_type": 19,
+      "codeset": "05c79176aabd959c"
+    }
+  }
+}

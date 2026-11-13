@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111948",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Loewe",
+  "model": "Planus 4670Z",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "070d7db5b0f2bfb6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "3"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Loewe/Planus_4670Z.json"
+    ],
+    "harmony": {
+      "global_device_id": 111948,
+      "device_type": 1,
+      "codeset": "87a55d5701ecb5b4"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:70737",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "RX-7032",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "c13cd7a94e951da8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape/Cdr",
+      "steps": [
+        {
+          "command": "InputTapeCdr"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputFmAm"
+        }
+      ]
+    },
+    {
+      "name": "DVD Multi",
+      "steps": [
+        {
+          "command": "InputDvdMulti"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/RX-7032.json"
+    ],
+    "harmony": {
+      "global_device_id": 70737,
+      "device_type": 5,
+      "codeset": "89f1331ce4a19bcc"
+    }
+  }
+}

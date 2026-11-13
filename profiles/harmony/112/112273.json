@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "harmony:112273",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "MFW 102-6110MV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "14942e41f8e980ba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 7000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Ext1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Ext2",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Ext3",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Ext4",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/MFW_102-6110MV.json"
+    ],
+    "harmony": {
+      "global_device_id": 112273,
+      "device_type": 1,
+      "codeset": "a44de4946bcf038e"
+    }
+  }
+}

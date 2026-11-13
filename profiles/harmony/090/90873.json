@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:90873",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "DVD-R 4045",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "0b132a6580805fdb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DV IN",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/DVD-R_4045.json"
+    ],
+    "harmony": {
+      "global_device_id": 90873,
+      "device_type": 34,
+      "codeset": "827c41a8a313f307"
+    }
+  }
+}

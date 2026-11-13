@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:227378",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "CF-20D30X",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "941acc055a4f9a79",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input AV2",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/CF-20D30X.json"
+    ],
+    "harmony": {
+      "global_device_id": 227378,
+      "device_type": 1,
+      "codeset": "8a910b7425ada87d"
+    }
+  }
+}

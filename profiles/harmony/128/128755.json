@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:128755",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "F27674BCFE1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e8b80b16fa3ef361",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVid1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVid2"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputVid3"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "InputFrnt"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "InputOK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/F27674BCFE1.json"
+    ],
+    "harmony": {
+      "global_device_id": 128755,
+      "device_type": 1,
+      "codeset": "2fb136eb14dd3d31"
+    }
+  }
+}

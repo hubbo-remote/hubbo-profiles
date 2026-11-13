@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202145",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MC150/30",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "97807b085c7904ed",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MC150_30.json"
+    ],
+    "harmony": {
+      "global_device_id": 202145,
+      "device_type": 21,
+      "codeset": "bfd72ea6472fb83e"
+    }
+  }
+}

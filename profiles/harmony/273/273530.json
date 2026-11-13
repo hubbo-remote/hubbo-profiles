@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273530",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-BWT1100",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "709282a49576eeac",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "InputBDDVD"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-BWT1100.json"
+    ],
+    "harmony": {
+      "global_device_id": 273530,
+      "device_type": 34,
+      "codeset": "a1591cb7be200635"
+    }
+  }
+}

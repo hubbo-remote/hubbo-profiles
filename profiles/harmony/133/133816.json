@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:133816",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SB-AFC95",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "c442842df83de24b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/VIDEO",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Surround Sound",
+      "steps": [
+        {
+          "command": "SurroundToggle"
+        }
+      ]
+    },
+    {
+      "name": "Sub Level",
+      "steps": [
+        {
+          "command": "Subwoofer"
+        }
+      ]
+    },
+    {
+      "name": "Menu",
+      "steps": [
+        {
+          "command": "Menu"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SB-AFC95.json"
+    ],
+    "harmony": {
+      "global_device_id": 133816,
+      "device_type": 22,
+      "codeset": "6482ca4a04e66dda"
+    }
+  }
+}

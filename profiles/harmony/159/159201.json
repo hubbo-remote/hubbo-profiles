@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:159201",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "RDR-HXD1070B",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "58772b8a82776124",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/RDR-HXD1070B.json"
+    ],
+    "harmony": {
+      "global_device_id": 159201,
+      "device_type": 34,
+      "codeset": "91368da8d63d1e91"
+    }
+  }
+}

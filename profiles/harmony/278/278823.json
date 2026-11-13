@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:278823",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "AJ7040D/37",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a768f002af78cb35",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "MP3Link",
+      "steps": [
+        {
+          "command": "InputMp3Link"
+        }
+      ]
+    },
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/AJ7040D_37.json"
+    ],
+    "harmony": {
+      "global_device_id": 278823,
+      "device_type": 5,
+      "codeset": "cadf4b5dafb6afc1"
+    }
+  }
+}

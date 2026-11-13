@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "harmony:161276",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Runco",
+  "model": "VX-1000C",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "d8f57f8a6d6d0662",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      },
+      {
+        "command": "PowerOn"
+      },
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 40000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Component HD",
+      "steps": [
+        {
+          "command": "InputHighDefinition"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "RGB/PC",
+      "steps": [
+        {
+          "command": "RgbHdPassthrough"
+        }
+      ]
+    },
+    {
+      "name": "COMPUTER",
+      "steps": [
+        {
+          "command": "InputHighDefinition"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Runco/VX-1000C.json"
+    ],
+    "harmony": {
+      "global_device_id": 161276,
+      "device_type": 7,
+      "codeset": "0d963e846c356141"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251608",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HW-F355",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e6421d63b3cd34f4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 7000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "SoundShare"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputBTUSB"
+        }
+      ]
+    },
+    {
+      "name": "D.IN",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HW-F355.json"
+    ],
+    "harmony": {
+      "global_device_id": 251608,
+      "device_type": 19,
+      "codeset": "4e4d07a83c9924e0"
+    }
+  }
+}

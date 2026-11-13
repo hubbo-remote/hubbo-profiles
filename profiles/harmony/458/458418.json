@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:458418",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ViewSonic",
+  "model": "PG705WU",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "3ac798c958eabf65",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ViewSonic/PG705WU.json"
+    ],
+    "harmony": {
+      "global_device_id": 458418,
+      "device_type": 7,
+      "codeset": "1e65030f79addc56"
+    }
+  }
+}

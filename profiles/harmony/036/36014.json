@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:36014",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dish Network",
+  "model": "HD44-310",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI DISH",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "VID 1",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "VID 2",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "FRNT",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "CMP 1",
+      "steps": [
+        {
+          "command": "InputSatCable"
+        }
+      ]
+    },
+    {
+      "name": "CMP 2",
+      "steps": [
+        {
+          "command": "InputSatCable"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dish_Network/HD44-310.json"
+    ],
+    "harmony": {
+      "global_device_id": 36014,
+      "device_type": 1,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

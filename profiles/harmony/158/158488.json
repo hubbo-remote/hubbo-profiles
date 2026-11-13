@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158488",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "DVD-DR 4084",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "d404b970e584cafa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/DVD-DR_4084.json"
+    ],
+    "harmony": {
+      "global_device_id": 158488,
+      "device_type": 22,
+      "codeset": "0292e7200a7ce2e4"
+    }
+  }
+}

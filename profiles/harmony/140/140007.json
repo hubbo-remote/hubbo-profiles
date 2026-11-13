@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:140007",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Galaxis",
+  "model": "CTV-5599",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Galaxis/CTV-5599.json"
+    ],
+    "harmony": {
+      "global_device_id": 140007,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201572",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Terratec",
+  "model": "Cinergy S2 PCI HD CI",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "db8f660018732ad0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "InputPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Terratec/Cinergy_S2_PCI_HD_CI.json"
+    ],
+    "harmony": {
+      "global_device_id": 201572,
+      "device_type": 35,
+      "codeset": "da318c9fc87d578f"
+    }
+  }
+}

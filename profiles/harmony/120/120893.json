@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:120893",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hewlett Packard",
+  "model": "SLC-3760",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "62d364f04657946c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner1"
+        }
+      ]
+    },
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Mediasmart",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hewlett_Packard/SLC-3760.json"
+    ],
+    "harmony": {
+      "global_device_id": 120893,
+      "device_type": 1,
+      "codeset": "ae86bb7cff781dcf"
+    }
+  }
+}

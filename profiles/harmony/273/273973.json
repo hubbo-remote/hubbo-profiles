@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273973",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "CMT-SBT40D",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "2bd54f97ca456c1d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "BT-Audio",
+      "steps": [
+        {
+          "command": "InputBTAudio"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/CMT-SBT40D.json"
+    ],
+    "harmony": {
+      "global_device_id": 273973,
+      "device_type": 22,
+      "codeset": "2a0c8860e0761bb0"
+    }
+  }
+}

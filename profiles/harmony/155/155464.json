@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155464",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Integra",
+  "model": "DTR-4.9",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0c7f91f45f8033df",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "CBL/SAT",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "Game/TV",
+      "steps": [
+        {
+          "command": "InputGameTv"
+        }
+      ]
+    },
+    {
+      "name": "Multi-Ch",
+      "steps": [
+        {
+          "command": "InputMultiChannel"
+        }
+      ]
+    },
+    {
+      "name": "VCR/DVR",
+      "steps": [
+        {
+          "command": "InputVcrDvr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Integra/DTR-4.9.json"
+    ],
+    "harmony": {
+      "global_device_id": 155464,
+      "device_type": 5,
+      "codeset": "9bc62eb45acb5e00"
+    }
+  }
+}

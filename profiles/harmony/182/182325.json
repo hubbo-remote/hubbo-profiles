@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182325",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "McVoice",
+  "model": "AMP-510",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "cda92fc55f6e9b6b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AC-3",
+      "steps": [
+        {
+          "command": "InputAC3"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/McVoice/AMP-510.json"
+    ],
+    "harmony": {
+      "global_device_id": 182325,
+      "device_type": 5,
+      "codeset": "87f52510c5ae543d"
+    }
+  }
+}

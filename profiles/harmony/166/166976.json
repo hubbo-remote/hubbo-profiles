@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "harmony:166976",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "P61310",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "81672312238e6e21",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaA",
+      "steps": [
+        {
+          "command": "InputAntennaA"
+        }
+      ]
+    },
+    {
+      "name": "AntennaB",
+      "steps": [
+        {
+          "command": "InputAntennaB"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputSatCable"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/P61310.json"
+    ],
+    "harmony": {
+      "global_device_id": 166976,
+      "device_type": 1,
+      "codeset": "4fdd4bfc41bdafcb"
+    }
+  }
+}

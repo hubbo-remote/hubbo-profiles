@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153545",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Russound",
+  "model": "SMC-30",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d45342b092570265",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Russound/SMC-30.json"
+    ],
+    "harmony": {
+      "global_device_id": 153545,
+      "device_type": 35,
+      "codeset": "c14a1578ae534a3e"
+    }
+  }
+}

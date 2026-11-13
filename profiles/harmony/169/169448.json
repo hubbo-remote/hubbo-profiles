@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169448",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Harman Kardon",
+  "model": "CP-65",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7a558002f42a0b46",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Hdmi 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Harman_Kardon/CP-65.json"
+    ],
+    "harmony": {
+      "global_device_id": 169448,
+      "device_type": 5,
+      "codeset": "4b89253ca32171fd"
+    }
+  }
+}

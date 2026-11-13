@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:106860",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bang & Olufsen",
+  "model": "Beovision L2802",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "bb1dc02fe3064c1d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "V.Tape",
+      "steps": [
+        {
+          "command": "InputVTape"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bang_Olufsen/Beovision_L2802.json"
+    ],
+    "harmony": {
+      "global_device_id": 106860,
+      "device_type": 1,
+      "codeset": "9a6347edbd27a38e"
+    }
+  }
+}

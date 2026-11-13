@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "harmony:636",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "RJ5540",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3c068ad75fb441e0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR/AUX",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/RJ5540.json"
+    ],
+    "harmony": {
+      "global_device_id": 636,
+      "device_type": 1,
+      "codeset": "3b3e7eddcbfe948a"
+    }
+  }
+}

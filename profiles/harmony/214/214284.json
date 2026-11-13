@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:214284",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "XV-THM55",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "bcf685bb921889e8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DBS",
+      "steps": [
+        {
+          "command": "InputDbs"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/XV-THM55.json"
+    ],
+    "harmony": {
+      "global_device_id": 214284,
+      "device_type": 22,
+      "codeset": "e6e7b82b558d2076"
+    }
+  }
+}

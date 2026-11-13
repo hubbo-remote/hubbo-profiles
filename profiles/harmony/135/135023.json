@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135023",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "HTP-480",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "6c9f215ff731f38d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "SoundRetriever"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "RECIEVER",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "XMSAT",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "tv/sat",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/HTP-480.json"
+    ],
+    "harmony": {
+      "global_device_id": 135023,
+      "device_type": 22,
+      "codeset": "5b32fbcdb9fda9bc"
+    }
+  }
+}

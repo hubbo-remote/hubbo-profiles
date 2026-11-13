@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:218117",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Jolida",
+  "model": "FX10",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "11861c47774530ad",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Input",
+      "steps": [
+        {
+          "command": "Input"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Jolida/FX10.json"
+    ],
+    "harmony": {
+      "global_device_id": 218117,
+      "device_type": 19,
+      "codeset": "ba10465d10ebef96"
+    }
+  }
+}

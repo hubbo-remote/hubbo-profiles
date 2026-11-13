@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:117294",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Durabrand",
+  "model": "W600-S",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "4156e1ec814d380c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Durabrand/W600-S.json"
+    ],
+    "harmony": {
+      "global_device_id": 117294,
+      "device_type": 22,
+      "codeset": "164c57727a674908"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:268080",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Integra",
+  "model": "DLB 40.6",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "bddccc17f95b232c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Integra/DLB_40.6.json"
+    ],
+    "harmony": {
+      "global_device_id": 268080,
+      "device_type": 19,
+      "codeset": "7599be3b494ef336"
+    }
+  }
+}

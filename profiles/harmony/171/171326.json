@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:171326",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ATON",
+  "model": "DH44",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2876bf0a9622e0e8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "SystemPowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "SystemPowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Source1",
+      "steps": [
+        {
+          "command": "InputSource1"
+        }
+      ]
+    },
+    {
+      "name": "Source2",
+      "steps": [
+        {
+          "command": "InputSource2"
+        }
+      ]
+    },
+    {
+      "name": "Source3",
+      "steps": [
+        {
+          "command": "InputSource3"
+        }
+      ]
+    },
+    {
+      "name": "Source4",
+      "steps": [
+        {
+          "command": "InputSource4"
+        }
+      ]
+    },
+    {
+      "name": "SourceLocal",
+      "steps": [
+        {
+          "command": "SourceLocal"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ATON/DH44.json"
+    ],
+    "harmony": {
+      "global_device_id": 171326,
+      "device_type": 19,
+      "codeset": "eba46729407ef2a5"
+    }
+  }
+}

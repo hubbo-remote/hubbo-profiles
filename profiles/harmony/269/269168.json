@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269168",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Westinghouse",
+  "model": "UX28H1Y1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cbaa6bbbe00d2df8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr 1",
+      "steps": [
+        {
+          "command": "InputYPbPr1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "NumberEnter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Westinghouse/UX28H1Y1.json"
+    ],
+    "harmony": {
+      "global_device_id": 269168,
+      "device_type": 1,
+      "codeset": "5a164e6a3fb6ee54"
+    }
+  }
+}

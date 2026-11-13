@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:22062",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Atlantic Technology",
+  "model": "P2000T",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "fcde5d58a0867590",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Atlantic_Technology/P2000T.json"
+    ],
+    "harmony": {
+      "global_device_id": 22062,
+      "device_type": 5,
+      "codeset": "64aac4432ec882ae"
+    }
+  }
+}

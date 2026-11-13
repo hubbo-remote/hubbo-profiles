@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:160639",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EMP-TW680",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "be22d41b94812c7f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "D4/Scart",
+      "steps": [
+        {
+          "command": "InputD4Scart"
+        }
+      ]
+    },
+    {
+      "name": "Input A",
+      "steps": [
+        {
+          "command": "InputA"
+        }
+      ]
+    },
+    {
+      "name": "Input B",
+      "steps": [
+        {
+          "command": "InputB"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EMP-TW680.json"
+    ],
+    "harmony": {
+      "global_device_id": 160639,
+      "device_type": 7,
+      "codeset": "271112d5c906672f"
+    }
+  }
+}

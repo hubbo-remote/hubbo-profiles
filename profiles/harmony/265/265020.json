@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265020",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KDL-24W605",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ecc98bca4206204e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2/Component",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2/MHL",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "SEN",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "SEN"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KDL-24W605.json"
+    ],
+    "harmony": {
+      "global_device_id": 265020,
+      "device_type": 1,
+      "codeset": "34a718cac0fd7b1a"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:302439",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "albis",
+  "model": "SceneGate 8073",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "71c39cb9a1efab33",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DigitalTV",
+      "steps": [
+        {
+          "command": "DigitalTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/albis/SceneGate_8073.json"
+    ],
+    "harmony": {
+      "global_device_id": 302439,
+      "device_type": 18,
+      "codeset": "25cf3a1bdddb3c76"
+    }
+  }
+}

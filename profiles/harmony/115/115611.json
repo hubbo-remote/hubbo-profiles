@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:115611",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "NV-FS90B",
+  "kind": "home_theater_vcr",
+  "platform": "ir",
+  "codeset": "d32a550ca99a739c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/VCR",
+      "steps": [
+        {
+          "command": "DvdTv"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV/Video",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/NV-FS90B.json"
+    ],
+    "harmony": {
+      "global_device_id": 115611,
+      "device_type": 32,
+      "codeset": "a463629965796891"
+    }
+  }
+}

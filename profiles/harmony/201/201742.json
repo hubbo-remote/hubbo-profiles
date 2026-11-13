@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201742",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Karcher",
+  "model": "KA 103",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b3a0949f5f59acde",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB/SD/AM/FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Karcher/KA_103.json"
+    ],
+    "harmony": {
+      "global_device_id": 201742,
+      "device_type": 22,
+      "codeset": "629da5bd07004890"
+    }
+  }
+}

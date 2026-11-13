@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111353",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kathrein",
+  "model": "UFD-554",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "76142896b50bb83c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "TV/SAT",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kathrein/UFD-554.json"
+    ],
+    "harmony": {
+      "global_device_id": 111353,
+      "device_type": 16,
+      "codeset": "bb49ce6e8dd111c3"
+    }
+  }
+}

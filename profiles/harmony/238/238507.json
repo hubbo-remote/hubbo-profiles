@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:238507",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Astone",
+  "model": "MP-300T",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e46f92ae555d4b52",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyMovies"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Astone/MP-300T.json"
+    ],
+    "harmony": {
+      "global_device_id": 238507,
+      "device_type": 35,
+      "codeset": "b9350a3afbb40cbc"
+    }
+  }
+}

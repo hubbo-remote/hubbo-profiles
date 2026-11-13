@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:80287",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "PMA-655",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "36bf94e2a07c84bf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tape-1",
+      "steps": [
+        {
+          "command": "InputTape1Dat"
+        }
+      ]
+    },
+    {
+      "name": "Tape-2",
+      "steps": [
+        {
+          "command": "InputTape2Md"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvdAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/PMA-655.json"
+    ],
+    "harmony": {
+      "global_device_id": 80287,
+      "device_type": 19,
+      "codeset": "b0956c14f900bd04"
+    }
+  }
+}

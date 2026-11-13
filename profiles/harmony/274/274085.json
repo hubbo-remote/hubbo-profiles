@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:274085",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Insignia",
+  "model": "NS-SB515",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3ce66196fccff8ca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Insignia/NS-SB515.json"
+    ],
+    "harmony": {
+      "global_device_id": 274085,
+      "device_type": 19,
+      "codeset": "e8677a4d8abfb6ea"
+    }
+  }
+}

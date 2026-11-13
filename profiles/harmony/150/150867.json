@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150867",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "W100",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "fadae3c4751a9877",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "DVI-A",
+      "steps": [
+        {
+          "command": "InputDviA"
+        }
+      ]
+    },
+    {
+      "name": "DVI-D",
+      "steps": [
+        {
+          "command": "InputDviD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/W100.json"
+    ],
+    "harmony": {
+      "global_device_id": 150867,
+      "device_type": 7,
+      "codeset": "31c8b19022206684"
+    }
+  }
+}

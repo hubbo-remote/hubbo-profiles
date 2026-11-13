@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "harmony:264977",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "BH9540TW",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "6a165b659c65bddb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputOptical"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Function"
+        }
+      ]
+    },
+    {
+      "name": "BT Ready",
+      "steps": [
+        {
+          "command": "InputOptical"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Function"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Function"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Home",
+      "steps": [
+        {
+          "command": "Home"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "ARC",
+      "steps": [
+        {
+          "command": "InputArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/BH9540TW.json"
+    ],
+    "harmony": {
+      "global_device_id": 264977,
+      "device_type": 22,
+      "codeset": "54a4fceadf37437d"
+    }
+  }
+}

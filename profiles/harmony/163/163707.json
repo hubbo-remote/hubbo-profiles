@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163707",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "UX-G38",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0a8dc4906a39147e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/UX-G38.json"
+    ],
+    "harmony": {
+      "global_device_id": 163707,
+      "device_type": 21,
+      "codeset": "43ba5f876091bb11"
+    }
+  }
+}

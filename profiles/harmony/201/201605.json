@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201605",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LH-W6200D",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f7e37ef666b5b51a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "Band",
+      "steps": [
+        {
+          "command": "InputBand"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LH-W6200D.json"
+    ],
+    "harmony": {
+      "global_device_id": 201605,
+      "device_type": 22,
+      "codeset": "277d48d7e071d002"
+    }
+  }
+}

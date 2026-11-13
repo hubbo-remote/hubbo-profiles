@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:1115",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Carver",
+  "model": "C-1000A",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "2f1d2a6b9725dc21",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Carver/C-1000A.json"
+    ],
+    "harmony": {
+      "global_device_id": 1115,
+      "device_type": 5,
+      "codeset": "472990ab00fa1e81"
+    }
+  }
+}

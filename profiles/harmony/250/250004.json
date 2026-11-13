@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:250004",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "BDV-E2100",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "d44f56cc8fc986cb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "InputBDDVD"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "Bluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputAudio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/BDV-E2100.json"
+    ],
+    "harmony": {
+      "global_device_id": 250004,
+      "device_type": 22,
+      "codeset": "89c6a45fd50aeb18"
+    }
+  }
+}

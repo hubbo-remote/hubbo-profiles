@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:498262",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Arylic",
+  "model": "A50",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e8a39e54dadec66e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "WiFi",
+      "steps": [
+        {
+          "command": "InputWifi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Arylic/A50.json"
+    ],
+    "harmony": {
+      "global_device_id": 498262,
+      "device_type": 19,
+      "codeset": "875d5ae185251a30"
+    }
+  }
+}

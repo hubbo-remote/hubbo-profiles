@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:7975",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Carver",
+  "model": "HR-742",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b50a5452655ca728",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputCdv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Carver/HR-742.json"
+    ],
+    "harmony": {
+      "global_device_id": 7975,
+      "device_type": 5,
+      "codeset": "927d217789dc79e0"
+    }
+  }
+}

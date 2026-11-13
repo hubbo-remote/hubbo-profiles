@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:146539",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "A-420",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "329199decd195421",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TAPE 2",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/A-420.json"
+    ],
+    "harmony": {
+      "global_device_id": 146539,
+      "device_type": 19,
+      "codeset": "33187c0e34132c3d"
+    }
+  }
+}

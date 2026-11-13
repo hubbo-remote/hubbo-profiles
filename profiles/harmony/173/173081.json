@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173081",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Differo",
+  "model": "NEO",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "05532f01eecb970f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "MOVIE",
+      "steps": [
+        {
+          "command": "Movie"
+        }
+      ]
+    },
+    {
+      "name": "MUSIC",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "PHOTO",
+      "steps": [
+        {
+          "command": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "FILE",
+      "steps": [
+        {
+          "command": "Picture"
+        }
+      ]
+    },
+    {
+      "name": "JUKEBOX",
+      "steps": [
+        {
+          "command": "Jukebox"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Differo/NEO.json"
+    ],
+    "harmony": {
+      "global_device_id": 173081,
+      "device_type": 35,
+      "codeset": "263e94e5500ba17c"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "harmony:208577",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "B&W",
+  "model": "MM-1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "1d865ac79af11ba6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1500
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/B_W/MM-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 208577,
+      "device_type": 19,
+      "codeset": "b74f01da8d84fa2b"
+    }
+  }
+}

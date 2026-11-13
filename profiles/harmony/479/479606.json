@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:479606",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "WOHOME",
+  "model": "S9920",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "257cd89d11da8b34",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/WOHOME/S9920.json"
+    ],
+    "harmony": {
+      "global_device_id": 479606,
+      "device_type": 19,
+      "codeset": "2d37d69b31d7b6da"
+    }
+  }
+}

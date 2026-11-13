@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154165",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "37PF7320/98",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ec979d7352f8c900",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 7000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "CVI-1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "PC-VGA/CVI-2",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/PC-D",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Side",
+      "steps": [
+        {
+          "command": "InputSide"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/37PF7320_98.json"
+    ],
+    "harmony": {
+      "global_device_id": 154165,
+      "device_type": 1,
+      "codeset": "bd262d39c170a350"
+    }
+  }
+}

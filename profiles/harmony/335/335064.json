@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:335064",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acoustic Energy",
+  "model": "AEGO SOUND3AR",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "673b8d07beba25b4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acoustic_Energy/AEGO_SOUND3AR.json"
+    ],
+    "harmony": {
+      "global_device_id": 335064,
+      "device_type": 19,
+      "codeset": "678d96bcea4a5d0b"
+    }
+  }
+}

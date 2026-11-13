@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:108542",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "IO Data",
+  "model": "FTV-320H",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "440380afa461d510",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "D4",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/IO_Data/FTV-320H.json"
+    ],
+    "harmony": {
+      "global_device_id": 108542,
+      "device_type": 1,
+      "codeset": "9007bfd19418faa8"
+    }
+  }
+}

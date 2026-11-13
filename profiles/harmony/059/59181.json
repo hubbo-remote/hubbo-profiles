@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:59181",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "LX-8500",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "df06642233fb2fe8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/LX-8500.json"
+    ],
+    "harmony": {
+      "global_device_id": 59181,
+      "device_type": 22,
+      "codeset": "c00b46dc385454ea"
+    }
+  }
+}

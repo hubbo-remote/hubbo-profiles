@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:274780",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "P5515",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f20ca5948e91ca67",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/DVI",
+      "steps": [
+        {
+          "command": "InputHdmiDvi"
+        }
+      ]
+    },
+    {
+      "name": "Lan/WiFi",
+      "steps": [
+        {
+          "command": "InputLanWiFi"
+        }
+      ]
+    },
+    {
+      "name": "USB B",
+      "steps": [
+        {
+          "command": "InputUsbB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/P5515.json"
+    ],
+    "harmony": {
+      "global_device_id": 274780,
+      "device_type": 7,
+      "codeset": "b3ad2482995e5cf0"
+    }
+  }
+}

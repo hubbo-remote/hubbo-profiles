@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:127843",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Crystal Acoustics",
+  "model": "GIGA-650",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "08667842626caeca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CDR",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Crystal_Acoustics/GIGA-650.json"
+    ],
+    "harmony": {
+      "global_device_id": 127843,
+      "device_type": 5,
+      "codeset": "e7ba6fcefb35a6bb"
+    }
+  }
+}

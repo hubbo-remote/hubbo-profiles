@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:236226",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "PowerLite Home Cinema 5020UBe",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "b55eea82b24c895d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Wireless HD",
+      "steps": [
+        {
+          "command": "InputWirelessHd"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/PowerLite_Home_Cinema_5020UBe.json"
+    ],
+    "harmony": {
+      "global_device_id": 236226,
+      "device_type": 7,
+      "codeset": "a9442c2135a9f972"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:415271",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnat",
+  "model": "SB 180",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4a4d318881d37f02",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnat/SB_180.json"
+    ],
+    "harmony": {
+      "global_device_id": 415271,
+      "device_type": 19,
+      "codeset": "9584ec46c7411f30"
+    }
+  }
+}

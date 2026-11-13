@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:33113",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "PLC-SW35",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a5998a8403797c59",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/PLC-SW35.json"
+    ],
+    "harmony": {
+      "global_device_id": 33113,
+      "device_type": 7,
+      "codeset": "7750a7ee0ba0c9fd"
+    }
+  }
+}

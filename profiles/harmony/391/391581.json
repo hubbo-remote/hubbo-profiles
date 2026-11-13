@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:391581",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nakamichi",
+  "model": "DELTA 100",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "655645f786f51d9c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nakamichi/DELTA_100.json"
+    ],
+    "harmony": {
+      "global_device_id": 391581,
+      "device_type": 19,
+      "codeset": "c5dbd4717014d98c"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273927",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "SRS-X88",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "90f8e9afb7f93b05",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUDIO IN",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "BLUETOOTH",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "NETWORK",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "USB-A",
+      "steps": [
+        {
+          "command": "InputUsbA"
+        }
+      ]
+    },
+    {
+      "name": "USB-B",
+      "steps": [
+        {
+          "command": "InputUsbB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/SRS-X88.json"
+    ],
+    "harmony": {
+      "global_device_id": 273927,
+      "device_type": 19,
+      "codeset": "25d1166954107819"
+    }
+  }
+}

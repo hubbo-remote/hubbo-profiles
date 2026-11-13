@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165008",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hewlett Packard",
+  "model": "DV-6780SE",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "59883fe93bac5958",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "QuickPlay",
+      "steps": [
+        {
+          "command": "QuickPlay"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hewlett_Packard/DV-6780SE.json"
+    ],
+    "harmony": {
+      "global_device_id": 165008,
+      "device_type": 35,
+      "codeset": "4d30b63a7ee9cddc"
+    }
+  }
+}

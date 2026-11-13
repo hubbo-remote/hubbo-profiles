@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:222370",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ZVOX",
+  "model": "Z-Base 555",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e2ce074fba4642d4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AnalogInput 1",
+      "steps": [
+        {
+          "command": "InputAnalog1"
+        }
+      ]
+    },
+    {
+      "name": "AnalogInput 2",
+      "steps": [
+        {
+          "command": "InputAnalog2"
+        }
+      ]
+    },
+    {
+      "name": "AnalogInput 3",
+      "steps": [
+        {
+          "command": "InputAnalog3"
+        }
+      ]
+    },
+    {
+      "name": "DigitalInput-Optical",
+      "steps": [
+        {
+          "command": "InputDigitalOptical"
+        }
+      ]
+    },
+    {
+      "name": "DigitalInput-Coaxial",
+      "steps": [
+        {
+          "command": "InputDigitalCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ZVOX/Z-Base_555.json"
+    ],
+    "harmony": {
+      "global_device_id": 222370,
+      "device_type": 19,
+      "codeset": "6b704a337f485d46"
+    }
+  }
+}

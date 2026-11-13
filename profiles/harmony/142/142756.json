@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:142756",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "ZV420MW8",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "da854a86e6f88e32",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/ZV420MW8.json"
+    ],
+    "harmony": {
+      "global_device_id": 142756,
+      "device_type": 47,
+      "codeset": "c1611cc0f5c80738"
+    }
+  }
+}

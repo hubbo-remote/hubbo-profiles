@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202272",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RH398H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "459067cf3cb395a1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RH398H.json"
+    ],
+    "harmony": {
+      "global_device_id": 202272,
+      "device_type": 34,
+      "codeset": "f9ee6433b48ee6b9"
+    }
+  }
+}

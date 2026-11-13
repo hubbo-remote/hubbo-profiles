@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203394",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Techsolo",
+  "model": "TMV-335SH",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e037620f0d61af25",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Files",
+      "steps": [
+        {
+          "command": "InputFile"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Techsolo/TMV-335SH.json"
+    ],
+    "harmony": {
+      "global_device_id": 203394,
+      "device_type": 35,
+      "codeset": "fe3b006c7bbddfdb"
+    }
+  }
+}

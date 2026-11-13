@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216016",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Salora",
+  "model": "25S5SVT",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7718af63f8ecdd5d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Salora/25S5SVT.json"
+    ],
+    "harmony": {
+      "global_device_id": 216016,
+      "device_type": 1,
+      "codeset": "7973bb74fa53072f"
+    }
+  }
+}

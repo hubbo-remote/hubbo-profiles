@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480392",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "UE49NU8000",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ff6d33aa54848bdf",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "SmartHub",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "SmartHub"
+        }
+      ]
+    },
+    {
+      "name": "Amazon",
+      "steps": [
+        {
+          "command": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Ambient",
+      "steps": [
+        {
+          "command": "Ambient"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/UE49NU8000.json"
+    ],
+    "harmony": {
+      "global_device_id": 480392,
+      "device_type": 1,
+      "codeset": "8e77040db8dbb6c4"
+    }
+  }
+}

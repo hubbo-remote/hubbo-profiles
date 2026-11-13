@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:75593",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "DVD-DR 3035",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "54c4bccdd1794852",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CH 01",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/DVD-DR_3035.json"
+    ],
+    "harmony": {
+      "global_device_id": 75593,
+      "device_type": 22,
+      "codeset": "c169fbfda979076d"
+    }
+  }
+}

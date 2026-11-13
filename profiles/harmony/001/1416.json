@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:1416",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Amplifier Technologies (ATI)",
+  "model": "ATP 8500",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b7756e61fd1ccd8c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputLaserdisc"
+        }
+      ]
+    },
+    {
+      "name": "VCR 1",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "VCR 2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Amplifier_Technologies_ATI/ATP_8500.json"
+    ],
+    "harmony": {
+      "global_device_id": 1416,
+      "device_type": 19,
+      "codeset": "4db60f320d326a06"
+    }
+  }
+}

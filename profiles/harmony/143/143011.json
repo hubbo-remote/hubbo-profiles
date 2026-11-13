@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143011",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Venturer",
+  "model": "PLV-3122",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "2c4811c6b04b1d92",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AV IN",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "YUV IN",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Venturer/PLV-3122.json"
+    ],
+    "harmony": {
+      "global_device_id": 143011,
+      "device_type": 37,
+      "codeset": "0d85ab2338e85d33"
+    }
+  }
+}

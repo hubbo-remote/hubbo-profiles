@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:250994",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "DLA-X30BE",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "82e6b338df5228c0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/DLA-X30BE.json"
+    ],
+    "harmony": {
+      "global_device_id": 250994,
+      "device_type": 7,
+      "codeset": "d311263d694ca1a6"
+    }
+  }
+}

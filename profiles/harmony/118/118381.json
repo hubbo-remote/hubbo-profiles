@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118381",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "XD-6560",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "616cd1fc4aa5909c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "MD/DAT",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/XD-6560.json"
+    ],
+    "harmony": {
+      "global_device_id": 118381,
+      "device_type": 21,
+      "codeset": "465aa7052f3ed47d"
+    }
+  }
+}

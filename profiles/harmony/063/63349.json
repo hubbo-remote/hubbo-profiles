@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:63349",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "LBT-V902",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "5863caabe3655975",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/LBT-V902.json"
+    ],
+    "harmony": {
+      "global_device_id": 63349,
+      "device_type": 21,
+      "codeset": "a43550776e4b1311"
+    }
+  }
+}

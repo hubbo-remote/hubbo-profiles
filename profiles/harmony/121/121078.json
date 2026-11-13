@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121078",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vidikron",
+  "model": "VP-5000",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2c799dece6603536",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "dvd/hd1",
+      "steps": [
+        {
+          "command": "HD1"
+        }
+      ]
+    },
+    {
+      "name": "dvd/hd2",
+      "steps": [
+        {
+          "command": "HD2"
+        }
+      ]
+    },
+    {
+      "name": "dvd/hd3",
+      "steps": [
+        {
+          "command": "HD3"
+        }
+      ]
+    },
+    {
+      "name": "dvd/hd4",
+      "steps": [
+        {
+          "command": "DVDHDToggle"
+        }
+      ]
+    },
+    {
+      "name": "pc/rgb",
+      "steps": [
+        {
+          "command": "RGBPCToggle"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vidikron/VP-5000.json"
+    ],
+    "harmony": {
+      "global_device_id": 121078,
+      "device_type": 13,
+      "codeset": "f99dd97d02dc89f6"
+    }
+  }
+}

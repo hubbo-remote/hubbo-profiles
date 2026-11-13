@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34260",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Luxman",
+  "model": "RV-357",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "541b0a3491f7db00",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "VDP/DBS",
+      "steps": [
+        {
+          "command": "InputVDPDBS"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Luxman/RV-357.json"
+    ],
+    "harmony": {
+      "global_device_id": 34260,
+      "device_type": 5,
+      "codeset": "894f227a6b64f650"
+    }
+  }
+}

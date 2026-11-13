@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165197",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Genius",
+  "model": "SW-HF5.1 3000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9d46191b334443b1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "Aux"
+        }
+      ]
+    },
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "51"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Genius/SW-HF5.1_3000.json"
+    ],
+    "harmony": {
+      "global_device_id": 165197,
+      "device_type": 19,
+      "codeset": "93f3493fcfb3814f"
+    }
+  }
+}

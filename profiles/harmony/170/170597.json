@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170597",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "43A61",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "18030752f296b875",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Ant1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "ColorStream",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "Ant2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/43A61.json"
+    ],
+    "harmony": {
+      "global_device_id": 170597,
+      "device_type": 1,
+      "codeset": "31c0e23f7a5685f7"
+    }
+  }
+}

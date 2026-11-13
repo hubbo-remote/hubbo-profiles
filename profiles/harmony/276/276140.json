@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:276140",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pyle",
+  "model": "PRJAND805",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "8d4cbeee4d669fef",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pyle/PRJAND805.json"
+    ],
+    "harmony": {
+      "global_device_id": 276140,
+      "device_type": 7,
+      "codeset": "0ecdad125d4429cb"
+    }
+  }
+}

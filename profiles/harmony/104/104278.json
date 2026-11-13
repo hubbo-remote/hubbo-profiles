@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "harmony:104278",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dish Network",
+  "model": "HD40-310",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 11000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI DISH",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "VID 1",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputRgb"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "VID 2",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputRgb"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "FRNT",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "CMP 1",
+      "steps": [
+        {
+          "command": "InputSatCable"
+        }
+      ]
+    },
+    {
+      "name": "CMP 2",
+      "steps": [
+        {
+          "command": "InputSatCable"
+        }
+      ]
+    },
+    {
+      "name": "CH 03",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dish_Network/HD40-310.json"
+    ],
+    "harmony": {
+      "global_device_id": 104278,
+      "device_type": 1,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

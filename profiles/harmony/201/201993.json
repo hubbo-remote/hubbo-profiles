@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201993",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fosgate Audionics",
+  "model": "Model Two",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "fcde5d58a0867590",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "CBL",
+      "steps": [
+        {
+          "command": "InputCable"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fosgate_Audionics/Model_Two.json"
+    ],
+    "harmony": {
+      "global_device_id": 201993,
+      "device_type": 19,
+      "codeset": "64aac4432ec882ae"
+    }
+  }
+}

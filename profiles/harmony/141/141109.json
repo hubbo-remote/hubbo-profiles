@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141109",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Alpha Digital",
+  "model": "SA-7A",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "360e442a2bb0e880",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "steps": [
+        {
+          "command": "InputText"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Alpha_Digital/SA-7A.json"
+    ],
+    "harmony": {
+      "global_device_id": 141109,
+      "device_type": 35,
+      "codeset": "9169804b1e8768e2"
+    }
+  }
+}

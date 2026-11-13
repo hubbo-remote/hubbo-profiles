@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:100048",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sven",
+  "model": "HT-480",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "5a54ec21850d338b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "5.1 Ch",
+      "steps": [
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sven/HT-480.json"
+    ],
+    "harmony": {
+      "global_device_id": 100048,
+      "device_type": 19,
+      "codeset": "3376a228eb800db9"
+    }
+  }
+}

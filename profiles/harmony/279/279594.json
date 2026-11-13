@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:279594",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BOHM",
+  "model": "BA66000038",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "564aa4d7909cb2ba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BOHM/BA66000038.json"
+    ],
+    "harmony": {
+      "global_device_id": 279594,
+      "device_type": 19,
+      "codeset": "d39d1603151aaf8f"
+    }
+  }
+}

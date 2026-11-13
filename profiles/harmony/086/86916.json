@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:86916",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "KRF-V6100D",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "49c22151f70af7ab",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "MD/Tape",
+      "steps": [
+        {
+          "command": "InputMdTape"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "DVD/6CH",
+      "steps": [
+        {
+          "command": "InputDvd6Ch"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/KRF-V6100D.json"
+    ],
+    "harmony": {
+      "global_device_id": 86916,
+      "device_type": 5,
+      "codeset": "4cd7510cf1403f3b"
+    }
+  }
+}

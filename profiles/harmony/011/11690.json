@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:11690",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "B & K",
+  "model": "PT5",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "f60b372754db8186",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "V2",
+      "steps": [
+        {
+          "command": "InputV2"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "V1",
+      "steps": [
+        {
+          "command": "InputV1"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/B_K/PT5.json"
+    ],
+    "harmony": {
+      "global_device_id": 11690,
+      "device_type": 5,
+      "codeset": "26dbf3bebb621a58"
+    }
+  }
+}

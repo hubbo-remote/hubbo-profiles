@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "harmony:122539",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Leadtek",
+  "model": "DTV-1000T",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "373c574168dfcc92",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "Blue"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "Yellow"
+        }
+      ]
+    },
+    {
+      "name": "My Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Leadtek/DTV-1000T.json"
+    ],
+    "harmony": {
+      "global_device_id": 122539,
+      "device_type": 18,
+      "codeset": "67fff450cbc3f1d4"
+    }
+  }
+}

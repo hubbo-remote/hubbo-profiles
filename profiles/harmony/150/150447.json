@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150447",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "XL-3800",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "a839689ef7959150",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner(band)",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/XL-3800.json"
+    ],
+    "harmony": {
+      "global_device_id": 150447,
+      "device_type": 21,
+      "codeset": "ab7bedbfea1791d3"
+    }
+  }
+}

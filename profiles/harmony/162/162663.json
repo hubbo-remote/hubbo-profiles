@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162663",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Trilux",
+  "model": "TAP-2101T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Trilux/TAP-2101T.json"
+    ],
+    "harmony": {
+      "global_device_id": 162663,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

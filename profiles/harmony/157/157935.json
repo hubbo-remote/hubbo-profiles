@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157935",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Strato",
+  "model": "HS-5302",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "fc3aac0d29432c23",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Strato/HS-5302.json"
+    ],
+    "harmony": {
+      "global_device_id": 157935,
+      "device_type": 22,
+      "codeset": "330fc838710821c7"
+    }
+  }
+}

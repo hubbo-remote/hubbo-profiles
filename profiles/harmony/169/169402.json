@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169402",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-46D83X",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "892a1a565eed2f78",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "INPUT1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "INPUT2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "INPUT3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "INPUT4",
+      "steps": [
+        {
+          "command": "InputExt4"
+        }
+      ]
+    },
+    {
+      "name": "INPUT5",
+      "steps": [
+        {
+          "command": "InputExt5"
+        }
+      ]
+    },
+    {
+      "name": "INPUT6",
+      "steps": [
+        {
+          "command": "InputExt6"
+        }
+      ]
+    },
+    {
+      "name": "INPUT7",
+      "steps": [
+        {
+          "command": "InputExt6"
+        },
+        {
+          "command": "InputSource"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-46D83X.json"
+    ],
+    "harmony": {
+      "global_device_id": 169402,
+      "device_type": 1,
+      "codeset": "1880bf534e517114"
+    }
+  }
+}

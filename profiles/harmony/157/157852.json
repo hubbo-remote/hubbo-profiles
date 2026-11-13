@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157852",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MCD288/98",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "6c05ac8951083e9b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "USB/CARD",
+      "steps": [
+        {
+          "command": "InputUsbCard"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MCD288_98.json"
+    ],
+    "harmony": {
+      "global_device_id": 157852,
+      "device_type": 22,
+      "codeset": "c371a3bbe7408baa"
+    }
+  }
+}

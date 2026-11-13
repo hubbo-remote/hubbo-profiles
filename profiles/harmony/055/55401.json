@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:55401",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-8000U",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "f2ef5d9745e76f88",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "S-VHS",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-8000U.json"
+    ],
+    "harmony": {
+      "global_device_id": 55401,
+      "device_type": 2,
+      "codeset": "8bed4809cbf37803"
+    }
+  }
+}

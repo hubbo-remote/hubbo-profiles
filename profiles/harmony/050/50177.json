@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:50177",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "MX-55M",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "48077849a09e2882",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape A",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tape B",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/MX-55M.json"
+    ],
+    "harmony": {
+      "global_device_id": 50177,
+      "device_type": 21,
+      "codeset": "ca42b7def46b1362"
+    }
+  }
+}

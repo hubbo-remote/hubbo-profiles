@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205351",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cisco",
+  "model": "4585DVB",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "546753957643d2d1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "DirectionRight"
+      },
+      {
+        "command": "OK"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cisco/4585DVB.json"
+    ],
+    "harmony": {
+      "global_device_id": 205351,
+      "device_type": 18,
+      "codeset": "c60b239382abeeb2"
+    }
+  }
+}

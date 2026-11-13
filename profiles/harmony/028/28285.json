@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:28285",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HCD-ED1",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "4b202de21d372af6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner/Band",
+      "steps": [
+        {
+          "command": "InputTunerBand"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HCD-ED1.json"
+    ],
+    "harmony": {
+      "global_device_id": 28285,
+      "device_type": 21,
+      "codeset": "416e7a33077f115e"
+    }
+  }
+}

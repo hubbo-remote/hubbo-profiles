@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:88821",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "SL4U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "53cffcb15c5c6bec",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 60000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/SL4U.json"
+    ],
+    "harmony": {
+      "global_device_id": 88821,
+      "device_type": 7,
+      "codeset": "2be90594d4b19436"
+    }
+  }
+}

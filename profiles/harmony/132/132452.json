@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:132452",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Schneider",
+  "model": "CB-21E50X",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      },
+      {
+        "command": "InputAv"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Schneider/CB-21E50X.json"
+    ],
+    "harmony": {
+      "global_device_id": 132452,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

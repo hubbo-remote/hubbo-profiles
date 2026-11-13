@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169943",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "CSP1550",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "788bc42c078a7d9e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/CSP1550.json"
+    ],
+    "harmony": {
+      "global_device_id": 169943,
+      "device_type": 22,
+      "codeset": "00ec71f8096bf23d"
+    }
+  }
+}

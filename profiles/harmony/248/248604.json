@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "harmony:248604",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HW-F450",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "429fa0baa97e13a0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 7500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "D.IN",
+      "steps": [
+        {
+          "command": "InputDIn"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "Source"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Source"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputDIn"
+        },
+        {
+          "command": "InputUsbBT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HW-F450.json"
+    ],
+    "harmony": {
+      "global_device_id": 248604,
+      "device_type": 19,
+      "codeset": "8aa8aa4b328c8fed"
+    }
+  }
+}

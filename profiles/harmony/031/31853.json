@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "harmony:31853",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sunfire",
+  "model": "Ultimate Receiver II",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "4632ab75b2778296",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "tape",
+      "steps": [
+        {
+          "command": "InputDATTape"
+        }
+      ]
+    },
+    {
+      "name": "phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "8-ch",
+      "steps": [
+        {
+          "command": "Input8CH"
+        }
+      ]
+    },
+    {
+      "name": "dvd",
+      "steps": [
+        {
+          "command": "InputLDDVD"
+        }
+      ]
+    },
+    {
+      "name": "vcr",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "sat",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "vid 1",
+      "steps": [
+        {
+          "command": "InputVid1"
+        }
+      ]
+    },
+    {
+      "name": "vid 2",
+      "steps": [
+        {
+          "command": "InputVid2"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "AM"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sunfire/Ultimate_Receiver_II.json"
+    ],
+    "harmony": {
+      "global_device_id": 31853,
+      "device_type": 5,
+      "codeset": "36b0d80a2a77c28e"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:256033",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "NA-11S1",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "b83cf47bf4ca7c1c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "Music Server",
+      "steps": [
+        {
+          "command": "InputMusicServer"
+        }
+      ]
+    },
+    {
+      "name": "Online Music",
+      "steps": [
+        {
+          "command": "InputOnlineMusic"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Digital In",
+      "steps": [
+        {
+          "command": "InputDigitalIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/NA-11S1.json"
+    ],
+    "harmony": {
+      "global_device_id": 256033,
+      "device_type": 33,
+      "codeset": "23fb8b0fffc6f03b"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:96144",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Harman Kardon",
+  "model": "HK-690i",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "8264a863498b6a5e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tape2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Harman_Kardon/HK-690i.json"
+    ],
+    "harmony": {
+      "global_device_id": 96144,
+      "device_type": 5,
+      "codeset": "60dbb7df8fec13da"
+    }
+  }
+}

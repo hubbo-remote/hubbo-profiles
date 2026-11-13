@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226956",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cablecom",
+  "model": "DCR7111",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "5b64a64d9dd53e1a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cablecom/DCR7111.json"
+    ],
+    "harmony": {
+      "global_device_id": 226956,
+      "device_type": 18,
+      "codeset": "7c6c50ccf77e3677"
+    }
+  }
+}

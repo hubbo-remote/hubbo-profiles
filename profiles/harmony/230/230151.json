@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:230151",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cisco",
+  "model": "BGC TV Decoder V4",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "9066416fe994be3b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DigitalTV",
+      "steps": [
+        {
+          "command": "DigitalTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cisco/BGC_TV_Decoder_V4.json"
+    ],
+    "harmony": {
+      "global_device_id": 230151,
+      "device_type": 18,
+      "codeset": "f264cd50e2e9e70f"
+    }
+  }
+}

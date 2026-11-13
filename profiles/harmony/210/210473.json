@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:210473",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "UPC",
+  "model": "DCR7111/06",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "1eaf8bcea485fb8e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "UPC",
+      "steps": [
+        {
+          "command": "UPC"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/UPC/DCR7111_06.json"
+    ],
+    "harmony": {
+      "global_device_id": 210473,
+      "device_type": 12,
+      "codeset": "fd784d114aff3db6"
+    }
+  }
+}

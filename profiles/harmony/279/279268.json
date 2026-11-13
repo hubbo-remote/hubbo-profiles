@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "id": "harmony:279268",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "Test SC-BTT195",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "95e6872a23e06fc0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputDiscSd"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputRadioExtIniPod"
+        },
+        {
+          "command": "InputRadioExtIniPod"
+        },
+        {
+          "command": "InputRadioExtIniPod"
+        }
+      ]
+    },
+    {
+      "name": "ARC",
+      "steps": [
+        {
+          "command": "InputDiscSd"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputRadioExtIniPod"
+        },
+        {
+          "command": "InputRadioExtIniPod"
+        }
+      ]
+    },
+    {
+      "name": "D.IN",
+      "steps": [
+        {
+          "command": "InputDIn"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputDIn"
+        },
+        {
+          "command": "InputDIn"
+        }
+      ]
+    },
+    {
+      "name": "FM Radio",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Home"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Home"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDiscSd"
+        }
+      ]
+    },
+    {
+      "name": "SD Card",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Home"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Home"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/Test_SC-BTT195.json"
+    ],
+    "harmony": {
+      "global_device_id": 279268,
+      "device_type": 22,
+      "codeset": "ec96a395714c14b6"
+    }
+  }
+}

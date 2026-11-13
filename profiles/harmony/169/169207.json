@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169207",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RT-32LZ50",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "28b3498821a2b4a0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "SVideo",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RT-32LZ50.json"
+    ],
+    "harmony": {
+      "global_device_id": 169207,
+      "device_type": 1,
+      "codeset": "f37c549a152cdcfa"
+    }
+  }
+}

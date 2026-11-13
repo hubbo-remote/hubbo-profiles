@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179475",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-XS350",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "b554da26f18a1387",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-XS350.json"
+    ],
+    "harmony": {
+      "global_device_id": 179475,
+      "device_type": 34,
+      "codeset": "ac980dba18dfb0e8"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:302345",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "iLive",
+  "model": "ITB066B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9773a139163ef282",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/iLive/ITB066B.json"
+    ],
+    "harmony": {
+      "global_device_id": 302345,
+      "device_type": 19,
+      "codeset": "34eb55fb30bec941"
+    }
+  }
+}

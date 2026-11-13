@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:15807",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aristona",
+  "model": "63TA4410/03",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f29a59a94ccfae2c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputToggle"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aristona/63TA4410_03.json"
+    ],
+    "harmony": {
+      "global_device_id": 15807,
+      "device_type": 1,
+      "codeset": "f85bada5f8fd15c8"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:119964",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Freecom",
+  "model": "Network MediaPlayer-350",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "21366c79cbb72937",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Freecom/Network_MediaPlayer-350.json"
+    ],
+    "harmony": {
+      "global_device_id": 119964,
+      "device_type": 35,
+      "codeset": "ff3f766401a7938d"
+    }
+  }
+}

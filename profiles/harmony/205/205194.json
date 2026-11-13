@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205194",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Diora",
+  "model": "WS-504B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3d6216bea477960a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Diora/WS-504B.json"
+    ],
+    "harmony": {
+      "global_device_id": 205194,
+      "device_type": 19,
+      "codeset": "769b488b54d00dda"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:301286",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grace",
+  "model": "GDI-BTAR513",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "4f1c6060ed606be9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grace/GDI-BTAR513.json"
+    ],
+    "harmony": {
+      "global_device_id": 301286,
+      "device_type": 33,
+      "codeset": "fbca173898c03d79"
+    }
+  }
+}

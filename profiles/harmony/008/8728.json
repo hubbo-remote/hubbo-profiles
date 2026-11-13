@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:8728",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Russound",
+  "model": "PR-4Z",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a2ef00dcb0ee2462",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO1",
+      "steps": [
+        {
+          "command": "InputDss"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Russound/PR-4Z.json"
+    ],
+    "harmony": {
+      "global_device_id": 8728,
+      "device_type": 19,
+      "codeset": "21909ad7995390bd"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57975",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TCM",
+  "model": "TCM 212837",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4eb097467b1385c1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TCM/TCM_212837.json"
+    ],
+    "harmony": {
+      "global_device_id": 57975,
+      "device_type": 19,
+      "codeset": "a7c4eabe8719be5a"
+    }
+  }
+}

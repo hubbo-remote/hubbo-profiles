@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:501302",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RGBTEK",
+  "model": "TD-DAC192KHz",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "f7bd0346dab67789",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RGBTEK/TD-DAC192KHz.json"
+    ],
+    "harmony": {
+      "global_device_id": 501302,
+      "device_type": 19,
+      "codeset": "f98a7a375f0263d1"
+    }
+  }
+}

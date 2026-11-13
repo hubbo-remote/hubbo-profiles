@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:81559",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "PowerLite 835p",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "600eec31598ca7dc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Comp 1",
+      "steps": [
+        {
+          "command": "InputComp1"
+        }
+      ]
+    },
+    {
+      "name": "Comp 2",
+      "steps": [
+        {
+          "command": "InputComp2"
+        }
+      ]
+    },
+    {
+      "name": "EasyMP",
+      "steps": [
+        {
+          "command": "InputEasyMP"
+        }
+      ]
+    },
+    {
+      "name": "SVideo",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/PowerLite_835p.json"
+    ],
+    "harmony": {
+      "global_device_id": 81559,
+      "device_type": 7,
+      "codeset": "ffd160e82a24d7c0"
+    }
+  }
+}

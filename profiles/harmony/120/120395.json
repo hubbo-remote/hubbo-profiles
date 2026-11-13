@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:120395",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HV-28P40",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a23b3b00d4d9328f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 20000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "TV/DTV",
+      "steps": [
+        {
+          "command": "Cancel"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HV-28P40.json"
+    ],
+    "harmony": {
+      "global_device_id": 120395,
+      "device_type": 1,
+      "codeset": "4aa23c9dc04fab6c"
+    }
+  }
+}

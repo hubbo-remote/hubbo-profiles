@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "harmony:31199",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Anthem",
+  "model": "AVM-30 (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9fbb1d745fc9bdf6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "2-Ch",
+      "steps": [
+        {
+          "command": "Input2Channel"
+        }
+      ]
+    },
+    {
+      "name": "6-Ch",
+      "steps": [
+        {
+          "command": "Input6Channel"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Anthem/AVM-30_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 31199,
+      "device_type": 5,
+      "codeset": "17a9f38dc32f9edc"
+    }
+  }
+}

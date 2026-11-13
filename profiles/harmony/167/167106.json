@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167106",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vestel",
+  "model": "Slim 10",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "f3977a87ab7884fc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vestel/Slim_10.json"
+    ],
+    "harmony": {
+      "global_device_id": 167106,
+      "device_type": 19,
+      "codeset": "d05d3d027507fb3a"
+    }
+  }
+}

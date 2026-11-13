@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:210428",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "EP-782",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "b60800f5d460d8a5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "VGA1",
+      "steps": [
+        {
+          "command": "InputVga1"
+        }
+      ]
+    },
+    {
+      "name": "VGA2",
+      "steps": [
+        {
+          "command": "InputVga2"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/EP-782.json"
+    ],
+    "harmony": {
+      "global_device_id": 210428,
+      "device_type": 7,
+      "codeset": "b3a3e6310fd9da20"
+    }
+  }
+}

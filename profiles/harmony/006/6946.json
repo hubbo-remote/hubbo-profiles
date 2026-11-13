@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:6946",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vocopro",
+  "model": "DA-4050FX",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9ea408f48c9ad779",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "CDG",
+      "steps": [
+        {
+          "command": "InputCdg"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vocopro/DA-4050FX.json"
+    ],
+    "harmony": {
+      "global_device_id": 6946,
+      "device_type": 5,
+      "codeset": "2106458a6c1e7286"
+    }
+  }
+}

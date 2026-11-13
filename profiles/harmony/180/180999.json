@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180999",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Niro",
+  "model": "620",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "18a803de8cd749dd",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "SAT/CABLE",
+      "steps": [
+        {
+          "command": "InputSatCable"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "FRONT",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    },
+    {
+      "name": "COAX",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "AUX1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Niro/620.json"
+    ],
+    "harmony": {
+      "global_device_id": 180999,
+      "device_type": 19,
+      "codeset": "69279d9c20b6ad95"
+    }
+  }
+}

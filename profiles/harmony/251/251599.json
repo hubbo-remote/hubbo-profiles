@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251599",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "venton",
+  "model": "UNIBOX HD2",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "b97d5c8a0f6c562d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/venton/UNIBOX_HD2.json"
+    ],
+    "harmony": {
+      "global_device_id": 251599,
+      "device_type": 18,
+      "codeset": "124d66ffcd157492"
+    }
+  }
+}

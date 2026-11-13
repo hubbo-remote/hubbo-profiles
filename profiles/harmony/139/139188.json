@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139188",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "ZS-5300",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d6ea228bf26f6cde",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "Zone1PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input1",
+      "steps": [
+        {
+          "command": "Zone1Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input2",
+      "steps": [
+        {
+          "command": "Zone1Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input3",
+      "steps": [
+        {
+          "command": "Zone1Input3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/ZS-5300.json"
+    ],
+    "harmony": {
+      "global_device_id": 139188,
+      "device_type": 19,
+      "codeset": "2efd100a336461c2"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:156086",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "NAC-HD1E",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "4a806c7e5d1c447f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/NAC-HD1E.json"
+    ],
+    "harmony": {
+      "global_device_id": 156086,
+      "device_type": 21,
+      "codeset": "8c21584ce9e9dafe"
+    }
+  }
+}

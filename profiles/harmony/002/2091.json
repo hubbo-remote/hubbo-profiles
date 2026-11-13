@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:2091",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Harman Kardon",
+  "model": "AVR-70",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "101ca522d5b7cb1d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      },
+      {
+        "delay_ms": 200
+      },
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Harman_Kardon/AVR-70.json"
+    ],
+    "harmony": {
+      "global_device_id": 2091,
+      "device_type": 5,
+      "codeset": "9fec32fbaeda155f"
+    }
+  }
+}

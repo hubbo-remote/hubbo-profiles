@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148909",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tekkeon",
+  "model": "ND-2000",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "dba80f452a320ea5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "MUSIC",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "PHOTOS",
+      "steps": [
+        {
+          "command": "MyPicture"
+        }
+      ]
+    },
+    {
+      "name": "VIDEOS",
+      "steps": [
+        {
+          "command": "MyVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tekkeon/ND-2000.json"
+    ],
+    "harmony": {
+      "global_device_id": 148909,
+      "device_type": 35,
+      "codeset": "375298cfcae1ec55"
+    }
+  }
+}

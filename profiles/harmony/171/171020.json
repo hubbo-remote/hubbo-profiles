@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:171020",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Infocus",
+  "model": "X-9",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "ebc5896e467c8788",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Infocus/X-9.json"
+    ],
+    "harmony": {
+      "global_device_id": 171020,
+      "device_type": 7,
+      "codeset": "32bd71219c6f8415"
+    }
+  }
+}

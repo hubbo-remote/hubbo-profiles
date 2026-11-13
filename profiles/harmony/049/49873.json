@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:49873",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Buffalo",
+  "model": "LinkPlayer",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "88bc42201ef06eb4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Buffalo/LinkPlayer.json"
+    ],
+    "harmony": {
+      "global_device_id": 49873,
+      "device_type": 35,
+      "codeset": "9754baf97893871f"
+    }
+  }
+}

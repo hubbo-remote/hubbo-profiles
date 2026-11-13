@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:103453",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SonicBlue",
+  "model": "DDV-3110",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputAntA"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SonicBlue/DDV-3110.json"
+    ],
+    "harmony": {
+      "global_device_id": 103453,
+      "device_type": 2,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

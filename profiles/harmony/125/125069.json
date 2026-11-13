@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:125069",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Schneider",
+  "model": "DSR-215",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "abb7b3b609ec773d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "F1"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Schneider/DSR-215.json"
+    ],
+    "harmony": {
+      "global_device_id": 125069,
+      "device_type": 18,
+      "codeset": "41fc4f1a9a606ad5"
+    }
+  }
+}

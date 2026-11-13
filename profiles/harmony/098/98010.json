@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:98010",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "eBench",
+  "model": "KH-2800",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6b5ed12924e0ee02",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/eBench/KH-2800.json"
+    ],
+    "harmony": {
+      "global_device_id": 98010,
+      "device_type": 19,
+      "codeset": "5f8ca5551a1faa00"
+    }
+  }
+}

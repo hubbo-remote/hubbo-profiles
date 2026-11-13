@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:156053",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "H262B",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "67a99e8b071ce461",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputA"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/H262B.json"
+    ],
+    "harmony": {
+      "global_device_id": 156053,
+      "device_type": 7,
+      "codeset": "a22d8a29b0ba4706"
+    }
+  }
+}

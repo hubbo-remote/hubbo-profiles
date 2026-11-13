@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:46453",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Packard Bell",
+  "model": "300-ASW",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "066a26c6d2dec7e3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "SCART",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Packard_Bell/300-ASW.json"
+    ],
+    "harmony": {
+      "global_device_id": 46453,
+      "device_type": 1,
+      "codeset": "205f98bb48599c7c"
+    }
+  }
+}

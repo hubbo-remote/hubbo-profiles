@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:380958",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "MultiSync X464UNV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "72092ebfc87e3c0c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "DisplayPort",
+      "steps": [
+        {
+          "command": "InputDisplayPort"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/MultiSync_X464UNV.json"
+    ],
+    "harmony": {
+      "global_device_id": 380958,
+      "device_type": 13,
+      "codeset": "71348dc68c6015b1"
+    }
+  }
+}

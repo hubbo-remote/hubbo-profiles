@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:257026",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "LCD4620-BK-AV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5010fb5ac9ed6b47",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "RGB/HV",
+      "steps": [
+        {
+          "command": "InputRgbHv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "DVD/HD",
+      "steps": [
+        {
+          "command": "InputDvdHd"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "NumberEnter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/LCD4620-BK-AV.json"
+    ],
+    "harmony": {
+      "global_device_id": 257026,
+      "device_type": 1,
+      "codeset": "bf0d2bf184628bfd"
+    }
+  }
+}

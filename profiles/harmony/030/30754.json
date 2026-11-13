@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:30754",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "SD-55HTSU",
+  "kind": "home_theater_vcr",
+  "platform": "ir",
+  "codeset": "c21308b816ab2233",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputFmAm"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 1",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 2",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/SD-55HTSU.json"
+    ],
+    "harmony": {
+      "global_device_id": 30754,
+      "device_type": 32,
+      "codeset": "5d2cea18931fce10"
+    }
+  }
+}

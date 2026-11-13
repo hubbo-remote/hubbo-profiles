@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:448195",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AKIXNO",
+  "model": "SR210",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "7a6ff43ce083adde",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "LineIn",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AKIXNO/SR210.json"
+    ],
+    "harmony": {
+      "global_device_id": 448195,
+      "device_type": 19,
+      "codeset": "800ca4916a24f3b7"
+    }
+  }
+}

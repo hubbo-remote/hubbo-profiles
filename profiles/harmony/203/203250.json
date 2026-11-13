@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203250",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kaleidescape",
+  "model": "KSystem-120",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "a6808a6cc0bb339d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "MyMusic",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "MyVideos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kaleidescape/KSystem-120.json"
+    ],
+    "harmony": {
+      "global_device_id": 203250,
+      "device_type": 35,
+      "codeset": "de912696048b56f2"
+    }
+  }
+}

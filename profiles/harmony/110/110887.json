@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110887",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Restek",
+  "model": "Mini Pre",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "f00b270dd01c5e71",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "3"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Restek/Mini_Pre.json"
+    ],
+    "harmony": {
+      "global_device_id": 110887,
+      "device_type": 5,
+      "codeset": "e84ef4cdeb4bcae9"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:107551",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "NX-PS1",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "d83970f93c38b62c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "USB/Memory",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/NX-PS1.json"
+    ],
+    "harmony": {
+      "global_device_id": 107551,
+      "device_type": 21,
+      "codeset": "ceed7a6b17c8a2ca"
+    }
+  }
+}

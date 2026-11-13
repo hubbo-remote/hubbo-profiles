@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "harmony:232143",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sceptre",
+  "model": "X409BV-FHD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e758f2efd6662373",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 18000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1",
+          "hold_ms": 1000
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sceptre/X409BV-FHD.json"
+    ],
+    "harmony": {
+      "global_device_id": 232143,
+      "device_type": 1,
+      "codeset": "749337cf7363a217"
+    }
+  }
+}

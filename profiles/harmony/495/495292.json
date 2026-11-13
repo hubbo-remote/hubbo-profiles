@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:495292",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "PicoPix Max",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "9b728ebf67f853f1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 20000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/PicoPix_Max.json"
+    ],
+    "harmony": {
+      "global_device_id": 495292,
+      "device_type": 7,
+      "codeset": "2bdbb9f3b7e7e06d"
+    }
+  }
+}

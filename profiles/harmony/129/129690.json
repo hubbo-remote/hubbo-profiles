@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129690",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Omni",
+  "model": "DHR-2680",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "18ce31e7e39d8f76",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Omni/DHR-2680.json"
+    ],
+    "harmony": {
+      "global_device_id": 129690,
+      "device_type": 34,
+      "codeset": "3895929f4f89b2cc"
+    }
+  }
+}

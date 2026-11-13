@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144586",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Myryad",
+  "model": "Z142",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3412bbf62c80abc9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TAPE1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "TAPE2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Myryad/Z142.json"
+    ],
+    "harmony": {
+      "global_device_id": 144586,
+      "device_type": 19,
+      "codeset": "e7ab7968cfe8689b"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123167",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-4661",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "1de29280545338f9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOnZone1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOffZone1"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DTV/CABLE",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DVR",
+      "steps": [
+        {
+          "command": "InputDvr"
+        }
+      ]
+    },
+    {
+      "name": "V-AUX",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    },
+    {
+      "name": "MD/CD-R",
+      "steps": [
+        {
+          "command": "InputMdCdr"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "XM",
+      "steps": [
+        {
+          "command": "InputXm"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-4661.json"
+    ],
+    "harmony": {
+      "global_device_id": 123167,
+      "device_type": 5,
+      "codeset": "c948af15e2bd6e73"
+    }
+  }
+}

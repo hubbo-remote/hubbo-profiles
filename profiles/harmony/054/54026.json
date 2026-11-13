@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:54026",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cambridge Soundworks",
+  "model": "Radio 730",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "428089ea0943bdda",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cambridge_Soundworks/Radio_730.json"
+    ],
+    "harmony": {
+      "global_device_id": 54026,
+      "device_type": 5,
+      "codeset": "3c00241010a578f9"
+    }
+  }
+}

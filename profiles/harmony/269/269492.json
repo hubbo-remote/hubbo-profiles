@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269492",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Electrocompaniet",
+  "model": "ECM 2",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "c0f8cc32abfc99e2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Coax 1",
+      "steps": [
+        {
+          "command": "InputCoax1"
+        }
+      ]
+    },
+    {
+      "name": "Coax 2",
+      "steps": [
+        {
+          "command": "InputCoax2"
+        }
+      ]
+    },
+    {
+      "name": "Toslink 1",
+      "steps": [
+        {
+          "command": "InputToslink1"
+        }
+      ]
+    },
+    {
+      "name": "Toslink 2",
+      "steps": [
+        {
+          "command": "InputToslink2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Electrocompaniet/ECM_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 269492,
+      "device_type": 33,
+      "codeset": "2e51932ef52e27e7"
+    }
+  }
+}

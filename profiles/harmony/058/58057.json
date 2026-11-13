@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58057",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "62PL9774",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6534f59e3ea53212",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 38000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputCable"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AV5",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV6",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AVSide",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/62PL9774.json"
+    ],
+    "harmony": {
+      "global_device_id": 58057,
+      "device_type": 1,
+      "codeset": "b23c2596b38c1815"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:242687",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Xoro",
+  "model": "HMT350",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "9d7347d40a3e48e2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Internet TV",
+      "steps": [
+        {
+          "command": "InternetTv"
+        }
+      ]
+    },
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InternetRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Xoro/HMT350.json"
+    ],
+    "harmony": {
+      "global_device_id": 242687,
+      "device_type": 35,
+      "codeset": "72afe4401f42c88d"
+    }
+  }
+}

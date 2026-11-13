@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137257",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Koizumi",
+  "model": "SAD-4751",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0af96ba1c235cae9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Koizumi/SAD-4751.json"
+    ],
+    "harmony": {
+      "global_device_id": 137257,
+      "device_type": 21,
+      "codeset": "9a6adbbed3d62b5f"
+    }
+  }
+}

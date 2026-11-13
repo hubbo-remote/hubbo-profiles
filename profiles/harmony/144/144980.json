@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144980",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Finlux",
+  "model": "HCS-3015",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "d415402434d59430",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Finlux/HCS-3015.json"
+    ],
+    "harmony": {
+      "global_device_id": 144980,
+      "device_type": 22,
+      "codeset": "83f247d11a3ce683"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:255057",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kinetic",
+  "model": "KA-4260",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "87fc72f8f4470429",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "MP3",
+      "steps": [
+        {
+          "command": "InputMp3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kinetic/KA-4260.json"
+    ],
+    "harmony": {
+      "global_device_id": 255057,
+      "device_type": 5,
+      "codeset": "ae11b1dcc5f5fc05"
+    }
+  }
+}

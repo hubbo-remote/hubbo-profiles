@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:496974",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Matrix Audio",
+  "model": "mini-i Pro 3",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4d88992da3f4c4e4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Matrix_Audio/mini-i_Pro_3.json"
+    ],
+    "harmony": {
+      "global_device_id": 496974,
+      "device_type": 19,
+      "codeset": "8a4c05a731b701b0"
+    }
+  }
+}

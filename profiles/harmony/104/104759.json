@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:104759",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ATI",
+  "model": "Theater 650-Pro",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "d45342b092570265",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Teletext",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ATI/Theater_650-Pro.json"
+    ],
+    "harmony": {
+      "global_device_id": 104759,
+      "device_type": 18,
+      "codeset": "c14a1578ae534a3e"
+    }
+  }
+}

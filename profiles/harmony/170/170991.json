@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170991",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sabre",
+  "model": "PDT-423BKA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9926722ac1f16d5f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Pc",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sabre/PDT-423BKA.json"
+    ],
+    "harmony": {
+      "global_device_id": 170991,
+      "device_type": 13,
+      "codeset": "00d4f54dd3a713ad"
+    }
+  }
+}

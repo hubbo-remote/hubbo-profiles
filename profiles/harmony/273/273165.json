@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273165",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "H7550BD",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "9fcc69da4ea8933e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/DVI",
+      "steps": [
+        {
+          "command": "InputHdmiDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/H7550BD.json"
+    ],
+    "harmony": {
+      "global_device_id": 273165,
+      "device_type": 7,
+      "codeset": "b2eca46a7759e4f6"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123316",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "52JW642S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "efccc0a7cfbe4c27",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn",
+        "hold_ms": 1500
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "InputAV1",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "InputAV2",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "InputAV3",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/52JW642S.json"
+    ],
+    "harmony": {
+      "global_device_id": 123316,
+      "device_type": 1,
+      "codeset": "c08fdc61e8eaab82"
+    }
+  }
+}

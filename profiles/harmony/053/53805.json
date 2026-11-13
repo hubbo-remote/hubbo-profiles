@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:53805",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eltax",
+  "model": "Nova",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "a609125e4a3602d8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eltax/Nova.json"
+    ],
+    "harmony": {
+      "global_device_id": 53805,
+      "device_type": 22,
+      "codeset": "14287b1565e558b1"
+    }
+  }
+}

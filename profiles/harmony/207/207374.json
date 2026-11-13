@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:207374",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Amethyst",
+  "model": "AIP",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b461b5c59ef7798d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Amethyst/AIP.json"
+    ],
+    "harmony": {
+      "global_device_id": 207374,
+      "device_type": 5,
+      "codeset": "c44fb5fc6c49f270"
+    }
+  }
+}

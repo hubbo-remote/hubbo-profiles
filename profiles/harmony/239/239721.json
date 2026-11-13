@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:239721",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "RDP-XF300iP",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "cb9eee1f40dde075",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "BlueTooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "AudioIn",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/RDP-XF300iP.json"
+    ],
+    "harmony": {
+      "global_device_id": 239721,
+      "device_type": 5,
+      "codeset": "b816e4b39bc4039e"
+    }
+  }
+}

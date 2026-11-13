@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273356",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Geneva Lab",
+  "model": "Model Cinema",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "49acbcae6dfe414e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Geneva_Lab/Model_Cinema.json"
+    ],
+    "harmony": {
+      "global_device_id": 273356,
+      "device_type": 19,
+      "codeset": "b6614ec5f0c6c13b"
+    }
+  }
+}

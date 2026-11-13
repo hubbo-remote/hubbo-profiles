@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179594",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "32PD5000",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9f92e8282c34e697",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputRgb2"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "AV 3",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    },
+    {
+      "name": "AV 4",
+      "steps": [
+        {
+          "command": "InputAv4"
+        }
+      ]
+    },
+    {
+      "name": "RGB 1",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "RGB 2",
+      "steps": [
+        {
+          "command": "InputRgb2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/32PD5000.json"
+    ],
+    "harmony": {
+      "global_device_id": 179594,
+      "device_type": 1,
+      "codeset": "d80e553524d17a6c"
+    }
+  }
+}

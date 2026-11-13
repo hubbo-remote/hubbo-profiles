@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169977",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "190TW",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "fe90eff8d35a89c1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "SCART",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "Av",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/190TW.json"
+    ],
+    "harmony": {
+      "global_device_id": 169977,
+      "device_type": 1,
+      "codeset": "d3ddce07acaac1b0"
+    }
+  }
+}

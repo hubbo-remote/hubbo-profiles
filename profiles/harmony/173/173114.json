@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173114",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "P42-T01E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e2fbfb7fd11a3f24",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV/DTT",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelPrev"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "6"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "7"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "AV5",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3,
+    "start": "0"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/P42-T01E.json"
+    ],
+    "harmony": {
+      "global_device_id": 173114,
+      "device_type": 1,
+      "codeset": "6dba21347d5a81d3"
+    }
+  }
+}

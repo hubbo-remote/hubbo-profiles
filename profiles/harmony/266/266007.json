@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "id": "harmony:266007",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "65PUS9109/12",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c60bc34678c36197",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 14000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Source",
+          "hold_ms": 1000
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionUp",
+          "hold_ms": 2000
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Satellite",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Source",
+          "hold_ms": 1000
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionUp",
+          "hold_ms": 2000
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputAntenna"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Source",
+          "hold_ms": 1000
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionUp",
+          "hold_ms": 2000
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Recordings",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Source",
+          "hold_ms": 1000
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionUp",
+          "hold_ms": 2000
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "Smart TV",
+      "steps": [
+        {
+          "command": "SmartTv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/65PUS9109_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 266007,
+      "device_type": 1,
+      "codeset": "d11624ac33803c8d"
+    }
+  }
+}

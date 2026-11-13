@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181953",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lifetec",
+  "model": "LT-7095 VTS",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ebc55728bc1b30da",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lifetec/LT-7095_VTS.json"
+    ],
+    "harmony": {
+      "global_device_id": 181953,
+      "device_type": 1,
+      "codeset": "6cc2471d96bf6798"
+    }
+  }
+}

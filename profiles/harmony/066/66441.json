@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:66441",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnum",
+  "model": "DDS-400",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "108195efdf14f1e9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnum/DDS-400.json"
+    ],
+    "harmony": {
+      "global_device_id": 66441,
+      "device_type": 19,
+      "codeset": "000d18b15c545994"
+    }
+  }
+}

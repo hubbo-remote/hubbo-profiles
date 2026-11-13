@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:124638",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FW-R8",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "6f43fe9a76c92e36",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle2"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD 1",
+      "steps": [
+        {
+          "command": "InputCd1"
+        }
+      ]
+    },
+    {
+      "name": "CD 2",
+      "steps": [
+        {
+          "command": "InputCd2"
+        }
+      ]
+    },
+    {
+      "name": "CD 3",
+      "steps": [
+        {
+          "command": "InputCd3"
+        }
+      ]
+    },
+    {
+      "name": "CDR",
+      "steps": [
+        {
+          "command": "InputCdrTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FW-R8.json"
+    ],
+    "harmony": {
+      "global_device_id": 124638,
+      "device_type": 21,
+      "codeset": "9147147c878f6704"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205099",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FW-M589/22",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "b87722c2fb5ffbed",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FW-M589_22.json"
+    ],
+    "harmony": {
+      "global_device_id": 205099,
+      "device_type": 21,
+      "codeset": "264dbc063c706fe7"
+    }
+  }
+}

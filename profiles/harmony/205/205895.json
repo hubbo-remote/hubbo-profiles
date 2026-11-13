@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205895",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Onkyo",
+  "model": "HTX-22HDX",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ad01bb1680e7521b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "DIG 1",
+      "steps": [
+        {
+          "command": "InputDg1"
+        }
+      ]
+    },
+    {
+      "name": "DIG 2",
+      "steps": [
+        {
+          "command": "InputDg1"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "DIG 3",
+      "steps": [
+        {
+          "command": "InputLine1"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputPrev"
+        }
+      ]
+    },
+    {
+      "name": "Line 1",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "Line 2",
+      "steps": [
+        {
+          "command": "InputLine1"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Onkyo/HTX-22HDX.json"
+    ],
+    "harmony": {
+      "global_device_id": 205895,
+      "device_type": 19,
+      "codeset": "3be7b1277d082514"
+    }
+  }
+}

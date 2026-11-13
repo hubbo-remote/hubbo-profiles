@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:15179",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "HCT",
+  "model": "TVD-133C",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "196f9c148a7a8870",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV Mode",
+      "steps": [
+        {
+          "command": "InputTVMode"
+        }
+      ]
+    },
+    {
+      "name": "DVD Mode",
+      "steps": [
+        {
+          "command": "InputDVDMode"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/HCT/TVD-133C.json"
+    ],
+    "harmony": {
+      "global_device_id": 15179,
+      "device_type": 37,
+      "codeset": "ba159338b381e73f"
+    }
+  }
+}

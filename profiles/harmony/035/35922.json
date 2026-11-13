@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:35922",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Microsoft",
+  "model": "Xbox Media Center Extender",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "552f2a6463511b99",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Microsoft/Xbox_Media_Center_Extender.json"
+    ],
+    "harmony": {
+      "global_device_id": 35922,
+      "device_type": 35,
+      "codeset": "2a06ddbb5f9438a3"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:240613",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grace",
+  "model": "GDI-IRTP800",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "db8ed9318927ccb7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Internet Tuner",
+      "steps": [
+        {
+          "command": "InputInternetTuner"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "Media Player",
+      "steps": [
+        {
+          "command": "InputMediaPlayer"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grace/GDI-IRTP800.json"
+    ],
+    "harmony": {
+      "global_device_id": 240613,
+      "device_type": 33,
+      "codeset": "a27277a7f1ea7922"
+    }
+  }
+}

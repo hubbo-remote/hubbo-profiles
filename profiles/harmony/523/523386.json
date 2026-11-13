@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:523386",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HW-C47M",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "647aeaf75cad58d9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "D.IN",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HW-C47M.json"
+    ],
+    "harmony": {
+      "global_device_id": 523386,
+      "device_type": 19,
+      "codeset": "5d9fe747cc78c67a"
+    }
+  }
+}

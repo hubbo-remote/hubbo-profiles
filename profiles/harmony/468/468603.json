@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:468603",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "A-20-K",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "61a0bb06e74784b0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SACD/CD",
+      "steps": [
+        {
+          "command": "InputSacdCd"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Recorder",
+      "steps": [
+        {
+          "command": "InputRecorder"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/A-20-K.json"
+    ],
+    "harmony": {
+      "global_device_id": 468603,
+      "device_type": 19,
+      "codeset": "132fae55aafc106c"
+    }
+  }
+}

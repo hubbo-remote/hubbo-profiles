@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:21093",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Orcom",
+  "model": "OP 42M1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4abb1b3734c39fe1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HD",
+      "steps": [
+        {
+          "command": "InputHD"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Orcom/OP_42M1.json"
+    ],
+    "harmony": {
+      "global_device_id": 21093,
+      "device_type": 13,
+      "codeset": "71359771df5b769f"
+    }
+  }
+}

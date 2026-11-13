@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "harmony:274182",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Apple",
+  "model": "Apple TV (2nd / 3rd generation)",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "fb76cb7a0562a032",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "Play"
+      }
+    ],
+    "off": [
+      {
+        "command": "Menu",
+        "hold_ms": 2000
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "Play",
+        "hold_ms": 3000
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 0,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Apple/Apple_TV_2nd_3rd_generation.json"
+    ],
+    "harmony": {
+      "global_device_id": 274182,
+      "device_type": 51,
+      "codeset": "47b562f84ce2d178"
+    }
+  }
+}

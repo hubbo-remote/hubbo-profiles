@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:83734",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "PDP-3404",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b629de50f1e0608e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "Satellite",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Mac",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/PDP-3404.json"
+    ],
+    "harmony": {
+      "global_device_id": 83734,
+      "device_type": 13,
+      "codeset": "8039178fcda5d107"
+    }
+  }
+}

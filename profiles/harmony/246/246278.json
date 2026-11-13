@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:246278",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "CMT-DH70SWR",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "e4a8023587c03f41",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner AM",
+      "steps": [
+        {
+          "command": "AM"
+        }
+      ]
+    },
+    {
+      "name": "Tuner FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/CMT-DH70SWR.json"
+    ],
+    "harmony": {
+      "global_device_id": 246278,
+      "device_type": 22,
+      "codeset": "7cbd18876012492b"
+    }
+  }
+}

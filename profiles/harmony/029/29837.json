@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:29837",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optimus",
+  "model": "STAV-3200",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "96537371d5d36fba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape Monitor",
+      "steps": [
+        {
+          "command": "InputTapeMonitor"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "CD/Aux",
+      "steps": [
+        {
+          "command": "InputCdAux"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optimus/STAV-3200.json"
+    ],
+    "harmony": {
+      "global_device_id": 29837,
+      "device_type": 5,
+      "codeset": "50409884f4203326"
+    }
+  }
+}

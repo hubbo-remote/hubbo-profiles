@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:62693",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "D-Link",
+  "model": "DSM-329",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "5b8fa5517b0cc09f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "OnlineMedia",
+      "steps": [
+        {
+          "command": "InputOnlineMedia"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/D-Link/DSM-329.json"
+    ],
+    "harmony": {
+      "global_device_id": 62693,
+      "device_type": 35,
+      "codeset": "5f16f403c524e731"
+    }
+  }
+}

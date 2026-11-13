@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216740",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Krell",
+  "model": "FBI",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4ed8992d3de64c4a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Cast",
+      "steps": [
+        {
+          "command": "InputCast"
+        }
+      ]
+    },
+    {
+      "name": "1B",
+      "steps": [
+        {
+          "command": "InputB1"
+        }
+      ]
+    },
+    {
+      "name": "1S",
+      "steps": [
+        {
+          "command": "InputS1"
+        }
+      ]
+    },
+    {
+      "name": "2S",
+      "steps": [
+        {
+          "command": "InputS2"
+        }
+      ]
+    },
+    {
+      "name": "3S",
+      "steps": [
+        {
+          "command": "InputS3"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Krell/FBI.json"
+    ],
+    "harmony": {
+      "global_device_id": 216740,
+      "device_type": 19,
+      "codeset": "aac88180ce6c2b5d"
+    }
+  }
+}

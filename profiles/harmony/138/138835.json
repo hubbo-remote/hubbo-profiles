@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138835",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ZyXEL",
+  "model": "DMA-100",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "87ba6dfac131aa98",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ZyXEL/DMA-100.json"
+    ],
+    "harmony": {
+      "global_device_id": 138835,
+      "device_type": 33,
+      "codeset": "76c4215a52aa941b"
+    }
+  }
+}

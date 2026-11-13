@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:178523",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "UX-LP5",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "698c76635b1b68e0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/UX-LP5.json"
+    ],
+    "harmony": {
+      "global_device_id": 178523,
+      "device_type": 21,
+      "codeset": "57c09b73e4086e22"
+    }
+  }
+}

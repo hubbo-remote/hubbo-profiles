@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:29117",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Silverstone",
+  "model": "LC03",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "09dce7c3eb32b800",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "Yellow"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "Blue"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Silverstone/LC03.json"
+    ],
+    "harmony": {
+      "global_device_id": 29117,
+      "device_type": 35,
+      "codeset": "dbdc616adbb6e620"
+    }
+  }
+}

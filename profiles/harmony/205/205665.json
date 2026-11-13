@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205665",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "AVR-1611",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "717ca429ddfee158",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "BD",
+      "steps": [
+        {
+          "command": "InputBd"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    },
+    {
+      "name": "SAT/CBL",
+      "steps": [
+        {
+          "command": "InputSatCbl"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "V-AUX",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "QuickSelect 1",
+      "steps": [
+        {
+          "command": "QuickSelect1"
+        }
+      ]
+    },
+    {
+      "name": "QuickSelect 2",
+      "steps": [
+        {
+          "command": "QuickSelect2"
+        }
+      ]
+    },
+    {
+      "name": "QuickSelect 3",
+      "steps": [
+        {
+          "command": "QuickSelect3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/AVR-1611.json"
+    ],
+    "harmony": {
+      "global_device_id": 205665,
+      "device_type": 5,
+      "codeset": "5de7a9d510a9051b"
+    }
+  }
+}

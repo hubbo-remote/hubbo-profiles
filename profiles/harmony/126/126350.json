@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "harmony:126350",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TX-25MD4L",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4ce4a6bdffffeec7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "AV 3",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Yellow"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TX-25MD4L.json"
+    ],
+    "harmony": {
+      "global_device_id": 126350,
+      "device_type": 1,
+      "codeset": "a8547d18fe86ba3f"
+    }
+  }
+}

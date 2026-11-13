@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "id": "harmony:302127",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "49L621U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2cd0404cb6559669",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ANT/CABLE",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputAntCable"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Google Cast",
+      "steps": [
+        {
+          "command": "GoogleCast"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/49L621U.json"
+    ],
+    "harmony": {
+      "global_device_id": 302127,
+      "device_type": 1,
+      "codeset": "2600643fd0838210"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:6054",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nakamichi",
+  "model": "TA-4A",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "011c8df279311a14",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "Video2"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2",
+      "steps": [
+        {
+          "command": "Tape2VCR"
+        }
+      ]
+    },
+    {
+      "name": "Tape 3/Vcr",
+      "steps": [
+        {
+          "command": "InputTape3Vcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nakamichi/TA-4A.json"
+    ],
+    "harmony": {
+      "global_device_id": 6054,
+      "device_type": 5,
+      "codeset": "e9e516035b2f076f"
+    }
+  }
+}

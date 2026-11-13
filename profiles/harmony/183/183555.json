@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:183555",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RZ23LZ20",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "55e89e198c632da6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "SVideo",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB-PC",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RZ23LZ20.json"
+    ],
+    "harmony": {
+      "global_device_id": 183555,
+      "device_type": 1,
+      "codeset": "76fefff1ebd8f4cf"
+    }
+  }
+}

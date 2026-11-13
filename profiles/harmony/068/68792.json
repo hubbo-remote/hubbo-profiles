@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68792",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu-Siemens",
+  "model": "Myrica V-40",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "fbfb016489715bca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "SCART1",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "SCART2",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO/AV",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "Komponente1",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "Komponente2",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "6"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "7"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "8"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu-Siemens/Myrica_V-40.json"
+    ],
+    "harmony": {
+      "global_device_id": 68792,
+      "device_type": 1,
+      "codeset": "54a95b6588076c72"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:228713",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Audio Solutions",
+  "model": "TVAM 2.1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "98f8da2ca10b79ff",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Audio_Solutions/TVAM_2.1.json"
+    ],
+    "harmony": {
+      "global_device_id": 228713,
+      "device_type": 19,
+      "codeset": "ec2ce2e743bd283f"
+    }
+  }
+}

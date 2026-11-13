@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:225699",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optimus",
+  "model": "738",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "db23380f90b8d20a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optimus/738.json"
+    ],
+    "harmony": {
+      "global_device_id": 225699,
+      "device_type": 21,
+      "codeset": "10add1abbc60a968"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165724",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Leadtek",
+  "model": "WINFAST TV PRO II",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "bda0c5f8e6e354c2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Leadtek/WINFAST_TV_PRO_II.json"
+    ],
+    "harmony": {
+      "global_device_id": 165724,
+      "device_type": 35,
+      "codeset": "000702290174a24f"
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493322",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Digital Projection",
+  "model": "E-VisionLaser110004K",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "4432bf7bd15756d9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "HDMI1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "HDMI2"
+        }
+      ]
+    },
+    {
+      "name": "DisplayPort",
+      "steps": [
+        {
+          "command": "DisplayPort"
+        }
+      ]
+    },
+    {
+      "name": "HDBaseT",
+      "steps": [
+        {
+          "command": "HDBaseT"
+        }
+      ]
+    },
+    {
+      "name": "3GSDI",
+      "steps": [
+        {
+          "command": "3GSDI"
+        }
+      ]
+    },
+    {
+      "name": "HDMI3",
+      "steps": [
+        {
+          "command": "HDMI3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI4",
+      "steps": [
+        {
+          "command": "HDMI4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Digital_Projection/E-VisionLaser110004K.json"
+    ],
+    "harmony": {
+      "global_device_id": 493322,
+      "device_type": 7,
+      "codeset": "b3739f57700b81ef"
+    }
+  }
+}

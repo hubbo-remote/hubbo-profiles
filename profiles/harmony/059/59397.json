@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:59397",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "TH-57",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "08ca1dc728ced4f0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX DIGITAL",
+      "steps": [
+        {
+          "command": "InputAuxDigital"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/TH-57.json"
+    ],
+    "harmony": {
+      "global_device_id": 59397,
+      "device_type": 22,
+      "codeset": "b30972693746e9e6"
+    }
+  }
+}

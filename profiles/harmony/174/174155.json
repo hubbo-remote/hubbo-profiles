@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174155",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Harman Kardon",
+  "model": "AVR-254 (ZONE 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "51aa880156bc46b6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Cable/Sat",
+      "steps": [
+        {
+          "command": "InputCableSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Media Server",
+      "steps": [
+        {
+          "command": "InputMediaServer"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Harman_Kardon/AVR-254_ZONE_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 174155,
+      "device_type": 5,
+      "codeset": "d21022e616e6968e"
+    }
+  }
+}

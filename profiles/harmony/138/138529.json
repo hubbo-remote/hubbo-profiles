@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138529",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Burmester",
+  "model": "Integrated Amp 032",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d2fe3a5710f5537b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Burmester/Integrated_Amp_032.json"
+    ],
+    "harmony": {
+      "global_device_id": 138529,
+      "device_type": 19,
+      "codeset": "0033b7ee6aa05993"
+    }
+  }
+}

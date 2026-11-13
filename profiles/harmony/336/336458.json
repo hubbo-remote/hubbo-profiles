@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336458",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AX",
+  "model": "HD51",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "e96eae18d814cbfd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AX/HD51.json"
+    ],
+    "harmony": {
+      "global_device_id": 336458,
+      "device_type": 18,
+      "codeset": "4feafa5f5428ea91"
+    }
+  }
+}

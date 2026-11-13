@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267336",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTL4115B/F7",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9045c8fbb84bea89",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Aux/AudioIn",
+      "steps": [
+        {
+          "command": "InputAuxAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "HdmiArc",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTL4115B_F7.json"
+    ],
+    "harmony": {
+      "global_device_id": 267336,
+      "device_type": 19,
+      "codeset": "a72f28aa8a5bd8f6"
+    }
+  }
+}

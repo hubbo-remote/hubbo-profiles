@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263858",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-32A410D",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "992091aa5df5b307",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1000
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "TV"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "TV"
+        },
+        {
+          "command": "InputHdmi"
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "TV"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "TV"
+        },
+        {
+          "command": "InputHdmi"
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "TV"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "TV"
+        },
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "TV"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "TV"
+        },
+        {
+          "command": "InputHdmi"
+        },
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Media Player",
+      "steps": [
+        {
+          "command": "MediaPlayer"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-32A410D.json"
+    ],
+    "harmony": {
+      "global_device_id": 263858,
+      "device_type": 1,
+      "codeset": "53dde6bc3e8b9a7b"
+    }
+  }
+}

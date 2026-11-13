@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167116",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "TSD-DR40HD",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "f1669fb8871f838c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "DVB",
+      "steps": [
+        {
+          "command": "InputDvb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/TSD-DR40HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 167116,
+      "device_type": 34,
+      "codeset": "d8f9a14d0fe9d756"
+    }
+  }
+}

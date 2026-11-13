@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141831",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Loewe",
+  "model": "Arcada 71-100",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "070d7db5b0f2bfb6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "AVS",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "6"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "7"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "8"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "9"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Loewe/Arcada_71-100.json"
+    ],
+    "harmony": {
+      "global_device_id": 141831,
+      "device_type": 1,
+      "codeset": "87a55d5701ecb5b4"
+    }
+  }
+}

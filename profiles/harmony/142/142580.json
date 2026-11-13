@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:142580",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Anyware",
+  "model": "HA-IR01SV",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "5777cc6774130e4f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "RecordedTv",
+      "steps": [
+        {
+          "command": "RecordedTV"
+        }
+      ]
+    },
+    {
+      "name": "LiveTv",
+      "steps": [
+        {
+          "command": "Live"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Anyware/HA-IR01SV.json"
+    ],
+    "harmony": {
+      "global_device_id": 142580,
+      "device_type": 35,
+      "codeset": "761f37296334a8ff"
+    }
+  }
+}

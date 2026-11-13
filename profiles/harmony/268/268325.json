@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:268325",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "RDP-XA700iP",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a9637a084d66e150",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/RDP-XA700iP.json"
+    ],
+    "harmony": {
+      "global_device_id": 268325,
+      "device_type": 5,
+      "codeset": "a0e19e9e4df157b0"
+    }
+  }
+}

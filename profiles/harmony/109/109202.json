@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:109202",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AL Tech",
+  "model": "MG-350HD",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d592e255eb1448a5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AL_Tech/MG-350HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 109202,
+      "device_type": 35,
+      "codeset": "6f31801cd0217951"
+    }
+  }
+}

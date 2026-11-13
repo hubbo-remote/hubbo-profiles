@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57179",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Canon",
+  "model": "ZR70",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "42c75012c9e6ac9a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Input"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Canon/ZR70.json"
+    ],
+    "harmony": {
+      "global_device_id": 57179,
+      "device_type": 2,
+      "codeset": "15945804f4c66687"
+    }
+  }
+}

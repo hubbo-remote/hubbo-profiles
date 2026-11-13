@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:333930",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "BX274",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "c41afbb26e0fa962",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/BX274.json"
+    ],
+    "harmony": {
+      "global_device_id": 333930,
+      "device_type": 7,
+      "codeset": "58bf1f0ea10f9e94"
+    }
+  }
+}

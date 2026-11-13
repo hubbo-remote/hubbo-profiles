@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:218767",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Melectronic",
+  "model": "MTS28ZB1-P",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "53999655145dfb8f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "STB Video1",
+      "steps": [
+        {
+          "command": "InputStb"
+        }
+      ]
+    },
+    {
+      "name": "DVD Video2",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Melectronic/MTS28ZB1-P.json"
+    ],
+    "harmony": {
+      "global_device_id": 218767,
+      "device_type": 1,
+      "codeset": "b9612e628bb9ecef"
+    }
+  }
+}

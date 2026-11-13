@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135606",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-42PA7C",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cb385827a58d5677",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "AV 3",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Yellow"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Blue"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-42PA7C.json"
+    ],
+    "harmony": {
+      "global_device_id": 135606,
+      "device_type": 1,
+      "codeset": "b9c65377979efc87"
+    }
+  }
+}

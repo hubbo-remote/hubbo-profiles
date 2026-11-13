@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:29519",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "EAV",
+  "model": "SV-386",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "d4d2a6923ee8332b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCD/CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    },
+    {
+      "name": "OPT",
+      "steps": [
+        {
+          "command": "InputOpt"
+        }
+      ]
+    },
+    {
+      "name": "COAX1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "COAX2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/EAV/SV-386.json"
+    ],
+    "harmony": {
+      "global_device_id": 29519,
+      "device_type": 5,
+      "codeset": "f88d5ab633f66e3a"
+    }
+  }
+}

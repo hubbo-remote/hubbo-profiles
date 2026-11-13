@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121905",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "SD-AT1000",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "80bb0a00de5452db",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Line 1",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "Line 2",
+      "steps": [
+        {
+          "command": "InputLine2"
+        }
+      ]
+    },
+    {
+      "name": "Line 3",
+      "steps": [
+        {
+          "command": "InputLine3"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "Digital 1",
+      "steps": [
+        {
+          "command": "InputDigital1"
+        }
+      ]
+    },
+    {
+      "name": "Digital 2",
+      "steps": [
+        {
+          "command": "InputDigital2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/SD-AT1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 121905,
+      "device_type": 5,
+      "codeset": "7e4426a0d7d097ce"
+    }
+  }
+}

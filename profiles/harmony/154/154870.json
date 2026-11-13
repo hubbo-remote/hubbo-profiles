@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154870",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Conceptronic",
+  "model": "CSM3PL",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d1f52621b7aec1cc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "MUSIC",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "PHOTO",
+      "steps": [
+        {
+          "command": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "Video"
+        }
+      ]
+    },
+    {
+      "name": "FILE",
+      "steps": [
+        {
+          "command": "File"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Conceptronic/CSM3PL.json"
+    ],
+    "harmony": {
+      "global_device_id": 154870,
+      "device_type": 35,
+      "codeset": "4c198aaf81137817"
+    }
+  }
+}

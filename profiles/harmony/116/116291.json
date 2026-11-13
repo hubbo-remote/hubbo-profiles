@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116291",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Projection Design",
+  "model": "Action! M20",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "60258f76507ec18c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Projection_Design/Action_M20.json"
+    ],
+    "harmony": {
+      "global_device_id": 116291,
+      "device_type": 7,
+      "codeset": "89f98a4c904c048e"
+    }
+  }
+}

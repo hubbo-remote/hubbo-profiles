@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:200904",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "ED-X3270A",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "104fe63a426051f1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Video"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "RGB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/ED-X3270A.json"
+    ],
+    "harmony": {
+      "global_device_id": 200904,
+      "device_type": 7,
+      "codeset": "39b7c8e513737f27"
+    }
+  }
+}

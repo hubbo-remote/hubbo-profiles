@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:496634",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "M4214CCBA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "095177f23f9f9bea",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/DVI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/M4214CCBA.json"
+    ],
+    "harmony": {
+      "global_device_id": 496634,
+      "device_type": 13,
+      "codeset": "8b51e66cf6577bd7"
+    }
+  }
+}

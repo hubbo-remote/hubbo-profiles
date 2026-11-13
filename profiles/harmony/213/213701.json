@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "harmony:213701",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Clarion",
+  "model": "CMD5",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "b16c20d5268098cb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1000
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Clarion/CMD5.json"
+    ],
+    "harmony": {
+      "global_device_id": 213701,
+      "device_type": 21,
+      "codeset": "761adabca02ee00e"
+    }
+  }
+}

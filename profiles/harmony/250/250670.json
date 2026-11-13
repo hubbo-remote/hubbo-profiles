@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:250670",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "TSX-70",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9080b4652b3c6a50",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/TSX-70.json"
+    ],
+    "harmony": {
+      "global_device_id": 250670,
+      "device_type": 5,
+      "codeset": "9bae062a53b68cd4"
+    }
+  }
+}

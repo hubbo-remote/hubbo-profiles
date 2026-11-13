@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153367",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Casio",
+  "model": "XJ-S30",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "4dcddb9f3a9d348c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Casio/XJ-S30.json"
+    ],
+    "harmony": {
+      "global_device_id": 153367,
+      "device_type": 7,
+      "codeset": "d5c334ba4fb80b3a"
+    }
+  }
+}

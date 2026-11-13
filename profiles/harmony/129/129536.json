@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129536",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Allegro",
+  "model": "ABR-21",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "a7b61138c0f87f05",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VHS",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tv/Vcr",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Output Select",
+      "steps": [
+        {
+          "command": "InOutSelect"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Allegro/ABR-21.json"
+    ],
+    "harmony": {
+      "global_device_id": 129536,
+      "device_type": 25,
+      "codeset": "46d0aa37cc9e14ea"
+    }
+  }
+}

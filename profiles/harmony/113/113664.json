@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "id": "harmony:113664",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bluesky",
+  "model": "BS-4206BPHD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8f454f6555cf5c78",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "AV-IN",
+      "steps": [
+        {
+          "command": "Red"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "Red"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "yPbPr",
+      "steps": [
+        {
+          "command": "Green"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "HD-yPbPr",
+      "steps": [
+        {
+          "command": "Green"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "Yellow"
+        }
+      ]
+    },
+    {
+      "name": "SCART-1",
+      "steps": [
+        {
+          "command": "Yellow"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "SCART-2",
+      "steps": [
+        {
+          "command": "Yellow"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bluesky/BS-4206BPHD.json"
+    ],
+    "harmony": {
+      "global_device_id": 113664,
+      "device_type": 1,
+      "codeset": "3ba1b9ab64fef621"
+    }
+  }
+}

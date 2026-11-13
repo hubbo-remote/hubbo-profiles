@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:104890",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "AWRC-2G",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "2661e44468142f4c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/AWRC-2G.json"
+    ],
+    "harmony": {
+      "global_device_id": 104890,
+      "device_type": 21,
+      "codeset": "ecad8a7f5a784e8d"
+    }
+  }
+}

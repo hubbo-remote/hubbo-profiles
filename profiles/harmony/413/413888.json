@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:413888",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kanto",
+  "model": "YU4",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d94f00e82b511690",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kanto/YU4.json"
+    ],
+    "harmony": {
+      "global_device_id": 413888,
+      "device_type": 19,
+      "codeset": "03556d1676ec3872"
+    }
+  }
+}

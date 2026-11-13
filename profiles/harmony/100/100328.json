@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "harmony:100328",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "FT-7177B",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "31ed0241f93d8935",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Mute"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/FT-7177B.json"
+    ],
+    "harmony": {
+      "global_device_id": 100328,
+      "device_type": 1,
+      "codeset": "dc0e8c10798f72e1"
+    }
+  }
+}

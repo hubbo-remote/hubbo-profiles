@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "harmony:112755",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Loewe",
+  "model": "Calida 5763",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b009634181b59cc6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 2000
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "8"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "9"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Loewe/Calida_5763.json"
+    ],
+    "harmony": {
+      "global_device_id": 112755,
+      "device_type": 1,
+      "codeset": "2759f601cd7513fd"
+    }
+  }
+}

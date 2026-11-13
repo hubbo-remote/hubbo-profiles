@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:48648",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "T+A",
+  "model": "PT-800M",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b2f53b923852c59c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/T_A/PT-800M.json"
+    ],
+    "harmony": {
+      "global_device_id": 48648,
+      "device_type": 5,
+      "codeset": "808a0a2b5ed63c27"
+    }
+  }
+}

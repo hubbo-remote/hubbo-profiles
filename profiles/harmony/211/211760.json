@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211760",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bang & Olufsen",
+  "model": "BEOVISION 10",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "33a9447d4a145f64",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bang_Olufsen/BEOVISION_10.json"
+    ],
+    "harmony": {
+      "global_device_id": 211760,
+      "device_type": 1,
+      "codeset": "79e0b57951e16055"
+    }
+  }
+}

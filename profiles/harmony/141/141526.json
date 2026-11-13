@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141526",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Soundwave",
+  "model": "A-1200R",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "f89b11ef3b5c6f38",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Soundwave/A-1200R.json"
+    ],
+    "harmony": {
+      "global_device_id": 141526,
+      "device_type": 19,
+      "codeset": "bb7ab725d9dec296"
+    }
+  }
+}

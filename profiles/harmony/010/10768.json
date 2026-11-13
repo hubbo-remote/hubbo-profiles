@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "harmony:10768",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GoVideo",
+  "model": "TW1730",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "40add284c6eac707",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        },
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GoVideo/TW1730.json"
+    ],
+    "harmony": {
+      "global_device_id": 10768,
+      "device_type": 1,
+      "codeset": "ee30f9f991186fd3"
+    }
+  }
+}

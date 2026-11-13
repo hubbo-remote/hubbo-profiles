@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:242497",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Asus",
+  "model": "EB1503",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "628228f27a0705ad",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "MyPhotos"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Asus/EB1503.json"
+    ],
+    "harmony": {
+      "global_device_id": 242497,
+      "device_type": 35,
+      "codeset": "e8ec70055b0abfbc"
+    }
+  }
+}

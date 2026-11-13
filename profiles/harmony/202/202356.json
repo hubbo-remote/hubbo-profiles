@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202356",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "32PC5DVC",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f560171885ceefca",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "RGB-PC",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/32PC5DVC.json"
+    ],
+    "harmony": {
+      "global_device_id": 202356,
+      "device_type": 1,
+      "codeset": "3132b9d7062be09c"
+    }
+  }
+}

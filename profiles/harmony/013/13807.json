@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:13807",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Emerson",
+  "model": "EWT19S3",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d0df26839dbfbb3c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV/VCR",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Emerson/EWT19S3.json"
+    ],
+    "harmony": {
+      "global_device_id": 13807,
+      "device_type": 1,
+      "codeset": "558801620cc7077d"
+    }
+  }
+}

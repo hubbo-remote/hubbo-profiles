@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:239796",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pace",
+  "model": "TDS-865IMH",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "2668e1d5a722baba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pace/TDS-865IMH.json"
+    ],
+    "harmony": {
+      "global_device_id": 239796,
+      "device_type": 18,
+      "codeset": "6eb737255c00ce72"
+    }
+  }
+}

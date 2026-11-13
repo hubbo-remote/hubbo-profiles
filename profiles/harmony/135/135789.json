@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135789",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "DRA435DVB",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a69be8c07ea9e265",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTapeMonitor"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/DRA435DVB.json"
+    ],
+    "harmony": {
+      "global_device_id": 135789,
+      "device_type": 5,
+      "codeset": "1291f60eb7c1a846"
+    }
+  }
+}

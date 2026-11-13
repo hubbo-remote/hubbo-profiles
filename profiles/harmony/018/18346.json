@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:18346",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Audiovox",
+  "model": "VE-1040",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "26025b7e6e2fedfc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "A/V1",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "A/V2",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Audiovox/VE-1040.json"
+    ],
+    "harmony": {
+      "global_device_id": 18346,
+      "device_type": 37,
+      "codeset": "88b98f3c72358675"
+    }
+  }
+}

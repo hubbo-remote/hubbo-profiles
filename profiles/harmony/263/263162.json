@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263162",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SU-HTB580",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "03b9e69e8d35a30e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "BluetoothParing"
+        },
+        {
+          "command": "Input"
+        }
+      ]
+    },
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "BluetoothParing"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 5000
+        },
+        {
+          "command": "Input"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "BluetoothParing"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SU-HTB580.json"
+    ],
+    "harmony": {
+      "global_device_id": 263162,
+      "device_type": 19,
+      "codeset": "21b16c7da61ecff5"
+    }
+  }
+}

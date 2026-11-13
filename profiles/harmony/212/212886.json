@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212886",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Alienware",
+  "model": "M17-R1",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "6c6571e744c4b24b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Alienware/M17-R1.json"
+    ],
+    "harmony": {
+      "global_device_id": 212886,
+      "device_type": 35,
+      "codeset": "efd296ee96ae7af2"
+    }
+  }
+}

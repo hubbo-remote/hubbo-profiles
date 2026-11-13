@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:90871",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sansui",
+  "model": "HTS-102",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "83cdc5cfa8e162d6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sansui/HTS-102.json"
+    ],
+    "harmony": {
+      "global_device_id": 90871,
+      "device_type": 19,
+      "codeset": "54e9372dbc9de5c6"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:79964",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ADS Tech",
+  "model": "Instant TV DVB-T",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "099a516b76535dc3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Live",
+      "steps": [
+        {
+          "command": "Live"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ADS_Tech/Instant_TV_DVB-T.json"
+    ],
+    "harmony": {
+      "global_device_id": 79964,
+      "device_type": 18,
+      "codeset": "8bb666f6c345d323"
+    }
+  }
+}

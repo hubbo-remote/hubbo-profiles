@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:81048",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Saba",
+  "model": "M55-K30",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d88ff29f5ea7ab87",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Saba/M55-K30.json"
+    ],
+    "harmony": {
+      "global_device_id": 81048,
+      "device_type": 1,
+      "codeset": "d0c83ec2e16e439a"
+    }
+  }
+}

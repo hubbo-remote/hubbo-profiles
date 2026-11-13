@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158956",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-32AD5E-BK",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "892a1a565eed2f78",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputExt6"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputSource"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputSource"
+        }
+      ]
+    },
+    {
+      "name": "EXT1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "EXT2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "EXT3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "EXT4",
+      "steps": [
+        {
+          "command": "InputExt4"
+        }
+      ]
+    },
+    {
+      "name": "EXT5",
+      "steps": [
+        {
+          "command": "InputExt5"
+        }
+      ]
+    },
+    {
+      "name": "EXT6",
+      "steps": [
+        {
+          "command": "InputExt6"
+        }
+      ]
+    },
+    {
+      "name": "EXT7",
+      "steps": [
+        {
+          "command": "InputExt6"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputSource"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-32AD5E-BK.json"
+    ],
+    "harmony": {
+      "global_device_id": 158956,
+      "device_type": 1,
+      "codeset": "1880bf534e517114"
+    }
+  }
+}

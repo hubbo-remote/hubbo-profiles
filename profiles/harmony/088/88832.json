@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:88832",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "XL2U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "96fe2b73630bee36",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/XL2U.json"
+    ],
+    "harmony": {
+      "global_device_id": 88832,
+      "device_type": 7,
+      "codeset": "a5cea61fad34479a"
+    }
+  }
+}

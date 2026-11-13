@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:2364",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Carver",
+  "model": "CT-6",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "01bc82fda605f56b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "SelectAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "SelectFm"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Carver/CT-6.json"
+    ],
+    "harmony": {
+      "global_device_id": 2364,
+      "device_type": 5,
+      "codeset": "de13428814befbda"
+    }
+  }
+}

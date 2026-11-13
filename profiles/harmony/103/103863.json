@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:103863",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MX-5060D",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "8f77dc03622179c9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputPhono"
+      },
+      {
+        "command": "InputDvd"
+      },
+      {
+        "command": "InputTelevision"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MX-5060D.json"
+    ],
+    "harmony": {
+      "global_device_id": 103863,
+      "device_type": 22,
+      "codeset": "5af41a1aeabccc84"
+    }
+  }
+}

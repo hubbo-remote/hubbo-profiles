@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143898",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnum",
+  "model": "DVD VCR 3600",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "85e5b4334ec10312",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "InputDvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "InputVcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnum/DVD_VCR_3600.json"
+    ],
+    "harmony": {
+      "global_device_id": 143898,
+      "device_type": 25,
+      "codeset": "f24108db7801027e"
+    }
+  }
+}

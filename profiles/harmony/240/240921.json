@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:240921",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Edifier",
+  "model": "C2 Plus",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2941270cca0d9d4f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Edifier/C2_Plus.json"
+    ],
+    "harmony": {
+      "global_device_id": 240921,
+      "device_type": 19,
+      "codeset": "a8e6a6296d996aca"
+    }
+  }
+}

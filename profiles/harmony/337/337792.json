@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:337792",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "SJ5Y",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "722553d1adbecd60",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputPortable"
+        },
+        {
+          "command": "Optical"
+        }
+      ]
+    },
+    {
+      "name": "LG TV",
+      "steps": [
+        {
+          "command": "InputLgTv"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "HDMI IN",
+      "steps": [
+        {
+          "command": "InputHdmiIn"
+        }
+      ]
+    },
+    {
+      "name": "Portable",
+      "steps": [
+        {
+          "command": "InputPortable"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/SJ5Y.json"
+    ],
+    "harmony": {
+      "global_device_id": 337792,
+      "device_type": 19,
+      "codeset": "f5b534c3fdacb65f"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267824",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "ICF-CS15iPN",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "4a954cb32a28e677",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Radio Band",
+      "steps": [
+        {
+          "command": "InputRadioBand"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/ICF-CS15iPN.json"
+    ],
+    "harmony": {
+      "global_device_id": 267824,
+      "device_type": 5,
+      "codeset": "af629a0b668e2398"
+    }
+  }
+}

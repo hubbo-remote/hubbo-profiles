@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138431",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Firstline",
+  "model": "44M95",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "79af836ce25d38ad",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Firstline/44M95.json"
+    ],
+    "harmony": {
+      "global_device_id": 138431,
+      "device_type": 1,
+      "codeset": "843ce1e9b31004d0"
+    }
+  }
+}

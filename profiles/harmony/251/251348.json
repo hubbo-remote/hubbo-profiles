@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251348",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sveon",
+  "model": "spm 1000",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "3a12b823f4dc38ea",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "MyDvd"
+        }
+      ]
+    },
+    {
+      "name": "MUSIC",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "PHOTO",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "MOVIE",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sveon/spm_1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 251348,
+      "device_type": 35,
+      "codeset": "fd4f37c165bf8214"
+    }
+  }
+}

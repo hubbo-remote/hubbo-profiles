@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:142966",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SOH",
+  "model": "Home-005",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "fbc3024c81a4fbe1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SOH/Home-005.json"
+    ],
+    "harmony": {
+      "global_device_id": 142966,
+      "device_type": 19,
+      "codeset": "879835f2934e7e7f"
+    }
+  }
+}

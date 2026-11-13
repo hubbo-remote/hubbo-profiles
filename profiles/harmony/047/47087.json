@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "harmony:47087",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RZ-37LP1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4afb7df38ee4f8e5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        },
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        },
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        },
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        },
+        {
+          "command": "InputComponent1"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        },
+        {
+          "command": "InputRgb"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        },
+        {
+          "command": "InputSVideo"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RZ-37LP1.json"
+    ],
+    "harmony": {
+      "global_device_id": 47087,
+      "device_type": 1,
+      "codeset": "e1cf59d13c6d5673"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:498029",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "James LOUDSPEAKER",
+  "model": "M102",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "616b642688025c83",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "HdmiArc",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/James_LOUDSPEAKER/M102.json"
+    ],
+    "harmony": {
+      "global_device_id": 498029,
+      "device_type": 19,
+      "codeset": "ce1c8fcdb1699cdf"
+    }
+  }
+}

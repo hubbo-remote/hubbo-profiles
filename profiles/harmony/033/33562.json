@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:33562",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "MHC-EX9AV",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "bfc092ea55c8afe2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    },
+    {
+      "name": "TapeA",
+      "steps": [
+        {
+          "command": "InputTapeA"
+        }
+      ]
+    },
+    {
+      "name": "TapeB",
+      "steps": [
+        {
+          "command": "InputTapeB"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/MHC-EX9AV.json"
+    ],
+    "harmony": {
+      "global_device_id": 33562,
+      "device_type": 21,
+      "codeset": "36495e502572a2c1"
+    }
+  }
+}

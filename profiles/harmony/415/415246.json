@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:415246",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "VIOLECTRIC",
+  "model": "HPA V181",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "394395a2be87fa05",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "XLR",
+      "steps": [
+        {
+          "command": "InputXlr"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "DIG",
+      "steps": [
+        {
+          "command": "InputDIG"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/VIOLECTRIC/HPA_V181.json"
+    ],
+    "harmony": {
+      "global_device_id": 415246,
+      "device_type": 19,
+      "codeset": "55ff98bb56fa1646"
+    }
+  }
+}

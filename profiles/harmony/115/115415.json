@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:115415",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "Lifestyle 5 Series III",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "4c47ad455bb48c2b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "AM/FM",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CBL/SAT",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/Lifestyle_5_Series_III.json"
+    ],
+    "harmony": {
+      "global_device_id": 115415,
+      "device_type": 21,
+      "codeset": "c2bb39ff523e2d41"
+    }
+  }
+}

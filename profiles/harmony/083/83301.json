@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:83301",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "HTD-K150E",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "07d7317bc5b79343",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/HTD-K150E.json"
+    ],
+    "harmony": {
+      "global_device_id": 83301,
+      "device_type": 22,
+      "codeset": "6e41f49785669ea8"
+    }
+  }
+}

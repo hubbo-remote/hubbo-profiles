@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:228248",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Xindak",
+  "model": "DAC-8",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a1914c44cb5852e1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Xindak/DAC-8.json"
+    ],
+    "harmony": {
+      "global_device_id": 228248,
+      "device_type": 19,
+      "codeset": "d85b754056839781"
+    }
+  }
+}

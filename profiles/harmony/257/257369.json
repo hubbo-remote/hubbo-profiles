@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "harmony:257369",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vizio",
+  "model": "E500i-B1E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6e02c0631ae1416a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "Exit"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 18000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "COMP",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Vudu",
+      "steps": [
+        {
+          "command": "Vudu"
+        }
+      ]
+    },
+    {
+      "name": "Vizio Internet Apps",
+      "steps": [
+        {
+          "command": "VIA"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vizio/E500i-B1E.json"
+    ],
+    "harmony": {
+      "global_device_id": 257369,
+      "device_type": 1,
+      "codeset": "7e6f5cd5df2908b8"
+    }
+  }
+}

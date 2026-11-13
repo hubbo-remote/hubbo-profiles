@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:88782",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FW-C200/30",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ab08e28da7406cae",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/AV",
+      "steps": [
+        {
+          "command": "InputTvAv"
+        }
+      ]
+    },
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAuxDi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FW-C200_30.json"
+    ],
+    "harmony": {
+      "global_device_id": 88782,
+      "device_type": 21,
+      "codeset": "7fbdfbbe8544160f"
+    }
+  }
+}

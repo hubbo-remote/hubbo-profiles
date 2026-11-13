@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:272219",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Target",
+  "model": "HSB3801",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "388e171970bd01e3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Target/HSB3801.json"
+    ],
+    "harmony": {
+      "global_device_id": 272219,
+      "device_type": 19,
+      "codeset": "1d70f7fd552cd707"
+    }
+  }
+}

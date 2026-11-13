@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "id": "harmony:458493",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "QE55Q9FAM",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "49a2a89c6a09d78f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "SmartHub",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "SmartHub"
+        }
+      ]
+    },
+    {
+      "name": "Ambient",
+      "steps": [
+        {
+          "command": "Ambient"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/QE55Q9FAM.json"
+    ],
+    "harmony": {
+      "global_device_id": 458493,
+      "device_type": 1,
+      "codeset": "1d72183ef6eebc60"
+    }
+  }
+}

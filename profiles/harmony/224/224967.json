@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:224967",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hyundai",
+  "model": "M-BOX TR11",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "3ed2c9ebbc7bde81",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "LAN"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hyundai/M-BOX_TR11.json"
+    ],
+    "harmony": {
+      "global_device_id": 224967,
+      "device_type": 35,
+      "codeset": "941e8f4d66bb1052"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:231751",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Ellion",
+  "model": "x3tp01",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "030bd9be9c4bb150",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "InputLan"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Ellion/x3tp01.json"
+    ],
+    "harmony": {
+      "global_device_id": 231751,
+      "device_type": 35,
+      "codeset": "0e99822464d6a9ae"
+    }
+  }
+}

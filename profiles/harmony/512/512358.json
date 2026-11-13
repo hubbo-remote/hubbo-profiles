@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:512358",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Jimveo",
+  "model": "E30",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "e3a3a424054f92d7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Jimveo/E30.json"
+    ],
+    "harmony": {
+      "global_device_id": 512358,
+      "device_type": 7,
+      "codeset": "62a9fefb8fc88717"
+    }
+  }
+}

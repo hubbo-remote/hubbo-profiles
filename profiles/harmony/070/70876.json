@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:70876",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fairtec",
+  "model": "PDH-4217",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4f91ce395d027745",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVI/VGA",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fairtec/PDH-4217.json"
+    ],
+    "harmony": {
+      "global_device_id": 70876,
+      "device_type": 1,
+      "codeset": "9a9a6ae3d0521775"
+    }
+  }
+}

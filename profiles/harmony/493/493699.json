@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493699",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cambridge Audio",
+  "model": "CXN V2",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "7cad7c533c302229",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Digital 1",
+      "steps": [
+        {
+          "command": "InputD1"
+        }
+      ]
+    },
+    {
+      "name": "Digital 2",
+      "steps": [
+        {
+          "command": "InputD2"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "USB Audio",
+      "steps": [
+        {
+          "command": "InputUsbAudio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cambridge_Audio/CXN_V2.json"
+    ],
+    "harmony": {
+      "global_device_id": 493699,
+      "device_type": 33,
+      "codeset": "29f0e576cd7d7b1c"
+    }
+  }
+}

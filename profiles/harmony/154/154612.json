@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154612",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "AM-2105",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "39e6f2e591698331",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/AM-2105.json"
+    ],
+    "harmony": {
+      "global_device_id": 154612,
+      "device_type": 21,
+      "codeset": "033ba2f13678059d"
+    }
+  }
+}

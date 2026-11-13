@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:200960",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MCM118D/37",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "a141fb549c458658",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MCM118D_37.json"
+    ],
+    "harmony": {
+      "global_device_id": 200960,
+      "device_type": 21,
+      "codeset": "e6ea5e72098a55c9"
+    }
+  }
+}

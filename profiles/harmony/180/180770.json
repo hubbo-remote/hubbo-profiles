@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180770",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "DR-MH200SE",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "2ba35170f45a38d2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/DR-MH200SE.json"
+    ],
+    "harmony": {
+      "global_device_id": 180770,
+      "device_type": 34,
+      "codeset": "65c7212ec4d810b9"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163044",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kentech Labs",
+  "model": "BR-800",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "68e1d14f8eecbd9e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kentech_Labs/BR-800.json"
+    ],
+    "harmony": {
+      "global_device_id": 163044,
+      "device_type": 19,
+      "codeset": "2be1ef6132b9c706"
+    }
+  }
+}

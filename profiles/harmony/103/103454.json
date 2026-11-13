@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "harmony:103454",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RT-21FA35RX",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5bf1ddc6cf46ae24",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 1500
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1500
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RT-21FA35RX.json"
+    ],
+    "harmony": {
+      "global_device_id": 103454,
+      "device_type": 1,
+      "codeset": "d4665b027aa34301"
+    }
+  }
+}

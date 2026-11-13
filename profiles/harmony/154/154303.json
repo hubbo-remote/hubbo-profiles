@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154303",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "MultiSync MT-810G",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "ae6280b63e3e5637",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/MultiSync_MT-810G.json"
+    ],
+    "harmony": {
+      "global_device_id": 154303,
+      "device_type": 7,
+      "codeset": "664b615150a0e4b9"
+    }
+  }
+}

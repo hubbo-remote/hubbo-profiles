@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:245",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Emerson",
+  "model": "HT-200",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0d3589bc079bf642",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "3 Channel",
+      "steps": [
+        {
+          "command": "3Channel"
+        }
+      ]
+    },
+    {
+      "name": "ProLogic",
+      "steps": [
+        {
+          "command": "ProLogic"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Emerson/HT-200.json"
+    ],
+    "harmony": {
+      "global_device_id": 245,
+      "device_type": 5,
+      "codeset": "a7d7a5f70f2bdefb"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:275315",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Episode",
+  "model": "ES-SNDBR-2.1-BLK",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e4530a40c0c9fb91",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Episode/ES-SNDBR-2.1-BLK.json"
+    ],
+    "harmony": {
+      "global_device_id": 275315,
+      "device_type": 19,
+      "codeset": "58c9c90f62792b37"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110579",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "AT-2601W",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b6fd754406128c37",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "SCART",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/AT-2601W.json"
+    ],
+    "harmony": {
+      "global_device_id": 110579,
+      "device_type": 1,
+      "codeset": "4989cd436dcc702f"
+    }
+  }
+}

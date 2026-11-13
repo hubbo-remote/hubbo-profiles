@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:468822",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "CP-X705",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "098d2210350547a0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/CP-X705.json"
+    ],
+    "harmony": {
+      "global_device_id": 468822,
+      "device_type": 7,
+      "codeset": "a17171787e5e294b"
+    }
+  }
+}

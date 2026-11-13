@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265506",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "23L1400UC",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5b29ea63a0d0c67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ANT/CABLE",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        }
+      ]
+    },
+    {
+      "name": "ColorStream HD",
+      "steps": [
+        {
+          "command": "InputColorStreamHD"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/23L1400UC.json"
+    ],
+    "harmony": {
+      "global_device_id": 265506,
+      "device_type": 1,
+      "codeset": "2672bd41d3f9f265"
+    }
+  }
+}

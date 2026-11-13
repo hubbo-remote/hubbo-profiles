@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "harmony:171730",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "SA-WCT100",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9c21dade127518fc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "delay_ms": 5000
+      },
+      {
+        "command": "PowerOn"
+      },
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerOn"
+      },
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 7500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "BD",
+      "steps": [
+        {
+          "command": "InputBd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DMPORT",
+      "steps": [
+        {
+          "command": "InputDmPort"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/SA-WCT100.json"
+    ],
+    "harmony": {
+      "global_device_id": 171730,
+      "device_type": 5,
+      "codeset": "e0fb3835bfe228e5"
+    }
+  }
+}

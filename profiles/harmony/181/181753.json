@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181753",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "DR-MX1S",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "2f07941bdc605fc9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VHS",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/DR-MX1S.json"
+    ],
+    "harmony": {
+      "global_device_id": 181753,
+      "device_type": 47,
+      "codeset": "080f579fcdd9e413"
+    }
+  }
+}

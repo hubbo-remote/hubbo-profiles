@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "harmony:88458",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sunfire",
+  "model": "TGP-5",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "d7243d14cf8d1d05",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "tape",
+      "steps": [
+        {
+          "command": "InputDATTape"
+        }
+      ]
+    },
+    {
+      "name": "phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "8-ch",
+      "steps": [
+        {
+          "command": "Input8CH"
+        }
+      ]
+    },
+    {
+      "name": "dvd",
+      "steps": [
+        {
+          "command": "InputLDDVD"
+        }
+      ]
+    },
+    {
+      "name": "vcr",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "sat",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "vid 1",
+      "steps": [
+        {
+          "command": "InputVid1"
+        }
+      ]
+    },
+    {
+      "name": "vid 2",
+      "steps": [
+        {
+          "command": "InputVid2"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "AM"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sunfire/TGP-5.json"
+    ],
+    "harmony": {
+      "global_device_id": 88458,
+      "device_type": 5,
+      "codeset": "c63d30bfdbd3224a"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:22130",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MSI",
+  "model": "MegaPC",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "176eb5de3536a19a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "CD/MP3",
+      "steps": [
+        {
+          "command": "InputCDMp3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MSI/MegaPC.json"
+    ],
+    "harmony": {
+      "global_device_id": 22130,
+      "device_type": 35,
+      "codeset": "fefc246a3188629f"
+    }
+  }
+}

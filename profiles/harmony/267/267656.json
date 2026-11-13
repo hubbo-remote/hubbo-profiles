@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267656",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dali",
+  "model": "Kubik Free",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4065856e379c663d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dali/Kubik_Free.json"
+    ],
+    "harmony": {
+      "global_device_id": 267656,
+      "device_type": 19,
+      "codeset": "d6236e99041af5e9"
+    }
+  }
+}

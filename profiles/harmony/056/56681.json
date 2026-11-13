@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "harmony:56681",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "28ML8805/02B",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6ed9dcc759b3363e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputVideo"
+      },
+      {
+        "command": "ChannelDown"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "VCR 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/28ML8805_02B.json"
+    ],
+    "harmony": {
+      "global_device_id": 56681,
+      "device_type": 1,
+      "codeset": "b7bf9558218fa9f0"
+    }
+  }
+}

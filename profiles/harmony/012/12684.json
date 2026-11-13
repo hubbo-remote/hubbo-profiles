@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12684",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Planar",
+  "model": "42BK PDP",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "98eab4bb31ff1102",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB/1",
+      "steps": [
+        {
+          "command": "InputRGBA"
+        }
+      ]
+    },
+    {
+      "name": "RGB/2",
+      "steps": [
+        {
+          "command": "InputRGBD"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Planar/42BK_PDP.json"
+    ],
+    "harmony": {
+      "global_device_id": 12684,
+      "device_type": 13,
+      "codeset": "a4d37731e8a69136"
+    }
+  }
+}

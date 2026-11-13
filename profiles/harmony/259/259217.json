@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259217",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Galactron",
+  "model": "MK 2240",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ee3f2c6bb9f2f91c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Tape Monitor",
+      "steps": [
+        {
+          "command": "InputTapeMonitor"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Galactron/MK_2240.json"
+    ],
+    "harmony": {
+      "global_device_id": 259217,
+      "device_type": 19,
+      "codeset": "a487191935ff74b7"
+    }
+  }
+}

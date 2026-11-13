@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:497561",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dynaudio",
+  "model": "Xeo 10",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3321dbb82922dc42",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dynaudio/Xeo_10.json"
+    ],
+    "harmony": {
+      "global_device_id": 497561,
+      "device_type": 19,
+      "codeset": "d3d458027216ae3d"
+    }
+  }
+}

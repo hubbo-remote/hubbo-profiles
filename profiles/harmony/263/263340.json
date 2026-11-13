@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263340",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "UPC",
+  "model": "HDC 74X1",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "eb3178a3ac32acb5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/UPC/HDC_74X1.json"
+    ],
+    "harmony": {
+      "global_device_id": 263340,
+      "device_type": 18,
+      "codeset": "f8e7fbd8c97796b8"
+    }
+  }
+}

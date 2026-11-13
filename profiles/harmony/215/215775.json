@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:215775",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "50PF9967D/10",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2f37cb35c3e1ec08",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 14000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "EXT 2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "EXT 3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "DVI-I",
+      "steps": [
+        {
+          "command": "InputExt3"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Side",
+      "steps": [
+        {
+          "command": "InputSide"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/50PF9967D_10.json"
+    ],
+    "harmony": {
+      "global_device_id": 215775,
+      "device_type": 1,
+      "codeset": "4139b102bb60f2af"
+    }
+  }
+}

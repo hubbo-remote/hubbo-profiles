@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:166847",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "DVD-HR773A",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "64be6f1656e5d308",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/DVD-HR773A.json"
+    ],
+    "harmony": {
+      "global_device_id": 166847,
+      "device_type": 34,
+      "codeset": "d94bec10f4c5284c"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:271522",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AAXA",
+  "model": "P300",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "fa531100335c7624",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AAXA/P300.json"
+    ],
+    "harmony": {
+      "global_device_id": 271522,
+      "device_type": 7,
+      "codeset": "ef93dd39bef9de31"
+    }
+  }
+}

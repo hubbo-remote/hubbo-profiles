@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:103106",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-81468",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "9dbb3ce013d3955f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Cd/Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Band",
+      "steps": [
+        {
+          "command": "InputBand"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-81468.json"
+    ],
+    "harmony": {
+      "global_device_id": 103106,
+      "device_type": 22,
+      "codeset": "1dc21db9c61980d7"
+    }
+  }
+}

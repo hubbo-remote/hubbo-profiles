@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:80656",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cambridge Soundworks",
+  "model": "C1MUSWKE",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "2e5b62b09b5a8f32",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cambridge_Soundworks/C1MUSWKE.json"
+    ],
+    "harmony": {
+      "global_device_id": 80656,
+      "device_type": 21,
+      "codeset": "a5188de6eee57916"
+    }
+  }
+}

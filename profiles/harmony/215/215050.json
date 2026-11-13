@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:215050",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR3480/05B",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "a73e6dd2f2206237",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "Disc"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR3480_05B.json"
+    ],
+    "harmony": {
+      "global_device_id": 215050,
+      "device_type": 34,
+      "codeset": "8ac5f4557654e26b"
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270111",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "STR-DN860",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0430570688e9f289",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 500
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "InputBDDVD"
+        }
+      ]
+    },
+    {
+      "name": "SAT/CATV",
+      "steps": [
+        {
+          "command": "InputSatCatv"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "SA-CD/CD",
+      "steps": [
+        {
+          "command": "InputSaCdCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/STR-DN860.json"
+    ],
+    "harmony": {
+      "global_device_id": 270111,
+      "device_type": 5,
+      "codeset": "5fb6ab20b3ac9728"
+    }
+  }
+}

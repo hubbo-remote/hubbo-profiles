@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480537",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LTC",
+  "model": "5CLEAR",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "5a40db1276589d17",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LTC/5CLEAR.json"
+    ],
+    "harmony": {
+      "global_device_id": 480537,
+      "device_type": 19,
+      "codeset": "cad42b32957db605"
+    }
+  }
+}

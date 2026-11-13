@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:9313",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "VL-2000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "b171ea07a29321ed",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input A",
+      "steps": [
+        {
+          "command": "InputA"
+        }
+      ]
+    },
+    {
+      "name": "Input B",
+      "steps": [
+        {
+          "command": "InputB"
+        }
+      ]
+    },
+    {
+      "name": "Video Input",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Input Y/C",
+      "steps": [
+        {
+          "command": "InputYc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/VL-2000.json"
+    ],
+    "harmony": {
+      "global_device_id": 9313,
+      "device_type": 7,
+      "codeset": "42628051ae9d202f"
+    }
+  }
+}

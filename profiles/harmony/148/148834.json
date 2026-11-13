@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148834",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SuperPower",
+  "model": "HTPC",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "5a5bc7157b650556",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "InputPicture"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SuperPower/HTPC.json"
+    ],
+    "harmony": {
+      "global_device_id": 148834,
+      "device_type": 35,
+      "codeset": "623de6ab12a99770"
+    }
+  }
+}

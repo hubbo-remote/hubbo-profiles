@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:35001",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Gateway",
+  "model": "PLSM46TV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a73ba840ef05d2a9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "ZoomMinus"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Gateway/PLSM46TV.json"
+    ],
+    "harmony": {
+      "global_device_id": 35001,
+      "device_type": 1,
+      "codeset": "84b035fe368ae2fa"
+    }
+  }
+}

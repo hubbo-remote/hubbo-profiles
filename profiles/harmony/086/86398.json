@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:86398",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GIEC",
+  "model": "GK-9400",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "97575b2cf49c832e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Monitor",
+      "steps": [
+        {
+          "command": "InputMonitor"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "Disc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GIEC/GK-9400.json"
+    ],
+    "harmony": {
+      "global_device_id": 86398,
+      "device_type": 34,
+      "codeset": "c24d407bcdfbfc65"
+    }
+  }
+}

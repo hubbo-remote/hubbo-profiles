@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:98744",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Audio Technica",
+  "model": "ATH-DCL3000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "add1a4fe2463797c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Optical-1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical-2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Audio_Technica/ATH-DCL3000.json"
+    ],
+    "harmony": {
+      "global_device_id": 98744,
+      "device_type": 19,
+      "codeset": "575e5aedd44b6ea4"
+    }
+  }
+}

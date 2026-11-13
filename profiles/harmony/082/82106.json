@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:82106",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thule",
+  "model": "AV-120S",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "91aa23be704fe4bf",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "VolumeUp"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    },
+    {
+      "name": "TAPE 1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "TAPE 2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "pure audio",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thule/AV-120S.json"
+    ],
+    "harmony": {
+      "global_device_id": 82106,
+      "device_type": 19,
+      "codeset": "3c21819897eaa383"
+    }
+  }
+}

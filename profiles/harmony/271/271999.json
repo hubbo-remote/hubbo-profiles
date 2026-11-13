@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "id": "harmony:271999",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "UE40J6250",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "44df840b7074abd2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4(only HDMI 4 Active)",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4(with HDMI 1,HDMI 4 Active)",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4(with HDMI 1,HDMI 2,HDMI 4 Active)",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4(with HDMI 1,HDMI 2,HDMI 3,HDMI 4 Active)",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Smart Hub",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "SmartHub"
+        }
+      ]
+    },
+    {
+      "name": "Ambient",
+      "steps": [
+        {
+          "command": "Ambient"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/UE40J6250.json"
+    ],
+    "harmony": {
+      "global_device_id": 271999,
+      "device_type": 1,
+      "codeset": "f48f518c6a4afe36"
+    }
+  }
+}

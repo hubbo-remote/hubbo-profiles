@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150185",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-V463 (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "263c5e17bc0c94af",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerStandby"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "MD/CD-R",
+      "steps": [
+        {
+          "command": "InputMdCdr"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DTV/CBL",
+      "steps": [
+        {
+          "command": "InputDtvCbl"
+        }
+      ]
+    },
+    {
+      "name": "DVR",
+      "steps": [
+        {
+          "command": "InputDvr"
+        }
+      ]
+    },
+    {
+      "name": "V-Aux/Dock",
+      "steps": [
+        {
+          "command": "InputVAuxDock"
+        }
+      ]
+    },
+    {
+      "name": "XM",
+      "steps": [
+        {
+          "command": "InputXm"
+        }
+      ]
+    },
+    {
+      "name": "Sirius",
+      "steps": [
+        {
+          "command": "InputSirius"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-V463_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 150185,
+      "device_type": 5,
+      "codeset": "a61dc55d1bac2c46"
+    }
+  }
+}

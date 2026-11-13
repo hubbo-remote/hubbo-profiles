@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:104013",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "United",
+  "model": "MIC-7230",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "1815a62c1aabc7e5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/United/MIC-7230.json"
+    ],
+    "harmony": {
+      "global_device_id": 104013,
+      "device_type": 21,
+      "codeset": "0773883d9f32ea49"
+    }
+  }
+}

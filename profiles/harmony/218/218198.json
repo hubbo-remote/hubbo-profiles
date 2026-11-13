@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:218198",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Viore",
+  "model": "LC22VH56PB",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "fcc1d3e3077c3c45",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "YPBPR",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Viore/LC22VH56PB.json"
+    ],
+    "harmony": {
+      "global_device_id": 218198,
+      "device_type": 1,
+      "codeset": "62d6a405118a99e4"
+    }
+  }
+}

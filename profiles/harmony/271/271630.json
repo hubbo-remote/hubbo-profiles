@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:271630",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Inphic",
+  "model": "I6",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "19c313c24c1181bd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Inphic/I6.json"
+    ],
+    "harmony": {
+      "global_device_id": 271630,
+      "device_type": 35,
+      "codeset": "6572c228f153f7fd"
+    }
+  }
+}

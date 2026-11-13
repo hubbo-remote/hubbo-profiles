@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101440",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vutec",
+  "model": "LECTRIC",
+  "kind": "accessory",
+  "platform": "ir",
+  "codeset": "26ce1f006a3b864b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "delay_ms": 3000
+      },
+      {
+        "command": "1Close"
+      }
+    ],
+    "off": [
+      {
+        "command": "1Open"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vutec/LECTRIC.json"
+    ],
+    "harmony": {
+      "global_device_id": 101440,
+      "device_type": 44,
+      "codeset": "0dc953220dfa7ed0"
+    }
+  }
+}

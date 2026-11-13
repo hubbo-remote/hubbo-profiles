@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "harmony:145776",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HD-61Z575",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cbd5314ef09772b3",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn",
+        "hold_ms": 1000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff",
+        "hold_ms": 1000
+      }
+    ],
+    "on_delay_ms": 24000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna/Cable",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Digital-In",
+      "steps": [
+        {
+          "command": "InputDigitalIn"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Tune"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HD-61Z575.json"
+    ],
+    "harmony": {
+      "global_device_id": 145776,
+      "device_type": 1,
+      "codeset": "7d3a8a2538439212"
+    }
+  }
+}

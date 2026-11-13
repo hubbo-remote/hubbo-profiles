@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135497",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Shenzhen Soma",
+  "model": "DPF-10A01",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "b1edad1de7960379",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "InputVideos"
+        }
+      ]
+    },
+    {
+      "name": "Files",
+      "steps": [
+        {
+          "command": "InputFiles"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Shenzhen_Soma/DPF-10A01.json"
+    ],
+    "harmony": {
+      "global_device_id": 135497,
+      "device_type": 35,
+      "codeset": "f60dcb499263ea45"
+    }
+  }
+}

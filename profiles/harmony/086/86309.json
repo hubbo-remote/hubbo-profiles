@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:86309",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Luminaura",
+  "model": "DVD-600S",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "896f63a12f16e54b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "AM/FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Luminaura/DVD-600S.json"
+    ],
+    "harmony": {
+      "global_device_id": 86309,
+      "device_type": 22,
+      "codeset": "dcfd6f5e1ce04eb1"
+    }
+  }
+}

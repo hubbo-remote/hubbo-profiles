@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157090",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "ST 70-2015",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1abcd0ff7a8f434b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff",
+        "hold_ms": 500
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "P1",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "3"
+        },
+        {
+          "command": "InputNext",
+          "hold_ms": 2000
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "3"
+        },
+        {
+          "command": "InputNext",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputNext",
+          "hold_ms": 2000
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "3"
+        },
+        {
+          "command": "InputNext",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputNext",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputNext",
+          "hold_ms": 2000
+        }
+      ]
+    },
+    {
+      "name": "AV3S",
+      "steps": [
+        {
+          "command": "3"
+        },
+        {
+          "command": "InputNext",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputNext",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputNext",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputNext",
+          "hold_ms": 2000
+        },
+        {
+          "command": "InputNext",
+          "hold_ms": 2000
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/ST_70-2015.json"
+    ],
+    "harmony": {
+      "global_device_id": 157090,
+      "device_type": 1,
+      "codeset": "6ec13fcaf3f066dd"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154618",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "DR-MH20SE",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "a317d05e6ab6863e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1500
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VHS",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputVcr"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputHdd"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/DR-MH20SE.json"
+    ],
+    "harmony": {
+      "global_device_id": 154618,
+      "device_type": 47,
+      "codeset": "0150ae633f4f2284"
+    }
+  }
+}

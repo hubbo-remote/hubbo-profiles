@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259619",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "X-CM31",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "6f239aeccc70aadd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Audio in/Line",
+      "steps": [
+        {
+          "command": "InputAudioinLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/X-CM31.json"
+    ],
+    "harmony": {
+      "global_device_id": 259619,
+      "device_type": 21,
+      "codeset": "602915130edb97b5"
+    }
+  }
+}

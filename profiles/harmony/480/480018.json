@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480018",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vivitek",
+  "model": "Q3PLUS",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "432257a06b4c5852",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vivitek/Q3PLUS.json"
+    ],
+    "harmony": {
+      "global_device_id": 480018,
+      "device_type": 7,
+      "codeset": "21f17bc973d4594e"
+    }
+  }
+}

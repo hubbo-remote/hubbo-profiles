@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158135",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR630VR/14",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "7d77684d6797267a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR630VR_14.json"
+    ],
+    "harmony": {
+      "global_device_id": 158135,
+      "device_type": 47,
+      "codeset": "2f894b69dde57b0d"
+    }
+  }
+}

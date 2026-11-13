@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102236",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "DC-D932",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "5cc1267fb1cf70fa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/DC-D932.json"
+    ],
+    "harmony": {
+      "global_device_id": 102236,
+      "device_type": 21,
+      "codeset": "9f9df21960f084c0"
+    }
+  }
+}

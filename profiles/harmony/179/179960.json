@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179960",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "CB-20S20BT",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e8238b12a10cd2a4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/CB-20S20BT.json"
+    ],
+    "harmony": {
+      "global_device_id": 179960,
+      "device_type": 1,
+      "codeset": "fb6723299fcc3f26"
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "harmony:131183",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Metz",
+  "model": "Artos-82 MF 82 TH 97",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ad59761a87d12f2b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Euro1",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Euro2",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Euro3",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "TV Vorne",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Metz/Artos-82_MF_82_TH_97.json"
+    ],
+    "harmony": {
+      "global_device_id": 131183,
+      "device_type": 1,
+      "codeset": "1c7a1a281cbb11d5"
+    }
+  }
+}

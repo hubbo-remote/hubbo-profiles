@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "id": "harmony:231788",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vizio",
+  "model": "M420KD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8c84a48a11c6343b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "Exit"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 20000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Vudu",
+      "steps": [
+        {
+          "command": "Vudu"
+        }
+      ]
+    },
+    {
+      "name": "Vizio Internet Apps",
+      "steps": [
+        {
+          "command": "VIA"
+        },
+        {
+          "command": "VIA"
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "steps": [
+        {
+          "command": "InputMedia"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vizio/M420KD.json"
+    ],
+    "harmony": {
+      "global_device_id": 231788,
+      "device_type": 1,
+      "codeset": "198662da84bfb46a"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:178090",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTS3365/55",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "5a0acbbc12d88801",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "Usb",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTS3365_55.json"
+    ],
+    "harmony": {
+      "global_device_id": 178090,
+      "device_type": 22,
+      "codeset": "7057e1b8a5f281b1"
+    }
+  }
+}

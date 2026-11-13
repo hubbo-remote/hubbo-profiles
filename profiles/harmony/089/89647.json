@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:89647",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "VC-8704",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "bcd055e41e604bfb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/VCR",
+      "steps": [
+        {
+          "command": "TvVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VHS",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/VC-8704.json"
+    ],
+    "harmony": {
+      "global_device_id": 89647,
+      "device_type": 25,
+      "codeset": "0c6099b46ed9d013"
+    }
+  }
+}

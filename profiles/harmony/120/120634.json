@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:120634",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "AG-H300MK3",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "89435d32037d03d3",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CDR/MD",
+      "steps": [
+        {
+          "command": "InputCdRMd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/AG-H300MK3.json"
+    ],
+    "harmony": {
+      "global_device_id": 120634,
+      "device_type": 5,
+      "codeset": "00202828611fd60f"
+    }
+  }
+}

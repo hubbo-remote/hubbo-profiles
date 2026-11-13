@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500823",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "Cinema SB120",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "bec099bf6ba163d7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi Arc",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/Cinema_SB120.json"
+    ],
+    "harmony": {
+      "global_device_id": 500823,
+      "device_type": 19,
+      "codeset": "45fbaff11479f54f"
+    }
+  }
+}

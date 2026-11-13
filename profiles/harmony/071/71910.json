@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:71910",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "T+A",
+  "model": "R 2000 AC",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "51243193ef8703d9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/T_A/R_2000_AC.json"
+    ],
+    "harmony": {
+      "global_device_id": 71910,
+      "device_type": 5,
+      "codeset": "f63704393f641ae6"
+    }
+  }
+}

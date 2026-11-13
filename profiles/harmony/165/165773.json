@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165773",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fisher",
+  "model": "CA-854",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6c4d84517019c3fe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape-1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tape-2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fisher/CA-854.json"
+    ],
+    "harmony": {
+      "global_device_id": 165773,
+      "device_type": 19,
+      "codeset": "0fa84a90096662c0"
+    }
+  }
+}

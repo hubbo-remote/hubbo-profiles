@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165158",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HSB-2351",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "d6d634a50606259b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "AudioSource",
+      "steps": [
+        {
+          "command": "InputAudioSource"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "MP3Link",
+      "steps": [
+        {
+          "command": "InputMp3Link"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HSB-2351.json"
+    ],
+    "harmony": {
+      "global_device_id": 165158,
+      "device_type": 22,
+      "codeset": "0f5943a9f24ade3a"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:114602",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Gradiente",
+  "model": "HTS-520",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b4bbd00235bf5a11",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Gradiente/HTS-520.json"
+    ],
+    "harmony": {
+      "global_device_id": 114602,
+      "device_type": 22,
+      "codeset": "deebf3d7c2192a7d"
+    }
+  }
+}

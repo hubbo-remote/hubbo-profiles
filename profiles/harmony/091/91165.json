@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "harmony:91165",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Logitech",
+  "model": "Z5550",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e0edd01f1c762727",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Analog1",
+      "steps": [
+        {
+          "command": "InputDigitalCoax"
+        },
+        {
+          "command": "InputAnalogDirect"
+        }
+      ]
+    },
+    {
+      "name": "Analog2",
+      "steps": [
+        {
+          "command": "InputDigitalCoax"
+        },
+        {
+          "command": "InputAnalogDirect"
+        },
+        {
+          "command": "InputAnalogDirect"
+        }
+      ]
+    },
+    {
+      "name": "Analog3",
+      "steps": [
+        {
+          "command": "InputDigitalCoax"
+        },
+        {
+          "command": "InputAnalogDirect"
+        },
+        {
+          "command": "InputAnalogDirect"
+        },
+        {
+          "command": "InputAnalogDirect"
+        }
+      ]
+    },
+    {
+      "name": "Digital Optical",
+      "steps": [
+        {
+          "command": "InputDigitalOptical"
+        }
+      ]
+    },
+    {
+      "name": "Digital Coax",
+      "steps": [
+        {
+          "command": "InputDigitalCoax"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Logitech/Z5550.json"
+    ],
+    "harmony": {
+      "global_device_id": 91165,
+      "device_type": 19,
+      "codeset": "5ac50ef452d773ba"
+    }
+  }
+}

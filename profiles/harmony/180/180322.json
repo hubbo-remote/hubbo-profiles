@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180322",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "O2Media",
+  "model": "HMR-600W",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "0230bf268379a9b9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "InputLan"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/O2Media/HMR-600W.json"
+    ],
+    "harmony": {
+      "global_device_id": 180322,
+      "device_type": 35,
+      "codeset": "bcb12672b2d3acaa"
+    }
+  }
+}

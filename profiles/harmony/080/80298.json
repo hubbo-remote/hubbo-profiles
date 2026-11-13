@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:80298",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EMP-750",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "6e4d9201ef6095a9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input A",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input B",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EMP-750.json"
+    ],
+    "harmony": {
+      "global_device_id": 80298,
+      "device_type": 7,
+      "codeset": "f662bcd6c94f5edc"
+    }
+  }
+}

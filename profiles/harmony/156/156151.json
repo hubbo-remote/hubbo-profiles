@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:156151",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ButtKicker",
+  "model": "BKA-300",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "8f700269efea0d69",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ButtKicker/BKA-300.json"
+    ],
+    "harmony": {
+      "global_device_id": 156151,
+      "device_type": 19,
+      "codeset": "32dafe0723749805"
+    }
+  }
+}

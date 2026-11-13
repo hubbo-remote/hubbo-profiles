@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203417",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "PLC-WXU700",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "c1e0da61658b2c48",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/PLC-WXU700.json"
+    ],
+    "harmony": {
+      "global_device_id": 203417,
+      "device_type": 7,
+      "codeset": "01669d4058d7c6f9"
+    }
+  }
+}

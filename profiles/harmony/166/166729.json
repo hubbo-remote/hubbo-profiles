@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:166729",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-DVS1",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "bd20572dc3cc357e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DV",
+      "steps": [
+        {
+          "command": "InputDv"
+        }
+      ]
+    },
+    {
+      "name": "VHS",
+      "steps": [
+        {
+          "command": "InputVhs"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-DVS1.json"
+    ],
+    "harmony": {
+      "global_device_id": 166729,
+      "device_type": 2,
+      "codeset": "fcfefb407e3509a7"
+    }
+  }
+}

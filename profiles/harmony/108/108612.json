@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:108612",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LH-T252",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "88f5accaef863fd3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "BAND",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LH-T252.json"
+    ],
+    "harmony": {
+      "global_device_id": 108612,
+      "device_type": 22,
+      "codeset": "85f320a8056df567"
+    }
+  }
+}

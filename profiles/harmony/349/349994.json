@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:349994",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Seiki",
+  "model": "SB060D",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6618c7da2c4716dc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "LineIn",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "OPT",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "COAX",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Seiki/SB060D.json"
+    ],
+    "harmony": {
+      "global_device_id": 349994,
+      "device_type": 19,
+      "codeset": "08134cd7ef99b64c"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:246106",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DSPeaker",
+  "model": "Anti-Mode 2.0 Dual Core",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3ac2f81ba94ed07c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "S/PDIF",
+      "steps": [
+        {
+          "command": "InputSpdif"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DSPeaker/Anti-Mode_2.0_Dual_Core.json"
+    ],
+    "harmony": {
+      "global_device_id": 246106,
+      "device_type": 19,
+      "codeset": "648f0b02536670c0"
+    }
+  }
+}

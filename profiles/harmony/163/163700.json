@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163700",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "XL-UH2000H",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "232bb0b9dd57676f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputVideoAuxUsb"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "TunerBand"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/XL-UH2000H.json"
+    ],
+    "harmony": {
+      "global_device_id": 163700,
+      "device_type": 22,
+      "codeset": "2575f5553217c43e"
+    }
+  }
+}

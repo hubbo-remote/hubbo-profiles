@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158129",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR-3430V",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "8781029c01f3d039",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR-3430V.json"
+    ],
+    "harmony": {
+      "global_device_id": 158129,
+      "device_type": 47,
+      "codeset": "8e0d9047cba29471"
+    }
+  }
+}

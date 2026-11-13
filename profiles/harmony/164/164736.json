@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:164736",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-XW400EFK",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "c893ab9ed63748c8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-XW400EFK.json"
+    ],
+    "harmony": {
+      "global_device_id": 164736,
+      "device_type": 34,
+      "codeset": "2132c62b56a50c6e"
+    }
+  }
+}

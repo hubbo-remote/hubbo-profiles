@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:303538",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optimuss",
+  "model": "OS 1+",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "d0deaeb490ffab42",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optimuss/OS_1.json"
+    ],
+    "harmony": {
+      "global_device_id": 303538,
+      "device_type": 18,
+      "codeset": "0e62ba321ebc59cf"
+    }
+  }
+}

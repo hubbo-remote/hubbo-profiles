@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:2194",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Norcent",
+  "model": "PT420",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ac6500ed4e5b75da",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Norcent/PT420.json"
+    ],
+    "harmony": {
+      "global_device_id": 2194,
+      "device_type": 1,
+      "codeset": "c494456071167ece"
+    }
+  }
+}

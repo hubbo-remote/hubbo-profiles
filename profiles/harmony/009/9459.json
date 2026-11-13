@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:9459",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "CRX-M5",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "8da04dbca837c988",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/CRX-M5.json"
+    ],
+    "harmony": {
+      "global_device_id": 9459,
+      "device_type": 21,
+      "codeset": "99318bf42ec21789"
+    }
+  }
+}

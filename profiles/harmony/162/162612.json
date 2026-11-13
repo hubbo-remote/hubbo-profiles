@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162612",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-R42PV70A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "002abe5800896168",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 9500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "AV2S",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputPc"
+        },
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-R42PV70A.json"
+    ],
+    "harmony": {
+      "global_device_id": 162612,
+      "device_type": 1,
+      "codeset": "97d1c9d11eaf2852"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500190",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "TAB5105/12",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "89d4abf56821179a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "HDMI ARC",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/TAB5105_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 500190,
+      "device_type": 19,
+      "codeset": "c74079425494f07c"
+    }
+  }
+}

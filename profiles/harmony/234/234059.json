@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "harmony:234059",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Oppo",
+  "model": "BDP-103",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "69e045aae17a4977",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 20000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluray Player",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI / MHL In-front",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI In-back",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "ARC..HDMI out 1",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "ARC..HDMI out 2",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Oppo/BDP-103.json"
+    ],
+    "harmony": {
+      "global_device_id": 234059,
+      "device_type": 22,
+      "codeset": "f9aa68237c19c36f"
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "harmony:107957",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DV-645H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "25ecf80cc291c118",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 0,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "L1",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "L2",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "L3",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DV-645H.json"
+    ],
+    "harmony": {
+      "global_device_id": 107957,
+      "device_type": 34,
+      "codeset": "391fe45ccb6410f2"
+    }
+  }
+}

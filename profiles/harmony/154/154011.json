@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154011",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aluratek",
+  "model": "ADMPF-110",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "43b52c8e22c8ac8f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "PhotoMode",
+      "steps": [
+        {
+          "command": "PhotoMode"
+        }
+      ]
+    },
+    {
+      "name": "MusicMode",
+      "steps": [
+        {
+          "command": "MusicMode"
+        }
+      ]
+    },
+    {
+      "name": "VideoMode",
+      "steps": [
+        {
+          "command": "VideoMode"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aluratek/ADMPF-110.json"
+    ],
+    "harmony": {
+      "global_device_id": 154011,
+      "device_type": 35,
+      "codeset": "8382342b0ebb0834"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:447585",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TNP",
+  "model": "TOS_3X_SW",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "838fb15a4fcc9827",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TNP/TOS_3X_SW.json"
+    ],
+    "harmony": {
+      "global_device_id": 447585,
+      "device_type": 30,
+      "codeset": "54e32b58820aab03"
+    }
+  }
+}

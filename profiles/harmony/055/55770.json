@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:55770",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "LT157",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "aeb22e941383f689",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB 1",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "RGB 2",
+      "steps": [
+        {
+          "command": "InputRgb2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/LT157.json"
+    ],
+    "harmony": {
+      "global_device_id": 55770,
+      "device_type": 7,
+      "codeset": "e075e405f090c182"
+    }
+  }
+}

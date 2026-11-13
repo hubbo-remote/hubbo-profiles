@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203623",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pace",
+  "model": "DCR-7111",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "1eaf8bcea485fb8e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "UPC",
+      "steps": [
+        {
+          "command": "UPC"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pace/DCR-7111.json"
+    ],
+    "harmony": {
+      "global_device_id": 203623,
+      "device_type": 18,
+      "codeset": "fd784d114aff3db6"
+    }
+  }
+}

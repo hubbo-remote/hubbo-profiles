@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:67073",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Proson",
+  "model": "RV-1600",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0b132a6580805fdb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2",
+      "steps": [
+        {
+          "command": "InputTape202"
+        }
+      ]
+    },
+    {
+      "name": "dvd 4",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Proson/RV-1600.json"
+    ],
+    "harmony": {
+      "global_device_id": 67073,
+      "device_type": 5,
+      "codeset": "827c41a8a313f307"
+    }
+  }
+}

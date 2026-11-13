@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "harmony:151575",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Venturer",
+  "model": "PVS-3119",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "bd28887c23ca437c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AVIN",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "YUVIN",
+      "steps": [
+        {
+          "command": "InputYuv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputYuv"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Venturer/PVS-3119.json"
+    ],
+    "harmony": {
+      "global_device_id": 151575,
+      "device_type": 37,
+      "codeset": "c6d35fb038884567"
+    }
+  }
+}

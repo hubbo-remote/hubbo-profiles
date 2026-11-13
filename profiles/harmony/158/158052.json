@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158052",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RC-6500",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "cdd0436654478d24",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RC-6500.json"
+    ],
+    "harmony": {
+      "global_device_id": 158052,
+      "device_type": 47,
+      "codeset": "859e60976ae85f40"
+    }
+  }
+}

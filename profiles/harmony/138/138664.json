@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138664",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "TU-65GAX",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "a2f072a71d01ad12",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna/Cable",
+      "steps": [
+        {
+          "command": "DVDTV"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "DVDTV"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/TU-65GAX.json"
+    ],
+    "harmony": {
+      "global_device_id": 138664,
+      "device_type": 15,
+      "codeset": "78bbfdd49bfd768c"
+    }
+  }
+}

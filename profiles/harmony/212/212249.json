@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212249",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TVIX-M3600N",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "3aa36fe89a1839f1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TVIX-M3600N.json"
+    ],
+    "harmony": {
+      "global_device_id": 212249,
+      "device_type": 35,
+      "codeset": "f0f81caf9ebfc81c"
+    }
+  }
+}

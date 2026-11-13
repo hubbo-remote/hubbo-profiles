@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:35883",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Norwood Micro",
+  "model": "130655",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1326967b1dce50fb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "SVideo",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Norwood_Micro/130655.json"
+    ],
+    "harmony": {
+      "global_device_id": 35883,
+      "device_type": 1,
+      "codeset": "ae0c6b458d43fc8b"
+    }
+  }
+}

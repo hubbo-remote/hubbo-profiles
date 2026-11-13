@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:171782",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "EX-530",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "daf7eb7ca6ac9f34",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 35000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "VGA"
+        }
+      ]
+    },
+    {
+      "name": "Composite Video",
+      "steps": [
+        {
+          "command": "Video"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "SVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/EX-530.json"
+    ],
+    "harmony": {
+      "global_device_id": 171782,
+      "device_type": 7,
+      "codeset": "eca02cd2d0f2c5a0"
+    }
+  }
+}

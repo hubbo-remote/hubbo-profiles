@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:22336",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "AD600",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "96fc4a19cf4d0bf6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "PlayForward"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/AD600.json"
+    ],
+    "harmony": {
+      "global_device_id": 22336,
+      "device_type": 21,
+      "codeset": "0a36d11d29339c91"
+    }
+  }
+}

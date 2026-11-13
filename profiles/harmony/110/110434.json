@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110434",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "GT-6000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "d5ea1da83521ff81",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn",
+        "hold_ms": 6000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff",
+        "hold_ms": 6000
+      }
+    ],
+    "on_delay_ms": 20000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB 1",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "RGB 2",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "S-video 1",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "S-video 2",
+      "steps": [
+        {
+          "command": "4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/GT-6000.json"
+    ],
+    "harmony": {
+      "global_device_id": 110434,
+      "device_type": 7,
+      "codeset": "2cafbd26c15636ed"
+    }
+  }
+}

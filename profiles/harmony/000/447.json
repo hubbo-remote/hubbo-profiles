@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:447",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zinwell",
+  "model": "BLS-2000",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "f092c7790ea58822",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "YCbCr",
+      "steps": [
+        {
+          "command": "InputYCbCr"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zinwell/BLS-2000.json"
+    ],
+    "harmony": {
+      "global_device_id": 447,
+      "device_type": 30,
+      "codeset": "5d6bf3d4e1c828be"
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "id": "harmony:93018",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Enox",
+  "model": "LTV-6832HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "69127c1e5a99c90b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "COMPONENT",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "6"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "7"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Enox/LTV-6832HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 93018,
+      "device_type": 1,
+      "codeset": "f06938e4aa6cea64"
+    }
+  }
+}

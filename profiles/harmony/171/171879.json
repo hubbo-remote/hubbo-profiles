@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:171879",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "AV-21FT",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "bd47d754368a5939",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/AV-21FT.json"
+    ],
+    "harmony": {
+      "global_device_id": 171879,
+      "device_type": 1,
+      "codeset": "8fce2a50b9967738"
+    }
+  }
+}

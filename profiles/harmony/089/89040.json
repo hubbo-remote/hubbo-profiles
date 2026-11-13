@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:89040",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "AVU-279",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0690b5d2cf5c8ba4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/AVU-279.json"
+    ],
+    "harmony": {
+      "global_device_id": 89040,
+      "device_type": 5,
+      "codeset": "40f9866b0ffcef4a"
+    }
+  }
+}

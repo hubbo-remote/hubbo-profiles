@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111489",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "50PP9202/17F",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f29a59a94ccfae2c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputAv1"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "CVI",
+      "steps": [
+        {
+          "command": "InputAv1"
+        },
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputAv4"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    },
+    {
+      "name": "AV5",
+      "steps": [
+        {
+          "command": "InputFront"
+        },
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/50PP9202_17F.json"
+    ],
+    "harmony": {
+      "global_device_id": 111489,
+      "device_type": 1,
+      "codeset": "f85bada5f8fd15c8"
+    }
+  }
+}

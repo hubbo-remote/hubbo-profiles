@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157074",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Harman Kardon",
+  "model": "AVR-360",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "8109e3df7821f6d8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Cable/SAT",
+      "steps": [
+        {
+          "command": "InputCableSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TheBridge",
+      "steps": [
+        {
+          "command": "InputTheBridge"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "MediaServer",
+      "steps": [
+        {
+          "command": "InputMediaServer"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Harman_Kardon/AVR-360.json"
+    ],
+    "harmony": {
+      "global_device_id": 157074,
+      "device_type": 5,
+      "codeset": "040fe4c1bb242cbf"
+    }
+  }
+}

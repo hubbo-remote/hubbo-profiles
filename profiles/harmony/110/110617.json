@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110617",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cyrus",
+  "model": "8V",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "bbfdee566179f65e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "AU1",
+      "steps": [
+        {
+          "command": "InputAU1"
+        }
+      ]
+    },
+    {
+      "name": "AU2",
+      "steps": [
+        {
+          "command": "InputAU2"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cyrus/8V.json"
+    ],
+    "harmony": {
+      "global_device_id": 110617,
+      "device_type": 19,
+      "codeset": "f55de6a5c3dfa846"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121522",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Infocus",
+  "model": "ScreenPlay 2705",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f94b954f24afe4a2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Infocus/ScreenPlay_2705.json"
+    ],
+    "harmony": {
+      "global_device_id": 121522,
+      "device_type": 7,
+      "codeset": "37c9e9866e63feb3"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:492420",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "HT5550",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "25786d6b1315ba26",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/HT5550.json"
+    ],
+    "harmony": {
+      "global_device_id": 492420,
+      "device_type": 7,
+      "codeset": "f32a09caca16b64b"
+    }
+  }
+}

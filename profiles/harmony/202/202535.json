@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202535",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "UPC",
+  "model": "MEDIABOX PACE",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "0261ec08c57360e1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "UPC",
+      "steps": [
+        {
+          "command": "UPC"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/UPC/MEDIABOX_PACE.json"
+    ],
+    "harmony": {
+      "global_device_id": 202535,
+      "device_type": 12,
+      "codeset": "6b3741fccff37677"
+    }
+  }
+}

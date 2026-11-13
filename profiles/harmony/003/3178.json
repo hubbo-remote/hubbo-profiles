@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:3178",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aiwa",
+  "model": "NSX-5200",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "50b1f94bc428cf2c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Input0"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aiwa/NSX-5200.json"
+    ],
+    "harmony": {
+      "global_device_id": 3178,
+      "device_type": 21,
+      "codeset": "38fcd07d1689bd37"
+    }
+  }
+}

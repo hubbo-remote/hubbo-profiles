@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:210169",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Emtec",
+  "model": "MOVIE CUBE K220",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "8808fa625c233f19",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Emtec/MOVIE_CUBE_K220.json"
+    ],
+    "harmony": {
+      "global_device_id": 210169,
+      "device_type": 35,
+      "codeset": "54b922972c750dbe"
+    }
+  }
+}

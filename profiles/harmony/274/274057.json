@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:274057",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bush",
+  "model": "BSB02BT20",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "baa60b8700c71058",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bush/BSB02BT20.json"
+    ],
+    "harmony": {
+      "global_device_id": 274057,
+      "device_type": 19,
+      "codeset": "19ee6f240d5e03c7"
+    }
+  }
+}

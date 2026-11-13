@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:38849",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "DV-PF35U",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "7499a0786388acdc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "TvVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/DV-PF35U.json"
+    ],
+    "harmony": {
+      "global_device_id": 38849,
+      "device_type": 25,
+      "codeset": "2a3bbb0af450a0aa"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168067",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "DVR670KU",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "a65cc2d64c6e6cad",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "VCR"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/DVR670KU.json"
+    ],
+    "harmony": {
+      "global_device_id": 168067,
+      "device_type": 47,
+      "codeset": "5b0d8af378ac65de"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40732",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Jamo",
+  "model": "DVD-TA 4000",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "e3e43d6d31ff62d4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Jamo/DVD-TA_4000.json"
+    ],
+    "harmony": {
+      "global_device_id": 40732,
+      "device_type": 22,
+      "codeset": "9ad33bba1bc00611"
+    }
+  }
+}

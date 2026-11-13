@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:236571",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "iLive",
+  "model": "IT123B",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "65cfe89de43a0fbe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/iLive/IT123B.json"
+    ],
+    "harmony": {
+      "global_device_id": 236571,
+      "device_type": 5,
+      "codeset": "d5ddcda1e97c8ff7"
+    }
+  }
+}

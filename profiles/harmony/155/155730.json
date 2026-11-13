@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155730",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "H285A",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "2e7963c2f925fec8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "USB Display",
+      "steps": [
+        {
+          "command": "InputUSBDisplay"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Slideshow",
+      "steps": [
+        {
+          "command": "SlideShow"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/H285A.json"
+    ],
+    "harmony": {
+      "global_device_id": 155730,
+      "device_type": 7,
+      "codeset": "a57e825ac0639f7b"
+    }
+  }
+}

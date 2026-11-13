@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118838",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-41642",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "79af836ce25d38ad",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTv"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Text",
+      "steps": [
+        {
+          "command": "Teletext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-41642.json"
+    ],
+    "harmony": {
+      "global_device_id": 118838,
+      "device_type": 1,
+      "codeset": "843ce1e9b31004d0"
+    }
+  }
+}

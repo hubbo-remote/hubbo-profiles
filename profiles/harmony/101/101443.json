@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101443",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Palladine",
+  "model": "EPD-4200",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d9165168ac0fc066",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "Scart 1",
+      "steps": [
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "Scart 2",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Palladine/EPD-4200.json"
+    ],
+    "harmony": {
+      "global_device_id": 101443,
+      "device_type": 1,
+      "codeset": "bce0454e4f8d4520"
+    }
+  }
+}

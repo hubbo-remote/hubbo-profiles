@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226926",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Popcorn Hour",
+  "model": "C-300",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "bba313d5c8335273",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Popcorn_Hour/C-300.json"
+    ],
+    "harmony": {
+      "global_device_id": 226926,
+      "device_type": 35,
+      "codeset": "f75326a5a636e327"
+    }
+  }
+}

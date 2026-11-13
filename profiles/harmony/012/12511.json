@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12511",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "20CX20B501",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e860b44f5c1349e8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/20CX20B501.json"
+    ],
+    "harmony": {
+      "global_device_id": 12511,
+      "device_type": 1,
+      "codeset": "89bc803338ba5961"
+    }
+  }
+}

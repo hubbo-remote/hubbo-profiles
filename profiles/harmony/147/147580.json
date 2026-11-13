@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147580",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "PLV-Z2",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "d652176212ce5f0e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Auto",
+      "steps": [
+        {
+          "command": "InputAuto"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/PLV-Z2.json"
+    ],
+    "harmony": {
+      "global_device_id": 147580,
+      "device_type": 7,
+      "codeset": "2d7c37ad6ecb637f"
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "harmony:35799",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Gateway",
+  "model": "GTW L30M103",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a73ba840ef05d2a9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "DSUB",
+      "steps": [
+        {
+          "delay_ms": 1200
+        },
+        {
+          "command": "InputAv2"
+        },
+        {
+          "command": "InputAB"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO1",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO2",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "ZoomMinus"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Gateway/GTW_L30M103.json"
+    ],
+    "harmony": {
+      "global_device_id": 35799,
+      "device_type": 1,
+      "codeset": "84b035fe368ae2fa"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:219078",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "DAV-DZ340",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "597181365c4aa6d5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/DAV-DZ340.json"
+    ],
+    "harmony": {
+      "global_device_id": 219078,
+      "device_type": 22,
+      "codeset": "b6a2a42d5a8ba01e"
+    }
+  }
+}

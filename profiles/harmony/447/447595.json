@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:447595",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ONN",
+  "model": "ONA18SB001",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b172ad7717075086",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ONN/ONA18SB001.json"
+    ],
+    "harmony": {
+      "global_device_id": 447595,
+      "device_type": 19,
+      "codeset": "30946511806a8287"
+    }
+  }
+}

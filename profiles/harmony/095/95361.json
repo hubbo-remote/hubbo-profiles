@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95361",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Elite Video",
+  "model": "EV100",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "42c75012c9e6ac9a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Input3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Elite_Video/EV100.json"
+    ],
+    "harmony": {
+      "global_device_id": 95361,
+      "device_type": 7,
+      "codeset": "15945804f4c66687"
+    }
+  }
+}

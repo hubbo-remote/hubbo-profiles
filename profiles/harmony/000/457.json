@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "harmony:457",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-VP58U",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "8d7cb1eda213765f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv/Vcr",
+      "steps": [
+        {
+          "command": "TvVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "EnterOSD"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-VP58U.json"
+    ],
+    "harmony": {
+      "global_device_id": 457,
+      "device_type": 2,
+      "codeset": "a0703d85105d4d6b"
+    }
+  }
+}

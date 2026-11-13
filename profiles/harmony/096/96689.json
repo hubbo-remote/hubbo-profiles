@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:96689",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Klegg",
+  "model": "AVR-7100",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2b22b84caab69608",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "5.1 CH",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR 1",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "VCR 2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Klegg/AVR-7100.json"
+    ],
+    "harmony": {
+      "global_device_id": 96689,
+      "device_type": 19,
+      "codeset": "c2411bb4ea1ee44c"
+    }
+  }
+}

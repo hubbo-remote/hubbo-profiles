@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:127935",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dantax",
+  "model": "PRO-2040",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0af5085baaf9d047",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dantax/PRO-2040.json"
+    ],
+    "harmony": {
+      "global_device_id": 127935,
+      "device_type": 5,
+      "codeset": "04a766fdf1326ff1"
+    }
+  }
+}

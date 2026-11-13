@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149884",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR3590H/75",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "7757b2dfdbce34f4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "LiveTv",
+      "steps": [
+        {
+          "command": "Live"
+        }
+      ]
+    },
+    {
+      "name": "Cam",
+      "steps": [
+        {
+          "command": "CAM"
+        }
+      ]
+    },
+    {
+      "name": "Usb",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR3590H_75.json"
+    ],
+    "harmony": {
+      "global_device_id": 149884,
+      "device_type": 34,
+      "codeset": "4a747b4e649ea5bc"
+    }
+  }
+}

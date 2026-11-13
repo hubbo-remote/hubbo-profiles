@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205076",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sansui",
+  "model": "RZ-2500",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "3363413c93ae4197",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape-1",
+      "steps": [
+        {
+          "command": "InputDeckA"
+        }
+      ]
+    },
+    {
+      "name": "Tape-2/Monitor",
+      "steps": [
+        {
+          "command": "InputDeckB"
+        }
+      ]
+    },
+    {
+      "name": "VCR/VDP",
+      "steps": [
+        {
+          "command": "InputVcrA"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sansui/RZ-2500.json"
+    ],
+    "harmony": {
+      "global_device_id": 205076,
+      "device_type": 5,
+      "codeset": "ff293ab3974d2629"
+    }
+  }
+}

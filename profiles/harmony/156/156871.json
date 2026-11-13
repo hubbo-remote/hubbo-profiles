@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:156871",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MCM-138D/05",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "675dc5aed97f0c0e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MCM-138D_05.json"
+    ],
+    "harmony": {
+      "global_device_id": 156871,
+      "device_type": 21,
+      "codeset": "7b32dfb79207d0c2"
+    }
+  }
+}

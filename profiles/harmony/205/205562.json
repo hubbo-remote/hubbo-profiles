@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205562",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "19LD350",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dd4d08e339a526ec",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "RGB-PC",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/19LD350.json"
+    ],
+    "harmony": {
+      "global_device_id": 205562,
+      "device_type": 1,
+      "codeset": "e12673f1f7f32777"
+    }
+  }
+}

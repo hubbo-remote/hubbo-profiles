@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273497",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eiki",
+  "model": "LC-XIP2000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0dd58ea8f58eb16c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eiki/LC-XIP2000.json"
+    ],
+    "harmony": {
+      "global_device_id": 273497,
+      "device_type": 7,
+      "codeset": "7ac495730b593e11"
+    }
+  }
+}

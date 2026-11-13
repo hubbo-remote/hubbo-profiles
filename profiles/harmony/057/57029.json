@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57029",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TX25X1C",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cb385827a58d5677",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Yellow"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Blue"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TX25X1C.json"
+    ],
+    "harmony": {
+      "global_device_id": 57029,
+      "device_type": 1,
+      "codeset": "b9c65377979efc87"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168048",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Harman Kardon",
+  "model": "AB2",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "971db0c8230b3779",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AVR",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "MP3",
+      "steps": [
+        {
+          "command": "InputMp3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Harman_Kardon/AB2.json"
+    ],
+    "harmony": {
+      "global_device_id": 168048,
+      "device_type": 5,
+      "codeset": "87eaccb4f6829a4e"
+    }
+  }
+}

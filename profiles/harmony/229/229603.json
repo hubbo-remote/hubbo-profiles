@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:229603",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "WS-611",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b2b441ae3d530b8c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Cable A",
+      "steps": [
+        {
+          "command": "InputAntA"
+        }
+      ]
+    },
+    {
+      "name": "Cable B",
+      "steps": [
+        {
+          "command": "InputAntB"
+        }
+      ]
+    },
+    {
+      "name": "PVR",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "DirectTV",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Ant-DTV",
+      "steps": [
+        {
+          "command": "Input5"
+        }
+      ]
+    },
+    {
+      "name": "InputDTV",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/WS-611.json"
+    ],
+    "harmony": {
+      "global_device_id": 229603,
+      "device_type": 1,
+      "codeset": "01c8d15763045db3"
+    }
+  }
+}

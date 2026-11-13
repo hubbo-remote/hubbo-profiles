@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:166907",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "ZC-352MW8A",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "bc8e32a4de53e997",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Dtv/tv",
+      "steps": [
+        {
+          "command": "DtvTv"
+        }
+      ]
+    },
+    {
+      "name": "Source",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/ZC-352MW8A.json"
+    ],
+    "harmony": {
+      "global_device_id": 166907,
+      "device_type": 34,
+      "codeset": "cc37c618337b7f85"
+    }
+  }
+}

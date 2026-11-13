@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:88460",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hewlett Packard",
+  "model": "M-7265C",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "5b8fa5517b0cc09f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Online Media",
+      "steps": [
+        {
+          "command": "InputOnlineMedia"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hewlett_Packard/M-7265C.json"
+    ],
+    "harmony": {
+      "global_device_id": 88460,
+      "device_type": 35,
+      "codeset": "5f16f403c524e731"
+    }
+  }
+}

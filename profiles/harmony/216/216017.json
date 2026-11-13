@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216017",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Salora",
+  "model": "27M91",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7718af63f8ecdd5d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Salora/27M91.json"
+    ],
+    "harmony": {
+      "global_device_id": 216017,
+      "device_type": 1,
+      "codeset": "7973bb74fa53072f"
+    }
+  }
+}

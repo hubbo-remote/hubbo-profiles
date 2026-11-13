@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137271",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Proton",
+  "model": "AVS-2681",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6ae31e9b09e917c7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "6CH Direct",
+      "steps": [
+        {
+          "command": "Input6ChDirect"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Proton/AVS-2681.json"
+    ],
+    "harmony": {
+      "global_device_id": 137271,
+      "device_type": 5,
+      "codeset": "e21e8cfc4a23703e"
+    }
+  }
+}

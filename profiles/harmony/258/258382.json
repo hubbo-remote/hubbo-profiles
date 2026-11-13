@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258382",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "Powerlite Pro Cinema 4030",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "58451a451f01e0a2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "Standby"
+      },
+      {
+        "command": "Standby"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/Powerlite_Pro_Cinema_4030.json"
+    ],
+    "harmony": {
+      "global_device_id": 258382,
+      "device_type": 7,
+      "codeset": "8735b81b0723861c"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:218016",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "UPC",
+  "model": "8685DVB",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "bd9dafc17be92eb0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "UPC",
+      "steps": [
+        {
+          "command": "UPC"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/UPC/8685DVB.json"
+    ],
+    "harmony": {
+      "global_device_id": 218016,
+      "device_type": 18,
+      "codeset": "c690aeb9d37a7182"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172262",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTS3265",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "a2b1d8ebb8561fca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "Disc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTS3265.json"
+    ],
+    "harmony": {
+      "global_device_id": 172262,
+      "device_type": 22,
+      "codeset": "238762a35fae13ed"
+    }
+  }
+}

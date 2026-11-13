@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:26928",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "DVS7905S",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "edb3060b5766a4a7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/DVS7905S.json"
+    ],
+    "harmony": {
+      "global_device_id": 26928,
+      "device_type": 25,
+      "codeset": "33cc20c736438877"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153686",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "UXG950V",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "8c5b28396784eacd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AudioIn",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/UXG950V.json"
+    ],
+    "harmony": {
+      "global_device_id": 153686,
+      "device_type": 22,
+      "codeset": "f6ca048be75ff5ea"
+    }
+  }
+}

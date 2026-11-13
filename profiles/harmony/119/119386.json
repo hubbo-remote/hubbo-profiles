@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:119386",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cineversum",
+  "model": "BlackWing Two",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "57d0d09831f0b995",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI/RGB",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cineversum/BlackWing_Two.json"
+    ],
+    "harmony": {
+      "global_device_id": 119386,
+      "device_type": 7,
+      "codeset": "d5f04eb28d1e70bf"
+    }
+  }
+}

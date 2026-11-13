@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:178728",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RD-85DTSB",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "a742458f08131777",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RD-85DTSB.json"
+    ],
+    "harmony": {
+      "global_device_id": 178728,
+      "device_type": 34,
+      "codeset": "50f6a9815aabca78"
+    }
+  }
+}

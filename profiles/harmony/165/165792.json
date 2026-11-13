@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165792",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "T+A",
+  "model": "MP-1250R",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "7b37a23db888c5a7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SCL",
+      "steps": [
+        {
+          "command": "InputScl"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Digital 1",
+      "steps": [
+        {
+          "command": "InputD1"
+        }
+      ]
+    },
+    {
+      "name": "Digital 2",
+      "steps": [
+        {
+          "command": "InputD2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/T_A/MP-1250R.json"
+    ],
+    "harmony": {
+      "global_device_id": 165792,
+      "device_type": 33,
+      "codeset": "9d05563666750753"
+    }
+  }
+}

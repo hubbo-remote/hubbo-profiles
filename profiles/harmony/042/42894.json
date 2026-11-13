@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:42894",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "PowerSpec",
+  "model": "VC30CMBT",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "244db366535d1f4d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "pc",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "av",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "sv",
+      "steps": [
+        {
+          "command": "InputSv"
+        }
+      ]
+    },
+    {
+      "name": "cv",
+      "steps": [
+        {
+          "command": "InputYuv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/PowerSpec/VC30CMBT.json"
+    ],
+    "harmony": {
+      "global_device_id": 42894,
+      "device_type": 1,
+      "codeset": "f551a7916886bd26"
+    }
+  }
+}

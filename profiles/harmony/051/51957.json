@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:51957",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "TDP-S80",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "8536f494b1024491",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 3000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/TDP-S80.json"
+    ],
+    "harmony": {
+      "global_device_id": 51957,
+      "device_type": 7,
+      "codeset": "68dd69b8ac5c9eb8"
+    }
+  }
+}

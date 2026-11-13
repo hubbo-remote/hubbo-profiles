@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "harmony:140214",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marvel",
+  "model": "KSS-9111",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c53909ca12068f45",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 14000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "command": "VolumeDown"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "SVideo",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeDown"
+        }
+      ]
+    },
+    {
+      "name": "YPBPR",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marvel/KSS-9111.json"
+    ],
+    "harmony": {
+      "global_device_id": 140214,
+      "device_type": 1,
+      "codeset": "e4ac9afca0ed753f"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68216",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "XV-THS66",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "08ca1dc728ced4f0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/DSS",
+      "steps": [
+        {
+          "command": "InputTVDSS"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/XV-THS66.json"
+    ],
+    "harmony": {
+      "global_device_id": 68216,
+      "device_type": 22,
+      "codeset": "b30972693746e9e6"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:48085",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bang & Olufsen",
+  "model": "Beomaster 6000",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ffb61ee54d07a778",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Preset"
+        }
+      ]
+    },
+    {
+      "name": "External",
+      "steps": [
+        {
+          "command": "InputExternal"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "TapePlayer1"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bang_Olufsen/Beomaster_6000.json"
+    ],
+    "harmony": {
+      "global_device_id": 48085,
+      "device_type": 5,
+      "codeset": "f69a60f51d683e40"
+    }
+  }
+}

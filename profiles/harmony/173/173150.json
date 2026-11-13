@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173150",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Popcorn Hour",
+  "model": "A 200",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "33975ba2452d997b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "Delete"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "All",
+      "steps": [
+        {
+          "command": "All"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Popcorn_Hour/A_200.json"
+    ],
+    "harmony": {
+      "global_device_id": 173150,
+      "device_type": 35,
+      "codeset": "6dd8be9bb1ac2e1b"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:142341",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "PowerLite Pro Cinema 1080 UB",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "dd50e6a1c8e2d552",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "HDMI1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "HDMI2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/PowerLite_Pro_Cinema_1080_UB.json"
+    ],
+    "harmony": {
+      "global_device_id": 142341,
+      "device_type": 7,
+      "codeset": "9d80ee48e14ef6d8"
+    }
+  }
+}

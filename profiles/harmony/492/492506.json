@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:492506",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "EnVivo",
+  "model": "ENV-1510",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "33460e6b431761fe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/EnVivo/ENV-1510.json"
+    ],
+    "harmony": {
+      "global_device_id": 492506,
+      "device_type": 19,
+      "codeset": "eae1a282db0014c0"
+    }
+  }
+}

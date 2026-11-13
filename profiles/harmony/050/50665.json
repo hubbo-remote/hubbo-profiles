@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:50665",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Albatron",
+  "model": "L17ATD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "deb630908e6d273a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenne",
+      "steps": [
+        {
+          "command": "Sound"
+        }
+      ]
+    },
+    {
+      "name": "Freebox",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Albatron/L17ATD.json"
+    ],
+    "harmony": {
+      "global_device_id": 50665,
+      "device_type": 1,
+      "codeset": "7a22e334cf88e143"
+    }
+  }
+}

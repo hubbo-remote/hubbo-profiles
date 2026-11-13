@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:159558",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HT-BD2E",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "71aea0cc70fd10d9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "BD",
+      "steps": [
+        {
+          "command": "InputBd"
+        }
+      ]
+    },
+    {
+      "name": "D.In",
+      "steps": [
+        {
+          "command": "InputDIn"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HT-BD2E.json"
+    ],
+    "harmony": {
+      "global_device_id": 159558,
+      "device_type": 22,
+      "codeset": "9bf61bad3fe0333c"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:256551",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "venton",
+  "model": "UniBoX HD1 Plus",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "0b477293a3df1e3d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/venton/UniBoX_HD1_Plus.json"
+    ],
+    "harmony": {
+      "global_device_id": 256551,
+      "device_type": 18,
+      "codeset": "d5c9dba1ec49da4f"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267328",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fluid",
+  "model": "8020918",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ef1c91363296736b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fluid/8020918.json"
+    ],
+    "harmony": {
+      "global_device_id": 267328,
+      "device_type": 19,
+      "codeset": "43c4f8a2a517a55e"
+    }
+  }
+}

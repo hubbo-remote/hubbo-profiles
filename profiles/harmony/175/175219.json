@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:175219",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "AV 3-2-1 H GSX",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "57e5c7ed6bd656bc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/AV_3-2-1_H_GSX.json"
+    ],
+    "harmony": {
+      "global_device_id": 175219,
+      "device_type": 22,
+      "codeset": "2a12ef32b8f62cf5"
+    }
+  }
+}

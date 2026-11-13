@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:261662",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "WyreStorm",
+  "model": "AMP-001-010",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "959e5ea439a03682",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI Audio",
+      "steps": [
+        {
+          "command": "InputHdmiAudio"
+        }
+      ]
+    },
+    {
+      "name": "ARC Audio",
+      "steps": [
+        {
+          "command": "InputARCAudio"
+        }
+      ]
+    },
+    {
+      "name": "Local Audio",
+      "steps": [
+        {
+          "command": "InputLocalAudio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/WyreStorm/AMP-001-010.json"
+    ],
+    "harmony": {
+      "global_device_id": 261662,
+      "device_type": 19,
+      "codeset": "9b27852999aba430"
+    }
+  }
+}

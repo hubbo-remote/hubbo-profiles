@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155850",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FR-740",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0a27f1745ee3f3ff",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTuner",
+        "hold_ms": 1000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "CDR/Tape",
+      "steps": [
+        {
+          "command": "InputCdrTape",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "DVD/6CH",
+      "steps": [
+        {
+          "command": "InputDvd6Ch",
+          "hold_ms": 1500
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FR-740.json"
+    ],
+    "harmony": {
+      "global_device_id": 155850,
+      "device_type": 5,
+      "codeset": "b5033bb7c9acf7c6"
+    }
+  }
+}

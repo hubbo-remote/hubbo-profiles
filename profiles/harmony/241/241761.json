@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:241761",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MCM167",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "8e46b66496defdc9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Mp3Link",
+      "steps": [
+        {
+          "command": "InputMp3Link"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MCM167.json"
+    ],
+    "harmony": {
+      "global_device_id": 241761,
+      "device_type": 21,
+      "codeset": "f38227c41813dcdc"
+    }
+  }
+}

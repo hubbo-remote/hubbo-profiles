@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173170",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DVR-720H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "81d08eae5532fbb6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DVR-720H.json"
+    ],
+    "harmony": {
+      "global_device_id": 173170,
+      "device_type": 34,
+      "codeset": "57019b649579a6f4"
+    }
+  }
+}

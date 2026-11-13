@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212778",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "UX-S15",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "a76f97d75df5704c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio(AM/FM)",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/UX-S15.json"
+    ],
+    "harmony": {
+      "global_device_id": 212778,
+      "device_type": 21,
+      "codeset": "f4877fb74cc8be63"
+    }
+  }
+}

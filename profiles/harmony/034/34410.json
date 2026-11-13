@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34410",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-PM65MD",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "3d4bd5ffa915fd2e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "Md"
+        }
+      ]
+    },
+    {
+      "name": "Tuner/Band",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-PM65MD.json"
+    ],
+    "harmony": {
+      "global_device_id": 34410,
+      "device_type": 21,
+      "codeset": "61d77474ef8e0f35"
+    }
+  }
+}

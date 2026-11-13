@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:240962",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pollin",
+  "model": "DR7",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "ea36876c64ee5c93",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pollin/DR7.json"
+    ],
+    "harmony": {
+      "global_device_id": 240962,
+      "device_type": 16,
+      "codeset": "b693bb00e029db91"
+    }
+  }
+}

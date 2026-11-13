@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211041",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Emotiva",
+  "model": "XDA-1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "74ba7b96a549c1a8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AES/EBU",
+      "steps": [
+        {
+          "command": "InputAesEbu"
+        }
+      ]
+    },
+    {
+      "name": "OPT1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "OPT2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "CO.1",
+      "steps": [
+        {
+          "command": "InputCoaxial1"
+        }
+      ]
+    },
+    {
+      "name": "CO.2",
+      "steps": [
+        {
+          "command": "InputCoaxial2"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Emotiva/XDA-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 211041,
+      "device_type": 19,
+      "codeset": "e11aba2f87f493bb"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211955",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sage",
+  "model": "STP-HD300",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "ff5e40285b2ba5f1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "InputVideos"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sage/STP-HD300.json"
+    ],
+    "harmony": {
+      "global_device_id": 211955,
+      "device_type": 35,
+      "codeset": "70f44693fbb1d173"
+    }
+  }
+}

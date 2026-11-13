@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141207",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Electrohome",
+  "model": "HT-B907E",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "4d1f7278ded077b3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner/Aux",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Electrohome/HT-B907E.json"
+    ],
+    "harmony": {
+      "global_device_id": 141207,
+      "device_type": 22,
+      "codeset": "e6e40b6abd66b3d9"
+    }
+  }
+}

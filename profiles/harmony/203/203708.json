@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203708",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "HiMedia",
+  "model": "HD500B-TH",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "2f1769b524672ae0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "steps": [
+        {
+          "command": "InputCard"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/HiMedia/HD500B-TH.json"
+    ],
+    "harmony": {
+      "global_device_id": 203708,
+      "device_type": 35,
+      "codeset": "4d7728a565bd1858"
+    }
+  }
+}

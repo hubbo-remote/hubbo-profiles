@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "id": "harmony:30306",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "56FW-53H",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4b1afc428d496516",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 7000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SCART",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "Green"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "Red"
+        },
+        {
+          "command": "Green"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV1S",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "Red"
+        },
+        {
+          "command": "Green"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "Red"
+        },
+        {
+          "command": "Green"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "Red"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/56FW-53H.json"
+    ],
+    "harmony": {
+      "global_device_id": 30306,
+      "device_type": 1,
+      "codeset": "5e78bea4e0d3150a"
+    }
+  }
+}

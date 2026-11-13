@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165167",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "GV-470S",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "80c3ec90a9ec346f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/GV-470S.json"
+    ],
+    "harmony": {
+      "global_device_id": 165167,
+      "device_type": 2,
+      "codeset": "d4f4ffa599f8cca6"
+    }
+  }
+}

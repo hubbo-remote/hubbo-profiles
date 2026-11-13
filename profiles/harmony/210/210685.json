@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:210685",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Conrad",
+  "model": "HVA-9050R",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4477288ccd209b14",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Conrad/HVA-9050R.json"
+    ],
+    "harmony": {
+      "global_device_id": 210685,
+      "device_type": 19,
+      "codeset": "e1feebc6a8f40bad"
+    }
+  }
+}

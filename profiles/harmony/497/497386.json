@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:497386",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "SR-B20A",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "543b44192f4e45fc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/SR-B20A.json"
+    ],
+    "harmony": {
+      "global_device_id": 497386,
+      "device_type": 19,
+      "codeset": "d6aa5df7785f9a14"
+    }
+  }
+}

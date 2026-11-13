@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267833",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "DNP-730AE",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "07e8fb7b612b85af",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "Music Server",
+      "steps": [
+        {
+          "command": "InputMusicServer"
+        }
+      ]
+    },
+    {
+      "name": "iPod/USB",
+      "steps": [
+        {
+          "command": "InputIpodUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/DNP-730AE.json"
+    ],
+    "harmony": {
+      "global_device_id": 267833,
+      "device_type": 33,
+      "codeset": "274442d220c9384b"
+    }
+  }
+}

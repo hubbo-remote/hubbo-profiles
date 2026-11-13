@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "harmony:89150",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "28PW-9528/12",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c075fd507a4bb1c7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "EXT1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Blue"
+        }
+      ]
+    },
+    {
+      "name": "EXT2",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "EXT3",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Yellow"
+        }
+      ]
+    },
+    {
+      "name": "SIDE",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/28PW-9528_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 89150,
+      "device_type": 1,
+      "codeset": "a2b78730ec208857"
+    }
+  }
+}

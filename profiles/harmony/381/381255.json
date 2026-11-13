@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:381255",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "STR-DN1070 (Zone 3)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6798036fee9434de",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT/CATV",
+      "steps": [
+        {
+          "command": "InputSatCatv"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "SA-CD/CD",
+      "steps": [
+        {
+          "command": "InputSaCdCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/STR-DN1070_Zone_3.json"
+    ],
+    "harmony": {
+      "global_device_id": 381255,
+      "device_type": 5,
+      "codeset": "9b1a8267c7c3f392"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336041",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Maxell",
+  "model": "MXSP-TS1000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "7a5f347d056000d4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBlueooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Maxell/MXSP-TS1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 336041,
+      "device_type": 19,
+      "codeset": "5bc48bb1e862f2e6"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:75309",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Edifier",
+  "model": "S-2000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "950e73e0058170c9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Edifier/S-2000.json"
+    ],
+    "harmony": {
+      "global_device_id": 75309,
+      "device_type": 19,
+      "codeset": "739ae1d475a05d4d"
+    }
+  }
+}

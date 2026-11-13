@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:78667",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Creative",
+  "model": "SoundWorks Radio CD 740",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "2e5b62b09b5a8f32",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Creative/SoundWorks_Radio_CD_740.json"
+    ],
+    "harmony": {
+      "global_device_id": 78667,
+      "device_type": 21,
+      "codeset": "a5188de6eee57916"
+    }
+  }
+}

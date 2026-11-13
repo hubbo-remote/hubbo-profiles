@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182660",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD 26001",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "21594cc8128dc085",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD_26001.json"
+    ],
+    "harmony": {
+      "global_device_id": 182660,
+      "device_type": 18,
+      "codeset": "976002e51eeb33fa"
+    }
+  }
+}

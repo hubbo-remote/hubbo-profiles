@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:120324",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "General Electric",
+  "model": "7-5330",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "e75f5bebcfc1a735",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/General_Electric/7-5330.json"
+    ],
+    "harmony": {
+      "global_device_id": 120324,
+      "device_type": 21,
+      "codeset": "4a66ec4ba5cd99b5"
+    }
+  }
+}

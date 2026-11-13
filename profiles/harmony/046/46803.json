@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:46803",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "FT-81018",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 9000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/FT-81018.json"
+    ],
+    "harmony": {
+      "global_device_id": 46803,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

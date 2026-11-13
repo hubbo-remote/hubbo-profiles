@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258880",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Edifier",
+  "model": "C6XD",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "35aa2009f6a050d1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "SD/USB",
+      "steps": [
+        {
+          "command": "InputSdUsb"
+        }
+      ]
+    },
+    {
+      "name": "PC/AUX",
+      "steps": [
+        {
+          "command": "InputPcAux"
+        }
+      ]
+    },
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Edifier/C6XD.json"
+    ],
+    "harmony": {
+      "global_device_id": 258880,
+      "device_type": 5,
+      "codeset": "40465b81991807b0"
+    }
+  }
+}

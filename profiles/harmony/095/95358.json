@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95358",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Adcom",
+  "model": "GTP-750",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "f0d80fb666aa84b5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputDigital1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputDigital2"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Adcom/GTP-750.json"
+    ],
+    "harmony": {
+      "global_device_id": 95358,
+      "device_type": 5,
+      "codeset": "b573abf79cdb0843"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:134230",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Funai",
+  "model": "HD-B2785",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "aed2549d2d9ead79",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Funai/HD-B2785.json"
+    ],
+    "harmony": {
+      "global_device_id": 134230,
+      "device_type": 34,
+      "codeset": "4727a1c39ed74e34"
+    }
+  }
+}

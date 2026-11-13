@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:200865",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vizio",
+  "model": "VHT210",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "277cc3efabb75a4e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "IN",
+      "steps": [
+        {
+          "command": "InputIN"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vizio/VHT210.json"
+    ],
+    "harmony": {
+      "global_device_id": 200865,
+      "device_type": 5,
+      "codeset": "b120e248983c2fc9"
+    }
+  }
+}

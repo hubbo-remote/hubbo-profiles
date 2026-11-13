@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203334",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HT-TZ122",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "3120cb78ea121a3c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Port",
+      "steps": [
+        {
+          "command": "InputPort"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HT-TZ122.json"
+    ],
+    "harmony": {
+      "global_device_id": 203334,
+      "device_type": 22,
+      "codeset": "0931295eae67eb90"
+    }
+  }
+}

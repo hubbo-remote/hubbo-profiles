@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:495705",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ProCaster",
+  "model": "AMP-01",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "f6d714c0dcb7f702",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ProCaster/AMP-01.json"
+    ],
+    "harmony": {
+      "global_device_id": 495705,
+      "device_type": 19,
+      "codeset": "7e3b7fa673427c24"
+    }
+  }
+}

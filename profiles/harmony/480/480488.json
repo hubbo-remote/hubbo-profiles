@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480488",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ViewSonic",
+  "model": "Pro8520WL",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "510de9e4ff70ec3b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ViewSonic/Pro8520WL.json"
+    ],
+    "harmony": {
+      "global_device_id": 480488,
+      "device_type": 7,
+      "codeset": "d7a20455326b2666"
+    }
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "id": "harmony:45382",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RU-42PX11C",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4afb7df38ee4f8e5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "delay_ms": 1500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputComponent1"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputComponent2"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputDVIDTV"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputAntCable"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputAntCable"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RU-42PX11C.json"
+    ],
+    "harmony": {
+      "global_device_id": 45382,
+      "device_type": 1,
+      "codeset": "e1cf59d13c6d5673"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:55556",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yahoo",
+  "model": "YHT-400",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "e3e43d6d31ff62d4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yahoo/YHT-400.json"
+    ],
+    "harmony": {
+      "global_device_id": 55556,
+      "device_type": 22,
+      "codeset": "9ad33bba1bc00611"
+    }
+  }
+}

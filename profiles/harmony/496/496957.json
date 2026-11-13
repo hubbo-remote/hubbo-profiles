@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:496957",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "UHD3200A",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "4ccfc13bd5ba59be",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/UHD3200A.json"
+    ],
+    "harmony": {
+      "global_device_id": 496957,
+      "device_type": 7,
+      "codeset": "e34bad910e1b2094"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:209505",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KWorld",
+  "model": "M200",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "c7f7f0df3a54568f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "Movie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "Network"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KWorld/M200.json"
+    ],
+    "harmony": {
+      "global_device_id": 209505,
+      "device_type": 35,
+      "codeset": "40fdbc4b81f80a47"
+    }
+  }
+}

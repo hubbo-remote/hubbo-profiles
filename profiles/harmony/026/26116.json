@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:26116",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Audio Access",
+  "model": "PX-700",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "81a19bb5edd8a8b9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Sat",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Audio_Access/PX-700.json"
+    ],
+    "harmony": {
+      "global_device_id": 26116,
+      "device_type": 5,
+      "codeset": "9b7dec70dd5daa6f"
+    }
+  }
+}

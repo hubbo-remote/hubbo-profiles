@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111722",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Insignia",
+  "model": "INC3708",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6e49a99fd5365c85",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "RF",
+      "steps": [
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr1",
+      "steps": [
+        {
+          "delay_ms": 4500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 1300
+        },
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "delay_ms": 1300
+        },
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "delay_ms": 1300
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr2",
+      "steps": [
+        {
+          "delay_ms": 4500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 1300
+        },
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "delay_ms": 1300
+        },
+        {
+          "command": "FinishInput"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Insignia/INC3708.json"
+    ],
+    "harmony": {
+      "global_device_id": 111722,
+      "device_type": 1,
+      "codeset": "e79325ac3935ccd3"
+    }
+  }
+}

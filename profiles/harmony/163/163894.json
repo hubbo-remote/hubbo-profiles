@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163894",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KDL-32U2520",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e1f058dd43d54e55",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi1",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi2",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KDL-32U2520.json"
+    ],
+    "harmony": {
+      "global_device_id": 163894,
+      "device_type": 1,
+      "codeset": "1bb4a1a4e71e89cd"
+    }
+  }
+}

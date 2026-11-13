@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:133394",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teckton",
+  "model": "TL-26VW1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9df7d1a8d16d0042",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teckton/TL-26VW1.json"
+    ],
+    "harmony": {
+      "global_device_id": 133394,
+      "device_type": 1,
+      "codeset": "5b45a7fe5bc73c74"
+    }
+  }
+}

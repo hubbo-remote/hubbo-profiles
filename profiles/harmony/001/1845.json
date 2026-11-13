@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:1845",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cambridge Soundworks",
+  "model": "DTT2500",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "27d08ee5c6b130e5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Multichannel",
+      "steps": [
+        {
+          "command": "DolbyDigital"
+        }
+      ]
+    },
+    {
+      "name": "Dolby Digital",
+      "steps": [
+        {
+          "command": "MultiChannel"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cambridge_Soundworks/DTT2500.json"
+    ],
+    "harmony": {
+      "global_device_id": 1845,
+      "device_type": 19,
+      "codeset": "185b0d3bc9822762"
+    }
+  }
+}

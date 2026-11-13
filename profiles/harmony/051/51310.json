@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "harmony:51310",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "28ML8805/00B",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "0"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "Vcr 1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/28ML8805_00B.json"
+    ],
+    "harmony": {
+      "global_device_id": 51310,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

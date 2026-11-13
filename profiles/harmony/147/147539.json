@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147539",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HT-X70",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "e8fd52735e572deb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "XM",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Digital.IN",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Aux1",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Aux2",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "HDMI IN",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HT-X70.json"
+    ],
+    "harmony": {
+      "global_device_id": 147539,
+      "device_type": 22,
+      "codeset": "c007b4ae2c4b66de"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:266934",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DigiXstream",
+  "model": "DX3",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "7c36f68fb08e9ad7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "XBMC",
+      "steps": [
+        {
+          "command": "XBMC"
+        }
+      ]
+    },
+    {
+      "name": "Apps",
+      "steps": [
+        {
+          "command": "Apps"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "File"
+        }
+      ]
+    },
+    {
+      "name": "Web",
+      "steps": [
+        {
+          "command": "WebBrowser"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DigiXstream/DX3.json"
+    ],
+    "harmony": {
+      "global_device_id": 266934,
+      "device_type": 35,
+      "codeset": "de13f49784820496"
+    }
+  }
+}

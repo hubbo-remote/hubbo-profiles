@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:47616",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MC-D370",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "1cf5ffe67469f6dc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MC-D370.json"
+    ],
+    "harmony": {
+      "global_device_id": 47616,
+      "device_type": 22,
+      "codeset": "3cf1e3f64c37c4a1"
+    }
+  }
+}

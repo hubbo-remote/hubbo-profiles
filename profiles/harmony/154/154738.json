@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154738",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "DV-DH1000W",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "888631e3fdea0edb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/DV-DH1000W.json"
+    ],
+    "harmony": {
+      "global_device_id": 154738,
+      "device_type": 34,
+      "codeset": "fdc1f7325af12166"
+    }
+  }
+}

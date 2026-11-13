@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:84873",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "PE-5120",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "fadae3c4751a9877",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Comp",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVI-D",
+      "steps": [
+        {
+          "command": "InputDviD"
+        }
+      ]
+    },
+    {
+      "name": "DVI-A",
+      "steps": [
+        {
+          "command": "InputDviA"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/PE-5120.json"
+    ],
+    "harmony": {
+      "global_device_id": 84873,
+      "device_type": 7,
+      "codeset": "31c8b19022206684"
+    }
+  }
+}

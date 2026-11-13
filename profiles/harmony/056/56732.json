@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:56732",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "H77",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "98e6f7e8091c2d5b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDviSat"
+        }
+      ]
+    },
+    {
+      "name": "RCA component",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "BNC component",
+      "steps": [
+        {
+          "command": "InputBnc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/H77.json"
+    ],
+    "harmony": {
+      "global_device_id": 56732,
+      "device_type": 7,
+      "codeset": "5b9c36d971391ac1"
+    }
+  }
+}

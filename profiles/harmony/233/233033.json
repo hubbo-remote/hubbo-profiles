@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:233033",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "UPC",
+  "model": "TWG870UG",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "bfc484c874f40bba",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "UPC",
+      "steps": [
+        {
+          "command": "UPC"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/UPC/TWG870UG.json"
+    ],
+    "harmony": {
+      "global_device_id": 233033,
+      "device_type": 18,
+      "codeset": "bdb1247f57c1b256"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101657",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HT-D600",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "6c61ed1bfc867a71",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "Aux1",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        },
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "Aux2",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        },
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        },
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HT-D600.json"
+    ],
+    "harmony": {
+      "global_device_id": 101657,
+      "device_type": 22,
+      "codeset": "e9610c354892f2e2"
+    }
+  }
+}

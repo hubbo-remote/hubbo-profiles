@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:94061",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Palladium",
+  "model": "739/162",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "e4609bc747b3d45b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/AUX",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Palladium/739_162.json"
+    ],
+    "harmony": {
+      "global_device_id": 94061,
+      "device_type": 22,
+      "codeset": "5357d6d076b9b471"
+    }
+  }
+}

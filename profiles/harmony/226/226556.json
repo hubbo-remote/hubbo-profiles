@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226556",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "DA 5630 AD",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "17047c88d2601b39",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/DA_5630_AD.json"
+    ],
+    "harmony": {
+      "global_device_id": 226556,
+      "device_type": 22,
+      "codeset": "98eb11f32c71ea0c"
+    }
+  }
+}

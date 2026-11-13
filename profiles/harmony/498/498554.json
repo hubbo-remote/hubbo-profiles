@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:498554",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ADL",
+  "model": "STRATOS",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e52be5783263bd57",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ADL/STRATOS.json"
+    ],
+    "harmony": {
+      "global_device_id": 498554,
+      "device_type": 19,
+      "codeset": "81609c885e4b9a78"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:208752",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Emtec",
+  "model": "K230",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "1799416e33afed57",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Emtec/K230.json"
+    ],
+    "harmony": {
+      "global_device_id": 208752,
+      "device_type": 35,
+      "codeset": "9ef562128ad493eb"
+    }
+  }
+}

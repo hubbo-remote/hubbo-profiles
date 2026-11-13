@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58059",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eltax",
+  "model": "AVR-250",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9916c6bf087e77a9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "5.1 Ch",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Tv/Sat",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eltax/AVR-250.json"
+    ],
+    "harmony": {
+      "global_device_id": 58059,
+      "device_type": 5,
+      "codeset": "508800c5f51f491a"
+    }
+  }
+}

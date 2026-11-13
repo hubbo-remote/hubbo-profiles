@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180269",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-42PW4",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f43a0ab0db375601",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn",
+        "hold_ms": 2000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 9500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV (S-Video)",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "RGB/PC",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-42PW4.json"
+    ],
+    "harmony": {
+      "global_device_id": 180269,
+      "device_type": 13,
+      "codeset": "56720cc7dd448880"
+    }
+  }
+}

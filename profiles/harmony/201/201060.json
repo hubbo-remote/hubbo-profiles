@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201060",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Conrac",
+  "model": "Designline Reflection 50",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ca6573b05c4a9c38",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputNext"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Conrac/Designline_Reflection_50.json"
+    ],
+    "harmony": {
+      "global_device_id": 201060,
+      "device_type": 13,
+      "codeset": "7333d3ac18fe9455"
+    }
+  }
+}

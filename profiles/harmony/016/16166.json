@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:16166",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Finlux",
+  "model": "71Z2",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ca134a6bf8269196",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "STB",
+      "steps": [
+        {
+          "command": "InputStb"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Finlux/71Z2.json"
+    ],
+    "harmony": {
+      "global_device_id": 16166,
+      "device_type": 1,
+      "codeset": "4d4ff96050fffe12"
+    }
+  }
+}

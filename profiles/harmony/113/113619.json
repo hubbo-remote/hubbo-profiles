@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:113619",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HT-Q9",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "0cc833aa2f5cea61",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HT-Q9.json"
+    ],
+    "harmony": {
+      "global_device_id": 113619,
+      "device_type": 22,
+      "codeset": "25834f9a254567a2"
+    }
+  }
+}

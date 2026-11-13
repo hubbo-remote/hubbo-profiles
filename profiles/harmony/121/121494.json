@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121494",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Skyplus",
+  "model": "TDS-A70H",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "a39d0a02a0734be6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Sky",
+      "steps": [
+        {
+          "command": "InputSky"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Skyplus/TDS-A70H.json"
+    ],
+    "harmony": {
+      "global_device_id": 121494,
+      "device_type": 18,
+      "codeset": "3947ca34e3f9c860"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:241287",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Logik",
+  "model": "L22LID648",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "f94ccb1c5a861932",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV/DTV",
+      "steps": [
+        {
+          "command": "InputTvDtv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Logik/L22LID648.json"
+    ],
+    "harmony": {
+      "global_device_id": 241287,
+      "device_type": 37,
+      "codeset": "931aaec8b7a90c1b"
+    }
+  }
+}

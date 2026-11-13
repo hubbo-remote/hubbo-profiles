@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480021",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cabasse",
+  "model": "Cabasse For Orange",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "58ffdc9a858dd45c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "HDMI ARC",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI IN",
+      "steps": [
+        {
+          "command": "InputHdmiIn"
+        }
+      ]
+    },
+    {
+      "name": "SPDIF",
+      "steps": [
+        {
+          "command": "InputSpdif"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cabasse/Cabasse_For_Orange.json"
+    ],
+    "harmony": {
+      "global_device_id": 480021,
+      "device_type": 19,
+      "codeset": "ef1bd46db63655de"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:214668",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Finlux",
+  "model": "82X307",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "975447a937fb88a1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "0"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "HTPC",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Finlux/82X307.json"
+    ],
+    "harmony": {
+      "global_device_id": 214668,
+      "device_type": 1,
+      "codeset": "85802a2718306665"
+    }
+  }
+}

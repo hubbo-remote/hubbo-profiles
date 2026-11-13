@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:242320",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SA-PM04",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "057d126ae8550182",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "MusicPort",
+      "steps": [
+        {
+          "command": "InputMusicPort"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputFmAm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SA-PM04.json"
+    ],
+    "harmony": {
+      "global_device_id": 242320,
+      "device_type": 21,
+      "codeset": "dbf02b5e634305d2"
+    }
+  }
+}

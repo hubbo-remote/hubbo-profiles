@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102327",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lumatron",
+  "model": "DVCR2006",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "b7acad995cb20433",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lumatron/DVCR2006.json"
+    ],
+    "harmony": {
+      "global_device_id": 102327,
+      "device_type": 25,
+      "codeset": "d31df2db693d096e"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:183417",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "iconBIT",
+  "model": "HD270HDMI mk2",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "078b9bcda438813a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "JukeBox",
+      "steps": [
+        {
+          "command": "InputJukebox"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/iconBIT/HD270HDMI_mk2.json"
+    ],
+    "harmony": {
+      "global_device_id": 183417,
+      "device_type": 35,
+      "codeset": "07e666c91554d9a9"
+    }
+  }
+}

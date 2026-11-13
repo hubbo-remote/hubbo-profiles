@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:227124",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Rosewill",
+  "model": "RHRC-11001",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "c23e92f60882f26d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "LiveTV",
+      "steps": [
+        {
+          "command": "Live"
+        }
+      ]
+    },
+    {
+      "name": "DVDMenu",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    },
+    {
+      "name": "MyVideos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "MyMusic",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "MyPictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "MyRadio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    },
+    {
+      "name": "RecTv",
+      "steps": [
+        {
+          "command": "RecordedTV"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "NumberEnter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Rosewill/RHRC-11001.json"
+    ],
+    "harmony": {
+      "global_device_id": 227124,
+      "device_type": 35,
+      "codeset": "063cd13dd795e2b5"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:435947",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MEGACRA",
+  "model": "S7021",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "f4b99311c8d536cc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MEGACRA/S7021.json"
+    ],
+    "harmony": {
+      "global_device_id": 435947,
+      "device_type": 19,
+      "codeset": "afba261adf8eb3f7"
+    }
+  }
+}

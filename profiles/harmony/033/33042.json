@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:33042",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-D4104",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "f9ccdb9dfb0f24b2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-D4104.json"
+    ],
+    "harmony": {
+      "global_device_id": 33042,
+      "device_type": 2,
+      "codeset": "0a27841f961215a2"
+    }
+  }
+}

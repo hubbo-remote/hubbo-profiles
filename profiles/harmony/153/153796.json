@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153796",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "XBV-343",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "109942747e8dcfd8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/XBV-343.json"
+    ],
+    "harmony": {
+      "global_device_id": 153796,
+      "device_type": 25,
+      "codeset": "73754e83c30d5b6a"
+    }
+  }
+}

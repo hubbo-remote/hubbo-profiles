@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:127302",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "39PF9431D/37",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c075fd507a4bb1c7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    },
+    {
+      "name": "SIDE",
+      "steps": [
+        {
+          "command": "InputSide"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/39PF9431D_37.json"
+    ],
+    "harmony": {
+      "global_device_id": 127302,
+      "device_type": 1,
+      "codeset": "a2b78730ec208857"
+    }
+  }
+}

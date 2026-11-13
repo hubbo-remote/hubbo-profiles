@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180068",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Imperial",
+  "model": "7971",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "20e8e6655faa29b1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV2x",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Imperial/7971.json"
+    ],
+    "harmony": {
+      "global_device_id": 180068,
+      "device_type": 1,
+      "codeset": "d4a5df0ed3bbfa05"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202414",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Manta",
+  "model": "DVD-037",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "b8b57c109b345a5b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Hdd",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "Dv/Usb",
+      "steps": [
+        {
+          "command": "InputDvUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Manta/DVD-037.json"
+    ],
+    "harmony": {
+      "global_device_id": 202414,
+      "device_type": 34,
+      "codeset": "c6480887da55269b"
+    }
+  }
+}

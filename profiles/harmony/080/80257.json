@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:80257",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "BASS-550",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0bab398cfc6a4fdd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/BASS-550.json"
+    ],
+    "harmony": {
+      "global_device_id": 80257,
+      "device_type": 19,
+      "codeset": "24943fa6f787cff2"
+    }
+  }
+}

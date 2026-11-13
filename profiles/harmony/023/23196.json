@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "harmony:23196",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-J655",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "f9ccdb9dfb0f24b2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "L1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "L2",
+      "steps": [
+        {
+          "command": "InputSelect"
+        }
+      ]
+    },
+    {
+      "name": "F1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-J655.json"
+    ],
+    "harmony": {
+      "global_device_id": 23196,
+      "device_type": 2,
+      "codeset": "0a27841f961215a2"
+    }
+  }
+}

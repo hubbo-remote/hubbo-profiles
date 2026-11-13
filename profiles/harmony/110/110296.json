@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110296",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "SD-37VB",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "cb9c19cfc9f476c4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "VCR"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/SD-37VB.json"
+    ],
+    "harmony": {
+      "global_device_id": 110296,
+      "device_type": 25,
+      "codeset": "75de2864e81bd911"
+    }
+  }
+}

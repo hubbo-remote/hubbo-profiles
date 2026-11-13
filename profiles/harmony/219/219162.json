@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:219162",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Media Decor",
+  "model": "Frame",
+  "kind": "accessory",
+  "platform": "ir",
+  "codeset": "4cf321f3a8b2a532",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "Open"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "Close"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Media_Decor/Frame.json"
+    ],
+    "harmony": {
+      "global_device_id": 219162,
+      "device_type": 44,
+      "codeset": "9b217b3592bf0bef"
+    }
+  }
+}

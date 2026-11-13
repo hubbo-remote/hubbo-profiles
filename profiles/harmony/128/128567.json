@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:128567",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Memorex",
+  "model": "9198M",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ba4628d868a4689d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Memorex/9198M.json"
+    ],
+    "harmony": {
+      "global_device_id": 128567,
+      "device_type": 21,
+      "codeset": "8cd1c2a2e11fd291"
+    }
+  }
+}

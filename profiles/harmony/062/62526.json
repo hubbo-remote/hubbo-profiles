@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:62526",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "V8916",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "bcd055e41e604bfb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna/Cable",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/V8916.json"
+    ],
+    "harmony": {
+      "global_device_id": 62526,
+      "device_type": 25,
+      "codeset": "0c6099b46ed9d013"
+    }
+  }
+}

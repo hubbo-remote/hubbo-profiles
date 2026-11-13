@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:230103",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LH-C2000S",
+  "kind": "home_theater_vcr",
+  "platform": "ir",
+  "codeset": "ee0fe1178f31f899",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVhs"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LH-C2000S.json"
+    ],
+    "harmony": {
+      "global_device_id": 230103,
+      "device_type": 32,
+      "codeset": "c68f3e4e44634ffe"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:370766",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "MDR868H/F7",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "7bb39e216d707f5c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD/Ext.HDD",
+      "steps": [
+        {
+          "command": "InputHddExtHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/MDR868H_F7.json"
+    ],
+    "harmony": {
+      "global_device_id": 370766,
+      "device_type": 34,
+      "codeset": "98f8547c678d8e42"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:64499",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eltax",
+  "model": "AVR-200",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "4c8a1ea308ce33c8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "5.1 Ch",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Tv/Sat",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eltax/AVR-200.json"
+    ],
+    "harmony": {
+      "global_device_id": 64499,
+      "device_type": 5,
+      "codeset": "9c0c6422751df710"
+    }
+  }
+}

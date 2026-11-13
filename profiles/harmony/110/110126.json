@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110126",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "3M",
+  "model": "MP-8020",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "5a78af0d622d819c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB1",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "RGB2",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/3M/MP-8020.json"
+    ],
+    "harmony": {
+      "global_device_id": 110126,
+      "device_type": 7,
+      "codeset": "c3be26f0fa1dd81b"
+    }
+  }
+}

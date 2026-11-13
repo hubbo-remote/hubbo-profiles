@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201972",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tatung",
+  "model": "P42BSMT-U32",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "244db366535d1f4d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tatung/P42BSMT-U32.json"
+    ],
+    "harmony": {
+      "global_device_id": 201972,
+      "device_type": 1,
+      "codeset": "f551a7916886bd26"
+    }
+  }
+}

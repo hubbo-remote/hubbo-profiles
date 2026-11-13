@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:218189",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Foxconn",
+  "model": "NT-330I",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e847f525234d17fc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Foxconn/NT-330I.json"
+    ],
+    "harmony": {
+      "global_device_id": 218189,
+      "device_type": 35,
+      "codeset": "26671ea9b1df2fa6"
+    }
+  }
+}

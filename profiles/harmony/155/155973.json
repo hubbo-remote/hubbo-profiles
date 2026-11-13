@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155973",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NAD",
+  "model": "L-53",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "c24f9470090e3d9a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Sat/Cbl",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NAD/L-53.json"
+    ],
+    "harmony": {
+      "global_device_id": 155973,
+      "device_type": 22,
+      "codeset": "d2c08b2856fc8f29"
+    }
+  }
+}

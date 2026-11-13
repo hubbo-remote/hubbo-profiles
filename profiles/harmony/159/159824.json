@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:159824",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sky",
+  "model": "HD",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "9d4aff0ed25d45a8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Sky",
+      "steps": [
+        {
+          "command": "InputSky"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sky/HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 159824,
+      "device_type": 18,
+      "codeset": "5851fe84128e1843"
+    }
+  }
+}

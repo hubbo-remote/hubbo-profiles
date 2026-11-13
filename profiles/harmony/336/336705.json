@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336705",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KEF",
+  "model": "LS50 Wireless",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "7a6b2dfed6635416",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "WI-Fi",
+      "steps": [
+        {
+          "command": "InputWifi"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KEF/LS50_Wireless.json"
+    ],
+    "harmony": {
+      "global_device_id": 336705,
+      "device_type": 19,
+      "codeset": "b404675d27ce7c92"
+    }
+  }
+}

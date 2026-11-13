@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:35983",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pacific",
+  "model": "HCS-101",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "89db2b5dbe4a0282",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Dvd/Cd",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pacific/HCS-101.json"
+    ],
+    "harmony": {
+      "global_device_id": 35983,
+      "device_type": 19,
+      "codeset": "5aec03cee0cf3000"
+    }
+  }
+}

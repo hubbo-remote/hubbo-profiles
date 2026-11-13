@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:2392",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "CR-H130",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "a034d14f59edcf02",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX(DVD)",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/CR-H130.json"
+    ],
+    "harmony": {
+      "global_device_id": 2392,
+      "device_type": 22,
+      "codeset": "c68e57d94cedf346"
+    }
+  }
+}

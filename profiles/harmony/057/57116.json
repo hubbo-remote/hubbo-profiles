@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57116",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vestel",
+  "model": "AV-3000",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "53cebb4de5879bed",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAudio1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vestel/AV-3000.json"
+    ],
+    "harmony": {
+      "global_device_id": 57116,
+      "device_type": 22,
+      "codeset": "11b5dfec712a6666"
+    }
+  }
+}

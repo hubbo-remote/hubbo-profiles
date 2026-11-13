@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:120143",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Linksys",
+  "model": "Kiss 1600",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "f0f219a91f057e63",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "PC Link",
+      "steps": [
+        {
+          "command": "PcLink"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Linksys/Kiss_1600.json"
+    ],
+    "harmony": {
+      "global_device_id": 120143,
+      "device_type": 35,
+      "codeset": "3f26b08e3f4e4424"
+    }
+  }
+}

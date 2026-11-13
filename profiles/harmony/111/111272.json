@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111272",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cameron",
+  "model": "ASHT-100",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6c6a9e6a25512086",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "5.1 CH",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cameron/ASHT-100.json"
+    ],
+    "harmony": {
+      "global_device_id": 111272,
+      "device_type": 19,
+      "codeset": "ffd4838f066c9c57"
+    }
+  }
+}

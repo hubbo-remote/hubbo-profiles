@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:43543",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "TA-AV431",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0690b5d2cf5c8ba4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/TA-AV431.json"
+    ],
+    "harmony": {
+      "global_device_id": 43543,
+      "device_type": 21,
+      "codeset": "40f9866b0ffcef4a"
+    }
+  }
+}

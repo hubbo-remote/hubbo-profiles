@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203122",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eminent",
+  "model": "em-7065",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e9621471cc875e1e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eminent/em-7065.json"
+    ],
+    "harmony": {
+      "global_device_id": 203122,
+      "device_type": 35,
+      "codeset": "e09edee151720725"
+    }
+  }
+}

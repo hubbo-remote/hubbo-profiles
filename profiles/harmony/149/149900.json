@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149900",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aluratek",
+  "model": "AIRMM01F",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "9e67a481bcf63256",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "IP Radio",
+      "steps": [
+        {
+          "command": "InputIPRadio"
+        }
+      ]
+    },
+    {
+      "name": "Media Player",
+      "steps": [
+        {
+          "command": "InputMediaPlayer"
+        }
+      ]
+    },
+    {
+      "name": "MP3 Reader",
+      "steps": [
+        {
+          "command": "InputMp3"
+        }
+      ]
+    },
+    {
+      "name": "FM Radio",
+      "steps": [
+        {
+          "command": "InputFMRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aluratek/AIRMM01F.json"
+    ],
+    "harmony": {
+      "global_device_id": 149900,
+      "device_type": 33,
+      "codeset": "8601cabe4735ab2c"
+    }
+  }
+}

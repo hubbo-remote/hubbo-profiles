@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139744",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vidikron",
+  "model": "Vision Model 40",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "6f6e2a12235589a9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Component HD",
+      "steps": [
+        {
+          "command": "InputComponentHD"
+        }
+      ]
+    },
+    {
+      "name": "RGB HD",
+      "steps": [
+        {
+          "command": "InputRgbHd"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vidikron/Vision_Model_40.json"
+    ],
+    "harmony": {
+      "global_device_id": 139744,
+      "device_type": 7,
+      "codeset": "bafa506d18877414"
+    }
+  }
+}

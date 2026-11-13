@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111652",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "GLC-D1904WDVD",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "42c0a1bb897e470e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/AV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/GLC-D1904WDVD.json"
+    ],
+    "harmony": {
+      "global_device_id": 111652,
+      "device_type": 37,
+      "codeset": "c8bec29f30e98286"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:223298",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Monivision",
+  "model": "DM-6552",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3287440bd14587b0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Video 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Monivision/DM-6552.json"
+    ],
+    "harmony": {
+      "global_device_id": 223298,
+      "device_type": 13,
+      "codeset": "3b294f7a1c3df0b3"
+    }
+  }
+}

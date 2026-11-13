@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "harmony:161934",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BIC",
+  "model": "T-3M",
+  "kind": "tape_deck",
+  "platform": "ir",
+  "codeset": "af49cd2c0536344f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "delay_ms": 1500
+      },
+      {
+        "command": "PowerOn",
+        "hold_ms": 1000
+      },
+      {
+        "delay_ms": 1500
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 1500
+      },
+      {
+        "command": "PowerOff",
+        "hold_ms": 1000
+      },
+      {
+        "delay_ms": 1500
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BIC/T-3M.json"
+    ],
+    "harmony": {
+      "global_device_id": 161934,
+      "device_type": 6,
+      "codeset": "5e20814ecbe01c61"
+    }
+  }
+}

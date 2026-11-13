@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500453",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SAKOBS",
+  "model": "DS6402",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d892b2378b12cd4d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SAKOBS/DS6402.json"
+    ],
+    "harmony": {
+      "global_device_id": 500453,
+      "device_type": 19,
+      "codeset": "42a714815efeeedd"
+    }
+  }
+}

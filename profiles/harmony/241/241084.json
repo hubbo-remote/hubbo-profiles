@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:241084",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "Pico PK320",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "d61aaac3ccc9beca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        },
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/Pico_PK320.json"
+    ],
+    "harmony": {
+      "global_device_id": 241084,
+      "device_type": 7,
+      "codeset": "cd71f2687cd56b25"
+    }
+  }
+}

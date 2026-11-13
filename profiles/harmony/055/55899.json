@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:55899",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GoVideo",
+  "model": "DV-2150",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "87c0112e2573a015",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GoVideo/DV-2150.json"
+    ],
+    "harmony": {
+      "global_device_id": 55899,
+      "device_type": 25,
+      "codeset": "9e89c8b16dc05221"
+    }
+  }
+}

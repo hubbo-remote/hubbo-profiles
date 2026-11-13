@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265669",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "3M",
+  "model": "SCP740",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "6e71bdc8cb2301a8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VGA 1",
+      "steps": [
+        {
+          "command": "InputVga1"
+        }
+      ]
+    },
+    {
+      "name": "VGA 2",
+      "steps": [
+        {
+          "command": "InputVga2"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/3M/SCP740.json"
+    ],
+    "harmony": {
+      "global_device_id": 265669,
+      "device_type": 7,
+      "codeset": "038f68ffa675ec27"
+    }
+  }
+}

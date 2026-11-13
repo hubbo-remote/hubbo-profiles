@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141512",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "FW-58/37",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "88df40ceb9321de9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputCd"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputTape"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/FW-58_37.json"
+    ],
+    "harmony": {
+      "global_device_id": 141512,
+      "device_type": 21,
+      "codeset": "a51d4554cc4f5157"
+    }
+  }
+}

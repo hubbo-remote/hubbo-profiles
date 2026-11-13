@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:256123",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "VPL-FW41",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "b4d594bc31726fcc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input A",
+      "steps": [
+        {
+          "command": "InputA"
+        }
+      ]
+    },
+    {
+      "name": "Input B",
+      "steps": [
+        {
+          "command": "InputB"
+        }
+      ]
+    },
+    {
+      "name": "Input C",
+      "steps": [
+        {
+          "command": "InputC"
+        }
+      ]
+    },
+    {
+      "name": "Input D",
+      "steps": [
+        {
+          "command": "InputD"
+        }
+      ]
+    },
+    {
+      "name": "Input E",
+      "steps": [
+        {
+          "command": "InputE"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/VPL-FW41.json"
+    ],
+    "harmony": {
+      "global_device_id": 256123,
+      "device_type": 7,
+      "codeset": "8d8844e21eba0555"
+    }
+  }
+}

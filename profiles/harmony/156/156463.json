@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:156463",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Novatron",
+  "model": "IAMM NTD27HD",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "54bda5edafe8838e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "JukeBox",
+      "steps": [
+        {
+          "command": "InputJukebox"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Novatron/IAMM_NTD27HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 156463,
+      "device_type": 35,
+      "codeset": "b999391e64843528"
+    }
+  }
+}

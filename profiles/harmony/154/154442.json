@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154442",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Wisi",
+  "model": "OR-18",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "7b4a7614ad946898",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Wisi/OR-18.json"
+    ],
+    "harmony": {
+      "global_device_id": 154442,
+      "device_type": 12,
+      "codeset": "979318ed3e7cd7a5"
+    }
+  }
+}

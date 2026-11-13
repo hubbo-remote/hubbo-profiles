@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:88193",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "ST-X302LA",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "4369d32c17cdc5fa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Tuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "CD"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "TapeSwitch"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/ST-X302LA.json"
+    ],
+    "harmony": {
+      "global_device_id": 88193,
+      "device_type": 21,
+      "codeset": "b2e0fb130f87197f"
+    }
+  }
+}

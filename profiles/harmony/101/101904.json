@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101904",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Brandt",
+  "model": "36291T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d88ff29f5ea7ab87",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Brandt/36291T.json"
+    ],
+    "harmony": {
+      "global_device_id": 101904,
+      "device_type": 1,
+      "codeset": "d0c83ec2e16e439a"
+    }
+  }
+}

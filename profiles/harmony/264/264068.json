@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:264068",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "OTT TV BOX",
+  "model": "CS918S",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "24ad2dae0b2e9027",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "File"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "Web",
+      "steps": [
+        {
+          "command": "WebBrowser"
+        }
+      ]
+    },
+    {
+      "name": "App",
+      "steps": [
+        {
+          "command": "App"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/OTT_TV_BOX/CS918S.json"
+    ],
+    "harmony": {
+      "global_device_id": 264068,
+      "device_type": 35,
+      "codeset": "fc1d871a58b62d63"
+    }
+  }
+}

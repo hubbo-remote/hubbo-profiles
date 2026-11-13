@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:178625",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "UPC",
+  "model": "DCI6221",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "1eaf8bcea485fb8e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "UPC",
+      "steps": [
+        {
+          "command": "UPC"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/UPC/DCI6221.json"
+    ],
+    "harmony": {
+      "global_device_id": 178625,
+      "device_type": 18,
+      "codeset": "fd784d114aff3db6"
+    }
+  }
+}

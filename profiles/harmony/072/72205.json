@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:72205",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HT-9900M",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f666654574d1ab3a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    },
+    {
+      "name": "1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HT-9900M.json"
+    ],
+    "harmony": {
+      "global_device_id": 72205,
+      "device_type": 22,
+      "codeset": "d7189be3d49c1a5e"
+    }
+  }
+}

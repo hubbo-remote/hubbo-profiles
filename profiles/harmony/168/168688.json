@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168688",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GrandTec",
+  "model": "GRAND POP 1280S",
+  "kind": "tv_dvr",
+  "platform": "ir",
+  "codeset": "deb630908e6d273a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "Display"
+        }
+      ]
+    },
+    {
+      "name": "Y.Cb.Cr",
+      "steps": [
+        {
+          "command": "Display"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GrandTec/GRAND_POP_1280S.json"
+    ],
+    "harmony": {
+      "global_device_id": 168688,
+      "device_type": 48,
+      "codeset": "7a22e334cf88e143"
+    }
+  }
+}

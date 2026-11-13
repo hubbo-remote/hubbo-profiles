@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176410",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "ZV457MG9",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "d2cafcf5ae9c0834",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/ZV457MG9.json"
+    ],
+    "harmony": {
+      "global_device_id": 176410,
+      "device_type": 47,
+      "codeset": "83bb8ef8b71e0757"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:2568",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Krell",
+  "model": "KAV-250P",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "adbe3237e92c2fc2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "1B",
+      "steps": [
+        {
+          "command": "InputB1"
+        }
+      ]
+    },
+    {
+      "name": "1S",
+      "steps": [
+        {
+          "command": "InputPHS1"
+        }
+      ]
+    },
+    {
+      "name": "2S",
+      "steps": [
+        {
+          "command": "InputS2"
+        }
+      ]
+    },
+    {
+      "name": "3S",
+      "steps": [
+        {
+          "command": "InputS3"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Krell/KAV-250P.json"
+    ],
+    "harmony": {
+      "global_device_id": 2568,
+      "device_type": 5,
+      "codeset": "ca71acfbfb6c958f"
+    }
+  }
+}

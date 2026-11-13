@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148927",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "DVD-SH874",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "971cba32edf5f279",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/DVD-SH874.json"
+    ],
+    "harmony": {
+      "global_device_id": 148927,
+      "device_type": 34,
+      "codeset": "72d7c7c6ff963d70"
+    }
+  }
+}

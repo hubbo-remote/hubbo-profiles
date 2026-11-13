@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58639",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "CMP4202U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e860b44f5c1349e8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB1",
+      "steps": [
+        {
+          "command": "RGB1"
+        }
+      ]
+    },
+    {
+      "name": "RGB2",
+      "steps": [
+        {
+          "command": "RGB2"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "Video1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "Video2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/CMP4202U.json"
+    ],
+    "harmony": {
+      "global_device_id": 58639,
+      "device_type": 13,
+      "codeset": "89bc803338ba5961"
+    }
+  }
+}

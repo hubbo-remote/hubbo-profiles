@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:498447",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MPOW",
+  "model": "BH474A",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3d717e668efc2ee9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MPOW/BH474A.json"
+    ],
+    "harmony": {
+      "global_device_id": 498447,
+      "device_type": 19,
+      "codeset": "6d2e2051d3652709"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "harmony:127398",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "D-RW2",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "37281d07d3a08ccc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "L-1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "L-2",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/D-RW2.json"
+    ],
+    "harmony": {
+      "global_device_id": 127398,
+      "device_type": 34,
+      "codeset": "4ea0b70e2fb43d49"
+    }
+  }
+}

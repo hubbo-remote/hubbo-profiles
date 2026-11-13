@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68683",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "X-MT2000",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "85d8eee3aa91079c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputMono"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/X-MT2000.json"
+    ],
+    "harmony": {
+      "global_device_id": 68683,
+      "device_type": 22,
+      "codeset": "c1e106b3b694cb24"
+    }
+  }
+}

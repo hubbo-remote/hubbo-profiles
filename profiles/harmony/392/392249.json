@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:392249",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lorex",
+  "model": "L23WD800",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "d1b3e688b7b87c12",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lorex/L23WD800.json"
+    ],
+    "harmony": {
+      "global_device_id": 392249,
+      "device_type": 18,
+      "codeset": "adb10d63eb599cea"
+    }
+  }
+}

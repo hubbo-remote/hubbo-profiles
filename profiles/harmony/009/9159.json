@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:9159",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Forte",
+  "model": "F-44",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "80d664d948bf4474",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "HL1",
+      "steps": [
+        {
+          "command": "InputHL1"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Forte/F-44.json"
+    ],
+    "harmony": {
+      "global_device_id": 9159,
+      "device_type": 19,
+      "codeset": "6f9b5f812650d859"
+    }
+  }
+}

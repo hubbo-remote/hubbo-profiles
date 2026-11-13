@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170277",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "AVR-2309",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a05c3da0c2382cb5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOnMain"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOffMain"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV/CBL",
+      "steps": [
+        {
+          "command": "InputTvCbl"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "HDP",
+      "steps": [
+        {
+          "command": "InputHdp"
+        }
+      ]
+    },
+    {
+      "name": "V-Aux",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    },
+    {
+      "name": "CD-R/Tape",
+      "steps": [
+        {
+          "command": "InputCdrTape"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "QuickSelect 1",
+      "steps": [
+        {
+          "command": "QuickSelect1"
+        }
+      ]
+    },
+    {
+      "name": "QuickSelect 2",
+      "steps": [
+        {
+          "command": "QuickSelect2"
+        }
+      ]
+    },
+    {
+      "name": "QuickSelect 3",
+      "steps": [
+        {
+          "command": "QuickSelect3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/AVR-2309.json"
+    ],
+    "harmony": {
+      "global_device_id": 170277,
+      "device_type": 5,
+      "codeset": "517e43d813e1ab63"
+    }
+  }
+}

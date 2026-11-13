@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "harmony:32403",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FR 731",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ddac34326ec92680",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTuner",
+        "hold_ms": 1000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "Vcd",
+      "steps": [
+        {
+          "command": "InputVcd",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "DCC",
+      "steps": [
+        {
+          "command": "InputDcc",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "Vcr 1",
+      "steps": [
+        {
+          "command": "InputVcr1",
+          "hold_ms": 1500
+        }
+      ]
+    },
+    {
+      "name": "Vcr 2",
+      "steps": [
+        {
+          "command": "InputVcr2",
+          "hold_ms": 1500
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FR_731.json"
+    ],
+    "harmony": {
+      "global_device_id": 32403,
+      "device_type": 5,
+      "codeset": "35e3ba53359469c1"
+    }
+  }
+}

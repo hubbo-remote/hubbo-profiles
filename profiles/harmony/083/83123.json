@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:83123",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NAD",
+  "model": "M-25",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9a91d0ad9369595b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NAD/M-25.json"
+    ],
+    "harmony": {
+      "global_device_id": 83123,
+      "device_type": 19,
+      "codeset": "d6ce7ddae0f59640"
+    }
+  }
+}

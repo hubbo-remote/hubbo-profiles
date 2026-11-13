@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:130106",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HT-DL70D",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "0a249d0d406ea859",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HT-DL70D.json"
+    ],
+    "harmony": {
+      "global_device_id": 130106,
+      "device_type": 22,
+      "codeset": "2f874e0fbd6e26b8"
+    }
+  }
+}

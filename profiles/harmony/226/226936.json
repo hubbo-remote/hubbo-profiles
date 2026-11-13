@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226936",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DGTEC",
+  "model": "DG-DAB888R",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "139ed8908aab8d60",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DGTEC/DG-DAB888R.json"
+    ],
+    "harmony": {
+      "global_device_id": 226936,
+      "device_type": 12,
+      "codeset": "c53bdc1bbcf4312b"
+    }
+  }
+}

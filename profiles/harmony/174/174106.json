@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174106",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "42PF5321/10",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e57a1d6b96382ddc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "EXT 2/SVHS2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "EXT 3/SVHS3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "EXT 4",
+      "steps": [
+        {
+          "command": "InputExt3"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/42PF5321_10.json"
+    ],
+    "harmony": {
+      "global_device_id": 174106,
+      "device_type": 1,
+      "codeset": "ae3db034045c0265"
+    }
+  }
+}

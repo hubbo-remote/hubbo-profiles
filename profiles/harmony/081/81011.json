@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:81011",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aiwa",
+  "model": "MX-Z9100M",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "1b3829ed14ed4a1b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape Deck 1",
+      "steps": [
+        {
+          "command": "TAPE1Play"
+        }
+      ]
+    },
+    {
+      "name": "Video 1/DAT",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video2/Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape Deck 2",
+      "steps": [
+        {
+          "command": "TAPE2Play"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aiwa/MX-Z9100M.json"
+    ],
+    "harmony": {
+      "global_device_id": 81011,
+      "device_type": 19,
+      "codeset": "8ea4b6a81f147d43"
+    }
+  }
+}

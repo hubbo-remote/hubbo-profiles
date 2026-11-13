@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:28525",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Meridian",
+  "model": "541",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6187ce92c7291be5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTv"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "cd",
+      "steps": [
+        {
+          "command": "CD"
+        }
+      ]
+    },
+    {
+      "name": "radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "tape",
+      "steps": [
+        {
+          "command": "Tape1"
+        }
+      ]
+    },
+    {
+      "name": "vcr",
+      "steps": [
+        {
+          "command": "VCR1"
+        }
+      ]
+    },
+    {
+      "name": "dvd",
+      "steps": [
+        {
+          "command": "LD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Meridian/541.json"
+    ],
+    "harmony": {
+      "global_device_id": 28525,
+      "device_type": 5,
+      "codeset": "4bdf561140aad074"
+    }
+  }
+}

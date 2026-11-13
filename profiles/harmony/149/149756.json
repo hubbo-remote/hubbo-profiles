@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149756",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Compaq",
+  "model": "SR-5310F",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e489921b5dcb3cf4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Picture",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Compaq/SR-5310F.json"
+    ],
+    "harmony": {
+      "global_device_id": 149756,
+      "device_type": 35,
+      "codeset": "b75b13d267a8780b"
+    }
+  }
+}

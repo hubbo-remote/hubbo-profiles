@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:7734",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "XC 3315C",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "da4f6ef59a1cd9aa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Analog1",
+      "steps": [
+        {
+          "command": "InputAnalog1"
+        }
+      ]
+    },
+    {
+      "name": "Analog2",
+      "steps": [
+        {
+          "command": "InputAnalog2"
+        }
+      ]
+    },
+    {
+      "name": "TTL",
+      "steps": [
+        {
+          "command": "InputTTL"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/XC_3315C.json"
+    ],
+    "harmony": {
+      "global_device_id": 7734,
+      "device_type": 13,
+      "codeset": "cb6c2fe80267af45"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:280953",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CLOUD-IBOX",
+  "model": "Air1000 HD",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "5177f381072beda2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CLOUD-IBOX/Air1000_HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 280953,
+      "device_type": 18,
+      "codeset": "eb0c532546abf303"
+    }
+  }
+}

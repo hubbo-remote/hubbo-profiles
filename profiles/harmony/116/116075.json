@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116075",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "AX-M133",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "a8248a7e43993126",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/AX-M133.json"
+    ],
+    "harmony": {
+      "global_device_id": 116075,
+      "device_type": 21,
+      "codeset": "42df7beb36dfad3a"
+    }
+  }
+}

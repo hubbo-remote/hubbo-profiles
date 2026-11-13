@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:33960",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Elite Screens",
+  "model": "EL-H121H-W",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d3cc9f4f58560714",
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Screen Up",
+      "steps": [
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Stop",
+      "steps": [
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "DirectionDown"
+        }
+      ]
+    },
+    {
+      "name": "Screen Down",
+      "steps": [
+        {
+          "command": "DirectionDown"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Elite_Screens/EL-H121H-W.json"
+    ],
+    "harmony": {
+      "global_device_id": 33960,
+      "device_type": 13,
+      "codeset": "b425dc85e6943cd2"
+    }
+  }
+}

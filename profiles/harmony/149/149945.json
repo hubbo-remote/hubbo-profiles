@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149945",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-BW930",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "0070dcecf918c8de",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "BD/SD",
+      "steps": [
+        {
+          "command": "InputBdSd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-BW930.json"
+    ],
+    "harmony": {
+      "global_device_id": 149945,
+      "device_type": 34,
+      "codeset": "d1051f930e8f9ba6"
+    }
+  }
+}

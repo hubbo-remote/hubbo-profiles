@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174436",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Rapsody",
+  "model": "N35",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "86095610a75fe4ec",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Ndas/F1",
+      "steps": [
+        {
+          "command": "InputNdasF1"
+        }
+      ]
+    },
+    {
+      "name": "Pc/Hdd",
+      "steps": [
+        {
+          "command": "InputPcHdd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Rapsody/N35.json"
+    ],
+    "harmony": {
+      "global_device_id": 174436,
+      "device_type": 35,
+      "codeset": "aeb95fc49f693a2f"
+    }
+  }
+}

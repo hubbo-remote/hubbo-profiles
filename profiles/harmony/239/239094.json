@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:239094",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "UPC",
+  "model": "DCI-52UPC",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "100c5fba542dbe9a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/UPC/DCI-52UPC.json"
+    ],
+    "harmony": {
+      "global_device_id": 239094,
+      "device_type": 18,
+      "codeset": "fff03a55d89ef34a"
+    }
+  }
+}

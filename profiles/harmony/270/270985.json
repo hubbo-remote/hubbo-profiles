@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270985",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "ZS-BTG900",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "9cc2eef3a3171ba8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "AudioIn",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/ZS-BTG900.json"
+    ],
+    "harmony": {
+      "global_device_id": 270985,
+      "device_type": 21,
+      "codeset": "9488c9891a7371f3"
+    }
+  }
+}

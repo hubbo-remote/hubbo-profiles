@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182654",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-XVC11B",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "3e82740a5ec8fea3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-XVC11B.json"
+    ],
+    "harmony": {
+      "global_device_id": 182654,
+      "device_type": 25,
+      "codeset": "436703a08496fb75"
+    }
+  }
+}

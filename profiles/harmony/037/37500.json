@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:37500",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "DVT-6200",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "7b8034467d3d62b0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "Input13"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "CABLE/SAT",
+      "steps": [
+        {
+          "command": "InputCable"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/DVT-6200.json"
+    ],
+    "harmony": {
+      "global_device_id": 37500,
+      "device_type": 22,
+      "codeset": "e9363af3c9deed6e"
+    }
+  }
+}

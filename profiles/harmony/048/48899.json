@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:48899",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "32JF-74H",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4b1afc428d496516",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "Red"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "AV-1 S-Video",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "Green"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "AV-2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "Yellow"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "Front S-Video",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "Blue"
+        },
+        {
+          "command": "Menu"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/32JF-74H.json"
+    ],
+    "harmony": {
+      "global_device_id": 48899,
+      "device_type": 1,
+      "codeset": "5e78bea4e0d3150a"
+    }
+  }
+}

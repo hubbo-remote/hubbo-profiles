@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176854",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "LT-42DV1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3fc8bcb559087d7d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Ext 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Ext 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Ext 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "delay_ms": 100
+        },
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "delay_ms": 100
+        },
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTvVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "delay_ms": 100
+        },
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/LT-42DV1.json"
+    ],
+    "harmony": {
+      "global_device_id": 176854,
+      "device_type": 1,
+      "codeset": "67ad9946ed1fa350"
+    }
+  }
+}

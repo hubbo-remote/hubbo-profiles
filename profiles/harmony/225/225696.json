@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:225696",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marusys",
+  "model": "Vu+ Ultimo",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "c91ea05d2b8ec671",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marusys/Vu_Ultimo.json"
+    ],
+    "harmony": {
+      "global_device_id": 225696,
+      "device_type": 18,
+      "codeset": "656a64df1c9986f0"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "harmony:79150",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Jamo",
+  "model": "i300",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "50de3114ad1f1794",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTv"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Jamo/i300.json"
+    ],
+    "harmony": {
+      "global_device_id": 79150,
+      "device_type": 5,
+      "codeset": "275d96175334e45b"
+    }
+  }
+}

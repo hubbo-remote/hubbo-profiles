@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:280683",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "MDR865H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "7bb39e216d707f5c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD/Ext.HDD",
+      "steps": [
+        {
+          "command": "InputHddExtHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/MDR865H.json"
+    ],
+    "harmony": {
+      "global_device_id": 280683,
+      "device_type": 34,
+      "codeset": "98f8547c678d8e42"
+    }
+  }
+}

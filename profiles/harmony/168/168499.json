@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168499",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NAD",
+  "model": "L75",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6b7468eeacf7c721",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Am/Fm",
+      "steps": [
+        {
+          "command": "InputAMFM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NAD/L75.json"
+    ],
+    "harmony": {
+      "global_device_id": 168499,
+      "device_type": 5,
+      "codeset": "adb4738a7051e201"
+    }
+  }
+}

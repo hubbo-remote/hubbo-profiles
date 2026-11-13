@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:240816",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "D-Box",
+  "model": "DM-7020HD",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "c3d05f7dd93fc12c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/D-Box/DM-7020HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 240816,
+      "device_type": 18,
+      "codeset": "c7d37fc7b8e1f188"
+    }
+  }
+}

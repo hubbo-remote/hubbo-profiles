@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:266885",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "DX326",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "863796e6374a611e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/DX326.json"
+    ],
+    "harmony": {
+      "global_device_id": 266885,
+      "device_type": 7,
+      "codeset": "40b6a6f8a1d8b742"
+    }
+  }
+}

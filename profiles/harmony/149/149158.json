@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149158",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "DV-225MG9",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "0d7478b113e9650a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "VCR"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/DV-225MG9.json"
+    ],
+    "harmony": {
+      "global_device_id": 149158,
+      "device_type": 25,
+      "codeset": "ec0df266dd586abb"
+    }
+  }
+}

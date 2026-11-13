@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:130691",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "RX-F31S",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "545f4d24e536ade7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVR/DVD",
+      "steps": [
+        {
+          "command": "InputDvrDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVDMULTI",
+      "steps": [
+        {
+          "command": "InputDvdMulti"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/RX-F31S.json"
+    ],
+    "harmony": {
+      "global_device_id": 130691,
+      "device_type": 5,
+      "codeset": "846ffb970876e5be"
+    }
+  }
+}

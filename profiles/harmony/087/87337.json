@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:87337",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "ADV-S101",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "aa7f3bc09cf06f42",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "Aux 3",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/ADV-S101.json"
+    ],
+    "harmony": {
+      "global_device_id": 87337,
+      "device_type": 22,
+      "codeset": "474fe302fa1dc909"
+    }
+  }
+}

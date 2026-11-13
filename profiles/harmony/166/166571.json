@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "id": "harmony:166571",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "42LB1DR-UA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ad12f66b81139858",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        }
+      ]
+    },
+    {
+      "name": "Cable",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputRgb"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/42LB1DR-UA.json"
+    ],
+    "harmony": {
+      "global_device_id": 166571,
+      "device_type": 1,
+      "codeset": "a879ff5e510d37d3"
+    }
+  }
+}

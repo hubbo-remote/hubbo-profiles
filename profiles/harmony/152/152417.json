@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:152417",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "YSP-4000",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b0fb5cfebb0e0047",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV/STB",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "AUX 3",
+      "steps": [
+        {
+          "command": "InputAux3"
+        }
+      ]
+    },
+    {
+      "name": "FM/XM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/YSP-4000.json"
+    ],
+    "harmony": {
+      "global_device_id": 152417,
+      "device_type": 5,
+      "codeset": "0215c354d380e59d"
+    }
+  }
+}

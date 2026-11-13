@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:45586",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Allegro",
+  "model": "ABR521",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "989edcbd3e2cc377",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Allegro/ABR521.json"
+    ],
+    "harmony": {
+      "global_device_id": 45586,
+      "device_type": 47,
+      "codeset": "05f716249ef9fb45"
+    }
+  }
+}

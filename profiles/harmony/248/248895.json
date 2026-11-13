@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:248895",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Infocus",
+  "model": "IN8601",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "93736cd06df2b0cb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Infocus/IN8601.json"
+    ],
+    "harmony": {
+      "global_device_id": 248895,
+      "device_type": 7,
+      "codeset": "1155faf108a8821d"
+    }
+  }
+}

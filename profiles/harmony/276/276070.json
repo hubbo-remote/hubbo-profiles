@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:276070",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GPX",
+  "model": "DVR9612HD",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "509b238216571d66",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GPX/DVR9612HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 276070,
+      "device_type": 25,
+      "codeset": "59d5ab5b71b6180f"
+    }
+  }
+}

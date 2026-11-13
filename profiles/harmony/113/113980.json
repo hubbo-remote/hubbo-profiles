@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "id": "harmony:113980",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "29PT9413",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dd5332a512001cf3",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "ChannelUp"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "EXT1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "EXT2",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "EXT3",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "FRONT",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/29PT9413.json"
+    ],
+    "harmony": {
+      "global_device_id": 113980,
+      "device_type": 1,
+      "codeset": "2faf1eb0a0d53c8f"
+    }
+  }
+}

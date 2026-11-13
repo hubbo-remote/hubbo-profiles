@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203673",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "BTM630/05",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "4e54c802a6ffefb4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB/Card",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/BTM630_05.json"
+    ],
+    "harmony": {
+      "global_device_id": 203673,
+      "device_type": 21,
+      "codeset": "44a3bbff2aea31bd"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:91790",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Omni",
+  "model": "DVR-2201",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "1a3fae9f390f563e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RearCVBS",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "DVDplayer",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "CH006-SEVEN",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CH008-ABC",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "CH030-SBS",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "CH033-TEN",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "CH039-NINE",
+      "steps": [
+        {
+          "command": "9"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Omni/DVR-2201.json"
+    ],
+    "harmony": {
+      "global_device_id": 91790,
+      "device_type": 34,
+      "codeset": "13b201b10096a864"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:36534",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "HomeChoice",
+  "model": "Tewin",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "7242a1f8936d9769",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "Select"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/HomeChoice/Tewin.json"
+    ],
+    "harmony": {
+      "global_device_id": 36534,
+      "device_type": 12,
+      "codeset": "1816c2ff33c9e44a"
+    }
+  }
+}

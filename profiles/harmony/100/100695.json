@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:100695",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "PG-6200",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f4657034379b1932",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Component"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/PG-6200.json"
+    ],
+    "harmony": {
+      "global_device_id": 100695,
+      "device_type": 7,
+      "codeset": "1a745d61d8d7fadd"
+    }
+  }
+}

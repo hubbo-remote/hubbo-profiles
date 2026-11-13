@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "harmony:278490",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HW-KM36C",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "23f5ba3c485e2337",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "D.IN",
+      "steps": [
+        {
+          "command": "InputDIn"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputDIn"
+        },
+        {
+          "command": "InputUsbBT"
+        },
+        {
+          "command": "InputUsbBT"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Source"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputDIn"
+        },
+        {
+          "command": "InputUsbBT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HW-KM36C.json"
+    ],
+    "harmony": {
+      "global_device_id": 278490,
+      "device_type": 19,
+      "codeset": "41ae57f686b838dd"
+    }
+  }
+}

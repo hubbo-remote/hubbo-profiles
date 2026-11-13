@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:50167",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "T+A",
+  "model": "PT-820M",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "51243193ef8703d9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/T_A/PT-820M.json"
+    ],
+    "harmony": {
+      "global_device_id": 50167,
+      "device_type": 5,
+      "codeset": "f63704393f641ae6"
+    }
+  }
+}

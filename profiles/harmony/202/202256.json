@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202256",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnat",
+  "model": "MA 800",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "730aff6e1726f74f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "PhonoMM",
+      "steps": [
+        {
+          "command": "InputPhonoMm"
+        }
+      ]
+    },
+    {
+      "name": "PhonoMC",
+      "steps": [
+        {
+          "command": "InputPhonoMc"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnat/MA_800.json"
+    ],
+    "harmony": {
+      "global_device_id": 202256,
+      "device_type": 19,
+      "codeset": "eebcd53fabee26b1"
+    }
+  }
+}

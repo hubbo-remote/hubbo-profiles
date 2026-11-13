@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181257",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KV-M1400E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f7e11cd694bdc8b4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KV-M1400E.json"
+    ],
+    "harmony": {
+      "global_device_id": 181257,
+      "device_type": 1,
+      "codeset": "fa428ae380a20520"
+    }
+  }
+}

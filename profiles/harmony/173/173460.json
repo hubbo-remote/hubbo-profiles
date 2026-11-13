@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173460",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vocopro",
+  "model": "DA-X10 Pro",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "7b58f1ead2b74f76",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CDG",
+      "steps": [
+        {
+          "command": "InputCdg"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vocopro/DA-X10_Pro.json"
+    ],
+    "harmony": {
+      "global_device_id": 173460,
+      "device_type": 19,
+      "codeset": "6f762f6cb3cbb10e"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:8192",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cambridge Soundworks",
+  "model": "Model 88",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "d89657eb2e8c9cde",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cambridge_Soundworks/Model_88.json"
+    ],
+    "harmony": {
+      "global_device_id": 8192,
+      "device_type": 5,
+      "codeset": "6530d5132d5ee183"
+    }
+  }
+}

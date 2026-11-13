@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "harmony:132352",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ILO",
+  "model": "DTV-2794",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8ffc4ce3eea5e6aa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1000
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "AVSF",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "AVSB",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Ant",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Comp",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ILO/DTV-2794.json"
+    ],
+    "harmony": {
+      "global_device_id": 132352,
+      "device_type": 1,
+      "codeset": "2ce844161e120eaa"
+    }
+  }
+}

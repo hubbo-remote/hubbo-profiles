@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "harmony:49040",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nakamichi",
+  "model": "Soundspace 5",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "bd20c1df4f7af64f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "delay_ms": 300
+      },
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 300
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tun",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nakamichi/Soundspace_5.json"
+    ],
+    "harmony": {
+      "global_device_id": 49040,
+      "device_type": 22,
+      "codeset": "a908bf87dbf8192d"
+    }
+  }
+}

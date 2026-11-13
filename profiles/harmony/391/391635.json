@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "harmony:391635",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HW-JM45C/ZA",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ffbd0aeffce5c8bb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "D.IN",
+      "steps": [
+        {
+          "command": "InputDIn"
+        },
+        {
+          "command": "InputDIn"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "Source"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        },
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Source"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputDIn"
+        },
+        {
+          "command": "InputDIn"
+        },
+        {
+          "command": "InputUsbBT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HW-JM45C_ZA.json"
+    ],
+    "harmony": {
+      "global_device_id": 391635,
+      "device_type": 19,
+      "codeset": "4610ce41e2599cae"
+    }
+  }
+}

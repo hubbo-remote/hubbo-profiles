@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "id": "harmony:115846",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "WD-5282",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7d60114ada1fa699",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 20000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Input3"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputComp2"
+        }
+      ]
+    },
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputDtv"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "MONO",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputDtv"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Card1",
+      "steps": [
+        {
+          "command": "InputDtv"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Card2",
+      "steps": [
+        {
+          "command": "InputDtv"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Card3",
+      "steps": [
+        {
+          "command": "InputDtv"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Card4",
+      "steps": [
+        {
+          "command": "InputDtv"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DeviceMenu"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/WD-5282.json"
+    ],
+    "harmony": {
+      "global_device_id": 115846,
+      "device_type": 1,
+      "codeset": "97df49855c477086"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258122",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teufel",
+  "model": "Cinebar 11",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "60b5e2e7689b4db0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "HDMI TV",
+      "steps": [
+        {
+          "command": "InputHdmiTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teufel/Cinebar_11.json"
+    ],
+    "harmony": {
+      "global_device_id": 258122,
+      "device_type": 19,
+      "codeset": "ce6b94ae70f54254"
+    }
+  }
+}

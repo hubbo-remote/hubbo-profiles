@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "harmony:122433",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Braun",
+  "model": "TV3",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "0ca2d64255ceb171",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Braun/TV3.json"
+    ],
+    "harmony": {
+      "global_device_id": 122433,
+      "device_type": 1,
+      "codeset": "c150fe787f8b9808"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:53157",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "SLV-AV100U",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "85fff0d54cd6bc07",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/SLV-AV100U.json"
+    ],
+    "harmony": {
+      "global_device_id": 53157,
+      "device_type": 2,
+      "codeset": "4915e5220628eb8d"
+    }
+  }
+}

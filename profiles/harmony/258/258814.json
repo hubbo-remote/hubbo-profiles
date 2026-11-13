@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258814",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnat",
+  "model": "Sounddeck 400 BTX",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9a4bfe0748205992",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "COAX",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnat/Sounddeck_400_BTX.json"
+    ],
+    "harmony": {
+      "global_device_id": 258814,
+      "device_type": 19,
+      "codeset": "e073ef62c64d5bd8"
+    }
+  }
+}

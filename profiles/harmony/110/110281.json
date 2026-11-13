@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110281",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Microlab",
+  "model": "H-600",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "87973924481bf864",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    },
+    {
+      "name": "Stereo",
+      "steps": [
+        {
+          "command": "InputStereo"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Microlab/H-600.json"
+    ],
+    "harmony": {
+      "global_device_id": 110281,
+      "device_type": 19,
+      "codeset": "62975947d45babd2"
+    }
+  }
+}

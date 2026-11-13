@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:117924",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FW332/22",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "7c92ce4a653a2ea7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FW332_22.json"
+    ],
+    "harmony": {
+      "global_device_id": 117924,
+      "device_type": 21,
+      "codeset": "943238de820b4493"
+    }
+  }
+}

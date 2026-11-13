@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:302444",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "SC-2024 (Zone 3)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "f588dc962ef45050",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT/CBL",
+      "steps": [
+        {
+          "command": "InputSatCbl"
+        }
+      ]
+    },
+    {
+      "name": "DVR/BDR",
+      "steps": [
+        {
+          "command": "InputDvrBdr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "BT Audio",
+      "steps": [
+        {
+          "command": "InputBTAudio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/SC-2024_Zone_3.json"
+    ],
+    "harmony": {
+      "global_device_id": 302444,
+      "device_type": 5,
+      "codeset": "9f47910a261fbd60"
+    }
+  }
+}

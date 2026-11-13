@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "harmony:83805",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Leadtek",
+  "model": "Winfast TV USB",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "deb630908e6d273a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Leadtek/Winfast_TV_USB.json"
+    ],
+    "harmony": {
+      "global_device_id": 83805,
+      "device_type": 18,
+      "codeset": "7a22e334cf88e143"
+    }
+  }
+}

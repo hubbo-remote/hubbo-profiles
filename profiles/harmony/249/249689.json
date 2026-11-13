@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:249689",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "DNP-F109",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "0ba20a5c7da0e6b1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "Music Server",
+      "steps": [
+        {
+          "command": "InputMusicServer"
+        }
+      ]
+    },
+    {
+      "name": "Online Music",
+      "steps": [
+        {
+          "command": "InputOnlineMusic"
+        }
+      ]
+    },
+    {
+      "name": "iPod/USB",
+      "steps": [
+        {
+          "command": "InputIpodUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/DNP-F109.json"
+    ],
+    "harmony": {
+      "global_device_id": 249689,
+      "device_type": 33,
+      "codeset": "5ebc57620223362b"
+    }
+  }
+}

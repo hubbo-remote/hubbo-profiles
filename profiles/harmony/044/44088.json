@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:44088",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Linn",
+  "model": "Kinos",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b1960be1f7192084",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Linn/Kinos.json"
+    ],
+    "harmony": {
+      "global_device_id": 44088,
+      "device_type": 19,
+      "codeset": "e4831635e0003d4d"
+    }
+  }
+}

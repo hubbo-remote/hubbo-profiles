@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172560",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Accurian",
+  "model": "AVR-5048",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "c9ebe4288999c68b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "MP3-1",
+      "steps": [
+        {
+          "command": "InputMP31"
+        }
+      ]
+    },
+    {
+      "name": "MP3-2",
+      "steps": [
+        {
+          "command": "InputMP32"
+        }
+      ]
+    },
+    {
+      "name": "Sirius",
+      "steps": [
+        {
+          "command": "InputSirius"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Accurian/AVR-5048.json"
+    ],
+    "harmony": {
+      "global_device_id": 172560,
+      "device_type": 5,
+      "codeset": "baa3401630082ab7"
+    }
+  }
+}

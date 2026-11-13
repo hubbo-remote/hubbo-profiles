@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270168",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Edifier",
+  "model": "S760D",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4484d58582e23c96",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Edifier/S760D.json"
+    ],
+    "harmony": {
+      "global_device_id": 270168,
+      "device_type": 19,
+      "codeset": "ab7a33782972d728"
+    }
+  }
+}

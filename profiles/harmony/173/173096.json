@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173096",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Infocus",
+  "model": "IN-37",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "3ab474929e12134a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Source1",
+      "steps": [
+        {
+          "command": "InputSource1"
+        }
+      ]
+    },
+    {
+      "name": "Source2",
+      "steps": [
+        {
+          "command": "InputSource2"
+        }
+      ]
+    },
+    {
+      "name": "Source3",
+      "steps": [
+        {
+          "command": "InputSource3"
+        }
+      ]
+    },
+    {
+      "name": "Source4",
+      "steps": [
+        {
+          "command": "InputSource4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Infocus/IN-37.json"
+    ],
+    "harmony": {
+      "global_device_id": 173096,
+      "device_type": 7,
+      "codeset": "d1208563495a40d8"
+    }
+  }
+}

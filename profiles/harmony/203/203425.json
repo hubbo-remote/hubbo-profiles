@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203425",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Gateway",
+  "model": "DX4300-05",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "4217385c0302b5c5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Gateway/DX4300-05.json"
+    ],
+    "harmony": {
+      "global_device_id": 203425,
+      "device_type": 35,
+      "codeset": "b4d475ac901cc0ac"
+    }
+  }
+}

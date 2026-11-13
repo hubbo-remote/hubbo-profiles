@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:231077",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "rlc2253",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "76772ffdb7695e83",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/rlc2253.json"
+    ],
+    "harmony": {
+      "global_device_id": 231077,
+      "device_type": 1,
+      "codeset": "3b9968c452e8cc26"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216435",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MCM118B",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "9ef9146db2f99151",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MCM118B.json"
+    ],
+    "harmony": {
+      "global_device_id": 216435,
+      "device_type": 21,
+      "codeset": "19a9bec3c224ec02"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68328",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "United",
+  "model": "HTS-4096",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "bc069530ac446071",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DIGITAL1",
+      "steps": [
+        {
+          "command": "InputDigital1"
+        }
+      ]
+    },
+    {
+      "name": "TIGITAL2",
+      "steps": [
+        {
+          "command": "InputDigital2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/United/HTS-4096.json"
+    ],
+    "harmony": {
+      "global_device_id": 68328,
+      "device_type": 21,
+      "codeset": "857ab08e78b7a88f"
+    }
+  }
+}

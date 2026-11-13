@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212496",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "MCD-83",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "85aba97598057bd9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/MCD-83.json"
+    ],
+    "harmony": {
+      "global_device_id": 212496,
+      "device_type": 21,
+      "codeset": "d26a6d3e70fea455"
+    }
+  }
+}

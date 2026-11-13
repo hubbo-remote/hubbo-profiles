@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:239509",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Seiki",
+  "model": "SB201C",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9d7d298175dfd865",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "COAX",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Seiki/SB201C.json"
+    ],
+    "harmony": {
+      "global_device_id": 239509,
+      "device_type": 19,
+      "codeset": "4ef0bccce6054232"
+    }
+  }
+}

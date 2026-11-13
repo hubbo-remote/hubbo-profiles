@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:225437",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TVIX Xroid A1",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "b97c7d28cdf3667f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TVIX_Xroid_A1.json"
+    ],
+    "harmony": {
+      "global_device_id": 225437,
+      "device_type": 35,
+      "codeset": "9b24672742de987e"
+    }
+  }
+}

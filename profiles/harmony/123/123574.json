@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123574",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sungoo",
+  "model": "MD-32242",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "066a26c6d2dec7e3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Television",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV.SV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "SCART1",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "SCART2",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sungoo/MD-32242.json"
+    ],
+    "harmony": {
+      "global_device_id": 123574,
+      "device_type": 1,
+      "codeset": "205f98bb48599c7c"
+    }
+  }
+}

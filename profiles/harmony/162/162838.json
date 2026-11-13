@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162838",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HSB4383",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "5ad45f45257396f1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AudioSource",
+      "steps": [
+        {
+          "command": "InputAudioSource"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Mp3Link",
+      "steps": [
+        {
+          "command": "InputMp3Link"
+        }
+      ]
+    },
+    {
+      "name": "Usb",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HSB4383.json"
+    ],
+    "harmony": {
+      "global_device_id": 162838,
+      "device_type": 22,
+      "codeset": "cc44afad53da42bd"
+    }
+  }
+}

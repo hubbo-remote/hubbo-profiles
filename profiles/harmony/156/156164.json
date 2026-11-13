@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:156164",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DNT",
+  "model": "IPMICRO",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f8926dd74cc5592e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "iRadio",
+      "steps": [
+        {
+          "command": "InputiRadio"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "SD/MMC",
+      "steps": [
+        {
+          "command": "InputSDMMC"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "UPNP",
+      "steps": [
+        {
+          "command": "InputUPNP"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DNT/IPMICRO.json"
+    ],
+    "harmony": {
+      "global_device_id": 156164,
+      "device_type": 22,
+      "codeset": "948a34e056af24f9"
+    }
+  }
+}

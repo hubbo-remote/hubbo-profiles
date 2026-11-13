@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12316",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Impact Acoustics",
+  "model": "Digital A/V Selector",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "361053dfc2ea91b2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Impact_Acoustics/Digital_A_V_Selector.json"
+    ],
+    "harmony": {
+      "global_device_id": 12316,
+      "device_type": 30,
+      "codeset": "4ae8d5d851bdc93d"
+    }
+  }
+}

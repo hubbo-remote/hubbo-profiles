@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:82010",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FW66/21B",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "88df40ceb9321de9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTuner"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tape2",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "DCC",
+      "steps": [
+        {
+          "command": "InputDcc"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FW66_21B.json"
+    ],
+    "harmony": {
+      "global_device_id": 82010,
+      "device_type": 21,
+      "codeset": "a51d4554cc4f5157"
+    }
+  }
+}

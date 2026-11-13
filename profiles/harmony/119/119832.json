@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:119832",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "VTC-CD-1031",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0af96ba1c235cae9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/VTC-CD-1031.json"
+    ],
+    "harmony": {
+      "global_device_id": 119832,
+      "device_type": 21,
+      "codeset": "9a6adbbed3d62b5f"
+    }
+  }
+}

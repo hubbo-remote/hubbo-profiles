@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57778",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "DT-585NS",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "cf30cd3992b0e741",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/DT-585NS.json"
+    ],
+    "harmony": {
+      "global_device_id": 57778,
+      "device_type": 25,
+      "codeset": "743d82dc0d57feca"
+    }
+  }
+}

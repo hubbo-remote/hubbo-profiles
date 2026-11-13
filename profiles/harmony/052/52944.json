@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:52944",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Atec",
+  "model": "AL-181N",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "490c87d2bb2e42f5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 5000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Atec/AL-181N.json"
+    ],
+    "harmony": {
+      "global_device_id": 52944,
+      "device_type": 1,
+      "codeset": "1e2c2340ea238ab0"
+    }
+  }
+}

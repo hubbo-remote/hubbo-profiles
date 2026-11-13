@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:1342",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Runco",
+  "model": "PL-42CX",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2831c1a07dd0494c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Video"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "SVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Component"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "ComponentHD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Runco/PL-42CX.json"
+    ],
+    "harmony": {
+      "global_device_id": 1342,
+      "device_type": 13,
+      "codeset": "e464c9b7e5a388a1"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141154",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "XL-DK225",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0dbd03ef66f22e20",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/XL-DK225.json"
+    ],
+    "harmony": {
+      "global_device_id": 141154,
+      "device_type": 21,
+      "codeset": "51b4ec2dbecbfb40"
+    }
+  }
+}

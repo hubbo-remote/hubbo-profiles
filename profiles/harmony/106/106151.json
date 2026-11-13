@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:106151",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "Altima 1600",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "d612064114f85f59",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "Tape/AUX",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/Altima_1600.json"
+    ],
+    "harmony": {
+      "global_device_id": 106151,
+      "device_type": 21,
+      "codeset": "fbfb455697b700d3"
+    }
+  }
+}

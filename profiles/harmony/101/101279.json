@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101279",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ILO",
+  "model": "ILO-23HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e7deee9ec491b2c6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "Mute"
+        }
+      ]
+    },
+    {
+      "name": "Composite 1",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Composite 2",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "6"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ILO/ILO-23HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 101279,
+      "device_type": 1,
+      "codeset": "bc885742c5be5bdc"
+    }
+  }
+}

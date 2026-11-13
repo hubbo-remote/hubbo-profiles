@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:275608",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Argon",
+  "model": "Octave 4A",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "afe769f03ac2cc39",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "Aux (3.5 Mini Jack)",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Argon/Octave_4A.json"
+    ],
+    "harmony": {
+      "global_device_id": 275608,
+      "device_type": 19,
+      "codeset": "d37b4a5251c3dea6"
+    }
+  }
+}

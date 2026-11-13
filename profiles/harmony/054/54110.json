@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "harmony:54110",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-DD888EU",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "3ae9c549504482b4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-DD888EU.json"
+    ],
+    "harmony": {
+      "global_device_id": 54110,
+      "device_type": 2,
+      "codeset": "b9d09e9ef79a99ff"
+    }
+  }
+}

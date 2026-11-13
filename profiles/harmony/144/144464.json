@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144464",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMRES30VS",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "fdb03e28d57cd044",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "VHS"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMRES30VS.json"
+    ],
+    "harmony": {
+      "global_device_id": 144464,
+      "device_type": 47,
+      "codeset": "bf791f269fd7aa3d"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:223301",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CTX",
+  "model": "MS3400V",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3287440bd14587b0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/AV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-VHS",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CTX/MS3400V.json"
+    ],
+    "harmony": {
+      "global_device_id": 223301,
+      "device_type": 13,
+      "codeset": "3b294f7a1c3df0b3"
+    }
+  }
+}

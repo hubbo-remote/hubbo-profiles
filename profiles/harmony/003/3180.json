@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:3180",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sylvania",
+  "model": "VC4040AT01",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "fe9b4e646d924700",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "VHF",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "UHF",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sylvania/VC4040AT01.json"
+    ],
+    "harmony": {
+      "global_device_id": 3180,
+      "device_type": 2,
+      "codeset": "b133ef525611abad"
+    }
+  }
+}

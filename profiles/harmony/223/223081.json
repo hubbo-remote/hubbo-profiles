@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:223081",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "VTCD-1200",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "2e7ce1a96e0b7177",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/VTCD-1200.json"
+    ],
+    "harmony": {
+      "global_device_id": 223081,
+      "device_type": 21,
+      "codeset": "c52b4be26873e044"
+    }
+  }
+}

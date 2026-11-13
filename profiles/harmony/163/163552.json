@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163552",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "VT-491",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "57459c06f56523cb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Computer 1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer 2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/VT-491.json"
+    ],
+    "harmony": {
+      "global_device_id": 163552,
+      "device_type": 7,
+      "codeset": "c4c81a6e4621e44f"
+    }
+  }
+}

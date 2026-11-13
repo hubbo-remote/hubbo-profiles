@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:86196",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vivanco",
+  "model": "SBX-99",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "701c4602d008f6e2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DVB-T",
+      "steps": [
+        {
+          "command": "InputDVBT"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vivanco/SBX-99.json"
+    ],
+    "harmony": {
+      "global_device_id": 86196,
+      "device_type": 30,
+      "codeset": "cf8a265c690b851d"
+    }
+  }
+}

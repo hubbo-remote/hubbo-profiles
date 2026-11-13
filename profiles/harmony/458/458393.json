@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:458393",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Saxx",
+  "model": "AS30",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0c95e811c79d3eb9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "Bluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Saxx/AS30.json"
+    ],
+    "harmony": {
+      "global_device_id": 458393,
+      "device_type": 19,
+      "codeset": "2f4c0ed7059dfb94"
+    }
+  }
+}

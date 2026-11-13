@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:109387",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "32WX66EW",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "efccc0a7cfbe4c27",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "DirectionUp"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "DirectionDown"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "DirectionRight"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/32WX66EW.json"
+    ],
+    "harmony": {
+      "global_device_id": 109387,
+      "device_type": 37,
+      "codeset": "c08fdc61e8eaab82"
+    }
+  }
+}

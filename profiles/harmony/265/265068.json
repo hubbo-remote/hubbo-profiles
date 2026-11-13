@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265068",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "3M",
+  "model": "SCP712",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "8b1493e21393030d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/3M/SCP712.json"
+    ],
+    "harmony": {
+      "global_device_id": 265068,
+      "device_type": 7,
+      "codeset": "c2f9d3687aaec59f"
+    }
+  }
+}

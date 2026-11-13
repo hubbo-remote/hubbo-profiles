@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:228809",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KPN",
+  "model": "VIP1853",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "e4e41a12ed999b2c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KPN/VIP1853.json"
+    ],
+    "harmony": {
+      "global_device_id": 228809,
+      "device_type": 18,
+      "codeset": "e3287170dd8ab770"
+    }
+  }
+}

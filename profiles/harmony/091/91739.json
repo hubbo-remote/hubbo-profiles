@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:91739",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sonab",
+  "model": "SR-3650",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "90e14616bab14564",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sonab/SR-3650.json"
+    ],
+    "harmony": {
+      "global_device_id": 91739,
+      "device_type": 5,
+      "codeset": "ed93121eb11b1733"
+    }
+  }
+}

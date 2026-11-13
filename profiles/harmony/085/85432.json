@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:85432",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "VTC-CD/VU 4085",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "b702dee5af3d6245",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "CDPlay"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "TAPE1Play"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/VTC-CD_VU_4085.json"
+    ],
+    "harmony": {
+      "global_device_id": 85432,
+      "device_type": 21,
+      "codeset": "e2cd24e55bba2931"
+    }
+  }
+}

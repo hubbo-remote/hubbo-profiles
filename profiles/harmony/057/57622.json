@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57622",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "RX-D702",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "66c9937f51467b8d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DBS",
+      "steps": [
+        {
+          "command": "InputDbs"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVR/DVD",
+      "steps": [
+        {
+          "command": "InputDvrDvd"
+        }
+      ]
+    },
+    {
+      "name": "Sirius",
+      "steps": [
+        {
+          "command": "InputSirius"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputFmAm"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/RX-D702.json"
+    ],
+    "harmony": {
+      "global_device_id": 57622,
+      "device_type": 5,
+      "codeset": "226ebfc15505fe61"
+    }
+  }
+}

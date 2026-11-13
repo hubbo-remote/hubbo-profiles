@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180008",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "MD-30022",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dc83bd261b1c4e90",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "AV/SV",
+      "steps": [
+        {
+          "command": "InputAVSV"
+        }
+      ]
+    },
+    {
+      "name": "Scart1",
+      "steps": [
+        {
+          "command": "InputScart1"
+        }
+      ]
+    },
+    {
+      "name": "Scart2",
+      "steps": [
+        {
+          "command": "InputScart2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/MD-30022.json"
+    ],
+    "harmony": {
+      "global_device_id": 180008,
+      "device_type": 1,
+      "codeset": "ada8784172f0d41e"
+    }
+  }
+}

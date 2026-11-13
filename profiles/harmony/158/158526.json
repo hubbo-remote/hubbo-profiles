@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158526",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Noontec",
+  "model": "GV3731",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "dac9ae41d2c8999a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ALL",
+      "steps": [
+        {
+          "command": "InputAll"
+        }
+      ]
+    },
+    {
+      "name": "MUSIC",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "PHOTOS",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    },
+    {
+      "name": "MOVIES",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Noontec/GV3731.json"
+    ],
+    "harmony": {
+      "global_device_id": 158526,
+      "device_type": 35,
+      "codeset": "975f9e98b9af3eab"
+    }
+  }
+}

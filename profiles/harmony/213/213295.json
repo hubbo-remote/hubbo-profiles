@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:213295",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "SP-THBA3F",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "8441ef38a99dbd48",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Digital 1",
+      "steps": [
+        {
+          "command": "InputDigital1"
+        }
+      ]
+    },
+    {
+      "name": "Digital 2",
+      "steps": [
+        {
+          "command": "InputDigital2"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/SP-THBA3F.json"
+    ],
+    "harmony": {
+      "global_device_id": 213295,
+      "device_type": 19,
+      "codeset": "74dad3e54a231dfe"
+    }
+  }
+}

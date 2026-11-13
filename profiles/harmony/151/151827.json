@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:151827",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Theater Innovations",
+  "model": "TI-6000T",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b7f9393d14045bcf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Theater_Innovations/TI-6000T.json"
+    ],
+    "harmony": {
+      "global_device_id": 151827,
+      "device_type": 5,
+      "codeset": "5bd0a6395ae88fdc"
+    }
+  }
+}

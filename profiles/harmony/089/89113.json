@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:89113",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVP-3055V/02",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "f6a58db48fa3ab94",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVP-3055V_02.json"
+    ],
+    "harmony": {
+      "global_device_id": 89113,
+      "device_type": 25,
+      "codeset": "d5e79a382588bb2d"
+    }
+  }
+}

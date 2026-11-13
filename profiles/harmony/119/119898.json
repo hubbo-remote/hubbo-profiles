@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:119898",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zapmaster",
+  "model": "PVR-SCI",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "abb7b3b609ec773d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "F1"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zapmaster/PVR-SCI.json"
+    ],
+    "harmony": {
+      "global_device_id": 119898,
+      "device_type": 18,
+      "codeset": "41fc4f1a9a606ad5"
+    }
+  }
+}

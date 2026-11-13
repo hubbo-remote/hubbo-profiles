@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:56098",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sansui",
+  "model": "SHT-13A",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0656891f813ef86a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "Volume"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD-In",
+      "steps": [
+        {
+          "command": "Mute"
+        },
+        {
+          "command": "VolumeMinus"
+        },
+        {
+          "command": "Volume"
+        },
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "TV-In",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Tape In",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "AC-3 In",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sansui/SHT-13A.json"
+    ],
+    "harmony": {
+      "global_device_id": 56098,
+      "device_type": 19,
+      "codeset": "169d426795458690"
+    }
+  }
+}

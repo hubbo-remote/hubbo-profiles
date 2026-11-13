@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148674",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Gran Prix",
+  "model": "STR765 HDD",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "abb7b3b609ec773d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Gran_Prix/STR765_HDD.json"
+    ],
+    "harmony": {
+      "global_device_id": 148674,
+      "device_type": 18,
+      "codeset": "41fc4f1a9a606ad5"
+    }
+  }
+}

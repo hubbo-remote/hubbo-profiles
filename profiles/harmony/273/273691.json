@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273691",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "H478A",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "aa643d37ccfc81c0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/H478A.json"
+    ],
+    "harmony": {
+      "global_device_id": 273691,
+      "device_type": 7,
+      "codeset": "6823c3da8f275cf6"
+    }
+  }
+}

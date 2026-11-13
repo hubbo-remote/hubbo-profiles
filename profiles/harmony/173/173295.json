@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173295",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Polaroid",
+  "model": "FLM-3201",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "fb4553645e3a1a00",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "RF",
+      "steps": [
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr1",
+      "steps": [
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr2",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Polaroid/FLM-3201.json"
+    ],
+    "harmony": {
+      "global_device_id": 173295,
+      "device_type": 1,
+      "codeset": "584830529e041d6f"
+    }
+  }
+}

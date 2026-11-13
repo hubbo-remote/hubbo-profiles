@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:30803",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sonance",
+  "model": "dab1",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "abd78941087e2d09",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "Source1"
+      }
+    ],
+    "off": [
+      {
+        "command": "ZoneOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Source1",
+      "steps": [
+        {
+          "command": "Source1"
+        }
+      ]
+    },
+    {
+      "name": "Source2",
+      "steps": [
+        {
+          "command": "Source2"
+        }
+      ]
+    },
+    {
+      "name": "Source3",
+      "steps": [
+        {
+          "command": "Source3"
+        }
+      ]
+    },
+    {
+      "name": "Source4",
+      "steps": [
+        {
+          "command": "Source4"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sonance/dab1.json"
+    ],
+    "harmony": {
+      "global_device_id": 30803,
+      "device_type": 5,
+      "codeset": "35cb5a729b421267"
+    }
+  }
+}

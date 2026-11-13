@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "harmony:107056",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTS-9800/12",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "df06642233fb2fe8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "TUNER FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TUNER AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "AUX DIGI",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTS-9800_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 107056,
+      "device_type": 22,
+      "codeset": "c00b46dc385454ea"
+    }
+  }
+}

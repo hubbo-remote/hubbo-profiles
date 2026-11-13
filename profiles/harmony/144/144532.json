@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144532",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Digital Optical",
+  "model": "SW200",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "59544261ca0d85ba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Digital_Optical/SW200.json"
+    ],
+    "harmony": {
+      "global_device_id": 144532,
+      "device_type": 30,
+      "codeset": "420d4d80daca0ee4"
+    }
+  }
+}

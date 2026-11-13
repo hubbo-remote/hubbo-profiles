@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:425592",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "Bar Studio",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d17c861711d66f42",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/Bar_Studio.json"
+    ],
+    "harmony": {
+      "global_device_id": 425592,
+      "device_type": 19,
+      "codeset": "5d68f04b7115678d"
+    }
+  }
+}

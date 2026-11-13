@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:71137",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CAV",
+  "model": "AVR-8",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "c158926d441ba00a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "5.1 CH",
+      "steps": [
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CAV/AVR-8.json"
+    ],
+    "harmony": {
+      "global_device_id": 71137,
+      "device_type": 5,
+      "codeset": "d29df4f23000a94e"
+    }
+  }
+}

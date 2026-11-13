@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258839",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Jamo",
+  "model": "Torsten",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "94bc89bb18f9f087",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "AnalogRCA",
+      "steps": [
+        {
+          "command": "InputAnalogRca"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Jamo/Torsten.json"
+    ],
+    "harmony": {
+      "global_device_id": 258839,
+      "device_type": 19,
+      "codeset": "afe7097367ca8b1d"
+    }
+  }
+}

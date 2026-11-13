@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:54304",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lemon",
+  "model": "030-CI",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "415f32838ce2c7f9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lemon/030-CI.json"
+    ],
+    "harmony": {
+      "global_device_id": 54304,
+      "device_type": 16,
+      "codeset": "3d598413fcdf081b"
+    }
+  }
+}

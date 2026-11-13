@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:200689",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Electrohome",
+  "model": "20EV701B",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "a5d2cf75f169229e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "TvDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "VCR"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    },
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Electrohome/20EV701B.json"
+    ],
+    "harmony": {
+      "global_device_id": 200689,
+      "device_type": 37,
+      "codeset": "5069f7254d44d287"
+    }
+  }
+}

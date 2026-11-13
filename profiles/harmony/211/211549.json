@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211549",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "RDR-VX410 (AU2)",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "858ab87a4fc5ea2f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "VCR"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/RDR-VX410_AU2.json"
+    ],
+    "harmony": {
+      "global_device_id": 211549,
+      "device_type": 47,
+      "codeset": "71b68e3338d28cdd"
+    }
+  }
+}

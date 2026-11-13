@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:21099",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "DTH-7770",
+  "kind": "home_theater_vcr",
+  "platform": "ir",
+  "codeset": "2269fb01f85b3cc7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/DTH-7770.json"
+    ],
+    "harmony": {
+      "global_device_id": 21099,
+      "device_type": 32,
+      "codeset": "5016aa498ae60ad1"
+    }
+  }
+}

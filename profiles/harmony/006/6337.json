@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:6337",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "ST-JX661",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0690b5d2cf5c8ba4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape/Md",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Tv/Ld",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/ST-JX661.json"
+    ],
+    "harmony": {
+      "global_device_id": 6337,
+      "device_type": 5,
+      "codeset": "40f9866b0ffcef4a"
+    }
+  }
+}

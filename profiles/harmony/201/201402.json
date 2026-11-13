@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201402",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "AS-540",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "9ac398fd795b77bb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/AS-540.json"
+    ],
+    "harmony": {
+      "global_device_id": 201402,
+      "device_type": 21,
+      "codeset": "32d5514c2b92f31b"
+    }
+  }
+}

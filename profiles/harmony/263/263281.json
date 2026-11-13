@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263281",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "CB1000",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "4b586aafdf835c6a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/CB1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 263281,
+      "device_type": 47,
+      "codeset": "411493aa70622c5e"
+    }
+  }
+}

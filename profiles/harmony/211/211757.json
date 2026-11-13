@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211757",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "AZ1850",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "4fa86006ce8f3596",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/AZ1850.json"
+    ],
+    "harmony": {
+      "global_device_id": 211757,
+      "device_type": 21,
+      "codeset": "72b5a225a6a7ea23"
+    }
+  }
+}

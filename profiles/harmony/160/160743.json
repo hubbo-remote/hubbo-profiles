@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:160743",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HSB4352/12",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "60cde215ee4ff839",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux/AvIN",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Mp3Link",
+      "steps": [
+        {
+          "command": "InputMp3Link"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HSB4352_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 160743,
+      "device_type": 22,
+      "codeset": "4b8a6dacb7e96ce0"
+    }
+  }
+}

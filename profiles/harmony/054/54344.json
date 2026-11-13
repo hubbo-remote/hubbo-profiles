@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "harmony:54344",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HDRW725H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "795347eab3d0282f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Ext 1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Ext 2",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Ext 3",
+      "steps": [
+        {
+          "command": "CAM"
+        }
+      ]
+    },
+    {
+      "name": "Cam 1",
+      "steps": [
+        {
+          "command": "CAM"
+        }
+      ]
+    },
+    {
+      "name": "Cam 2",
+      "steps": [
+        {
+          "command": "CAM"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "Cam 3",
+      "steps": [
+        {
+          "command": "CAM"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HDRW725H.json"
+    ],
+    "harmony": {
+      "global_device_id": 54344,
+      "device_type": 34,
+      "codeset": "789aa3adc2e7a236"
+    }
+  }
+}

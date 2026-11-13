@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:131005",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SpeaKa",
+  "model": "2084E",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "21522540b2d4b32c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Sat",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputCable"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Aux1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SpeaKa/2084E.json"
+    ],
+    "harmony": {
+      "global_device_id": 131005,
+      "device_type": 30,
+      "codeset": "a13199f0d8ddb30d"
+    }
+  }
+}

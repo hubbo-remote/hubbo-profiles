@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "id": "harmony:92089",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "QPVision",
+  "model": "QPV-37HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6acb0f81bd6796af",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Scart1",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Scart2",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "S-video/AV",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "7"
+        }
+      ]
+    },
+    {
+      "name": "DV1",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "8"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/QPVision/QPV-37HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 92089,
+      "device_type": 1,
+      "codeset": "22c3fa2723aed8f8"
+    }
+  }
+}

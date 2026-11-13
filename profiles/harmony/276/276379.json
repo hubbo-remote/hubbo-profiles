@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "id": "harmony:276379",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "55PUT4900",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e246aeec72113627",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 24000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "CVBS",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/55PUT4900.json"
+    ],
+    "harmony": {
+      "global_device_id": 276379,
+      "device_type": 1,
+      "codeset": "9900179aaa168f47"
+    }
+  }
+}

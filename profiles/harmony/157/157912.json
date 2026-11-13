@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157912",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Silva Schneider",
+  "model": "DHR7260",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "acbc0ea630473798",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Silva_Schneider/DHR7260.json"
+    ],
+    "harmony": {
+      "global_device_id": 157912,
+      "device_type": 34,
+      "codeset": "0a8c426a52be7a71"
+    }
+  }
+}

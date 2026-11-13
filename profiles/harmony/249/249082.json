@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:249082",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nubert",
+  "model": "Test201",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4c614ee6138f34c0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nubert/Test201.json"
+    ],
+    "harmony": {
+      "global_device_id": 249082,
+      "device_type": 1,
+      "codeset": "ecb78adb7c0a0362"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202620",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-E95HEB",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "023ef9e9e8930b01",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "SD/PC",
+      "steps": [
+        {
+          "command": "InputSdPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-E95HEB.json"
+    ],
+    "harmony": {
+      "global_device_id": 202620,
+      "device_type": 34,
+      "codeset": "ab676e1f8cf78b93"
+    }
+  }
+}

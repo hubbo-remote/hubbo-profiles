@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182072",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "RDR-HXD870",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "2cfcfe5e3483879e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/RDR-HXD870.json"
+    ],
+    "harmony": {
+      "global_device_id": 182072,
+      "device_type": 34,
+      "codeset": "7d724efd1b37aa8e"
+    }
+  }
+}

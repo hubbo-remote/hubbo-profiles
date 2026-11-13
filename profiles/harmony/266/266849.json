@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:266849",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "MDR-557H/F7",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "8c8b51594291294c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Dot"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/MDR-557H_F7.json"
+    ],
+    "harmony": {
+      "global_device_id": 266849,
+      "device_type": 34,
+      "codeset": "8b771e85ef171ef0"
+    }
+  }
+}

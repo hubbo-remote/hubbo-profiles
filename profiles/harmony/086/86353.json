@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:86353",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LH-CX247W",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "e224fee29c6130e4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LH-CX247W.json"
+    ],
+    "harmony": {
+      "global_device_id": 86353,
+      "device_type": 25,
+      "codeset": "762ed391236158a6"
+    }
+  }
+}

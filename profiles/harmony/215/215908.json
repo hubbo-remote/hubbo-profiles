@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:215908",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "HiMedia",
+  "model": "HD800B",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "91369ea6d785a773",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "steps": [
+        {
+          "command": "InputCard"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/HiMedia/HD800B.json"
+    ],
+    "harmony": {
+      "global_device_id": 215908,
+      "device_type": 35,
+      "codeset": "c72d91d38e42554e"
+    }
+  }
+}

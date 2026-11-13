@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "harmony:31403",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SVA",
+  "model": "EV-1703",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dd5332a512001cf3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "PP"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "PP"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "PP"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "PP"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SVA/EV-1703.json"
+    ],
+    "harmony": {
+      "global_device_id": 31403,
+      "device_type": 1,
+      "codeset": "2faf1eb0a0d53c8f"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:277000",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sunbeam",
+  "model": "BSB-2005",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "4c79ad419b0e391f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sunbeam/BSB-2005.json"
+    ],
+    "harmony": {
+      "global_device_id": 277000,
+      "device_type": 5,
+      "codeset": "903b31aa4cea17d0"
+    }
+  }
+}

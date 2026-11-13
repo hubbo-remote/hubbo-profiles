@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "harmony:3130",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "FS68V81S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "13a320c23cf842e0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Dvd1/Hd1",
+      "steps": [
+        {
+          "command": "DvdHd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/FS68V81S.json"
+    ],
+    "harmony": {
+      "global_device_id": 3130,
+      "device_type": 13,
+      "codeset": "4f319005b7189ff9"
+    }
+  }
+}

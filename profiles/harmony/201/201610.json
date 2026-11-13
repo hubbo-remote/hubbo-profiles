@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201610",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HT-P10K",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "e1ed7725b3f32b24",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HT-P10K.json"
+    ],
+    "harmony": {
+      "global_device_id": 201610,
+      "device_type": 22,
+      "codeset": "9f8a09fb7beb24f9"
+    }
+  }
+}

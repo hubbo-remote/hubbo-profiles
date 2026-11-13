@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273603",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR3385V",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "653a1c9d47ec4afc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR3385V.json"
+    ],
+    "harmony": {
+      "global_device_id": 273603,
+      "device_type": 47,
+      "codeset": "bdd22601ed457128"
+    }
+  }
+}

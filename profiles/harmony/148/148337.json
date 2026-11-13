@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148337",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lexicon",
+  "model": "RV8",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b86e8da5cdeab699",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD-1",
+      "steps": [
+        {
+          "command": "InputDvd1"
+        }
+      ]
+    },
+    {
+      "name": "DVD-2",
+      "steps": [
+        {
+          "command": "InputDvd2"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lexicon/RV8.json"
+    ],
+    "harmony": {
+      "global_device_id": 148337,
+      "device_type": 5,
+      "codeset": "8e120dd3d1767a38"
+    }
+  }
+}

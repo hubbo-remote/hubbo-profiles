@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169373",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Loewe",
+  "model": "VITROS 6270ZW",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c644ce31af474124",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "tuner",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "pvr",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "dvd",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "cube",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Loewe/VITROS_6270ZW.json"
+    ],
+    "harmony": {
+      "global_device_id": 169373,
+      "device_type": 1,
+      "codeset": "3879b0a4888f47e7"
+    }
+  }
+}

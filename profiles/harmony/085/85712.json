@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:85712",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Ministry of Sound",
+  "model": "MOS-T5072",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "36a6d51aa4fda3e7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Disc1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Ministry_of_Sound/MOS-T5072.json"
+    ],
+    "harmony": {
+      "global_device_id": 85712,
+      "device_type": 21,
+      "codeset": "f3bf9149a33acd47"
+    }
+  }
+}

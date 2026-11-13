@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212440",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "SF-9310S",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "d0d7850a94b67de9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/SF-9310S.json"
+    ],
+    "harmony": {
+      "global_device_id": 212440,
+      "device_type": 25,
+      "codeset": "0d3a3662b8adbd96"
+    }
+  }
+}

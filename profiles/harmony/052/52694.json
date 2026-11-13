@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:52694",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DK Digital",
+  "model": "AS-90-1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4b55a7f25b2b0602",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    },
+    {
+      "name": "2.1",
+      "steps": [
+        {
+          "command": "Input21"
+        }
+      ]
+    },
+    {
+      "name": "OPTICAL",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "COAX1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "COAX2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DK_Digital/AS-90-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 52694,
+      "device_type": 19,
+      "codeset": "c187d39a339a48ed"
+    }
+  }
+}

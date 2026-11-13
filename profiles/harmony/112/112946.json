@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:112946",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Luxman",
+  "model": "L-590A",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "645e12c05a3d76c5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "SACD",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Line 1",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "Line 2",
+      "steps": [
+        {
+          "command": "InputLine2"
+        }
+      ]
+    },
+    {
+      "name": "bal line",
+      "steps": [
+        {
+          "command": "InputBalanced"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Luxman/L-590A.json"
+    ],
+    "harmony": {
+      "global_device_id": 112946,
+      "device_type": 19,
+      "codeset": "fcf18620a0f9b15d"
+    }
+  }
+}

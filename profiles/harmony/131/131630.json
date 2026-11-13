@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:131630",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-NS55",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ac11a4686624d4e4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "XM",
+      "steps": [
+        {
+          "command": "InputXm"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Option",
+      "steps": [
+        {
+          "command": "InputOption"
+        }
+      ]
+    },
+    {
+      "name": "MusicPort",
+      "steps": [
+        {
+          "command": "InputMusicPort"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-NS55.json"
+    ],
+    "harmony": {
+      "global_device_id": 131630,
+      "device_type": 21,
+      "codeset": "737136f779a1522a"
+    }
+  }
+}

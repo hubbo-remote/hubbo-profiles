@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259234",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dual",
+  "model": "Radiostation iR 10",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "eb872edc2d9a3308",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Internet",
+      "steps": [
+        {
+          "command": "InputInternet"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dual/Radiostation_iR_10.json"
+    ],
+    "harmony": {
+      "global_device_id": 259234,
+      "device_type": 5,
+      "codeset": "09250b5c3c3c45d1"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:252906",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bauhn",
+  "model": "HTE-400",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9335fa10d5bb2dae",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "MultiCh",
+      "steps": [
+        {
+          "command": "InputMulitiChIn"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bauhn/HTE-400.json"
+    ],
+    "harmony": {
+      "global_device_id": 252906,
+      "device_type": 5,
+      "codeset": "24c376aa593984ca"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202351",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Black Diamond",
+  "model": "BLD-DVC6500",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "e52aac4511ddbfa8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "InputDvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "InputVcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Black_Diamond/BLD-DVC6500.json"
+    ],
+    "harmony": {
+      "global_device_id": 202351,
+      "device_type": 25,
+      "codeset": "fa78215bb158d395"
+    }
+  }
+}

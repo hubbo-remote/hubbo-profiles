@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149303",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lexicon",
+  "model": "CP3",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "eec416a9fd2ba50e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv/Dss",
+      "steps": [
+        {
+          "command": "InputTvDss"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lexicon/CP3.json"
+    ],
+    "harmony": {
+      "global_device_id": 149303,
+      "device_type": 19,
+      "codeset": "26e4b388a1797353"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58862",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "DDS-300",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a68ee8fbd4618fe6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/DDS-300.json"
+    ],
+    "harmony": {
+      "global_device_id": 58862,
+      "device_type": 19,
+      "codeset": "9851e2266422f248"
+    }
+  }
+}

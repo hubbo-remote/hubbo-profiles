@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:266916",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "MSB4560",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9e5e5fb968c77857",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "LINE",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "OPTICAL",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "BLUETOOTH",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/MSB4560.json"
+    ],
+    "harmony": {
+      "global_device_id": 266916,
+      "device_type": 19,
+      "codeset": "25e4732c3e07108d"
+    }
+  }
+}

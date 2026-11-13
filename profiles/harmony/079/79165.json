@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "harmony:79165",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cairn",
+  "model": "4808",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d7fad54da16235c1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cairn/4808.json"
+    ],
+    "harmony": {
+      "global_device_id": 79165,
+      "device_type": 19,
+      "codeset": "6d4cb35def06002a"
+    }
+  }
+}

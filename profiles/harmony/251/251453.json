@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251453",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nubert",
+  "model": "OdinTest601",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2bfe76cc1382ffd1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nubert/OdinTest601.json"
+    ],
+    "harmony": {
+      "global_device_id": 251453,
+      "device_type": 1,
+      "codeset": "8912a916efd042a4"
+    }
+  }
+}

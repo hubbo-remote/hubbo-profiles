@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:59180",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "VR-1070",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a52587ca2200686b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/VR-1070.json"
+    ],
+    "harmony": {
+      "global_device_id": 59180,
+      "device_type": 5,
+      "codeset": "d840036bf146d32f"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267341",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Blaupunkt",
+  "model": "LS 178-1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6cf7434cab28f920",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Blaupunkt/LS_178-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 267341,
+      "device_type": 19,
+      "codeset": "7078064510707209"
+    }
+  }
+}

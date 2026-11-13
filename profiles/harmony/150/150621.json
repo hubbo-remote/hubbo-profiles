@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150621",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Audionet",
+  "model": "CAT",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "6d784bb26f3cae75",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "AM"
+        }
+      ]
+    },
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "DAB"
+        }
+      ]
+    },
+    {
+      "name": "DAC",
+      "steps": [
+        {
+          "command": "DAC"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Audionet/CAT.json"
+    ],
+    "harmony": {
+      "global_device_id": 150621,
+      "device_type": 36,
+      "codeset": "5ab42aa4b2dad689"
+    }
+  }
+}

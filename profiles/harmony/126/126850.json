@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:126850",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "T+A",
+  "model": "K-1",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "fa8ea661d8c62210",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/T_A/K-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 126850,
+      "device_type": 21,
+      "codeset": "ec3268d8a3ab8c14"
+    }
+  }
+}

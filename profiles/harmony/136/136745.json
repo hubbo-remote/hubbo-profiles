@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:136745",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TELE System",
+  "model": "TS-5.8 BLACK",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "a58bacfc5d61c60a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TELE_System/TS-5.8_BLACK.json"
+    ],
+    "harmony": {
+      "global_device_id": 136745,
+      "device_type": 34,
+      "codeset": "cbaf48fbd17a8412"
+    }
+  }
+}

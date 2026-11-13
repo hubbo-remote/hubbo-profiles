@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "harmony:107991",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FR-910",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "3068dda8089a25b4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTuner",
+        "hold_ms": 3000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner",
+          "hold_ms": 3000
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd",
+          "hold_ms": 3000
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape",
+          "hold_ms": 3000
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono",
+          "hold_ms": 3000
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv",
+          "hold_ms": 3000
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr",
+          "hold_ms": 3000
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FR-910.json"
+    ],
+    "harmony": {
+      "global_device_id": 107991,
+      "device_type": 5,
+      "codeset": "97015b703094991b"
+    }
+  }
+}

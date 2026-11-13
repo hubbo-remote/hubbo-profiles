@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:10669",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nakamichi",
+  "model": "SR-4A",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "50f9826390b8d9ea",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "AM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nakamichi/SR-4A.json"
+    ],
+    "harmony": {
+      "global_device_id": 10669,
+      "device_type": 5,
+      "codeset": "129f89f501201346"
+    }
+  }
+}

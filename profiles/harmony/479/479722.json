@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:479722",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "YMS-4080",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "65f89392dab96b30",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnlaog"
+        }
+      ]
+    },
+    {
+      "name": "Blueooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "NET",
+      "steps": [
+        {
+          "command": "InputNet"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/YMS-4080.json"
+    ],
+    "harmony": {
+      "global_device_id": 479722,
+      "device_type": 19,
+      "codeset": "c25955233898adf2"
+    }
+  }
+}

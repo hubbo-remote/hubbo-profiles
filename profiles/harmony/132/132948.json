@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "harmony:132948",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "SG-9210S",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "b7b65fbd78a494d6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd",
+          "hold_ms": 1000
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/SG-9210S.json"
+    ],
+    "harmony": {
+      "global_device_id": 132948,
+      "device_type": 25,
+      "codeset": "83c407ebe328a3b6"
+    }
+  }
+}

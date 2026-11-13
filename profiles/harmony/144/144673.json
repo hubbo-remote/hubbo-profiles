@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144673",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR-3570H/05",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "71f71a94abde60f7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HddList",
+      "steps": [
+        {
+          "command": "HDDList"
+        }
+      ]
+    },
+    {
+      "name": "LiveTv",
+      "steps": [
+        {
+          "command": "LiveTv"
+        }
+      ]
+    },
+    {
+      "name": "Cam",
+      "steps": [
+        {
+          "command": "CAM"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "Disc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR-3570H_05.json"
+    ],
+    "harmony": {
+      "global_device_id": 144673,
+      "device_type": 34,
+      "codeset": "375016a29d47d4ba"
+    }
+  }
+}

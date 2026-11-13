@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:21826",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RP-9328A",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "9f545df6cdc58d56",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RP-9328A.json"
+    ],
+    "harmony": {
+      "global_device_id": 21826,
+      "device_type": 21,
+      "codeset": "36f20212babdcded"
+    }
+  }
+}

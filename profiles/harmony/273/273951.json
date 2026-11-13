@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273951",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Definitive",
+  "model": "W Studio Micro",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c64aa87936e5f77d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Definitive/W_Studio_Micro.json"
+    ],
+    "harmony": {
+      "global_device_id": 273951,
+      "device_type": 19,
+      "codeset": "1e7951129dd01951"
+    }
+  }
+}

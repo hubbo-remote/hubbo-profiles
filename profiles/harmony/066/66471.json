@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:66471",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Roadstar",
+  "model": "HIF-9991TR",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ffe678abcd5b1126",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Roadstar/HIF-9991TR.json"
+    ],
+    "harmony": {
+      "global_device_id": 66471,
+      "device_type": 21,
+      "codeset": "c18a3e07b61ac1e2"
+    }
+  }
+}

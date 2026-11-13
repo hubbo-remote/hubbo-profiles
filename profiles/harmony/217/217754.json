@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:217754",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Linkman",
+  "model": "LM-5060BK",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "12b211a776378931",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "AC-3",
+      "steps": [
+        {
+          "command": "InputAC3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Linkman/LM-5060BK.json"
+    ],
+    "harmony": {
+      "global_device_id": 217754,
+      "device_type": 19,
+      "codeset": "d7da248618b7679c"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173510",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TVIX M-3000U",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d6bf1522f2af9e8d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputAudio"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TVIX_M-3000U.json"
+    ],
+    "harmony": {
+      "global_device_id": 173510,
+      "device_type": 35,
+      "codeset": "cb8fa2040ba4cc6a"
+    }
+  }
+}

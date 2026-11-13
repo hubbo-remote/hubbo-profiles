@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:15246",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-HT05",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "d606a8ac05eaedab",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Game/Aux",
+      "steps": [
+        {
+          "command": "InputGameAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD Recorder",
+      "steps": [
+        {
+          "command": "InputDvdRecorder"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-HT05.json"
+    ],
+    "harmony": {
+      "global_device_id": 15246,
+      "device_type": 5,
+      "codeset": "d951cc4153b0c0e4"
+    }
+  }
+}

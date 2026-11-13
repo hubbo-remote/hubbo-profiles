@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "id": "harmony:302699",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Integra",
+  "model": "DTR-60.5 (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e7fb34e295fe239d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "InputBDDVD"
+        }
+      ]
+    },
+    {
+      "name": "CBL/SAT",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "STB/DVR",
+      "steps": [
+        {
+          "command": "InputStbDvr"
+        }
+      ]
+    },
+    {
+      "name": "GAME 1",
+      "steps": [
+        {
+          "command": "InputGame1"
+        }
+      ]
+    },
+    {
+      "name": "GAME 2",
+      "steps": [
+        {
+          "command": "InputGame2"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV/CD",
+      "steps": [
+        {
+          "command": "InputTvCd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "NET",
+      "steps": [
+        {
+          "command": "InputNet"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Music Server",
+      "steps": [
+        {
+          "command": "InputMusicServer"
+        }
+      ]
+    },
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Integra/DTR-60.5_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 302699,
+      "device_type": 5,
+      "codeset": "5815dc97dd20b12d"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169933",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "YSP-3050",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6bbaedb3cfc34323",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "AUX3/Dock",
+      "steps": [
+        {
+          "command": "InputAux3"
+        }
+      ]
+    },
+    {
+      "name": "TV/STB",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "FM/XM",
+      "steps": [
+        {
+          "command": "InputFmXm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/YSP-3050.json"
+    ],
+    "harmony": {
+      "global_device_id": 169933,
+      "device_type": 5,
+      "codeset": "0da6764860a14ea0"
+    }
+  }
+}

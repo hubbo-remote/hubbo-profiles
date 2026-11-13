@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:241024",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Airties",
+  "model": "Air 7210",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "55013c55516da02b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Airties/Air_7210.json"
+    ],
+    "harmony": {
+      "global_device_id": 241024,
+      "device_type": 12,
+      "codeset": "f33f5474e07ba065"
+    }
+  }
+}

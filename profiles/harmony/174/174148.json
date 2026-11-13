@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174148",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NAD",
+  "model": "L-54",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "ecdd7113d2834d92",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CAB/SAT",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NAD/L-54.json"
+    ],
+    "harmony": {
+      "global_device_id": 174148,
+      "device_type": 22,
+      "codeset": "15a968adcdc3e1cd"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:349647",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RSR",
+  "model": "TB220L",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "79124cf61a298a20",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RSR/TB220L.json"
+    ],
+    "harmony": {
+      "global_device_id": 349647,
+      "device_type": 19,
+      "codeset": "9c029c11f886c745"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150599",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kentech Labs",
+  "model": "BR-800SV",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "1468aa7b2266a51c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kentech_Labs/BR-800SV.json"
+    ],
+    "harmony": {
+      "global_device_id": 150599,
+      "device_type": 19,
+      "codeset": "1b336c8cf8900eaa"
+    }
+  }
+}

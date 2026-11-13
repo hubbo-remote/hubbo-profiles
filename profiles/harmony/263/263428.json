@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263428",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "EM28T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c6852f8c7252052a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "COMPONENT",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI SIDE",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "MUSIC",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/EM28T.json"
+    ],
+    "harmony": {
+      "global_device_id": 263428,
+      "device_type": 1,
+      "codeset": "f14456b2805d3eec"
+    }
+  }
+}

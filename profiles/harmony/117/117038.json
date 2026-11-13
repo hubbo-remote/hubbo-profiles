@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:117038",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "McIntosh",
+  "model": "MC-6300",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "68c9304b502f03e3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD 2",
+      "steps": [
+        {
+          "command": "InputCd2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/McIntosh/MC-6300.json"
+    ],
+    "harmony": {
+      "global_device_id": 117038,
+      "device_type": 19,
+      "codeset": "09163fe1ab1ddabf"
+    }
+  }
+}

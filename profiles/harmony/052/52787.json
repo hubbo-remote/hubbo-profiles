@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:52787",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Alba",
+  "model": "TVD3450/A",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputAntA"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Alba/TVD3450_A.json"
+    ],
+    "harmony": {
+      "global_device_id": 52787,
+      "device_type": 37,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

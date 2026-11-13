@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216172",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-J653M",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "f2ef5d9745e76f88",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "Front Line In",
+      "steps": [
+        {
+          "command": "InputLine2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-J653M.json"
+    ],
+    "harmony": {
+      "global_device_id": 216172,
+      "device_type": 2,
+      "codeset": "8bed4809cbf37803"
+    }
+  }
+}

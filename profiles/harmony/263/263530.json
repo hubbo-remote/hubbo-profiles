@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263530",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Digma",
+  "model": "HDMP-300",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e3ce5ff81827d420",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "All",
+      "steps": [
+        {
+          "command": "InputAll"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Digma/HDMP-300.json"
+    ],
+    "harmony": {
+      "global_device_id": 263530,
+      "device_type": 35,
+      "codeset": "c2c41ec01421d31b"
+    }
+  }
+}

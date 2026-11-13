@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "harmony:54918",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "PB-8260",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "73dd6e7ed45700ea",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Analog RGB",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "S Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/PB-8260.json"
+    ],
+    "harmony": {
+      "global_device_id": 54918,
+      "device_type": 7,
+      "codeset": "260d24699f5f1004"
+    }
+  }
+}

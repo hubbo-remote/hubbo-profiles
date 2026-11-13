@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:152261",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTS-3548/98",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "549e7fef651babe1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAUXDI"
+        }
+      ]
+    },
+    {
+      "name": "DI",
+      "steps": [
+        {
+          "command": "InputAUXDI"
+        }
+      ]
+    },
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "InputDvdUsb"
+        }
+      ]
+    },
+    {
+      "name": "RADIO",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "MP3 LINE IN",
+      "steps": [
+        {
+          "command": "InputMp3LineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTS-3548_98.json"
+    ],
+    "harmony": {
+      "global_device_id": 152261,
+      "device_type": 22,
+      "codeset": "b8a29b3633187f4b"
+    }
+  }
+}

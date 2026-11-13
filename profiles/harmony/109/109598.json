@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "harmony:109598",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "AT-3220W",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b6fd754406128c37",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC / VGA",
+      "steps": [
+        {
+          "command": "Menu"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/AT-3220W.json"
+    ],
+    "harmony": {
+      "global_device_id": 109598,
+      "device_type": 1,
+      "codeset": "4989cd436dcc702f"
+    }
+  }
+}

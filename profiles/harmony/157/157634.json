@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157634",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hisense",
+  "model": "LCD32W57",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a1a088d2e4296787",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Av",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hisense/LCD32W57.json"
+    ],
+    "harmony": {
+      "global_device_id": 157634,
+      "device_type": 1,
+      "codeset": "025f43fab9b6a48f"
+    }
+  }
+}

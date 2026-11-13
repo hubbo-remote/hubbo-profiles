@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147477",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-A37U",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "b661ecbdec4d43c9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "Front Line In",
+      "steps": [
+        {
+          "command": "InputLine2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-A37U.json"
+    ],
+    "harmony": {
+      "global_device_id": 147477,
+      "device_type": 2,
+      "codeset": "3a52a34524c0521d"
+    }
+  }
+}

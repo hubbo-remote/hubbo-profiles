@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165822",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "mcd122/12",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "1b9ad039b3599a9c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/mcd122_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 165822,
+      "device_type": 22,
+      "codeset": "9207b7398a69b68f"
+    }
+  }
+}

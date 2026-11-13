@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273349",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Target",
+  "model": "FW-1414A",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0a630fca843843f2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Target/FW-1414A.json"
+    ],
+    "harmony": {
+      "global_device_id": 273349,
+      "device_type": 19,
+      "codeset": "fe12edf50eaac6d6"
+    }
+  }
+}

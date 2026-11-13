@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:4192",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "POA-2200",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "aa7f3bc09cf06f42",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "VDP/Tv",
+      "steps": [
+        {
+          "command": "InputVDPTV"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/POA-2200.json"
+    ],
+    "harmony": {
+      "global_device_id": 4192,
+      "device_type": 5,
+      "codeset": "474fe302fa1dc909"
+    }
+  }
+}

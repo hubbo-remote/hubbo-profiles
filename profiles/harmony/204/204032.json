@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:204032",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Storex",
+  "model": "STORYDISK LITE",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "1c5a93d8e0f8e382",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "InputFile"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Storex/STORYDISK_LITE.json"
+    ],
+    "harmony": {
+      "global_device_id": 204032,
+      "device_type": 35,
+      "codeset": "7456fe8be248cdc9"
+    }
+  }
+}

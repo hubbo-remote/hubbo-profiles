@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:115299",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "PRO-507HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b629de50f1e0608e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 5",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    },
+    {
+      "name": "Input 6",
+      "steps": [
+        {
+          "command": "InputVideo6"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/PRO-507HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 115299,
+      "device_type": 1,
+      "codeset": "8039178fcda5d107"
+    }
+  }
+}

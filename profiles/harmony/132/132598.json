@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:132598",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "HT-752TP",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f9b716bd3a677449",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "BAND",
+      "steps": [
+        {
+          "command": "Band"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/HT-752TP.json"
+    ],
+    "harmony": {
+      "global_device_id": 132598,
+      "device_type": 22,
+      "codeset": "5ad007f15282efc2"
+    }
+  }
+}

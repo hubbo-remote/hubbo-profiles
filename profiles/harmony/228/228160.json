@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:228160",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnat",
+  "model": "VC 2",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "223bcc810ca27311",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Digital IN",
+      "steps": [
+        {
+          "command": "InputDigitalIn"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnat/VC_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 228160,
+      "device_type": 22,
+      "codeset": "2322ade22f6f9b88"
+    }
+  }
+}

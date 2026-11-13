@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:224057",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "M71-2110",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1abcd0ff7a8f434b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "CAM",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/M71-2110.json"
+    ],
+    "harmony": {
+      "global_device_id": 224057,
+      "device_type": 1,
+      "codeset": "6ec13fcaf3f066dd"
+    }
+  }
+}

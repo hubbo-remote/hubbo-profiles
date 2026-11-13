@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:75264",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aiwa",
+  "model": "NSX-BL16",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "50b1f94bc428cf2c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Video/Aux",
+      "steps": [
+        {
+          "command": "InputVideoAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape Deck 1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tape Deck 2",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aiwa/NSX-BL16.json"
+    ],
+    "harmony": {
+      "global_device_id": 75264,
+      "device_type": 21,
+      "codeset": "38fcd07d1689bd37"
+    }
+  }
+}

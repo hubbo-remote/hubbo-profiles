@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144764",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NAD",
+  "model": "M-3",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0631a92b8f5c29ab",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "5",
+      "steps": [
+        {
+          "command": "Input5"
+        }
+      ]
+    },
+    {
+      "name": "6",
+      "steps": [
+        {
+          "command": "Input6"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NAD/M-3.json"
+    ],
+    "harmony": {
+      "global_device_id": 144764,
+      "device_type": 19,
+      "codeset": "b0a605d634d0a7a1"
+    }
+  }
+}

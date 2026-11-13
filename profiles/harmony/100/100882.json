@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:100882",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Luce",
+  "model": "PDTV-4203AA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "de796182d5a5c39b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAntennaCable"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Luce/PDTV-4203AA.json"
+    ],
+    "harmony": {
+      "global_device_id": 100882,
+      "device_type": 1,
+      "codeset": "7bf2a6c8b27b7b52"
+    }
+  }
+}

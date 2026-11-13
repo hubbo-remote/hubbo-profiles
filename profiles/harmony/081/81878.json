@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "harmony:81878",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "DR-MV58",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "cfc519ff377cf8d4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "front",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "lpt1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/DR-MV58.json"
+    ],
+    "harmony": {
+      "global_device_id": 81878,
+      "device_type": 25,
+      "codeset": "746212ec40e2546d"
+    }
+  }
+}

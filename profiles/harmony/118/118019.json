@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118019",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "MX-510K",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "72d8a1e4fc98bfce",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TAPE 1",
+      "steps": [
+        {
+          "command": "A"
+        }
+      ]
+    },
+    {
+      "name": "TAPE 2",
+      "steps": [
+        {
+          "command": "B"
+        }
+      ]
+    },
+    {
+      "name": "tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/MX-510K.json"
+    ],
+    "harmony": {
+      "global_device_id": 118019,
+      "device_type": 21,
+      "codeset": "e699251a23706d99"
+    }
+  }
+}

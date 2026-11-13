@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170203",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "SBC-HD1505U",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "21d1bb44c1db79be",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "Movie"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Digital 1",
+      "steps": [
+        {
+          "command": "InputDigital1"
+        }
+      ]
+    },
+    {
+      "name": "Digital 2",
+      "steps": [
+        {
+          "command": "InputDigital2"
+        }
+      ]
+    },
+    {
+      "name": "Analog 1",
+      "steps": [
+        {
+          "command": "InputAnalog1"
+        }
+      ]
+    },
+    {
+      "name": "Analog 2",
+      "steps": [
+        {
+          "command": "InputAnalog2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/SBC-HD1505U.json"
+    ],
+    "harmony": {
+      "global_device_id": 170203,
+      "device_type": 19,
+      "codeset": "76e20279d1624044"
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "harmony:350032",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KLV-49W772E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8d1e02356dc46dac",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Cable/Antenna",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1/ARC",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Screen Mirroring",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Smart TV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Home"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KLV-49W772E.json"
+    ],
+    "harmony": {
+      "global_device_id": 350032,
+      "device_type": 1,
+      "codeset": "848cb506a488507d"
+    }
+  }
+}

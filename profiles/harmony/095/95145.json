@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95145",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "LX-3000D/21L",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "9e11926249571e6a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/AV",
+      "steps": [
+        {
+          "command": "InputTvAv"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/LX-3000D_21L.json"
+    ],
+    "harmony": {
+      "global_device_id": 95145,
+      "device_type": 22,
+      "codeset": "02a7c23f60e5cdb2"
+    }
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260249",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "UA65F9000",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b97520b20d21b82b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "InputHdmi4"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "Smart Hub",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "SmartHub"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Ambient",
+      "steps": [
+        {
+          "command": "Ambient"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/UA65F9000.json"
+    ],
+    "harmony": {
+      "global_device_id": 260249,
+      "device_type": 1,
+      "codeset": "23c7a10575a6347b"
+    }
+  }
+}

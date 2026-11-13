@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95166",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu",
+  "model": "LPF-B211",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "40d9702d1cd0cb5d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu/LPF-B211.json"
+    ],
+    "harmony": {
+      "global_device_id": 95166,
+      "device_type": 7,
+      "codeset": "3b8ca6d108529b56"
+    }
+  }
+}

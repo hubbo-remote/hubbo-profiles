@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:159071",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mvix",
+  "model": "MXPVR-HDD",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "798fce9ffce3395e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Library",
+      "steps": [
+        {
+          "command": "InputLibrary"
+        }
+      ]
+    },
+    {
+      "name": "Video In",
+      "steps": [
+        {
+          "command": "InputVideoIn"
+        }
+      ]
+    },
+    {
+      "name": "Recordings",
+      "steps": [
+        {
+          "command": "InputRecordings"
+        }
+      ]
+    },
+    {
+      "name": "MVIX Live",
+      "steps": [
+        {
+          "command": "InputMvixLive"
+        }
+      ]
+    },
+    {
+      "name": "IPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mvix/MXPVR-HDD.json"
+    ],
+    "harmony": {
+      "global_device_id": 159071,
+      "device_type": 18,
+      "codeset": "6460d93286f146b9"
+    }
+  }
+}

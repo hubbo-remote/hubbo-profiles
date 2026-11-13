@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:140563",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-HT06",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "5a1511da6304600f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DVD-R",
+      "steps": [
+        {
+          "command": "InputDvdR"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-HT06.json"
+    ],
+    "harmony": {
+      "global_device_id": 140563,
+      "device_type": 5,
+      "codeset": "fcbbc64c1c2774a1"
+    }
+  }
+}

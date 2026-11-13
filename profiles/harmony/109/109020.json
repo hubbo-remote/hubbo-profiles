@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:109020",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Timex",
+  "model": "T609T",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "08b433dc8e0c4d0c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputRadio"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Sounds",
+      "steps": [
+        {
+          "command": "InputSounds"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Timex/T609T.json"
+    ],
+    "harmony": {
+      "global_device_id": 109020,
+      "device_type": 21,
+      "codeset": "195dd8a553e08cf2"
+    }
+  }
+}

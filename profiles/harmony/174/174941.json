@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174941",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "40ZF355DG",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4afb2e0b218ecd02",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 500,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "SCART 1",
+      "steps": [
+        {
+          "command": "InputScart1"
+        }
+      ]
+    },
+    {
+      "name": "SCART 2",
+      "steps": [
+        {
+          "command": "InputScart2"
+        }
+      ]
+    },
+    {
+      "name": "SCART 3",
+      "steps": [
+        {
+          "command": "Input3c"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "ATV",
+      "steps": [
+        {
+          "command": "AD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/40ZF355DG.json"
+    ],
+    "harmony": {
+      "global_device_id": 174941,
+      "device_type": 1,
+      "codeset": "9bd72e692bd52c4f"
+    }
+  }
+}

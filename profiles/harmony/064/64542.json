@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:64542",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cayin",
+  "model": "A-153B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "644c1a87f43ffe16",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cayin/A-153B.json"
+    ],
+    "harmony": {
+      "global_device_id": 64542,
+      "device_type": 19,
+      "codeset": "66f1dcd008aa2d4b"
+    }
+  }
+}

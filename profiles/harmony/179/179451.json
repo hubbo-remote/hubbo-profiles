@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179451",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MS-Tech",
+  "model": "MC-380",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e7cd83b6ed8a18f2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MS-Tech/MC-380.json"
+    ],
+    "harmony": {
+      "global_device_id": 179451,
+      "device_type": 35,
+      "codeset": "c4d9e8ac310c6b77"
+    }
+  }
+}

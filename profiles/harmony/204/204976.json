@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:204976",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Synelec",
+  "model": "SV 4000",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "207428ad1d9daca5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "YC1 DVD",
+      "steps": [
+        {
+          "command": "InputYC1"
+        }
+      ]
+    },
+    {
+      "name": "YC2 Satellite",
+      "steps": [
+        {
+          "command": "InputYC2"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga1"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputVga2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Synelec/SV_4000.json"
+    ],
+    "harmony": {
+      "global_device_id": 204976,
+      "device_type": 1,
+      "codeset": "54c3fa268b6e5d78"
+    }
+  }
+}

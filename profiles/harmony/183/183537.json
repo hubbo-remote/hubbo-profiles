@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:183537",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Creative",
+  "model": "SOUNDWORKS RADIO CD 745",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "e75e0d758c9682b3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "PLAYER",
+      "steps": [
+        {
+          "command": "InputPlayer"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Creative/SOUNDWORKS_RADIO_CD_745.json"
+    ],
+    "harmony": {
+      "global_device_id": 183537,
+      "device_type": 21,
+      "codeset": "8b2df01c6918b42c"
+    }
+  }
+}

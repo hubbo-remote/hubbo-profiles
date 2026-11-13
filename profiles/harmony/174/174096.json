@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174096",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Geneva Lab",
+  "model": "GenevaSound XL",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "3a79d9b6c8937b64",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AirPlay",
+      "steps": [
+        {
+          "command": "InputAirplay"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Geneva_Lab/GenevaSound_XL.json"
+    ],
+    "harmony": {
+      "global_device_id": 174096,
+      "device_type": 21,
+      "codeset": "b0b455854a73f3a9"
+    }
+  }
+}

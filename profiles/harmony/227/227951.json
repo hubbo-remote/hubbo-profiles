@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:227951",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MC-110/21",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b35f5472b2d56243",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/AV",
+      "steps": [
+        {
+          "command": "InputTvAv"
+        }
+      ]
+    },
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAuxDI"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MC-110_21.json"
+    ],
+    "harmony": {
+      "global_device_id": 227951,
+      "device_type": 22,
+      "codeset": "e3e46d23bab58501"
+    }
+  }
+}

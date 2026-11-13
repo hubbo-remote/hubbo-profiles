@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173001",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "MZ-42PZ44S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cb410c8a01c8aff0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 7500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/MZ-42PZ44S.json"
+    ],
+    "harmony": {
+      "global_device_id": 173001,
+      "device_type": 1,
+      "codeset": "7c1a53989c392aed"
+    }
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "id": "harmony:348664",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KD-43XE8077",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "83543c48b739515a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      },
+      {
+        "delay_ms": 300
+      },
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 300
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Streaming Channels",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2/Component",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Screen Mirroring",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Android TV",
+      "steps": [
+        {
+          "command": "Back"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Home"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "DirectionDown"
+        }
+      ]
+    },
+    {
+      "name": "GooglePlay",
+      "steps": [
+        {
+          "command": "GooglePlay"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "GooglePlay"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KD-43XE8077.json"
+    ],
+    "harmony": {
+      "global_device_id": 348664,
+      "device_type": 1,
+      "codeset": "03ea1335ba361266"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493177",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "DLA-NX5",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "6b94051af5f0d60c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 60000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/DLA-NX5.json"
+    ],
+    "harmony": {
+      "global_device_id": 493177,
+      "device_type": 7,
+      "codeset": "d8686f6b4c0fc5a3"
+    }
+  }
+}

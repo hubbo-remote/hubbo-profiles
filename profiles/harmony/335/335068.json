@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "id": "harmony:335068",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "NP-P502HL",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "2172a317c454d9ef",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      },
+      {
+        "delay_ms": 20000
+      },
+      {
+        "delay_ms": 20000
+      },
+      {
+        "delay_ms": 20000
+      },
+      {
+        "delay_ms": 20000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 60000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDBaseT",
+      "steps": [
+        {
+          "command": "InputHdBaseT"
+        }
+      ]
+    },
+    {
+      "name": "Apps",
+      "steps": [
+        {
+          "command": "InputApps"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/NP-P502HL.json"
+    ],
+    "harmony": {
+      "global_device_id": 335068,
+      "device_type": 7,
+      "codeset": "c46f55998d236563"
+    }
+  }
+}

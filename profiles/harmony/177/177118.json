@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:177118",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "VTC-4337",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "22b6ddbe84da54a0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/VTC-4337.json"
+    ],
+    "harmony": {
+      "global_device_id": 177118,
+      "device_type": 21,
+      "codeset": "1847a41701b3e912"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:323665",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Renkforce",
+  "model": "TB230WW",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "51b37b7d8400ae42",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Renkforce/TB230WW.json"
+    ],
+    "harmony": {
+      "global_device_id": 323665,
+      "device_type": 19,
+      "codeset": "5b633b2867d68fee"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:53567",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "IO Data",
+  "model": "LCD-TV194C",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "793b7ac1c8cfc327",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/IO_Data/LCD-TV194C.json"
+    ],
+    "harmony": {
+      "global_device_id": 53567,
+      "device_type": 1,
+      "codeset": "c96240e588099ed8"
+    }
+  }
+}

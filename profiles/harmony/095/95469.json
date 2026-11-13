@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95469",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "DPX-830SL",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "96fe2b73630bee36",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn",
+        "hold_ms": 1000
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerOff",
+        "hold_ms": 1000
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff",
+        "hold_ms": 1000
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputDviD"
+        }
+      ]
+    },
+    {
+      "name": "COMPONENT",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/DPX-830SL.json"
+    ],
+    "harmony": {
+      "global_device_id": 95469,
+      "device_type": 7,
+      "codeset": "a5cea61fad34479a"
+    }
+  }
+}

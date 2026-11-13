@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258900",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sherwood",
+  "model": "R-807",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "259ceb8339e81dbc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "BD/BDR",
+      "steps": [
+        {
+          "command": "InputBdBdr"
+        }
+      ]
+    },
+    {
+      "name": "DVD/DVR",
+      "steps": [
+        {
+          "command": "InputDvdDvr"
+        }
+      ]
+    },
+    {
+      "name": "STB/CBL",
+      "steps": [
+        {
+          "command": "InputStbCbl"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "F.Aux",
+      "steps": [
+        {
+          "command": "InputFAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sherwood/R-807.json"
+    ],
+    "harmony": {
+      "global_device_id": 258900,
+      "device_type": 5,
+      "codeset": "bbd0b142bfce63c8"
+    }
+  }
+}

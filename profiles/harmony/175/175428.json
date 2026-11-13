@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:175428",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "MCR-730",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "3a95147c4630c38e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD/USB",
+      "steps": [
+        {
+          "command": "InputDvdUsb"
+        }
+      ]
+    },
+    {
+      "name": "AUX/PORTABLE",
+      "steps": [
+        {
+          "command": "InputAuxPortable"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/MCR-730.json"
+    ],
+    "harmony": {
+      "global_device_id": 175428,
+      "device_type": 22,
+      "codeset": "4cc475c7055fd2f0"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144657",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Welland",
+  "model": "ME-820AP",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "8457fc9fa7f4622a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Files",
+      "steps": [
+        {
+          "command": "InputFile"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Welland/ME-820AP.json"
+    ],
+    "harmony": {
+      "global_device_id": 144657,
+      "device_type": 35,
+      "codeset": "3ba4519fa3cd40b9"
+    }
+  }
+}

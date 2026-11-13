@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148212",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MythTV",
+  "model": "Hauppauge PVR-500",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "8f3934255957f50e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "InputVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "InputPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MythTV/Hauppauge_PVR-500.json"
+    ],
+    "harmony": {
+      "global_device_id": 148212,
+      "device_type": 35,
+      "codeset": "53003281f9ef3435"
+    }
+  }
+}

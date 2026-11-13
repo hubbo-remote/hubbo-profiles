@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "id": "harmony:131944",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "XV-THR1",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "9ac2f9a59e7e6005",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "DV",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "F1",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "L1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "L2",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/XV-THR1.json"
+    ],
+    "harmony": {
+      "global_device_id": 131944,
+      "device_type": 22,
+      "codeset": "11316885af52b02e"
+    }
+  }
+}

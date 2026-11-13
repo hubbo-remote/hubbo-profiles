@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:114857",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Insignia",
+  "model": "NS-DVDVCR",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "f7d65fc8c5386d81",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Insignia/NS-DVDVCR.json"
+    ],
+    "harmony": {
+      "global_device_id": 114857,
+      "device_type": 25,
+      "codeset": "89076e5baf7ba84f"
+    }
+  }
+}

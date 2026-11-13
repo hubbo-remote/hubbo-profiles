@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212002",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "ag-h600dnt",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "5c40743507492d78",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/ag-h600dnt.json"
+    ],
+    "harmony": {
+      "global_device_id": 212002,
+      "device_type": 5,
+      "codeset": "6d7c14cbbbf2443c"
+    }
+  }
+}

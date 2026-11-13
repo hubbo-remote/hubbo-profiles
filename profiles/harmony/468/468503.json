@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:468503",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MindKoo",
+  "model": "MK-BR01",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "eb0c924fcb5672e9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MindKoo/MK-BR01.json"
+    ],
+    "harmony": {
+      "global_device_id": 468503,
+      "device_type": 19,
+      "codeset": "aab54e2cac18281b"
+    }
+  }
+}

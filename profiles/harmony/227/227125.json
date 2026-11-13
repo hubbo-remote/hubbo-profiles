@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:227125",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Signal Path International",
+  "model": "DAC iT",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d3270f61f963acd3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Signal_Path_International/DAC_iT.json"
+    ],
+    "harmony": {
+      "global_device_id": 227125,
+      "device_type": 19,
+      "codeset": "1294a047d1316beb"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:91572",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TruTech",
+  "model": "PLV-1615T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "718df1bc413893ee",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TruTech/PLV-1615T.json"
+    ],
+    "harmony": {
+      "global_device_id": 91572,
+      "device_type": 1,
+      "codeset": "e891532a255cdf54"
+    }
+  }
+}

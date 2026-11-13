@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:204128",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bluesky",
+  "model": "CB362S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "79af836ce25d38ad",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TV/Scart1/Scart2/CVBS/YC",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "RGB/DVI",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bluesky/CB362S.json"
+    ],
+    "harmony": {
+      "global_device_id": 204128,
+      "device_type": 1,
+      "codeset": "843ce1e9b31004d0"
+    }
+  }
+}

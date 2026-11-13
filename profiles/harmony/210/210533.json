@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:210533",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "MDR515H/F7",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "3eadfe12206830ce",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/MDR515H_F7.json"
+    ],
+    "harmony": {
+      "global_device_id": 210533,
+      "device_type": 34,
+      "codeset": "dac0a429deccf24c"
+    }
+  }
+}

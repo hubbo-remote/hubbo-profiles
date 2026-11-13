@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263963",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Clatronic",
+  "model": "MC 096 CD",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "c6879db292c6ca1b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "FM/MW",
+      "steps": [
+        {
+          "command": "InputFmMw"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Clatronic/MC_096_CD.json"
+    ],
+    "harmony": {
+      "global_device_id": 263963,
+      "device_type": 21,
+      "codeset": "bbc072c819ee587a"
+    }
+  }
+}

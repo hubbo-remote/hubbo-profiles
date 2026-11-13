@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:223118",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu-Siemens",
+  "model": "Myrica P40-2",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "79af836ce25d38ad",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputSat"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SCART 1",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "SCART 2",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu-Siemens/Myrica_P40-2.json"
+    ],
+    "harmony": {
+      "global_device_id": 223118,
+      "device_type": 13,
+      "codeset": "843ce1e9b31004d0"
+    }
+  }
+}

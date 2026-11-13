@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216645",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Jetway",
+  "model": "JC600C99352W",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "c36dd6fec769f935",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    },
+    {
+      "name": "MyVideos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "MyMusic",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "MyPictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Jetway/JC600C99352W.json"
+    ],
+    "harmony": {
+      "global_device_id": 216645,
+      "device_type": 35,
+      "codeset": "774b08d690bd6998"
+    }
+  }
+}

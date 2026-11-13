@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:231796",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "H6500",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "fb2f7f91e1fcf575",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/H6500.json"
+    ],
+    "harmony": {
+      "global_device_id": 231796,
+      "device_type": 7,
+      "codeset": "5dc58a549cf27974"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173106",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "iHome",
+  "model": "IH51",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "681775cf175928c2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "iPOD",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/iHome/IH51.json"
+    ],
+    "harmony": {
+      "global_device_id": 173106,
+      "device_type": 5,
+      "codeset": "22bdce41ac61c28b"
+    }
+  }
+}

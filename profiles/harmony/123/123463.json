@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123463",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hauppauge",
+  "model": "WinTV-HVR-4000",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "d5364c4959851787",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "MyTv",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "MyVideos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "MyMusic",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "MyPictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "MyRadio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hauppauge/WinTV-HVR-4000.json"
+    ],
+    "harmony": {
+      "global_device_id": 123463,
+      "device_type": 18,
+      "codeset": "9fc770a1ec75cdec"
+    }
+  }
+}

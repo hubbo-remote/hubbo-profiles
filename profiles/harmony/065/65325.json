@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:65325",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sears",
+  "model": "509-30409",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "3ae9c549504482b4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "TvVcr"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Front Line In",
+      "steps": [
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sears/509-30409.json"
+    ],
+    "harmony": {
+      "global_device_id": 65325,
+      "device_type": 2,
+      "codeset": "b9d09e9ef79a99ff"
+    }
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "harmony:109091",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "MW 82-3112 MV/DOLBY",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ef02b9d7cf542a7c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "VCR2",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Cam1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/MW_82-3112_MV_DOLBY.json"
+    ],
+    "harmony": {
+      "global_device_id": 109091,
+      "device_type": 1,
+      "codeset": "7855ca1e8cf97c52"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260836",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Goodmans",
+  "model": "GDSB02BT20",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "91626e21fcd35139",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Goodmans/GDSB02BT20.json"
+    ],
+    "harmony": {
+      "global_device_id": 260836,
+      "device_type": 19,
+      "codeset": "a32eb7b072364951"
+    }
+  }
+}

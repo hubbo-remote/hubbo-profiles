@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211977",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Ellion",
+  "model": "X3-TR11",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "fb13f191240323d2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "LAN"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Ellion/X3-TR11.json"
+    ],
+    "harmony": {
+      "global_device_id": 211977,
+      "device_type": 35,
+      "codeset": "112b76ac676cf39f"
+    }
+  }
+}

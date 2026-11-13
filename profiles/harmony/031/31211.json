@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:31211",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "LX3600D",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "a782ce4ec96aa063",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/LX3600D.json"
+    ],
+    "harmony": {
+      "global_device_id": 31211,
+      "device_type": 22,
+      "codeset": "a38bcd5846bb44d8"
+    }
+  }
+}

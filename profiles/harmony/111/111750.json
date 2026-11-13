@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111750",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Barco",
+  "model": "G-6400",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "6ace32078563b6a1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 10000
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Barco/G-6400.json"
+    ],
+    "harmony": {
+      "global_device_id": 111750,
+      "device_type": 7,
+      "codeset": "2abb89f5c6eadc71"
+    }
+  }
+}

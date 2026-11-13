@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:209077",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vita Audio",
+  "model": "r2i",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0b9c9695d093e515",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vita_Audio/r2i.json"
+    ],
+    "harmony": {
+      "global_device_id": 209077,
+      "device_type": 5,
+      "codeset": "a4b8759599e77d89"
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "schema_version": 1,
+  "id": "harmony:240601",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "T22B350ND",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7549a86dfd0efb48",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1/DVI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Smart Hub",
+      "steps": [
+        {
+          "command": "SmartHub"
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    },
+    {
+      "name": "Ambient",
+      "steps": [
+        {
+          "command": "Ambient"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/T22B350ND.json"
+    ],
+    "harmony": {
+      "global_device_id": 240601,
+      "device_type": 1,
+      "codeset": "4e192f9c55c074c5"
+    }
+  }
+}

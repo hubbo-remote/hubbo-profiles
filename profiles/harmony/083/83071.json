@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:83071",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Feather",
+  "model": "F-01A",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6c6a9e6a25512086",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "5.1 CH",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Feather/F-01A.json"
+    ],
+    "harmony": {
+      "global_device_id": 83071,
+      "device_type": 19,
+      "codeset": "ffd4838f066c9c57"
+    }
+  }
+}

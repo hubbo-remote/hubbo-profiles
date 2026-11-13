@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:414293",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sangean",
+  "model": "DDR-36",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "907948f7cda1dc8f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sangean/DDR-36.json"
+    ],
+    "harmony": {
+      "global_device_id": 414293,
+      "device_type": 5,
+      "codeset": "41564b2c956355ae"
+    }
+  }
+}

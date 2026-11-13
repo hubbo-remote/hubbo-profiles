@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:128196",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sunfire",
+  "model": "Theater Grand Processor",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7b8034467d3d62b0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Input10"
+        }
+      ]
+    },
+    {
+      "name": "DAT/Tape",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "DBS/BS",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "LD/DVD",
+      "steps": [
+        {
+          "command": "Input12"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "VAux",
+      "steps": [
+        {
+          "command": "Input6"
+        }
+      ]
+    },
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "Input11"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sunfire/Theater_Grand_Processor.json"
+    ],
+    "harmony": {
+      "global_device_id": 128196,
+      "device_type": 5,
+      "codeset": "e9363af3c9deed6e"
+    }
+  }
+}

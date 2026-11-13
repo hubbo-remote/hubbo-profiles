@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12036",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "HTZ-323DV",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "7b37a0fc1648e7e7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle2"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner2"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "LINE",
+      "steps": [
+        {
+          "command": "InputLine12"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/HTZ-323DV.json"
+    ],
+    "harmony": {
+      "global_device_id": 12036,
+      "device_type": 22,
+      "codeset": "b039e15e745b7135"
+    }
+  }
+}

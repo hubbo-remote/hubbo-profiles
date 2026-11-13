@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:105213",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dantax",
+  "model": "PRO-950",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "34f58f0407133135",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dantax/PRO-950.json"
+    ],
+    "harmony": {
+      "global_device_id": 105213,
+      "device_type": 5,
+      "codeset": "e8915d08d761670a"
+    }
+  }
+}

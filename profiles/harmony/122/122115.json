@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:122115",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "S490",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "96fe2b73630bee36",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/S490.json"
+    ],
+    "harmony": {
+      "global_device_id": 122115,
+      "device_type": 7,
+      "codeset": "a5cea61fad34479a"
+    }
+  }
+}

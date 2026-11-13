@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:415062",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dell",
+  "model": "M900HD",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a4675ec1b845d2af",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dell/M900HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 415062,
+      "device_type": 7,
+      "codeset": "fa91b07395b721aa"
+    }
+  }
+}

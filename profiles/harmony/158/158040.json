@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158040",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sagem",
+  "model": "My Web Tuner 500",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "5dd904be73801c00",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "IPRadio",
+      "steps": [
+        {
+          "command": "InputIPRadio"
+        }
+      ]
+    },
+    {
+      "name": "MediaPlayer",
+      "steps": [
+        {
+          "command": "InputMediaPlayer"
+        }
+      ]
+    },
+    {
+      "name": "MP3Reader",
+      "steps": [
+        {
+          "command": "InputMP3Reader"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sagem/My_Web_Tuner_500.json"
+    ],
+    "harmony": {
+      "global_device_id": 158040,
+      "device_type": 36,
+      "codeset": "bd7ec23089f8cc68"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:498025",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Karcher",
+  "model": "SB 800S",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0a0d7dd7161c762d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Karcher/SB_800S.json"
+    ],
+    "harmony": {
+      "global_device_id": 498025,
+      "device_type": 19,
+      "codeset": "f1827f9703fc47a9"
+    }
+  }
+}

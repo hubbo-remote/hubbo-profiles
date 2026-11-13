@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "harmony:14005",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "VPT-595",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "18d5162585df305b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/VPT-595.json"
+    ],
+    "harmony": {
+      "global_device_id": 14005,
+      "device_type": 2,
+      "codeset": "7180e377a94e15a5"
+    }
+  }
+}

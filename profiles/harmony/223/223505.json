@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:223505",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Radialva",
+  "model": "RTV8728TXT",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "08313eda475ef780",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Radialva/RTV8728TXT.json"
+    ],
+    "harmony": {
+      "global_device_id": 223505,
+      "device_type": 1,
+      "codeset": "e2438759b5e42b9b"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:100089",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hirschmann",
+  "model": "CSR-20",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "450c45a50c2fe220",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "RadioTV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "RadioTV"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hirschmann/CSR-20.json"
+    ],
+    "harmony": {
+      "global_device_id": 100089,
+      "device_type": 18,
+      "codeset": "d9a477fa232338b1"
+    }
+  }
+}

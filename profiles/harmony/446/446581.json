@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:446581",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Terris",
+  "model": "MCD543",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "bcf8e10b43f07adb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Terris/MCD543.json"
+    ],
+    "harmony": {
+      "global_device_id": 446581,
+      "device_type": 21,
+      "codeset": "946acb612c0f4dfa"
+    }
+  }
+}

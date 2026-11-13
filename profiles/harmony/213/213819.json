@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:213819",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Infocus",
+  "model": "IN5106",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0065093ae0d3af12",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Source 1",
+      "steps": [
+        {
+          "command": "InputSource1"
+        }
+      ]
+    },
+    {
+      "name": "Source 2",
+      "steps": [
+        {
+          "command": "InputSource2"
+        }
+      ]
+    },
+    {
+      "name": "Source 3",
+      "steps": [
+        {
+          "command": "InputSource3"
+        }
+      ]
+    },
+    {
+      "name": "Source 4",
+      "steps": [
+        {
+          "command": "InputSource4"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Infocus/IN5106.json"
+    ],
+    "harmony": {
+      "global_device_id": 213819,
+      "device_type": 7,
+      "codeset": "911d3b05920c015e"
+    }
+  }
+}

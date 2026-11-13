@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:64598",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "STR-DE727",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "bcdb5d15c5c45f32",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/Sat",
+      "steps": [
+        {
+          "command": "InputTvSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/STR-DE727.json"
+    ],
+    "harmony": {
+      "global_device_id": 64598,
+      "device_type": 5,
+      "codeset": "386429fdc3768881"
+    }
+  }
+}

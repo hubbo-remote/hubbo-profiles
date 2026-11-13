@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137623",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sagem",
+  "model": "My Dual Radio 700",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a454ce45fdd07bce",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "IPRadio",
+      "steps": [
+        {
+          "command": "InputIPRadio"
+        }
+      ]
+    },
+    {
+      "name": "MediaPlayer",
+      "steps": [
+        {
+          "command": "InputMediaPlayer"
+        }
+      ]
+    },
+    {
+      "name": "MP3Reader",
+      "steps": [
+        {
+          "command": "InputMP3Reader"
+        }
+      ]
+    },
+    {
+      "name": "FMRadio",
+      "steps": [
+        {
+          "command": "InputFMRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sagem/My_Dual_Radio_700.json"
+    ],
+    "harmony": {
+      "global_device_id": 137623,
+      "device_type": 5,
+      "codeset": "0acaa29a93a0a18f"
+    }
+  }
+}

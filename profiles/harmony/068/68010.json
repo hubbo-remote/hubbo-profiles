@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68010",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hauppauge",
+  "model": "MediaMVP",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "02277724895e5184",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Picture",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hauppauge/MediaMVP.json"
+    ],
+    "harmony": {
+      "global_device_id": 68010,
+      "device_type": 35,
+      "codeset": "b917274e22740053"
+    }
+  }
+}

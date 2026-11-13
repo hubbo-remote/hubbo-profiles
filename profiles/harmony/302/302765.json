@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:302765",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Rotel",
+  "model": "RT-1570",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "72067aca79d43c1d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "i-Radio",
+      "steps": [
+        {
+          "command": "InputiRadio"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Rotel/RT-1570.json"
+    ],
+    "harmony": {
+      "global_device_id": 302765,
+      "device_type": 33,
+      "codeset": "812de5b7391825d7"
+    }
+  }
+}

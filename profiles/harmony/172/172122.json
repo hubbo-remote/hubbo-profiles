@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172122",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PT-AX200",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "69e6801a4538f5ea",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PT-AX200.json"
+    ],
+    "harmony": {
+      "global_device_id": 172122,
+      "device_type": 7,
+      "codeset": "5aee1a25c0016420"
+    }
+  }
+}

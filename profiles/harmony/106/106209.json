@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:106209",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Genesis",
+  "model": "G-6030",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6005c60d35106c7e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "MP3",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Genesis/G-6030.json"
+    ],
+    "harmony": {
+      "global_device_id": 106209,
+      "device_type": 5,
+      "codeset": "3408b7ecd2d8a241"
+    }
+  }
+}

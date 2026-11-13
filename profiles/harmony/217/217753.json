@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:217753",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RS2768IE",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "468828b092a3ea7a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "LINEIN/AUX",
+      "steps": [
+        {
+          "command": "InputLineInAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RS2768IE.json"
+    ],
+    "harmony": {
+      "global_device_id": 217753,
+      "device_type": 21,
+      "codeset": "cb54508dacb727d6"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:237981",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "26MA31D",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "67c4117f3759065c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "RGB-PC",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/26MA31D.json"
+    ],
+    "harmony": {
+      "global_device_id": 237981,
+      "device_type": 1,
+      "codeset": "b57bbd9cf8d71485"
+    }
+  }
+}

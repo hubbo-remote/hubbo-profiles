@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:37696",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "TSS15W",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9cd581df2009462e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Optical 1 (PVR)",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Optical 2 (XBOX)",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Digital Coax",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    },
+    {
+      "name": "Analogue",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/TSS15W.json"
+    ],
+    "harmony": {
+      "global_device_id": 37696,
+      "device_type": 5,
+      "codeset": "d499b77cd20aecf8"
+    }
+  }
+}

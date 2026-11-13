@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:166411",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hisense",
+  "model": "LCD-3233EU",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5343faa01882a11f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hisense/LCD-3233EU.json"
+    ],
+    "harmony": {
+      "global_device_id": 166411,
+      "device_type": 1,
+      "codeset": "93ed38899a0cc20c"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:177084",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hewlett Packard",
+  "model": "S5150T",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "07dbe08d94ff53c0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "MyTV",
+      "steps": [
+        {
+          "command": "LiveTv"
+        }
+      ]
+    },
+    {
+      "name": "MyDVD",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    },
+    {
+      "name": "MyVideos",
+      "steps": [
+        {
+          "command": "Videos"
+        }
+      ]
+    },
+    {
+      "name": "MyMusic",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "MyPictures",
+      "steps": [
+        {
+          "command": "Pictures"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hewlett_Packard/S5150T.json"
+    ],
+    "harmony": {
+      "global_device_id": 177084,
+      "device_type": 35,
+      "codeset": "2feda84fd1c60b4f"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168860",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TX-28EX20C",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8b9a7e4b56ea6090",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "TvAv"
+        },
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "TvAv"
+        },
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "Programm1",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TX-28EX20C.json"
+    ],
+    "harmony": {
+      "global_device_id": 168860,
+      "device_type": 1,
+      "codeset": "e3f5ce6dde87c3de"
+    }
+  }
+}

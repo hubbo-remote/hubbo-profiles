@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:70546",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Telefunken",
+  "model": "P540DV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "21d4d3aefbfc2510",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenne",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Telefunken/P540DV.json"
+    ],
+    "harmony": {
+      "global_device_id": 70546,
+      "device_type": 1,
+      "codeset": "7a2ad4fd0d537fc0"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:301621",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Digital Projection",
+  "model": "M-Vision Cine 230",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "7a11c4df26b2a17a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "Input 5",
+      "steps": [
+        {
+          "command": "Input5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Digital_Projection/M-Vision_Cine_230.json"
+    ],
+    "harmony": {
+      "global_device_id": 301621,
+      "device_type": 7,
+      "codeset": "4bc16c8027190c56"
+    }
+  }
+}

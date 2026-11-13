@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:33191",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Goodmans",
+  "model": "GTV30WLCD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "244db366535d1f4d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Scart RGB",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputYuv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Goodmans/GTV30WLCD.json"
+    ],
+    "harmony": {
+      "global_device_id": 33191,
+      "device_type": 1,
+      "codeset": "f551a7916886bd26"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147516",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "D-C30",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "51365cbaef0677fe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD/VDP",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "V.AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CDR/TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/D-C30.json"
+    ],
+    "harmony": {
+      "global_device_id": 147516,
+      "device_type": 22,
+      "codeset": "0a66dcf0792072d6"
+    }
+  }
+}

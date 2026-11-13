@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135639",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samson Technologies",
+  "model": "S-1000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "460a07bcd140a89b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "HouseC"
+      },
+      {
+        "command": "Light2"
+      },
+      {
+        "command": "On"
+      }
+    ],
+    "off": [
+      {
+        "command": "HouseC"
+      },
+      {
+        "command": "Light2"
+      },
+      {
+        "command": "AllLightsOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samson_Technologies/S-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 135639,
+      "device_type": 19,
+      "codeset": "bab166b1c79fe9d5"
+    }
+  }
+}

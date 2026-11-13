@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260874",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "AS851/98",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "eb6ddfd72b047705",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    },
+    {
+      "name": "Mp3Link",
+      "steps": [
+        {
+          "command": "InputMp3Link"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/AS851_98.json"
+    ],
+    "harmony": {
+      "global_device_id": 260874,
+      "device_type": 5,
+      "codeset": "03d308166b757d58"
+    }
+  }
+}

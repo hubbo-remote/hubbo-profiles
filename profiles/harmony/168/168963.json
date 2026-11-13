@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168963",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eltax",
+  "model": "AVR-280",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7f07f1465209bcc1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DIGITAL 1",
+      "steps": [
+        {
+          "command": "InputDigital1"
+        }
+      ]
+    },
+    {
+      "name": "DIGITAL 2",
+      "steps": [
+        {
+          "command": "InputDigital2"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eltax/AVR-280.json"
+    ],
+    "harmony": {
+      "global_device_id": 168963,
+      "device_type": 5,
+      "codeset": "e8b5e00ca3c37e4f"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:14064",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Ultrx",
+  "model": "R55",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0d3589bc079bf642",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Ultrx/R55.json"
+    ],
+    "harmony": {
+      "global_device_id": 14064,
+      "device_type": 5,
+      "codeset": "a7d7a5f70f2bdefb"
+    }
+  }
+}

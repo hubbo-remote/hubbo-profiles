@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259385",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Comsis",
+  "model": "FCR-120BR",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "9fae08045652abab",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My Radio",
+      "steps": [
+        {
+          "command": "FMRadio"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Comsis/FCR-120BR.json"
+    ],
+    "harmony": {
+      "global_device_id": 259385,
+      "device_type": 35,
+      "codeset": "16e4a1696508f194"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174511",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Schwaiger",
+  "model": "DSR 5580 RCI",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "abb7b3b609ec773d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "F1"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Schwaiger/DSR_5580_RCI.json"
+    ],
+    "harmony": {
+      "global_device_id": 174511,
+      "device_type": 18,
+      "codeset": "41fc4f1a9a606ad5"
+    }
+  }
+}

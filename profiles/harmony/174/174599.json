@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174599",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR5520H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "d8f3e9c63ab0edcd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDDList",
+      "steps": [
+        {
+          "command": "HDDList"
+        }
+      ]
+    },
+    {
+      "name": "LiveTV",
+      "steps": [
+        {
+          "command": "Live"
+        }
+      ]
+    },
+    {
+      "name": "CAM",
+      "steps": [
+        {
+          "command": "CAM"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "Disc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR5520H.json"
+    ],
+    "harmony": {
+      "global_device_id": 174599,
+      "device_type": 34,
+      "codeset": "20fe44d8270d56f9"
+    }
+  }
+}

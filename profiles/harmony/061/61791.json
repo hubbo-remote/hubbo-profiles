@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "harmony:61791",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HD-567BP6",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b16a9907ffd4aa8d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "delay_ms": 1000
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "DIGITAL-IN",
+      "steps": [
+        {
+          "command": "InputDigitalIn"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HD-567BP6.json"
+    ],
+    "harmony": {
+      "global_device_id": 61791,
+      "device_type": 1,
+      "codeset": "22c8c3beddcbe530"
+    }
+  }
+}

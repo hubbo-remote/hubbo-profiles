@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:254720",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "CECH-ZED1E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2b7ab8e27d514ee1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input1",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "Input2",
+      "steps": [
+        {
+          "command": "InputRgb2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/CECH-ZED1E.json"
+    ],
+    "harmony": {
+      "global_device_id": 254720,
+      "device_type": 13,
+      "codeset": "1d654b756728256d"
+    }
+  }
+}

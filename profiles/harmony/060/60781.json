@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:60781",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "DV-NC200",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "1d30403577aeb42b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/DV-NC200.json"
+    ],
+    "harmony": {
+      "global_device_id": 60781,
+      "device_type": 25,
+      "codeset": "7b9ebc569a222424"
+    }
+  }
+}

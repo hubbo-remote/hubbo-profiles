@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:498258",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bestisan",
+  "model": "SG01",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "73b431c08fc40714",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bestisan/SG01.json"
+    ],
+    "harmony": {
+      "global_device_id": 498258,
+      "device_type": 19,
+      "codeset": "0113fbb93b5e74ce"
+    }
+  }
+}

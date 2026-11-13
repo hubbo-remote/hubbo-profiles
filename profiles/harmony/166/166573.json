@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:166573",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "VR-8705",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "21071f8b2c90c21a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "LineIn"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "TvVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/VR-8705.json"
+    ],
+    "harmony": {
+      "global_device_id": 166573,
+      "device_type": 2,
+      "codeset": "0382a8a0ebc15df3"
+    }
+  }
+}

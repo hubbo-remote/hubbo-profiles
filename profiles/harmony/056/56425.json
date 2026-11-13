@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "id": "harmony:56425",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TX-28LD8F",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4ce4a6bdffffeec7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "SVideo 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Green"
+        },
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "Yellow"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TX-28LD8F.json"
+    ],
+    "harmony": {
+      "global_device_id": 56425,
+      "device_type": 1,
+      "codeset": "a8547d18fe86ba3f"
+    }
+  }
+}

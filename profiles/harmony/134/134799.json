@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:134799",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KLH",
+  "model": "R-1300",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e2ebca66ae69604f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KLH/R-1300.json"
+    ],
+    "harmony": {
+      "global_device_id": 134799,
+      "device_type": 5,
+      "codeset": "af3ad6124478cc06"
+    }
+  }
+}

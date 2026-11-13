@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:107913",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Conceptronic",
+  "model": "CMED-3Plus",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "44ae85b4661f9239",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "InputFile"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Conceptronic/CMED-3Plus.json"
+    ],
+    "harmony": {
+      "global_device_id": 107913,
+      "device_type": 35,
+      "codeset": "4caa143dabbd2a3d"
+    }
+  }
+}

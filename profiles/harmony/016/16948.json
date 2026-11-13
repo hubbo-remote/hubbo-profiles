@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "harmony:16948",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "General Electric",
+  "model": "13TVR60",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "9"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "9"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "9"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/General_Electric/13TVR60.json"
+    ],
+    "harmony": {
+      "global_device_id": 16948,
+      "device_type": 15,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

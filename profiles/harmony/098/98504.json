@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:98504",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "HTP-33",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "3021f61de050e2f9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 2000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/DVR1",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DVD/DVR2",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DIGTAL",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "ANALOG",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/HTP-33.json"
+    ],
+    "harmony": {
+      "global_device_id": 98504,
+      "device_type": 5,
+      "codeset": "d2e7bbd74d16d83e"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169181",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Firstline",
+  "model": "FS-4219HI",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "42d0bc349b015e11",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Firstline/FS-4219HI.json"
+    ],
+    "harmony": {
+      "global_device_id": 169181,
+      "device_type": 1,
+      "codeset": "e3ee8cc87ef13ee3"
+    }
+  }
+}

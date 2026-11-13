@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216162",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "V-4315",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "7615688904d1fedf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/V-4315.json"
+    ],
+    "harmony": {
+      "global_device_id": 216162,
+      "device_type": 19,
+      "codeset": "62164e5ed17f0af9"
+    }
+  }
+}

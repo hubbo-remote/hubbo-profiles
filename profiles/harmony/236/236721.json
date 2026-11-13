@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:236721",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kaiser Baas",
+  "model": "wi-fi media player",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "ec655a32cd4bada1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kaiser_Baas/wi-fi_media_player.json"
+    ],
+    "harmony": {
+      "global_device_id": 236721,
+      "device_type": 35,
+      "codeset": "8b6f641a5846e776"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:468517",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MEGACRA",
+  "model": "S6520",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9145f2d3353601d1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MEGACRA/S6520.json"
+    ],
+    "harmony": {
+      "global_device_id": 468517,
+      "device_type": 19,
+      "codeset": "cf3afb167f297f54"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "harmony:97340",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Palladium",
+  "model": "765/872",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b009634181b59cc6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "VCR/AUX",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Palladium/765_872.json"
+    ],
+    "harmony": {
+      "global_device_id": 97340,
+      "device_type": 1,
+      "codeset": "2759f601cd7513fd"
+    }
+  }
+}

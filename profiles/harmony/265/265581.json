@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265581",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-60LE660",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3471c65806d35fb6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Input1"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Input2"
+        },
+        {
+          "command": "Input2"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Input2"
+        },
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Input3"
+        },
+        {
+          "command": "Input3"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Input3"
+        },
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "Input4"
+        },
+        {
+          "command": "Input4"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Input4"
+        },
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Input5"
+        },
+        {
+          "command": "Input5"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Input5"
+        },
+        {
+          "command": "Input5"
+        }
+      ]
+    },
+    {
+      "name": "PC IN",
+      "steps": [
+        {
+          "command": "Input6"
+        },
+        {
+          "command": "Input6"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Input6"
+        },
+        {
+          "command": "Input6"
+        }
+      ]
+    },
+    {
+      "name": "USB Media",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Input7"
+        }
+      ]
+    },
+    {
+      "name": "Home Network(DLNA)",
+      "steps": [
+        {
+          "command": "Input6"
+        },
+        {
+          "command": "Input6"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input6"
+        },
+        {
+          "command": "Input6"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Smart Central",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "SmartCentral"
+        }
+      ]
+    },
+    {
+      "name": "MiraCast",
+      "steps": [
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Input1"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Ent"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-60LE660.json"
+    ],
+    "harmony": {
+      "global_device_id": 265581,
+      "device_type": 1,
+      "codeset": "a6d40f87dbc74fa9"
+    }
+  }
+}

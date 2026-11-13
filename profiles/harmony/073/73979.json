@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:73979",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Copland",
+  "model": "CSA-29",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "70d8f7ac42876f79",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "RIAA",
+      "steps": [
+        {
+          "command": "InputRIAA"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Copland/CSA-29.json"
+    ],
+    "harmony": {
+      "global_device_id": 73979,
+      "device_type": 19,
+      "codeset": "34f36e8646e1b767"
+    }
+  }
+}

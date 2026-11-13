@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "id": "harmony:234903",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "UE22ES5410W",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "568e6165ee43890f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT",
+      "steps": [
+        {
+          "command": "InputExt"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputExt"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1/DVI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Smart Hub",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "SmartHub"
+        }
+      ]
+    },
+    {
+      "name": "Ambient",
+      "steps": [
+        {
+          "command": "Ambient"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/UE22ES5410W.json"
+    ],
+    "harmony": {
+      "global_device_id": 234903,
+      "device_type": 1,
+      "codeset": "9a89d3336760191a"
+    }
+  }
+}

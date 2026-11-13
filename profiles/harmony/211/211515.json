@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211515",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "DVR30-STG",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "da1e7511b34b43db",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/DVR30-STG.json"
+    ],
+    "harmony": {
+      "global_device_id": 211515,
+      "device_type": 25,
+      "codeset": "3abdcb19b7003b77"
+    }
+  }
+}

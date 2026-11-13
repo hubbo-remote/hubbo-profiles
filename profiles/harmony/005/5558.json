@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:5558",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AudioControl",
+  "model": "Pantages",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d235aa2364d5a345",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AudioControl/Pantages.json"
+    ],
+    "harmony": {
+      "global_device_id": 5558,
+      "device_type": 19,
+      "codeset": "c714261b97245eca"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157827",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-E75V",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "4af8b669410fe6f4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-E75V.json"
+    ],
+    "harmony": {
+      "global_device_id": 157827,
+      "device_type": 47,
+      "codeset": "7d07ffe42d41d367"
+    }
+  }
+}

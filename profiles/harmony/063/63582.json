@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:63582",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Beholder",
+  "model": "TV 409 FM",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "fadddee8e7f480a9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "Record"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Pause"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "Reset"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "CATVTV"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Beholder/TV_409_FM.json"
+    ],
+    "harmony": {
+      "global_device_id": 63582,
+      "device_type": 1,
+      "codeset": "6ddea77f6bede916"
+    }
+  }
+}

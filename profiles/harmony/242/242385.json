@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:242385",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GPX",
+  "model": "VCD 1140 DivX-Y",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "fe519e66ba3f0faa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GPX/VCD_1140_DivX-Y.json"
+    ],
+    "harmony": {
+      "global_device_id": 242385,
+      "device_type": 47,
+      "codeset": "c3d42580076d0f1d"
+    }
+  }
+}

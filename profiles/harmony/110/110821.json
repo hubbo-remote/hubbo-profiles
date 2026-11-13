@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110821",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GB-PVR",
+  "model": "PVR-150",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "8f3934255957f50e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "InputVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "InputPictures"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GB-PVR/PVR-150.json"
+    ],
+    "harmony": {
+      "global_device_id": 110821,
+      "device_type": 35,
+      "codeset": "53003281f9ef3435"
+    }
+  }
+}

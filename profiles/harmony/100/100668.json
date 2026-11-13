@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:100668",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "MIDI M-45",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "892a141a357f0bf9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/MIDI_M-45.json"
+    ],
+    "harmony": {
+      "global_device_id": 100668,
+      "device_type": 21,
+      "codeset": "7ddf46c4a90451d6"
+    }
+  }
+}

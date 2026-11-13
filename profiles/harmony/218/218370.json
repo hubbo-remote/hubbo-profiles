@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:218370",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-PM02",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "7c1b2fe0bafe32b9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "MUSICPORT",
+      "steps": [
+        {
+          "command": "InputMusicPort"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputFmAm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-PM02.json"
+    ],
+    "harmony": {
+      "global_device_id": 218370,
+      "device_type": 21,
+      "codeset": "acb2e40e61c0da16"
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157275",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Akai",
+  "model": "PT-5492",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "044a2650185d9c30",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "VolumeUp"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "SVideo 1",
+      "steps": [
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "SVideo 2",
+      "steps": [
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Akai/PT-5492.json"
+    ],
+    "harmony": {
+      "global_device_id": 157275,
+      "device_type": 1,
+      "codeset": "7d1b900fade05ce8"
+    }
+  }
+}

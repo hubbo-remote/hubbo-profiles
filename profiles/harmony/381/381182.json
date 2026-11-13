@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:381182",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "Home Cinema 4000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f834a0dcdfc70f13",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "InputLan"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/Home_Cinema_4000.json"
+    ],
+    "harmony": {
+      "global_device_id": 381182,
+      "device_type": 7,
+      "codeset": "73b8279902cb6461"
+    }
+  }
+}

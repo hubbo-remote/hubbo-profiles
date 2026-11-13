@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:100809",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DK Digital",
+  "model": "AS-400W",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "f47c04336b1750bd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "InputCD",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "InputAUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Input5.1",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DK_Digital/AS-400W.json"
+    ],
+    "harmony": {
+      "global_device_id": 100809,
+      "device_type": 19,
+      "codeset": "189734b46a6c5378"
+    }
+  }
+}

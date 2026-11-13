@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121257",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "LH-D6245A",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "17047c88d2601b39",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 3000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM-AM",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD-DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/LH-D6245A.json"
+    ],
+    "harmony": {
+      "global_device_id": 121257,
+      "device_type": 22,
+      "codeset": "98eb11f32c71ea0c"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172980",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "HV-DX350A",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "aa2d95693f6bd882",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/HV-DX350A.json"
+    ],
+    "harmony": {
+      "global_device_id": 172980,
+      "device_type": 25,
+      "codeset": "ba7a3033e9a05484"
+    }
+  }
+}

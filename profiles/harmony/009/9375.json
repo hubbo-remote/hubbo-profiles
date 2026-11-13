@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:9375",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Niro",
+  "model": "TWO6.1C",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e84ebcf5b7725124",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTv"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff2"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV/AUX",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "SAT/CAB",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VCR/DVR",
+      "steps": [
+        {
+          "command": "InputVcrDvr"
+        }
+      ]
+    },
+    {
+      "name": "FRONT",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "RADIO",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Niro/TWO6.1C.json"
+    ],
+    "harmony": {
+      "global_device_id": 9375,
+      "device_type": 5,
+      "codeset": "f150c62f4e4438a3"
+    }
+  }
+}

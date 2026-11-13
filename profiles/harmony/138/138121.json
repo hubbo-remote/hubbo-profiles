@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138121",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Algolith",
+  "model": "DragonFly",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "bf3ee99c7a0ef468",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 1 (S-Video)",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Input 2 (Composite)",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "Input 3 (Component)",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Input 4 (HDMI A)",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Input 5 (HDMI B)",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Algolith/DragonFly.json"
+    ],
+    "harmony": {
+      "global_device_id": 138121,
+      "device_type": 30,
+      "codeset": "0d8c063d82484664"
+    }
+  }
+}

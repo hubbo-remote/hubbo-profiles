@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "harmony:92007",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Clarion",
+  "model": "VCZ-628",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "5d02ee1187e500cc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Clarion/VCZ-628.json"
+    ],
+    "harmony": {
+      "global_device_id": 92007,
+      "device_type": 22,
+      "codeset": "542d4fe152e3582d"
+    }
+  }
+}

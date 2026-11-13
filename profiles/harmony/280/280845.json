@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "harmony:280845",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "P1100C",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "c0d42a53a87313a8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "SD/USB A",
+      "steps": [
+        {
+          "command": "InputSdUsbA"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/DVI",
+      "steps": [
+        {
+          "command": "InputHdmiDvi"
+        }
+      ]
+    },
+    {
+      "name": "USB B",
+      "steps": [
+        {
+          "command": "InputUsbB"
+        }
+      ]
+    },
+    {
+      "name": "Lan/WiFi",
+      "steps": [
+        {
+          "command": "InputLanWiFi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/P1100C.json"
+    ],
+    "harmony": {
+      "global_device_id": 280845,
+      "device_type": 7,
+      "codeset": "22a78e9e81b5ddc8"
+    }
+  }
+}

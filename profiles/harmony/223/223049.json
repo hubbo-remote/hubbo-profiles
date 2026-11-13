@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:223049",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Popcorn Hour",
+  "model": "A-300",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e61982a21c00e775",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "All",
+      "steps": [
+        {
+          "command": "All"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Popcorn_Hour/A-300.json"
+    ],
+    "harmony": {
+      "global_device_id": 223049,
+      "device_type": 35,
+      "codeset": "300e7c94d7a4e42a"
+    }
+  }
+}

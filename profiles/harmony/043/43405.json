@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:43405",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Boxlight",
+  "model": "Premiere 50HD",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "ffda59fe12ac6324",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 200
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Input4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Boxlight/Premiere_50HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 43405,
+      "device_type": 7,
+      "codeset": "d467d57aad52b6d8"
+    }
+  }
+}

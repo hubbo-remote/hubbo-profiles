@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162768",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AFtec",
+  "model": "VampI-SC19",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6e6f91a9980f99ce",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "BlueRay",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AFtec/VampI-SC19.json"
+    ],
+    "harmony": {
+      "global_device_id": 162768,
+      "device_type": 5,
+      "codeset": "cb01075d062f254a"
+    }
+  }
+}

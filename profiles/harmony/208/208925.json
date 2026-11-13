@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:208925",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTS-3220/12",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "ad6ac5f42d4cc188",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AudioSource",
+      "steps": [
+        {
+          "command": "InputAudioSource"
+        }
+      ]
+    },
+    {
+      "name": "iPodDock",
+      "steps": [
+        {
+          "command": "InputIPodDock"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTS-3220_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 208925,
+      "device_type": 22,
+      "codeset": "5cf6c6d34970e310"
+    }
+  }
+}

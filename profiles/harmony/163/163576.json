@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163576",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Weige",
+  "model": "A-70",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "bde48de53a05f243",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Weige/A-70.json"
+    ],
+    "harmony": {
+      "global_device_id": 163576,
+      "device_type": 19,
+      "codeset": "7cfece70ebf783c0"
+    }
+  }
+}

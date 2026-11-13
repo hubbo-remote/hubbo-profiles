@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:217892",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FW-2010",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "6946ab43f3c8ea4a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FW-2010.json"
+    ],
+    "harmony": {
+      "global_device_id": 217892,
+      "device_type": 21,
+      "codeset": "23e613f1cd5bf271"
+    }
+  }
+}

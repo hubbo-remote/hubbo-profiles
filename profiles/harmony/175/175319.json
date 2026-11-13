@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:175319",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "Wave Music System",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "38fdc523e0cf194e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/Wave_Music_System.json"
+    ],
+    "harmony": {
+      "global_device_id": 175319,
+      "device_type": 21,
+      "codeset": "1cf93a049eb3f7d5"
+    }
+  }
+}

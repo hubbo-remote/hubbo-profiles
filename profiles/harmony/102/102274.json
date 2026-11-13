@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102274",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BBK Electronics",
+  "model": "FSA-2800",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "41a7ac8247fd0fcd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "STEREO",
+      "steps": [
+        {
+          "command": "Stereo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BBK_Electronics/FSA-2800.json"
+    ],
+    "harmony": {
+      "global_device_id": 102274,
+      "device_type": 19,
+      "codeset": "1d384d938db6177e"
+    }
+  }
+}

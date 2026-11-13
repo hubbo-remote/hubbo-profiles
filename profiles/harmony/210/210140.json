@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:210140",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Emtec",
+  "model": "MOVIE CUBE K 230",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "cda29a344a7b5c72",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Emtec/MOVIE_CUBE_K_230.json"
+    ],
+    "harmony": {
+      "global_device_id": 210140,
+      "device_type": 35,
+      "codeset": "113682c0e6db674e"
+    }
+  }
+}

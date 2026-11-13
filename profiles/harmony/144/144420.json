@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144420",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mustek",
+  "model": "A-403",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "96dbfc779c83aaa2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV/VCR",
+      "steps": [
+        {
+          "command": "InputTvVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mustek/A-403.json"
+    ],
+    "harmony": {
+      "global_device_id": 144420,
+      "device_type": 19,
+      "codeset": "02f52f61f1f29465"
+    }
+  }
+}

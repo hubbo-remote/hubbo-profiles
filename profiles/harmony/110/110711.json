@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110711",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Harman Kardon",
+  "model": "DPR-2001",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "72c7fc6e43891580",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 5",
+      "steps": [
+        {
+          "command": "InputVideo5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Harman_Kardon/DPR-2001.json"
+    ],
+    "harmony": {
+      "global_device_id": 110711,
+      "device_type": 5,
+      "codeset": "72607420d8c96959"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:78799",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu",
+  "model": "P42HTS40RS",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7acd0054548b7881",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu/P42HTS40RS.json"
+    ],
+    "harmony": {
+      "global_device_id": 78799,
+      "device_type": 1,
+      "codeset": "3954ad8bd16f13f5"
+    }
+  }
+}

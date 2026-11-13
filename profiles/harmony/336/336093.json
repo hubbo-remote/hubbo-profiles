@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336093",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ViewSonic",
+  "model": "VS16232",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "71a33257a17a7b25",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ViewSonic/VS16232.json"
+    ],
+    "harmony": {
+      "global_device_id": 336093,
+      "device_type": 7,
+      "codeset": "40272dd127a9eba0"
+    }
+  }
+}

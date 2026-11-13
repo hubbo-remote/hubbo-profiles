@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:128975",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "FX-F3000R",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "548be4258875b4e8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMiniDisc"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/FX-F3000R.json"
+    ],
+    "harmony": {
+      "global_device_id": 128975,
+      "device_type": 21,
+      "codeset": "7ceb401034215345"
+    }
+  }
+}

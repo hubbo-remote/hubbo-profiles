@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:238706",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Microlab",
+  "model": "FC530U",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0d85b992afa92c3b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "USB/SD",
+      "steps": [
+        {
+          "command": "InputUsbSd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Microlab/FC530U.json"
+    ],
+    "harmony": {
+      "global_device_id": 238706,
+      "device_type": 5,
+      "codeset": "5c71edd2bede0ba7"
+    }
+  }
+}

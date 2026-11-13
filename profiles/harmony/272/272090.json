@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:272090",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Metz",
+  "model": "37TR41",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e5e15a1f29a02e67",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Metz/37TR41.json"
+    ],
+    "harmony": {
+      "global_device_id": 272090,
+      "device_type": 1,
+      "codeset": "6a2b55732947cd93"
+    }
+  }
+}

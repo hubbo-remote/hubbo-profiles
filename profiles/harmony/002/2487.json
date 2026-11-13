@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "harmony:2487",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "PCJ532RF",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "044a2650185d9c30",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "ANT/CATV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "VolumeUp"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "VolumeUp"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "VolumeUp"
+        },
+        {
+          "command": "TvVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/PCJ532RF.json"
+    ],
+    "harmony": {
+      "global_device_id": 2487,
+      "device_type": 1,
+      "codeset": "7d1b900fade05ce8"
+    }
+  }
+}

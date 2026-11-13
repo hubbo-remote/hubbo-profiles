@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158009",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LGXBR342",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "517f0756178b253a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LGXBR342.json"
+    ],
+    "harmony": {
+      "global_device_id": 158009,
+      "device_type": 47,
+      "codeset": "4618a83640d9563b"
+    }
+  }
+}

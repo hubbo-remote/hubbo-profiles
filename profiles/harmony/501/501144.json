@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:501144",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "C501",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7a9286178dd1d2a6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Video"
+        }
+      ]
+    },
+    {
+      "name": "MediaPlayer",
+      "steps": [
+        {
+          "command": "InputMediaPlayer"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/C501.json"
+    ],
+    "harmony": {
+      "global_device_id": 501144,
+      "device_type": 13,
+      "codeset": "e155954179b8f693"
+    }
+  }
+}

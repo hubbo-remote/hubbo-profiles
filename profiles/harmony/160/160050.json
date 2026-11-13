@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "id": "harmony:160050",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "42PX4DV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1d83a8e0c91236f7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 11000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputHdmi"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "RGB - PC",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "RGB - DTV",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputRgb"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/DVI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/42PX4DV.json"
+    ],
+    "harmony": {
+      "global_device_id": 160050,
+      "device_type": 1,
+      "codeset": "443d090128634265"
+    }
+  }
+}

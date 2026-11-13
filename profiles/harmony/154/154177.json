@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154177",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ODYS",
+  "model": "MF-51002 DVB-T",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "0b816ebf851eda27",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputFmAm"
+        }
+      ]
+    },
+    {
+      "name": "DVB-T",
+      "steps": [
+        {
+          "command": "InputDVBT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ODYS/MF-51002_DVB-T.json"
+    ],
+    "harmony": {
+      "global_device_id": 154177,
+      "device_type": 37,
+      "codeset": "f9550f4070f62eac"
+    }
+  }
+}

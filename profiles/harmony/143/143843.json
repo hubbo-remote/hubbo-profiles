@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143843",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "MDVD 2007",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b03fe0314075a85b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/MDVD_2007.json"
+    ],
+    "harmony": {
+      "global_device_id": 143843,
+      "device_type": 22,
+      "codeset": "c811a30b0f34e4f6"
+    }
+  }
+}

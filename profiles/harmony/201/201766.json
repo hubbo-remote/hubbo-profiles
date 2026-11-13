@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201766",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "SX-SW570",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6ae4985d0bd829a5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "PC/Game",
+      "steps": [
+        {
+          "command": "InputPcGame"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/SX-SW570.json"
+    ],
+    "harmony": {
+      "global_device_id": 201766,
+      "device_type": 5,
+      "codeset": "a69138f8444a2b5b"
+    }
+  }
+}

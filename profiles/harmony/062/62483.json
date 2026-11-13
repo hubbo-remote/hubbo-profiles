@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:62483",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Haier",
+  "model": "L30CV6",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a8d73efb6360ceab",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/Video",
+      "steps": [
+        {
+          "command": "StartInput"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Haier/L30CV6.json"
+    ],
+    "harmony": {
+      "global_device_id": 62483,
+      "device_type": 1,
+      "codeset": "af6bfb8dc1160eda"
+    }
+  }
+}

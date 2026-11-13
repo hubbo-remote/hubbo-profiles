@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181213",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SA-HT60",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "0012613ee2523a15",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVR/DVD-P",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SA-HT60.json"
+    ],
+    "harmony": {
+      "global_device_id": 181213,
+      "device_type": 22,
+      "codeset": "2f8bb59fcc3b3b61"
+    }
+  }
+}

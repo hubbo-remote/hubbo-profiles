@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "id": "harmony:248941",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "PN51F4500AF",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "020ed7a2f9f4fe3b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2/DVI",
+      "steps": [
+        {
+          "command": "ExitApp"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Smart Hub",
+      "steps": [
+        {
+          "command": "SmartHub"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/PN51F4500AF.json"
+    ],
+    "harmony": {
+      "global_device_id": 248941,
+      "device_type": 1,
+      "codeset": "668430b993779336"
+    }
+  }
+}

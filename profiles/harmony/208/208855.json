@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:208855",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Asus",
+  "model": "EB1501P",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "9998ad5640fbf79d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "MyPicture"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Asus/EB1501P.json"
+    ],
+    "harmony": {
+      "global_device_id": 208855,
+      "device_type": 35,
+      "codeset": "a6172c967f31f7c5"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:224508",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aspire Digital",
+  "model": "AD-130PSC",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "106bf320cf0ec870",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "5.1 ch",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aspire_Digital/AD-130PSC.json"
+    ],
+    "harmony": {
+      "global_device_id": 224508,
+      "device_type": 19,
+      "codeset": "fcb64247219132e3"
+    }
+  }
+}

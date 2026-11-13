@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167385",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RH177",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "970221d7bdd3a218",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RH177.json"
+    ],
+    "harmony": {
+      "global_device_id": 167385,
+      "device_type": 34,
+      "codeset": "8d5e972b590d6d6b"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118023",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Salora",
+  "model": "28SP50 Jazz",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7718af63f8ecdd5d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "tv",
+      "steps": [
+        {
+          "command": "Display"
+        }
+      ]
+    },
+    {
+      "name": "dvd",
+      "steps": [
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Salora/28SP50_Jazz.json"
+    ],
+    "harmony": {
+      "global_device_id": 118023,
+      "device_type": 1,
+      "codeset": "7973bb74fa53072f"
+    }
+  }
+}

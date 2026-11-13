@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148558",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVD-750VR/17",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "b06134044693db55",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVD-750VR_17.json"
+    ],
+    "harmony": {
+      "global_device_id": 148558,
+      "device_type": 25,
+      "codeset": "f0bbaf4cb59a702a"
+    }
+  }
+}

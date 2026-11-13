@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:151885",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR3575H/05",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "05d2cf0a9a5a4c1e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "LiveTv",
+      "steps": [
+        {
+          "command": "Live"
+        }
+      ]
+    },
+    {
+      "name": "Cam",
+      "steps": [
+        {
+          "command": "CAM"
+        }
+      ]
+    },
+    {
+      "name": "Usb",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR3575H_05.json"
+    ],
+    "harmony": {
+      "global_device_id": 151885,
+      "device_type": 34,
+      "codeset": "1a355b0919e2692f"
+    }
+  }
+}

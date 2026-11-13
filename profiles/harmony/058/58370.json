@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58370",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ASR",
+  "model": "Emitter 1 HD",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d235aa2364d5a345",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Netgear MP3",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ASR/Emitter_1_HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 58370,
+      "device_type": 19,
+      "codeset": "c714261b97245eca"
+    }
+  }
+}

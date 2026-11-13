@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:87022",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "D-Link",
+  "model": "DSM-520",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "a8a9b9e7f0f2dd04",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Online",
+      "steps": [
+        {
+          "command": "InputOnlineMedia"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/D-Link/DSM-520.json"
+    ],
+    "harmony": {
+      "global_device_id": 87022,
+      "device_type": 35,
+      "codeset": "a9d325b3fb943443"
+    }
+  }
+}

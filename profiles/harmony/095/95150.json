@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95150",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Leadtek",
+  "model": "WinFast TV2000 XP Expert",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "373c574168dfcc92",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Leadtek/WinFast_TV2000_XP_Expert.json"
+    ],
+    "harmony": {
+      "global_device_id": 95150,
+      "device_type": 18,
+      "codeset": "67fff450cbc3f1d4"
+    }
+  }
+}

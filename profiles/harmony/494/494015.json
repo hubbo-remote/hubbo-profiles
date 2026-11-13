@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:494015",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Projection Design",
+  "model": "F22",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "dff1204f442ba038",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Component Video",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "C-Video",
+      "steps": [
+        {
+          "command": "InputCVideo"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Projection_Design/F22.json"
+    ],
+    "harmony": {
+      "global_device_id": 494015,
+      "device_type": 7,
+      "codeset": "bf948d6ff0958e7d"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205916",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "BDV-T57",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "a1217516a024f134",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "D.Media",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Tuner FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "SAT/CABLE",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AUDIO",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/BDV-T57.json"
+    ],
+    "harmony": {
+      "global_device_id": 205916,
+      "device_type": 22,
+      "codeset": "2a69d75d5e6ec256"
+    }
+  }
+}

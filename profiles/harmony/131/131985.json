@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:131985",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tom",
+  "model": "SDR-682",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "581a30a5a2eab0ff",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tom/SDR-682.json"
+    ],
+    "harmony": {
+      "global_device_id": 131985,
+      "device_type": 16,
+      "codeset": "55424ac093dc3690"
+    }
+  }
+}

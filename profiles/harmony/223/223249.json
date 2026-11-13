@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:223249",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mx Onda",
+  "model": "MX-DHT200",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "08667842626caeca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mx_Onda/MX-DHT200.json"
+    ],
+    "harmony": {
+      "global_device_id": 223249,
+      "device_type": 22,
+      "codeset": "e7ba6fcefb35a6bb"
+    }
+  }
+}

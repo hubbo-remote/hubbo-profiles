@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:54372",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GoldStar",
+  "model": "VC693MKC",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "4e9bfc9cc1fe7530",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GoldStar/VC693MKC.json"
+    ],
+    "harmony": {
+      "global_device_id": 54372,
+      "device_type": 25,
+      "codeset": "4435cdc978fc2e91"
+    }
+  }
+}

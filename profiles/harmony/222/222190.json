@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:222190",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Maximum",
+  "model": "TS-3002 CX-CI",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "461d873ef94b4e78",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Maximum/TS-3002_CX-CI.json"
+    ],
+    "harmony": {
+      "global_device_id": 222190,
+      "device_type": 16,
+      "codeset": "76d041130cbcbff6"
+    }
+  }
+}

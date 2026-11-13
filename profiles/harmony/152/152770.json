@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:152770",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Trust",
+  "model": "RC-2400",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "2a884161c4284c5f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Picture",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "RecordedTv",
+      "steps": [
+        {
+          "command": "RecordedTV"
+        }
+      ]
+    },
+    {
+      "name": "LiveTv",
+      "steps": [
+        {
+          "command": "Live"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Trust/RC-2400.json"
+    ],
+    "harmony": {
+      "global_device_id": 152770,
+      "device_type": 35,
+      "codeset": "5f5d9ed603522205"
+    }
+  }
+}

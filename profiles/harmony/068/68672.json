@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68672",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "VR-107",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7b8034467d3d62b0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Input10"
+        }
+      ]
+    },
+    {
+      "name": "Video1/Tape1",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "AV AUX",
+      "steps": [
+        {
+          "command": "Input6"
+        }
+      ]
+    },
+    {
+      "name": "Tape2/Monitor",
+      "steps": [
+        {
+          "command": "InputTapeMD"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/VR-107.json"
+    ],
+    "harmony": {
+      "global_device_id": 68672,
+      "device_type": 5,
+      "codeset": "e9363af3c9deed6e"
+    }
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265252",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "HW-H7501",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "878233a228dd3d54",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "D.In",
+      "steps": [
+        {
+          "command": "InputDIn"
+        },
+        {
+          "command": "InputDIn"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "Source"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        },
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "SoundShare"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsbBT"
+        },
+        {
+          "command": "InputUsbBT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/HW-H7501.json"
+    ],
+    "harmony": {
+      "global_device_id": 265252,
+      "device_type": 19,
+      "codeset": "6c505cf7038af059"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:481375",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HT-S350",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "616bc3725a314e59",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HT-S350.json"
+    ],
+    "harmony": {
+      "global_device_id": 481375,
+      "device_type": 19,
+      "codeset": "2979f8f7dd985335"
+    }
+  }
+}

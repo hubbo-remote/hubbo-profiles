@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157012",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "CD-DV3300L",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0fa1d9965d7a5580",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/CD-DV3300L.json"
+    ],
+    "harmony": {
+      "global_device_id": 157012,
+      "device_type": 21,
+      "codeset": "a2972d93aa80e8c5"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:113232",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Durabrand",
+  "model": "HT-395",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "26bbcd8a14687752",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV/VCR",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputTvVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Durabrand/HT-395.json"
+    ],
+    "harmony": {
+      "global_device_id": 113232,
+      "device_type": 5,
+      "codeset": "db972a16e014ea1a"
+    }
+  }
+}

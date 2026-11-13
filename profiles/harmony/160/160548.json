@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:160548",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "H2080MW8",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "7f6aa3bcc5dfe20a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/H2080MW8.json"
+    ],
+    "harmony": {
+      "global_device_id": 160548,
+      "device_type": 34,
+      "codeset": "3d0973840fc60470"
+    }
+  }
+}

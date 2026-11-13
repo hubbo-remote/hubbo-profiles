@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:323759",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "PowerLite Home Cinema 5040UBe",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "db3ee764314d2c87",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "InputLan"
+        }
+      ]
+    },
+    {
+      "name": "Wireless HD",
+      "steps": [
+        {
+          "command": "InputWirelessHd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/PowerLite_Home_Cinema_5040UBe.json"
+    ],
+    "harmony": {
+      "global_device_id": 323759,
+      "device_type": 7,
+      "codeset": "c7907dd851e170b4"
+    }
+  }
+}

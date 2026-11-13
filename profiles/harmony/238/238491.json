@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:238491",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "UX-G395",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "8d4c035b4e77331b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/UX-G395.json"
+    ],
+    "harmony": {
+      "global_device_id": 238491,
+      "device_type": 21,
+      "codeset": "fc4221ba1e71db2c"
+    }
+  }
+}

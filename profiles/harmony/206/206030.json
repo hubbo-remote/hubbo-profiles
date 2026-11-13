@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:206030",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TechStudioTV",
+  "model": "SIG220",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "0e887e8c54e50700",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Video"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TechStudioTV/SIG220.json"
+    ],
+    "harmony": {
+      "global_device_id": 206030,
+      "device_type": 35,
+      "codeset": "15eb7cbaf88b256b"
+    }
+  }
+}

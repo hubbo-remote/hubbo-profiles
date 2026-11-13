@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:106491",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "G26235PN",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e83efd55b0263d60",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Cable",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/G26235PN.json"
+    ],
+    "harmony": {
+      "global_device_id": 106491,
+      "device_type": 1,
+      "codeset": "fc3a3e39d628bbb1"
+    }
+  }
+}

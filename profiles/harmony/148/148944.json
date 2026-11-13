@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148944",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "14PV101/39",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "6b31ac63cca812e6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Audio RCA",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "Video RCA",
+      "steps": [
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/14PV101_39.json"
+    ],
+    "harmony": {
+      "global_device_id": 148944,
+      "device_type": 15,
+      "codeset": "ef3549e77169328c"
+    }
+  }
+}

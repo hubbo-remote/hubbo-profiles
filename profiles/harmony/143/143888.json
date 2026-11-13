@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143888",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "AN215",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "5e7ddbb7663e6872",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 200
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 22000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/AN215.json"
+    ],
+    "harmony": {
+      "global_device_id": 143888,
+      "device_type": 7,
+      "codeset": "48fe258e5c3035b3"
+    }
+  }
+}

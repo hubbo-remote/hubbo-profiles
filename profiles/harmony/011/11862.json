@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:11862",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "ESC 350",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0bab398cfc6a4fdd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/ESC_350.json"
+    ],
+    "harmony": {
+      "global_device_id": 11862,
+      "device_type": 21,
+      "codeset": "24943fa6f787cff2"
+    }
+  }
+}

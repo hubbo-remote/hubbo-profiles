@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216820",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "14PV211",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "a4a98452b2bea67b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/14PV211.json"
+    ],
+    "harmony": {
+      "global_device_id": 216820,
+      "device_type": 15,
+      "codeset": "a606c6f74c5eec80"
+    }
+  }
+}

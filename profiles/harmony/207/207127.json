@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:207127",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Paramax",
+  "model": "P-701",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "3b6c4061dc0a5d97",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Mp3",
+      "steps": [
+        {
+          "command": "InputMp3"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Paramax/P-701.json"
+    ],
+    "harmony": {
+      "global_device_id": 207127,
+      "device_type": 5,
+      "codeset": "a8ee1cfb6f5dc521"
+    }
+  }
+}

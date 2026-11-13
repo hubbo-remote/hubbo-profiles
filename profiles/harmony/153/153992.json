@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153992",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Opus",
+  "model": "MCU-500",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "5d09095411a1b6bb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CCTV",
+      "steps": [
+        {
+          "command": "InputCctv"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "VCR2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "Television",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "Local1",
+      "steps": [
+        {
+          "command": "InputLocal1"
+        }
+      ]
+    },
+    {
+      "name": "Local2",
+      "steps": [
+        {
+          "command": "InputLocal2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Opus/MCU-500.json"
+    ],
+    "harmony": {
+      "global_device_id": 153992,
+      "device_type": 5,
+      "codeset": "81a2d6010616e822"
+    }
+  }
+}

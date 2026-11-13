@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:85536",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bryston",
+  "model": "SP2",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9660bf91cc3a8264",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/SAT",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bryston/SP2.json"
+    ],
+    "harmony": {
+      "global_device_id": 85536,
+      "device_type": 5,
+      "codeset": "759953451d8f2b5f"
+    }
+  }
+}

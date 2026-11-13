@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169858",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "LX700/22S",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "273c5909ce9d0a3f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv/Av",
+      "steps": [
+        {
+          "command": "InputTvAv"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/LX700_22S.json"
+    ],
+    "harmony": {
+      "global_device_id": 169858,
+      "device_type": 5,
+      "codeset": "c5b04920eb6f717d"
+    }
+  }
+}

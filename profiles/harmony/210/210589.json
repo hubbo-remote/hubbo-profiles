@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "harmony:210589",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DCS-FS30",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "442104d12625e792",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Line 1",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Line 2",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputLine"
+        },
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Line 3",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputLine"
+        },
+        {
+          "command": "InputLine"
+        },
+        {
+          "command": "InputLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DCS-FS30.json"
+    ],
+    "harmony": {
+      "global_device_id": 210589,
+      "device_type": 22,
+      "codeset": "e01d09878dada49c"
+    }
+  }
+}

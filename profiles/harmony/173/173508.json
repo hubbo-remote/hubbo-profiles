@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173508",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "eBench",
+  "model": "KH-02",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "4bcdede1223d975a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD/5.1",
+      "steps": [
+        {
+          "command": "InputDvd51"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "MD/CD",
+      "steps": [
+        {
+          "command": "InputMdCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/eBench/KH-02.json"
+    ],
+    "harmony": {
+      "global_device_id": 173508,
+      "device_type": 5,
+      "codeset": "5be9572a561fb7f9"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40226",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "SD-EX220",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "15c880e48b19097b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner(band)",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/SD-EX220.json"
+    ],
+    "harmony": {
+      "global_device_id": 40226,
+      "device_type": 21,
+      "codeset": "953bb33e0c967b3e"
+    }
+  }
+}

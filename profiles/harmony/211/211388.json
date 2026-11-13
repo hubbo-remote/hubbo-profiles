@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211388",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "55PD500",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "81a587fb2d0b8209",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB1",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "InputAv4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/55PD500.json"
+    ],
+    "harmony": {
+      "global_device_id": 211388,
+      "device_type": 13,
+      "codeset": "abc52c03e0752e43"
+    }
+  }
+}

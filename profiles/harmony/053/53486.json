@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:53486",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Firstline",
+  "model": "FS-4219HIWS",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8c84c4941b2d3c9d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Scart 1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Scart 2",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputYCbCr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Firstline/FS-4219HIWS.json"
+    ],
+    "harmony": {
+      "global_device_id": 53486,
+      "device_type": 1,
+      "codeset": "b72a2d16f6058af9"
+    }
+  }
+}

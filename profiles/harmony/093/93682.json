@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:93682",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Emerson",
+  "model": "AV-300",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "4914ea8c9f71e3b4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Emerson/AV-300.json"
+    ],
+    "harmony": {
+      "global_device_id": 93682,
+      "device_type": 22,
+      "codeset": "5d5585e2401b7e2b"
+    }
+  }
+}

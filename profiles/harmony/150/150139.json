@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150139",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lumatron",
+  "model": "DVDHDR-8160",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "210ac3aeef2ead74",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lumatron/DVDHDR-8160.json"
+    ],
+    "harmony": {
+      "global_device_id": 150139,
+      "device_type": 34,
+      "codeset": "ac17a497b794872c"
+    }
+  }
+}

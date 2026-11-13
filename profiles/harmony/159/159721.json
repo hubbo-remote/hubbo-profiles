@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:159721",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Altec Lansing",
+  "model": "M812",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "d9c0bfbdd3bfcbaf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Ipod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Fm",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Altec_Lansing/M812.json"
+    ],
+    "harmony": {
+      "global_device_id": 159721,
+      "device_type": 5,
+      "codeset": "cc215fe492a8746c"
+    }
+  }
+}

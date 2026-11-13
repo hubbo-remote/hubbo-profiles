@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265978",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "65L5400U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5688536d0256be1e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ANT/Cable",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "InputAntCable"
+        }
+      ]
+    },
+    {
+      "name": "ColorStream HD",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "delay_ms": 4000
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "SmartTV",
+      "steps": [
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/65L5400U.json"
+    ],
+    "harmony": {
+      "global_device_id": 265978,
+      "device_type": 1,
+      "codeset": "ffe9c99ba0ed496f"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:99823",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "NV-VP32GL",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "9aa4b65661dfaf96",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VHS",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/NV-VP32GL.json"
+    ],
+    "harmony": {
+      "global_device_id": 99823,
+      "device_type": 25,
+      "codeset": "9e21cabdbfe8e433"
+    }
+  }
+}

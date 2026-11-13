@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:115395",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Amstrad",
+  "model": "DRX-180",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "9ded3c7e01bb0226",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Sky",
+      "steps": [
+        {
+          "command": "InputSky"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Amstrad/DRX-180.json"
+    ],
+    "harmony": {
+      "global_device_id": 115395,
+      "device_type": 18,
+      "codeset": "d50e2a34b867fe60"
+    }
+  }
+}

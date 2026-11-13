@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201430",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JGC",
+  "model": "KTD-61006",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "fc6e3c1dba1d8fd9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputFmAm"
+        }
+      ]
+    },
+    {
+      "name": "DVB/T",
+      "steps": [
+        {
+          "command": "InputDVBT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JGC/KTD-61006.json"
+    ],
+    "harmony": {
+      "global_device_id": 201430,
+      "device_type": 37,
+      "codeset": "b92ca84843f7c5d7"
+    }
+  }
+}

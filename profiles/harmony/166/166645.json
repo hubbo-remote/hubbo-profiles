@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:166645",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "ICF-CS10IP",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "834c49266df3fd4c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "RadioBand"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "RadioBand",
+      "steps": [
+        {
+          "command": "RadioBand"
+        }
+      ]
+    },
+    {
+      "name": "AudioIn",
+      "steps": [
+        {
+          "command": "AudioIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/ICF-CS10IP.json"
+    ],
+    "harmony": {
+      "global_device_id": 166645,
+      "device_type": 33,
+      "codeset": "2d68bd7cf068d608"
+    }
+  }
+}

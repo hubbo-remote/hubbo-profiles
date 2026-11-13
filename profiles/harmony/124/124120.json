@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:124120",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Roadstar",
+  "model": "PDT-4200KLTND",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "79af836ce25d38ad",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputSat"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Scart1 / Scart2",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "RGB/DVI",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Roadstar/PDT-4200KLTND.json"
+    ],
+    "harmony": {
+      "global_device_id": 124120,
+      "device_type": 1,
+      "codeset": "843ce1e9b31004d0"
+    }
+  }
+}

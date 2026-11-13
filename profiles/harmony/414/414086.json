@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:414086",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Atoll",
+  "model": "SDA100",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b5ba5732cbf03364",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "By-Pass",
+      "steps": [
+        {
+          "command": "InputByPass"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Line 1",
+      "steps": [
+        {
+          "command": "InputLine1"
+        }
+      ]
+    },
+    {
+      "name": "Line 2",
+      "steps": [
+        {
+          "command": "InputLine2"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "STR",
+      "steps": [
+        {
+          "command": "InputStreaming"
+        }
+      ]
+    },
+    {
+      "name": "USB-B",
+      "steps": [
+        {
+          "command": "InputUsbB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Atoll/SDA100.json"
+    ],
+    "harmony": {
+      "global_device_id": 414086,
+      "device_type": 19,
+      "codeset": "b6412ed59478e3c9"
+    }
+  }
+}

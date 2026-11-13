@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201360",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vocopro",
+  "model": "DA-8909RV",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ab6ac06dbb7098ab",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Cdg",
+      "steps": [
+        {
+          "command": "InputCdg"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vocopro/DA-8909RV.json"
+    ],
+    "harmony": {
+      "global_device_id": 201360,
+      "device_type": 19,
+      "codeset": "93177e42cf44c795"
+    }
+  }
+}

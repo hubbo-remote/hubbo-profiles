@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493749",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "MSB5305",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "7d2fb2545fc54ea6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Source 1",
+      "steps": [
+        {
+          "command": "Source1"
+        }
+      ]
+    },
+    {
+      "name": "Source 2",
+      "steps": [
+        {
+          "command": "Source2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/MSB5305.json"
+    ],
+    "harmony": {
+      "global_device_id": 493749,
+      "device_type": 19,
+      "codeset": "9d66d3e36ac33c71"
+    }
+  }
+}

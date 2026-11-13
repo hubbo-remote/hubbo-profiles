@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:52439",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "PS Audio",
+  "model": "GCC-100",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "608141f7ae6465fe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Jukebox",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Home Theater",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/PS_Audio/GCC-100.json"
+    ],
+    "harmony": {
+      "global_device_id": 52439,
+      "device_type": 19,
+      "codeset": "1a5367234d57c0f1"
+    }
+  }
+}

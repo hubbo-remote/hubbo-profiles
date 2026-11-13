@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "harmony:253890",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Alpine",
+  "model": "CDA-117Ri",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "c7d0b01d2cf2218a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Alpine/CDA-117Ri.json"
+    ],
+    "harmony": {
+      "global_device_id": 253890,
+      "device_type": 22,
+      "codeset": "42ebeb03f6a294a3"
+    }
+  }
+}

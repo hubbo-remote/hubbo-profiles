@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205469",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "UX-EP25",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0cd8a639c895f27e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USBMemory",
+      "steps": [
+        {
+          "command": "InputUSBMemory"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/UX-EP25.json"
+    ],
+    "harmony": {
+      "global_device_id": 205469,
+      "device_type": 21,
+      "codeset": "a4ee5191e94c16ae"
+    }
+  }
+}

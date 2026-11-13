@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:268586",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CURRENTAUDIO",
+  "model": "SB650",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "f6462e6fd13a0876",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputAudio"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CURRENTAUDIO/SB650.json"
+    ],
+    "harmony": {
+      "global_device_id": 268586,
+      "device_type": 19,
+      "codeset": "fa14c6b82d9730ab"
+    }
+  }
+}

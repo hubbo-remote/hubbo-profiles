@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:218417",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RDXV60KB",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "b1d42edd1276d03c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RDXV60KB.json"
+    ],
+    "harmony": {
+      "global_device_id": 218417,
+      "device_type": 47,
+      "codeset": "4a4be4f6135cf888"
+    }
+  }
+}

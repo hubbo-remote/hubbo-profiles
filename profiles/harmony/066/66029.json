@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:66029",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "XMS",
+  "model": "XMS-503",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6088ce4a4218a2b1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VCD/TV",
+      "steps": [
+        {
+          "command": "InputVcdTv"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "COA1",
+      "steps": [
+        {
+          "command": "InputCoax1"
+        }
+      ]
+    },
+    {
+      "name": "COA2",
+      "steps": [
+        {
+          "command": "InputCoax2"
+        }
+      ]
+    },
+    {
+      "name": "OPT",
+      "steps": [
+        {
+          "command": "InputOpt"
+        }
+      ]
+    },
+    {
+      "name": "5.1CH",
+      "steps": [
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/XMS/XMS-503.json"
+    ],
+    "harmony": {
+      "global_device_id": 66029,
+      "device_type": 5,
+      "codeset": "ac5c68f1fa07b743"
+    }
+  }
+}

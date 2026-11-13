@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260214",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "V Media",
+  "model": "Vbox",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "44afbafef3ff7aa7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Apps",
+      "steps": [
+        {
+          "command": "Apps"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/V_Media/Vbox.json"
+    ],
+    "harmony": {
+      "global_device_id": 260214,
+      "device_type": 12,
+      "codeset": "4cb03b4c762ab98d"
+    }
+  }
+}

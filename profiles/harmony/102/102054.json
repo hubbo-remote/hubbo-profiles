@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102054",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cambridge Audio",
+  "model": "AZUR 540 V2",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "cda21b70d9f7ec3a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCdAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AV/MD",
+      "steps": [
+        {
+          "command": "InputTapeMDCDR"
+        }
+      ]
+    },
+    {
+      "name": "Aux/Phono",
+      "steps": [
+        {
+          "command": "InputCdAux"
+        }
+      ]
+    },
+    {
+      "name": "TapeMonitor",
+      "steps": [
+        {
+          "command": "InputTapeMDCDR"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cambridge_Audio/AZUR_540_V2.json"
+    ],
+    "harmony": {
+      "global_device_id": 102054,
+      "device_type": 5,
+      "codeset": "293f373129a9dfbc"
+    }
+  }
+}

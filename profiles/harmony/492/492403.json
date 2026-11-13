@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:492403",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SpeaKa",
+  "model": "OP-SW201",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "454531b6af4b7f45",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SpeaKa/OP-SW201.json"
+    ],
+    "harmony": {
+      "global_device_id": 492403,
+      "device_type": 30,
+      "codeset": "f047e84c5938dbb1"
+    }
+  }
+}

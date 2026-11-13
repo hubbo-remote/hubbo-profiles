@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:17218",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Audio Technica",
+  "model": "RC3000",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "add1a4fe2463797c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Optical-1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical-2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Audio_Technica/RC3000.json"
+    ],
+    "harmony": {
+      "global_device_id": 17218,
+      "device_type": 5,
+      "codeset": "575e5aedd44b6ea4"
+    }
+  }
+}

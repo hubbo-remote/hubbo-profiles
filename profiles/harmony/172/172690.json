@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172690",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "RDR-HX1010",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "79e78832269c33ed",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/RDR-HX1010.json"
+    ],
+    "harmony": {
+      "global_device_id": 172690,
+      "device_type": 34,
+      "codeset": "b095b568aa316708"
+    }
+  }
+}

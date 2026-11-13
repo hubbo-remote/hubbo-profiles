@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102966",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Luma",
+  "model": "LF-51V82",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 9000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Luma/LF-51V82.json"
+    ],
+    "harmony": {
+      "global_device_id": 102966,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

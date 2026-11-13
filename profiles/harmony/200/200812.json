@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:200812",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-EH635EG",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "b3687f434ad4ae8d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-EH635EG.json"
+    ],
+    "harmony": {
+      "global_device_id": 200812,
+      "device_type": 34,
+      "codeset": "d7075cfef11b97a4"
+    }
+  }
+}

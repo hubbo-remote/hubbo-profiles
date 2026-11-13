@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157362",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hyundai",
+  "model": "HY-730",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c5d380406c34c6bb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputStereo"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Stereo",
+      "steps": [
+        {
+          "command": "InputStereo"
+        }
+      ]
+    },
+    {
+      "name": "2.1CH",
+      "steps": [
+        {
+          "command": "Mode21"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hyundai/HY-730.json"
+    ],
+    "harmony": {
+      "global_device_id": 157362,
+      "device_type": 19,
+      "codeset": "c68d9de12be780d0"
+    }
+  }
+}

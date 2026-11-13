@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:126043",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Geneva Lab",
+  "model": "Model L",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "99106a19e8529dce",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "LineIn",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Geneva_Lab/Model_L.json"
+    ],
+    "harmony": {
+      "global_device_id": 126043,
+      "device_type": 22,
+      "codeset": "c5b9ad5536b79e9a"
+    }
+  }
+}

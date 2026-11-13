@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:105891",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sphinx",
+  "model": "Myth 5",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "cf0aa930e74c0127",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "TapeMonitor"
+        }
+      ]
+    },
+    {
+      "name": "Line 1",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Line 2",
+      "steps": [
+        {
+          "command": "4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sphinx/Myth_5.json"
+    ],
+    "harmony": {
+      "global_device_id": 105891,
+      "device_type": 19,
+      "codeset": "2f71f2f703830ca5"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263265",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "P1283",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "e6cf7681f8ab0ab2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/MHL",
+      "steps": [
+        {
+          "command": "InputHdmiDvi"
+        }
+      ]
+    },
+    {
+      "name": "USB B",
+      "steps": [
+        {
+          "command": "InputUsbB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/P1283.json"
+    ],
+    "harmony": {
+      "global_device_id": 263265,
+      "device_type": 7,
+      "codeset": "e54b361a38d51b1a"
+    }
+  }
+}

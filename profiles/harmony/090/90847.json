@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:90847",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Metz",
+  "model": "STRATOS SF 72TD86",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2903a82d2c2bc896",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Metz/STRATOS_SF_72TD86.json"
+    ],
+    "harmony": {
+      "global_device_id": 90847,
+      "device_type": 1,
+      "codeset": "90ed62126d78ac66"
+    }
+  }
+}

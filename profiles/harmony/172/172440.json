@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172440",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "VPL-VW40",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "510d5a644a517bcc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1500
+      },
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1500
+      }
+    ],
+    "on_delay_ms": 20000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/VPL-VW40.json"
+    ],
+    "harmony": {
+      "global_device_id": 172440,
+      "device_type": 7,
+      "codeset": "ecf87035926cfa36"
+    }
+  }
+}

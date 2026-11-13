@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "harmony:177967",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "LT380",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "ecc2798f685f4e82",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff",
+        "hold_ms": 3000
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Computer1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    },
+    {
+      "name": "Computer3",
+      "steps": [
+        {
+          "command": "InputComputer3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/LT380.json"
+    ],
+    "harmony": {
+      "global_device_id": 177967,
+      "device_type": 7,
+      "codeset": "6c5349c1609fc187"
+    }
+  }
+}

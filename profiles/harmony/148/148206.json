@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148206",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RD-88DTKB",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "35e04d35f49d4552",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RD-88DTKB.json"
+    ],
+    "harmony": {
+      "global_device_id": 148206,
+      "device_type": 34,
+      "codeset": "8056638d6d2e1a65"
+    }
+  }
+}

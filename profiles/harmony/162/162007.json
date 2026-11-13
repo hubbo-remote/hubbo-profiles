@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162007",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GPX",
+  "model": "DVR-9488C",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "adde282b348ddde1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GPX/DVR-9488C.json"
+    ],
+    "harmony": {
+      "global_device_id": 162007,
+      "device_type": 47,
+      "codeset": "6c0d565c3bc8b787"
+    }
+  }
+}

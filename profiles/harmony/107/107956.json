@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:107956",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Quasar",
+  "model": "PDN-N5510",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "06c24f60be02bce7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputCvbs1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputCvbs2"
+        }
+      ]
+    },
+    {
+      "name": "Svideo",
+      "steps": [
+        {
+          "command": "InputSVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputSVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Analog/RGB",
+      "steps": [
+        {
+          "command": "InputCvbs3"
+        }
+      ]
+    },
+    {
+      "name": "DTV/Ybpr",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Quasar/PDN-N5510.json"
+    ],
+    "harmony": {
+      "global_device_id": 107956,
+      "device_type": 13,
+      "codeset": "c4d4a13c32f9380c"
+    }
+  }
+}

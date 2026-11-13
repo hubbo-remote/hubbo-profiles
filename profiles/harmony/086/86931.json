@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:86931",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "Powerlite 20",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "6e4d9201ef6095a9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input A",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Input B",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/Powerlite_20.json"
+    ],
+    "harmony": {
+      "global_device_id": 86931,
+      "device_type": 7,
+      "codeset": "f662bcd6c94f5edc"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:84510",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SCHT-740SC",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "3657131efa6c62d8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "dvd",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "music p/aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SCHT-740SC.json"
+    ],
+    "harmony": {
+      "global_device_id": 84510,
+      "device_type": 22,
+      "codeset": "52c8ef2a4a90f53d"
+    }
+  }
+}

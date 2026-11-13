@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "id": "harmony:448234",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "OLED55E7N-Z",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ee62efef6ded37e0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "Smart TV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Home"
+        }
+      ]
+    },
+    {
+      "name": "Amazon",
+      "steps": [
+        {
+          "command": "Amazon"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/OLED55E7N-Z.json"
+    ],
+    "harmony": {
+      "global_device_id": 448234,
+      "device_type": 1,
+      "codeset": "388b4385fe620285"
+    }
+  }
+}

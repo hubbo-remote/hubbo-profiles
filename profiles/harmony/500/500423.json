@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500423",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sylvania",
+  "model": "SB378W",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a63e44d4b6d32ed6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sylvania/SB378W.json"
+    ],
+    "harmony": {
+      "global_device_id": 500423,
+      "device_type": 19,
+      "codeset": "a9f2f1e044e5ffe0"
+    }
+  }
+}

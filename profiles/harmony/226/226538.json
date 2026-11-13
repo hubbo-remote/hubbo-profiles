@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226538",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AudioSonic",
+  "model": "TXCD-1210",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "6561fa024f459bab",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AudioSonic/TXCD-1210.json"
+    ],
+    "harmony": {
+      "global_device_id": 226538,
+      "device_type": 21,
+      "codeset": "613e5587fbcb793a"
+    }
+  }
+}

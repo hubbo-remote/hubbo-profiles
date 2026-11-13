@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:70422",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hanseatic",
+  "model": "DVD-AVCR 65 S",
+  "kind": "home_theater_vcr",
+  "platform": "ir",
+  "codeset": "7ff6e23fb9d68bba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO 1",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hanseatic/DVD-AVCR_65_S.json"
+    ],
+    "harmony": {
+      "global_device_id": 70422,
+      "device_type": 32,
+      "codeset": "0204caf82bbc639b"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:78848",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aristona",
+  "model": "63TA7912/03",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dd5332a512001cf3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "EXT1",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "EXT2",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "FRONT",
+      "steps": [
+        {
+          "command": "8"
+        }
+      ]
+    },
+    {
+      "name": "CHANNEL",
+      "steps": [
+        {
+          "command": "8"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aristona/63TA7912_03.json"
+    ],
+    "harmony": {
+      "global_device_id": 78848,
+      "device_type": 1,
+      "codeset": "2faf1eb0a0d53c8f"
+    }
+  }
+}

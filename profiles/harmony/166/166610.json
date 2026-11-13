@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "harmony:166610",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TX-W28D3F",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c4bcc85b647807c0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1000
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "Red"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "NumberEnter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TX-W28D3F.json"
+    ],
+    "harmony": {
+      "global_device_id": 166610,
+      "device_type": 1,
+      "codeset": "ac710e3015c72214"
+    }
+  }
+}

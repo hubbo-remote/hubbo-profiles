@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:29247",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Genius",
+  "model": "GHT-511D",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "375233651d8d3af8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "LINE",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "OPTICAL",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "COAXIAL",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Genius/GHT-511D.json"
+    ],
+    "harmony": {
+      "global_device_id": 29247,
+      "device_type": 19,
+      "codeset": "284efcff7140b2ca"
+    }
+  }
+}

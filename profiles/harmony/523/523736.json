@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:523736",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ULTIMEA",
+  "model": "AURA A30",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3f410e67ffc4bfcc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "OPT",
+      "steps": [
+        {
+          "command": "InputOpt"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ULTIMEA/AURA_A30.json"
+    ],
+    "harmony": {
+      "global_device_id": 523736,
+      "device_type": 19,
+      "codeset": "fb453aa66c327693"
+    }
+  }
+}

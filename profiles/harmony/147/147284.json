@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147284",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Advance Acoustic",
+  "model": "MAP-105",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "86a13334859b65fe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Aux2",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Advance_Acoustic/MAP-105.json"
+    ],
+    "harmony": {
+      "global_device_id": 147284,
+      "device_type": 19,
+      "codeset": "7abe61b71f2e5ae0"
+    }
+  }
+}

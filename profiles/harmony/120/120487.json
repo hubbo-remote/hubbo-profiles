@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:120487",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hewlett Packard",
+  "model": "PL-4620N",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "590011285bf5beae",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Monitor",
+      "steps": [
+        {
+          "command": "PowerOn"
+        },
+        {
+          "command": "PowerToggle"
+        },
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "PowerOn"
+        },
+        {
+          "command": "PowerOn"
+        },
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "PowerOn"
+        },
+        {
+          "command": "PowerOn"
+        },
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "CABLE",
+      "steps": [
+        {
+          "command": "PowerOn"
+        },
+        {
+          "command": "PowerToggle"
+        },
+        {
+          "command": "PowerOn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hewlett_Packard/PL-4620N.json"
+    ],
+    "harmony": {
+      "global_device_id": 120487,
+      "device_type": 13,
+      "codeset": "89b0954c5d5210ef"
+    }
+  }
+}

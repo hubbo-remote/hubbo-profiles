@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:241531",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "NP-3300",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "7575b52b98e9cbdf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "InternetRadio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "Library",
+      "steps": [
+        {
+          "command": "InputLibrary"
+        }
+      ]
+    },
+    {
+      "name": "OnlineServices",
+      "steps": [
+        {
+          "command": "InputOnlineServices"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/NP-3300.json"
+    ],
+    "harmony": {
+      "global_device_id": 241531,
+      "device_type": 33,
+      "codeset": "21a05b49a3439ef5"
+    }
+  }
+}

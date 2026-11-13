@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179088",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "NXF30",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "2ade167a5681d234",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Usb",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AudioIn",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "DigitalIn",
+      "steps": [
+        {
+          "command": "InputDigitalIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/NXF30.json"
+    ],
+    "harmony": {
+      "global_device_id": 179088,
+      "device_type": 22,
+      "codeset": "7caf2c4a0cb4661c"
+    }
+  }
+}

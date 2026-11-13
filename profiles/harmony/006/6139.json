@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:6139",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Onkyo",
+  "model": "NC-500",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "fca11fa1d2872397",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Music Server",
+      "steps": [
+        {
+          "command": "InputServer"
+        }
+      ]
+    },
+    {
+      "name": "iNet Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Onkyo/NC-500.json"
+    ],
+    "harmony": {
+      "global_device_id": 6139,
+      "device_type": 33,
+      "codeset": "7a8d6bd686e8234e"
+    }
+  }
+}

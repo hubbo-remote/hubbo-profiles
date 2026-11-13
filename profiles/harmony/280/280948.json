@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:280948",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Auvisio",
+  "model": "MSX-390.SB",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7fd65b4eef636616",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Auvisio/MSX-390.SB.json"
+    ],
+    "harmony": {
+      "global_device_id": 280948,
+      "device_type": 5,
+      "codeset": "da0365f70a600a0e"
+    }
+  }
+}

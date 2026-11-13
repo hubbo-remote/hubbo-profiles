@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:96280",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Brookstone",
+  "model": "Micro CD System",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "44f35d490addcede",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Brookstone/Micro_CD_System.json"
+    ],
+    "harmony": {
+      "global_device_id": 96280,
+      "device_type": 21,
+      "codeset": "54fc0a9a0fe1bed3"
+    }
+  }
+}

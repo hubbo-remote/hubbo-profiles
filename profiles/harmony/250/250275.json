@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:250275",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sherwood",
+  "model": "AX-5505",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "f908c6c86fb8b805",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1/MD",
+      "steps": [
+        {
+          "command": "InputTape1Md"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2 M",
+      "steps": [
+        {
+          "command": "InputTape2M"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sherwood/AX-5505.json"
+    ],
+    "harmony": {
+      "global_device_id": 250275,
+      "device_type": 5,
+      "codeset": "e188980e0e172a17"
+    }
+  }
+}

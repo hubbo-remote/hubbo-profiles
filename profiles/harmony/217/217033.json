@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:217033",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Signal Path International",
+  "model": "Decco2",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0b9dfc9fa2da5a07",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Usb",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Opt",
+      "steps": [
+        {
+          "command": "InputOpt"
+        }
+      ]
+    },
+    {
+      "name": "Aux1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Signal_Path_International/Decco2.json"
+    ],
+    "harmony": {
+      "global_device_id": 217033,
+      "device_type": 19,
+      "codeset": "78074ffb5c78ec45"
+    }
+  }
+}

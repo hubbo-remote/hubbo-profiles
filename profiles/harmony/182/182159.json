@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182159",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVP-3100V/02",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "d7f3e19c564e3c29",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVP-3100V_02.json"
+    ],
+    "harmony": {
+      "global_device_id": 182159,
+      "device_type": 25,
+      "codeset": "8a1f7f09ae0fa8fe"
+    }
+  }
+}

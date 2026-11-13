@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:413981",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dream Multimedia",
+  "model": "DM920",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "f46ebc5a72566062",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dream_Multimedia/DM920.json"
+    ],
+    "harmony": {
+      "global_device_id": 413981,
+      "device_type": 18,
+      "codeset": "cf9b558a3e6ffff7"
+    }
+  }
+}

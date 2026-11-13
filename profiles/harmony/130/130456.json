@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:130456",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu",
+  "model": "P42-VCA21WH",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9601106149198e40",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "s-video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputRGB1DVI"
+        },
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputRGB1DVI"
+        },
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "rgb1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputRGB1DVI"
+        },
+        {
+          "command": "InputRGB1DVI"
+        }
+      ]
+    },
+    {
+      "name": "rgb2",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputRGB1DVI"
+        },
+        {
+          "command": "InputRGB1DVI"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu/P42-VCA21WH.json"
+    ],
+    "harmony": {
+      "global_device_id": 130456,
+      "device_type": 13,
+      "codeset": "e5ba270b912efcdf"
+    }
+  }
+}

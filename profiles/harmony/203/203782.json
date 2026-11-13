@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203782",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Infocus",
+  "model": "SP8602",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1875d92ff0d99709",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Source1",
+      "steps": [
+        {
+          "command": "InputSource1"
+        }
+      ]
+    },
+    {
+      "name": "Source2",
+      "steps": [
+        {
+          "command": "InputSource2"
+        }
+      ]
+    },
+    {
+      "name": "Source3",
+      "steps": [
+        {
+          "command": "InputSource3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Infocus/SP8602.json"
+    ],
+    "harmony": {
+      "global_device_id": 203782,
+      "device_type": 7,
+      "codeset": "7224329b2ca59d6e"
+    }
+  }
+}

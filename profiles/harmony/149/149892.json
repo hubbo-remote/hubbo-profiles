@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149892",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RaidSonic",
+  "model": "IB-MP308HW",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d592e255eb1448a5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RaidSonic/IB-MP308HW.json"
+    ],
+    "harmony": {
+      "global_device_id": 149892,
+      "device_type": 35,
+      "codeset": "6f31801cd0217951"
+    }
+  }
+}

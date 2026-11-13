@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "harmony:492555",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SunBriteTV",
+  "model": "SB-S2-65-4K",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "941b8f6fcbfd245c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "MMP",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDBaseT",
+      "steps": [
+        {
+          "command": "InputHdBaseT"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SunBriteTV/SB-S2-65-4K.json"
+    ],
+    "harmony": {
+      "global_device_id": 492555,
+      "device_type": 1,
+      "codeset": "3f088b486c136855"
+    }
+  }
+}

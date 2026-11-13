@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118632",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Boxlight",
+  "model": "Raven",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "431c6b70b39ef36a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 38000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Boxlight/Raven.json"
+    ],
+    "harmony": {
+      "global_device_id": 118632,
+      "device_type": 7,
+      "codeset": "45ab369da476a60a"
+    }
+  }
+}

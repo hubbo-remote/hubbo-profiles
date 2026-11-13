@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176589",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "UX-G47",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "b105b4fe71c1aba2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/UX-G47.json"
+    ],
+    "harmony": {
+      "global_device_id": 176589,
+      "device_type": 21,
+      "codeset": "b5a3c14272bd1b43"
+    }
+  }
+}

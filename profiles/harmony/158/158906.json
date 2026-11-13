@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158906",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Taxan",
+  "model": "U6-232",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "3bab32a9e1102642",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Taxan/U6-232.json"
+    ],
+    "harmony": {
+      "global_device_id": 158906,
+      "device_type": 7,
+      "codeset": "4621d5b3198e181a"
+    }
+  }
+}

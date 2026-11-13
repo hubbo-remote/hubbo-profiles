@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158053",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FW12/22",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ccf7b321bee596d5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FW12_22.json"
+    ],
+    "harmony": {
+      "global_device_id": 158053,
+      "device_type": 21,
+      "codeset": "792777e4225fd63e"
+    }
+  }
+}

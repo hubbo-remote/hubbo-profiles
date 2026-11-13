@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336274",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PT-EZ770",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "34e28b0a510fc890",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB 1",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    },
+    {
+      "name": "RGB 2",
+      "steps": [
+        {
+          "command": "InputRgb2"
+        }
+      ]
+    },
+    {
+      "name": "DVI-D",
+      "steps": [
+        {
+          "command": "InputDviD"
+        }
+      ]
+    },
+    {
+      "name": "Digital Link",
+      "steps": [
+        {
+          "command": "InputDigitalLink"
+        }
+      ]
+    },
+    {
+      "name": "Display Port",
+      "steps": [
+        {
+          "command": "InputDisplayPort"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PT-EZ770.json"
+    ],
+    "harmony": {
+      "global_device_id": 336274,
+      "device_type": 7,
+      "codeset": "e978d84a143ade07"
+    }
+  }
+}

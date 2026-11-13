@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "harmony:109849",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Clarion",
+  "model": "DXZ-465MP",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "5d02ee1187e500cc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Clarion/DXZ-465MP.json"
+    ],
+    "harmony": {
+      "global_device_id": 109849,
+      "device_type": 21,
+      "codeset": "542d4fe152e3582d"
+    }
+  }
+}

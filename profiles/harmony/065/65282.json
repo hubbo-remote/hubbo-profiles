@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:65282",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Trio",
+  "model": "LHX-2700",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "066a26c6d2dec7e3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "PC/CV",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "AV/SV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Scart 2",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Trio/LHX-2700.json"
+    ],
+    "harmony": {
+      "global_device_id": 65282,
+      "device_type": 1,
+      "codeset": "205f98bb48599c7c"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144154",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "SLV-300P",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "d6ef71d6651482e9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/SLV-300P.json"
+    ],
+    "harmony": {
+      "global_device_id": 144154,
+      "device_type": 25,
+      "codeset": "b0db4bc84db74055"
+    }
+  }
+}

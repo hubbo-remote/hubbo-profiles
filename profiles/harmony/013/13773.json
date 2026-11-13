@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:13773",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "FW58PH/3701",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "88df40ceb9321de9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/FW58PH_3701.json"
+    ],
+    "harmony": {
+      "global_device_id": 13773,
+      "device_type": 21,
+      "codeset": "a51d4554cc4f5157"
+    }
+  }
+}

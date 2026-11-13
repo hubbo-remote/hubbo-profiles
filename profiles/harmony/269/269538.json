@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269538",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NuPrime",
+  "model": "IDA-16",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a98fbcefec8edfb2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Coax 1",
+      "steps": [
+        {
+          "command": "InputCoaxial1"
+        }
+      ]
+    },
+    {
+      "name": "Coax 2",
+      "steps": [
+        {
+          "command": "InputCoaxial2"
+        }
+      ]
+    },
+    {
+      "name": "Opt 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Opt 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NuPrime/IDA-16.json"
+    ],
+    "harmony": {
+      "global_device_id": 269538,
+      "device_type": 19,
+      "codeset": "15dcddfae80841c6"
+    }
+  }
+}

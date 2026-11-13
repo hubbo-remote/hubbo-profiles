@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:497740",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "bomaker",
+  "model": "Tapio III",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b3bf1d4b47927baf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "LineIn",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/bomaker/Tapio_III.json"
+    ],
+    "harmony": {
+      "global_device_id": 497740,
+      "device_type": 19,
+      "codeset": "090b01828199ce57"
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "id": "harmony:250850",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KDL-70R520A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f3369241ad6c58a9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "Exit"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "DirectionDown"
+      },
+      {
+        "command": "Select"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video 1/Component",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "SEN",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "SEN"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KDL-70R520A.json"
+    ],
+    "harmony": {
+      "global_device_id": 250850,
+      "device_type": 1,
+      "codeset": "34c860427fc330aa"
+    }
+  }
+}

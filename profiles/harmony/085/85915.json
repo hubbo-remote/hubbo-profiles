@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:85915",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD 24017",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "f4c0dfaad0b718da",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD_24017.json"
+    ],
+    "harmony": {
+      "global_device_id": 85915,
+      "device_type": 18,
+      "codeset": "65205b8b93eaf193"
+    }
+  }
+}

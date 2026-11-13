@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:206069",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TELE System",
+  "model": "TS-5.9RX",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "54b93ec082cdfd46",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "DV-IN",
+      "steps": [
+        {
+          "command": "InputDv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TELE_System/TS-5.9RX.json"
+    ],
+    "harmony": {
+      "global_device_id": 206069,
+      "device_type": 34,
+      "codeset": "f680312d313570ce"
+    }
+  }
+}

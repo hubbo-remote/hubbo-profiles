@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:275842",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Iomega",
+  "model": "ScreenPlay Director TV Tuner",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "58572ef1782f30d2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "MyVideos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "MyPictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "MyMusic",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "MyTV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Iomega/ScreenPlay_Director_TV_Tuner.json"
+    ],
+    "harmony": {
+      "global_device_id": 275842,
+      "device_type": 35,
+      "codeset": "5abc3fc70599ad12"
+    }
+  }
+}

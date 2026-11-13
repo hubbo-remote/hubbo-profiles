@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138506",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "200W8",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4f4043c1ba886043",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/200W8.json"
+    ],
+    "harmony": {
+      "global_device_id": 138506,
+      "device_type": 13,
+      "codeset": "6ddf5ddc18d5ddef"
+    }
+  }
+}

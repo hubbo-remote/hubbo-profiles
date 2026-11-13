@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:391829",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vivitek",
+  "model": "H1060",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "aefe52c13894c703",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vivitek/H1060.json"
+    ],
+    "harmony": {
+      "global_device_id": 391829,
+      "device_type": 7,
+      "codeset": "257ecfaa6eabb0fb"
+    }
+  }
+}

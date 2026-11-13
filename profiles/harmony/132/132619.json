@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:132619",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hirschmann",
+  "model": "CSTR-200",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "d7e8848bfbd0e473",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "RADIO",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hirschmann/CSTR-200.json"
+    ],
+    "harmony": {
+      "global_device_id": 132619,
+      "device_type": 12,
+      "codeset": "221b7d2872be8be6"
+    }
+  }
+}

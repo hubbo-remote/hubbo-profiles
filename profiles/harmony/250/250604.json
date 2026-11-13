@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:250604",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Golden Media",
+  "model": "Hypercube",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "f16d57f82ed4f4aa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Golden_Media/Hypercube.json"
+    ],
+    "harmony": {
+      "global_device_id": 250604,
+      "device_type": 18,
+      "codeset": "3b885f02499a5486"
+    }
+  }
+}

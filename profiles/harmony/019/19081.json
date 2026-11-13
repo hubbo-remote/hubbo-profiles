@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "harmony:19081",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Schneider",
+  "model": "AVR-1000",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "bc069530ac446071",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD/VCR",
+      "steps": [
+        {
+          "command": "InputDvdVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "CD/MD",
+      "steps": [
+        {
+          "command": "InputCdMd"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Digital 1",
+      "steps": [
+        {
+          "command": "InputDigital1"
+        }
+      ]
+    },
+    {
+      "name": "Digital 2",
+      "steps": [
+        {
+          "command": "InputDigital2"
+        }
+      ]
+    },
+    {
+      "name": "Digital 3",
+      "steps": [
+        {
+          "command": "InputDigital3"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Schneider/AVR-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 19081,
+      "device_type": 5,
+      "codeset": "857ab08e78b7a88f"
+    }
+  }
+}

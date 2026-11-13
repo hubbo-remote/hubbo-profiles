@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57745",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EMP-61",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "6e4d9201ef6095a9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 2500
+      },
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video/Video",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EMP-61.json"
+    ],
+    "harmony": {
+      "global_device_id": 57745,
+      "device_type": 7,
+      "codeset": "f662bcd6c94f5edc"
+    }
+  }
+}

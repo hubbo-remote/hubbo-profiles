@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:271732",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RTB10323LW",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "c205c3a199f7a2c6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux/Line In",
+      "steps": [
+        {
+          "command": "InputAuxLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Media",
+      "steps": [
+        {
+          "command": "InputMedia"
+        }
+      ]
+    },
+    {
+      "name": "BD",
+      "steps": [
+        {
+          "command": "InputBd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RTB10323LW.json"
+    ],
+    "harmony": {
+      "global_device_id": 271732,
+      "device_type": 22,
+      "codeset": "4179f1f7487d4ac5"
+    }
+  }
+}

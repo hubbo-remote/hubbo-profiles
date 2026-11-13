@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:495377",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KBOX SERV",
+  "model": "HD18X",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "15b0600a9df9ddc9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Apps",
+      "steps": [
+        {
+          "command": "Apps"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KBOX_SERV/HD18X.json"
+    ],
+    "harmony": {
+      "global_device_id": 495377,
+      "device_type": 35,
+      "codeset": "77d5f3621cb58d76"
+    }
+  }
+}

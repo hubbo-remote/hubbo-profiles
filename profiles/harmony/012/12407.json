@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:12407",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eiki",
+  "model": "EIP-25",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "5e6db14f3587d0d5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 36000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eiki/EIP-25.json"
+    ],
+    "harmony": {
+      "global_device_id": 12407,
+      "device_type": 7,
+      "codeset": "2e200095693a3725"
+    }
+  }
+}

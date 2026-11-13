@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:274601",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Konig",
+  "model": "HAV-SB400",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6af862c124bf9a48",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Konig/HAV-SB400.json"
+    ],
+    "harmony": {
+      "global_device_id": 274601,
+      "device_type": 19,
+      "codeset": "80f73da8d8e4042c"
+    }
+  }
+}

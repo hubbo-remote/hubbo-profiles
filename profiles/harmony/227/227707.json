@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:227707",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "DR20KB",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "a75a25efd66366f6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/DR20KB.json"
+    ],
+    "harmony": {
+      "global_device_id": 227707,
+      "device_type": 34,
+      "codeset": "183598dd9f6c1169"
+    }
+  }
+}

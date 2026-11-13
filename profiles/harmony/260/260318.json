@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260318",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Auvio",
+  "model": "Xb40210ws",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4754c2d192ca8f30",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAuxIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Auvio/Xb40210ws.json"
+    ],
+    "harmony": {
+      "global_device_id": 260318,
+      "device_type": 19,
+      "codeset": "98e0bf37e2940299"
+    }
+  }
+}

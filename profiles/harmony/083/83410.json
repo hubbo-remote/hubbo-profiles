@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:83410",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "SH-E51",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "4369d32c17cdc5fa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Tuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "PlayCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "PlayTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/SH-E51.json"
+    ],
+    "harmony": {
+      "global_device_id": 83410,
+      "device_type": 21,
+      "codeset": "b2e0fb130f87197f"
+    }
+  }
+}

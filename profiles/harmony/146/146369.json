@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:146369",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RDX-E600 MK2",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f074e6e6ebd2b94f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RDX-E600_MK2.json"
+    ],
+    "harmony": {
+      "global_device_id": 146369,
+      "device_type": 22,
+      "codeset": "c4ef7271bba75899"
+    }
+  }
+}

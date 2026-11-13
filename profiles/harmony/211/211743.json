@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211743",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "HT762PZ",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "e19b6695f8979b41",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/HT762PZ.json"
+    ],
+    "harmony": {
+      "global_device_id": 211743,
+      "device_type": 22,
+      "codeset": "7d8dde197a5848fe"
+    }
+  }
+}

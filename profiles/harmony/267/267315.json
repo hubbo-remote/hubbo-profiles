@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267315",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panlong",
+  "model": "PL-SW431A",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "5498b9508ae9b572",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panlong/PL-SW431A.json"
+    ],
+    "harmony": {
+      "global_device_id": 267315,
+      "device_type": 30,
+      "codeset": "6c647c87de1f367b"
+    }
+  }
+}

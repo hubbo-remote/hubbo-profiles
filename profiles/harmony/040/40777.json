@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40777",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HM-DSR100DU",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "935dadca1ead37c9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HM-DSR100DU.json"
+    ],
+    "harmony": {
+      "global_device_id": 40777,
+      "device_type": 2,
+      "codeset": "4296c6a528492cb3"
+    }
+  }
+}

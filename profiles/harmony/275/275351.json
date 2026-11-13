@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:275351",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "BOOST TV",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "067ffe702d3212dd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/BOOST_TV.json"
+    ],
+    "harmony": {
+      "global_device_id": 275351,
+      "device_type": 19,
+      "codeset": "8fbf59d40350731d"
+    }
+  }
+}

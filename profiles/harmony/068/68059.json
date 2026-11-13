@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68059",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "CD-S600",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "8e4d2b7c4f4e1ba1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Tuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd1"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/CD-S600.json"
+    ],
+    "harmony": {
+      "global_device_id": 68059,
+      "device_type": 21,
+      "codeset": "d666cffc0f49d3cd"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:349180",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LASER",
+  "model": "SPK-SB160",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "c4dac55357a15838",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "ARC In",
+      "steps": [
+        {
+          "command": "InputArcIn"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LASER/SPK-SB160.json"
+    ],
+    "harmony": {
+      "global_device_id": 349180,
+      "device_type": 5,
+      "codeset": "50213562a5c94b1a"
+    }
+  }
+}

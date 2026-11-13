@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:145535",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Radiotone",
+  "model": "CX-370AV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "78ac9f17c924b840",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 0,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "EXT",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Radiotone/CX-370AV.json"
+    ],
+    "harmony": {
+      "global_device_id": 145535,
+      "device_type": 1,
+      "codeset": "4855129c8326593c"
+    }
+  }
+}

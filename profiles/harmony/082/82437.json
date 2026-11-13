@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:82437",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "VTH-6125G",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "9b8c679aa43c963c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "VCR"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/VTH-6125G.json"
+    ],
+    "harmony": {
+      "global_device_id": 82437,
+      "device_type": 2,
+      "codeset": "a468f98fd30b9b7c"
+    }
+  }
+}

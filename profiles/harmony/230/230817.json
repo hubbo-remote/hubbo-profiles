@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:230817",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Signal Path International",
+  "model": "IDECCO",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "1e1c1c32ef25c50c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOpt"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tube",
+      "steps": [
+        {
+          "command": "InputTube"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Signal_Path_International/IDECCO.json"
+    ],
+    "harmony": {
+      "global_device_id": 230817,
+      "device_type": 5,
+      "codeset": "2a0113df75e9b3ef"
+    }
+  }
+}

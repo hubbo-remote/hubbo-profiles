@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:229270",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "DVR20KB",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "652b2ff9f3c76661",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/DVR20KB.json"
+    ],
+    "harmony": {
+      "global_device_id": 229270,
+      "device_type": 47,
+      "codeset": "2d47efc3f377fd27"
+    }
+  }
+}

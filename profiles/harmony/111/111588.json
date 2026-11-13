@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111588",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "General Electric",
+  "model": "27GT618",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "PowerOn"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/General_Electric/27GT618.json"
+    ],
+    "harmony": {
+      "global_device_id": 111588,
+      "device_type": 1,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

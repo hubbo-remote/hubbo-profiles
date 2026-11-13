@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:6210",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Venturer",
+  "model": "AVR2000W",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "126442959add0acf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Function"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "TuningDown"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "Sound"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "TuningUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Venturer/AVR2000W.json"
+    ],
+    "harmony": {
+      "global_device_id": 6210,
+      "device_type": 5,
+      "codeset": "46013d2dadf83a89"
+    }
+  }
+}

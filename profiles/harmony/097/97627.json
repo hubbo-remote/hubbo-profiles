@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:97627",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Jamo",
+  "model": "S250HCS21",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "074a45217ffd07b0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "My Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Jamo/S250HCS21.json"
+    ],
+    "harmony": {
+      "global_device_id": 97627,
+      "device_type": 22,
+      "codeset": "784efde41af88ea8"
+    }
+  }
+}

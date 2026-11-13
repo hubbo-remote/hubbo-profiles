@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95152",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Telefunken",
+  "model": "Palcolor A131MV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dcd131ab0bf2279e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna/Cable",
+      "steps": [
+        {
+          "command": "InputAntenna"
+        }
+      ]
+    },
+    {
+      "name": "Scart Cable",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Telefunken/Palcolor_A131MV.json"
+    ],
+    "harmony": {
+      "global_device_id": 95152,
+      "device_type": 1,
+      "codeset": "59df71ddef210e9c"
+    }
+  }
+}

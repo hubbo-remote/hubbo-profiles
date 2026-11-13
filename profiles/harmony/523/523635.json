@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:523635",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SaiYin",
+  "model": "DS6403",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "167743af4654e6d5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "OPT",
+      "steps": [
+        {
+          "command": "InputOpt"
+        }
+      ]
+    },
+    {
+      "name": "COAX",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SaiYin/DS6403.json"
+    ],
+    "harmony": {
+      "global_device_id": 523635,
+      "device_type": 19,
+      "codeset": "a7a3154930866068"
+    }
+  }
+}

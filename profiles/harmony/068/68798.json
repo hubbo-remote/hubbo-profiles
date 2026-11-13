@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68798",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "RCD-400",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "7d3738978754aa6b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux/Tape",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/RCD-400.json"
+    ],
+    "harmony": {
+      "global_device_id": 68798,
+      "device_type": 21,
+      "codeset": "65b717ebdb6d3969"
+    }
+  }
+}

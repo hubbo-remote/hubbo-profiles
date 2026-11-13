@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:93361",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "MD81396",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "0e5e0f80dd32d8d3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/MD81396.json"
+    ],
+    "harmony": {
+      "global_device_id": 93361,
+      "device_type": 47,
+      "codeset": "67af5c9bd2647940"
+    }
+  }
+}

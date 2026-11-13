@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "harmony:253606",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "15LV506-T",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "8b01047027b8b367",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "ColorStream HD",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/15LV506-T.json"
+    ],
+    "harmony": {
+      "global_device_id": 253606,
+      "device_type": 37,
+      "codeset": "f857afb7b7de76db"
+    }
+  }
+}

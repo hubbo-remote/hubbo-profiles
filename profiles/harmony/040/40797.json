@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40797",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Marantz",
+  "model": "VP 12S-3",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1b5184bb8ca3a23c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Marantz/VP_12S-3.json"
+    ],
+    "harmony": {
+      "global_device_id": 40797,
+      "device_type": 7,
+      "codeset": "3b97ca786e5ad262"
+    }
+  }
+}

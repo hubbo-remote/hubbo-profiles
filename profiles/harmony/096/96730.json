@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:96730",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sitronics",
+  "model": "STV-2117N",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "03465264cd7ad0b1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sitronics/STV-2117N.json"
+    ],
+    "harmony": {
+      "global_device_id": 96730,
+      "device_type": 1,
+      "codeset": "fbdb1c7329c4dc16"
+    }
+  }
+}

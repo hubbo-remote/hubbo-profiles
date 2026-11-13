@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:145864",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Supernet",
+  "model": "488A",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "353b651baf98bfeb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "Exit"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Supernet/488A.json"
+    ],
+    "harmony": {
+      "global_device_id": 145864,
+      "device_type": 16,
+      "codeset": "747b5956a3af2313"
+    }
+  }
+}

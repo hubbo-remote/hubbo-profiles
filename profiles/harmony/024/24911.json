@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:24911",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aiwa",
+  "model": "NSX350M",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "50b1f94bc428cf2c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputVideoAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aiwa/NSX350M.json"
+    ],
+    "harmony": {
+      "global_device_id": 24911,
+      "device_type": 22,
+      "codeset": "38fcd07d1689bd37"
+    }
+  }
+}

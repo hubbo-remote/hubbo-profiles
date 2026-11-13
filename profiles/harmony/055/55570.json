@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:55570",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "SH-8017",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ad215f31237739e8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Digital1",
+      "steps": [
+        {
+          "command": "InputAudio1"
+        }
+      ]
+    },
+    {
+      "name": "Digital2",
+      "steps": [
+        {
+          "command": "InputAudio2"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "Line"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/SH-8017.json"
+    ],
+    "harmony": {
+      "global_device_id": 55570,
+      "device_type": 19,
+      "codeset": "12a7632e6a2c37e1"
+    }
+  }
+}

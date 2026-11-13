@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:200785",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVP3345VB/F7",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "0fafbd182d39dba6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVP3345VB_F7.json"
+    ],
+    "harmony": {
+      "global_device_id": 200785,
+      "device_type": 25,
+      "codeset": "c69cd9c4909aa4f0"
+    }
+  }
+}

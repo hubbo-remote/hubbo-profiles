@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:273486",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "Solo 15 Series II",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6808bd3ec7accb67",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/Solo_15_Series_II.json"
+    ],
+    "harmony": {
+      "global_device_id": 273486,
+      "device_type": 19,
+      "codeset": "f1adefaac9c80351"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216690",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DC290/93",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e82568851672d17c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "MP3Link",
+      "steps": [
+        {
+          "command": "InputMp3Link"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DC290_93.json"
+    ],
+    "harmony": {
+      "global_device_id": 216690,
+      "device_type": 5,
+      "codeset": "e2a2cd63208d7e02"
+    }
+  }
+}

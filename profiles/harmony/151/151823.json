@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:151823",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RD-XV47TF",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "09f9f3590131bdbd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VTR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RD-XV47TF.json"
+    ],
+    "harmony": {
+      "global_device_id": 151823,
+      "device_type": 34,
+      "codeset": "19b8550f7979c2c9"
+    }
+  }
+}

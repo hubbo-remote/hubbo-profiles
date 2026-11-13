@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:29027",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Runco",
+  "model": "PL-42",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2c799dece6603536",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB/PC",
+      "steps": [
+        {
+          "command": "RGBPCToggle"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "SVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD/HD",
+      "steps": [
+        {
+          "command": "HD1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Runco/PL-42.json"
+    ],
+    "harmony": {
+      "global_device_id": 29027,
+      "device_type": 1,
+      "codeset": "f99dd97d02dc89f6"
+    }
+  }
+}

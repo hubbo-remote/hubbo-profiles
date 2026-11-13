@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:117691",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "MX-G90R",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "548be4258875b4e8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/MX-G90R.json"
+    ],
+    "harmony": {
+      "global_device_id": 117691,
+      "device_type": 21,
+      "codeset": "7ceb401034215345"
+    }
+  }
+}

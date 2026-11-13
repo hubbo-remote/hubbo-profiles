@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "harmony:414650",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TC-40DS600C",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ea38fecf99a52bc0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ANT/Cable IN",
+      "steps": [
+        {
+          "command": "InputAntCableIn"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "AV/Component",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Apps",
+      "steps": [
+        {
+          "command": "Apps"
+        }
+      ]
+    },
+    {
+      "name": "Screen Mirroring",
+      "steps": [
+        {
+          "command": "Devices"
+        },
+        {
+          "command": "Devices"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 1500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TC-40DS600C.json"
+    ],
+    "harmony": {
+      "global_device_id": 414650,
+      "device_type": 1,
+      "codeset": "57614cad602d6200"
+    }
+  }
+}

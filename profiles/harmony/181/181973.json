@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181973",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "DPL 80 HT",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "748e45a5709edcb8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/DPL_80_HT.json"
+    ],
+    "harmony": {
+      "global_device_id": 181973,
+      "device_type": 5,
+      "codeset": "5348feb1a4b6bae1"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155236",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GigaByte",
+  "model": "GT-PTV-TAF-RH",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "f6cd41e98f66e45d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "InputVideos"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GigaByte/GT-PTV-TAF-RH.json"
+    ],
+    "harmony": {
+      "global_device_id": 155236,
+      "device_type": 35,
+      "codeset": "cafbd8a297f7030e"
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:24545",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "MR-8010",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "db1fb9eed65d358f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR A",
+      "steps": [
+        {
+          "command": "InputVcrA"
+        }
+      ]
+    },
+    {
+      "name": "VCR B",
+      "steps": [
+        {
+          "command": "InputVcrB"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/MR-8010.json"
+    ],
+    "harmony": {
+      "global_device_id": 24545,
+      "device_type": 5,
+      "codeset": "08d7165e096d38db"
+    }
+  }
+}

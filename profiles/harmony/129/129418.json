@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129418",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-24580",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "353b651baf98bfeb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Guide"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Audio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-24580.json"
+    ],
+    "harmony": {
+      "global_device_id": 129418,
+      "device_type": 16,
+      "codeset": "747b5956a3af2313"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:225197",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Creative",
+  "model": "ZiiSound T6",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d467fd0c663170ad",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Creative/ZiiSound_T6.json"
+    ],
+    "harmony": {
+      "global_device_id": 225197,
+      "device_type": 19,
+      "codeset": "009d4133712f5a6f"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:215481",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Genesis",
+  "model": "G-6040",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "839cec144a6ea987",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "MP3",
+      "steps": [
+        {
+          "command": "InputMp3"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Genesis/G-6040.json"
+    ],
+    "harmony": {
+      "global_device_id": 215481,
+      "device_type": 5,
+      "codeset": "37c2c4afb629b2cf"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260477",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DS9800W/37",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e755c280b1f9b2c4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AirPlay",
+      "steps": [
+        {
+          "command": "InputAirplay"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DS9800W_37.json"
+    ],
+    "harmony": {
+      "global_device_id": 260477,
+      "device_type": 5,
+      "codeset": "f99704d92fede3fe"
+    }
+  }
+}

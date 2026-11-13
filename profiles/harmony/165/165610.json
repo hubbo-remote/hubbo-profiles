@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165610",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "NAS-E300HD",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "db0a8b28712e3883",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DMPORT",
+      "steps": [
+        {
+          "command": "InputDmPort"
+        }
+      ]
+    },
+    {
+      "name": "AUDIO-IN",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "WMPORT/USB",
+      "steps": [
+        {
+          "command": "InputWMPORTUSB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/NAS-E300HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 165610,
+      "device_type": 21,
+      "codeset": "89f2ebbfb3568380"
+    }
+  }
+}

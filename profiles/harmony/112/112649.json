@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:112649",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-2408",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "26ee6be0d8c30de1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-2408.json"
+    ],
+    "harmony": {
+      "global_device_id": 112649,
+      "device_type": 18,
+      "codeset": "8ae2c68d457310fd"
+    }
+  }
+}

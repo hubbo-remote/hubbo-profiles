@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:85042",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Koss",
+  "model": "XJ225-2",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "07fdf24f2adf8c2d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Koss/XJ225-2.json"
+    ],
+    "harmony": {
+      "global_device_id": 85042,
+      "device_type": 21,
+      "codeset": "268b8f7ba1e255e1"
+    }
+  }
+}

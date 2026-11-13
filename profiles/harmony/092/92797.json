@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:92797",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Maxent",
+  "model": "MX-5020HPT",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "520e65255e1bae9e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "S-video",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Maxent/MX-5020HPT.json"
+    ],
+    "harmony": {
+      "global_device_id": 92797,
+      "device_type": 1,
+      "codeset": "cc0fffd16849ee28"
+    }
+  }
+}

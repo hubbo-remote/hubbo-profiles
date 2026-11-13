@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154936",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TVIX PVR R-3330",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "dbb88469636db645",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV/HDTV",
+      "steps": [
+        {
+          "command": "InputTVHDTV"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TVIX_PVR_R-3330.json"
+    ],
+    "harmony": {
+      "global_device_id": 154936,
+      "device_type": 35,
+      "codeset": "0435387c3a9ab802"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:494626",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Polk Audio",
+  "model": "SB1+",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e2b77d49489f58d0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "WiFi",
+      "steps": [
+        {
+          "command": "InputWifi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Polk_Audio/SB1.json"
+    ],
+    "harmony": {
+      "global_device_id": 494626,
+      "device_type": 19,
+      "codeset": "9eacfc1bf63ecf12"
+    }
+  }
+}

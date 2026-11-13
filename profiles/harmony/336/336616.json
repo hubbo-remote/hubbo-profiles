@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336616",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Infocus",
+  "model": "IN3138HDA",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "9ef2ac168f9e85ae",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Infocus/IN3138HDA.json"
+    ],
+    "harmony": {
+      "global_device_id": 336616,
+      "device_type": 7,
+      "codeset": "d3a915aeb1ab9b0b"
+    }
+  }
+}

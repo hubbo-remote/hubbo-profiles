@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265260",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "50LB5900-UV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cf3e4cec22533713",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2(MHL)",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/50LB5900-UV.json"
+    ],
+    "harmony": {
+      "global_device_id": 265260,
+      "device_type": 1,
+      "codeset": "90ce29034aea2d9d"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:103768",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Maxx",
+  "model": "LCOS-1400",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "57d0d09831f0b995",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Y/C",
+      "steps": [
+        {
+          "command": "InputYc"
+        }
+      ]
+    },
+    {
+      "name": "PC 1",
+      "steps": [
+        {
+          "command": "InputPc1"
+        }
+      ]
+    },
+    {
+      "name": "PC 2",
+      "steps": [
+        {
+          "command": "InputPc2"
+        }
+      ]
+    },
+    {
+      "name": "PC 3",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Maxx/LCOS-1400.json"
+    ],
+    "harmony": {
+      "global_device_id": 103768,
+      "device_type": 7,
+      "codeset": "d5f04eb28d1e70bf"
+    }
+  }
+}

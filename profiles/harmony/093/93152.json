@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:93152",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "HDRF-899X",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "a352b3affb879c0f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/HDRF-899X.json"
+    ],
+    "harmony": {
+      "global_device_id": 93152,
+      "device_type": 34,
+      "codeset": "8c19417efad61941"
+    }
+  }
+}

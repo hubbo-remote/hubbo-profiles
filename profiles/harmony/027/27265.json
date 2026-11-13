@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "harmony:27265",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PV-M1347",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "a1a282ceabed7df3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PV-M1347.json"
+    ],
+    "harmony": {
+      "global_device_id": 27265,
+      "device_type": 15,
+      "codeset": "652caf0eb18aff6f"
+    }
+  }
+}

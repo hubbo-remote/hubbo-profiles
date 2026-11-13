@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336401",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DBPOWER",
+  "model": "T20",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "04839197e149f483",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "PC-RGB",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "SD Card",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DBPOWER/T20.json"
+    ],
+    "harmony": {
+      "global_device_id": 336401,
+      "device_type": 7,
+      "codeset": "126cc0647911de67"
+    }
+  }
+}

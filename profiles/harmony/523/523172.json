@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "id": "harmony:523172",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "50UR9000PUA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "340e6fd025f9b03c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "SmartHub",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "PrimeVideo",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Amazon",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "Ambient",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Home"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "PrimeVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/50UR9000PUA.json"
+    ],
+    "harmony": {
+      "global_device_id": 523172,
+      "device_type": 1,
+      "codeset": "186bf92b5fa4c92c"
+    }
+  }
+}

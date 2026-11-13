@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269337",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cineversum",
+  "model": "BlackWing One",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "629fea2ca7225bf0",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 60000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Switch",
+      "steps": [
+        {
+          "command": "InputSwitch"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cineversum/BlackWing_One.json"
+    ],
+    "harmony": {
+      "global_device_id": 269337,
+      "device_type": 7,
+      "codeset": "510f4d6f8cd1e39c"
+    }
+  }
+}

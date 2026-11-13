@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:210264",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Storex",
+  "model": "STORYDISK ESSENTIAL",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "4e9a1247e3f0c8e2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "InputFile"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Storex/STORYDISK_ESSENTIAL.json"
+    ],
+    "harmony": {
+      "global_device_id": 210264,
+      "device_type": 35,
+      "codeset": "1591084a1896305d"
+    }
+  }
+}

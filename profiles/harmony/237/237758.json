@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:237758",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sceptre",
+  "model": "SB20202B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "40af3be1bb86d1ea",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sceptre/SB20202B.json"
+    ],
+    "harmony": {
+      "global_device_id": 237758,
+      "device_type": 19,
+      "codeset": "5728d1d5cf9e1f56"
+    }
+  }
+}

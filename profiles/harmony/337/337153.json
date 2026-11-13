@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:337153",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RBH",
+  "model": "BT-100",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4328f2e73910a319",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RBH/BT-100.json"
+    ],
+    "harmony": {
+      "global_device_id": 337153,
+      "device_type": 19,
+      "codeset": "b1a2a593eccde0bb"
+    }
+  }
+}

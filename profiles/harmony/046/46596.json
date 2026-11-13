@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "harmony:46596",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nakamichi",
+  "model": "Soundspace 1",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "dc0b243ba927e7ad",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2500
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nakamichi/Soundspace_1.json"
+    ],
+    "harmony": {
+      "global_device_id": 46596,
+      "device_type": 21,
+      "codeset": "b52c701fe1b9471e"
+    }
+  }
+}

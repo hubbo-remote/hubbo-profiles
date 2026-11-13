@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "harmony:237265",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Scott",
+  "model": "MDX-45",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b9aaeca5bbf1dbd5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsbCard"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "CARD",
+      "steps": [
+        {
+          "command": "InputUsbCard"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Scott/MDX-45.json"
+    ],
+    "harmony": {
+      "global_device_id": 237265,
+      "device_type": 22,
+      "codeset": "3d809198f766e0cf"
+    }
+  }
+}

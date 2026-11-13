@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180678",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RH-188S",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "c26230bdd5709575",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RH-188S.json"
+    ],
+    "harmony": {
+      "global_device_id": 180678,
+      "device_type": 34,
+      "codeset": "304a2cfa9b6ec901"
+    }
+  }
+}

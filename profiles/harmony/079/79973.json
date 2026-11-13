@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:79973",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Funai",
+  "model": "DPVR-6630",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "20c24a4f1af4d3f5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Funai/DPVR-6630.json"
+    ],
+    "harmony": {
+      "global_device_id": 79973,
+      "device_type": 25,
+      "codeset": "31df2b9a1e7bb48c"
+    }
+  }
+}

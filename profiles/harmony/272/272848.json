@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:272848",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Midte",
+  "model": "MDT-MC1080",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "daab86f7997e0989",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Midte/MDT-MC1080.json"
+    ],
+    "harmony": {
+      "global_device_id": 272848,
+      "device_type": 35,
+      "codeset": "58736f208b0e00eb"
+    }
+  }
+}

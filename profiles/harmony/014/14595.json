@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:14595",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Creative",
+  "model": "Inspire GD580",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "8ae3fd22dd4306eb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Creative/Inspire_GD580.json"
+    ],
+    "harmony": {
+      "global_device_id": 14595,
+      "device_type": 19,
+      "codeset": "51159ee15d1f73da"
+    }
+  }
+}

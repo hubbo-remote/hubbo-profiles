@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179009",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TruTech",
+  "model": "PLV-16190",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5ff6b5665d15b78a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TruTech/PLV-16190.json"
+    ],
+    "harmony": {
+      "global_device_id": 179009,
+      "device_type": 1,
+      "codeset": "a4c4c2eeb3bb0974"
+    }
+  }
+}

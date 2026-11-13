@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:98530",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "H&B",
+  "model": "HF-355I",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "1815a62c1aabc7e5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Card-USB",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/H_B/HF-355I.json"
+    ],
+    "harmony": {
+      "global_device_id": 98530,
+      "device_type": 21,
+      "codeset": "0773883d9f32ea49"
+    }
+  }
+}

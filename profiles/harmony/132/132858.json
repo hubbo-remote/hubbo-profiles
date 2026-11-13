@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:132858",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HCD-SPZ70",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "1b1e785d02571c8b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HCD-SPZ70.json"
+    ],
+    "harmony": {
+      "global_device_id": 132858,
+      "device_type": 21,
+      "codeset": "6d0e96cde83cc8c3"
+    }
+  }
+}

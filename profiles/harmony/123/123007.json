@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123007",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "XG-MB50X-L",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "2934be595373ac76",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Data 1",
+      "steps": [
+        {
+          "command": "Input5"
+        }
+      ]
+    },
+    {
+      "name": "Data 2",
+      "steps": [
+        {
+          "command": "Input6"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "RCA video",
+      "steps": [
+        {
+          "command": "Input7"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/XG-MB50X-L.json"
+    ],
+    "harmony": {
+      "global_device_id": 123007,
+      "device_type": 7,
+      "codeset": "d9662f8fb649a231"
+    }
+  }
+}

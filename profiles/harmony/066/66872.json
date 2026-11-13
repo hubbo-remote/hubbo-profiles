@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:66872",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "DHC-FL3",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "2de638cc4aebfe6c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTapeAB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/DHC-FL3.json"
+    ],
+    "harmony": {
+      "global_device_id": 66872,
+      "device_type": 22,
+      "codeset": "55270158259c5921"
+    }
+  }
+}

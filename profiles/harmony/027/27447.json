@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:27447",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamada",
+  "model": "D-701",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "feab24eb49a095ca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Satellite",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamada/D-701.json"
+    ],
+    "harmony": {
+      "global_device_id": 27447,
+      "device_type": 19,
+      "codeset": "1437d4a49e514b97"
+    }
+  }
+}

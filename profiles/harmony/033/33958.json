@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "id": "harmony:33958",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GoldStar",
+  "model": "GCV1924M",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "89ac5cd654c18840",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CATV",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "TunerAV"
+        },
+        {
+          "command": "TunerAV"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "TunerAV"
+        },
+        {
+          "command": "TunerAV"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GoldStar/GCV1924M.json"
+    ],
+    "harmony": {
+      "global_device_id": 33958,
+      "device_type": 15,
+      "codeset": "8b84ca58812dd83a"
+    }
+  }
+}

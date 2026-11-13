@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:108656",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "MCR-E810",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "da72b1633b550a0e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape/MD",
+      "steps": [
+        {
+          "command": "InputTapeMd"
+        }
+      ]
+    },
+    {
+      "name": "Aux/Tv",
+      "steps": [
+        {
+          "command": "InputAuxTv"
+        }
+      ]
+    },
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/MCR-E810.json"
+    ],
+    "harmony": {
+      "global_device_id": 108656,
+      "device_type": 22,
+      "codeset": "4a41792a5a5ecb25"
+    }
+  }
+}

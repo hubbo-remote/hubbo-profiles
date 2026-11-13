@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121904",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Trans-continents",
+  "model": "TR-80 HDD",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "2bafb5bc1972b63d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Title"
+        }
+      ]
+    },
+    {
+      "name": "FrontCVBS",
+      "steps": [
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "RearCVBS",
+      "steps": [
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "RearS-Vid",
+      "steps": [
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "DVIn",
+      "steps": [
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "YUV",
+      "steps": [
+        {
+          "command": "Menu"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "Menu"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Trans-continents/TR-80_HDD.json"
+    ],
+    "harmony": {
+      "global_device_id": 121904,
+      "device_type": 34,
+      "codeset": "a0d2c96c10ffd901"
+    }
+  }
+}

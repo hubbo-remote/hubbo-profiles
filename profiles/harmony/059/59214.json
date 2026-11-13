@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:59214",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "T+A",
+  "model": "PA 1530 R",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "51243193ef8703d9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV/STB",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/T_A/PA_1530_R.json"
+    ],
+    "harmony": {
+      "global_device_id": 59214,
+      "device_type": 5,
+      "codeset": "f63704393f641ae6"
+    }
+  }
+}

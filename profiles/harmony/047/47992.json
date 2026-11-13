@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:47992",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Goodmans",
+  "model": "GHC-56PRO",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "96dbfc779c83aaa2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV/VCR",
+      "steps": [
+        {
+          "command": "InputTvVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Goodmans/GHC-56PRO.json"
+    ],
+    "harmony": {
+      "global_device_id": 47992,
+      "device_type": 19,
+      "codeset": "02f52f61f1f29465"
+    }
+  }
+}

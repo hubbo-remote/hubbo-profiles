@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:17640",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "MX-D302T",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "67e8d8af7d28c666",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "DeckA"
+        }
+      ]
+    },
+    {
+      "name": "Tape2",
+      "steps": [
+        {
+          "command": "DeckB"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/MX-D302T.json"
+    ],
+    "harmony": {
+      "global_device_id": 17640,
+      "device_type": 21,
+      "codeset": "115a19cf31e9a752"
+    }
+  }
+}

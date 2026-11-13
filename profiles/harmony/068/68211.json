@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68211",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "26-DL6200",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d8adf6c11e4c52b2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "tuner",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "av1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "av2",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/26-DL6200.json"
+    ],
+    "harmony": {
+      "global_device_id": 68211,
+      "device_type": 1,
+      "codeset": "cb07fef1459fc1e6"
+    }
+  }
+}

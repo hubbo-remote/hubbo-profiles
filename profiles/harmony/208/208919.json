@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:208919",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TVIX SLIM S1",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "51efa05a92af8077",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyVideo"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TVIX_SLIM_S1.json"
+    ],
+    "harmony": {
+      "global_device_id": 208919,
+      "device_type": 35,
+      "codeset": "e2c6332c4d70a7c0"
+    }
+  }
+}

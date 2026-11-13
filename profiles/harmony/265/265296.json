@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265296",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Paradigm",
+  "model": "Millenia CT 2",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d384f98f2d1814d4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Paradigm/Millenia_CT_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 265296,
+      "device_type": 19,
+      "codeset": "4394fe384bbec8eb"
+    }
+  }
+}

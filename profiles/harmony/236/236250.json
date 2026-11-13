@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:236250",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kaiboer",
+  "model": "K580i",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "a1c1dafc7e2d9707",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kaiboer/K580i.json"
+    ],
+    "harmony": {
+      "global_device_id": 236250,
+      "device_type": 35,
+      "codeset": "9ffb13f018b4aa59"
+    }
+  }
+}

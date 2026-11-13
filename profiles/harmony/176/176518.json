@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176518",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "NP2900/12",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "f16c287ece1a193e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "MediaLib",
+      "steps": [
+        {
+          "command": "MediaLib"
+        }
+      ]
+    },
+    {
+      "name": "InternetRadio",
+      "steps": [
+        {
+          "command": "InternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "OnlineServices",
+      "steps": [
+        {
+          "command": "OnlineServices"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "Aux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/NP2900_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 176518,
+      "device_type": 33,
+      "codeset": "0061a9ef7f949a85"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:231940",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "VOO",
+  "model": "ADB-2840C",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "70b4a3713841e6ac",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/VOO/ADB-2840C.json"
+    ],
+    "harmony": {
+      "global_device_id": 231940,
+      "device_type": 12,
+      "codeset": "0f357f90c51de259"
+    }
+  }
+}

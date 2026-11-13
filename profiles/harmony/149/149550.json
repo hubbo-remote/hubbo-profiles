@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149550",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NXG",
+  "model": "NX-HDMI31",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "d64d150de5a8805f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "on/off",
+      "steps": [
+        {
+          "command": "PowerToggle"
+        }
+      ]
+    },
+    {
+      "name": "auto",
+      "steps": [
+        {
+          "command": "Auto"
+        }
+      ]
+    },
+    {
+      "name": "manual",
+      "steps": [
+        {
+          "command": "Manual"
+        }
+      ]
+    },
+    {
+      "name": "1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NXG/NX-HDMI31.json"
+    ],
+    "harmony": {
+      "global_device_id": 149550,
+      "device_type": 30,
+      "codeset": "a3d70644661b1f41"
+    }
+  }
+}

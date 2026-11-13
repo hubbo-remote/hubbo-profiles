@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:97414",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FW-D5/37",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "4e5d3f02fab3c04b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputAux"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FW-D5_37.json"
+    ],
+    "harmony": {
+      "global_device_id": 97414,
+      "device_type": 22,
+      "codeset": "ed90fbeb8833b921"
+    }
+  }
+}

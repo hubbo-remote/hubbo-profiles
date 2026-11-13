@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270075",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Arcon",
+  "model": "Titan 7001HD",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "2a87d973e86bc01d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Arcon/Titan_7001HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 270075,
+      "device_type": 18,
+      "codeset": "86e8203439ac8883"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:75549",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "M1917A-BZ",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6d46f5beccacd724",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "RGB-DTV",
+      "steps": [
+        {
+          "command": "InputRgbDtv"
+        }
+      ]
+    },
+    {
+      "name": "RGB-PC",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/M1917A-BZ.json"
+    ],
+    "harmony": {
+      "global_device_id": 75549,
+      "device_type": 13,
+      "codeset": "b8287769a1f3aa7f"
+    }
+  }
+}

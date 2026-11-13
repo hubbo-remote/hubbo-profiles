@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153587",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kirsch",
+  "model": "K-3",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "97ea91970af94370",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kirsch/K-3.json"
+    ],
+    "harmony": {
+      "global_device_id": 153587,
+      "device_type": 5,
+      "codeset": "89778494186f935b"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:86288",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dantax",
+  "model": "M-90",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "b0b8bb3c7db15c32",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dantax/M-90.json"
+    ],
+    "harmony": {
+      "global_device_id": 86288,
+      "device_type": 21,
+      "codeset": "1d7af6e0fdeb46b6"
+    }
+  }
+}

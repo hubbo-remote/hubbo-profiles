@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:268078",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Peha",
+  "model": "AudioPoint",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7673a8cf79a26f1b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "Mp3",
+      "steps": [
+        {
+          "command": "InputMp3"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Peha/AudioPoint.json"
+    ],
+    "harmony": {
+      "global_device_id": 268078,
+      "device_type": 5,
+      "codeset": "5389a0ce495072ea"
+    }
+  }
+}

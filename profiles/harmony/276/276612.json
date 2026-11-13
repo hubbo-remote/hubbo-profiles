@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:276612",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "OCN",
+  "model": "DVT-6020EU",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "f2d3c3df6ae8df25",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/OCN/DVT-6020EU.json"
+    ],
+    "harmony": {
+      "global_device_id": 276612,
+      "device_type": 18,
+      "codeset": "f6d33c23d8cf7a93"
+    }
+  }
+}

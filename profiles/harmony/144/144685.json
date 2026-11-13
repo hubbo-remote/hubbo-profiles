@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144685",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KLV-46V200A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "55d0b4a946ef28de",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputHD1"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputHD2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputVideo7"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KLV-46V200A.json"
+    ],
+    "harmony": {
+      "global_device_id": 144685,
+      "device_type": 1,
+      "codeset": "13f9d15a6b4cb70c"
+    }
+  }
+}

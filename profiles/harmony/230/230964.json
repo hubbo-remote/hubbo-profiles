@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:230964",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Arvani",
+  "model": "VA42-200",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "423601fe3efb82af",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "IN",
+      "steps": [
+        {
+          "command": "InputIN"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Arvani/VA42-200.json"
+    ],
+    "harmony": {
+      "global_device_id": 230964,
+      "device_type": 19,
+      "codeset": "79c5661017d4223c"
+    }
+  }
+}

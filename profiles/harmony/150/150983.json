@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150983",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tag McLaren",
+  "model": "AV32R-SL",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "fa4b2be6d9c6af65",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tag_McLaren/AV32R-SL.json"
+    ],
+    "harmony": {
+      "global_device_id": 150983,
+      "device_type": 5,
+      "codeset": "aa165ec14a08a257"
+    }
+  }
+}

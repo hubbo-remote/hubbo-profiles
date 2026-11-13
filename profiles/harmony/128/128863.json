@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:128863",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "DVD-HR720",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "f5d6e65d39eaa508",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/DVD-HR720.json"
+    ],
+    "harmony": {
+      "global_device_id": 128863,
+      "device_type": 34,
+      "codeset": "a6049633fcab0e33"
+    }
+  }
+}

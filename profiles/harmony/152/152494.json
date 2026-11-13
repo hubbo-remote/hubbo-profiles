@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:152494",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Memup",
+  "model": "MediaDisk TWX",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "4684c385fa410e01",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Memup/MediaDisk_TWX.json"
+    ],
+    "harmony": {
+      "global_device_id": 152494,
+      "device_type": 35,
+      "codeset": "b48c023b533de44e"
+    }
+  }
+}

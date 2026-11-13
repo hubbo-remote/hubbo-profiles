@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216991",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "22LG3DCH",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "30c301a6c74fc61c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/22LG3DCH.json"
+    ],
+    "harmony": {
+      "global_device_id": 216991,
+      "device_type": 1,
+      "codeset": "0560a0cbc8e305d3"
+    }
+  }
+}

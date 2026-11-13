@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:216373",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vistron",
+  "model": "VH-8070",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "937689f540a2755e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vistron/VH-8070.json"
+    ],
+    "harmony": {
+      "global_device_id": 216373,
+      "device_type": 19,
+      "codeset": "a164a1b55c136b2b"
+    }
+  }
+}

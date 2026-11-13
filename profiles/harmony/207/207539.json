@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:207539",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eltax",
+  "model": "VERSA",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "a609125e4a3602d8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eltax/VERSA.json"
+    ],
+    "harmony": {
+      "global_device_id": 207539,
+      "device_type": 22,
+      "codeset": "14287b1565e558b1"
+    }
+  }
+}

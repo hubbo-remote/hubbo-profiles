@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:222928",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "HiMedia",
+  "model": "HD900B",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "86cbd84f0892d782",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyVideo"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPicture"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/HiMedia/HD900B.json"
+    ],
+    "harmony": {
+      "global_device_id": 222928,
+      "device_type": 35,
+      "codeset": "21d5cd46bb0d62a8"
+    }
+  }
+}

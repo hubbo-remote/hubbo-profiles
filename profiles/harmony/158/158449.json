@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158449",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Timex",
+  "model": "TI700S",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "8e72bcc4648ff598",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "Ipod",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Timex/TI700S.json"
+    ],
+    "harmony": {
+      "global_device_id": 158449,
+      "device_type": 36,
+      "codeset": "1ee2dc152bb5396a"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68213",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fisher",
+  "model": "CA-335",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6c4d84517019c3fe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fisher/CA-335.json"
+    ],
+    "harmony": {
+      "global_device_id": 68213,
+      "device_type": 19,
+      "codeset": "0fa84a90096662c0"
+    }
+  }
+}

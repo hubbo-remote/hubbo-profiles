@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:262150",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bush",
+  "model": "MCD-07DAB",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0147511c3991e7e1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bush/MCD-07DAB.json"
+    ],
+    "harmony": {
+      "global_device_id": 262150,
+      "device_type": 21,
+      "codeset": "e5eeef1d71741e0d"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203601",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RDH100DTKF",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "c27681e273f3a9fe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RDH100DTKF.json"
+    ],
+    "harmony": {
+      "global_device_id": 203601,
+      "device_type": 34,
+      "codeset": "7d428d7dd473f6f7"
+    }
+  }
+}

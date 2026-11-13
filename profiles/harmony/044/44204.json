@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:44204",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "MX-C77",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "548be4258875b4e8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/DSS",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputMiniDisc"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/MX-C77.json"
+    ],
+    "harmony": {
+      "global_device_id": 44204,
+      "device_type": 22,
+      "codeset": "7ceb401034215345"
+    }
+  }
+}

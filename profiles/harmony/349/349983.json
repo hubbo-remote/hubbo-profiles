@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:349983",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "THORSTREAM",
+  "model": "Elite",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "8db000c0fd93358b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Media",
+      "steps": [
+        {
+          "command": "Media"
+        }
+      ]
+    },
+    {
+      "name": "Apps",
+      "steps": [
+        {
+          "command": "Apps"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "File"
+        }
+      ]
+    },
+    {
+      "name": "Web",
+      "steps": [
+        {
+          "command": "WebBrowser"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/THORSTREAM/Elite.json"
+    ],
+    "harmony": {
+      "global_device_id": 349983,
+      "device_type": 35,
+      "codeset": "61baa78d9124a4ce"
+    }
+  }
+}

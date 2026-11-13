@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:229279",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Novatech",
+  "model": "Nov-Vision",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "70a68773a2692f06",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Novatech/Nov-Vision.json"
+    ],
+    "harmony": {
+      "global_device_id": 229279,
+      "device_type": 35,
+      "codeset": "c5f6569bb2bd652a"
+    }
+  }
+}

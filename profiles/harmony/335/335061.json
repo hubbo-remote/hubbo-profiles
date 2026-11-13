@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:335061",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sonance",
+  "model": "DSP 2-150",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "131e29eb6c706954",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "OutputA Input1",
+      "steps": [
+        {
+          "command": "OutputAInput1"
+        }
+      ]
+    },
+    {
+      "name": "OutputA Input2",
+      "steps": [
+        {
+          "command": "OutputAInput2"
+        }
+      ]
+    },
+    {
+      "name": "OutputB Input1",
+      "steps": [
+        {
+          "command": "OutputBInput1"
+        }
+      ]
+    },
+    {
+      "name": "OutputB Input2",
+      "steps": [
+        {
+          "command": "OutputBInput2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sonance/DSP_2-150.json"
+    ],
+    "harmony": {
+      "global_device_id": 335061,
+      "device_type": 19,
+      "codeset": "7471ff04d2ee116c"
+    }
+  }
+}

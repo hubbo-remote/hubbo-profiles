@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:501324",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "27LP600B",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "36472fa83ef5931e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/27LP600B.json"
+    ],
+    "harmony": {
+      "global_device_id": 501324,
+      "device_type": 13,
+      "codeset": "dd02df4eadec3a1c"
+    }
+  }
+}

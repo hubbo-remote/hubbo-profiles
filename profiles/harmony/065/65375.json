@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:65375",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pixel Magic Systems",
+  "model": "PE-1000 Pro",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "9cf7a95525513bc1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SDI1",
+      "steps": [
+        {
+          "command": "InputSdi2"
+        }
+      ]
+    },
+    {
+      "name": "SDI2",
+      "steps": [
+        {
+          "command": "InputSdi2"
+        }
+      ]
+    },
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "InputHDTV"
+        }
+      ]
+    },
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Svideo2",
+      "steps": [
+        {
+          "command": "InputSVideo2"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pixel_Magic_Systems/PE-1000_Pro.json"
+    ],
+    "harmony": {
+      "global_device_id": 65375,
+      "device_type": 30,
+      "codeset": "0c8abfc18c88ac97"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:77071",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Ministry of Sound",
+  "model": "MOSDV-053",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "44cf3e780cf30fed",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Ministry_of_Sound/MOSDV-053.json"
+    ],
+    "harmony": {
+      "global_device_id": 77071,
+      "device_type": 19,
+      "codeset": "c68b1babf456f603"
+    }
+  }
+}

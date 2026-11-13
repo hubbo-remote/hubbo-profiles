@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:77179",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hyundai",
+  "model": "AV-999",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "50a5d6d85388842c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AC-3",
+      "steps": [
+        {
+          "command": "InputAC3"
+        }
+      ]
+    },
+    {
+      "name": "VCD/LD",
+      "steps": [
+        {
+          "command": "InputVcdLd"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hyundai/AV-999.json"
+    ],
+    "harmony": {
+      "global_device_id": 77179,
+      "device_type": 19,
+      "codeset": "d2d4358b2246c880"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:6422",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Plus",
+  "model": "HE-3200R",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "3bab32a9e1102642",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Plus/HE-3200R.json"
+    ],
+    "harmony": {
+      "global_device_id": 6422,
+      "device_type": 7,
+      "codeset": "4621d5b3198e181a"
+    }
+  }
+}

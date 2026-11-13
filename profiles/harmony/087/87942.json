@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:87942",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sagem",
+  "model": "MDP-2300-X",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "6c8dafc2247ec00e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sagem/MDP-2300-X.json"
+    ],
+    "harmony": {
+      "global_device_id": 87942,
+      "device_type": 7,
+      "codeset": "03203511924f683e"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "harmony:104811",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Key Digital",
+  "model": "KD-MSW4x2",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "cac82a700bfd2a0d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "R1"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "R1"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "R1"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "R1"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Key_Digital/KD-MSW4x2.json"
+    ],
+    "harmony": {
+      "global_device_id": 104811,
+      "device_type": 30,
+      "codeset": "9bae50bfa2223a0b"
+    }
+  }
+}

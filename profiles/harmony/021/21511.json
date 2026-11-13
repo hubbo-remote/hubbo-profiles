@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:21511",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Decktron",
+  "model": "DP-50",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4abb1b3734c39fe1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB/PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD/HD",
+      "steps": [
+        {
+          "command": "InputHD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Decktron/DP-50.json"
+    ],
+    "harmony": {
+      "global_device_id": 21511,
+      "device_type": 1,
+      "codeset": "71359771df5b769f"
+    }
+  }
+}

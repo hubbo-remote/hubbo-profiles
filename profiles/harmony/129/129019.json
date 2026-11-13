@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129019",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "ELP-9100",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1d5cbfdaebd2b6fb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "steps": [
+        {
+          "command": "Auto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/ELP-9100.json"
+    ],
+    "harmony": {
+      "global_device_id": 129019,
+      "device_type": 7,
+      "codeset": "3a4676e7caaab82f"
+    }
+  }
+}

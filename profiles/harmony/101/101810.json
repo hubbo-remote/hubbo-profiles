@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101810",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Loewe",
+  "model": "Xelos-5370",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6ed6efb722301761",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AVS",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "9"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "1"
+        },
+        {
+          "command": "9"
+        },
+        {
+          "command": "8"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Loewe/Xelos-5370.json"
+    ],
+    "harmony": {
+      "global_device_id": 101810,
+      "device_type": 1,
+      "codeset": "7e225acc4748e9cb"
+    }
+  }
+}

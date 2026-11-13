@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:28212",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Runco",
+  "model": "PL-50CX",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d8f57f8a6d6d0662",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "InputHighDefinition"
+        }
+      ]
+    },
+    {
+      "name": "RGB HD",
+      "steps": [
+        {
+          "command": "RgbHdPassthrough"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Runco/PL-50CX.json"
+    ],
+    "harmony": {
+      "global_device_id": 28212,
+      "device_type": 13,
+      "codeset": "0d963e846c356141"
+    }
+  }
+}

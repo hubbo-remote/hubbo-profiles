@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118630",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dell",
+  "model": "2400MP",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "d523c7d22608e327",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dell/2400MP.json"
+    ],
+    "harmony": {
+      "global_device_id": 118630,
+      "device_type": 7,
+      "codeset": "f93f25d2d57e346f"
+    }
+  }
+}

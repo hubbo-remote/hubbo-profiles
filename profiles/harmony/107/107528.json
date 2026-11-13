@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:107528",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Megadrive",
+  "model": "MP-3010",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "066a26c6d2dec7e3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV/SV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "SCART 1",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "SCART 2",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Megadrive/MP-3010.json"
+    ],
+    "harmony": {
+      "global_device_id": 107528,
+      "device_type": 1,
+      "codeset": "205f98bb48599c7c"
+    }
+  }
+}

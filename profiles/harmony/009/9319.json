@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "harmony:9319",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AMC",
+  "model": "R9",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3afc5d9a232c309e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape/Mon",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "DVD/TV",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "VCR2",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "VCR3",
+      "steps": [
+        {
+          "command": "InputLaserdisc"
+        }
+      ]
+    },
+    {
+      "name": "6CH DIRECT",
+      "steps": [
+        {
+          "command": "Input6Ch"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AMC/R9.json"
+    ],
+    "harmony": {
+      "global_device_id": 9319,
+      "device_type": 19,
+      "codeset": "d05bc63c40f69676"
+    }
+  }
+}

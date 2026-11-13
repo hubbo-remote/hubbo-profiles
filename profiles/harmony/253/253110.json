@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "id": "harmony:253110",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "UA65F8000‎AM",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1c55f535a52f086c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 7000
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 7000
+        },
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 7000
+        },
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 7000
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1/DVI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 7000
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 7000
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 7000
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 7000
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "Smart Hub",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "SmartHub"
+        }
+      ]
+    },
+    {
+      "name": "Ambient",
+      "steps": [
+        {
+          "command": "Ambient"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/UA65F8000_AM.json"
+    ],
+    "harmony": {
+      "global_device_id": 253110,
+      "device_type": 1,
+      "codeset": "f7e021a8c1289e0f"
+    }
+  }
+}

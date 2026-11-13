@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176656",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "XL-DK227NH",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "89e12048dea84ed1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "TunerBand"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/XL-DK227NH.json"
+    ],
+    "harmony": {
+      "global_device_id": 176656,
+      "device_type": 21,
+      "codeset": "28121787f2406c69"
+    }
+  }
+}

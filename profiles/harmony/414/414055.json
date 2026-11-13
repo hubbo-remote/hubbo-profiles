@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:414055",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "eGreat",
+  "model": "A11",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "4ca42188da20696b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "File"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/eGreat/A11.json"
+    ],
+    "harmony": {
+      "global_device_id": 414055,
+      "device_type": 35,
+      "codeset": "5a17c41cf0a5b422"
+    }
+  }
+}

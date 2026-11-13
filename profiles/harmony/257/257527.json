@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:257527",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "4750W",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "93c35e7e46db3b74",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "BNC",
+      "steps": [
+        {
+          "command": "InputBnc"
+        }
+      ]
+    },
+    {
+      "name": "DisplayPort",
+      "steps": [
+        {
+          "command": "InputDisplayPort"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "InputLan"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/4750W.json"
+    ],
+    "harmony": {
+      "global_device_id": 257527,
+      "device_type": 7,
+      "codeset": "ba8a96212bf52f93"
+    }
+  }
+}

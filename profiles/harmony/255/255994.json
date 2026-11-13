@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:255994",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "T+A",
+  "model": "MUSIC PLAYER balanced",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "95a14626f8dab3ca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SCL",
+      "steps": [
+        {
+          "command": "InputScl"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "Disc"
+        }
+      ]
+    },
+    {
+      "name": "A1/Audio",
+      "steps": [
+        {
+          "command": "InputA1Aud"
+        }
+      ]
+    },
+    {
+      "name": "A2/Video",
+      "steps": [
+        {
+          "command": "InputA2Vid"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/T_A/MUSIC_PLAYER_balanced.json"
+    ],
+    "harmony": {
+      "global_device_id": 255994,
+      "device_type": 21,
+      "codeset": "dd145a33a1eebbbc"
+    }
+  }
+}

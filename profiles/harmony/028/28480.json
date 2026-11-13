@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:28480",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "AVC-1020",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "aa7f3bc09cf06f42",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "V-AUX",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/AVC-1020.json"
+    ],
+    "harmony": {
+      "global_device_id": 28480,
+      "device_type": 30,
+      "codeset": "474fe302fa1dc909"
+    }
+  }
+}

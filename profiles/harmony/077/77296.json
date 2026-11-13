@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:77296",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Systemline",
+  "model": "SC4302299",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "3eb736f0408e7a90",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TAPE/SAT",
+      "steps": [
+        {
+          "command": "InputTapeSat"
+        }
+      ]
+    },
+    {
+      "name": "VID/DVD",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Systemline/SC4302299.json"
+    ],
+    "harmony": {
+      "global_device_id": 77296,
+      "device_type": 5,
+      "codeset": "73fcf64a6e43ff96"
+    }
+  }
+}

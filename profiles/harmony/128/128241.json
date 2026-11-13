@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "harmony:128241",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HD-61Z886",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d2c952433bb0aa82",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna/Cable",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "Input1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Input2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Input3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Input4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "Digital-In1",
+      "steps": [
+        {
+          "command": "InputDigitalIn"
+        }
+      ]
+    },
+    {
+      "name": "iLink",
+      "steps": [
+        {
+          "command": "InputDigitalIn"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HD-61Z886.json"
+    ],
+    "harmony": {
+      "global_device_id": 128241,
+      "device_type": 1,
+      "codeset": "5b06708526cea6f3"
+    }
+  }
+}

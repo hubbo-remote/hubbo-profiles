@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:33046",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "V8816",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "8949b7481d5cb4d6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/V8816.json"
+    ],
+    "harmony": {
+      "global_device_id": 33046,
+      "device_type": 25,
+      "codeset": "80a90a9ff09aded9"
+    }
+  }
+}

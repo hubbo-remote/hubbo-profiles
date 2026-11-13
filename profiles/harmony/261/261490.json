@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:261490",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "EX240U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f8ae2b13713eafbe",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/EX240U.json"
+    ],
+    "harmony": {
+      "global_device_id": 261490,
+      "device_type": 7,
+      "codeset": "dcc0a20308b97156"
+    }
+  }
+}

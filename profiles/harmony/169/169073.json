@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169073",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "DRV-6815",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "d5a21d46057e2c62",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/DRV-6815.json"
+    ],
+    "harmony": {
+      "global_device_id": 169073,
+      "device_type": 47,
+      "codeset": "fa4262e7132d546c"
+    }
+  }
+}

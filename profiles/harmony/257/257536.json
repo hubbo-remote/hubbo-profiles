@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:257536",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RTD3266",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "1327aa5762c9ecfe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RTD3266.json"
+    ],
+    "harmony": {
+      "global_device_id": 257536,
+      "device_type": 22,
+      "codeset": "4df241273d5cc3fc"
+    }
+  }
+}

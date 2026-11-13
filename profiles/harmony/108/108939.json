@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "harmony:108939",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "29PT-886A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dd5332a512001cf3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputVga"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputAv1"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputAv2"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Cam",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputAv3"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputAv4"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/29PT-886A.json"
+    ],
+    "harmony": {
+      "global_device_id": 108939,
+      "device_type": 1,
+      "codeset": "2faf1eb0a0d53c8f"
+    }
+  }
+}

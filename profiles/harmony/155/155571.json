@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155571",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Invion",
+  "model": "DPF-10A01-IEU",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "b1edad1de7960379",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "InputVideos"
+        }
+      ]
+    },
+    {
+      "name": "Files",
+      "steps": [
+        {
+          "command": "InputFiles"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Invion/DPF-10A01-IEU.json"
+    ],
+    "harmony": {
+      "global_device_id": 155571,
+      "device_type": 35,
+      "codeset": "f60dcb499263ea45"
+    }
+  }
+}

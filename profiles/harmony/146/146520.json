@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:146520",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Roberts",
+  "model": "MP-23",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "3d1ab3e041a1c5ba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "SD/USB",
+      "steps": [
+        {
+          "command": "InputSdUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Roberts/MP-23.json"
+    ],
+    "harmony": {
+      "global_device_id": 146520,
+      "device_type": 21,
+      "codeset": "5bc656b56affba9a"
+    }
+  }
+}

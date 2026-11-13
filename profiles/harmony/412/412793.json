@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:412793",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LASER",
+  "model": "SPK-SB120",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0a7a61fb32af3ba5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "Bluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LASER/SPK-SB120.json"
+    ],
+    "harmony": {
+      "global_device_id": 412793,
+      "device_type": 5,
+      "codeset": "3ab138abac19e558"
+    }
+  }
+}

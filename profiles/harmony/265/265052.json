@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265052",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cocoon",
+  "model": "HE414079",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "f28e2765283e7970",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "MyMovies"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Apps",
+      "steps": [
+        {
+          "command": "Apps"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cocoon/HE414079.json"
+    ],
+    "harmony": {
+      "global_device_id": 265052,
+      "device_type": 35,
+      "codeset": "fa6338452f158066"
+    }
+  }
+}

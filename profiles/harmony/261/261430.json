@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:261430",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CYP",
+  "model": "EL-5500",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "ba68281a13d4fafe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "PC 1",
+      "steps": [
+        {
+          "command": "InputPc1"
+        }
+      ]
+    },
+    {
+      "name": "PC 2",
+      "steps": [
+        {
+          "command": "InputPc2"
+        }
+      ]
+    },
+    {
+      "name": "PC 3",
+      "steps": [
+        {
+          "command": "InputPc3"
+        }
+      ]
+    },
+    {
+      "name": "CV",
+      "steps": [
+        {
+          "command": "InputCv"
+        }
+      ]
+    },
+    {
+      "name": "Comp",
+      "steps": [
+        {
+          "command": "InputComp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CYP/EL-5500.json"
+    ],
+    "harmony": {
+      "global_device_id": 261430,
+      "device_type": 30,
+      "codeset": "cee81bc8ae86f06a"
+    }
+  }
+}

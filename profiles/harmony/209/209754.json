@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:209754",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hyundai",
+  "model": "hmb-r600x",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "89520edba4db19d7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "LAN"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hyundai/hmb-r600x.json"
+    ],
+    "harmony": {
+      "global_device_id": 209754,
+      "device_type": 35,
+      "codeset": "5bf3d21b666b2062"
+    }
+  }
+}

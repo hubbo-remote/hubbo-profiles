@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500429",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ROCKVILLE",
+  "model": "HTS45",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "954d5abb98a5c70f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "USB/SD",
+      "steps": [
+        {
+          "command": "InputUsbSd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ROCKVILLE/HTS45.json"
+    ],
+    "harmony": {
+      "global_device_id": 500429,
+      "device_type": 5,
+      "codeset": "1ed3a32b9c10472b"
+    }
+  }
+}

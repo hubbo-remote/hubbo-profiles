@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40640",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Boxlight",
+  "model": "1HD",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1db6e21fbf11bf0a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "VideoVideo"
+        }
+      ]
+    },
+    {
+      "name": "SVHS",
+      "steps": [
+        {
+          "command": "VideoSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "VideoComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Boxlight/1HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 40640,
+      "device_type": 7,
+      "codeset": "15f77094c683247f"
+    }
+  }
+}

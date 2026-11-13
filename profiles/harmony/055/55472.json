@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:55472",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Koda",
+  "model": "AV-3068T",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e50777d890e8ed36",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Koda/AV-3068T.json"
+    ],
+    "harmony": {
+      "global_device_id": 55472,
+      "device_type": 5,
+      "codeset": "4d3b94c38b85a7e5"
+    }
+  }
+}

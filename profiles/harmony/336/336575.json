@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336575",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Casio",
+  "model": "XJ-M241",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "71cf5957535a033d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Casio/XJ-M241.json"
+    ],
+    "harmony": {
+      "global_device_id": 336575,
+      "device_type": 7,
+      "codeset": "751278a22b84b1e0"
+    }
+  }
+}

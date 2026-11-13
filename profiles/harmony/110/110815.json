@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110815",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DV-901VHS",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "dd6fc4b5faf0b1b2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DV-901VHS.json"
+    ],
+    "harmony": {
+      "global_device_id": 110815,
+      "device_type": 25,
+      "codeset": "76fd558fad7b9d4b"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:39005",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Runco",
+  "model": "VX-1",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "aeb22e941383f689",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Runco/VX-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 39005,
+      "device_type": 7,
+      "codeset": "e075e405f090c182"
+    }
+  }
+}

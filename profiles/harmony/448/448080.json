@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:448080",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "PF50KA",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "cfb4a923d2b84738",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1/ARC",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/PF50KA.json"
+    ],
+    "harmony": {
+      "global_device_id": 448080,
+      "device_type": 7,
+      "codeset": "487a0cecfefe7dc6"
+    }
+  }
+}

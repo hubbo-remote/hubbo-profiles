@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180194",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DGTEC",
+  "model": "DG-HT160DVR",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "81ac25d9b6be7d39",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DV/USB",
+      "steps": [
+        {
+          "command": "InputDVUSB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DGTEC/DG-HT160DVR.json"
+    ],
+    "harmony": {
+      "global_device_id": 180194,
+      "device_type": 34,
+      "codeset": "90af1a8c3ec9568e"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269361",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "TestNetflix1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "69268df54f32225a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "Exit"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 0,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Netflix OFF",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "delay_ms": 2500
+        },
+        {
+          "command": "Exit"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/TestNetflix1.json"
+    ],
+    "harmony": {
+      "global_device_id": 269361,
+      "device_type": 1,
+      "codeset": "3fb24fc1d4aa8e7e"
+    }
+  }
+}

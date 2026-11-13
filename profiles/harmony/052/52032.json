@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:52032",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Roadstar",
+  "model": "DVD-5104PSPK",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "54c4bccdd1794852",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Roadstar/DVD-5104PSPK.json"
+    ],
+    "harmony": {
+      "global_device_id": 52032,
+      "device_type": 22,
+      "codeset": "c169fbfda979076d"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:207093",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pure Digital",
+  "model": "E80201",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "b4f03da291882c51",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "steps": [
+        {
+          "command": "InputCard"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AUX in",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pure_Digital/E80201.json"
+    ],
+    "harmony": {
+      "global_device_id": 207093,
+      "device_type": 33,
+      "codeset": "61481bd8843732a1"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "harmony:278271",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "HT 570",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "ae6280b63e3e5637",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn",
+        "hold_ms": 3000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/HT_570.json"
+    ],
+    "harmony": {
+      "global_device_id": 278271,
+      "device_type": 7,
+      "codeset": "664b615150a0e4b9"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:255469",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Peachtree",
+  "model": "musicBox",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "aa412da42ded20fa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "COAX",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "OPT",
+      "steps": [
+        {
+          "command": "InputOpt"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Peachtree/musicBox.json"
+    ],
+    "harmony": {
+      "global_device_id": 255469,
+      "device_type": 5,
+      "codeset": "162e0374e2b1e108"
+    }
+  }
+}

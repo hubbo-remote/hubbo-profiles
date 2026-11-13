@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34590",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HX-Z10",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "84b846c84a9b0859",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputAMFM"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "CDPlayPause"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HX-Z10.json"
+    ],
+    "harmony": {
+      "global_device_id": 34590,
+      "device_type": 21,
+      "codeset": "0e95298d0036a54d"
+    }
+  }
+}

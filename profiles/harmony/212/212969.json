@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212969",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Westinghouse",
+  "model": "VR 3209 DF",
+  "kind": "tv_dvr",
+  "platform": "ir",
+  "codeset": "6164e5a0b86b5c2e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Cable1",
+      "steps": [
+        {
+          "command": "InputCable1"
+        }
+      ]
+    },
+    {
+      "name": "Cable2",
+      "steps": [
+        {
+          "command": "Inputcable2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Westinghouse/VR_3209_DF.json"
+    ],
+    "harmony": {
+      "global_device_id": 212969,
+      "device_type": 48,
+      "codeset": "59380b5c33112bcb"
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165191",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "LT-32X70SU",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "839c4a4c7368320a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT-1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "EXT-2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "EXT-3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "EXT-4",
+      "steps": [
+        {
+          "command": "InputExt4"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputExt4"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "AV"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputExt4"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "AV"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputExt4"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "AV"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "AV"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/LT-32X70SU.json"
+    ],
+    "harmony": {
+      "global_device_id": 165191,
+      "device_type": 1,
+      "codeset": "3efbeffb70bde7a1"
+    }
+  }
+}

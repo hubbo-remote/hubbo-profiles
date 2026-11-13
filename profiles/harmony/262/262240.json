@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:262240",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Digitalview",
+  "model": "DRR103",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "6dfa55a401e5548c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "DAB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Digitalview/DRR103.json"
+    ],
+    "harmony": {
+      "global_device_id": 262240,
+      "device_type": 36,
+      "codeset": "b1907404d4d03c77"
+    }
+  }
+}

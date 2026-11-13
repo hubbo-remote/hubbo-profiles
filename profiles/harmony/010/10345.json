@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:10345",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Adcom",
+  "model": "GFA-5200",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "d68e31e3713036c9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Adcom/GFA-5200.json"
+    ],
+    "harmony": {
+      "global_device_id": 10345,
+      "device_type": 5,
+      "codeset": "d1081d5a191b830d"
+    }
+  }
+}

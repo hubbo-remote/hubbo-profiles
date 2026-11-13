@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269510",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Goodmans",
+  "model": "GDSB04BT50",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "baa60b8700c71058",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Goodmans/GDSB04BT50.json"
+    ],
+    "harmony": {
+      "global_device_id": 269510,
+      "device_type": 19,
+      "codeset": "19ee6f240d5e03c7"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500727",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Weiss",
+  "model": "DAC501",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b9c29e263c4171b6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Toslink",
+      "steps": [
+        {
+          "command": "InputToslink"
+        }
+      ]
+    },
+    {
+      "name": "Net",
+      "steps": [
+        {
+          "command": "InputNet"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "XLR",
+      "steps": [
+        {
+          "command": "InputXlr"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Weiss/DAC501.json"
+    ],
+    "harmony": {
+      "global_device_id": 500727,
+      "device_type": 19,
+      "codeset": "7cb1a23bac095939"
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "id": "harmony:264064",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KDL-48W585B",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f84d1ebb439956ea",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2/Component",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1/MHL",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "Home"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "SEN",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "SEN"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KDL-48W585B.json"
+    ],
+    "harmony": {
+      "global_device_id": 264064,
+      "device_type": 1,
+      "codeset": "13683a8372275830"
+    }
+  }
+}

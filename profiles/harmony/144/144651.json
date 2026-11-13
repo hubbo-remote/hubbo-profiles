@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144651",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-42PD50U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f80f916780ab64e6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1500
+      }
+    ],
+    "on_delay_ms": 7500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "6"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-42PD50U.json"
+    ],
+    "harmony": {
+      "global_device_id": 144651,
+      "device_type": 1,
+      "codeset": "34f72f1ef6c7f0e2"
+    }
+  }
+}

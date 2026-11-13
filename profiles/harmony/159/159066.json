@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:159066",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MS-Tech",
+  "model": "MC-600",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "7080ca90b84b4f6e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Files",
+      "steps": [
+        {
+          "command": "InputFiles"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Live-TV",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MS-Tech/MC-600.json"
+    ],
+    "harmony": {
+      "global_device_id": 159066,
+      "device_type": 35,
+      "codeset": "ae2ac01ea2f766a8"
+    }
+  }
+}

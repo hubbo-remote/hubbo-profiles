@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:252488",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eclipse",
+  "model": "AVN726EE",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "5b77f2773a1c8ea0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Band",
+      "steps": [
+        {
+          "command": "InputBand"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eclipse/AVN726EE.json"
+    ],
+    "harmony": {
+      "global_device_id": 252488,
+      "device_type": 22,
+      "codeset": "d6ad34c8b05cac50"
+    }
+  }
+}

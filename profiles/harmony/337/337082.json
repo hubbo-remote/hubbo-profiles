@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:337082",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "eGreat",
+  "model": "A10",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "3c2ef02763865e7c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "File"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/eGreat/A10.json"
+    ],
+    "harmony": {
+      "global_device_id": 337082,
+      "device_type": 35,
+      "codeset": "bd602dc0ff0e0061"
+    }
+  }
+}

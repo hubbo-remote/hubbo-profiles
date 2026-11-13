@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "harmony:76814",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Proxima",
+  "model": "DP-9250",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "42c75012c9e6ac9a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Proxima/DP-9250.json"
+    ],
+    "harmony": {
+      "global_device_id": 76814,
+      "device_type": 7,
+      "codeset": "15945804f4c66687"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165203",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CYP",
+  "model": "CP-255I",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "918022e4ead37bb3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Hdmi",
+      "steps": [
+        {
+          "command": "InputHdmiDVI"
+        }
+      ]
+    },
+    {
+      "name": "Input",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CYP/CP-255I.json"
+    ],
+    "harmony": {
+      "global_device_id": 165203,
+      "device_type": 30,
+      "codeset": "0e91df56b0e3344b"
+    }
+  }
+}

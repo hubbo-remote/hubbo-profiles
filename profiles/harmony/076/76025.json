@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:76025",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Roadstar",
+  "model": "HIF-3030R",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ba4628d868a4689d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Roadstar/HIF-3030R.json"
+    ],
+    "harmony": {
+      "global_device_id": 76025,
+      "device_type": 21,
+      "codeset": "8cd1c2a2e11fd291"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:391858",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "V9800",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "74cabeaa138616f2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/V9800.json"
+    ],
+    "harmony": {
+      "global_device_id": 391858,
+      "device_type": 7,
+      "codeset": "3c05efc51af95f22"
+    }
+  }
+}

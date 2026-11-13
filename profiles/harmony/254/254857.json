@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:254857",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "MAX-ZJ550",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ba7b1f36f174d273",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTunerBand"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/MAX-ZJ550.json"
+    ],
+    "harmony": {
+      "global_device_id": 254857,
+      "device_type": 21,
+      "codeset": "8b47dbaebf3b02f9"
+    }
+  }
+}

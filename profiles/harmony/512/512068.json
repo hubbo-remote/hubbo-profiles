@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:512068",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NuPrime",
+  "model": "Omnia WR-1",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "bb89a8beeb238eb3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "WiFi",
+      "steps": [
+        {
+          "command": "InputWifi"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NuPrime/Omnia_WR-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 512068,
+      "device_type": 33,
+      "codeset": "421f1dd58049dadf"
+    }
+  }
+}

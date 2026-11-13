@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:113203",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Weige",
+  "model": "A-16",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "ce48dc0c4e0715e9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Weige/A-16.json"
+    ],
+    "harmony": {
+      "global_device_id": 113203,
+      "device_type": 5,
+      "codeset": "ad5e76d00b8fb7c5"
+    }
+  }
+}

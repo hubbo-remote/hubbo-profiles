@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:48985",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fisher",
+  "model": "SLIM-1510SL",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "da7c5be5c0186e2a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fisher/SLIM-1510SL.json"
+    ],
+    "harmony": {
+      "global_device_id": 48985,
+      "device_type": 21,
+      "codeset": "64ed4b73ce129dfa"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:264445",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "gmyle",
+  "model": "VRC-1100",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "9919f26a0e207e59",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "MyTV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "MyDVD",
+      "steps": [
+        {
+          "command": "MyDvd"
+        }
+      ]
+    },
+    {
+      "name": "MyMusic",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "MyPictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "MyVideos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "RecordedTv",
+      "steps": [
+        {
+          "command": "RecordedTV"
+        }
+      ]
+    },
+    {
+      "name": "LiveTv",
+      "steps": [
+        {
+          "command": "LiveTv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/gmyle/VRC-1100.json"
+    ],
+    "harmony": {
+      "global_device_id": 264445,
+      "device_type": 35,
+      "codeset": "7808b15428be0ec7"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:5952",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sonance",
+  "model": "Sonamp 260x3",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d71ca327f671a79f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "TV/SAT",
+      "steps": [
+        {
+          "command": "InputTvSat"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sonance/Sonamp_260x3.json"
+    ],
+    "harmony": {
+      "global_device_id": 5952,
+      "device_type": 19,
+      "codeset": "f5a4a2f037e603a6"
+    }
+  }
+}

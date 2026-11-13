@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172971",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTS3145",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "4e9fed7c0fcbe67a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvdUsb"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "MP3 LINE IN",
+      "steps": [
+        {
+          "command": "InputMp3LineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTS3145.json"
+    ],
+    "harmony": {
+      "global_device_id": 172971,
+      "device_type": 22,
+      "codeset": "b5e9840ea8f7d05b"
+    }
+  }
+}

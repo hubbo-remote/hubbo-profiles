@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:16833",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sears",
+  "model": "509-30609",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "f9ccdb9dfb0f24b2",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "TvVcr"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "TvVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sears/509-30609.json"
+    ],
+    "harmony": {
+      "global_device_id": 16833,
+      "device_type": 2,
+      "codeset": "0a27841f961215a2"
+    }
+  }
+}

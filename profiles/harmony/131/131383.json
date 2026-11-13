@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:131383",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "HTS-260",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "3021f61de050e2f9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputXBox"
+        }
+      ]
+    },
+    {
+      "name": "PC/Game",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/HTS-260.json"
+    ],
+    "harmony": {
+      "global_device_id": 131383,
+      "device_type": 22,
+      "codeset": "d2e7bbd74d16d83e"
+    }
+  }
+}

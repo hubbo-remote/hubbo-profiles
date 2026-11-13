@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148731",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnadyne",
+  "model": "M-9900CDS",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "997e97fb05814962",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnadyne/M-9900CDS.json"
+    ],
+    "harmony": {
+      "global_device_id": 148731,
+      "device_type": 22,
+      "codeset": "5189cdc5dc7459b8"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:117048",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "WACS-700/05 (Center/Station)",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "b34bc775b05add03",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner/Aux",
+      "steps": [
+        {
+          "command": "InputTunerAux"
+        }
+      ]
+    },
+    {
+      "name": "Center",
+      "steps": [
+        {
+          "command": "InputCenter"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/WACS-700_05_Center_Station.json"
+    ],
+    "harmony": {
+      "global_device_id": 117048,
+      "device_type": 33,
+      "codeset": "edc3e032d3bea56e"
+    }
+  }
+}

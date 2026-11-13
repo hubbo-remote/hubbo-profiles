@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:136893",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "D-VR650",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "09f9f3590131bdbd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD-R",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/D-VR650.json"
+    ],
+    "harmony": {
+      "global_device_id": 136893,
+      "device_type": 47,
+      "codeset": "19b8550f7979c2c9"
+    }
+  }
+}

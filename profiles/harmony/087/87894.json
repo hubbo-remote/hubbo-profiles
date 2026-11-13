@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:87894",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dialog",
+  "model": "J-102BT",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "c5d380406c34c6bb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD5.1",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    },
+    {
+      "name": "Stereo",
+      "steps": [
+        {
+          "command": "InputStereo"
+        }
+      ]
+    },
+    {
+      "name": "AUX1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dialog/J-102BT.json"
+    ],
+    "harmony": {
+      "global_device_id": 87894,
+      "device_type": 5,
+      "codeset": "c68d9de12be780d0"
+    }
+  }
+}

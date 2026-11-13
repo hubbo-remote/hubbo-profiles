@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:43076",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Xoro",
+  "model": "HSS-512",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "578ed3ca747eadf8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Xoro/HSS-512.json"
+    ],
+    "harmony": {
+      "global_device_id": 43076,
+      "device_type": 19,
+      "codeset": "bd690d5a4e4c0bc2"
+    }
+  }
+}

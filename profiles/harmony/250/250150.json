@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:250150",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "X111",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "726c6cd9799cb535",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/X111.json"
+    ],
+    "harmony": {
+      "global_device_id": 250150,
+      "device_type": 7,
+      "codeset": "a68e8aefd1b1a208"
+    }
+  }
+}

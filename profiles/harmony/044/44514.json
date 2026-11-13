@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:44514",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Adcom",
+  "model": "GTP-602",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "d68e31e3713036c9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Adcom/GTP-602.json"
+    ],
+    "harmony": {
+      "global_device_id": 44514,
+      "device_type": 5,
+      "codeset": "d1081d5a191b830d"
+    }
+  }
+}

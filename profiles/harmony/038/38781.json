@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:38781",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "XV-DV232",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b2d495e035f312c4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dvd/Cd",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/XV-DV232.json"
+    ],
+    "harmony": {
+      "global_device_id": 38781,
+      "device_type": 22,
+      "codeset": "3ab69fe0794dfc2a"
+    }
+  }
+}

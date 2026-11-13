@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205931",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "dav-dz330",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b8326ae550314a40",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2250
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AUDIO",
+      "steps": [
+        {
+          "command": "InputAudio"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/dav-dz330.json"
+    ],
+    "harmony": {
+      "global_device_id": 205931,
+      "device_type": 22,
+      "codeset": "b342bbcde033b0e7"
+    }
+  }
+}

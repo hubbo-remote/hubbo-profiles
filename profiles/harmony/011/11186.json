@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "harmony:11186",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Proceed",
+  "model": "AVP-S",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "80c0fa2ea43cac84",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Vcr1",
+      "steps": [
+        {
+          "command": "InputVcr1"
+        }
+      ]
+    },
+    {
+      "name": "Disc1",
+      "steps": [
+        {
+          "command": "InputDisc1"
+        }
+      ]
+    },
+    {
+      "name": "Vcr2/Disc2",
+      "steps": [
+        {
+          "command": "InputVCR2Disc2"
+        }
+      ]
+    },
+    {
+      "name": "TV/Aux",
+      "steps": [
+        {
+          "command": "InputTVAUX"
+        }
+      ]
+    },
+    {
+      "name": "Satellite",
+      "steps": [
+        {
+          "command": "InputSatellite"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Proceed/AVP-S.json"
+    ],
+    "harmony": {
+      "global_device_id": 11186,
+      "device_type": 19,
+      "codeset": "a78887f31a4f3423"
+    }
+  }
+}

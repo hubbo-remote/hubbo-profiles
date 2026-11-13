@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137382",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Beko",
+  "model": "32WLA520 HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ef2ac6dc32d2403b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Beko/32WLA520_HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 137382,
+      "device_type": 1,
+      "codeset": "13f5d7a2ea4ba9f8"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263953",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LAP240",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "22d5bcb195beb7da",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "LG TV",
+      "steps": [
+        {
+          "command": "InputLgTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LAP240.json"
+    ],
+    "harmony": {
+      "global_device_id": 263953,
+      "device_type": 19,
+      "codeset": "21572d1c0f93e9c4"
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "harmony:37892",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "27MS5402",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputStart"
+        },
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputStart"
+        },
+        {
+          "command": "InputFinish"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "CVI",
+      "steps": [
+        {
+          "command": "InputStart"
+        },
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputStart"
+        },
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputStart"
+        },
+        {
+          "command": "ChannelUp"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "InputStart"
+        },
+        {
+          "command": "Screen169"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/27MS5402.json"
+    ],
+    "harmony": {
+      "global_device_id": 37892,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

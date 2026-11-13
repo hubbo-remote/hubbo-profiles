@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:122166",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CityCom",
+  "model": "CCS-172",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "d0530603cad547c9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "Sat",
+      "steps": [
+        {
+          "command": "InputAB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CityCom/CCS-172.json"
+    ],
+    "harmony": {
+      "global_device_id": 122166,
+      "device_type": 12,
+      "codeset": "36ca9b85071999c0"
+    }
+  }
+}

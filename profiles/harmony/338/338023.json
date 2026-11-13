@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "harmony:338023",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-42BT300U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5ade14e465db8460",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SLOT Input",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputPrev"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component/RGB",
+      "steps": [
+        {
+          "command": "InputComponentRgb"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputComponentRgb"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputComponentRgb"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-42BT300U.json"
+    ],
+    "harmony": {
+      "global_device_id": 338023,
+      "device_type": 13,
+      "codeset": "5a26f8b565ced1c6"
+    }
+  }
+}

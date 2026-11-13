@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:66018",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TC-51M75A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9e2e880a2eca28b5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/AV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TC-51M75A.json"
+    ],
+    "harmony": {
+      "global_device_id": 66018,
+      "device_type": 1,
+      "codeset": "4f0168bd70caeaeb"
+    }
+  }
+}

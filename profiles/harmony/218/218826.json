@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:218826",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hyundai",
+  "model": "MBOX TP01",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "97b88b815c5254ed",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "LAN"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hyundai/MBOX_TP01.json"
+    ],
+    "harmony": {
+      "global_device_id": 218826,
+      "device_type": 35,
+      "codeset": "5b64371a061c6128"
+    }
+  }
+}

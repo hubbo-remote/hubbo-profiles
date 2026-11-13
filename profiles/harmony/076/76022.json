@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:76022",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Digital Projection",
+  "model": "iVision-20HD",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "60258f76507ec18c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Digital_Projection/iVision-20HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 76022,
+      "device_type": 7,
+      "codeset": "89f98a4c904c048e"
+    }
+  }
+}

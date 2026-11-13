@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:501430",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "W1800i",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "567bee861e970353",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/W1800i.json"
+    ],
+    "harmony": {
+      "global_device_id": 501430,
+      "device_type": 7,
+      "codeset": "8c39f063e984f832"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:222041",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Shuttle",
+  "model": "XS35GTV2",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "5420158e0085f895",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Shuttle/XS35GTV2.json"
+    ],
+    "harmony": {
+      "global_device_id": 222041,
+      "device_type": 35,
+      "codeset": "6632aa3c92292e9c"
+    }
+  }
+}

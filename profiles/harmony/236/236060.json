@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:236060",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "CSS2115/05",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "402a9134935db474",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "MusiciLink",
+      "steps": [
+        {
+          "command": "InputMusiciLink"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/CSS2115_05.json"
+    ],
+    "harmony": {
+      "global_device_id": 236060,
+      "device_type": 19,
+      "codeset": "8b93bb84ac1337cb"
+    }
+  }
+}

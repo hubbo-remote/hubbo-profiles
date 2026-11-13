@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259388",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nakamichi",
+  "model": "NK11",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "29dd9852b4cebb64",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nakamichi/NK11.json"
+    ],
+    "harmony": {
+      "global_device_id": 259388,
+      "device_type": 19,
+      "codeset": "ad8a7a4d50980c37"
+    }
+  }
+}

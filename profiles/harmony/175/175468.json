@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:175468",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MCI-300/12",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "39bd0cd3ae039f24",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "MP3-CD/CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "UPNP",
+      "steps": [
+        {
+          "command": "InputUPNP"
+        }
+      ]
+    },
+    {
+      "name": "INTERNET RADIO",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "FM TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "HD",
+      "steps": [
+        {
+          "command": "InputHD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MCI-300_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 175468,
+      "device_type": 21,
+      "codeset": "5ae3b2c10e194c21"
+    }
+  }
+}

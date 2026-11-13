@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:136026",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "XL-45H",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ec2f2a30b6f41294",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Video/AUX",
+      "steps": [
+        {
+          "command": "InputVideoAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/XL-45H.json"
+    ],
+    "harmony": {
+      "global_device_id": 136026,
+      "device_type": 21,
+      "codeset": "c0428f6fca99a5be"
+    }
+  }
+}

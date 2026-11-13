@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:8094",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Play@TV",
+  "model": "iCube NMP-4000",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "c9039c77129b2609",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Play_TV/iCube_NMP-4000.json"
+    ],
+    "harmony": {
+      "global_device_id": 8094,
+      "device_type": 33,
+      "codeset": "2aea42fe69d0a04f"
+    }
+  }
+}

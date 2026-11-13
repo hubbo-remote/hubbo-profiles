@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:74158",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "D-Boss",
+  "model": "PDP-4219",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8c84c4941b2d3c9d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Kiss/Teleclub",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "SonyDvD",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/D-Boss/PDP-4219.json"
+    ],
+    "harmony": {
+      "global_device_id": 74158,
+      "device_type": 1,
+      "codeset": "b72a2d16f6058af9"
+    }
+  }
+}

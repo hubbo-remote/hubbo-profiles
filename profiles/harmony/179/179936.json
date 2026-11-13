@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179936",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lifetec",
+  "model": "LT-7061VTS",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "25768052144828da",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lifetec/LT-7061VTS.json"
+    ],
+    "harmony": {
+      "global_device_id": 179936,
+      "device_type": 1,
+      "codeset": "f800fe57797aea84"
+    }
+  }
+}

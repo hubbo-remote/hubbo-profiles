@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:207313",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "4Geek",
+  "model": "MKV JUICE",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "a9b15571beeb31bd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Juke Box",
+      "steps": [
+        {
+          "command": "InputJukebox"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/4Geek/MKV_JUICE.json"
+    ],
+    "harmony": {
+      "global_device_id": 207313,
+      "device_type": 35,
+      "codeset": "74bb6a11292f2401"
+    }
+  }
+}

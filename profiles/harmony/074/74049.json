@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:74049",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "3M",
+  "model": "STV Digital 6",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d235aa2364d5a345",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/3M/STV_Digital_6.json"
+    ],
+    "harmony": {
+      "global_device_id": 74049,
+      "device_type": 19,
+      "codeset": "c714261b97245eca"
+    }
+  }
+}

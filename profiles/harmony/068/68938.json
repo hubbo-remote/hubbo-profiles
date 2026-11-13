@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68938",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MX6000i/22S",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "9033234557229432",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "PC Link",
+      "steps": [
+        {
+          "command": "InputPcLink"
+        }
+      ]
+    },
+    {
+      "name": "Internet",
+      "steps": [
+        {
+          "command": "InputInternet"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MX6000i_22S.json"
+    ],
+    "harmony": {
+      "global_device_id": 68938,
+      "device_type": 22,
+      "codeset": "bebed7ac1c8cfef7"
+    }
+  }
+}

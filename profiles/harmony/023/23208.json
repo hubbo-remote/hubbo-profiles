@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:23208",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Runco",
+  "model": "VX-1000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f1a6f5f4964ede67",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "High Def",
+      "steps": [
+        {
+          "command": "InputHighDefinition"
+        }
+      ]
+    },
+    {
+      "name": "RGB Pass Thru",
+      "steps": [
+        {
+          "command": "RgbHdPassthrough"
+        }
+      ]
+    },
+    {
+      "name": "PassThru",
+      "steps": [
+        {
+          "command": "InputPassThru"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Runco/VX-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 23208,
+      "device_type": 7,
+      "codeset": "50b21e7de97a7da1"
+    }
+  }
+}

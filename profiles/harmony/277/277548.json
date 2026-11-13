@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:277548",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Belgacom",
+  "model": "IPV5001",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "5ef934dff13883f2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Belgacom/IPV5001.json"
+    ],
+    "harmony": {
+      "global_device_id": 277548,
+      "device_type": 18,
+      "codeset": "099226481b6f5ed1"
+    }
+  }
+}

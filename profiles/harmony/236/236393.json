@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:236393",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "DCR7111",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "97d910fddc8fad34",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/DCR7111.json"
+    ],
+    "harmony": {
+      "global_device_id": 236393,
+      "device_type": 12,
+      "codeset": "fd7be295b8bfe13c"
+    }
+  }
+}

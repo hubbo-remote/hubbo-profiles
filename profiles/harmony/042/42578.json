@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "harmony:42578",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH50PX50U/P",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cb385827a58d5677",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "StartInput"
+        },
+        {
+          "command": "6"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH50PX50U_P.json"
+    ],
+    "harmony": {
+      "global_device_id": 42578,
+      "device_type": 1,
+      "codeset": "b9c65377979efc87"
+    }
+  }
+}

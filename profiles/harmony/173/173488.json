@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173488",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Leema Acoustics Electronics",
+  "model": "PULSE",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2d7b34e1d1f6a2b2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Av",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Leema_Acoustics_Electronics/PULSE.json"
+    ],
+    "harmony": {
+      "global_device_id": 173488,
+      "device_type": 19,
+      "codeset": "1582e0cb90222e98"
+    }
+  }
+}

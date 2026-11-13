@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:132775",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTS-5100",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "39d96f22c53fdbf1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTuner"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTS-5100.json"
+    ],
+    "harmony": {
+      "global_device_id": 132775,
+      "device_type": 5,
+      "codeset": "411dc37cc4f4285d"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:241713",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sapphire",
+  "model": "Edge HD2",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "3ddcaef9bb38b972",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sapphire/Edge_HD2.json"
+    ],
+    "harmony": {
+      "global_device_id": 241713,
+      "device_type": 35,
+      "codeset": "7ed709c9a8a0bdb2"
+    }
+  }
+}

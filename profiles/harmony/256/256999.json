@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:256999",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "K750",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "19504e997ccf82bf",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/DVI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/K750.json"
+    ],
+    "harmony": {
+      "global_device_id": 256999,
+      "device_type": 7,
+      "codeset": "3da0ed8dccfef8db"
+    }
+  }
+}

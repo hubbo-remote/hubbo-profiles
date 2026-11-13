@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:402396",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Watson",
+  "model": "CO 4223MUB",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9b1c4c4e5431c95b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Watson/CO_4223MUB.json"
+    ],
+    "harmony": {
+      "global_device_id": 402396,
+      "device_type": 5,
+      "codeset": "252ca3d81db12922"
+    }
+  }
+}

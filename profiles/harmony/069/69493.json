@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:69493",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "CA-MXS6BK",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "548be4258875b4e8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/CA-MXS6BK.json"
+    ],
+    "harmony": {
+      "global_device_id": 69493,
+      "device_type": 21,
+      "codeset": "7ceb401034215345"
+    }
+  }
+}

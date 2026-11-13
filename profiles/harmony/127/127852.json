@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:127852",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "GR-10i",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0b7555bed11f7c69",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Ipod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/GR-10i.json"
+    ],
+    "harmony": {
+      "global_device_id": 127852,
+      "device_type": 5,
+      "codeset": "97b39419d7f6bd4d"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:268831",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BC Acoustique",
+  "model": "EX888-S",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3cd53319ccbe792f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line 1",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Line 2",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Line 3",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Line 4",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "OPTION",
+      "steps": [
+        {
+          "command": "Options"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BC_Acoustique/EX888-S.json"
+    ],
+    "harmony": {
+      "global_device_id": 268831,
+      "device_type": 19,
+      "codeset": "19cf618640c8b99e"
+    }
+  }
+}

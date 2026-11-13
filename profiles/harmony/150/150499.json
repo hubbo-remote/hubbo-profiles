@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150499",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Telefunken",
+  "model": "MF-216ET",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "efccc0a7cfbe4c27",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "PipInput"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "PipInput"
+        }
+      ]
+    },
+    {
+      "name": "Channel 0",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Channel 7",
+      "steps": [
+        {
+          "command": "7"
+        }
+      ]
+    },
+    {
+      "name": "Channel 8",
+      "steps": [
+        {
+          "command": "8"
+        }
+      ]
+    },
+    {
+      "name": "Channel 9",
+      "steps": [
+        {
+          "command": "9"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Telefunken/MF-216ET.json"
+    ],
+    "harmony": {
+      "global_device_id": 150499,
+      "device_type": 1,
+      "codeset": "c08fdc61e8eaab82"
+    }
+  }
+}

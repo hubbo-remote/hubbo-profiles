@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:231410",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tangent",
+  "model": "Exeo Amp",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "dcad35cf0f63b912",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CDP",
+      "steps": [
+        {
+          "command": "InputCdp"
+        }
+      ]
+    },
+    {
+      "name": "NET",
+      "steps": [
+        {
+          "command": "InputNet"
+        }
+      ]
+    },
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "AMP",
+      "steps": [
+        {
+          "command": "InputAmp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tangent/Exeo_Amp.json"
+    ],
+    "harmony": {
+      "global_device_id": 231410,
+      "device_type": 19,
+      "codeset": "686b0df9576c7ac5"
+    }
+  }
+}

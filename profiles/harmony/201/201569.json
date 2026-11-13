@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201569",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ViewSonic",
+  "model": "VS11856",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "ed8b87c643353def",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "ComponentVideo1",
+      "steps": [
+        {
+          "command": "InputComponentVideo1"
+        }
+      ]
+    },
+    {
+      "name": "ComponentVideo2",
+      "steps": [
+        {
+          "command": "InputComponentVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputCv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ViewSonic/VS11856.json"
+    ],
+    "harmony": {
+      "global_device_id": 201569,
+      "device_type": 7,
+      "codeset": "a843eccb22433950"
+    }
+  }
+}

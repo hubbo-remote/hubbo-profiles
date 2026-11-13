@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:145257",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "PLC-XP57L",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a5998a8403797c59",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerOff",
+        "hold_ms": 2000
+      },
+      {
+        "delay_ms": 1500
+      },
+      {
+        "command": "PowerOff",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer1",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/PLC-XP57L.json"
+    ],
+    "harmony": {
+      "global_device_id": 145257,
+      "device_type": 7,
+      "codeset": "7750a7ee0ba0c9fd"
+    }
+  }
+}

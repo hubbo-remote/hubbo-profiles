@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "harmony:77392",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "SE3191H",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dfa4bef198391f7b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "1-Cable",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "2-Decoder",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "3-antenna",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "4-Vcr1",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "5-Vcr2",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/SE3191H.json"
+    ],
+    "harmony": {
+      "global_device_id": 77392,
+      "device_type": 1,
+      "codeset": "72c4dacfbb3035c8"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:262816",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SMART",
+  "model": "Maximus Plus",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "cad1b98c2ee5067e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SMART/Maximus_Plus.json"
+    ],
+    "harmony": {
+      "global_device_id": 262816,
+      "device_type": 16,
+      "codeset": "88f9610f2e2dd33e"
+    }
+  }
+}

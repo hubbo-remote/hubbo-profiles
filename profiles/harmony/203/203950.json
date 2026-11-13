@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203950",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Edifier",
+  "model": "S550",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "10938e00872aed8f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "2CH",
+      "steps": [
+        {
+          "command": "Input2Ch"
+        }
+      ]
+    },
+    {
+      "name": "5.1CH",
+      "steps": [
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Edifier/S550.json"
+    ],
+    "harmony": {
+      "global_device_id": 203950,
+      "device_type": 19,
+      "codeset": "9c080ba01c2d9e44"
+    }
+  }
+}

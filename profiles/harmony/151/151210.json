@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "id": "harmony:151210",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Memorex",
+  "model": "Mi-1003",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f82285c244ddcb27",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1200
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Memorex/Mi-1003.json"
+    ],
+    "harmony": {
+      "global_device_id": 151210,
+      "device_type": 22,
+      "codeset": "7089b8b604034edb"
+    }
+  }
+}

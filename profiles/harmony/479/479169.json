@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:479169",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Octagon",
+  "model": "SF128",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "4d4f76ef836266e4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Octagon/SF128.json"
+    ],
+    "harmony": {
+      "global_device_id": 479169,
+      "device_type": 18,
+      "codeset": "60acc8318f6338bd"
+    }
+  }
+}

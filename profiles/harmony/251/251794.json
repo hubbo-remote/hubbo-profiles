@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251794",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-70LE857",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f40837bb5a6359ac",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input5"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input6"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input7"
+        }
+      ]
+    },
+    {
+      "name": "PC IN",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input8"
+        }
+      ]
+    },
+    {
+      "name": "Home Network(DLNA)",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input8"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Input8"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "command": "Input"
+        }
+      ]
+    },
+    {
+      "name": "Smart Central",
+      "steps": [
+        {
+          "command": "Apps"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "NumberEnter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-70LE857.json"
+    ],
+    "harmony": {
+      "global_device_id": 251794,
+      "device_type": 1,
+      "codeset": "f6f6df550c312c34"
+    }
+  }
+}

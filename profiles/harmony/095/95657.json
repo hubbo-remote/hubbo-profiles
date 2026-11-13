@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95657",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GoldStar",
+  "model": "3850R-Z243K",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "accd71c54fee8fef",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "MenuToggle"
+        }
+      ]
+    },
+    {
+      "name": "Line 1",
+      "steps": [
+        {
+          "command": "MenuToggle"
+        }
+      ]
+    },
+    {
+      "name": "Line 2",
+      "steps": [
+        {
+          "command": "MenuToggle"
+        }
+      ]
+    },
+    {
+      "name": "Channel 4",
+      "steps": [
+        {
+          "command": "MenuToggle"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GoldStar/3850R-Z243K.json"
+    ],
+    "harmony": {
+      "global_device_id": 95657,
+      "device_type": 25,
+      "codeset": "8cc9d269119b8903"
+    }
+  }
+}

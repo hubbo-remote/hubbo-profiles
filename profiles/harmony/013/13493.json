@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:13493",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PV-DM2093",
+  "kind": "tv_dvd_vcr",
+  "platform": "ir",
+  "codeset": "8995987caefa9118",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TvVcr",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "TvDvd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PV-DM2093.json"
+    ],
+    "harmony": {
+      "global_device_id": 13493,
+      "device_type": 38,
+      "codeset": "acfceb4ed44e61a0"
+    }
+  }
+}

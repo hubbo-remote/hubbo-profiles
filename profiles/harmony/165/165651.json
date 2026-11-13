@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165651",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "DHR-7105",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "2947d03c0007af2d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/DHR-7105.json"
+    ],
+    "harmony": {
+      "global_device_id": 165651,
+      "device_type": 34,
+      "codeset": "11838c9e5b48ec6a"
+    }
+  }
+}

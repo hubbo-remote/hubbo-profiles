@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:96199",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "CT-2884AS",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b2b441ae3d530b8c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/CT-2884AS.json"
+    ],
+    "harmony": {
+      "global_device_id": 96199,
+      "device_type": 1,
+      "codeset": "01c8d15763045db3"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:242221",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DCM7005/12",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "19877ea3aff9aca7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "MP3Link/AUX",
+      "steps": [
+        {
+          "command": "InputMp3LinkAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DCM7005_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 242221,
+      "device_type": 21,
+      "codeset": "77cafd2bca08aeec"
+    }
+  }
+}

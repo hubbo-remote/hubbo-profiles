@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:500438",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DecoHome",
+  "model": "DGSB200WOD",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "73f6fa87a4f3058e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "ARC",
+      "steps": [
+        {
+          "command": "InputArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DecoHome/DGSB200WOD.json"
+    ],
+    "harmony": {
+      "global_device_id": 500438,
+      "device_type": 19,
+      "codeset": "cc40b0f64abd3d24"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:91023",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Voxson",
+  "model": "HT-10",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "8b866951e67fb0da",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Voxson/HT-10.json"
+    ],
+    "harmony": {
+      "global_device_id": 91023,
+      "device_type": 19,
+      "codeset": "2bc0e8c251ea79e6"
+    }
+  }
+}

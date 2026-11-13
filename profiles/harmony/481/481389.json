@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:481389",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ROCKVILLE",
+  "model": "HTS56",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "132d49d84cdd23af",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ROCKVILLE/HTS56.json"
+    ],
+    "harmony": {
+      "global_device_id": 481389,
+      "device_type": 5,
+      "codeset": "241c47858e43c72b"
+    }
+  }
+}

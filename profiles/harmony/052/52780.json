@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:52780",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "DVD-HR725",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "94d3daa1bf846765",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/DVD-HR725.json"
+    ],
+    "harmony": {
+      "global_device_id": 52780,
+      "device_type": 34,
+      "codeset": "2a57345762ee10ac"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:94447",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NuVo",
+  "model": "NV-I8DM",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "05c2c55c5a86110e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "Source1"
+        }
+      ]
+    },
+    {
+      "name": "Ipod",
+      "steps": [
+        {
+          "command": "Source2"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "Source3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NuVo/NV-I8DM.json"
+    ],
+    "harmony": {
+      "global_device_id": 94447,
+      "device_type": 19,
+      "codeset": "f5f21214878d4980"
+    }
+  }
+}

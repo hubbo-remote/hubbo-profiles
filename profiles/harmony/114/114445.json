@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:114445",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lavic",
+  "model": "LVPDP-4219",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4f91ce395d027745",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video S",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lavic/LVPDP-4219.json"
+    ],
+    "harmony": {
+      "global_device_id": 114445,
+      "device_type": 1,
+      "codeset": "9a9a6ae3d0521775"
+    }
+  }
+}

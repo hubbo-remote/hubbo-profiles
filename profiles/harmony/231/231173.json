@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:231173",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CALYPSO",
+  "model": "CLP-32LE110",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "35fd424663711db0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CALYPSO/CLP-32LE110.json"
+    ],
+    "harmony": {
+      "global_device_id": 231173,
+      "device_type": 1,
+      "codeset": "25b338919805bec0"
+    }
+  }
+}

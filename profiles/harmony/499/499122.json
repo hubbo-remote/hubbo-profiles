@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:499122",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grace",
+  "model": "GDI-WHA8001",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "69bd7963f0288f4f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grace/GDI-WHA8001.json"
+    ],
+    "harmony": {
+      "global_device_id": 499122,
+      "device_type": 33,
+      "codeset": "d3dd10d1ac540e06"
+    }
+  }
+}

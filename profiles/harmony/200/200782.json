@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "harmony:200782",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-34689",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ca6573b05c4a9c38",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTv",
+        "hold_ms": 2000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-34689.json"
+    ],
+    "harmony": {
+      "global_device_id": 200782,
+      "device_type": 1,
+      "codeset": "7333d3ac18fe9455"
+    }
+  }
+}

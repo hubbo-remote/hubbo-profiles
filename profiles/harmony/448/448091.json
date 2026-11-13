@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:448091",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LASER",
+  "model": "SPK-SB140SUB",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "223fddb3d9a09662",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LASER/SPK-SB140SUB.json"
+    ],
+    "harmony": {
+      "global_device_id": 448091,
+      "device_type": 5,
+      "codeset": "bc072a66ed866835"
+    }
+  }
+}

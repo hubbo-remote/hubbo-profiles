@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "id": "harmony:481209",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "49PUT6801/79",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "44e1e96e0c58fe02",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionUp",
+          "hold_ms": 2000
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionUp",
+          "hold_ms": 2000
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionUp",
+          "hold_ms": 2000
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Recordings",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionUp",
+          "hold_ms": 2000
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionDown",
+          "hold_ms": 2000
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Android TV",
+      "steps": [
+        {
+          "command": "Home"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/49PUT6801_79.json"
+    ],
+    "harmony": {
+      "global_device_id": 481209,
+      "device_type": 1,
+      "codeset": "3ab518dc6d9ac625"
+    }
+  }
+}

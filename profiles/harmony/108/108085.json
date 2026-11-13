@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:108085",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "DVR-HE600",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "9eb5388b89ef19e1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/DVR-HE600.json"
+    ],
+    "harmony": {
+      "global_device_id": 108085,
+      "device_type": 34,
+      "codeset": "0504bbac87cc1f5d"
+    }
+  }
+}

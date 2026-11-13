@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:262519",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Belgacom",
+  "model": "b-box 3",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "a84df0f0da4fffc4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Belgacom/b-box_3.json"
+    ],
+    "harmony": {
+      "global_device_id": 262519,
+      "device_type": 18,
+      "codeset": "7b56931a239497d9"
+    }
+  }
+}

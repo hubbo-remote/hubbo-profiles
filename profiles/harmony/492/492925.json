@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:492925",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tangent",
+  "model": "EVO BT-30",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a883a2558ca78034",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tangent/EVO_BT-30.json"
+    ],
+    "harmony": {
+      "global_device_id": 492925,
+      "device_type": 19,
+      "codeset": "ff2edb9f3d4aa53f"
+    }
+  }
+}

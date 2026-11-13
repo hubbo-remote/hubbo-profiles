@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202962",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RT-29FB30VX",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ec24146d9398aa04",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RT-29FB30VX.json"
+    ],
+    "harmony": {
+      "global_device_id": 202962,
+      "device_type": 1,
+      "codeset": "a6e01c4497936575"
+    }
+  }
+}

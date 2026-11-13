@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:224738",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "T+A",
+  "model": "Power Plant MKII",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "8584cc6c30f4cb26",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "A1/PH",
+      "steps": [
+        {
+          "command": "InputA1PH"
+        }
+      ]
+    },
+    {
+      "name": "A2/TV",
+      "steps": [
+        {
+          "command": "InputA2TV"
+        }
+      ]
+    },
+    {
+      "name": "A3/Tuner",
+      "steps": [
+        {
+          "command": "InputA3Tuner"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "SCL",
+      "steps": [
+        {
+          "command": "InputScl"
+        }
+      ]
+    },
+    {
+      "name": "Record",
+      "steps": [
+        {
+          "command": "InputRecord"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/T_A/Power_Plant_MKII.json"
+    ],
+    "harmony": {
+      "global_device_id": 224738,
+      "device_type": 19,
+      "codeset": "0b5ba08f7d2253f5"
+    }
+  }
+}

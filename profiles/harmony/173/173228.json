@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173228",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "22LG30R",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c41a1e2f8c53c10b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/22LG30R.json"
+    ],
+    "harmony": {
+      "global_device_id": 173228,
+      "device_type": 1,
+      "codeset": "42bea42d58153e87"
+    }
+  }
+}

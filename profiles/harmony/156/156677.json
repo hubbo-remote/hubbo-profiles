@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:156677",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NFusion",
+  "model": "Solaris",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "993d832d83c55abb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NFusion/Solaris.json"
+    ],
+    "harmony": {
+      "global_device_id": 156677,
+      "device_type": 18,
+      "codeset": "7715a11c2c9c68a8"
+    }
+  }
+}

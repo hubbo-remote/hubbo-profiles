@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:136343",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "CDS-6580",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "fbac708e5033d7a2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/CDS-6580.json"
+    ],
+    "harmony": {
+      "global_device_id": 136343,
+      "device_type": 22,
+      "codeset": "7cfcfbded4b6f9e8"
+    }
+  }
+}

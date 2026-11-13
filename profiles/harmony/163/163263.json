@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163263",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HES4900/12",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "8b830bf19429da4a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "MP3link",
+      "steps": [
+        {
+          "command": "InputMp3Link"
+        }
+      ]
+    },
+    {
+      "name": "AudioSource",
+      "steps": [
+        {
+          "command": "InputAudioSource"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HES4900_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 163263,
+      "device_type": 22,
+      "codeset": "a3dee830ef1b1445"
+    }
+  }
+}

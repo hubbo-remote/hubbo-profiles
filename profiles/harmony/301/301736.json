@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:301736",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "panaccess",
+  "model": "P2000",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "0a11d3a6484f49c7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/panaccess/P2000.json"
+    ],
+    "harmony": {
+      "global_device_id": 301736,
+      "device_type": 18,
+      "codeset": "7324fdff04081842"
+    }
+  }
+}

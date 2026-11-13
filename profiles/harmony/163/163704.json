@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163704",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Galaxy",
+  "model": "3500 Tvisto Pro",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "b6af782b4cbc2f43",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Internet",
+      "steps": [
+        {
+          "command": "InputInternet"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Galaxy/3500_Tvisto_Pro.json"
+    ],
+    "harmony": {
+      "global_device_id": 163704,
+      "device_type": 35,
+      "codeset": "1d6db29b2f7382f3"
+    }
+  }
+}

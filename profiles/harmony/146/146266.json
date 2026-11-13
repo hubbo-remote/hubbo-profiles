@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:146266",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "Streamium WAC-S57",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "b34bc775b05add03",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Center",
+      "steps": [
+        {
+          "command": "InputCenter"
+        }
+      ]
+    },
+    {
+      "name": "Tuner/AUX",
+      "steps": [
+        {
+          "command": "InputTunerAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/Streamium_WAC-S57.json"
+    ],
+    "harmony": {
+      "global_device_id": 146266,
+      "device_type": 33,
+      "codeset": "edc3e032d3bea56e"
+    }
+  }
+}

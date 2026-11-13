@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:501220",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Ad Notam",
+  "model": "DFU-0550",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6efab7ded8b18fb3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Hdmi1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Usb",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Ad_Notam/DFU-0550.json"
+    ],
+    "harmony": {
+      "global_device_id": 501220,
+      "device_type": 13,
+      "codeset": "a875267d8ff41104"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:200734",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Logitech",
+  "model": "z906",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "271f5696e4417a7c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "6CH",
+      "steps": [
+        {
+          "command": "6CHDirect"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "Optical1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Logitech/z906.json"
+    ],
+    "harmony": {
+      "global_device_id": 200734,
+      "device_type": 19,
+      "codeset": "19629229136b78e1"
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "id": "harmony:337995",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hama",
+  "model": "DIT1000MBT",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "88296f4618cffaad",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Internet Radio",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        }
+      ]
+    },
+    {
+      "name": "Spotify",
+      "steps": [
+        {
+          "command": "InputInternetRadio"
+        },
+        {
+          "command": "Mode"
+        }
+      ]
+    },
+    {
+      "name": "Music Player",
+      "steps": [
+        {
+          "command": "Media"
+        }
+      ]
+    },
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Aux In",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hama/DIT1000MBT.json"
+    ],
+    "harmony": {
+      "global_device_id": 337995,
+      "device_type": 33,
+      "codeset": "95b3cdbc50859030"
+    }
+  }
+}

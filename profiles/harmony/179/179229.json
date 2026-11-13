@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179229",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Funai",
+  "model": "W4C-D4180DB",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "7cb9d164498591f4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Funai/W4C-D4180DB.json"
+    ],
+    "harmony": {
+      "global_device_id": 179229,
+      "device_type": 47,
+      "codeset": "59873d5490dd07a2"
+    }
+  }
+}

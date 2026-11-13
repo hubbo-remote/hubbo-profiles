@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:79948",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eiki",
+  "model": "LC-SD10",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "8880e44909e6e47c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputPc1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eiki/LC-SD10.json"
+    ],
+    "harmony": {
+      "global_device_id": 79948,
+      "device_type": 7,
+      "codeset": "dcd39b83fef18c1a"
+    }
+  }
+}

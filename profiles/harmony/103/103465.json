@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:103465",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TC-1485T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2a8924c0760bc4ab",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TC-1485T.json"
+    ],
+    "harmony": {
+      "global_device_id": 103465,
+      "device_type": 1,
+      "codeset": "eb9239e5da482130"
+    }
+  }
+}

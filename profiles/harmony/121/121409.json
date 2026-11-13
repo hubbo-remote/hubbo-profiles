@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:121409",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "G-Sound",
+  "model": "SS-6202",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4f3aebf3502ad582",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "2.1",
+      "steps": [
+        {
+          "command": "SurroundOff"
+        }
+      ]
+    },
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "SurroundOn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/G-Sound/SS-6202.json"
+    ],
+    "harmony": {
+      "global_device_id": 121409,
+      "device_type": 19,
+      "codeset": "bbc515dcbd4b349a"
+    }
+  }
+}

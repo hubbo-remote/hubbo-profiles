@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:276300",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Protek",
+  "model": "9900LX",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "ac19d09f7c5a523c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Protek/9900LX.json"
+    ],
+    "harmony": {
+      "global_device_id": 276300,
+      "device_type": 18,
+      "codeset": "809a58560db05698"
+    }
+  }
+}

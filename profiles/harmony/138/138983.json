@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138983",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "42P5XD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ba5efadd85e956e7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 1500
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1500
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/42P5XD.json"
+    ],
+    "harmony": {
+      "global_device_id": 138983,
+      "device_type": 1,
+      "codeset": "388ffe1e9bd2a2e4"
+    }
+  }
+}

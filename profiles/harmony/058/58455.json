@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58455",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Scott",
+  "model": "RS-500",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "108fbf490c1626d1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Scott/RS-500.json"
+    ],
+    "harmony": {
+      "global_device_id": 58455,
+      "device_type": 5,
+      "codeset": "783d7cc08aa918a7"
+    }
+  }
+}

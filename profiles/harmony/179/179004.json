@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179004",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "F35100ST",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6b6f8fe09ee62a00",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "9"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "9"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "9"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/F35100ST.json"
+    ],
+    "harmony": {
+      "global_device_id": 179004,
+      "device_type": 1,
+      "codeset": "3440c3b815d51495"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:205364",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dvico",
+  "model": "TVIX-HD N1",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d37109a3f436d3d3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dvico/TVIX-HD_N1.json"
+    ],
+    "harmony": {
+      "global_device_id": 205364,
+      "device_type": 35,
+      "codeset": "07dda0fb65e672d9"
+    }
+  }
+}

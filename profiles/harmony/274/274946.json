@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:274946",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "MX763",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "460915eb713ddddd",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/MX763.json"
+    ],
+    "harmony": {
+      "global_device_id": 274946,
+      "device_type": 7,
+      "codeset": "655447f3bf6fa7ec"
+    }
+  }
+}

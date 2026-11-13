@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:62523",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "42pma300",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e860b44f5c1349e8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "Video1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "Video2"
+        }
+      ]
+    },
+    {
+      "name": "RGB1",
+      "steps": [
+        {
+          "command": "RGB1"
+        }
+      ]
+    },
+    {
+      "name": "RGB2",
+      "steps": [
+        {
+          "command": "RGB2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/42pma300.json"
+    ],
+    "harmony": {
+      "global_device_id": 62523,
+      "device_type": 13,
+      "codeset": "89bc803338ba5961"
+    }
+  }
+}

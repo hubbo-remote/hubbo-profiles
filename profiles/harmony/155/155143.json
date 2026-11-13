@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155143",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "CGV",
+  "model": "HDMI HD4E-1S",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "5902924929a884b6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "1"
+      },
+      {
+        "command": "2"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "In1",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "In2",
+      "steps": [
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "In3",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "In4",
+      "steps": [
+        {
+          "command": "4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/CGV/HDMI_HD4E-1S.json"
+    ],
+    "harmony": {
+      "global_device_id": 155143,
+      "device_type": 30,
+      "codeset": "8a4d45db1c9dc0b4"
+    }
+  }
+}

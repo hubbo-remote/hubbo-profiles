@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:275906",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "VONHAUS",
+  "model": "nano 3.0",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "5e35c0239d2492d3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "File"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/VONHAUS/nano_3.0.json"
+    ],
+    "harmony": {
+      "global_device_id": 275906,
+      "device_type": 35,
+      "codeset": "e18d3bb3e1ae0223"
+    }
+  }
+}

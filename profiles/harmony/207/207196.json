@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:207196",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ViewSonic",
+  "model": "VMP75",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "6dd37f59fb57118e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Picture",
+      "steps": [
+        {
+          "command": "InputPicture"
+        }
+      ]
+    },
+    {
+      "name": "iMedia",
+      "steps": [
+        {
+          "command": "InputiMedia"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ViewSonic/VMP75.json"
+    ],
+    "harmony": {
+      "global_device_id": 207196,
+      "device_type": 35,
+      "codeset": "184ca1c705c449d5"
+    }
+  }
+}

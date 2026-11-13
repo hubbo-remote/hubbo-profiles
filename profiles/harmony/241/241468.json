@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:241468",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DC291/98",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "3cb97b3c4ee152e6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "MP3Link",
+      "steps": [
+        {
+          "command": "InputMp3Link"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DC291_98.json"
+    ],
+    "harmony": {
+      "global_device_id": 241468,
+      "device_type": 5,
+      "codeset": "1f5445f22f7d1ccf"
+    }
+  }
+}

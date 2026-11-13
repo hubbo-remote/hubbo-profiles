@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:183598",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DVR-530H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "7794e5f52679fabb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DVR-530H.json"
+    ],
+    "harmony": {
+      "global_device_id": 183598,
+      "device_type": 34,
+      "codeset": "1a916976a6753c1e"
+    }
+  }
+}

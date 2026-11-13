@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181811",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "XV-THR1E",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "36b276b9c7b7bc16",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Am/Fm",
+      "steps": [
+        {
+          "command": "InputAMFM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/XV-THR1E.json"
+    ],
+    "harmony": {
+      "global_device_id": 181811,
+      "device_type": 22,
+      "codeset": "f09aa472d30e2429"
+    }
+  }
+}

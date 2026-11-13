@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "harmony:36480",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Harman Kardon",
+  "model": "HK 235",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7c0a75f91e7bf16b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AM/FM",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        },
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "InputVideo3"
+        },
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VID1",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "VID2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "VID3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "VID4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Harman_Kardon/HK_235.json"
+    ],
+    "harmony": {
+      "global_device_id": 36480,
+      "device_type": 5,
+      "codeset": "b33d4214a7073656"
+    }
+  }
+}

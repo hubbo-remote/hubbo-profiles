@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155314",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RH387H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "738cb0a90b4e1170",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RH387H.json"
+    ],
+    "harmony": {
+      "global_device_id": 155314,
+      "device_type": 34,
+      "codeset": "bd666b30ceee1f9f"
+    }
+  }
+}

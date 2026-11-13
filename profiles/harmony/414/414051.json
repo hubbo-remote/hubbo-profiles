@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:414051",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "CP-WU5505",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "c3cafd8d222bc5fd",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/CP-WU5505.json"
+    ],
+    "harmony": {
+      "global_device_id": 414051,
+      "device_type": 7,
+      "codeset": "0dcba4c2da584f41"
+    }
+  }
+}

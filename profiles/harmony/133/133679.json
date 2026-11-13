@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:133679",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Silicon Optix",
+  "model": "Whitehorse",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "31d678b630c32c65",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "SDI",
+      "steps": [
+        {
+          "command": "InputSDI"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Silicon_Optix/Whitehorse.json"
+    ],
+    "harmony": {
+      "global_device_id": 133679,
+      "device_type": 30,
+      "codeset": "570a921231ae5f9d"
+    }
+  }
+}

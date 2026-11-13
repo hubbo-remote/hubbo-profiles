@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172002",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "50PQ1100-ZE",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "04a2aa908519e6fe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputAntenna"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/50PQ1100-ZE.json"
+    ],
+    "harmony": {
+      "global_device_id": 172002,
+      "device_type": 1,
+      "codeset": "1a0a783734e2642e"
+    }
+  }
+}

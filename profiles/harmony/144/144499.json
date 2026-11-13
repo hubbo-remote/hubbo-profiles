@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144499",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "SLV-D261P",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "3ac4181a3b0204d5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/SLV-D261P.json"
+    ],
+    "harmony": {
+      "global_device_id": 144499,
+      "device_type": 25,
+      "codeset": "fc2321a217754a77"
+    }
+  }
+}

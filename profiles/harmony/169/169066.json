@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "id": "harmony:169066",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-32LE700E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "a0710e0ee70b35b9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "ATV",
+      "steps": [
+        {
+          "command": "InputAtv"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "EXT 2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "EXT 3",
+      "steps": [
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "EXT 4",
+      "steps": [
+        {
+          "command": "InputExt4"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1(EXT 5)",
+      "steps": [
+        {
+          "command": "InputExt5"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2(EXT 6)",
+      "steps": [
+        {
+          "command": "InputExt6"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3(EXT 7)",
+      "steps": [
+        {
+          "command": "InputExt7"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4(EXT 8)",
+      "steps": [
+        {
+          "command": "InputExt8"
+        }
+      ]
+    },
+    {
+      "name": "EXT 9",
+      "steps": [
+        {
+          "command": "InputExt8"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputExt8"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-32LE700E.json"
+    ],
+    "harmony": {
+      "global_device_id": 169066,
+      "device_type": 1,
+      "codeset": "6a841001c011c6b0"
+    }
+  }
+}

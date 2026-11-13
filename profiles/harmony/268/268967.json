@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:268967",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Meridian",
+  "model": "MF-10",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "33c2c00541b031bf",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Meridian/MF-10.json"
+    ],
+    "harmony": {
+      "global_device_id": 268967,
+      "device_type": 7,
+      "codeset": "38e6614a42d4a8e7"
+    }
+  }
+}

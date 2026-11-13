@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168183",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RH-2T160",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "2a1f9f7c02326d2d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RH-2T160.json"
+    ],
+    "harmony": {
+      "global_device_id": 168183,
+      "device_type": 34,
+      "codeset": "0c5ecdd88cf3db74"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102300",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR3452H/31",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "d97f6e2d910d5190",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Hdd",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Usb/Dv",
+      "steps": [
+        {
+          "command": "InputUsbDv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR3452H_31.json"
+    ],
+    "harmony": {
+      "global_device_id": 102300,
+      "device_type": 34,
+      "codeset": "771f206a01a0c607"
+    }
+  }
+}

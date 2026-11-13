@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:103735",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kawasaki",
+  "model": "PVS-31190WS",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "d488c5c0c4af68ce",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAvIn"
+        }
+      ]
+    },
+    {
+      "name": "YUV IN",
+      "steps": [
+        {
+          "command": "InputYuvIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kawasaki/PVS-31190WS.json"
+    ],
+    "harmony": {
+      "global_device_id": 103735,
+      "device_type": 37,
+      "codeset": "df32a3df4befba29"
+    }
+  }
+}

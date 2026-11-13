@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "id": "harmony:252855",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "46PFL8008S/12",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5e01eaeceafa9183",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 14000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Satellite",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI Side",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "SCART",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Smart TV",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "SmartTv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/46PFL8008S_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 252855,
+      "device_type": 1,
+      "codeset": "52104ac2b92a93be"
+    }
+  }
+}

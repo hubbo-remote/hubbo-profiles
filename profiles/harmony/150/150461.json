@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150461",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "MD-29027",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "928612e76af44b4f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/MD-29027.json"
+    ],
+    "harmony": {
+      "global_device_id": 150461,
+      "device_type": 16,
+      "codeset": "f9f81eae700f6e94"
+    }
+  }
+}

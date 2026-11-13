@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212985",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "D-Link",
+  "model": "DSM-350",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "25974b11b193f1b7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "InputVideos"
+        }
+      ]
+    },
+    {
+      "name": "Network Media",
+      "steps": [
+        {
+          "command": "InputNetworkMedia"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/D-Link/DSM-350.json"
+    ],
+    "harmony": {
+      "global_device_id": 212985,
+      "device_type": 35,
+      "codeset": "3c95aea6d21c8fb6"
+    }
+  }
+}

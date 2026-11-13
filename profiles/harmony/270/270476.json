@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270476",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LAS350B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a6698b4ed777c460",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Port In",
+      "steps": [
+        {
+          "command": "InputPortIn"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "LG TV",
+      "steps": [
+        {
+          "command": "LGTV"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LAS350B.json"
+    ],
+    "harmony": {
+      "global_device_id": 270476,
+      "device_type": 19,
+      "codeset": "bc9c91b3a3e18ce4"
+    }
+  }
+}

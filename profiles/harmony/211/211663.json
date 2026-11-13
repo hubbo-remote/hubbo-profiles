@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211663",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SA-EN36",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "25caad68e5a2d31d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "MusicPort",
+      "steps": [
+        {
+          "command": "InputMusicPort"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SA-EN36.json"
+    ],
+    "harmony": {
+      "global_device_id": 211663,
+      "device_type": 21,
+      "codeset": "1fc4b602bf9421c1"
+    }
+  }
+}

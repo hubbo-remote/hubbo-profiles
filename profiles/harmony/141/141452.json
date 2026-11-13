@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141452",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-28D65",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7413376ace6062c2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1000
+      }
+    ],
+    "on_delay_ms": 7500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "6"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "7"
+        }
+      ]
+    },
+    {
+      "name": "Video 3",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "8"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-28D65.json"
+    ],
+    "harmony": {
+      "global_device_id": 141452,
+      "device_type": 1,
+      "codeset": "54803dee62d74daf"
+    }
+  }
+}

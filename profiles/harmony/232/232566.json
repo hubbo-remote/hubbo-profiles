@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:232566",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AudioSource",
+  "model": "S3D60",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "384d080240c2d49e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AudioSource/S3D60.json"
+    ],
+    "harmony": {
+      "global_device_id": 232566,
+      "device_type": 19,
+      "codeset": "e661fe69ae8be35b"
+    }
+  }
+}

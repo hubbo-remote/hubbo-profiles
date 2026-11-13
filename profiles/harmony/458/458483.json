@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:458483",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EH-TW510",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "c0c08d0df2608643",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EH-TW510.json"
+    ],
+    "harmony": {
+      "global_device_id": 458483,
+      "device_type": 7,
+      "codeset": "0f81c40973a488d7"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:18188",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acoustic Solutions",
+  "model": "DS-533",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "7bf0107802834e3f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acoustic_Solutions/DS-533.json"
+    ],
+    "harmony": {
+      "global_device_id": 18188,
+      "device_type": 19,
+      "codeset": "b97c92a4b05fb7b6"
+    }
+  }
+}

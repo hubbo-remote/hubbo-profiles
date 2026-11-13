@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180175",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MS-Tech",
+  "model": "MV-275SH",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "c6f7a2eaa609765a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Files",
+      "steps": [
+        {
+          "command": "InputFile"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MS-Tech/MV-275SH.json"
+    ],
+    "harmony": {
+      "global_device_id": 180175,
+      "device_type": 35,
+      "codeset": "2b4281108ddbd3ab"
+    }
+  }
+}

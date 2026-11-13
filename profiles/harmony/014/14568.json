@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:14568",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Telefunken",
+  "model": "MR-702",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "537aca1437aa3307",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Scart Cable",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Telefunken/MR-702.json"
+    ],
+    "harmony": {
+      "global_device_id": 14568,
+      "device_type": 1,
+      "codeset": "a5a3bf562f0cc6bf"
+    }
+  }
+}

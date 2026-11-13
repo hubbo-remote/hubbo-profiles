@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:203317",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "F&D",
+  "model": "A-3501",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "8f7d1c6d85810ab3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "MP3",
+      "steps": [
+        {
+          "command": "InputMp3"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/F_D/A-3501.json"
+    ],
+    "harmony": {
+      "global_device_id": 203317,
+      "device_type": 19,
+      "codeset": "c757cdf601d18b90"
+    }
+  }
+}

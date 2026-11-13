@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:51097",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "3M",
+  "model": "MP-7760",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "074a6fee3d8650a2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/3M/MP-7760.json"
+    ],
+    "harmony": {
+      "global_device_id": 51097,
+      "device_type": 7,
+      "codeset": "e39ba475557787f1"
+    }
+  }
+}

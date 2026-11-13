@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:412880",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RSR",
+  "model": "TB232SW",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c14f8f4a00c7478c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "HDMI-ARC",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RSR/TB232SW.json"
+    ],
+    "harmony": {
+      "global_device_id": 412880,
+      "device_type": 19,
+      "codeset": "8b1769205f98f9c3"
+    }
+  }
+}

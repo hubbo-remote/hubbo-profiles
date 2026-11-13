@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "harmony:177217",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "L42VP01C",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "28bd125f2240faf6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 13000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TVDTT"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "AV 3",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputAv3"
+        }
+      ]
+    },
+    {
+      "name": "AV 4",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputAv4"
+        }
+      ]
+    },
+    {
+      "name": "AV 5",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputAv5"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/L42VP01C.json"
+    ],
+    "harmony": {
+      "global_device_id": 177217,
+      "device_type": 1,
+      "codeset": "17ae4834e39da4cc"
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:28871",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-770",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "f6cafc16f20c9a87",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "VCR/Tape2",
+      "steps": [
+        {
+          "command": "InputVcrTape2"
+        }
+      ]
+    },
+    {
+      "name": "LD/TV",
+      "steps": [
+        {
+          "command": "InputLdTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-770.json"
+    ],
+    "harmony": {
+      "global_device_id": 28871,
+      "device_type": 5,
+      "codeset": "f11daf877da74c89"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:47278",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-HT65",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9eda945505aaca36",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "BD/DVR",
+      "steps": [
+        {
+          "command": "InputBDDVR"
+        }
+      ]
+    },
+    {
+      "name": "DVD-P",
+      "steps": [
+        {
+          "command": "InputDVDP"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-HT65.json"
+    ],
+    "harmony": {
+      "global_device_id": 47278,
+      "device_type": 5,
+      "codeset": "f116272255a889ea"
+    }
+  }
+}

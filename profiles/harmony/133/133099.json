@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "harmony:133099",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Elite Screens",
+  "model": "Electric 84V",
+  "kind": "accessory",
+  "platform": "ir",
+  "codeset": "fd1d536b655da367",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "DirectionDown",
+        "hold_ms": 1000
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "DirectionDown",
+        "hold_ms": 1000
+      }
+    ],
+    "off": [
+      {
+        "command": "DirectionUp",
+        "hold_ms": 1000
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Elite_Screens/Electric_84V.json"
+    ],
+    "harmony": {
+      "global_device_id": 133099,
+      "device_type": 44,
+      "codeset": "7b8e054f888f1c42"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:61859",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Minowa",
+  "model": "HTIB-C 1.8",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "8d2f07885e107d1e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Minowa/HTIB-C_1.8.json"
+    ],
+    "harmony": {
+      "global_device_id": 61859,
+      "device_type": 19,
+      "codeset": "da9d7ff13355a0e4"
+    }
+  }
+}

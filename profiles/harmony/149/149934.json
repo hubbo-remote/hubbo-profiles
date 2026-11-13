@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149934",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "UT-37MX700A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "871038d97b601ca1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 9000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/UT-37MX700A.json"
+    ],
+    "harmony": {
+      "global_device_id": 149934,
+      "device_type": 1,
+      "codeset": "b4e64e5018d17f31"
+    }
+  }
+}

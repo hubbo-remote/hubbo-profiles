@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:209054",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dynex",
+  "model": "DX-32L152A11",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "33a4ac9f60b6d4a1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Vga",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "Hdmi",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dynex/DX-32L152A11.json"
+    ],
+    "harmony": {
+      "global_device_id": 209054,
+      "device_type": 1,
+      "codeset": "aa46003c2e454673"
+    }
+  }
+}

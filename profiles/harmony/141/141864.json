@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141864",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Odeon",
+  "model": "AV-701",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e491908d7b2ffbe6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Odeon/AV-701.json"
+    ],
+    "harmony": {
+      "global_device_id": 141864,
+      "device_type": 5,
+      "codeset": "3a5d26e8ae073c56"
+    }
+  }
+}

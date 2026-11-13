@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263411",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LAP345C",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d1a9366d7891a9b0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "LG TV",
+      "steps": [
+        {
+          "command": "InputLgTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LAP345C.json"
+    ],
+    "harmony": {
+      "global_device_id": 263411,
+      "device_type": 19,
+      "codeset": "6af92cfb025b2ce0"
+    }
+  }
+}

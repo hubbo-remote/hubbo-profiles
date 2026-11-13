@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:468877",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "CP-X809W",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f628b4f09c1dcca5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/CP-X809W.json"
+    ],
+    "harmony": {
+      "global_device_id": 468877,
+      "device_type": 7,
+      "codeset": "47a6f39ddd37e5d6"
+    }
+  }
+}

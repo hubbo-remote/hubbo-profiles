@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:55986",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tatung",
+  "model": "V20CCBX",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "066a26c6d2dec7e3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "Reset"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tatung/V20CCBX.json"
+    ],
+    "harmony": {
+      "global_device_id": 55986,
+      "device_type": 1,
+      "codeset": "205f98bb48599c7c"
+    }
+  }
+}

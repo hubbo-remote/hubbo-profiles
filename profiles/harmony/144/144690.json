@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144690",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KEF",
+  "model": "KIT-160",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b3940712d773dc9c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Cbl/Sat",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KEF/KIT-160.json"
+    ],
+    "harmony": {
+      "global_device_id": 144690,
+      "device_type": 22,
+      "codeset": "4cd1a567b45aa3c7"
+    }
+  }
+}

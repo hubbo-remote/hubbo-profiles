@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269153",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "WD380U-EST",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "4943cffce235c70b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer 1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer 2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "USB DISP",
+      "steps": [
+        {
+          "command": "InputUSBDisplay"
+        }
+      ]
+    },
+    {
+      "name": "LAN DISP",
+      "steps": [
+        {
+          "command": "InputLANDisplay"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/WD380U-EST.json"
+    ],
+    "harmony": {
+      "global_device_id": 269153,
+      "device_type": 7,
+      "codeset": "2c12e7342ddba092"
+    }
+  }
+}

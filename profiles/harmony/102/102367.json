@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102367",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "TDP-T45U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "8536f494b1024491",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 3000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/TDP-T45U.json"
+    ],
+    "harmony": {
+      "global_device_id": 102367,
+      "device_type": 7,
+      "codeset": "68dd69b8ac5c9eb8"
+    }
+  }
+}

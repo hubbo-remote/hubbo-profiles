@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "id": "harmony:414238",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "XBR-55X805E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dea96b4b476c062a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      },
+      {
+        "delay_ms": 300
+      },
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 300
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Cable/Antenna",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DIRECTV",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2/Component",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 4",
+      "steps": [
+        {
+          "command": "InputHdmi4"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "InputHdmi4"
+        }
+      ]
+    },
+    {
+      "name": "Screen Mirroring",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "Android TV",
+      "steps": [
+        {
+          "command": "Back"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Home"
+        }
+      ]
+    },
+    {
+      "name": "GooglePlay",
+      "steps": [
+        {
+          "command": "GooglePlay"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "GooglePlay"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        },
+        {
+          "delay_ms": 300
+        },
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/XBR-55X805E.json"
+    ],
+    "harmony": {
+      "global_device_id": 414238,
+      "device_type": 1,
+      "codeset": "484b649aad17302b"
+    }
+  }
+}

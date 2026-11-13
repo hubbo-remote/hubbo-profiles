@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57696",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "FS-Y1",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "0ff4812eb13b058f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dvd/Cd",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/FS-Y1.json"
+    ],
+    "harmony": {
+      "global_device_id": 57696,
+      "device_type": 22,
+      "codeset": "3636b2add7323d92"
+    }
+  }
+}

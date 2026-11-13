@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:9403",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "MHC-C33",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "5863caabe3655975",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "MD/Video",
+      "steps": [
+        {
+          "command": "InputVideo1MD"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/MHC-C33.json"
+    ],
+    "harmony": {
+      "global_device_id": 9403,
+      "device_type": 21,
+      "codeset": "a43550776e4b1311"
+    }
+  }
+}

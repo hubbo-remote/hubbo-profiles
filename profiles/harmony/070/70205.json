@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "harmony:70205",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aiwa",
+  "model": "HV-FX7500EH",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "a9759d8065d25a74",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna/Cable",
+      "steps": [
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "A1",
+      "steps": [
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "A2",
+      "steps": [
+        {
+          "command": "ChannelDown"
+        },
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aiwa/HV-FX7500EH.json"
+    ],
+    "harmony": {
+      "global_device_id": 70205,
+      "device_type": 2,
+      "codeset": "c6f0baafa844ee9c"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "harmony:133390",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Directed Electronics",
+  "model": "Soloist",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "c7ec1bbb84e64e80",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 3500
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Directed_Electronics/Soloist.json"
+    ],
+    "harmony": {
+      "global_device_id": 133390,
+      "device_type": 22,
+      "codeset": "085a09393f9aa1dd"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:25155",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "SD-S410",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b835f85efe4add3e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "VCR2/TV",
+      "steps": [
+        {
+          "command": "InputVcr2"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/SD-S410.json"
+    ],
+    "harmony": {
+      "global_device_id": 25155,
+      "device_type": 5,
+      "codeset": "e6e30908895e7854"
+    }
+  }
+}

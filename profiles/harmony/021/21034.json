@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:21034",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vocopro",
+  "model": "DA-8050FX",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6d987ceeb0ed0d28",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "CDG",
+      "steps": [
+        {
+          "command": "InputCdg"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vocopro/DA-8050FX.json"
+    ],
+    "harmony": {
+      "global_device_id": 21034,
+      "device_type": 19,
+      "codeset": "98d3a00ecc1f9dd5"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "harmony:27281",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "LP-Z1",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1db6e21fbf11bf0a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 3000
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Auto",
+      "steps": [
+        {
+          "command": "VideoAuto"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "VideoVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "VideoSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "VideoComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/LP-Z1.json"
+    ],
+    "harmony": {
+      "global_device_id": 27281,
+      "device_type": 7,
+      "codeset": "15f77094c683247f"
+    }
+  }
+}

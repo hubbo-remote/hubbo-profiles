@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:36710",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Neovia",
+  "model": "NEO-DVD17",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "0d4b997ac2d1c864",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/Video",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Neovia/NEO-DVD17.json"
+    ],
+    "harmony": {
+      "global_device_id": 36710,
+      "device_type": 37,
+      "codeset": "dc767f4019f96e7b"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:5222",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Plus",
+  "model": "U2-1080",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "5ef77bfd3227adec",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Plus/U2-1080.json"
+    ],
+    "harmony": {
+      "global_device_id": 5222,
+      "device_type": 7,
+      "codeset": "d589dc608da74018"
+    }
+  }
+}

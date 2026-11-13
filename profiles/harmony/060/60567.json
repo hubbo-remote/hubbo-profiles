@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "id": "harmony:60567",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hanseatic",
+  "model": "LCD-TV 32-100",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b1f644fdadd0bd34",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1 VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV1 S-VHS",
+      "steps": [
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV2 VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "SCART1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "SCART2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "CABEL",
+      "steps": [
+        {
+          "command": "DirectionDown"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hanseatic/LCD-TV_32-100.json"
+    ],
+    "harmony": {
+      "global_device_id": 60567,
+      "device_type": 1,
+      "codeset": "82388dce132d63bb"
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "id": "harmony:113960",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SV2000",
+  "model": "WV-10D6",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "e78475e112a94d83",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "E1 (Rear)",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "E2 (Front)",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SV2000/WV-10D6.json"
+    ],
+    "harmony": {
+      "global_device_id": 113960,
+      "device_type": 34,
+      "codeset": "cf7206cc96122a71"
+    }
+  }
+}

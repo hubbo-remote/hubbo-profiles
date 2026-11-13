@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:79613",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Brandt",
+  "model": "70779-STL",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "43ba6a17e300bbd4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Idem",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Brandt/70779-STL.json"
+    ],
+    "harmony": {
+      "global_device_id": 79613,
+      "device_type": 1,
+      "codeset": "bb95da3073a325ff"
+    }
+  }
+}

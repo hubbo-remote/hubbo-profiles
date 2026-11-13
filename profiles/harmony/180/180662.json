@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180662",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "UPC",
+  "model": "Mediabox HD DVR",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "e2c0e3707ba6595b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "UPC",
+      "steps": [
+        {
+          "command": "UPC"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/UPC/Mediabox_HD_DVR.json"
+    ],
+    "harmony": {
+      "global_device_id": 180662,
+      "device_type": 18,
+      "codeset": "cb352bc0652f1731"
+    }
+  }
+}

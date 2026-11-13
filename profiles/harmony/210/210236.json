@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:210236",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "HDR-798",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "7ffbf5a5ce2b4d0f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/HDR-798.json"
+    ],
+    "harmony": {
+      "global_device_id": 210236,
+      "device_type": 34,
+      "codeset": "9ae322d4e46c4071"
+    }
+  }
+}

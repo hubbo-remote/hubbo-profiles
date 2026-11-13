@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:178943",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GPX",
+  "model": "HDR-8160",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "6ea3b46e10db2fcf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GPX/HDR-8160.json"
+    ],
+    "harmony": {
+      "global_device_id": 178943,
+      "device_type": 34,
+      "codeset": "4f647bd108cd2d41"
+    }
+  }
+}

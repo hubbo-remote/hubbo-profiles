@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:16633",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "SyncMaster 172MP",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "80bc96950382839d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/SyncMaster_172MP.json"
+    ],
+    "harmony": {
+      "global_device_id": 16633,
+      "device_type": 1,
+      "codeset": "bff4eb250f210b31"
+    }
+  }
+}

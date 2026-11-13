@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:2421",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Runco",
+  "model": "PFP-7",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "d8f57f8a6d6d0662",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Passthrough",
+      "steps": [
+        {
+          "command": "InputPassThru"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "InputComposite"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Runco/PFP-7.json"
+    ],
+    "harmony": {
+      "global_device_id": 2421,
+      "device_type": 30,
+      "codeset": "0d963e846c356141"
+    }
+  }
+}

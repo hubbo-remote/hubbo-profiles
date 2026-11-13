@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251778",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AVoL",
+  "model": "AIS920D",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "8f8c38c9a8efe07c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "USB/CARD",
+      "steps": [
+        {
+          "command": "InputUsbCard"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AVoL/AIS920D.json"
+    ],
+    "harmony": {
+      "global_device_id": 251778,
+      "device_type": 22,
+      "codeset": "3d26918cae6b5134"
+    }
+  }
+}

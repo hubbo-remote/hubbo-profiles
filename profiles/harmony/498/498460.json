@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:498460",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Blaupunkt",
+  "model": "LS1825",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b62477dba532057b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI Arc",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Blaupunkt/LS1825.json"
+    ],
+    "harmony": {
+      "global_device_id": 498460,
+      "device_type": 19,
+      "codeset": "51c3a7aab485bac9"
+    }
+  }
+}

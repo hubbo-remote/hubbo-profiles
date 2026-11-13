@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:39594",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Canon",
+  "model": "LV-S3E",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "8880e44909e6e47c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Computer1",
+      "steps": [
+        {
+          "command": "InputPc1"
+        }
+      ]
+    },
+    {
+      "name": "Computer2",
+      "steps": [
+        {
+          "command": "InputPc2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Canon/LV-S3E.json"
+    ],
+    "harmony": {
+      "global_device_id": 39594,
+      "device_type": 7,
+      "codeset": "dcd39b83fef18c1a"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157159",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Plus",
+  "model": "U2-1110",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "aeb22e941383f689",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Plus/U2-1110.json"
+    ],
+    "harmony": {
+      "global_device_id": 157159,
+      "device_type": 7,
+      "codeset": "e075e405f090c182"
+    }
+  }
+}

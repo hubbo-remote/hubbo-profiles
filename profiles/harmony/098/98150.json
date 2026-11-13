@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:98150",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Focal-JMLab",
+  "model": "SW-1000BE",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b1a517a74de0e0af",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Cinema",
+      "steps": [
+        {
+          "command": "InputCinema"
+        }
+      ]
+    },
+    {
+      "name": "Hi-Fi",
+      "steps": [
+        {
+          "command": "InputHiFi"
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "steps": [
+        {
+          "command": "InputUser"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Focal-JMLab/SW-1000BE.json"
+    ],
+    "harmony": {
+      "global_device_id": 98150,
+      "device_type": 19,
+      "codeset": "cfbac58b37b68212"
+    }
+  }
+}

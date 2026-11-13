@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:275291",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NuPrime",
+  "model": "IDA-8",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "042b04348f78d0a9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputC1"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputO2"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputU3"
+        }
+      ]
+    },
+    {
+      "name": "Extension Port",
+      "steps": [
+        {
+          "command": "InputE4"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputA5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NuPrime/IDA-8.json"
+    ],
+    "harmony": {
+      "global_device_id": 275291,
+      "device_type": 19,
+      "codeset": "19dc662eacd18f6a"
+    }
+  }
+}

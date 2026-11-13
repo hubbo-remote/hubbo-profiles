@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:301207",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Takara",
+  "model": "SP25BT",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "7f22b6836352177e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Takara/SP25BT.json"
+    ],
+    "harmony": {
+      "global_device_id": 301207,
+      "device_type": 19,
+      "codeset": "81f3fa482f8ecf0d"
+    }
+  }
+}

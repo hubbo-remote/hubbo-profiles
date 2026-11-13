@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:219649",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "H5360BD",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "2eb55c0aee0877fb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/H5360BD.json"
+    ],
+    "harmony": {
+      "global_device_id": 219649,
+      "device_type": 7,
+      "codeset": "c728f173ba66209f"
+    }
+  }
+}

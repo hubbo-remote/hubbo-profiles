@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179429",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Metz",
+  "model": "MILOS-37S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7b5dff1fc5455857",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Metz/MILOS-37S.json"
+    ],
+    "harmony": {
+      "global_device_id": 179429,
+      "device_type": 1,
+      "codeset": "85dd3eb8ba6b781f"
+    }
+  }
+}

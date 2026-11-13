@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118188",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "SD-S2300",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "76d5596ec9cec06e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/SD-S2300.json"
+    ],
+    "harmony": {
+      "global_device_id": 118188,
+      "device_type": 21,
+      "codeset": "a93a967f9e0202bf"
+    }
+  }
+}

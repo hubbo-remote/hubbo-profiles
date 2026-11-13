@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:494325",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "PROZOR",
+  "model": "DAC",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6a51f667e3b06bf9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Toslink",
+      "steps": [
+        {
+          "command": "InputToslink"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/PROZOR/DAC.json"
+    ],
+    "harmony": {
+      "global_device_id": 494325,
+      "device_type": 19,
+      "codeset": "c4a2a40abfdf508d"
+    }
+  }
+}

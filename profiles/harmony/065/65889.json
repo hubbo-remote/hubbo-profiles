@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:65889",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hanseatic",
+  "model": "AVR-880",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "cee48126bf2fa7d3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DIGITAL",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hanseatic/AVR-880.json"
+    ],
+    "harmony": {
+      "global_device_id": 65889,
+      "device_type": 22,
+      "codeset": "6d914447e45323be"
+    }
+  }
+}

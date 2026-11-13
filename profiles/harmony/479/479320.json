@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:479320",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dynaudio",
+  "model": "Connect",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "46a333941c7b6324",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dynaudio/Connect.json"
+    ],
+    "harmony": {
+      "global_device_id": 479320,
+      "device_type": 19,
+      "codeset": "654fb44bb72e877f"
+    }
+  }
+}

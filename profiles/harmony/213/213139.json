@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:213139",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Advance Acoustic",
+  "model": "MAP-308",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "fb120dc344807aac",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TUNER/PC",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "AUX1/AUX2",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Advance_Acoustic/MAP-308.json"
+    ],
+    "harmony": {
+      "global_device_id": 213139,
+      "device_type": 19,
+      "codeset": "7ffd5b006886e1bd"
+    }
+  }
+}

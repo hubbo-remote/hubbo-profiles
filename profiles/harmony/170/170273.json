@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170273",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "AS 640/20",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "c1d132e5b0af4bc0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/AS_640_20.json"
+    ],
+    "harmony": {
+      "global_device_id": 170273,
+      "device_type": 21,
+      "codeset": "d3f4fd605e3bafbd"
+    }
+  }
+}

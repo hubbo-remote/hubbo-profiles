@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:161339",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "HT462DZ",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "e610f507a8b94b5c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/HT462DZ.json"
+    ],
+    "harmony": {
+      "global_device_id": 161339,
+      "device_type": 22,
+      "codeset": "daac70b30f506cc7"
+    }
+  }
+}

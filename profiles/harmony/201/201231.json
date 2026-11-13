@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201231",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MCM-240/25",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "c657759f45416567",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MCM-240_25.json"
+    ],
+    "harmony": {
+      "global_device_id": 201231,
+      "device_type": 21,
+      "codeset": "72b7b40fd71aa84a"
+    }
+  }
+}

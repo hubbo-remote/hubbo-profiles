@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182761",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kaiboer",
+  "model": "K-200",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "aef36a0e6b177b73",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kaiboer/K-200.json"
+    ],
+    "harmony": {
+      "global_device_id": 182761,
+      "device_type": 35,
+      "codeset": "1c9553f93f582dec"
+    }
+  }
+}

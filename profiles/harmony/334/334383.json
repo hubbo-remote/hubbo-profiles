@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "id": "harmony:334383",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "47PFH5209/88",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5960d5fe6ea12fed",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 24000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "Source"
+        },
+        {
+          "command": "DirectionRight",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/47PFH5209_88.json"
+    ],
+    "harmony": {
+      "global_device_id": 334383,
+      "device_type": 1,
+      "codeset": "f7a71826dccc29cd"
+    }
+  }
+}

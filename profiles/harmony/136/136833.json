@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:136833",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "63KV9617/22M",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "EXT 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "EXT 3",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/63KV9617_22M.json"
+    ],
+    "harmony": {
+      "global_device_id": 136833,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

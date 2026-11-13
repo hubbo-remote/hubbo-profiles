@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:81126",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-2819",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "fdb7557a3363f511",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/FM",
+      "steps": [
+        {
+          "command": "InputTvFm"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-2819.json"
+    ],
+    "harmony": {
+      "global_device_id": 81126,
+      "device_type": 35,
+      "codeset": "4520105175bf2d39"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:61376",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "DX-9840E",
+  "kind": "home_theater_vcr",
+  "platform": "ir",
+  "codeset": "a17df42e85484115",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/DX-9840E.json"
+    ],
+    "harmony": {
+      "global_device_id": 61376,
+      "device_type": 32,
+      "codeset": "68dc404c4f93e9f6"
+    }
+  }
+}

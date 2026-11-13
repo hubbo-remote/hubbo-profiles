@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:127985",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Akai",
+  "model": "TX-Z9500YEZ",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ce7b559a6f10b7b6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape Deck",
+      "steps": [
+        {
+          "command": "InputTapeDeck"
+        }
+      ]
+    },
+    {
+      "name": "Video 1/DAT",
+      "steps": [
+        {
+          "command": "InputVideo1DAT"
+        }
+      ]
+    },
+    {
+      "name": "Video2/Aux",
+      "steps": [
+        {
+          "command": "InputVideo2Aux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Akai/TX-Z9500YEZ.json"
+    ],
+    "harmony": {
+      "global_device_id": 127985,
+      "device_type": 19,
+      "codeset": "4283ed095c3fdbf8"
+    }
+  }
+}

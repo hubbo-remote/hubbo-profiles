@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:122144",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JNC",
+  "model": "SST-37H1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c06f9edd0bf7c3d3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputHDTV"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JNC/SST-37H1.json"
+    ],
+    "harmony": {
+      "global_device_id": 122144,
+      "device_type": 1,
+      "codeset": "ce936ed9a51c3c5a"
+    }
+  }
+}

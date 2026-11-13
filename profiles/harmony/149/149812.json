@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149812",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SA-BX500",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b892d15d56aff693",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Cable/Sat",
+      "steps": [
+        {
+          "command": "InputCableSat"
+        }
+      ]
+    },
+    {
+      "name": "BD/DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DVD Recorder",
+      "steps": [
+        {
+          "command": "InputDvdR"
+        }
+      ]
+    },
+    {
+      "name": "OptionPort",
+      "steps": [
+        {
+          "command": "OptionPort"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SA-BX500.json"
+    ],
+    "harmony": {
+      "global_device_id": 149812,
+      "device_type": 5,
+      "codeset": "9812d4188e3b31ad"
+    }
+  }
+}

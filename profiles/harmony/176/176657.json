@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176657",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cosk'in",
+  "model": "CKB-WF-MG350SHD",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "21366c79cbb72937",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cosk_in/CKB-WF-MG350SHD.json"
+    ],
+    "harmony": {
+      "global_device_id": 176657,
+      "device_type": 35,
+      "codeset": "ff3f766401a7938d"
+    }
+  }
+}

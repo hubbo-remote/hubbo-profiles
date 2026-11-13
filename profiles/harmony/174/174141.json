@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174141",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR-3590H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "4d24cd505ec4c452",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "LiveTv",
+      "steps": [
+        {
+          "command": "Live"
+        }
+      ]
+    },
+    {
+      "name": "CAM",
+      "steps": [
+        {
+          "command": "InputCam"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "HDDList",
+      "steps": [
+        {
+          "command": "InputHddList"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR-3590H.json"
+    ],
+    "harmony": {
+      "global_device_id": 174141,
+      "device_type": 34,
+      "codeset": "c43964d0c449291a"
+    }
+  }
+}

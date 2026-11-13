@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:133714",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "SAV-A29",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "63a2ba4f7e206ce1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputInput2"
+        }
+      ]
+    },
+    {
+      "name": "Mix",
+      "steps": [
+        {
+          "command": "InputMix"
+        }
+      ]
+    },
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/SAV-A29.json"
+    ],
+    "harmony": {
+      "global_device_id": 133714,
+      "device_type": 19,
+      "codeset": "828d6c745c92a825"
+    }
+  }
+}

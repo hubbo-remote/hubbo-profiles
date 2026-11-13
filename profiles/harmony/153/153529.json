@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153529",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mission",
+  "model": "Cyrus 1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "bbfdee566179f65e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TU",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mission/Cyrus_1.json"
+    ],
+    "harmony": {
+      "global_device_id": 153529,
+      "device_type": 19,
+      "codeset": "f55de6a5c3dfa846"
+    }
+  }
+}

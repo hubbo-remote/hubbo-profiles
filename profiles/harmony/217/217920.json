@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:217920",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fisher",
+  "model": "CA-G5",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "a99710ce0dab9225",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fisher/CA-G5.json"
+    ],
+    "harmony": {
+      "global_device_id": 217920,
+      "device_type": 21,
+      "codeset": "0e6fb382c583477a"
+    }
+  }
+}

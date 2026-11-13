@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:93138",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hanseatic",
+  "model": "CTV 70-6950S",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hanseatic/CTV_70-6950S.json"
+    ],
+    "harmony": {
+      "global_device_id": 93138,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:175393",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bush",
+  "model": "LCD32TV24HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3086aca1264d2f64",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputScart"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bush/LCD32TV24HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 175393,
+      "device_type": 1,
+      "codeset": "ff35f39b70f2bd2f"
+    }
+  }
+}

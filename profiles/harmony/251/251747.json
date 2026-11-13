@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251747",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KPN",
+  "model": "Experia Box v8",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "7cc4d7e8c8070543",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KPN/Experia_Box_v8.json"
+    ],
+    "harmony": {
+      "global_device_id": 251747,
+      "device_type": 18,
+      "codeset": "00ec324d68c8bd0b"
+    }
+  }
+}

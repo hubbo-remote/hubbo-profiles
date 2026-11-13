@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269288",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "iLive",
+  "model": "ITBSW285B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "1ea40891f8f5ddc8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/iLive/ITBSW285B.json"
+    ],
+    "harmony": {
+      "global_device_id": 269288,
+      "device_type": 19,
+      "codeset": "c228c8b5ed3f5471"
+    }
+  }
+}

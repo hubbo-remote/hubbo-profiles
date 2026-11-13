@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:252914",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Micca",
+  "model": "Speck",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "b5f218a5fb6738b8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyMovies"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "File"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Micca/Speck.json"
+    ],
+    "harmony": {
+      "global_device_id": 252914,
+      "device_type": 35,
+      "codeset": "e85944e7a703f4df"
+    }
+  }
+}

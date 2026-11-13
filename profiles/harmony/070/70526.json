@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:70526",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "AF-999P",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "2269fb01f85b3cc7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/VCR",
+      "steps": [
+        {
+          "command": "TvVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VHS",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/AF-999P.json"
+    ],
+    "harmony": {
+      "global_device_id": 70526,
+      "device_type": 25,
+      "codeset": "5016aa498ae60ad1"
+    }
+  }
+}

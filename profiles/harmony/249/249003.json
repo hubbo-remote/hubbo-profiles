@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "id": "harmony:249003",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TC-P50S60",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5e3159d8c65b5fda",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ANT/CableIn",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Exit"
+        },
+        {
+          "command": "InputHdmi2"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 200
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Media Player",
+      "steps": [
+        {
+          "command": "MediaPlayer"
+        }
+      ]
+    },
+    {
+      "name": "Viera Smart",
+      "steps": [
+        {
+          "command": "Apps"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TC-P50S60.json"
+    ],
+    "harmony": {
+      "global_device_id": 249003,
+      "device_type": 1,
+      "codeset": "672f3f09b972eb2e"
+    }
+  }
+}

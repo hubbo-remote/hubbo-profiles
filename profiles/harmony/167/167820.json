@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167820",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "50XC10",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "0cf19ea9f23c2ace",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB/PC",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD/HD",
+      "steps": [
+        {
+          "command": "InputDvdHd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/50XC10.json"
+    ],
+    "harmony": {
+      "global_device_id": 167820,
+      "device_type": 13,
+      "codeset": "0efa4470969c5e48"
+    }
+  }
+}

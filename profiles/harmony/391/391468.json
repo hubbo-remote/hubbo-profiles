@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:391468",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "HDFury",
+  "model": "VERTEX",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "d53b8631c4f8bc6e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Input Sel 1",
+      "steps": [
+        {
+          "command": "Inputsel1"
+        }
+      ]
+    },
+    {
+      "name": "Input Sel 2",
+      "steps": [
+        {
+          "command": "Inputsel2"
+        }
+      ]
+    },
+    {
+      "name": "Input Matrix Through",
+      "steps": [
+        {
+          "command": "InputMatrixThrough"
+        }
+      ]
+    },
+    {
+      "name": "Input Matrix Swap",
+      "steps": [
+        {
+          "command": "InputMatrixSwap"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/HDFury/VERTEX.json"
+    ],
+    "harmony": {
+      "global_device_id": 391468,
+      "device_type": 30,
+      "codeset": "4fac26ba4d02da1f"
+    }
+  }
+}

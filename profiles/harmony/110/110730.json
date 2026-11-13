@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110730",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Matrix Audio Concepts",
+  "model": "MX-6160T",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "757b4bdfd1ffc276",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Matrix_Audio_Concepts/MX-6160T.json"
+    ],
+    "harmony": {
+      "global_device_id": 110730,
+      "device_type": 5,
+      "codeset": "14735004d8ecab5c"
+    }
+  }
+}

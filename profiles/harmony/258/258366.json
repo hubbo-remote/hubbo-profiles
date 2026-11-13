@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258366",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dual",
+  "model": "DAB 2A",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "4ae4bf095e4ce10e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dual/DAB_2A.json"
+    ],
+    "harmony": {
+      "global_device_id": 258366,
+      "device_type": 36,
+      "codeset": "434154aa7edc132c"
+    }
+  }
+}

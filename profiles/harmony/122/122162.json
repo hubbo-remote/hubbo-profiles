@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:122162",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Optoma",
+  "model": "WXGA",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0e73936e95070d9f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVI-D",
+      "steps": [
+        {
+          "command": "InputDVID"
+        }
+      ]
+    },
+    {
+      "name": "DVI-A",
+      "steps": [
+        {
+          "command": "InputDVIA"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr",
+      "steps": [
+        {
+          "command": "InputYPbPr"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Optoma/WXGA.json"
+    ],
+    "harmony": {
+      "global_device_id": 122162,
+      "device_type": 7,
+      "codeset": "6f6d4b600931ac11"
+    }
+  }
+}

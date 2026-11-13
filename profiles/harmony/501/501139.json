@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:501139",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Argon",
+  "model": "Alto 5",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c939632939afe27d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Argon/Alto_5.json"
+    ],
+    "harmony": {
+      "global_device_id": 501139,
+      "device_type": 19,
+      "codeset": "0525a221c24b6301"
+    }
+  }
+}

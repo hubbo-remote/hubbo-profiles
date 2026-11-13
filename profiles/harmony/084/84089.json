@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:84089",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "ST2680",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6053a4bb00cb76bb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/ST2680.json"
+    ],
+    "harmony": {
+      "global_device_id": 84089,
+      "device_type": 5,
+      "codeset": "1394e7516b49787e"
+    }
+  }
+}

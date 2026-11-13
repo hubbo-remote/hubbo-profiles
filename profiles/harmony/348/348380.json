@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:348380",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "W11000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "be7701be505df764",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/W11000.json"
+    ],
+    "harmony": {
+      "global_device_id": 348380,
+      "device_type": 7,
+      "codeset": "f56f953e8481536f"
+    }
+  }
+}

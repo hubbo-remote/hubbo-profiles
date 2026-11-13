@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:257086",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KPN",
+  "model": "HMB2260",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "c0b76ed3eadeacb8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KPN/HMB2260.json"
+    ],
+    "harmony": {
+      "global_device_id": 257086,
+      "device_type": 18,
+      "codeset": "3bb6e2c59e1c06ce"
+    }
+  }
+}

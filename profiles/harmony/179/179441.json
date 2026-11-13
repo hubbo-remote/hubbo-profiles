@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179441",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zenith",
+  "model": "P42W46X",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2cb82c3589e26f7d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ANT/CABLE",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "Side Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "RGB-DTV",
+      "steps": [
+        {
+          "command": "InputRgbDtv"
+        }
+      ]
+    },
+    {
+      "name": "DVI-PC",
+      "steps": [
+        {
+          "command": "InputDVIDTV"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zenith/P42W46X.json"
+    ],
+    "harmony": {
+      "global_device_id": 179441,
+      "device_type": 1,
+      "codeset": "e59f6fd3ef9b47d3"
+    }
+  }
+}

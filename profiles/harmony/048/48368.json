@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:48368",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Technics",
+  "model": "ST-S98A",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "76d5596ec9cec06e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "VCR1",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TV/VCR2",
+      "steps": [
+        {
+          "command": "InputVcr3"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Technics/ST-S98A.json"
+    ],
+    "harmony": {
+      "global_device_id": 48368,
+      "device_type": 36,
+      "codeset": "a93a967f9e0202bf"
+    }
+  }
+}

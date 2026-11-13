@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167213",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RHT-298H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "a0c702875fba7853",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RHT-298H.json"
+    ],
+    "harmony": {
+      "global_device_id": 167213,
+      "device_type": 34,
+      "codeset": "7beb3ac72d10f137"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129808",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Escient",
+  "model": "AVX-211",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "2e43f98c03635f7a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1500
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "iRadio",
+      "steps": [
+        {
+          "command": "iRadio"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Escient/AVX-211.json"
+    ],
+    "harmony": {
+      "global_device_id": 129808,
+      "device_type": 33,
+      "codeset": "49684a5093c3f0bb"
+    }
+  }
+}

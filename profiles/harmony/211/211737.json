@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:211737",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FWM387/12",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "224531f4d7cd05f2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DISC 1",
+      "steps": [
+        {
+          "command": "CD1"
+        }
+      ]
+    },
+    {
+      "name": "DISC 2",
+      "steps": [
+        {
+          "command": "CD2"
+        }
+      ]
+    },
+    {
+      "name": "DISC 3",
+      "steps": [
+        {
+          "command": "CD3"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "MP3-LINK",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FWM387_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 211737,
+      "device_type": 21,
+      "codeset": "ad7f31b9abcf313b"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:43907",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RT-2620",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "6053a4bb00cb76bb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RT-2620.json"
+    ],
+    "harmony": {
+      "global_device_id": 43907,
+      "device_type": 5,
+      "codeset": "1394e7516b49787e"
+    }
+  }
+}

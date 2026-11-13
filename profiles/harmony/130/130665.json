@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:130665",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Gradiente",
+  "model": "LCD-3230",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "07728b024a733dbf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "ANTENNA",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-VIDEO",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "COMP",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Gradiente/LCD-3230.json"
+    ],
+    "harmony": {
+      "global_device_id": 130665,
+      "device_type": 1,
+      "codeset": "52b9fd5eba957bd8"
+    }
+  }
+}

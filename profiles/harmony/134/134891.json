@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:134891",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KEF",
+  "model": "Kit 200",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "b3940712d773dc9c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputCblSat"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KEF/Kit_200.json"
+    ],
+    "harmony": {
+      "global_device_id": 134891,
+      "device_type": 22,
+      "codeset": "4cd1a567b45aa3c7"
+    }
+  }
+}

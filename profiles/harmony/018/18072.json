@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:18072",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sylvania",
+  "model": "SSC727C",
+  "kind": "tv_dvd_vcr",
+  "platform": "ir",
+  "codeset": "d0df26839dbfbb3c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TvVcr",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sylvania/SSC727C.json"
+    ],
+    "harmony": {
+      "global_device_id": 18072,
+      "device_type": 38,
+      "codeset": "558801620cc7077d"
+    }
+  }
+}

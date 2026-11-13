@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:262952",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Energy",
+  "model": "PowerBar",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2ff3f7ae20a5a973",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Energy/PowerBar.json"
+    ],
+    "harmony": {
+      "global_device_id": 262952,
+      "device_type": 19,
+      "codeset": "a1910c36e1dc92fd"
+    }
+  }
+}

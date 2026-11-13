@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "id": "harmony:38213",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Airis",
+  "model": "M-175",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "51044a8dc5f6390c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputRgb"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputSVideo"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputDvi"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputComponent1"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputComponent2"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Airis/M-175.json"
+    ],
+    "harmony": {
+      "global_device_id": 38213,
+      "device_type": 13,
+      "codeset": "8c5ca5604b7955fd"
+    }
+  }
+}

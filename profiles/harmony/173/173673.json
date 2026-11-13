@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173673",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "HTP-330",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "83ec1dbe3c2b9f3f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/DVR1",
+      "steps": [
+        {
+          "command": "InputDVDDVR1"
+        }
+      ]
+    },
+    {
+      "name": "DVD/DVR2",
+      "steps": [
+        {
+          "command": "InputDVDDVR2"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "FMAM"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/HTP-330.json"
+    ],
+    "harmony": {
+      "global_device_id": 173673,
+      "device_type": 5,
+      "codeset": "68428a8b999f0a77"
+    }
+  }
+}

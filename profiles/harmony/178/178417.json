@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "harmony:178417",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Atoll",
+  "model": "PR300",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2d24259d8505d5bd",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "BYPASS",
+      "steps": [
+        {
+          "command": "Bypass",
+          "hold_ms": 2000
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Atoll/PR300.json"
+    ],
+    "harmony": {
+      "global_device_id": 178417,
+      "device_type": 19,
+      "codeset": "8baa3d81d9aa8771"
+    }
+  }
+}

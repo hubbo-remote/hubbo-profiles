@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170098",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Schmartz",
+  "model": "PS3IRX1",
+  "kind": "console",
+  "platform": "ir",
+  "codeset": "fec8602a4ba5f5d5",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "DirectionLeft",
+        "hold_ms": 1000
+      },
+      {
+        "command": "DirectionUp",
+        "hold_ms": 500
+      },
+      {
+        "command": "X"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "X"
+      },
+      {
+        "command": "DirectionDown"
+      },
+      {
+        "command": "X"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Schmartz/PS3IRX1.json"
+    ],
+    "harmony": {
+      "global_device_id": 170098,
+      "device_type": 23,
+      "codeset": "ddfb78f33cb21945"
+    }
+  }
+}

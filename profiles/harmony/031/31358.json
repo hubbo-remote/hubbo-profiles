@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:31358",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vector Research",
+  "model": "VRX-5200R",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "fe265b7249e19216",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TAPE 1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "TAPE 2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    },
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vector_Research/VRX-5200R.json"
+    ],
+    "harmony": {
+      "global_device_id": 31358,
+      "device_type": 5,
+      "codeset": "1e48276012fb3946"
+    }
+  }
+}

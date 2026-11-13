@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:73290",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lifetec",
+  "model": "LT-7989",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "08667842626caeca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lifetec/LT-7989.json"
+    ],
+    "harmony": {
+      "global_device_id": 73290,
+      "device_type": 22,
+      "codeset": "e7ba6fcefb35a6bb"
+    }
+  }
+}

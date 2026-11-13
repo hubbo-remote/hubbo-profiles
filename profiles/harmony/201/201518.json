@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201518",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "UPC",
+  "model": "DCR 8111/03",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "f90237f6d06526f7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "UPC",
+      "steps": [
+        {
+          "command": "UPC"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "TvRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/UPC/DCR_8111_03.json"
+    ],
+    "harmony": {
+      "global_device_id": 201518,
+      "device_type": 18,
+      "codeset": "1316ae2bb9fe9d04"
+    }
+  }
+}

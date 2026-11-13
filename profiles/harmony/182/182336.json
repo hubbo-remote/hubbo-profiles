@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182336",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-24900",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "89449d9d3b096294",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-24900.json"
+    ],
+    "harmony": {
+      "global_device_id": 182336,
+      "device_type": 18,
+      "codeset": "3862141242c327d1"
+    }
+  }
+}

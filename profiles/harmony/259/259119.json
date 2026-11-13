@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259119",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "RWI313",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "444ca1b77c640052",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/RWI313.json"
+    ],
+    "harmony": {
+      "global_device_id": 259119,
+      "device_type": 5,
+      "codeset": "5ecef25e48d8d706"
+    }
+  }
+}

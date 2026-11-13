@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58010",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "DVD-8500",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "69ea1279c0b6986e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/DVD-8500.json"
+    ],
+    "harmony": {
+      "global_device_id": 58010,
+      "device_type": 25,
+      "codeset": "486e21145c5aa8eb"
+    }
+  }
+}

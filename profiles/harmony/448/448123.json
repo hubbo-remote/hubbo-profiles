@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:448123",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TaoTronics",
+  "model": "TT-SK019",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "56dc02167861d8f1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Coax",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TaoTronics/TT-SK019.json"
+    ],
+    "harmony": {
+      "global_device_id": 448123,
+      "device_type": 19,
+      "codeset": "f53dfebd398e727c"
+    }
+  }
+}

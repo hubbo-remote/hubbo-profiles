@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "id": "harmony:124435",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eiki",
+  "model": "EIP-4500",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "2934be595373ac76",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVI-D",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "Input5"
+        }
+      ]
+    },
+    {
+      "name": "RGBHV",
+      "steps": [
+        {
+          "command": "Input6"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "Input7"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eiki/EIP-4500.json"
+    ],
+    "harmony": {
+      "global_device_id": 124435,
+      "device_type": 7,
+      "codeset": "d9662f8fb649a231"
+    }
+  }
+}

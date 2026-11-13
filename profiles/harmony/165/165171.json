@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165171",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "POWERLITE HOME CINEMA 705 HD",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "b28e5c1bf48dac00",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/POWERLITE_HOME_CINEMA_705_HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 165171,
+      "device_type": 7,
+      "codeset": "b0bf94c3908eba47"
+    }
+  }
+}

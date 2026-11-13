@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:75710",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Quicksilver Audio",
+  "model": "QS-AVR500",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "34f58f0407133135",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Video1/Sat",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video2/DVD",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "Multi-CH",
+      "steps": [
+        {
+          "command": "InputMultiCh"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Quicksilver_Audio/QS-AVR500.json"
+    ],
+    "harmony": {
+      "global_device_id": 75710,
+      "device_type": 5,
+      "codeset": "e8915d08d761670a"
+    }
+  }
+}

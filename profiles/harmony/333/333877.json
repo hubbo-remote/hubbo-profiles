@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:333877",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KWorld",
+  "model": "SP800",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "cf0df38ddb4b6de2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "MyMovies"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KWorld/SP800.json"
+    ],
+    "harmony": {
+      "global_device_id": 333877,
+      "device_type": 35,
+      "codeset": "5e473031af52908c"
+    }
+  }
+}

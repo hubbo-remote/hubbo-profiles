@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:91424",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "MBL",
+  "model": "7008",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "07802d197c314fe7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Balanced",
+      "steps": [
+        {
+          "command": "InputBalanced"
+        }
+      ]
+    },
+    {
+      "name": "CD 1",
+      "steps": [
+        {
+          "command": "InputCd1"
+        }
+      ]
+    },
+    {
+      "name": "CD 2",
+      "steps": [
+        {
+          "command": "InputCd2"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Option",
+      "steps": [
+        {
+          "command": "InputOption1"
+        }
+      ]
+    },
+    {
+      "name": "Bypass Processor",
+      "steps": [
+        {
+          "command": "InputProcessor"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/MBL/7008.json"
+    ],
+    "harmony": {
+      "global_device_id": 91424,
+      "device_type": 19,
+      "codeset": "9e17ae9e418199ff"
+    }
+  }
+}

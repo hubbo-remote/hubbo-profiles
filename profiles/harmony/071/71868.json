@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:71868",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "MX-951 PRO",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "39d96f22c53fdbf1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTelevision"
+      },
+      {
+        "command": "InputTv"
+      },
+      {
+        "command": "InputTv"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/MX-951_PRO.json"
+    ],
+    "harmony": {
+      "global_device_id": 71868,
+      "device_type": 22,
+      "codeset": "411dc37cc4f4285d"
+    }
+  }
+}

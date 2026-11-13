@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170880",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sven",
+  "model": "HT-500",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "cfcd82e7291a6dad",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sven/HT-500.json"
+    ],
+    "harmony": {
+      "global_device_id": 170880,
+      "device_type": 19,
+      "codeset": "acae46d6b1de5eca"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:234487",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Maximum",
+  "model": "C-641CX",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "2810cfefd1ec5329",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Maximum/C-641CX.json"
+    ],
+    "harmony": {
+      "global_device_id": 234487,
+      "device_type": 18,
+      "codeset": "e9d88ed17608703e"
+    }
+  }
+}

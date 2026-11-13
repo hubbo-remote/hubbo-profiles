@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260436",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "XM-2950G",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ce8d11db1f57350d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "Video1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "Video2"
+        }
+      ]
+    },
+    {
+      "name": "RGB 1",
+      "steps": [
+        {
+          "command": "RGB1"
+        }
+      ]
+    },
+    {
+      "name": "RGB 2",
+      "steps": [
+        {
+          "command": "RGB2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/XM-2950G.json"
+    ],
+    "harmony": {
+      "global_device_id": 260436,
+      "device_type": 13,
+      "codeset": "ecbea1288a44f8c5"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57071",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Broksonic",
+  "model": "CTSGT-9369T",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "3cff56d0619fa1c7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Broksonic/CTSGT-9369T.json"
+    ],
+    "harmony": {
+      "global_device_id": 57071,
+      "device_type": 15,
+      "codeset": "8525642def25fe68"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:156282",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "NX-PS2",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0e95b8ba01488476",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "IPOD",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/NX-PS2.json"
+    ],
+    "harmony": {
+      "global_device_id": 156282,
+      "device_type": 21,
+      "codeset": "8e0244f17b63e567"
+    }
+  }
+}

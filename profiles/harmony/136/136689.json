@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:136689",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aiwa",
+  "model": "CSD-ES977HR",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "8455959a69d96851",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aiwa/CSD-ES977HR.json"
+    ],
+    "harmony": {
+      "global_device_id": 136689,
+      "device_type": 21,
+      "codeset": "1e735ebf3fdf7b1b"
+    }
+  }
+}

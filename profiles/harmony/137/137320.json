@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:137320",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Antec",
+  "model": "Fusion 430 V2",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "488d4f71ad5b27a4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Antec/Fusion_430_V2.json"
+    ],
+    "harmony": {
+      "global_device_id": 137320,
+      "device_type": 35,
+      "codeset": "dfac0d44d78d98fa"
+    }
+  }
+}

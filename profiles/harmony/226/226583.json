@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226583",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LPC-130",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "17047c88d2601b39",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LPC-130.json"
+    ],
+    "harmony": {
+      "global_device_id": 226583,
+      "device_type": 21,
+      "codeset": "98eb11f32c71ea0c"
+    }
+  }
+}

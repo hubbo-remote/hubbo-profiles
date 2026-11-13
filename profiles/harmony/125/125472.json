@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:125472",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Finlux",
+  "model": "3624E",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "31ed0241f93d8935",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "TvVideo"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "Aux"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "Sat"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "SEL"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Finlux/3624E.json"
+    ],
+    "harmony": {
+      "global_device_id": 125472,
+      "device_type": 1,
+      "codeset": "dc0e8c10798f72e1"
+    }
+  }
+}

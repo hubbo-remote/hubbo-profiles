@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:53369",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "LX800SA",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "ab08e28da7406cae",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv/Av",
+      "steps": [
+        {
+          "command": "InputTvAv"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux/Di",
+      "steps": [
+        {
+          "command": "InputAuxDi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/LX800SA.json"
+    ],
+    "harmony": {
+      "global_device_id": 53369,
+      "device_type": 22,
+      "codeset": "7fbdfbbe8544160f"
+    }
+  }
+}

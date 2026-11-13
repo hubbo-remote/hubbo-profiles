@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:206826",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Avtrol",
+  "model": "ANIRIN-PC",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "cc425d40ccb7d55a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "Photos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "VideosPodcasts"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Avtrol/ANIRIN-PC.json"
+    ],
+    "harmony": {
+      "global_device_id": 206826,
+      "device_type": 35,
+      "codeset": "400d86b24a12a4f3"
+    }
+  }
+}

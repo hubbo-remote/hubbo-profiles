@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:120217",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu",
+  "model": "NX-95T/D",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "8e457e638724773d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "Blue"
+        }
+      ]
+    },
+    {
+      "name": "MyMedia",
+      "steps": [
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Yellow"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu/NX-95T_D.json"
+    ],
+    "harmony": {
+      "global_device_id": 120217,
+      "device_type": 35,
+      "codeset": "f313181a696ef8f7"
+    }
+  }
+}

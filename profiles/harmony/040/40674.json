@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40674",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "R-42L",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "be69586f369685a3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Vidéo",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/R-42L.json"
+    ],
+    "harmony": {
+      "global_device_id": 40674,
+      "device_type": 5,
+      "codeset": "391115369a2c86c8"
+    }
+  }
+}

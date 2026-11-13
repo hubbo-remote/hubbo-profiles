@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:132629",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "DM-2000P",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "dcb44ee04e9bbe6c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "RGB1",
+      "steps": [
+        {
+          "command": "RGBPC"
+        }
+      ]
+    },
+    {
+      "name": "RGB2",
+      "steps": [
+        {
+          "command": "RGB2"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "Video1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "Video2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/DM-2000P.json"
+    ],
+    "harmony": {
+      "global_device_id": 132629,
+      "device_type": 13,
+      "codeset": "0dfd808a7507cef4"
+    }
+  }
+}

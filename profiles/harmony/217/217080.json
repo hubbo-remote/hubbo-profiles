@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:217080",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Canon",
+  "model": "SX800",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "64ff3c408281243c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "OK"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Canon/SX800.json"
+    ],
+    "harmony": {
+      "global_device_id": 217080,
+      "device_type": 7,
+      "codeset": "4d3a78bb19e8622f"
+    }
+  }
+}

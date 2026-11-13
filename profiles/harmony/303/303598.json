@@ -1,0 +1,225 @@
+{
+  "schema_version": 1,
+  "id": "harmony:303598",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC-65S3H",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5bae0d62db45c5c4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 19000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "ATV",
+      "steps": [
+        {
+          "command": "InputAtv"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputAtv"
+        }
+      ]
+    },
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "InputDtv"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputExt3"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputExt4"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputExt5"
+        }
+      ]
+    },
+    {
+      "name": "Home Network(DLNA)",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputExt5"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "InputExt5"
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Smart",
+      "steps": [
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Return"
+        },
+        {
+          "command": "Smart"
+        },
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "Smart"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC-65S3H.json"
+    ],
+    "harmony": {
+      "global_device_id": 303598,
+      "device_type": 1,
+      "codeset": "0587424dcfe4cb1d"
+    }
+  }
+}

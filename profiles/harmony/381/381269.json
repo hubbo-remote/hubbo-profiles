@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:381269",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "NP-S303",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "7d1c8e37a6c97125",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "NET",
+      "steps": [
+        {
+          "command": "InputNet"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/NP-S303.json"
+    ],
+    "harmony": {
+      "global_device_id": 381269,
+      "device_type": 33,
+      "codeset": "e193bf013d5d1601"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:103562",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Radiient",
+  "model": "KS-101A",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "8df3154b09dc24e9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Radiient/KS-101A.json"
+    ],
+    "harmony": {
+      "global_device_id": 103562,
+      "device_type": 30,
+      "codeset": "10ae93687c18e715"
+    }
+  }
+}

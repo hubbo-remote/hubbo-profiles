@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111444",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Burmester",
+  "model": "991",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "781beaffd653079d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Burmester/991.json"
+    ],
+    "harmony": {
+      "global_device_id": 111444,
+      "device_type": 19,
+      "codeset": "0e66a71102600694"
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:4476",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Carver",
+  "model": "CT-17",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a599eff2db074b97",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Remote",
+      "steps": [
+        {
+          "command": "InputRemote"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Carver/CT-17.json"
+    ],
+    "harmony": {
+      "global_device_id": 4476,
+      "device_type": 5,
+      "codeset": "5c6d2fd256c21f8c"
+    }
+  }
+}

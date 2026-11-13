@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129879",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "32PW9520",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6534f59e3ea53212",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "EXT1:DIGITAL STB",
+      "steps": [
+        {
+          "command": "InputCable"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    },
+    {
+      "name": "EXT2:DVD",
+      "steps": [
+        {
+          "command": "InputCable"
+        }
+      ]
+    },
+    {
+      "name": "Side",
+      "steps": [
+        {
+          "command": "InputCable"
+        },
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/32PW9520.json"
+    ],
+    "harmony": {
+      "global_device_id": 129879,
+      "device_type": 1,
+      "codeset": "b23c2596b38c1815"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:261676",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "McVoice",
+  "model": "AV-698",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a5b24f24c47cab0f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCD",
+      "steps": [
+        {
+          "command": "InputVcd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AC-3",
+      "steps": [
+        {
+          "command": "InputAC3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/McVoice/AV-698.json"
+    ],
+    "harmony": {
+      "global_device_id": 261676,
+      "device_type": 19,
+      "codeset": "9215d61230098a2b"
+    }
+  }
+}

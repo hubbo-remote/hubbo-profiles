@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270256",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dream Multimedia",
+  "model": "DM820 HD",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "bd6fb070273ab48b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dream_Multimedia/DM820_HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 270256,
+      "device_type": 18,
+      "codeset": "23709692215473be"
+    }
+  }
+}

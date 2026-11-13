@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202502",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Funai",
+  "model": "D8D-D4110DB",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "d7a46a4d48a6d101",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Funai/D8D-D4110DB.json"
+    ],
+    "harmony": {
+      "global_device_id": 202502,
+      "device_type": 25,
+      "codeset": "2b1cc13b2e1e82b9"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:230750",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Akai",
+  "model": "AMD50",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "62f0ce234bf01b72",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Akai/AMD50.json"
+    ],
+    "harmony": {
+      "global_device_id": 230750,
+      "device_type": 22,
+      "codeset": "856145a5280e8a15"
+    }
+  }
+}

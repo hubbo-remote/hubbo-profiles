@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:157983",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "RD-XV45",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "41fcdfef3d659dd7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/RD-XV45.json"
+    ],
+    "harmony": {
+      "global_device_id": 157983,
+      "device_type": 47,
+      "codeset": "c478b5c9b077bd5c"
+    }
+  }
+}

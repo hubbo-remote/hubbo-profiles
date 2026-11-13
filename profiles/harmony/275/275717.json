@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:275717",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LAC450B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "69fb57e88939f453",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Port In",
+      "steps": [
+        {
+          "command": "InputPortIn"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "LG TV",
+      "steps": [
+        {
+          "command": "LGTV"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LAC450B.json"
+    ],
+    "harmony": {
+      "global_device_id": 275717,
+      "device_type": 19,
+      "codeset": "482af7eebb519014"
+    }
+  }
+}

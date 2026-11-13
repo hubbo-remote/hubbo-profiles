@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:276406",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "EnVivo",
+  "model": "67618",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ba08f9f8afc558cb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/EnVivo/67618.json"
+    ],
+    "harmony": {
+      "global_device_id": 276406,
+      "device_type": 19,
+      "codeset": "585c211b320c2ea6"
+    }
+  }
+}

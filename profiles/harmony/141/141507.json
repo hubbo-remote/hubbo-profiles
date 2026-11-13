@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:141507",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "DVR-HG865",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "0e807aaa967b7ca4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/DVR-HG865.json"
+    ],
+    "harmony": {
+      "global_device_id": 141507,
+      "device_type": 34,
+      "codeset": "a06f0e476f2ed959"
+    }
+  }
+}

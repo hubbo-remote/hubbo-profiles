@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:147310",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "VSX-90TXV (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "66dc1cc40362d0ec",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV/Sat",
+      "steps": [
+        {
+          "command": "InputTvSat"
+        }
+      ]
+    },
+    {
+      "name": "DVD/LD",
+      "steps": [
+        {
+          "command": "InputDvdLd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVR/VCR",
+      "steps": [
+        {
+          "command": "InputDvrVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/VSX-90TXV_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 147310,
+      "device_type": 5,
+      "codeset": "db6171a75ead9a8d"
+    }
+  }
+}

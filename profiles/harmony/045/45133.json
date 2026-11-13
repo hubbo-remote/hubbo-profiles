@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:45133",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RCD-152",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "9654e274835de84a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RCD-152.json"
+    ],
+    "harmony": {
+      "global_device_id": 45133,
+      "device_type": 21,
+      "codeset": "ba5f78be341afe90"
+    }
+  }
+}

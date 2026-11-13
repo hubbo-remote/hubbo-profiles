@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155621",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "DFX-6402S",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "a319d438a45bd1ff",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/DFX-6402S.json"
+    ],
+    "harmony": {
+      "global_device_id": 155621,
+      "device_type": 47,
+      "codeset": "8746ddfeb8edd1fa"
+    }
+  }
+}

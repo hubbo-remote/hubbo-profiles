@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138137",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DVDO",
+  "model": "iScan HD-50",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "ab8fef6033a46082",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 0,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComp1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComp2"
+        }
+      ]
+    },
+    {
+      "name": "Auto",
+      "steps": [
+        {
+          "command": "InputAuto"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DVDO/iScan_HD-50.json"
+    ],
+    "harmony": {
+      "global_device_id": 138137,
+      "device_type": 30,
+      "codeset": "a669d697e6db6c80"
+    }
+  }
+}

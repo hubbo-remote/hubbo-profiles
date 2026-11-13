@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150207",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Telsey",
+  "model": "Free HD",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "7242a1f8936d9769",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "Select"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Telsey/Free_HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 150207,
+      "device_type": 18,
+      "codeset": "1816c2ff33c9e44a"
+    }
+  }
+}

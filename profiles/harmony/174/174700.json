@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174700",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "ICF-C1IPMK2",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7c12d2544c2b513d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "Play"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AudioIn",
+      "steps": [
+        {
+          "command": "AudioIn"
+        }
+      ]
+    },
+    {
+      "name": "Band",
+      "steps": [
+        {
+          "command": "Band"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/ICF-C1IPMK2.json"
+    ],
+    "harmony": {
+      "global_device_id": 174700,
+      "device_type": 5,
+      "codeset": "145e6a49f840c26b"
+    }
+  }
+}

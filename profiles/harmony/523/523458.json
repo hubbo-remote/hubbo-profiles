@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:523458",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ULTIMEA",
+  "model": "NOVA S50",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "911414a40f7262ba",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "eARC",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Bt",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "OPT",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "LED",
+      "steps": [
+        {
+          "command": "InputLED"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ULTIMEA/NOVA_S50.json"
+    ],
+    "harmony": {
+      "global_device_id": 523458,
+      "device_type": 19,
+      "codeset": "98767fef9e9dfefb"
+    }
+  }
+}

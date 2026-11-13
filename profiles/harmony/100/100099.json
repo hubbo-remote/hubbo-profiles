@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:100099",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "DT-2680A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "2c799dece6603536",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "Video1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "SVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB/PC",
+      "steps": [
+        {
+          "command": "RGBPCToggle"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/DT-2680A.json"
+    ],
+    "harmony": {
+      "global_device_id": 100099,
+      "device_type": 1,
+      "codeset": "f99dd97d02dc89f6"
+    }
+  }
+}

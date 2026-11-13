@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167325",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "RC-199H",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "a834f54dd7676b7d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/RC-199H.json"
+    ],
+    "harmony": {
+      "global_device_id": 167325,
+      "device_type": 47,
+      "codeset": "572cf9f3b9a13b0f"
+    }
+  }
+}

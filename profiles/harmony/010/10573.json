@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:10573",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sceptre",
+  "model": "X20SV-Gecko",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "88a9f6bd2ec311a1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "Ypbpr 1",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Ypbpr 2",
+      "steps": [
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputYCbCr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sceptre/X20SV-Gecko.json"
+    ],
+    "harmony": {
+      "global_device_id": 10573,
+      "device_type": 1,
+      "codeset": "c292e157dfc9eb17"
+    }
+  }
+}

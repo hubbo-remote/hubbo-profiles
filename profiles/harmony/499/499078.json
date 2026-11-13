@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:499078",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "TAB5305",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a2c07d678a9b78c1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "HDMI ARC",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/TAB5305.json"
+    ],
+    "harmony": {
+      "global_device_id": 499078,
+      "device_type": 19,
+      "codeset": "2511def7ab58097f"
+    }
+  }
+}

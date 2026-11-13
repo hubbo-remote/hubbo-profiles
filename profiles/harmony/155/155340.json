@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155340",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Metz",
+  "model": "Artos-82 MF 82 TK 97",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ad59761a87d12f2b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Metz/Artos-82_MF_82_TK_97.json"
+    ],
+    "harmony": {
+      "global_device_id": 155340,
+      "device_type": 1,
+      "codeset": "1c7a1a281cbb11d5"
+    }
+  }
+}

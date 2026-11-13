@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:218187",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "IC100B",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "2cfcd51cebb76eac",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "iPod"
+        }
+      ]
+    },
+    {
+      "name": "CARD",
+      "steps": [
+        {
+          "command": "Card"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    },
+    {
+      "name": "AUX IN",
+      "steps": [
+        {
+          "command": "AuxIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/IC100B.json"
+    ],
+    "harmony": {
+      "global_device_id": 218187,
+      "device_type": 33,
+      "codeset": "cf68c7199c249a4a"
+    }
+  }
+}

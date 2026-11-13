@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201548",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MC-108",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "63c43c1eb2a833ac",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MC-108.json"
+    ],
+    "harmony": {
+      "global_device_id": 201548,
+      "device_type": 21,
+      "codeset": "d64e0b3a04ca5f31"
+    }
+  }
+}

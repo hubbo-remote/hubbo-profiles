@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:101556",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Innovation One",
+  "model": "Cinego D-1000",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "6547271880c91009",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Innovation_One/Cinego_D-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 101556,
+      "device_type": 37,
+      "codeset": "4bd81cdd4739a396"
+    }
+  }
+}

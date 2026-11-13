@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:99482",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grobi",
+  "model": "TVBOX SC7CI HDGB",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "928612e76af44b4f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grobi/TVBOX_SC7CI_HDGB.json"
+    ],
+    "harmony": {
+      "global_device_id": 99482,
+      "device_type": 18,
+      "codeset": "f9f81eae700f6e94"
+    }
+  }
+}

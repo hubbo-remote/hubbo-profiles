@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58248",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aiwa",
+  "model": "AVJ-X5",
+  "kind": "home_theater_vcr",
+  "platform": "ir",
+  "codeset": "5346d1d3920e12d9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aiwa/AVJ-X5.json"
+    ],
+    "harmony": {
+      "global_device_id": 58248,
+      "device_type": 32,
+      "codeset": "9b89cb73a1e096e8"
+    }
+  }
+}

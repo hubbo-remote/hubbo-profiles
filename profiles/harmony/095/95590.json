@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95590",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "T20060GY",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "6053a4bb00cb76bb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/T20060GY.json"
+    ],
+    "harmony": {
+      "global_device_id": 95590,
+      "device_type": 15,
+      "codeset": "1394e7516b49787e"
+    }
+  }
+}

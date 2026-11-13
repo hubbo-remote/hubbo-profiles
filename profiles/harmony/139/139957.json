@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139957",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "TA-VE215M",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "5dcfa83180b0a274",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "5.1Ch",
+      "steps": [
+        {
+          "command": "Input51Ch"
+        }
+      ]
+    },
+    {
+      "name": "Sat/Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/TA-VE215M.json"
+    ],
+    "harmony": {
+      "global_device_id": 139957,
+      "device_type": 19,
+      "codeset": "a86723a39e4d56a3"
+    }
+  }
+}

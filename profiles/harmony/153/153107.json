@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153107",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD 7454",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d6471048fc5f0e17",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD_7454.json"
+    ],
+    "harmony": {
+      "global_device_id": 153107,
+      "device_type": 1,
+      "codeset": "558601cdda9a914a"
+    }
+  }
+}

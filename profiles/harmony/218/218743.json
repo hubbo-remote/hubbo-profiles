@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:218743",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "FT-7192",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "975447a937fb88a1",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "0"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "DirectionUp"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "PS2",
+      "steps": [
+        {
+          "command": "DirectionUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/FT-7192.json"
+    ],
+    "harmony": {
+      "global_device_id": 218743,
+      "device_type": 1,
+      "codeset": "85802a2718306665"
+    }
+  }
+}

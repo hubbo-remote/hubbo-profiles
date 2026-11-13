@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172242",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ZyXEL",
+  "model": "DMA-1000",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "f720fe34bde3b91e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Server",
+      "steps": [
+        {
+          "command": "Server"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ZyXEL/DMA-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 172242,
+      "device_type": 35,
+      "codeset": "350f083e35c05788"
+    }
+  }
+}

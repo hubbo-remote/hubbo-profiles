@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:94081",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Accurian",
+  "model": "15-1937",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "3cacecff9ed49c1b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Accurian/15-1937.json"
+    ],
+    "harmony": {
+      "global_device_id": 94081,
+      "device_type": 5,
+      "codeset": "8144399cab4fdfb6"
+    }
+  }
+}

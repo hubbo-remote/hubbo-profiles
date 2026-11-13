@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:24672",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "AR404",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "401f860692af7009",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "MD/Tape1",
+      "steps": [
+        {
+          "command": "InputMdTape1"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTape2Monitor"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/AR404.json"
+    ],
+    "harmony": {
+      "global_device_id": 24672,
+      "device_type": 5,
+      "codeset": "95fb3c81b2e92611"
+    }
+  }
+}

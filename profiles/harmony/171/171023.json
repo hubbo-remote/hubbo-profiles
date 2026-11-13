@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:171023",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "KRF-A4030",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "045458d3e4bdbfca",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "MD/TAPE1",
+      "steps": [
+        {
+          "command": "InputMdTape1"
+        }
+      ]
+    },
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TAPE2/MONITOR",
+      "steps": [
+        {
+          "command": "InputTape2Monitor"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/KRF-A4030.json"
+    ],
+    "harmony": {
+      "global_device_id": 171023,
+      "device_type": 5,
+      "codeset": "88617fdb4c10e921"
+    }
+  }
+}

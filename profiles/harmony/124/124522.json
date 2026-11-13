@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:124522",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Actiontec",
+  "model": "DMP-011000",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "0c0c8fe9574e92b7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Internet",
+      "steps": [
+        {
+          "command": "InputInternet"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Enter"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Actiontec/DMP-011000.json"
+    ],
+    "harmony": {
+      "global_device_id": 124522,
+      "device_type": 35,
+      "codeset": "11150031a40fec5a"
+    }
+  }
+}

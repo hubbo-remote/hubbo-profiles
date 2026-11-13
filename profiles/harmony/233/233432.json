@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:233432",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "ICF-DS15iP",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "b8b4ca5a5c147fde",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Audio In",
+      "steps": [
+        {
+          "command": "InputAudioIn"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Radio Band",
+      "steps": [
+        {
+          "command": "InputRadioBand"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/ICF-DS15iP.json"
+    ],
+    "harmony": {
+      "global_device_id": 233432,
+      "device_type": 5,
+      "codeset": "d76c8cb7369fc7a6"
+    }
+  }
+}

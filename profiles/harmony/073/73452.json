@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:73452",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "GM-P420PCE",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e9f04239e1de63c5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/GM-P420PCE.json"
+    ],
+    "harmony": {
+      "global_device_id": 73452,
+      "device_type": 13,
+      "codeset": "5219662f23416c6d"
+    }
+  }
+}

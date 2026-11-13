@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "id": "harmony:50328",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-VP790",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "3ae9c549504482b4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "Timer"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "Timer"
+        },
+        {
+          "command": "PowerOn"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-VP790.json"
+    ],
+    "harmony": {
+      "global_device_id": 50328,
+      "device_type": 2,
+      "codeset": "b9d09e9ef79a99ff"
+    }
+  }
+}

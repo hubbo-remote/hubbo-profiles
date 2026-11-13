@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:144628",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "DVD-V2000/XAA",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "e641b7ee3f046c59",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/DVD-V2000_XAA.json"
+    ],
+    "harmony": {
+      "global_device_id": 144628,
+      "device_type": 25,
+      "codeset": "cf8a6c5cb134115f"
+    }
+  }
+}

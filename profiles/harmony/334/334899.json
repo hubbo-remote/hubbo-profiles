@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:334899",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ruarkaudio",
+  "model": "MR1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "9dee489a3ba03b66",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "BLUETOOTH",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "LINE IN",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ruarkaudio/MR1.json"
+    ],
+    "harmony": {
+      "global_device_id": 334899,
+      "device_type": 19,
+      "codeset": "c4553831ac6d0733"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116436",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DVR-710H",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "25ecf80cc291c118",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3,
+    "start": "Greater100"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DVR-710H.json"
+    ],
+    "harmony": {
+      "global_device_id": 116436,
+      "device_type": 34,
+      "codeset": "391fe45ccb6410f2"
+    }
+  }
+}

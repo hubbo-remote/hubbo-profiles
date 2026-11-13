@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135157",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "D76",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "358c142764a180ee",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/D76.json"
+    ],
+    "harmony": {
+      "global_device_id": 135157,
+      "device_type": 34,
+      "codeset": "f15c08fb5a768a75"
+    }
+  }
+}

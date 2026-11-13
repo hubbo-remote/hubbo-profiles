@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:63173",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sherwood",
+  "model": "ES-5030R",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "39fb1f4434e5a885",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sherwood/ES-5030R.json"
+    ],
+    "harmony": {
+      "global_device_id": 63173,
+      "device_type": 5,
+      "codeset": "85c06b369e14a8a1"
+    }
+  }
+}

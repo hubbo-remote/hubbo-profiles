@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "harmony:223094",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bluesky",
+  "model": "BS-42",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "79af836ce25d38ad",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TV/Scart1/Scart2/CVBS/YC",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "RGB/DVI",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Scart2",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bluesky/BS-42.json"
+    ],
+    "harmony": {
+      "global_device_id": 223094,
+      "device_type": 1,
+      "codeset": "843ce1e9b31004d0"
+    }
+  }
+}

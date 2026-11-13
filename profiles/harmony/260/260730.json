@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:260730",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Highlander",
+  "model": "PAS-248",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "3c94540f5ecccda7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AC-3",
+      "steps": [
+        {
+          "command": "InputAC3"
+        }
+      ]
+    },
+    {
+      "name": "VCD",
+      "steps": [
+        {
+          "command": "InputVcd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Highlander/PAS-248.json"
+    ],
+    "harmony": {
+      "global_device_id": 260730,
+      "device_type": 19,
+      "codeset": "8c704bb3fdcf92d7"
+    }
+  }
+}

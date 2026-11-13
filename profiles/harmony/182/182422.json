@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182422",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bluesky",
+  "model": "PDP4210 ST",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4e1bdab861fd52db",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "TV/Scart1/Scart2/CVBS/YC",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "RGB/DVI",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bluesky/PDP4210_ST.json"
+    ],
+    "harmony": {
+      "global_device_id": 182422,
+      "device_type": 1,
+      "codeset": "df745e6770249453"
+    }
+  }
+}

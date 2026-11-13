@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:99119",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daytek",
+  "model": "3270",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "e3726ca48e86cd39",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Scart AV",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Scart S-Vid",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Scart RGB",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "YpbPr",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daytek/3270.json"
+    ],
+    "harmony": {
+      "global_device_id": 99119,
+      "device_type": 1,
+      "codeset": "859ba820763a2e66"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "harmony:45716",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "MX-D451TR",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "ddb7bb79ab362ab7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Cd 1",
+      "steps": [
+        {
+          "command": "Disc1"
+        },
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "Cd 2",
+      "steps": [
+        {
+          "command": "Disc2"
+        },
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "Cd 3",
+      "steps": [
+        {
+          "command": "Disc3"
+        },
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/MX-D451TR.json"
+    ],
+    "harmony": {
+      "global_device_id": 45716,
+      "device_type": 22,
+      "codeset": "d5a8b4ee00337f17"
+    }
+  }
+}

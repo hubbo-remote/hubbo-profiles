@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:167508",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DVR-450HS",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "7e9954473848114f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DVR-450HS.json"
+    ],
+    "harmony": {
+      "global_device_id": 167508,
+      "device_type": 34,
+      "codeset": "b17322f9af10fe35"
+    }
+  }
+}

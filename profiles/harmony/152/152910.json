@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "harmony:152910",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Harman Kardon",
+  "model": "AVR-174",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7a558002f42a0b46",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Harman_Kardon/AVR-174.json"
+    ],
+    "harmony": {
+      "global_device_id": 152910,
+      "device_type": 5,
+      "codeset": "4b89253ca32171fd"
+    }
+  }
+}

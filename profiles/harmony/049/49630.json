@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:49630",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cinex",
+  "model": "37711T",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f02220aff647bfe7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cinex/37711T.json"
+    ],
+    "harmony": {
+      "global_device_id": 49630,
+      "device_type": 1,
+      "codeset": "68fe7e00ef173968"
+    }
+  }
+}

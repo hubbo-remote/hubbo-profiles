@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143842",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DVDR3577H/31",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "314a4ba7177de171",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDDList",
+      "steps": [
+        {
+          "command": "HDDList"
+        }
+      ]
+    },
+    {
+      "name": "LiveTV",
+      "steps": [
+        {
+          "command": "LiveTv"
+        }
+      ]
+    },
+    {
+      "name": "CAM",
+      "steps": [
+        {
+          "command": "CAM"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "Disc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DVDR3577H_31.json"
+    ],
+    "harmony": {
+      "global_device_id": 143842,
+      "device_type": 34,
+      "codeset": "d79c55eb8fbe4b29"
+    }
+  }
+}

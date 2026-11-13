@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:170863",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Netgear",
+  "model": "EVA-9150",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "e4ae624782b5014c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pics",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Web",
+      "steps": [
+        {
+          "command": "MyWeb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Netgear/EVA-9150.json"
+    ],
+    "harmony": {
+      "global_device_id": 170863,
+      "device_type": 35,
+      "codeset": "b5a51d73c12c9ed5"
+    }
+  }
+}

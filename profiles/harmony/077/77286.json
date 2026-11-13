@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:77286",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AVerMedia",
+  "model": "AVerTV Studio 507",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "fdb7557a3363f511",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "InputTvFm"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "InputTeletext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AVerMedia/AVerTV_Studio_507.json"
+    ],
+    "harmony": {
+      "global_device_id": 77286,
+      "device_type": 35,
+      "codeset": "4520105175bf2d39"
+    }
+  }
+}

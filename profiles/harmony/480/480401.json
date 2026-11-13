@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480401",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Axas",
+  "model": "HIS 4K Combo",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "beb1e2123d764713",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "IPTV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Axas/HIS_4K_Combo.json"
+    ],
+    "harmony": {
+      "global_device_id": 480401,
+      "device_type": 18,
+      "codeset": "103b0869f61936ad"
+    }
+  }
+}

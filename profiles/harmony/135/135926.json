@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135926",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "VA-6DVD",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "569b4944d04d29f8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMode"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Front/AUX",
+      "steps": [
+        {
+          "command": "InputFrontAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/VA-6DVD.json"
+    ],
+    "harmony": {
+      "global_device_id": 135926,
+      "device_type": 22,
+      "codeset": "f03b05578d1a4e49"
+    }
+  }
+}

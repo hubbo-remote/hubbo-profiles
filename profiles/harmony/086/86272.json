@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:86272",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dell",
+  "model": "4200MP",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "98e6f7e8091c2d5b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dell/4200MP.json"
+    ],
+    "harmony": {
+      "global_device_id": 86272,
+      "device_type": 7,
+      "codeset": "5b9c36d971391ac1"
+    }
+  }
+}

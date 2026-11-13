@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "harmony:164042",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Syntax-Brillian",
+  "model": "Olevia 252T FHD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "758aab49d73b1b1e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner 1",
+      "steps": [
+        {
+          "command": "InputVga"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "Tuner 2",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Composite 1",
+      "steps": [
+        {
+          "command": "InputComposite1"
+        }
+      ]
+    },
+    {
+      "name": "Composite 2",
+      "steps": [
+        {
+          "command": "InputComposite2"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 1",
+      "steps": [
+        {
+          "command": "InputSVideo1"
+        }
+      ]
+    },
+    {
+      "name": "S-Video 2",
+      "steps": [
+        {
+          "command": "InputSVideo2"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Syntax-Brillian/Olevia_252T_FHD.json"
+    ],
+    "harmony": {
+      "global_device_id": 164042,
+      "device_type": 1,
+      "codeset": "67532c559f31b912"
+    }
+  }
+}

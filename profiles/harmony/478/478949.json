@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:478949",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SilverCrest",
+  "model": "SSB 50 A1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "978a92a430e5cf06",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI Arc",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SilverCrest/SSB_50_A1.json"
+    ],
+    "harmony": {
+      "global_device_id": 478949,
+      "device_type": 19,
+      "codeset": "98363431d2fc1478"
+    }
+  }
+}

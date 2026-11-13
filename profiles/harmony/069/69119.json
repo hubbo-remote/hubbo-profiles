@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "id": "harmony:69119",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "F27644",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputSatCable"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "S Video",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/F27644.json"
+    ],
+    "harmony": {
+      "global_device_id": 69119,
+      "device_type": 1,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

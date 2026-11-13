@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180098",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thomson",
+  "model": "VPH-6800G",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "19ce4f32f11e6c79",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "VCR"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thomson/VPH-6800G.json"
+    ],
+    "harmony": {
+      "global_device_id": 180098,
+      "device_type": 2,
+      "codeset": "9f38434a3c5f8d35"
+    }
+  }
+}

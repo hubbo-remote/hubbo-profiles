@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "id": "harmony:183084",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "LT-26S60SU",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "bf5fb5e0382014de",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "E1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "E2",
+      "steps": [
+        {
+          "command": "InputVideo2"
+        }
+      ]
+    },
+    {
+      "name": "E3",
+      "steps": [
+        {
+          "command": "InputVideo3"
+        }
+      ]
+    },
+    {
+      "name": "E4",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        }
+      ]
+    },
+    {
+      "name": "E5",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputVideo4"
+        },
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 3500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/LT-26S60SU.json"
+    ],
+    "harmony": {
+      "global_device_id": 183084,
+      "device_type": 1,
+      "codeset": "9dfce4a41ed2c496"
+    }
+  }
+}

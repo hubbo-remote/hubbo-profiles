@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:108677",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Amitech",
+  "model": "724",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "d8cd31d8912ae412",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "ChannelDown"
+      },
+      {
+        "command": "ChannelUp"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DV/USB",
+      "steps": [
+        {
+          "command": "InputDVUSB"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SOURCE",
+      "steps": [
+        {
+          "command": "InputTvMonitor"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Amitech/724.json"
+    ],
+    "harmony": {
+      "global_device_id": 108677,
+      "device_type": 34,
+      "codeset": "1c5b4d08f445197f"
+    }
+  }
+}

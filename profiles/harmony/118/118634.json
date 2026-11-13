@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118634",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "FX Furniture",
+  "model": "PlasmaLift2",
+  "kind": "accessory",
+  "platform": "ir",
+  "codeset": "82ae21c281c843a4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "DirectionUp"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 5000
+      },
+      {
+        "delay_ms": 5000
+      },
+      {
+        "delay_ms": 5000
+      },
+      {
+        "delay_ms": 5000
+      },
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "DirectionDown"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/FX_Furniture/PlasmaLift2.json"
+    ],
+    "harmony": {
+      "global_device_id": 118634,
+      "device_type": 44,
+      "codeset": "ca317f852de023af"
+    }
+  }
+}

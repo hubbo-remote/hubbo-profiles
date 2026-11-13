@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:250586",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sencor",
+  "model": "SHR 9500T",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "676ad49d4b3b2f64",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DTV",
+      "steps": [
+        {
+          "command": "DTV"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "USB"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "LAN"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sencor/SHR_9500T.json"
+    ],
+    "harmony": {
+      "global_device_id": 250586,
+      "device_type": 35,
+      "codeset": "5a8a752e2dc2d5d6"
+    }
+  }
+}

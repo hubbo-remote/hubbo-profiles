@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:73647",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lenco",
+  "model": "DVD-514H",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "54c4bccdd1794852",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lenco/DVD-514H.json"
+    ],
+    "harmony": {
+      "global_device_id": 73647,
+      "device_type": 22,
+      "codeset": "c169fbfda979076d"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:143301",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "NAS-A10",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "04c5f2163469598f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputAMFM"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTapeAB"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/NAS-A10.json"
+    ],
+    "harmony": {
+      "global_device_id": 143301,
+      "device_type": 21,
+      "codeset": "a93bb7418d8f51d8"
+    }
+  }
+}

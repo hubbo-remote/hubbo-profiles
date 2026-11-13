@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:279970",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "OTT TV BOX",
+  "model": "MXV",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "86423c42cb0d0fc7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Media",
+      "steps": [
+        {
+          "command": "Media"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "Web",
+      "steps": [
+        {
+          "command": "WebBrowser"
+        }
+      ]
+    },
+    {
+      "name": "App",
+      "steps": [
+        {
+          "command": "App"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/OTT_TV_BOX/MXV.json"
+    ],
+    "harmony": {
+      "global_device_id": 279970,
+      "device_type": 35,
+      "codeset": "bf4d729115177c2f"
+    }
+  }
+}

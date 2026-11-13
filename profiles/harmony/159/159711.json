@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:159711",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pure Digital",
+  "model": "Evoke-2",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "8b8520db0690b1da",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pure_Digital/Evoke-2.json"
+    ],
+    "harmony": {
+      "global_device_id": 159711,
+      "device_type": 36,
+      "codeset": "9106134bf8c62533"
+    }
+  }
+}

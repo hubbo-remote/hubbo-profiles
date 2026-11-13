@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:499237",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hisense",
+  "model": "HS201C1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "78d4eac304e4d4a5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Opt/Coax",
+      "steps": [
+        {
+          "command": "InputOptCoax"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "HDMI Arc",
+      "steps": [
+        {
+          "command": "InputHdmiArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hisense/HS201C1.json"
+    ],
+    "harmony": {
+      "global_device_id": 499237,
+      "device_type": 19,
+      "codeset": "9224ad702e165b8b"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:225281",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Rocketfish",
+  "model": "RF-RBWS01",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "c021970ca443b03b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Rocketfish/RF-RBWS01.json"
+    ],
+    "harmony": {
+      "global_device_id": 225281,
+      "device_type": 19,
+      "codeset": "9188f38bc12d5a92"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:152127",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "X1160Z",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "d2e00d5fef2258c6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/X1160Z.json"
+    ],
+    "harmony": {
+      "global_device_id": 152127,
+      "device_type": 7,
+      "codeset": "d5870a5e94a8dd4f"
+    }
+  }
+}

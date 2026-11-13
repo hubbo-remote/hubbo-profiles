@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:214397",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kramer",
+  "model": "VP-435",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "00135b940e929124",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HD",
+      "steps": [
+        {
+          "command": "InputHD"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kramer/VP-435.json"
+    ],
+    "harmony": {
+      "global_device_id": 214397,
+      "device_type": 30,
+      "codeset": "bba9a48cc646a2db"
+    }
+  }
+}

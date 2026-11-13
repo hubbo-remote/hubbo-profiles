@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:93704",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Metz",
+  "model": "Crystal 70",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ad59761a87d12f2b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "NoOp"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "NoOp"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "NoOp"
+        }
+      ]
+    },
+    {
+      "name": "AV4",
+      "steps": [
+        {
+          "command": "InputAv"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "NoOp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Metz/Crystal_70.json"
+    ],
+    "harmony": {
+      "global_device_id": 93704,
+      "device_type": 1,
+      "codeset": "1c7a1a281cbb11d5"
+    }
+  }
+}

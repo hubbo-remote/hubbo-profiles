@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181537",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "KV-M1440",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6632f14c8106cafc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/KV-M1440.json"
+    ],
+    "harmony": {
+      "global_device_id": 181537,
+      "device_type": 1,
+      "codeset": "9c99301f185c38ce"
+    }
+  }
+}

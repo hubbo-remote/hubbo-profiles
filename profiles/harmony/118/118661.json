@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "harmony:118661",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Westinghouse",
+  "model": "LTV-46W6 HD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1d24a149982c9192",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Westinghouse/LTV-46W6_HD.json"
+    ],
+    "harmony": {
+      "global_device_id": 118661,
+      "device_type": 1,
+      "codeset": "d456234c3e02b6e3"
+    }
+  }
+}

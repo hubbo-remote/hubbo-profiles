@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226796",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MX 3500 D3701",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "4e5d3f02fab3c04b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MX_3500_D3701.json"
+    ],
+    "harmony": {
+      "global_device_id": 226796,
+      "device_type": 22,
+      "codeset": "ed90fbeb8833b921"
+    }
+  }
+}

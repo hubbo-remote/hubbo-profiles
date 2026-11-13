@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:130161",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vidikron",
+  "model": "Vision Model 85",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0d72e9e6f10d6982",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputDVI1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputDvi2"
+        }
+      ]
+    },
+    {
+      "name": "HD 1",
+      "steps": [
+        {
+          "command": "InputHD1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vidikron/Vision_Model_85.json"
+    ],
+    "harmony": {
+      "global_device_id": 130161,
+      "device_type": 7,
+      "codeset": "5ca6a824dd59a626"
+    }
+  }
+}

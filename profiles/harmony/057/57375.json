@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57375",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "EX-M3",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "96078c6d61e5b087",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/EX-M3.json"
+    ],
+    "harmony": {
+      "global_device_id": 57375,
+      "device_type": 21,
+      "codeset": "413a51332c7a1801"
+    }
+  }
+}

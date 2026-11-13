@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:161538",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "DVD-VR375A",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "afda63ad4dc25569",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/DVD-VR375A.json"
+    ],
+    "harmony": {
+      "global_device_id": 161538,
+      "device_type": 47,
+      "codeset": "bef6fbe0b5ec29f1"
+    }
+  }
+}

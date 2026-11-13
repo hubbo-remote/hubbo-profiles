@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:275658",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Blaupunkt",
+  "model": "TV LS 155-1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "73158268bb1543e7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Blaupunkt/TV_LS_155-1.json"
+    ],
+    "harmony": {
+      "global_device_id": 275658,
+      "device_type": 19,
+      "codeset": "528513ec914d8f8a"
+    }
+  }
+}

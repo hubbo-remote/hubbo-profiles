@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58765",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Nikko",
+  "model": "NA-150",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "c86e4a0679a580cc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "SelectFm"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Nikko/NA-150.json"
+    ],
+    "harmony": {
+      "global_device_id": 58765,
+      "device_type": 5,
+      "codeset": "47f83ff7ca61a51c"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:336722",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DCS",
+  "model": "Scarlatti Upsampler",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "74329f29923e897a",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SPDIF 1",
+      "steps": [
+        {
+          "command": "InputSpdif1"
+        }
+      ]
+    },
+    {
+      "name": "SPDIF 2",
+      "steps": [
+        {
+          "command": "InputSpdif2"
+        }
+      ]
+    },
+    {
+      "name": "AES",
+      "steps": [
+        {
+          "command": "InputAes"
+        }
+      ]
+    },
+    {
+      "name": "BNC",
+      "steps": [
+        {
+          "command": "InputBnc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DCS/Scarlatti_Upsampler.json"
+    ],
+    "harmony": {
+      "global_device_id": 336722,
+      "device_type": 30,
+      "codeset": "e510b646391519e0"
+    }
+  }
+}

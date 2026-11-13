@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:337215",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "OpenBox",
+  "model": "FORMULER F4",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "7016a4aa54f86fb7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/OpenBox/FORMULER_F4.json"
+    ],
+    "harmony": {
+      "global_device_id": 337215,
+      "device_type": 18,
+      "codeset": "e29abf13c5db6e2b"
+    }
+  }
+}

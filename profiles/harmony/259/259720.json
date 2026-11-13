@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259720",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "DLA-RS57",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a24b1c0671b05a5f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff",
+        "hold_ms": 1500
+      },
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerOff",
+        "hold_ms": 1500
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/DLA-RS57.json"
+    ],
+    "harmony": {
+      "global_device_id": 259720,
+      "device_type": 7,
+      "codeset": "81b556385d1a3a94"
+    }
+  }
+}

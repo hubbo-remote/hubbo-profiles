@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:391508",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "EB-2265U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "38d0803463b1b586",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/EB-2265U.json"
+    ],
+    "harmony": {
+      "global_device_id": 391508,
+      "device_type": 7,
+      "codeset": "ce311f89aac1c34a"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263282",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Monitor Audio",
+  "model": "Airstream A100",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "77f13bc08386b629",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "Analogue",
+      "steps": [
+        {
+          "command": "InputAnalogue"
+        }
+      ]
+    },
+    {
+      "name": "Airplay",
+      "steps": [
+        {
+          "command": "InputAirplay"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Monitor_Audio/Airstream_A100.json"
+    ],
+    "harmony": {
+      "global_device_id": 263282,
+      "device_type": 33,
+      "codeset": "11b09b2fd653ffe7"
+    }
+  }
+}

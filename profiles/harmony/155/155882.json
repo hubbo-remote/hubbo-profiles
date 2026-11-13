@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155882",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "T+A",
+  "model": "Caruso",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "d57e12e71132d6b4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "SCL",
+      "steps": [
+        {
+          "command": "Scl"
+        }
+      ]
+    },
+    {
+      "name": "DISC",
+      "steps": [
+        {
+          "command": "Disc"
+        }
+      ]
+    },
+    {
+      "name": "A1/PH",
+      "steps": [
+        {
+          "command": "InputA1PH"
+        }
+      ]
+    },
+    {
+      "name": "A2/TV",
+      "steps": [
+        {
+          "command": "InputA2TV"
+        }
+      ]
+    },
+    {
+      "name": "A3/TUN",
+      "steps": [
+        {
+          "command": "InputA3Tuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/T_A/Caruso.json"
+    ],
+    "harmony": {
+      "global_device_id": 155882,
+      "device_type": 22,
+      "codeset": "08edbc5ef0715d7b"
+    }
+  }
+}

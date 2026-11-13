@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:39935",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SA-PM9",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "7249b0c71ec5ca64",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SA-PM9.json"
+    ],
+    "harmony": {
+      "global_device_id": 39935,
+      "device_type": 21,
+      "codeset": "ed886148c2b83eec"
+    }
+  }
+}

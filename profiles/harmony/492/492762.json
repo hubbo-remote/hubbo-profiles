@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:492762",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ViewSonic",
+  "model": "PJD5553LWS",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f5401fc970317f28",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ViewSonic/PJD5553LWS.json"
+    ],
+    "harmony": {
+      "global_device_id": 492762,
+      "device_type": 7,
+      "codeset": "bb1cc05d08a8d4c3"
+    }
+  }
+}

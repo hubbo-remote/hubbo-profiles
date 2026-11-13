@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:88640",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kiss",
+  "model": "DP-600",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "540c8e355ea743ff",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "PC Link",
+      "steps": [
+        {
+          "command": "InputPcLink"
+        }
+      ]
+    },
+    {
+      "name": "Kiss Online",
+      "steps": [
+        {
+          "command": "InputKissOnline"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kiss/DP-600.json"
+    ],
+    "harmony": {
+      "global_device_id": 88640,
+      "device_type": 35,
+      "codeset": "c568be8b173cc3a4"
+    }
+  }
+}

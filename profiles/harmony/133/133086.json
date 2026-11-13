@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "id": "harmony:133086",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sole",
+  "model": "SLTV-40AS1",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "6acb0f81bd6796af",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "S-Video AV3",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "4"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "6"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "7"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "ChannelPrev"
+        },
+        {
+          "command": "8"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sole/SLTV-40AS1.json"
+    ],
+    "harmony": {
+      "global_device_id": 133086,
+      "device_type": 1,
+      "codeset": "22c3fa2723aed8f8"
+    }
+  }
+}

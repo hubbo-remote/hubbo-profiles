@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:59033",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "MX-D752TR",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "f381f096fdb21c70",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "Cd 1",
+      "steps": [
+        {
+          "command": "Disc1"
+        }
+      ]
+    },
+    {
+      "name": "Cd 2",
+      "steps": [
+        {
+          "command": "Disc2"
+        }
+      ]
+    },
+    {
+      "name": "Cd 3",
+      "steps": [
+        {
+          "command": "Disc3"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/MX-D752TR.json"
+    ],
+    "harmony": {
+      "global_device_id": 59033,
+      "device_type": 21,
+      "codeset": "4cb07a35eb34268a"
+    }
+  }
+}

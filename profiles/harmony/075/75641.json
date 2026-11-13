@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:75641",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Omni",
+  "model": "DVR-2200",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "1a3fae9f390f563e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DV",
+      "steps": [
+        {
+          "command": "InputDv"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Omni/DVR-2200.json"
+    ],
+    "harmony": {
+      "global_device_id": 75641,
+      "device_type": 34,
+      "codeset": "13b201b10096a864"
+    }
+  }
+}

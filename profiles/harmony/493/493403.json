@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493403",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vizio",
+  "model": "V755-G4",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "afb78ca13e190517",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "WatchFree",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "Select"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "Input"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Prime Video",
+      "steps": [
+        {
+          "command": "PrimeVideo"
+        }
+      ]
+    },
+    {
+      "name": "SmartCast TV",
+      "steps": [
+        {
+          "command": "SmartCastTV"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "steps": [
+        {
+          "command": "Netflix"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vizio/V755-G4.json"
+    ],
+    "harmony": {
+      "global_device_id": 493403,
+      "device_type": 1,
+      "codeset": "8b9ec7e35e22bde7"
+    }
+  }
+}

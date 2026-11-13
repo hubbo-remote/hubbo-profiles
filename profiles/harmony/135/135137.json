@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135137",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Digital Research",
+  "model": "DR-1000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "0b680ccd7b5add49",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Digital_Research/DR-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 135137,
+      "device_type": 19,
+      "codeset": "e92cef42d6e6ce01"
+    }
+  }
+}

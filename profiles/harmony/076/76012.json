@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:76012",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Russound",
+  "model": "R-235LS",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "a2ef00dcb0ee2462",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Russound/R-235LS.json"
+    ],
+    "harmony": {
+      "global_device_id": 76012,
+      "device_type": 19,
+      "codeset": "21909ad7995390bd"
+    }
+  }
+}

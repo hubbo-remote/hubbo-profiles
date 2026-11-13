@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:495999",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "HM-V655MP",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "b61bdd89c879d75a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner/Band",
+      "steps": [
+        {
+          "command": "InputTunerBand"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/HM-V655MP.json"
+    ],
+    "harmony": {
+      "global_device_id": 495999,
+      "device_type": 21,
+      "codeset": "6dd9ca3e703f3484"
+    }
+  }
+}

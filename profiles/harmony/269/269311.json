@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:269311",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Logik",
+  "model": "LSB3213WE",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "7ecd14a5f605dc26",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Logik/LSB3213WE.json"
+    ],
+    "harmony": {
+      "global_device_id": 269311,
+      "device_type": 19,
+      "codeset": "265dfc9e0cf8a3ac"
+    }
+  }
+}

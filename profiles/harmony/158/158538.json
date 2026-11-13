@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158538",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Genius",
+  "model": "SW-HF5.1-500",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "45387bf3231044ae",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "GAME",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "CD/MP3",
+      "steps": [
+        {
+          "command": "InputCdMp3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Genius/SW-HF5.1-500.json"
+    ],
+    "harmony": {
+      "global_device_id": 158538,
+      "device_type": 19,
+      "codeset": "1c7ce3dc80f8ca6a"
+    }
+  }
+}

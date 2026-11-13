@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:111435",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bryston",
+  "model": "1B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "952a6ac98f0a447e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV/SAT",
+      "steps": [
+        {
+          "command": "InputTvSat"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bryston/1B.json"
+    ],
+    "harmony": {
+      "global_device_id": 111435,
+      "device_type": 19,
+      "codeset": "b8262adf28099c50"
+    }
+  }
+}

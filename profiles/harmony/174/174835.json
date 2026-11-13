@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:174835",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AWA",
+  "model": "DR-640",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "60bbc123a6eb4686",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AWA/DR-640.json"
+    ],
+    "harmony": {
+      "global_device_id": 174835,
+      "device_type": 34,
+      "codeset": "c032450fd273bf88"
+    }
+  }
+}

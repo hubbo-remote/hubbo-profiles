@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:32649",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aiwa",
+  "model": "HTDV1",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "1ac1eba3437f2d8f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle2"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner (radio)",
+      "steps": [
+        {
+          "command": "InputTuner2"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aiwa/HTDV1.json"
+    ],
+    "harmony": {
+      "global_device_id": 32649,
+      "device_type": 22,
+      "codeset": "09792f712cd4ecd8"
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "harmony:219754",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "RX-V671 (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a53de27e92fc5511",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AV 5",
+      "steps": [
+        {
+          "command": "InputAv5"
+        }
+      ]
+    },
+    {
+      "name": "AV 6",
+      "steps": [
+        {
+          "command": "InputAv6"
+        }
+      ]
+    },
+    {
+      "name": "V-Aux",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    },
+    {
+      "name": "Audio 1",
+      "steps": [
+        {
+          "command": "InputAudio1"
+        }
+      ]
+    },
+    {
+      "name": "Audio 2",
+      "steps": [
+        {
+          "command": "InputAudio2"
+        }
+      ]
+    },
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    },
+    {
+      "name": "Sirius",
+      "steps": [
+        {
+          "command": "InputSirius"
+        }
+      ]
+    },
+    {
+      "name": "NET",
+      "steps": [
+        {
+          "command": "InputNet"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/RX-V671_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 219754,
+      "device_type": 5,
+      "codeset": "7498777259ffc39a"
+    }
+  }
+}

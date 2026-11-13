@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:91567",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "DV-D990",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "dcaad9c1ec095a38",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "tape",
+      "steps": [
+        {
+          "command": "InputTelevision"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/DV-D990.json"
+    ],
+    "harmony": {
+      "global_device_id": 91567,
+      "device_type": 22,
+      "codeset": "d4c5566cbc357ed4"
+    }
+  }
+}

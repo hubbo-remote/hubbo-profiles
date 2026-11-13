@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:263709",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Grundig",
+  "model": "GSB 800",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "1d63adc7f3ac744c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Grundig/GSB_800.json"
+    ],
+    "harmony": {
+      "global_device_id": 263709,
+      "device_type": 19,
+      "codeset": "6ad65d3bc486667a"
+    }
+  }
+}

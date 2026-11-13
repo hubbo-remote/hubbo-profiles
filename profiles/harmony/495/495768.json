@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:495768",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTL1510B/12",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "42b21440c0d529c9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLine"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTL1510B_12.json"
+    ],
+    "harmony": {
+      "global_device_id": 495768,
+      "device_type": 19,
+      "codeset": "dfc10681128ae09a"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182035",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "RDR-HX650B",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "8524e1fd5ba3e7bb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Hdd",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/RDR-HX650B.json"
+    ],
+    "harmony": {
+      "global_device_id": 182035,
+      "device_type": 34,
+      "codeset": "76a1430d34e487a9"
+    }
+  }
+}

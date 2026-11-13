@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:119873",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aiko",
+  "model": "FP-PL4240",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "55fc7dca9fdcdce1",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputPcDvi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aiko/FP-PL4240.json"
+    ],
+    "harmony": {
+      "global_device_id": 119873,
+      "device_type": 1,
+      "codeset": "99e7262d9e0a161a"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:267258",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RCA",
+  "model": "RCS13101E",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "a84f27b9fd0a9b31",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Internet",
+      "steps": [
+        {
+          "command": "InputInternet"
+        }
+      ]
+    },
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RCA/RCS13101E.json"
+    ],
+    "harmony": {
+      "global_device_id": 267258,
+      "device_type": 21,
+      "codeset": "78daa79d04a73333"
+    }
+  }
+}

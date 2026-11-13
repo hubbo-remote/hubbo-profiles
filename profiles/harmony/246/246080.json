@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:246080",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sangean",
+  "model": "DDR-33 Plus",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "c48092733bad94a8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DAB",
+      "steps": [
+        {
+          "command": "InputDab"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sangean/DDR-33_Plus.json"
+    ],
+    "harmony": {
+      "global_device_id": 246080,
+      "device_type": 5,
+      "codeset": "ab21d10a35c38e0a"
+    }
+  }
+}

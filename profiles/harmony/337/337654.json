@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:337654",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "SJ9",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "8368e31c950a7387",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Portable",
+      "steps": [
+        {
+          "command": "InputPortable"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "LG TV",
+      "steps": [
+        {
+          "command": "InputLgTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI In",
+      "steps": [
+        {
+          "command": "InputHdmiIn"
+        }
+      ]
+    },
+    {
+      "name": "WIFI",
+      "steps": [
+        {
+          "command": "InputWifi"
+        }
+      ]
+    },
+    {
+      "name": "Arc",
+      "steps": [
+        {
+          "command": "InputArc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/SJ9.json"
+    ],
+    "harmony": {
+      "global_device_id": 337654,
+      "device_type": 19,
+      "codeset": "30a5c465aa760184"
+    }
+  }
+}

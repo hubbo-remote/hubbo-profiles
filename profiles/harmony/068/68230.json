@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68230",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Schneider",
+  "model": "DVHS 150 divx",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "ee0fe1178f31f899",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVhs"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Schneider/DVHS_150_divx.json"
+    ],
+    "harmony": {
+      "global_device_id": 68230,
+      "device_type": 25,
+      "codeset": "c68f3e4e44634ffe"
+    }
+  }
+}

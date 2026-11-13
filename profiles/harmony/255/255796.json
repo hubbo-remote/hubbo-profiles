@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "harmony:255796",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Micomsoft",
+  "model": "XRGB-MINI",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "feaf32b0758a1615",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 3000
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Micomsoft/XRGB-MINI.json"
+    ],
+    "harmony": {
+      "global_device_id": 255796,
+      "device_type": 30,
+      "codeset": "7d7d4b1bafc8e6a5"
+    }
+  }
+}

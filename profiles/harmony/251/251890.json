@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251890",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AWA",
+  "model": "DR620",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "6572289ca4ec8ec7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AWA/DR620.json"
+    ],
+    "harmony": {
+      "global_device_id": 251890,
+      "device_type": 34,
+      "codeset": "6375041af95448af"
+    }
+  }
+}

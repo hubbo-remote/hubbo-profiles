@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:106493",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-AK340",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "8970ae1b79865ff8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Music.P",
+      "steps": [
+        {
+          "command": "InputMusicPort"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-AK340.json"
+    ],
+    "harmony": {
+      "global_device_id": 106493,
+      "device_type": 21,
+      "codeset": "8075b2cd9841896b"
+    }
+  }
+}

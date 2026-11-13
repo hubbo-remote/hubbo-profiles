@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:151582",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DK Digital",
+  "model": "AS-380W",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "601bd57bd9e17748",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "Input51"
+        }
+      ]
+    },
+    {
+      "name": "2.1",
+      "steps": [
+        {
+          "command": "Input21"
+        }
+      ]
+    },
+    {
+      "name": "Stereo",
+      "steps": [
+        {
+          "command": "InputStereo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DK_Digital/AS-380W.json"
+    ],
+    "harmony": {
+      "global_device_id": 151582,
+      "device_type": 19,
+      "codeset": "73206e07f992666a"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:91902",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dell",
+  "model": "Dimension 9200",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "a33b50a80b256dac",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Picture",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dell/Dimension_9200.json"
+    ],
+    "harmony": {
+      "global_device_id": 91902,
+      "device_type": 35,
+      "codeset": "5b719b65c0596cae"
+    }
+  }
+}

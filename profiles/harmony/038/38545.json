@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "harmony:38545",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "L-2320",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "5bf1ddc6cf46ae24",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 1500
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 1500
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/L-2320.json"
+    ],
+    "harmony": {
+      "global_device_id": 38545,
+      "device_type": 13,
+      "codeset": "d4665b027aa34301"
+    }
+  }
+}

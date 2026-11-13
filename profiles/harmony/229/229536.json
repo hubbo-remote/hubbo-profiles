@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "id": "harmony:229536",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mitsubishi",
+  "model": "WD-52813",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "7d60114ada1fa699",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Ant-A",
+      "steps": [
+        {
+          "command": "InputAntA"
+        }
+      ]
+    },
+    {
+      "name": "Ant-B",
+      "steps": [
+        {
+          "command": "InputAntB"
+        }
+      ]
+    },
+    {
+      "name": "Ant-DTV",
+      "steps": [
+        {
+          "command": "Input5"
+        }
+      ]
+    },
+    {
+      "name": "Input-1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input-2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input-3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Comp-1",
+      "steps": [
+        {
+          "command": "InputComp1"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputComp1"
+        }
+      ]
+    },
+    {
+      "name": "Comp-2",
+      "steps": [
+        {
+          "command": "InputComp2"
+        },
+        {
+          "command": "InputComp2"
+        }
+      ]
+    },
+    {
+      "name": "INP-Dtv",
+      "steps": [
+        {
+          "command": "InputDtv"
+        }
+      ]
+    },
+    {
+      "name": "Vga",
+      "steps": [
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "MONLINK",
+      "steps": [
+        {
+          "command": "InputStb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mitsubishi/WD-52813.json"
+    ],
+    "harmony": {
+      "global_device_id": 229536,
+      "device_type": 1,
+      "codeset": "97df49855c477086"
+    }
+  }
+}

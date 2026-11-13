@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:9260",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AMX",
+  "model": "Phast",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "3f9381c3335b0999",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Local",
+      "steps": [
+        {
+          "command": "InputLocal"
+        }
+      ]
+    },
+    {
+      "name": "DSS",
+      "steps": [
+        {
+          "command": "InputDss"
+        }
+      ]
+    },
+    {
+      "name": "Tivo",
+      "steps": [
+        {
+          "command": "InputTivo"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "CD/Media Player",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Video Conference",
+      "steps": [
+        {
+          "command": "InputVideoConference"
+        }
+      ]
+    },
+    {
+      "name": "Camera",
+      "steps": [
+        {
+          "command": "InputCamera"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "Select"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AMX/Phast.json"
+    ],
+    "harmony": {
+      "global_device_id": 9260,
+      "device_type": 1,
+      "codeset": "3391004b2675a7be"
+    }
+  }
+}

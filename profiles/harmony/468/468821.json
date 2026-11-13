@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:468821",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "CP-RX80",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "671d1c024d6d933b",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/CP-RX80.json"
+    ],
+    "harmony": {
+      "global_device_id": 468821,
+      "device_type": 7,
+      "codeset": "e1c832dc5d0af5d7"
+    }
+  }
+}

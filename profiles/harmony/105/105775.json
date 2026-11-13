@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:105775",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Neovia",
+  "model": "NEO-D0705",
+  "kind": "tv_dvd",
+  "platform": "ir",
+  "codeset": "2d0654d04bea4115",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Analog TV",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Digital TV",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "FM Radio",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Neovia/NEO-D0705.json"
+    ],
+    "harmony": {
+      "global_device_id": 105775,
+      "device_type": 37,
+      "codeset": "8f054656569c8ef9"
+    }
+  }
+}

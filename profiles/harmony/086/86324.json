@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:86324",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "DSB 3010",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "b3fe9a360101ef06",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "ChannelUp"
+      }
+    ],
+    "off": [
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/DSB_3010.json"
+    ],
+    "harmony": {
+      "global_device_id": 86324,
+      "device_type": 16,
+      "codeset": "32599a1e9f7d9ef1"
+    }
+  }
+}

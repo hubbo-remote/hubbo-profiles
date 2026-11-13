@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123597",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "VTC-CD1052",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "f180c917e3b811dc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Cassette",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/VTC-CD1052.json"
+    ],
+    "harmony": {
+      "global_device_id": 123597,
+      "device_type": 21,
+      "codeset": "0949c44fc0b9b6cb"
+    }
+  }
+}

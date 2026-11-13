@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "harmony:268053",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "lifesize",
+  "model": "Icon 400",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d498794fd5439cad",
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Presentation",
+      "steps": [
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Call",
+      "steps": [
+        {
+          "command": "DirectionUp"
+        },
+        {
+          "command": "DirectionLeft",
+          "hold_ms": 2000
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "DirectionRight"
+        },
+        {
+          "command": "OK"
+        },
+        {
+          "command": "DirectionLeft"
+        },
+        {
+          "command": "OK"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/lifesize/Icon_400.json"
+    ],
+    "harmony": {
+      "global_device_id": 268053,
+      "device_type": 13,
+      "codeset": "5f9b622e3224f36b"
+    }
+  }
+}

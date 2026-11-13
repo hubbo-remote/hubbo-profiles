@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40014",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "28CE5590",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c0b7681889c29ab5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Parabol",
+      "steps": [
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/28CE5590.json"
+    ],
+    "harmony": {
+      "global_device_id": 40014,
+      "device_type": 1,
+      "codeset": "ab949ed9af78a67c"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:10140",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Thule",
+  "model": "IA100",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "1d18b86b2f0190f2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TA1",
+      "steps": [
+        {
+          "command": "InputTA1"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "TU",
+      "steps": [
+        {
+          "command": "InputTU"
+        }
+      ]
+    },
+    {
+      "name": "TA2",
+      "steps": [
+        {
+          "command": "InputTA2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Thule/IA100.json"
+    ],
+    "harmony": {
+      "global_device_id": 10140,
+      "device_type": 19,
+      "codeset": "34d1adaa0a8f3691"
+    }
+  }
+}

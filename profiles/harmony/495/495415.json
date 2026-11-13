@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:495415",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "AudioControl",
+  "model": "CONCERT XR-6 (Zone 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "852cb8bb097d6a15",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "STB",
+      "steps": [
+        {
+          "command": "InputStb"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "BD",
+      "steps": [
+        {
+          "command": "InputBd"
+        }
+      ]
+    },
+    {
+      "name": "PVR",
+      "steps": [
+        {
+          "command": "InputPvr"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/AudioControl/CONCERT_XR-6_Zone_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 495415,
+      "device_type": 5,
+      "codeset": "9cf68e49416381e2"
+    }
+  }
+}

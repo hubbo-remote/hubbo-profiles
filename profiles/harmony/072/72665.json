@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "id": "harmony:72665",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TX-25AD50F",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4ce4a6bdffffeec7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "3",
+        "hold_ms": 2000
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AV1",
+      "steps": [
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "AV2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AV3",
+      "steps": [
+        {
+          "command": "Green"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TX-25AD50F.json"
+    ],
+    "harmony": {
+      "global_device_id": 72665,
+      "device_type": 1,
+      "codeset": "a8547d18fe86ba3f"
+    }
+  }
+}

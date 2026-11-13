@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:57049",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LH-T250",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "df5780322c35997f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Band",
+      "steps": [
+        {
+          "command": "InputBand"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LH-T250.json"
+    ],
+    "harmony": {
+      "global_device_id": 57049,
+      "device_type": 22,
+      "codeset": "071683fd04ff7400"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:178912",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Asus",
+  "model": "EB1006",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "7fe30eac3d574d88",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Asus/EB1006.json"
+    ],
+    "harmony": {
+      "global_device_id": 178912,
+      "device_type": 35,
+      "codeset": "ca876e1363e5b164"
+    }
+  }
+}

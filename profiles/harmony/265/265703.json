@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:265703",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "AWR2",
+  "kind": "tuner",
+  "platform": "ir",
+  "codeset": "1cb2a0bb19e1ca41",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/AWR2.json"
+    ],
+    "harmony": {
+      "global_device_id": 265703,
+      "device_type": 36,
+      "codeset": "dcc90989deeffdc8"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "id": "harmony:19099",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Niro",
+  "model": "1.1 PRO II",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "2c56f17caa12bb4c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "SAT/Cable",
+      "steps": [
+        {
+          "command": "InputSatCbl"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    },
+    {
+      "name": "COAX",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "AUX1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Niro/1.1_PRO_II.json"
+    ],
+    "harmony": {
+      "global_device_id": 19099,
+      "device_type": 5,
+      "codeset": "ac5f281350ffeb81"
+    }
+  }
+}

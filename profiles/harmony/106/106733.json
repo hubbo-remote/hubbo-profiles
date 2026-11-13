@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:106733",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sears",
+  "model": "14609",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "9b1e4a5b38f0e67f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "channel3",
+      "steps": [
+        {
+          "command": "InputAntennaA"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sears/14609.json"
+    ],
+    "harmony": {
+      "global_device_id": 106733,
+      "device_type": 1,
+      "codeset": "08f760ea24a601e7"
+    }
+  }
+}

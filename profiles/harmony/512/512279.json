@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:512279",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RME",
+  "model": "ADI-2/4 PRO SE",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "cc99998c81a49173",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOpt"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RME/ADI-2_4_PRO_SE.json"
+    ],
+    "harmony": {
+      "global_device_id": 512279,
+      "device_type": 19,
+      "codeset": "dbec4ab5321b21e1"
+    }
+  }
+}

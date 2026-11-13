@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:158974",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "MME239/37B",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "00a0f773c50e5bd2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 6000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/MME239_37B.json"
+    ],
+    "harmony": {
+      "global_device_id": 158974,
+      "device_type": 22,
+      "codeset": "1c8f1e7ad79c80c2"
+    }
+  }
+}

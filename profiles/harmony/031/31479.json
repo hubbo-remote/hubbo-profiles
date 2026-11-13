@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:31479",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Parasound",
+  "model": "PLD-1100",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7194db46b7062941",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Direct",
+      "steps": [
+        {
+          "command": "InputDirect"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Parasound/PLD-1100.json"
+    ],
+    "harmony": {
+      "global_device_id": 31479,
+      "device_type": 5,
+      "codeset": "5a98afc229f9d8ab"
+    }
+  }
+}

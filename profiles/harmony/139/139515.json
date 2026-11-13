@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139515",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "60PY2DR",
+  "kind": "tv_dvr",
+  "platform": "ir",
+  "codeset": "4afb7df38ee4f8e5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAntCable"
+        }
+      ]
+    },
+    {
+      "name": "CATDV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "RGB-DVI",
+      "steps": [
+        {
+          "command": "InputRgbDtv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI1/DVI",
+      "steps": [
+        {
+          "command": "InputDVIDTV"
+        }
+      ]
+    },
+    {
+      "name": "HDMI2",
+      "steps": [
+        {
+          "command": "InputRgbPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/60PY2DR.json"
+    ],
+    "harmony": {
+      "global_device_id": 139515,
+      "device_type": 48,
+      "codeset": "e1cf59d13c6d5673"
+    }
+  }
+}

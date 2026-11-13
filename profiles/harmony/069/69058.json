@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "id": "harmony:69058",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "7765PA",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "73dd6e7ed45700ea",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2500
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2500
+      },
+      {
+        "delay_ms": 600
+      },
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2500
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/7765PA.json"
+    ],
+    "harmony": {
+      "global_device_id": 69058,
+      "device_type": 7,
+      "codeset": "260d24699f5f1004"
+    }
+  }
+}

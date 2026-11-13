@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201812",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Funai",
+  "model": "HDR-A2835",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "4a60ad252c9fe797",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Funai/HDR-A2835.json"
+    ],
+    "harmony": {
+      "global_device_id": 201812,
+      "device_type": 47,
+      "codeset": "12b0b0f7955d1c12"
+    }
+  }
+}

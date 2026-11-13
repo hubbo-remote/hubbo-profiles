@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "id": "harmony:160007",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NAD",
+  "model": "C-715",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "740550b5a980c83f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "MP",
+      "steps": [
+        {
+          "command": "InputMp"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NAD/C-715.json"
+    ],
+    "harmony": {
+      "global_device_id": 160007,
+      "device_type": 21,
+      "codeset": "7ec611b6a55bab3b"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:392335",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NuVo",
+  "model": "NV-P500",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b84e09d7306a12f4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Toslink",
+      "steps": [
+        {
+          "command": "InputToslink"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    },
+    {
+      "name": "Player",
+      "steps": [
+        {
+          "command": "InputPlayer"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NuVo/NV-P500.json"
+    ],
+    "harmony": {
+      "global_device_id": 392335,
+      "device_type": 19,
+      "codeset": "d0cd01f53b44eee5"
+    }
+  }
+}

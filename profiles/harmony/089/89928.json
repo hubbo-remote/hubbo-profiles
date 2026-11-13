@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:89928",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sherwood",
+  "model": "AX-7R",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "01d34b0d11e665da",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Cd",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sherwood/AX-7R.json"
+    ],
+    "harmony": {
+      "global_device_id": 89928,
+      "device_type": 19,
+      "codeset": "af4db996e74bd795"
+    }
+  }
+}

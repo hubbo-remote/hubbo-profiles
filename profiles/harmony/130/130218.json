@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "id": "harmony:130218",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Wavelength",
+  "model": "2084D",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "bd83dc50fd4e7058",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputAv2"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputAv3"
+        }
+      ]
+    },
+    {
+      "name": "AUX1",
+      "steps": [
+        {
+          "command": "InputAv4"
+        }
+      ]
+    },
+    {
+      "name": "SAT2",
+      "steps": [
+        {
+          "command": "InputRF1"
+        }
+      ]
+    },
+    {
+      "name": "DVD2",
+      "steps": [
+        {
+          "command": "InputRF2"
+        }
+      ]
+    },
+    {
+      "name": "CATV2",
+      "steps": [
+        {
+          "command": "InputAv5"
+        }
+      ]
+    },
+    {
+      "name": "VCR2",
+      "steps": [
+        {
+          "command": "InputRF3"
+        }
+      ]
+    },
+    {
+      "name": "AUX2",
+      "steps": [
+        {
+          "command": "InputRF4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Wavelength/2084D.json"
+    ],
+    "harmony": {
+      "global_device_id": 130218,
+      "device_type": 30,
+      "codeset": "4dd274b4f23ee05e"
+    }
+  }
+}

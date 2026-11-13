@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:25251",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HTC-NX1",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "b90844d28b37c6ac",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Deck A",
+      "steps": [
+        {
+          "command": "InputTapeA"
+        }
+      ]
+    },
+    {
+      "name": "Deck B",
+      "steps": [
+        {
+          "command": "InputTapeB"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner/Band",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "MD",
+      "steps": [
+        {
+          "command": "InputMd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HTC-NX1.json"
+    ],
+    "harmony": {
+      "global_device_id": 25251,
+      "device_type": 21,
+      "codeset": "d25e5b4724ba773d"
+    }
+  }
+}

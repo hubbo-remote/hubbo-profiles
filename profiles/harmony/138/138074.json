@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:138074",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "TruTech",
+  "model": "DV-4TS05",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "b7b65fbd78a494d6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/TruTech/DV-4TS05.json"
+    ],
+    "harmony": {
+      "global_device_id": 138074,
+      "device_type": 25,
+      "codeset": "83c407ebe328a3b6"
+    }
+  }
+}

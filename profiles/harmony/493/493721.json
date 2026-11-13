@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:493721",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teufel",
+  "model": "Cinedeck",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "22adcb2f2f8c3b39",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Opt/Usb",
+      "steps": [
+        {
+          "command": "InputOptUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teufel/Cinedeck.json"
+    ],
+    "harmony": {
+      "global_device_id": 493721,
+      "device_type": 19,
+      "codeset": "44c0b90648fdc59e"
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "id": "harmony:95921",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Microsoft",
+  "model": "MCE 2006",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "dfbe4871d4a4226e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "MyTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "DvdMenu"
+        }
+      ]
+    },
+    {
+      "name": "My Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Microsoft/MCE_2006.json"
+    ],
+    "harmony": {
+      "global_device_id": 95921,
+      "device_type": 35,
+      "codeset": "4f674843550021de"
+    }
+  }
+}

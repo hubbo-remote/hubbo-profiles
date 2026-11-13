@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:124393",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Samsung",
+  "model": "SA-880D",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "37e9e6c5f48d6d9f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "5"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "8"
+        }
+      ]
+    },
+    {
+      "name": "Aux/TV",
+      "steps": [
+        {
+          "command": "7"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Samsung/SA-880D.json"
+    ],
+    "harmony": {
+      "global_device_id": 124393,
+      "device_type": 19,
+      "codeset": "eea62e1309b35650"
+    }
+  }
+}

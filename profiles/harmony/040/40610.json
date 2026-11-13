@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "id": "harmony:40610",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Syntax-Brillian",
+  "model": "LT-37HV",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "4321e9e6d5bbc751",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video3",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputVideo"
+        },
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputComponent"
+        },
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputDviVga"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "InputTv"
+        },
+        {
+          "command": "InputDviVga"
+        },
+        {
+          "command": "InputDviVga"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Syntax-Brillian/LT-37HV.json"
+    ],
+    "harmony": {
+      "global_device_id": 40610,
+      "device_type": 1,
+      "codeset": "1049bfa1f2f5bf4f"
+    }
+  }
+}

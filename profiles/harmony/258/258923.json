@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258923",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "HTZ-121DVD",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "d6b90eeeb5c6e940",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "FM Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Portable In",
+      "steps": [
+        {
+          "command": "InputPortableIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/HTZ-121DVD.json"
+    ],
+    "harmony": {
+      "global_device_id": 258923,
+      "device_type": 22,
+      "codeset": "b42bdedfc1c8075f"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:9799",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-CH32",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "9fca9009d3527672",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "CDPlay"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "TapeStop"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-CH32.json"
+    ],
+    "harmony": {
+      "global_device_id": 9799,
+      "device_type": 21,
+      "codeset": "6f76872e1522896a"
+    }
+  }
+}

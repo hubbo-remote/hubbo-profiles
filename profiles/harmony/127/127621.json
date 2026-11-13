@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:127621",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "14PV284/01",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "dd5332a512001cf3",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "0"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "E1",
+      "steps": [
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelDown"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/14PV284_01.json"
+    ],
+    "harmony": {
+      "global_device_id": 127621,
+      "device_type": 15,
+      "codeset": "2faf1eb0a0d53c8f"
+    }
+  }
+}

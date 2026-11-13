@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:175111",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "M4212C",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "67509283b28b0327",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "Component1",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "Component2",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/M4212C.json"
+    ],
+    "harmony": {
+      "global_device_id": 175111,
+      "device_type": 13,
+      "codeset": "8da743e26de105ca"
+    }
+  }
+}

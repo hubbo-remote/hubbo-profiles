@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "id": "harmony:172328",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "DAV-DZ275",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "a128c0b36fcbfebe",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv/Video",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner FM",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "Tuner AM",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 3000
+        },
+        {
+          "command": "Function"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/DAV-DZ275.json"
+    ],
+    "harmony": {
+      "global_device_id": 172328,
+      "device_type": 22,
+      "codeset": "55b0a5d0d9d47472"
+    }
+  }
+}

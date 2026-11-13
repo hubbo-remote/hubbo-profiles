@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:164025",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "DLV-32C7SMB",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b0fea83d14ce2eda",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Digital/Analog TV",
+      "steps": [
+        {
+          "command": "InputDtvAtv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI/PC",
+      "steps": [
+        {
+          "command": "InputHdmiPc"
+        }
+      ]
+    },
+    {
+      "name": "AV/Component",
+      "steps": [
+        {
+          "command": "InputAvComp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/DLV-32C7SMB.json"
+    ],
+    "harmony": {
+      "global_device_id": 164025,
+      "device_type": 1,
+      "codeset": "791ca2fcea53a263"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:80380",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharkoon",
+  "model": "Audics 5.1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "4f3aebf3502ad582",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "2.1",
+      "steps": [
+        {
+          "command": "SurroundOff"
+        }
+      ]
+    },
+    {
+      "name": "5.1",
+      "steps": [
+        {
+          "command": "SurroundOn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharkoon/Audics_5.1.json"
+    ],
+    "harmony": {
+      "global_device_id": 80380,
+      "device_type": 19,
+      "codeset": "bbc515dcbd4b349a"
+    }
+  }
+}

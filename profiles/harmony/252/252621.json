@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "harmony:252621",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "PA500U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a133babc96b9e5f7",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer 1",
+      "steps": [
+        {
+          "command": "InputComputer1"
+        }
+      ]
+    },
+    {
+      "name": "Computer 2",
+      "steps": [
+        {
+          "command": "InputComputer2"
+        }
+      ]
+    },
+    {
+      "name": "Computer 3",
+      "steps": [
+        {
+          "command": "InputComputer3"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Viewer",
+      "steps": [
+        {
+          "command": "InputViewer"
+        }
+      ]
+    },
+    {
+      "name": "Network",
+      "steps": [
+        {
+          "command": "InputNetwork"
+        }
+      ]
+    },
+    {
+      "name": "Display Port",
+      "steps": [
+        {
+          "command": "InputDisplayPort"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/PA500U.json"
+    ],
+    "harmony": {
+      "global_device_id": 252621,
+      "device_type": 7,
+      "codeset": "e385b4c00e915529"
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226170",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "SD-V55HT-SN",
+  "kind": "home_theater_vcr",
+  "platform": "ir",
+  "codeset": "098bec76e3d7b220",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "FM/AM",
+      "steps": [
+        {
+          "command": "InputAMFM"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "INPUT",
+      "steps": [
+        {
+          "command": "InputSelect"
+        }
+      ]
+    },
+    {
+      "name": "L1",
+      "steps": [
+        {
+          "command": "InputSelect"
+        }
+      ]
+    },
+    {
+      "name": "L2",
+      "steps": [
+        {
+          "command": "InputSelect"
+        },
+        {
+          "command": "InputSelect"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/SD-V55HT-SN.json"
+    ],
+    "harmony": {
+      "global_device_id": 226170,
+      "device_type": 32,
+      "codeset": "24de5ce17db1eab6"
+    }
+  }
+}

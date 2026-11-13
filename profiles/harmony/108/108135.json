@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:108135",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "ST-HDA710",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "b5b17de1ac0c0f60",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "EXT/MD",
+      "steps": [
+        {
+          "command": "InputExternal"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/ST-HDA710.json"
+    ],
+    "harmony": {
+      "global_device_id": 108135,
+      "device_type": 21,
+      "codeset": "30f3bcf022167064"
+    }
+  }
+}

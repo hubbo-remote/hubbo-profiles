@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:335832",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "PPX4935/EU",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "d223f0030da1bca3",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/PPX4935_EU.json"
+    ],
+    "harmony": {
+      "global_device_id": 335832,
+      "device_type": 7,
+      "codeset": "fc0f9168b590f8e6"
+    }
+  }
+}

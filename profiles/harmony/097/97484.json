@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:97484",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vaux",
+  "model": "LE-1600A",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "84674020b1f64172",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "VolumeUp"
+      }
+    ],
+    "off": [
+      {
+        "command": "Off"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Receiver",
+      "steps": [
+        {
+          "command": "Source1"
+        }
+      ]
+    },
+    {
+      "name": "Music Server",
+      "steps": [
+        {
+          "command": "Source4"
+        }
+      ]
+    },
+    {
+      "name": "Music Client",
+      "steps": [
+        {
+          "command": "Source5"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vaux/LE-1600A.json"
+    ],
+    "harmony": {
+      "global_device_id": 97484,
+      "device_type": 19,
+      "codeset": "6f2205587f62febe"
+    }
+  }
+}

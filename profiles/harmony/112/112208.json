@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:112208",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEOM",
+  "model": "NM110RW",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "28690e1099d1fd86",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DV",
+      "steps": [
+        {
+          "command": "InputDvUsb"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputDvUsb"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEOM/NM110RW.json"
+    ],
+    "harmony": {
+      "global_device_id": 112208,
+      "device_type": 34,
+      "codeset": "50e7a78f689a018d"
+    }
+  }
+}

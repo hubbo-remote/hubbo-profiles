@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:110982",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "NDH-161",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "0ccb83e38defb09f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/NDH-161.json"
+    ],
+    "harmony": {
+      "global_device_id": 110982,
+      "device_type": 34,
+      "codeset": "b35eb736fd66bc4c"
+    }
+  }
+}

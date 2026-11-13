@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "id": "harmony:29377",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "KR-6070",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "7b8034467d3d62b0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "PHONO",
+      "steps": [
+        {
+          "command": "InputPhono"
+        },
+        {
+          "delay_ms": 2000
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "Input10"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO1",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO2",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "Input12"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO3",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "Input11"
+        }
+      ]
+    },
+    {
+      "name": "DVD/6ch",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "Input13"
+        }
+      ]
+    },
+    {
+      "name": "AV AUX",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "Input6"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/KR-6070.json"
+    ],
+    "harmony": {
+      "global_device_id": 29377,
+      "device_type": 5,
+      "codeset": "e9363af3c9deed6e"
+    }
+  }
+}

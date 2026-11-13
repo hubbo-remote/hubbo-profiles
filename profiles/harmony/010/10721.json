@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:10721",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Rotel",
+  "model": "RA-1062",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "a338c0d0ea55805c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tape 1",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tape 2",
+      "steps": [
+        {
+          "command": "InputTape2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Rotel/RA-1062.json"
+    ],
+    "harmony": {
+      "global_device_id": 10721,
+      "device_type": 5,
+      "codeset": "e10b1316e5ffbc61"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:130445",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "DV-ARW12",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "3945fe4a8b79189f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/DV-ARW12.json"
+    ],
+    "harmony": {
+      "global_device_id": 130445,
+      "device_type": 34,
+      "codeset": "c4669fdbd9d277c8"
+    }
+  }
+}

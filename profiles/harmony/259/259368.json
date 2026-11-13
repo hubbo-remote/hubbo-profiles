@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:259368",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Medion",
+  "model": "MD-29059",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "ceecf9dd7935b736",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Medion/MD-29059.json"
+    ],
+    "harmony": {
+      "global_device_id": 259368,
+      "device_type": 18,
+      "codeset": "b4728c722395d3de"
+    }
+  }
+}

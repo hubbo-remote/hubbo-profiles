@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:202097",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "CA-UXG46",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0929633856b27716",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "USBMemory",
+      "steps": [
+        {
+          "command": "InputUSBMemory"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/CA-UXG46.json"
+    ],
+    "harmony": {
+      "global_device_id": 202097,
+      "device_type": 21,
+      "codeset": "c1f2299942d3a3f3"
+    }
+  }
+}

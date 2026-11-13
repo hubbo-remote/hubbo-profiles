@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:42226",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "LC13SH1U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "8e6fc37b412d3c5f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn2"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    },
+    {
+      "name": "AV 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "AV 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "Component1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/LC13SH1U.json"
+    ],
+    "harmony": {
+      "global_device_id": 42226,
+      "device_type": 1,
+      "codeset": "e5c7d5dfacca063c"
+    }
+  }
+}

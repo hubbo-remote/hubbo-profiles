@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:171424",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kramer",
+  "model": "IR Control",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "6dbc923c76042e69",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Source1",
+      "steps": [
+        {
+          "command": "Source1"
+        }
+      ]
+    },
+    {
+      "name": "Source2",
+      "steps": [
+        {
+          "command": "Source2"
+        }
+      ]
+    },
+    {
+      "name": "Source3",
+      "steps": [
+        {
+          "command": "Source3"
+        }
+      ]
+    },
+    {
+      "name": "Source4",
+      "steps": [
+        {
+          "command": "Source4"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kramer/IR_Control.json"
+    ],
+    "harmony": {
+      "global_device_id": 171424,
+      "device_type": 35,
+      "codeset": "80cdb9404bff7719"
+    }
+  }
+}

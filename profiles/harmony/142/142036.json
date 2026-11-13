@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:142036",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mevis",
+  "model": "MVS-MXDV-400",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "643fcbc08afc8a00",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "Red"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Green"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "Yellow"
+        }
+      ]
+    },
+    {
+      "name": "Jukebox",
+      "steps": [
+        {
+          "command": "Blue"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mevis/MVS-MXDV-400.json"
+    ],
+    "harmony": {
+      "global_device_id": 142036,
+      "device_type": 35,
+      "codeset": "feb0991ea23d94ed"
+    }
+  }
+}

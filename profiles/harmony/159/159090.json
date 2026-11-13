@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:159090",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "17PF9945/12I",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "81d4011bb16df3b7",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Ext1",
+      "steps": [
+        {
+          "command": "InputExt1"
+        }
+      ]
+    },
+    {
+      "name": "Ext2",
+      "steps": [
+        {
+          "command": "InputExt2"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/17PF9945_12I.json"
+    ],
+    "harmony": {
+      "global_device_id": 159090,
+      "device_type": 1,
+      "codeset": "de62be916ce1c61f"
+    }
+  }
+}

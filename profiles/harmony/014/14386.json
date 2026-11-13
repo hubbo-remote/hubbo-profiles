@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:14386",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vocopro",
+  "model": "DA-350K",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6d987ceeb0ed0d28",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputCdg"
+        }
+      ]
+    },
+    {
+      "name": "CDG",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    },
+    {
+      "name": "LD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vocopro/DA-350K.json"
+    ],
+    "harmony": {
+      "global_device_id": 14386,
+      "device_type": 19,
+      "codeset": "98d3a00ecc1f9dd5"
+    }
+  }
+}

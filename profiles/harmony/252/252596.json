@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:252596",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "ViewSonic",
+  "model": "PJD5533w",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f6bc2417c2bcba98",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/ViewSonic/PJD5533w.json"
+    ],
+    "harmony": {
+      "global_device_id": 252596,
+      "device_type": 7,
+      "codeset": "27adad054626732d"
+    }
+  }
+}

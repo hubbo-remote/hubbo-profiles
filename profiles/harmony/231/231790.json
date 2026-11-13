@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:231790",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Argon",
+  "model": "DA2",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e88af9dc6dca393c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Argon/DA2.json"
+    ],
+    "harmony": {
+      "global_device_id": 231790,
+      "device_type": 19,
+      "codeset": "e2be3da956811186"
+    }
+  }
+}

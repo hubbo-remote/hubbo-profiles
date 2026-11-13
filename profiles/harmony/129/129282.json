@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:129282",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "HR-J168",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "5346d1d3920e12d9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/HR-J168.json"
+    ],
+    "harmony": {
+      "global_device_id": 129282,
+      "device_type": 25,
+      "codeset": "9b89cb73a1e096e8"
+    }
+  }
+}

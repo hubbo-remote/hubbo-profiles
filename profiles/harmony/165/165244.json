@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165244",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bose",
+  "model": "sounddock 10",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "4a2cdcd26d9eb382",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bose/sounddock_10.json"
+    ],
+    "harmony": {
+      "global_device_id": 165244,
+      "device_type": 33,
+      "codeset": "8341135f664f1d60"
+    }
+  }
+}

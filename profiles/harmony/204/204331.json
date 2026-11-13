@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:204331",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-EX773",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "e5fdaf0ac680e26e",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-EX773.json"
+    ],
+    "harmony": {
+      "global_device_id": 204331,
+      "device_type": 34,
+      "codeset": "ca5f13f3c21a9b02"
+    }
+  }
+}

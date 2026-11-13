@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:241559",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Argon",
+  "model": "iNet 6+",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "71a098d107b3bd2d",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX 1/2",
+      "steps": [
+        {
+          "command": "InputAux12"
+        }
+      ]
+    },
+    {
+      "name": "CD/USB",
+      "steps": [
+        {
+          "command": "InputCdUsb"
+        }
+      ]
+    },
+    {
+      "name": "DAB/FM",
+      "steps": [
+        {
+          "command": "InputDabFm"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Argon/iNet_6.json"
+    ],
+    "harmony": {
+      "global_device_id": 241559,
+      "device_type": 33,
+      "codeset": "91305cb3565a489b"
+    }
+  }
+}

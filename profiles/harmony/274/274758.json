@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:274758",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "H652A",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a12e07eb64c229da",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1/ MHL",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "USB/LAN",
+      "steps": [
+        {
+          "command": "InputUsbLan"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/H652A.json"
+    ],
+    "harmony": {
+      "global_device_id": 274758,
+      "device_type": 7,
+      "codeset": "b4d44f60a3d3f8b1"
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "harmony:124605",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hitachi",
+  "model": "CS-2840TA",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ae60ca677fbd0cf6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "ChannelDown"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video0",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "Video2",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "2"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "ChannelUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hitachi/CS-2840TA.json"
+    ],
+    "harmony": {
+      "global_device_id": 124605,
+      "device_type": 1,
+      "codeset": "8c8fb4a225b1db6e"
+    }
+  }
+}

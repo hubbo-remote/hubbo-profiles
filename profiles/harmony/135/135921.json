@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:135921",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DreamVision",
+  "model": "DreamBee PRO",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f24bd296abf4f546",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 3",
+      "steps": [
+        {
+          "command": "InputHdmi3"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DreamVision/DreamBee_PRO.json"
+    ],
+    "harmony": {
+      "global_device_id": 135921,
+      "device_type": 7,
+      "codeset": "d316423e35b06008"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:448191",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dingsun",
+  "model": "D-084",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "05ab15af965604d4",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Toslink",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dingsun/D-084.json"
+    ],
+    "harmony": {
+      "global_device_id": 448191,
+      "device_type": 19,
+      "codeset": "d710fda51b8294f5"
+    }
+  }
+}

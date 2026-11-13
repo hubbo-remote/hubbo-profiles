@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:69892",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tarox",
+  "model": "Media 5000",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "d0f76a3de0f9b74c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "My TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "My DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "My Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "My Pictures",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tarox/Media_5000.json"
+    ],
+    "harmony": {
+      "global_device_id": 69892,
+      "device_type": 35,
+      "codeset": "bed019ca5055c641"
+    }
+  }
+}

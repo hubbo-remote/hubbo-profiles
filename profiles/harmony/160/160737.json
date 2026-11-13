@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:160737",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DreamVision",
+  "model": "Dream E",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "9b5424bfc4b543ad",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 500
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Composite Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Switch",
+      "steps": [
+        {
+          "command": "Switch"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DreamVision/Dream_E.json"
+    ],
+    "harmony": {
+      "global_device_id": 160737,
+      "device_type": 7,
+      "codeset": "70925db565789c26"
+    }
+  }
+}

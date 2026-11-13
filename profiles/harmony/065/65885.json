@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:65885",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vigatec",
+  "model": "FX2",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "a2bc511e2035d816",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputComponent1"
+        }
+      ]
+    },
+    {
+      "name": "BeamerTV",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vigatec/FX2.json"
+    ],
+    "harmony": {
+      "global_device_id": 65885,
+      "device_type": 30,
+      "codeset": "2f4cf08e40b47241"
+    }
+  }
+}

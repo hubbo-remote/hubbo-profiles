@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150127",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "CS460",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6b9609946e20cb38",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDigital"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/CS460.json"
+    ],
+    "harmony": {
+      "global_device_id": 150127,
+      "device_type": 19,
+      "codeset": "a36d69e98b0c12de"
+    }
+  }
+}

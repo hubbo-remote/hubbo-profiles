@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:234381",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Arvani",
+  "model": "Ergosound 2.1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b52cc9cb1f3ace6b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "IN",
+      "steps": [
+        {
+          "command": "InputIN"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Arvani/Ergosound_2.1.json"
+    ],
+    "harmony": {
+      "global_device_id": 234381,
+      "device_type": 19,
+      "codeset": "8a448b4e7ac61fcc"
+    }
+  }
+}

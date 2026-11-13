@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "id": "harmony:412995",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "Pro L1100U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "536dd08aafbad52c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "HDBaseT",
+      "steps": [
+        {
+          "command": "InputHdBaseT"
+        }
+      ]
+    },
+    {
+      "name": "DVI-D",
+      "steps": [
+        {
+          "command": "InputHdBaseT"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "SDI",
+      "steps": [
+        {
+          "command": "InputHdBaseT"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "Source"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "DirectionDown"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "BNC",
+      "steps": [
+        {
+          "command": "InputBnc"
+        }
+      ]
+    },
+    {
+      "name": "LAN",
+      "steps": [
+        {
+          "command": "InputLan"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/Pro_L1100U.json"
+    ],
+    "harmony": {
+      "global_device_id": 412995,
+      "device_type": 7,
+      "codeset": "c010da1e97d95b83"
+    }
+  }
+}

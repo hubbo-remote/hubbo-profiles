@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:280731",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "EXIBEL",
+  "model": "BX3000",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "7eb88159e35e6ca0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/EXIBEL/BX3000.json"
+    ],
+    "harmony": {
+      "global_device_id": 280731,
+      "device_type": 19,
+      "codeset": "bae1b1d7348eb567"
+    }
+  }
+}

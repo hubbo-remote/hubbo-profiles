@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:69593",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Hama",
+  "model": "AV-1000",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "82d306e77530fce6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "DDT",
+      "steps": [
+        {
+          "command": "InputDDT"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Hama/AV-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 69593,
+      "device_type": 30,
+      "codeset": "38d71cdc044b8312"
+    }
+  }
+}

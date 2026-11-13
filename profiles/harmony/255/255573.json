@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:255573",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Belgacom",
+  "model": "ISB8320E",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "44323fe8cdecfda3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Belgacom/ISB8320E.json"
+    ],
+    "harmony": {
+      "global_device_id": 255573,
+      "device_type": 18,
+      "codeset": "7cecc7ea3a3ee8c5"
+    }
+  }
+}

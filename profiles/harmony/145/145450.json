@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:145450",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Metz",
+  "model": "Spectral-MF PIP 72TF80",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cfe00618bc3d0668",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Metz/Spectral-MF_PIP_72TF80.json"
+    ],
+    "harmony": {
+      "global_device_id": 145450,
+      "device_type": 1,
+      "codeset": "08f488919a12cfa3"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:381241",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Zgemma",
+  "model": "H5.2TC",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "003552cf80059192",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Zgemma/H5.2TC.json"
+    ],
+    "harmony": {
+      "global_device_id": 381241,
+      "device_type": 18,
+      "codeset": "2e0161191c88fe86"
+    }
+  }
+}

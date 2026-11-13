@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:159040",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Microsoft",
+  "model": "Windows Media Center",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "cd29a22f33ba605a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "Movies"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "Videos"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "Pictures"
+        }
+      ]
+    },
+    {
+      "name": "Live TV",
+      "steps": [
+        {
+          "command": "Live"
+        }
+      ]
+    },
+    {
+      "name": "Recorded TV",
+      "steps": [
+        {
+          "command": "RecordedTV"
+        }
+      ]
+    },
+    {
+      "name": "Home",
+      "steps": [
+        {
+          "command": "MediaCenter"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "finish": "OK"
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Microsoft/Windows_Media_Center.json"
+    ],
+    "harmony": {
+      "global_device_id": 159040,
+      "device_type": 35,
+      "codeset": "bca3b2e19faa42d7"
+    }
+  }
+}

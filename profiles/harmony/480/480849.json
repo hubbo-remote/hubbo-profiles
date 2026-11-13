@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:480849",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LAS464B",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ee70c710d2e40185",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Portable",
+      "steps": [
+        {
+          "command": "InputPortable"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LAS464B.json"
+    ],
+    "harmony": {
+      "global_device_id": 480849,
+      "device_type": 19,
+      "codeset": "d6e389b722b78170"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:162673",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Belgacom",
+  "model": "B-BOX2",
+  "kind": "cable_box",
+  "platform": "ir",
+  "codeset": "6d24bffa4a971a10",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Digital TV",
+      "steps": [
+        {
+          "command": "DigitalTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Belgacom/B-BOX2.json"
+    ],
+    "harmony": {
+      "global_device_id": 162673,
+      "device_type": 12,
+      "codeset": "4110f73625f8299b"
+    }
+  }
+}

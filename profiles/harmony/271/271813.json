@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:271813",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "HD-1000",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "ffd944bba1f76ec2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "MD/DAT",
+      "steps": [
+        {
+          "command": "InputMdDat"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/HD-1000.json"
+    ],
+    "harmony": {
+      "global_device_id": 271813,
+      "device_type": 21,
+      "codeset": "648a0ca6e088b571"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:4764",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "DVC-2700",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "1310e1c4b12b673a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/DVC-2700.json"
+    ],
+    "harmony": {
+      "global_device_id": 4764,
+      "device_type": 25,
+      "codeset": "3c8b450caa24aba8"
+    }
+  }
+}

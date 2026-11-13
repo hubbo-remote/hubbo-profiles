@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:134708",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "RJTech",
+  "model": "RJ-8000SB",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "65b95e05d4723ff4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Optical 1",
+      "steps": [
+        {
+          "command": "InputOptical1"
+        }
+      ]
+    },
+    {
+      "name": "Optical 2",
+      "steps": [
+        {
+          "command": "InputOptical2"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "CD/Aux",
+      "steps": [
+        {
+          "command": "InputCDAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/RJTech/RJ-8000SB.json"
+    ],
+    "harmony": {
+      "global_device_id": 134708,
+      "device_type": 5,
+      "codeset": "e01201d1b212cb60"
+    }
+  }
+}

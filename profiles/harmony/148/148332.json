@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:148332",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NEC",
+  "model": "p50xp10",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ae72d30626a2b919",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/HD",
+      "steps": [
+        {
+          "command": "InputDvdHd"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "RGB",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NEC/p50xp10.json"
+    ],
+    "harmony": {
+      "global_device_id": 148332,
+      "device_type": 13,
+      "codeset": "35233c751ee461d0"
+    }
+  }
+}

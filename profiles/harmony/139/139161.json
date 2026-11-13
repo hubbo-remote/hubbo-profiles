@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:139161",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "Reference 300 MK2",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "3dd9c3467b07bfeb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/Reference_300_MK2.json"
+    ],
+    "harmony": {
+      "global_device_id": 139161,
+      "device_type": 21,
+      "codeset": "6c376aed81807d28"
+    }
+  }
+}

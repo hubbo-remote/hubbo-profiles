@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:131001",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kiss",
+  "model": "DP-460",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "50de3114ad1f1794",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTv"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VIDEO",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "RADIO",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kiss/DP-460.json"
+    ],
+    "harmony": {
+      "global_device_id": 131001,
+      "device_type": 22,
+      "codeset": "275d96175334e45b"
+    }
+  }
+}

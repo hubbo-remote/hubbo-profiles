@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:256518",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Atlanta",
+  "model": "Fun Box",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "95ff4b016e395dbe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Atlanta/Fun_Box.json"
+    ],
+    "harmony": {
+      "global_device_id": 256518,
+      "device_type": 18,
+      "codeset": "004048e4a15cc2b6"
+    }
+  }
+}

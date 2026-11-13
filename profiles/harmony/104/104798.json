@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:104798",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Cilo",
+  "model": "C-102",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "0235829e4d3a2b2e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Digital1",
+      "steps": [
+        {
+          "command": "InputDigital1"
+        }
+      ]
+    },
+    {
+      "name": "Digital2",
+      "steps": [
+        {
+          "command": "InputDigital2"
+        }
+      ]
+    },
+    {
+      "name": "AUX1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Cilo/C-102.json"
+    ],
+    "harmony": {
+      "global_device_id": 104798,
+      "device_type": 5,
+      "codeset": "788ad180a5f6fc86"
+    }
+  }
+}

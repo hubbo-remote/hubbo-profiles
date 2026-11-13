@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "id": "harmony:302629",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "22LF430A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "c9d221a3a7db3de9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "RGB PC",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/22LF430A.json"
+    ],
+    "harmony": {
+      "global_device_id": 302629,
+      "device_type": 13,
+      "codeset": "43c5cbef39297e1c"
+    }
+  }
+}

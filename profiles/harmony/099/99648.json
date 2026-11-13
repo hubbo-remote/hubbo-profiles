@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "id": "harmony:99648",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LH-T363SD",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "17047c88d2601b39",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Band",
+      "steps": [
+        {
+          "command": "Play"
+        },
+        {
+          "command": "AmFmToggle"
+        },
+        {
+          "command": "Stop"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "Play"
+        },
+        {
+          "command": "InputVideo1"
+        },
+        {
+          "command": "Stop"
+        }
+      ]
+    },
+    {
+      "name": "CD/DVD",
+      "steps": [
+        {
+          "command": "Play"
+        },
+        {
+          "command": "InputCdDvd"
+        },
+        {
+          "command": "Stop"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LH-T363SD.json"
+    ],
+    "harmony": {
+      "global_device_id": 99648,
+      "device_type": 22,
+      "codeset": "98eb11f32c71ea0c"
+    }
+  }
+}

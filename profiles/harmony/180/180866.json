@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:180866",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JVC",
+  "model": "RX-D301S",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e5612123dd7a6cdf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tv",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "DBS",
+      "steps": [
+        {
+          "command": "InputDbs"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Dvr/Dvd",
+      "steps": [
+        {
+          "command": "InputDvrDvd"
+        }
+      ]
+    },
+    {
+      "name": "Fm",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Am",
+      "steps": [
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "DvdMulti",
+      "steps": [
+        {
+          "command": "InputDvdMulti"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JVC/RX-D301S.json"
+    ],
+    "harmony": {
+      "global_device_id": 180866,
+      "device_type": 5,
+      "codeset": "3c2046ca62c17613"
+    }
+  }
+}

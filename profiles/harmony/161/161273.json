@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:161273",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Magnavox",
+  "model": "H2160MW9A",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "b2df247d204463fb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Magnavox/H2160MW9A.json"
+    ],
+    "harmony": {
+      "global_device_id": 161273,
+      "device_type": 34,
+      "codeset": "bdc77cb001d66fa7"
+    }
+  }
+}

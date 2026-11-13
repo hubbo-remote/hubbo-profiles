@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:9455",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-E100HGCS",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "d47104cf30054fdd",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 50000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 3000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "SD/PC Card",
+      "steps": [
+        {
+          "command": "InputSdPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-E100HGCS.json"
+    ],
+    "harmony": {
+      "global_device_id": 9455,
+      "device_type": 34,
+      "codeset": "d6de5e9d03afc652"
+    }
+  }
+}

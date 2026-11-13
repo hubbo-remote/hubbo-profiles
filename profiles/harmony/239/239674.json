@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:239674",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "MCD2010",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "184c12fadac7df1d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc/Disc Menu",
+      "steps": [
+        {
+          "command": "InputDiscDiscMenu"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "MP3 Link/AUX",
+      "steps": [
+        {
+          "command": "InputAuxMp3Link"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/MCD2010.json"
+    ],
+    "harmony": {
+      "global_device_id": 239674,
+      "device_type": 22,
+      "codeset": "56c9d409e7bdc37a"
+    }
+  }
+}

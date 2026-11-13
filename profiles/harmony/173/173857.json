@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "harmony:173857",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Universum",
+  "model": "FT-71751",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "31ed0241f93d8935",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "Aux"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "Sat"
+        }
+      ]
+    },
+    {
+      "name": "EXT1",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "1"
+        }
+      ]
+    },
+    {
+      "name": "EXT2",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Universum/FT-71751.json"
+    ],
+    "harmony": {
+      "global_device_id": 173857,
+      "device_type": 1,
+      "codeset": "dc0e8c10798f72e1"
+    }
+  }
+}

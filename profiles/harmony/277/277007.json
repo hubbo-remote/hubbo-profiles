@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:277007",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Promethean",
+  "model": "PRM-20A(S)",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "c18edc8908b320d6",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Promethean/PRM-20A_S.json"
+    ],
+    "harmony": {
+      "global_device_id": 277007,
+      "device_type": 7,
+      "codeset": "05d44f7435d4dcf7"
+    }
+  }
+}

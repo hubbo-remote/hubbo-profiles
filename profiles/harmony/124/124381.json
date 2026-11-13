@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:124381",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "TLP-MT1Z",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "17d84a1936211a10",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/TLP-MT1Z.json"
+    ],
+    "harmony": {
+      "global_device_id": 124381,
+      "device_type": 7,
+      "codeset": "9e7d40a2d2b868ea"
+    }
+  }
+}

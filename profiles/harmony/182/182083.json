@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182083",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eminent",
+  "model": "EM-7071",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "a5749493f26da0c9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "File",
+      "steps": [
+        {
+          "command": "InputFile"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eminent/EM-7071.json"
+    ],
+    "harmony": {
+      "global_device_id": 182083,
+      "device_type": 35,
+      "codeset": "bb44ec742a328663"
+    }
+  }
+}

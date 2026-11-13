@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:226376",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "LH-T7656IA",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "f523b13e269e190d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/LH-T7656IA.json"
+    ],
+    "harmony": {
+      "global_device_id": 226376,
+      "device_type": 22,
+      "codeset": "8108c547fceedc18"
+    }
+  }
+}

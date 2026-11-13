@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:7283",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SimAudio",
+  "model": "moon i-5",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "46899d6b145f0591",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "MP",
+      "steps": [
+        {
+          "command": "InputMp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SimAudio/moon_i-5.json"
+    ],
+    "harmony": {
+      "global_device_id": 7283,
+      "device_type": 19,
+      "codeset": "bd6de6789fab47a1"
+    }
+  }
+}

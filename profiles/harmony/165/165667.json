@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165667",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "AX800",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2c4121f5f0230dbf",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Tape1",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "MD/Tape2",
+      "steps": [
+        {
+          "command": "InputMDTape2"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "CDDirect",
+      "steps": [
+        {
+          "command": "InputCdDirect"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/AX800.json"
+    ],
+    "harmony": {
+      "global_device_id": 165667,
+      "device_type": 19,
+      "codeset": "aca7e5746f26c430"
+    }
+  }
+}

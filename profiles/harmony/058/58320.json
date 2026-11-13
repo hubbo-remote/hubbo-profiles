@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "harmony:58320",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Acer",
+  "model": "F-20",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "b6fd754406128c37",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "delay_ms": 2000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 400,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "Scart",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Acer/F-20.json"
+    ],
+    "harmony": {
+      "global_device_id": 58320,
+      "device_type": 1,
+      "codeset": "4989cd436dcc702f"
+    }
+  }
+}

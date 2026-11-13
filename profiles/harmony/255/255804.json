@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:255804",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Kenwood",
+  "model": "HM-233",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "546d318a60db0adb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Kenwood/HM-233.json"
+    ],
+    "harmony": {
+      "global_device_id": 255804,
+      "device_type": 21,
+      "codeset": "4504fd332a2e48d8"
+    }
+  }
+}

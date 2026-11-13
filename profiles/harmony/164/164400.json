@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:164400",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Pioneer",
+  "model": "DVR-LX61",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "da520809304b0aeb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "DVD"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "HDD"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Pioneer/DVR-LX61.json"
+    ],
+    "harmony": {
+      "global_device_id": 164400,
+      "device_type": 34,
+      "codeset": "d756275264d69cf2"
+    }
+  }
+}

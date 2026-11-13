@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:413109",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "meidong",
+  "model": "KY-2022",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "2630cab4b8d79dd8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "RCA",
+      "steps": [
+        {
+          "command": "InputRca"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/meidong/KY-2022.json"
+    ],
+    "harmony": {
+      "global_device_id": 413109,
+      "device_type": 19,
+      "codeset": "2dd8dfbfb623c3ed"
+    }
+  }
+}

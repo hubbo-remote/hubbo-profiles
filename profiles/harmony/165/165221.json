@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:165221",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "FWM-377",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "4ca6e0312da359fe",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "InputTape"
+        }
+      ]
+    },
+    {
+      "name": "Usb",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "CD1",
+      "steps": [
+        {
+          "command": "CD1"
+        }
+      ]
+    },
+    {
+      "name": "CD2",
+      "steps": [
+        {
+          "command": "CD2"
+        }
+      ]
+    },
+    {
+      "name": "CD3",
+      "steps": [
+        {
+          "command": "CD3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/FWM-377.json"
+    ],
+    "harmony": {
+      "global_device_id": 165221,
+      "device_type": 21,
+      "codeset": "1ed16727883740a0"
+    }
+  }
+}

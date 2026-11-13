@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34441",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "VPL-W400QM",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "f982b81732fedc1f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "S Video",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputSVideo"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    },
+    {
+      "name": "Input A",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputA"
+        },
+        {
+          "command": "Enter"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/VPL-W400QM.json"
+    ],
+    "harmony": {
+      "global_device_id": 34441,
+      "device_type": 7,
+      "codeset": "8dba09308eb1a9db"
+    }
+  }
+}

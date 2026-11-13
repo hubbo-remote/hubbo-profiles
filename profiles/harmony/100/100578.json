@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:100578",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Saba",
+  "model": "M-37K10",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "d88ff29f5ea7ab87",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "1"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "Video1",
+      "steps": [
+        {
+          "command": "Display"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Saba/M-37K10.json"
+    ],
+    "harmony": {
+      "global_device_id": 100578,
+      "device_type": 1,
+      "codeset": "d0c83ec2e16e439a"
+    }
+  }
+}

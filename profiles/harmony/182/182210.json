@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "harmony:182210",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "NAD",
+  "model": "Viso Two",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "29d353561d7b4f94",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Cab/Sat",
+      "steps": [
+        {
+          "command": "InputCabSat"
+        }
+      ]
+    },
+    {
+      "name": "Vcr/Mp",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    },
+    {
+      "name": "Front",
+      "steps": [
+        {
+          "command": "InputFront"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/NAD/Viso_Two.json"
+    ],
+    "harmony": {
+      "global_device_id": 182210,
+      "device_type": 22,
+      "codeset": "391246007ca5aa06"
+    }
+  }
+}

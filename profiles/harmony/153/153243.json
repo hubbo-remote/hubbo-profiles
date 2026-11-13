@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153243",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "PLC-WXU30",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "ac85ffd858af4247",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 28500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/PLC-WXU30.json"
+    ],
+    "harmony": {
+      "global_device_id": 153243,
+      "device_type": 7,
+      "codeset": "5ec098973c8e4a2e"
+    }
+  }
+}

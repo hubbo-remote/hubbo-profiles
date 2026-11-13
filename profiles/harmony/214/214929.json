@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:214929",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTS7140 (AU)",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "a028a0fafc5d7f7f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Audio Source",
+      "steps": [
+        {
+          "command": "AudioSource"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    },
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "Disc"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTS7140_AU.json"
+    ],
+    "harmony": {
+      "global_device_id": 214929,
+      "device_type": 22,
+      "codeset": "31482afb508e2b2c"
+    }
+  }
+}

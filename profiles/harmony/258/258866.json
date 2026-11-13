@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:258866",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mint",
+  "model": "SB10-SBA1",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "bbc24df5941a171e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Line In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "S/PDIF",
+      "steps": [
+        {
+          "command": "InputSpdif"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mint/SB10-SBA1.json"
+    ],
+    "harmony": {
+      "global_device_id": 258866,
+      "device_type": 19,
+      "codeset": "b4e1fe082b157c18"
+    }
+  }
+}

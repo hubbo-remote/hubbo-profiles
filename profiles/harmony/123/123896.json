@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:123896",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DigitalZone",
+  "model": "HD-510",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "ec8bf51e3b32be1a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "Input1"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "Input2"
+        }
+      ]
+    },
+    {
+      "name": "Input 3",
+      "steps": [
+        {
+          "command": "Input3"
+        }
+      ]
+    },
+    {
+      "name": "Input 4",
+      "steps": [
+        {
+          "command": "Input4"
+        }
+      ]
+    },
+    {
+      "name": "Game",
+      "steps": [
+        {
+          "command": "InputGame"
+        }
+      ]
+    },
+    {
+      "name": "Analog",
+      "steps": [
+        {
+          "command": "InputAnalog"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DigitalZone/HD-510.json"
+    ],
+    "harmony": {
+      "global_device_id": 123896,
+      "device_type": 30,
+      "codeset": "3c773a81f7884d37"
+    }
+  }
+}

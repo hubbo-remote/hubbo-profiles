@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "harmony:492415",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Dingsun",
+  "model": "D-023",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "6a51f667e3b06bf9",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "Toslink",
+      "steps": [
+        {
+          "command": "InputToslink"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Dingsun/D-023.json"
+    ],
+    "harmony": {
+      "global_device_id": 492415,
+      "device_type": 19,
+      "codeset": "c4a2a40abfdf508d"
+    }
+  }
+}

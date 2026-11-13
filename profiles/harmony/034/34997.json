@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:34997",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "GoVideo",
+  "model": "DVR4100",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "ab71f080900b3359",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/GoVideo/DVR4100.json"
+    ],
+    "harmony": {
+      "global_device_id": 34997,
+      "device_type": 25,
+      "codeset": "8627b07b3be49e1d"
+    }
+  }
+}

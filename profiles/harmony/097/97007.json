@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:97007",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "PikaOne",
+  "model": "FLTV-U2-250",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "93c89b2fba52c4da",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photos",
+      "steps": [
+        {
+          "command": "InputPhotos"
+        }
+      ]
+    },
+    {
+      "name": "Browser",
+      "steps": [
+        {
+          "command": "InputBrowser"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/PikaOne/FLTV-U2-250.json"
+    ],
+    "harmony": {
+      "global_device_id": 97007,
+      "device_type": 33,
+      "codeset": "491e64180b651d95"
+    }
+  }
+}

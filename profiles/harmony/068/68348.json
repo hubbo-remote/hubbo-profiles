@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:68348",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Myryad",
+  "model": "MXI2080",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "d03fa36ff154a4d8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DIR",
+      "steps": [
+        {
+          "command": "InputVDPDBS"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputLd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "AmFmToggle"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Myryad/MXI2080.json"
+    ],
+    "harmony": {
+      "global_device_id": 68348,
+      "device_type": 19,
+      "codeset": "371b7115e550ecd8"
+    }
+  }
+}

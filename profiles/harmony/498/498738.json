@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:498738",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "WOHOME",
+  "model": "S99",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "62de18f7df03c6a5",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Aux",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "BT",
+      "steps": [
+        {
+          "command": "InputBT"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/WOHOME/S99.json"
+    ],
+    "harmony": {
+      "global_device_id": 498738,
+      "device_type": 19,
+      "codeset": "5ba1688c0f90a43c"
+    }
+  }
+}

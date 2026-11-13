@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "id": "harmony:8062",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Luce",
+  "model": "LCTV-2201A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f823dfd73c2ed4dd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "S-VHS",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Luce/LCTV-2201A.json"
+    ],
+    "harmony": {
+      "global_device_id": 8062,
+      "device_type": 1,
+      "codeset": "e9c5ecc46354ca35"
+    }
+  }
+}

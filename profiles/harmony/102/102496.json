@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102496",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "SkyWorth",
+  "model": "32-LBAIW",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1ac59127b2e0e077",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputUsb"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "HDTV",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputHDTV"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "YCbCr",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputYCbCr"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "command": "Menu"
+        },
+        {
+          "command": "InputDvi"
+        },
+        {
+          "command": "VolumeUp"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/SkyWorth/32-LBAIW.json"
+    ],
+    "harmony": {
+      "global_device_id": 102496,
+      "device_type": 1,
+      "codeset": "609050f8f219229e"
+    }
+  }
+}

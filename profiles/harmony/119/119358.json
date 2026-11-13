@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:119358",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Metz",
+  "model": "9838",
+  "kind": "vcr",
+  "platform": "ir",
+  "codeset": "6dcf291fa739eade",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Antenna",
+      "steps": [
+        {
+          "command": "InputAntenna"
+        }
+      ]
+    },
+    {
+      "name": "AU/CU",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Metz/9838.json"
+    ],
+    "harmony": {
+      "global_device_id": 119358,
+      "device_type": 2,
+      "codeset": "bc142cb66f0a76fc"
+    }
+  }
+}

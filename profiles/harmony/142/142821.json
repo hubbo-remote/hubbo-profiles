@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "id": "harmony:142821",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Westinghouse",
+  "model": "27W3207",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "1d24a149982c9192",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 4000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "SVideo",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "VGA",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputVga"
+        }
+      ]
+    },
+    {
+      "name": "DVI",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputDvi"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr 1",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputYPbPr1"
+        }
+      ]
+    },
+    {
+      "name": "YPbPr 2",
+      "steps": [
+        {
+          "delay_ms": 2000
+        },
+        {
+          "command": "InputYPbPr2"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Westinghouse/27W3207.json"
+    ],
+    "harmony": {
+      "global_device_id": 142821,
+      "device_type": 1,
+      "codeset": "d456234c3e02b6e3"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:102902",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teufel",
+  "model": "DecoderStation",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "b2968dfb37ba5c9f",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 300,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teufel/DecoderStation.json"
+    ],
+    "harmony": {
+      "global_device_id": 102902,
+      "device_type": 19,
+      "codeset": "14be7b8a164fd86e"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:491900",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Auna",
+  "model": "HF583",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "01fa713de05413e0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "SD",
+      "steps": [
+        {
+          "command": "InputSd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Auna/HF583.json"
+    ],
+    "harmony": {
+      "global_device_id": 491900,
+      "device_type": 5,
+      "codeset": "81bd536cc01c385d"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:88688",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PT-AE7000",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1bd68c70d980fcca",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1500,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PT-AE7000.json"
+    ],
+    "harmony": {
+      "global_device_id": 88688,
+      "device_type": 7,
+      "codeset": "85ee76e6e68005d0"
+    }
+  }
+}

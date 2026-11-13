@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:142025",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "D-VR5SU",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "01768cd6d15415af",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/D-VR5SU.json"
+    ],
+    "harmony": {
+      "global_device_id": 142025,
+      "device_type": 47,
+      "codeset": "6844cc8824d71b94"
+    }
+  }
+}

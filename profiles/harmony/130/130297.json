@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:130297",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PV-M2707",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "a1a282ceabed7df3",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "Line",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PV-M2707.json"
+    ],
+    "harmony": {
+      "global_device_id": 130297,
+      "device_type": 15,
+      "codeset": "652caf0eb18aff6f"
+    }
+  }
+}

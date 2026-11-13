@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:225295",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "dcd7010",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "1f2f922ec61cb3f9",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Dock",
+      "steps": [
+        {
+          "command": "InputDock"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "AUX/MP3-Link",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/dcd7010.json"
+    ],
+    "harmony": {
+      "global_device_id": 225295,
+      "device_type": 22,
+      "codeset": "479f3dc353c1e729"
+    }
+  }
+}

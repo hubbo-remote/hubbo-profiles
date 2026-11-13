@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:335532",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Aim",
+  "model": "IR605/A",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "08a4232e65e6a5dc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "MyMusic"
+        }
+      ]
+    },
+    {
+      "name": "Pictures",
+      "steps": [
+        {
+          "command": "MyPictures"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "MyRadio"
+        }
+      ]
+    },
+    {
+      "name": "Videos",
+      "steps": [
+        {
+          "command": "MyVideos"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Aim/IR605_A.json"
+    ],
+    "harmony": {
+      "global_device_id": 335532,
+      "device_type": 35,
+      "codeset": "7eadd053f3f0b200"
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:154256",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "POWERLITE-W6",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "e64b1ed1fc3524dd",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Comp 1",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/POWERLITE-W6.json"
+    ],
+    "harmony": {
+      "global_device_id": 154256,
+      "device_type": 7,
+      "codeset": "163bc2eeb0d53e74"
+    }
+  }
+}

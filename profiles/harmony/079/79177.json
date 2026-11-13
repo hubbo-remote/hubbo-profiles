@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:79177",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Teac",
+  "model": "REF-500",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "0b132a6580805fdb",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Tape",
+      "steps": [
+        {
+          "command": "Play"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Teac/REF-500.json"
+    ],
+    "harmony": {
+      "global_device_id": 79177,
+      "device_type": 21,
+      "codeset": "827c41a8a313f307"
+    }
+  }
+}

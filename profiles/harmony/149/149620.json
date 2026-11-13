@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:149620",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Lumatron",
+  "model": "DVDCR-17",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "990e56fdde7edb8a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Lumatron/DVDCR-17.json"
+    ],
+    "harmony": {
+      "global_device_id": 149620,
+      "device_type": 47,
+      "codeset": "59eb8aeed77f2e35"
+    }
+  }
+}

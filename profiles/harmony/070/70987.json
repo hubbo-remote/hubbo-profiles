@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:70987",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Projection Design",
+  "model": "Action! Model Two",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "60258f76507ec18c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 15000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputComponent2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Projection_Design/Action_Model_Two.json"
+    ],
+    "harmony": {
+      "global_device_id": 70987,
+      "device_type": 7,
+      "codeset": "89f98a4c904c048e"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:236435",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Xtrend",
+  "model": "ET4000",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "5a3b2cf96ec5c2cd",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TV"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Xtrend/ET4000.json"
+    ],
+    "harmony": {
+      "global_device_id": 236435,
+      "device_type": 18,
+      "codeset": "3dbbd5911e00dbf7"
+    }
+  }
+}

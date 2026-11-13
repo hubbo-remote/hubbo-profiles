@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270104",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "STR-DN1060 (ZONE 2)",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "d0c26b95fcb2c1ba",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "SAT/CATV",
+      "steps": [
+        {
+          "command": "InputSatCatv"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "InputVideo1"
+        }
+      ]
+    },
+    {
+      "name": "SA-CD/CD",
+      "steps": [
+        {
+          "command": "InputSaCdCd"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    },
+    {
+      "name": "Music Services",
+      "steps": [
+        {
+          "command": "InputMusicServices"
+        }
+      ]
+    },
+    {
+      "name": "Home Network",
+      "steps": [
+        {
+          "command": "InputHomeNetwork"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/STR-DN1060_ZONE_2.json"
+    ],
+    "harmony": {
+      "global_device_id": 270104,
+      "device_type": 5,
+      "codeset": "507e3f5ff00af904"
+    }
+  }
+}

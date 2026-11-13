@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:88098",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Toshiba",
+  "model": "TDP-S9",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "a095db327645bf0f",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 200
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Toshiba/TDP-S9.json"
+    ],
+    "harmony": {
+      "global_device_id": 88098,
+      "device_type": 7,
+      "codeset": "f06ae004ec262c9f"
+    }
+  }
+}

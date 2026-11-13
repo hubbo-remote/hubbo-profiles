@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:501392",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Auralic",
+  "model": "Polaris",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "da7f64bb233d980c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AES/EBS",
+      "steps": [
+        {
+          "command": "InputAesBbs"
+        }
+      ]
+    },
+    {
+      "name": "COAX",
+      "steps": [
+        {
+          "command": "InputCoax"
+        }
+      ]
+    },
+    {
+      "name": "TOS",
+      "steps": [
+        {
+          "command": "InputTos"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "iPad/Stream",
+      "steps": [
+        {
+          "command": "InputStream"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Auralic/Polaris.json"
+    ],
+    "harmony": {
+      "global_device_id": 501392,
+      "device_type": 33,
+      "codeset": "e7321bcc26eff4ae"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "id": "harmony:159855",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "HTS-9800W/37",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "9bedddff65793ddc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Disc",
+      "steps": [
+        {
+          "command": "InputDisc"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputDisc"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    },
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Digi In",
+      "steps": [
+        {
+          "command": "InputAux"
+        },
+        {
+          "delay_ms": 1500
+        },
+        {
+          "command": "InputNext"
+        },
+        {
+          "delay_ms": 500
+        },
+        {
+          "command": "InputNext"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/HTS-9800W_37.json"
+    ],
+    "harmony": {
+      "global_device_id": 159855,
+      "device_type": 22,
+      "codeset": "646417b2c550a386"
+    }
+  }
+}

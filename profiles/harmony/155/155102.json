@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155102",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "PT-L6500U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "b72888f180232534",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "delay_ms": 2500
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle",
+        "hold_ms": 2000
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/PT-L6500U.json"
+    ],
+    "harmony": {
+      "global_device_id": 155102,
+      "device_type": 7,
+      "codeset": "d6925e162aa36e05"
+    }
+  }
+}

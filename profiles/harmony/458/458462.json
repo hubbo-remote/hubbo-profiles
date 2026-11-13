@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:458462",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "PowerLite 2245U",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "1b85cd95e4ae5396",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/PowerLite_2245U.json"
+    ],
+    "harmony": {
+      "global_device_id": 458462,
+      "device_type": 7,
+      "codeset": "2b6942e1a608b489"
+    }
+  }
+}

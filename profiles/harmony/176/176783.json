@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:176783",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "SC-PT956",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "c1306b04eacc70a0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputCdDvd"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "FMAM"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAv"
+        }
+      ]
+    },
+    {
+      "name": "D-IN",
+      "steps": [
+        {
+          "command": "DigitalIn"
+        }
+      ]
+    },
+    {
+      "name": "IPOD",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/SC-PT956.json"
+    ],
+    "harmony": {
+      "global_device_id": 176783,
+      "device_type": 22,
+      "codeset": "11ef31efac7d0e9d"
+    }
+  }
+}

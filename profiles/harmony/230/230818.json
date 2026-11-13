@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:230818",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Galaxy Innovations",
+  "model": "Gi S8895",
+  "kind": "satellite_box",
+  "platform": "ir",
+  "codeset": "a8738f24ee96ce93",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "InputRadio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Galaxy_Innovations/Gi_S8895.json"
+    ],
+    "harmony": {
+      "global_device_id": 230818,
+      "device_type": 16,
+      "codeset": "7682c20793ce1e32"
+    }
+  }
+}

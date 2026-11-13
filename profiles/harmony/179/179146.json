@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:179146",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Mvix",
+  "model": "ULTIO",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "b94376efbe38ce71",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "All",
+      "steps": [
+        {
+          "command": "InputAll"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "InputMusic"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "InputPhoto"
+        }
+      ]
+    },
+    {
+      "name": "Movies",
+      "steps": [
+        {
+          "command": "InputMovies"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Mvix/ULTIO.json"
+    ],
+    "harmony": {
+      "global_device_id": 179146,
+      "device_type": 35,
+      "codeset": "c49f995593a89b32"
+    }
+  }
+}

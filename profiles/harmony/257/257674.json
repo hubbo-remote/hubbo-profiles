@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:257674",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-EX96C",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "9f975474ccbf5acc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-EX96C.json"
+    ],
+    "harmony": {
+      "global_device_id": 257674,
+      "device_type": 34,
+      "codeset": "461713c8f9aa0e25"
+    }
+  }
+}

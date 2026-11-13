@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:163724",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Yamaha",
+  "model": "YSP-600",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e73f7a4cec317e9b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV/STB",
+      "steps": [
+        {
+          "command": "InputTvSTB"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Yamaha/YSP-600.json"
+    ],
+    "harmony": {
+      "global_device_id": 163724,
+      "device_type": 19,
+      "codeset": "8e943f49dba0de44"
+    }
+  }
+}

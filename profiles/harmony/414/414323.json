@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:414323",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Jensen",
+  "model": "JSBW-210",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "e489121875b18f72",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "AUX 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "AUX 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    },
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Bluetooth",
+      "steps": [
+        {
+          "command": "InputBluetooth"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Jensen/JSBW-210.json"
+    ],
+    "harmony": {
+      "global_device_id": 414323,
+      "device_type": 19,
+      "codeset": "cd0ee067b19975f2"
+    }
+  }
+}

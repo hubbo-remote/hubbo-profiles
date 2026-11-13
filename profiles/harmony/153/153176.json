@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153176",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sharp",
+  "model": "dv-hr350",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "dcdc9e76193a308d",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sharp/dv-hr350.json"
+    ],
+    "harmony": {
+      "global_device_id": 153176,
+      "device_type": 34,
+      "codeset": "0f497ae80c8e76c1"
+    }
+  }
+}

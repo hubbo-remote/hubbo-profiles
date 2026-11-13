@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:105950",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "STD-1800",
+  "kind": "mini_system",
+  "platform": "ir",
+  "codeset": "59c2cca4587615c8",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD1",
+      "steps": [
+        {
+          "command": "Disc1"
+        }
+      ]
+    },
+    {
+      "name": "CD2",
+      "steps": [
+        {
+          "command": "Disc2"
+        }
+      ]
+    },
+    {
+      "name": "CD3",
+      "steps": [
+        {
+          "command": "Disc3"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/STD-1800.json"
+    ],
+    "harmony": {
+      "global_device_id": 105950,
+      "device_type": 21,
+      "codeset": "119e62d60f9bb63c"
+    }
+  }
+}

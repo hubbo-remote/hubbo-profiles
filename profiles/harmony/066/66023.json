@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:66023",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "JBL",
+  "model": "DSC-100",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "1d8d610686104643",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "AUX/TV",
+      "steps": [
+        {
+          "command": "InputAuxTv"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/JBL/DSC-100.json"
+    ],
+    "harmony": {
+      "global_device_id": 66023,
+      "device_type": 22,
+      "codeset": "06489597f5643453"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:231705",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "HBD TZ135",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "48c4bbef39a6a654",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD/CD",
+      "steps": [
+        {
+          "command": "InputDvdCd"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "USB",
+      "steps": [
+        {
+          "command": "InputUsb"
+        }
+      ]
+    },
+    {
+      "name": "TV/Cable",
+      "steps": [
+        {
+          "command": "InputTvCable"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/HBD_TZ135.json"
+    ],
+    "harmony": {
+      "global_device_id": 231705,
+      "device_type": 22,
+      "codeset": "27f079d5f522bd0f"
+    }
+  }
+}

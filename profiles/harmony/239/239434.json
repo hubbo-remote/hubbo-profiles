@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:239434",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Alllike",
+  "model": "DM96",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "9f2d955adfb7594b",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 2000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Audio",
+      "steps": [
+        {
+          "command": "InputAudio"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "FM"
+        }
+      ]
+    },
+    {
+      "name": "USB/SD",
+      "steps": [
+        {
+          "command": "InputUsbSd"
+        }
+      ]
+    },
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Alllike/DM96.json"
+    ],
+    "harmony": {
+      "global_device_id": 239434,
+      "device_type": 5,
+      "codeset": "f908ec2f73d576c8"
+    }
+  }
+}

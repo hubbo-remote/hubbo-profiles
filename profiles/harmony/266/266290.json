@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "id": "harmony:266290",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Epson",
+  "model": "PowerLite Home Cinema 3600e",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "c32f67fb25ca22bb",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff",
+        "hold_ms": 2000
+      },
+      {
+        "delay_ms": 4000
+      },
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 25000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDMI 1/ MHL",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "USB/LAN",
+      "steps": [
+        {
+          "command": "InputUsbLan"
+        }
+      ]
+    },
+    {
+      "name": "WirelessHD",
+      "steps": [
+        {
+          "command": "InputWirelessHd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Epson/PowerLite_Home_Cinema_3600e.json"
+    ],
+    "harmony": {
+      "global_device_id": 266290,
+      "device_type": 7,
+      "codeset": "228da8e1ff582113"
+    }
+  }
+}

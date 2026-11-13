@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "harmony:38114",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "TH-42P150U",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "cb385827a58d5677",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 10000
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "1"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Component 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "2"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Component 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "3"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "4"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Video 1",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "5"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    },
+    {
+      "name": "Video 2",
+      "steps": [
+        {
+          "command": "TvVideo"
+        },
+        {
+          "command": "6"
+        },
+        {
+          "command": "MenuSelect"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/TH-42P150U.json"
+    ],
+    "harmony": {
+      "global_device_id": 38114,
+      "device_type": 1,
+      "codeset": "b9c65377979efc87"
+    }
+  }
+}

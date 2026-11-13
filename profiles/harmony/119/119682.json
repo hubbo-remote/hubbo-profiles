@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "id": "harmony:119682",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Philips",
+  "model": "CCC-190AT32",
+  "kind": "tv_vcr",
+  "platform": "ir",
+  "codeset": "dd6fc4b5faf0b1b2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "AntennaCable",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "3"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "0"
+        },
+        {
+          "command": "0"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Philips/CCC-190AT32.json"
+    ],
+    "harmony": {
+      "global_device_id": 119682,
+      "device_type": 15,
+      "codeset": "76fd558fad7b9d4b"
+    }
+  }
+}

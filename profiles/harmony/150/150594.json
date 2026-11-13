@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:150594",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sanyo",
+  "model": "DVRV-100E",
+  "kind": "dvd_recorder_vcr",
+  "platform": "ir",
+  "codeset": "135c2fcb72f43fc4",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sanyo/DVRV-100E.json"
+    ],
+    "harmony": {
+      "global_device_id": 150594,
+      "device_type": 47,
+      "codeset": "ea357cc9b72c1f12"
+    }
+  }
+}

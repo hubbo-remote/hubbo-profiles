@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:350066",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "LG",
+  "model": "20MN47A",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "ad864debe1b40876",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOn"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 8000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "AV",
+      "steps": [
+        {
+          "command": "InputAv1"
+        }
+      ]
+    },
+    {
+      "name": "RGB PC",
+      "steps": [
+        {
+          "command": "InputRgb"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/LG/20MN47A.json"
+    ],
+    "harmony": {
+      "global_device_id": 350066,
+      "device_type": 1,
+      "codeset": "fdd486c134b31a14"
+    }
+  }
+}

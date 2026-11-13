@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "harmony:49910",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Revox",
+  "model": "B200-S",
+  "kind": "hdmi_switch",
+  "platform": "ir",
+  "codeset": "8ee9456ce9aa20b8",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "InputTuner"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOff"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TUNER",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "TAPE",
+      "steps": [
+        {
+          "command": "InputTape1"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Revox/B200-S.json"
+    ],
+    "harmony": {
+      "global_device_id": 49910,
+      "device_type": 30,
+      "codeset": "0e8666dcfa21902c"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "id": "harmony:116733",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Brix",
+  "model": "BT42-FHD",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "f32f7dba6c3bf7f0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 3000
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 2
+  },
+  "inputs": [
+    {
+      "name": "Analog TV",
+      "steps": [
+        {
+          "command": "AnalogTv"
+        }
+      ]
+    },
+    {
+      "name": "Digital TV",
+      "steps": [
+        {
+          "command": "DigitalTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI",
+      "steps": [
+        {
+          "command": "InputHdmi"
+        }
+      ]
+    },
+    {
+      "name": "PC",
+      "steps": [
+        {
+          "command": "InputPc"
+        }
+      ]
+    },
+    {
+      "name": "Component",
+      "steps": [
+        {
+          "command": "InputComponent"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputVideo"
+        }
+      ]
+    },
+    {
+      "name": "S-Video",
+      "steps": [
+        {
+          "command": "InputSVideo"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Brix/BT42-FHD.json"
+    ],
+    "harmony": {
+      "global_device_id": 116733,
+      "device_type": 1,
+      "codeset": "b1384f9ee016394d"
+    }
+  }
+}

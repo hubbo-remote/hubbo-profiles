@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:270206",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Vizio",
+  "model": "TestEmpty",
+  "kind": "tv",
+  "platform": "ir",
+  "codeset": "aeeba8ab6bafb37a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 5000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 1",
+      "steps": [
+        {
+          "command": "InputHdmi1"
+        }
+      ]
+    },
+    {
+      "name": "HDMI 2",
+      "steps": [
+        {
+          "command": "InputHdmi2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Vizio/TestEmpty.json"
+    ],
+    "harmony": {
+      "global_device_id": 270206,
+      "device_type": 1,
+      "codeset": "cb62b83f1f7d3b39"
+    }
+  }
+}

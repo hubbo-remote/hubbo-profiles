@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:251434",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Rocketfish",
+  "model": "RF -RBUSB",
+  "kind": "portable_audio",
+  "platform": "ir",
+  "codeset": "0776a4f2f1989e6a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "USB In",
+      "steps": [
+        {
+          "command": "InputUsbIn"
+        }
+      ]
+    },
+    {
+      "name": "LINE In",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Rocketfish/RF_-RBUSB.json"
+    ],
+    "harmony": {
+      "global_device_id": 251434,
+      "device_type": 33,
+      "codeset": "074cbdfd2d6d28f4"
+    }
+  }
+}

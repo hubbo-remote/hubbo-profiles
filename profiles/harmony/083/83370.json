@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:83370",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Bass Acoustics",
+  "model": "BA-6000",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "275e35655797593e",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Optical",
+      "steps": [
+        {
+          "command": "InputOptical"
+        }
+      ]
+    },
+    {
+      "name": "Coaxial",
+      "steps": [
+        {
+          "command": "InputCoaxial"
+        }
+      ]
+    },
+    {
+      "name": "AUX",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Bass_Acoustics/BA-6000.json"
+    ],
+    "harmony": {
+      "global_device_id": 83370,
+      "device_type": 5,
+      "codeset": "c49e2fef8bee4392"
+    }
+  }
+}

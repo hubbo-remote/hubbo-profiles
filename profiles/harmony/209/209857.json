@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:209857",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Tevion",
+  "model": "MD82480",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "a1dbd090ee733e02",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "LineIn",
+      "steps": [
+        {
+          "command": "InputLineIn"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Usb/Card",
+      "steps": [
+        {
+          "command": "InputUsbCard"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Tevion/MD82480.json"
+    ],
+    "harmony": {
+      "global_device_id": 209857,
+      "device_type": 22,
+      "codeset": "09a9eebdefa7354e"
+    }
+  }
+}

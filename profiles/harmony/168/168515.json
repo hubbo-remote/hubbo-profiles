@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "id": "harmony:168515",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Denon",
+  "model": "AVR-2808CI",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "e081ea18499b6fcc",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerOnMainZone"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerOffMainZone"
+      }
+    ],
+    "on_delay_ms": 12000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "iPod",
+      "steps": [
+        {
+          "command": "InputiPod"
+        }
+      ]
+    },
+    {
+      "name": "Satellite Tuner",
+      "steps": [
+        {
+          "command": "InputSatTu"
+        }
+      ]
+    },
+    {
+      "name": "TV/CBL",
+      "steps": [
+        {
+          "command": "InputTvCbl"
+        }
+      ]
+    },
+    {
+      "name": "SAT",
+      "steps": [
+        {
+          "command": "InputSat"
+        }
+      ]
+    },
+    {
+      "name": "V-Aux",
+      "steps": [
+        {
+          "command": "InputVAux"
+        }
+      ]
+    },
+    {
+      "name": "AM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputAm"
+        }
+      ]
+    },
+    {
+      "name": "FM",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "delay_ms": 1000
+        },
+        {
+          "command": "InputFm"
+        }
+      ]
+    },
+    {
+      "name": "CD",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Phono",
+      "steps": [
+        {
+          "command": "InputPhono"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "DVR",
+      "steps": [
+        {
+          "command": "InputDvr1"
+        }
+      ]
+    },
+    {
+      "name": "HDP",
+      "steps": [
+        {
+          "command": "InputHdp"
+        }
+      ]
+    },
+    {
+      "name": "VCR",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Denon/AVR-2808CI.json"
+    ],
+    "harmony": {
+      "global_device_id": 168515,
+      "device_type": 5,
+      "codeset": "50c3e2a202bd50c6"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "id": "harmony:155186",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Fujitsu-Siemens",
+  "model": "Solo 35-UM",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "7d104a19d7a32c69",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 200,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Movie",
+      "steps": [
+        {
+          "command": "Movie"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "Photo"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Fujitsu-Siemens/Solo_35-UM.json"
+    ],
+    "harmony": {
+      "global_device_id": 155186,
+      "device_type": 35,
+      "codeset": "1117e62e89c1e8e1"
+    }
+  }
+}

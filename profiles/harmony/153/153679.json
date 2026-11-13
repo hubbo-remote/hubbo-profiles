@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:153679",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Funai",
+  "model": "D8A-M1000DB",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "3693a88a95f39afc",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 2
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Funai/D8A-M1000DB.json"
+    ],
+    "harmony": {
+      "global_device_id": 153679,
+      "device_type": 25,
+      "codeset": "2d7f5f88d03dc4ac"
+    }
+  }
+}

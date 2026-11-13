@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "id": "harmony:52556",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Sony",
+  "model": "DHC-FLX5DL",
+  "kind": "home_theater",
+  "platform": "ir",
+  "codeset": "2de638cc4aebfe6c",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 500,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Digital",
+      "steps": [
+        {
+          "command": "InputDvd"
+        },
+        {
+          "command": "Function"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "InputTuner"
+        },
+        {
+          "command": "Function"
+        }
+      ]
+    },
+    {
+      "name": "TapeA",
+      "steps": [
+        {
+          "command": "InputTapeAB"
+        }
+      ]
+    },
+    {
+      "name": "TapeB",
+      "steps": [
+        {
+          "command": "InputTapeAB"
+        },
+        {
+          "command": "Function"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Sony/DHC-FLX5DL.json"
+    ],
+    "harmony": {
+      "global_device_id": 52556,
+      "device_type": 22,
+      "codeset": "55270158259c5921"
+    }
+  }
+}

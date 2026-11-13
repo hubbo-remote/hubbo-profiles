@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "harmony:140461",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Eacan",
+  "model": "A-500",
+  "kind": "receiver",
+  "platform": "ir",
+  "codeset": "775f59d919e8b0c2",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "TV",
+      "steps": [
+        {
+          "command": "InputTv"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "Digital 1",
+      "steps": [
+        {
+          "command": "InputDigital1"
+        }
+      ]
+    },
+    {
+      "name": "Digital 2",
+      "steps": [
+        {
+          "command": "InputDigital2"
+        }
+      ]
+    },
+    {
+      "name": "Aux 1",
+      "steps": [
+        {
+          "command": "InputAux1"
+        }
+      ]
+    },
+    {
+      "name": "Aux 2",
+      "steps": [
+        {
+          "command": "InputAux2"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Eacan/A-500.json"
+    ],
+    "harmony": {
+      "global_device_id": 140461,
+      "device_type": 5,
+      "codeset": "d1cc0b4f51fad2d9"
+    }
+  }
+}

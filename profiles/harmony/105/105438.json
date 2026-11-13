@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "id": "harmony:105438",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "DiVinci",
+  "model": "DV-608",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "23500bc9878e7d31",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Input 1",
+      "steps": [
+        {
+          "command": "InputCd"
+        }
+      ]
+    },
+    {
+      "name": "Input 2",
+      "steps": [
+        {
+          "command": "InputAux"
+        }
+      ]
+    },
+    {
+      "name": "Tuner",
+      "steps": [
+        {
+          "command": "InputTuner"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/DiVinci/DV-608.json"
+    ],
+    "harmony": {
+      "global_device_id": 105438,
+      "device_type": 19,
+      "codeset": "42b9f6dc26c393dd"
+    }
+  }
+}

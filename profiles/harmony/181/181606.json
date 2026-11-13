@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:181606",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "KPN",
+  "model": "VIP-1960",
+  "kind": "set_top_box",
+  "platform": "ir",
+  "codeset": "01350eaae21ea2d6",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Home(TV)",
+      "steps": [
+        {
+          "command": "Home"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/KPN/VIP-1960.json"
+    ],
+    "harmony": {
+      "global_device_id": 181606,
+      "device_type": 18,
+      "codeset": "f42d21d54179e27b"
+    }
+  }
+}

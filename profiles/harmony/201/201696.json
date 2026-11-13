@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:201696",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Daewoo",
+  "model": "SG9200",
+  "kind": "dvd_vcr",
+  "platform": "ir",
+  "codeset": "5a3f23a993a8b1aa",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Dvd",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    },
+    {
+      "name": "Vcr",
+      "steps": [
+        {
+          "command": "InputVcr"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Daewoo/SG9200.json"
+    ],
+    "harmony": {
+      "global_device_id": 201696,
+      "device_type": 25,
+      "codeset": "88a24e2b3ddc4101"
+    }
+  }
+}

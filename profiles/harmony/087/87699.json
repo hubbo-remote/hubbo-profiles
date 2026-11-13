@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "id": "harmony:87699",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Canon",
+  "model": "LV-5200",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "42c75012c9e6ac9a",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 500,
+    "input_delay_ms": 0,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Computer",
+      "steps": [
+        {
+          "command": "InputComputer"
+        }
+      ]
+    },
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Input"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Canon/LV-5200.json"
+    ],
+    "harmony": {
+      "global_device_id": 87699,
+      "device_type": 7,
+      "codeset": "15945804f4c66687"
+    }
+  }
+}

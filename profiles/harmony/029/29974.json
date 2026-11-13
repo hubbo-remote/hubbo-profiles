@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "harmony:29974",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "Panasonic",
+  "model": "DMR-E100HEB",
+  "kind": "dvd_recorder",
+  "platform": "ir",
+  "codeset": "f7681a4e6bd3db30",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "HDD",
+      "steps": [
+        {
+          "command": "InputHdd"
+        }
+      ]
+    },
+    {
+      "name": "DVD",
+      "steps": [
+        {
+          "command": "InputDvd"
+        }
+      ]
+    }
+  ],
+  "channels": {
+    "digits": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/Panasonic/DMR-E100HEB.json"
+    ],
+    "harmony": {
+      "global_device_id": 29974,
+      "device_type": 34,
+      "codeset": "3d2810db294a1644"
+    }
+  }
+}

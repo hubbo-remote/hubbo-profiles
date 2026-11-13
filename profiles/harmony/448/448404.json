@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "harmony:448404",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BenQ",
+  "model": "MX661",
+  "kind": "projector",
+  "platform": "ir",
+  "codeset": "0e63ad80b61ee24c",
+  "power": {
+    "type": "discrete",
+    "on": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "off": [
+      {
+        "command": "PowerToggle"
+      },
+      {
+        "delay_ms": 1000
+      },
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 30000
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BenQ/MX661.json"
+    ],
+    "harmony": {
+      "global_device_id": 448404,
+      "device_type": 7,
+      "codeset": "deb39cc02ad878c1"
+    }
+  }
+}

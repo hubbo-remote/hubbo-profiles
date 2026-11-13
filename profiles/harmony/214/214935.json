@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "id": "harmony:214935",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "BBK Electronics",
+  "model": "AV-220",
+  "kind": "amplifier",
+  "platform": "ir",
+  "codeset": "ca6c76a5676309c0",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 1
+  },
+  "inputs": [
+    {
+      "name": "DVD Dig",
+      "steps": [
+        {
+          "command": "InputDvdDigital"
+        }
+      ]
+    },
+    {
+      "name": "DVB Dig",
+      "steps": [
+        {
+          "command": "InputDvbDigital"
+        }
+      ]
+    },
+    {
+      "name": "D-TV dig",
+      "steps": [
+        {
+          "command": "InputDTVDigital"
+        }
+      ]
+    },
+    {
+      "name": "AUX Dig",
+      "steps": [
+        {
+          "command": "InputAuxDigital"
+        }
+      ]
+    },
+    {
+      "name": "DVD Ana",
+      "steps": [
+        {
+          "command": "InputDvdAnalog"
+        }
+      ]
+    },
+    {
+      "name": "DVB Ana",
+      "steps": [
+        {
+          "command": "InputDvbAnalog"
+        }
+      ]
+    },
+    {
+      "name": "D-TV Ana",
+      "steps": [
+        {
+          "command": "InputDTVAnalog"
+        }
+      ]
+    },
+    {
+      "name": "AUX Ana",
+      "steps": [
+        {
+          "command": "InputAuxAnalog"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/BBK_Electronics/AV-220.json"
+    ],
+    "harmony": {
+      "global_device_id": 214935,
+      "device_type": 19,
+      "codeset": "313e41c40831f9a0"
+    }
+  }
+}

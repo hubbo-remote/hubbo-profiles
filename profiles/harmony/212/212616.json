@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "id": "harmony:212616",
+  "revision": 1,
+  "source": "harmony",
+  "manufacturer": "PeerTV",
+  "model": "SIG-340",
+  "kind": "streamer",
+  "platform": "ir",
+  "codeset": "07895ac39300a512",
+  "power": {
+    "type": "toggle",
+    "toggle": [
+      {
+        "command": "PowerToggle"
+      }
+    ],
+    "on_delay_ms": 1500
+  },
+  "timing": {
+    "key_delay_ms": 100,
+    "input_delay_ms": 1000,
+    "ir_repeats": 3
+  },
+  "inputs": [
+    {
+      "name": "Video",
+      "steps": [
+        {
+          "command": "Video"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "steps": [
+        {
+          "command": "Music"
+        }
+      ]
+    },
+    {
+      "name": "Photo",
+      "steps": [
+        {
+          "command": "Photo"
+        }
+      ]
+    },
+    {
+      "name": "Radio",
+      "steps": [
+        {
+          "command": "Radio"
+        }
+      ]
+    },
+    {
+      "name": "Internet",
+      "steps": [
+        {
+          "command": "Internet"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "sources": [
+      "Harmony archive (CC0): devices/PeerTV/SIG-340.json"
+    ],
+    "harmony": {
+      "global_device_id": 212616,
+      "device_type": 35,
+      "codeset": "46d36ea51b4a5066"
+    }
+  }
+}
