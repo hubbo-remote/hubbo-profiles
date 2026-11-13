@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "harmony:274100",
-  "revision": 1,
+  "revision": 2,
   "source": "harmony",
   "manufacturer": "Apple",
   "model": "Apple TV (4K / 4th generation)",
@@ -9,13 +9,7 @@
   "platform": "ir",
   "codeset": "bb71b73a8474cdb0",
   "power": {
-    "type": "toggle",
-    "toggle": [
-      {
-        "command": "Home"
-      }
-    ],
-    "on_delay_ms": 3000
+    "type": "none"
   },
   "timing": {
     "key_delay_ms": 0,
@@ -30,6 +24,9 @@
       "global_device_id": 274100,
       "device_type": 51,
       "codeset": "55f80725d28483f1"
-    }
+    },
+    "notes": [
+      "Apple TV has no IR power: the archive's on and off are both Home. It wakes on any key and sleeps on its own timer (as the Bluetooth profile)."
+    ]
   }
 }
