@@ -7,7 +7,7 @@ Spec draft v0 (schema_version 1). In the device profiles phase (brief:
 Nothing is committed; the repo has no remote. Everything validates.
 
 - `docs/spec.md`; schemas in `schema/` (profile, kinds, buttons; draft 2020-12).
-- `kinds.json`: 40 kinds, each `{id, label, harmony: [deviceType...]}`. The hub validates
+- `kinds.json`: 43 kinds, each `{id, label, harmony: [deviceType...]}`. The hub validates
   `device.kind` against it and serves it.
 - `buttons.json`: 38 fillable remote buttons, each `{button, role: watch|volume, candidates}`.
   The web admin's wizard reads it.
@@ -33,6 +33,9 @@ Nothing is committed; the repo has no remote. Everything validates.
   climate; 999 (Z-Wave switches and locks) → switch; test codes 0, 49, 57, 60, 66 → other.
 - **`fan` kind, no Harmony code** (user, 2026-11-13). Harmony has no fan type: fans sit in 45
   with ACs and heaters (→ climate), ceiling fans mostly in 24 (→ light). Fan profiles set `fan` by hand.
+- **`cover`, `scene`, `script` kinds, no Harmony code** (user, 2026-11-13, ha-domains). HA covers,
+  scenes and scripts. `cover` (label "Cover") sits after `fan`; `scene`/`script` after
+  `smart_home_hub`. The hub's OpenAPI DeviceKind enum must match kinds.json's order exactly.
 - **No per-button hold flag** (hubbo, 2026-11-12). Remote buttons pass straight through (down is
   key down, up is key up) unless a Long press is bound, so the device decides what a hold does.
   `hold` was removed from buttons.json; it had marked the d-pad, skip, channel, volume and menu.
