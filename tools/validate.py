@@ -9,7 +9,7 @@ Usage (inside the tools image; see tools/bin/validate):
                                codesets) and the revision rule; everything when docs/schema/ or
                                tools/ changed; nothing when no profile data changed
   --hashes                     print only id<TAB>revision<TAB>sha256<TAB>path per profile
-Exit status 1 if anything fails. Rules: docs/spec.md "Validation", docs/using.md (repository), docs/schema/README.md (tables).
+Exit status 1 if anything fails. Rules: docs/spec.md "Validation", CONTRIBUTING.md "Files" (repository), docs/schema/README.md (tables).
 """
 
 import collections
@@ -458,9 +458,9 @@ def main(args):
     if since is not None:
         changed = changed_since(since)
         full = any(n.startswith(WHOLE_TREE) for n in changed)
-        args = [] if full else [n for n in changed if n.endswith(".json")
-                                and n.startswith(("profiles/", "codesets/")) and (ROOT / n).exists()]
-        if not full and not any(n.startswith(("profiles/", "codesets/")) for n in changed):
+        data = [n for n in changed if n.endswith(".json") and n.startswith(("profiles/", "codesets/"))]
+        args = [] if full else [n for n in data if (ROOT / n).exists()]
+        if not full and not data:
             print(f"ok   nothing changed since {since} that profiles depend on")
             return 1 if failures else 0
     targets = [pathlib.Path(a) if pathlib.Path(a).is_absolute() else ROOT / a for a in args] if args or not full \
