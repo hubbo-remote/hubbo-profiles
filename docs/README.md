@@ -17,7 +17,7 @@ The schemas are in [`schema/`](schema/README.md), one folder per version.
 
 ## What uses these profiles
 
-- **Hubbo:** an open replacement for the Harmony Hub. It ships
+- **[Hubbo](https://github.com/maddox/hubbo):** an open replacement for the Harmony Hub. It ships
   with the generic Bluetooth profiles built in and can load any profile from this library.
 
 Using them in something of your own? Open a pull request and add it to this list.
