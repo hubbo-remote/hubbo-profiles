@@ -1,4 +1,4 @@
-# Hubbo Profiles
+# Hubbo Device Profiles
 
 These are the device profiles that power [Hubbo](https://github.com/maddox/hubbo), an open
 replacement for the Harmony Hub.
@@ -22,7 +22,6 @@ favorite old receiver running.
 ## Read more
 
 - [The specification](docs/spec.md)
-- [Using the profiles](docs/using.md)
 - [Changelog](docs/changelog.md)
 - [Contributing](CONTRIBUTING.md)
 

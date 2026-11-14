@@ -19,8 +19,8 @@ model (usually on a sticker on the back), the profile you used and what happened
 ## Fix a profile
 
 1. **Find the file.** The id gives the path: `hubbo:apple-tv` is `profiles/hubbo/apple-tv.json`,
-   and `harmony:498661` is `profiles/harmony/498/498661.json`. No id? Search the catalog site or
-   this repository for the model.
+   and `harmony:498661` is `profiles/harmony/498/498661.json`. No id? Search this repository for
+   the model.
 2. **Edit it**, on GitHub with the pencil button or in a clone.
 3. **Raise its `revision` by one.**
 4. **Say where the fix came from** in `meta.sources`, such as `"Tested on an LG OLED55C1, 2026-11"`.
@@ -33,6 +33,11 @@ Many Harmony devices share a codeset (`"codeset": "<id>"`, stored in
   request; a maintainer renames it and updates its devices;
 - to fix it for **one device**, replace `"codeset": "<id>"` in that device's file with
   `"commands": { ... }` copied from the codeset, and edit there.
+
+**Files** are UTF-8 JSON with 2-space indentation and a trailing newline;
+[`tools/bin/format`](tools/README.md) fixes one that isn't. A codeset's name is the hash of its
+commands, so it never changes in place. Ids are unique, every codeset is used by some device, and
+all data is at the current spec version.
 
 ## Add a device
 
@@ -52,7 +57,7 @@ Every pull request is checked automatically:
 
 - the profile matches the [specification](docs/spec.md) and its schema;
 - every command a step, input, channel or button names exists;
-- the file is where its id says, and the id is unique;
+- the file is where its id says, in the file format, and the id is unique;
 - a changed profile has a higher `revision`.
 
 A failed check says what to fix. To run the checks yourself, see the
@@ -78,11 +83,11 @@ A failed check says what to fix. To run the checks yourself, see the
 2. **Once agreed, one pull request carries it:**
    - the [specification](docs/spec.md) text, with the version raised by one;
    - a new `docs/schema/v<N+1>/` (earlier folders never change);
-   - a [changelog](docs/changelog.md) entry: what changed, why, and what it means for profiles;
+   - a [changelog](docs/changelog.md) entry: what changed, in a line or two;
    - the migration that moves every profile to the new version, and the migrated profiles.
 
 Any change to what a valid profile is counts, however small. A rewording that keeps the meaning
-doesn't: it's noted in the changelog under the current version.
+doesn't, and needs no version or changelog entry.
 
 ## License
 

@@ -1,7 +1,7 @@
 """Import the Harmony archive into this repository's data tree, once.
 
 Usage (inside the tools image; see tools/bin/import-harmony): import_harmony.py <archive-root> [--replace]
-The archive is read in place and never copied. It writes, in storage form (docs/using.md):
+The archive is read in place and never copied. It writes, in storage form (profiles/README.md):
 
   profiles/harmony/<nnn>/<globalDeviceId>.json   one device each (<nnn>: the id without its last 3 digits)
   codesets/<xx>/<id>.json                                 each set of commands once

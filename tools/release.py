@@ -3,7 +3,7 @@
 Usage (inside the tools image; see tools/bin/release): release.py <name>
 Writes build/release/<name>.tar.gz holding the committed tree (git archive HEAD: README.md,
 LICENSE, CONTRIBUTING.md, docs/ (spec, schemas, changelog), profiles/, codesets/) plus a freshly
-built index/. Profiles stay in storage form; docs/using.md says how to join them.
+built index/. Profiles stay in storage form; codesets/README.md says how to join them.
 Only committed data goes in, so run it on a clean, tagged commit.
 """
 

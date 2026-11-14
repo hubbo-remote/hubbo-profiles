@@ -1,19 +1,14 @@
-# Hubbo Profiles: the docs
+# Hubbo Device Profiles: the docs
 
 [← Back to the library](../README.md)
 
-Open profiles for controlling the devices you own, in one open format. These pages explain how to
-use them, the format itself, and how it has changed.
+Open profiles for controlling the devices you own, in one open format.
 
-1. **[Using the profiles](using.md):** find a device, read its file, download the whole library.
-2. **[The specification](spec.md):** the profile format, field by field: identity, commands,
-   power, timing, inputs, channels, the command names and the remote button table.
-3. **[Changelog](changelog.md):** each version of the spec: what changed, why, and what it meant
-   for the profiles.
+1. **[The specification](spec.md):** the profile format, key by key.
+2. **[Schemas](schema/README.md):** each version's JSON Schema and tables.
+3. **[Changelog](changelog.md):** what changed in each version.
 4. **[Contributing](../CONTRIBUTING.md):** fix a profile, add a device, report a problem or
    propose a change to the spec.
-
-The schemas are in [`schema/`](schema/README.md), one folder per version.
 
 ## What uses these profiles
 
@@ -24,4 +19,4 @@ Using them in something of your own? Open a pull request and add it to this list
 
 ---
 
-[← Back to the library](../README.md) · Next: [Using the profiles](using.md) →
+[← Back to the library](../README.md) · Next: [The specification](spec.md) →

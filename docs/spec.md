@@ -1,4 +1,4 @@
-[← Docs](README.md) · Previous: [Using the profiles](using.md) · Next: [Changelog](changelog.md) →
+[← Docs](README.md) · Next: [Changelog](changelog.md) →
 
 # Hubbo Device Profile Specification
 
@@ -49,117 +49,203 @@ are no floats. Unknown fields are errors. A *consumer* is a program that uses pr
 `schema/v<N>/`, which never changes. Consumers must reject unknown versions. See the
 [changelog](changelog.md).
 
-## Profile
+## Fields
 
-| Field | Required | Value |
+| Key | Type | Required |
 |---|---|---|
-| `schema_version` | yes | `1` |
-| `id` | yes | `<source>:<slug>`, slug 1-48 of `a-z 0-9 . -`, first a letter or digit; digits only for `harmony`. Never changes. |
-| `revision` | yes | Integer from 1, raised on every change. |
-| `source` | yes | `hubbo`, `harmony` or `user`; matches the `id` prefix. |
-| `manufacturer`, `model` | yes | 1-64 characters. |
-| `kind` | yes | An `id` in `kinds.json`. |
-| `platform` | yes | `ble_hid` or `ir` (`network` is reserved). |
-| `commands` | yes | [Commands](#commands) |
-| `buttons` | no | [Remote buttons](#remote-buttons) |
-| `power` | no | [Power](#power); absent means `none`. |
-| `timing` | no | [Timing](#timing) |
-| `inputs`, `channels` | no | [Inputs and channels](#inputs-and-channels) |
-| `meta` | no | [`meta`](#meta) |
+| [`schema_version`](#schema_version) | integer | yes |
+| [`id`](#id) | string | yes |
+| [`revision`](#revision) | integer | yes |
+| [`source`](#source) | string | yes |
+| [`manufacturer`](#manufacturer) | string | yes |
+| [`model`](#model) | string | yes |
+| [`kind`](#kind) | string | yes |
+| [`platform`](#platform) | string | yes |
+| [`commands`](#commands) | object | yes |
+| [`buttons`](#buttons) | object | no |
+| [`power`](#power) | object | no |
+| [`timing`](#timing) | object | no |
+| [`inputs`](#inputs) | array | no |
+| [`channels`](#channels) | object | no |
+| [`meta`](#meta) | object | no |
 
-One profile, one platform. Profiles are complete; there's no inheritance. Minified without `meta`,
-a profile is at most 256 KB.
+A profile has one platform and is complete on its own; there's no inheritance. Minified without
+`meta`, a profile is at most 256 KB.
 
-**Hash:** SHA-256 of the canonical form (keys sorted, no whitespace; RFC 8785 for this integer-only subset; Python:
-`json.dumps(doc, sort_keys=True, separators=(",", ":"), ensure_ascii=False)`). It isn't stored.
+## `schema_version`
 
-## Commands
+Integer, required. The spec version the profile conforms to: `1`.
 
-`commands` maps 1-512 names to commands. Names are 1-32 ASCII letters and digits, unique ignoring
-case, from the [vocabulary](#command-names) where one fits. Every command may have:
+## `id`
 
-| Field | Value |
+String, required. `<source>:<slug>`. The slug is 1-48 of `a-z 0-9 . -` and starts with a letter or
+digit; for `harmony` it's digits only. An id never changes.
+
+## `revision`
+
+Integer, required, from 1. Raised on every change to the profile.
+
+## `source`
+
+String, required: `hubbo` (hand-written), `harmony` (from the Harmony catalog) or `user`. Matches
+the `id` prefix.
+
+## `manufacturer`
+
+String, required, 1-64 characters. The display name of the maker.
+
+## `model`
+
+String, required, 1-64 characters. The display name of the model.
+
+## `kind`
+
+String, required. An `id` in the version's `kinds.json`.
+
+## `platform`
+
+String, required. How the device is controlled:
+
+| Value | Meaning |
 |---|---|
-| `label` | 1-32 characters: the original name, when it had punctuation. |
-| `hold_ms` | 1-10,000: the command is a long press of this length. |
+| `ble_hid` | Bluetooth HID: the device is a host for a Bluetooth keyboard. |
+| `ir` | Infrared, as Pronto codes. |
+| `network` | Reserved; invalid in version 1. |
+
+The platform sets the shape of every command (see [`commands`](#commands)). `timing.ir_repeats`
+applies only to `ir`.
+
+## `commands`
+
+Object, required: 1-512 names, each mapped to a command. Names are 1-32 ASCII letters and digits,
+unique ignoring case, from the [vocabulary](#command-names) where one fits. Every command may have:
+
+| Field | Type | Value |
+|---|---|---|
+| `label` | string | 1-32 characters: the original name, when it had punctuation. |
+| `hold_ms` | integer | 1-10,000: the command is a long press of this length. |
 
 A button press presses the key, and its release releases it.
 
-### `ble_hid`
+### Bluetooth HID commands (`platform: ble_hid`)
 
 ```json
 "Back": { "page": "consumer", "usage": "0x0224" }
 ```
 
-| Field | Value |
-|---|---|
-| `page` | `keyboard` (HID page 0x07) or `consumer` (0x0C). |
-| `usage` | Uppercase hex: keyboard `0x04`-`0x65` (two digits), consumer `0x0001`-`0x03FF` (four digits). |
+| Field | Type | Value |
+|---|---|---|
+| `page` | string, required | `keyboard` (HID page 0x07) or `consumer` (0x0C). |
+| `usage` | string, required | Uppercase hex: keyboard `0x04`-`0x65` (two digits), consumer `0x0001`-`0x03FF` (four digits). |
 
-Usages may repeat. No modifiers.
+The key is held down from press to release. Usages may repeat. There are no modifiers.
 
-### `ir`
+### IR commands (`platform: ir`)
 
 ```json
 "VolumeUp": { "pronto": "0000 006D 0024 0002 0156 00AB ... 0016 0E46" }
 ```
 
-| Field | Value |
-|---|---|
-| `pronto` | Raw Pronto (`0000`), uppercase hex, single spaces; length matches the header; no zero durations. |
-| `pronto_toggle` | Optional: the same code with its toggle bit at 1. |
+| Field | Type | Value |
+|---|---|---|
+| `pronto` | string, required | Raw Pronto (`0000`), uppercase hex, single spaces; length matches the header; no zero durations. |
+| `pronto_toggle` | string | The same code with its toggle bit at 1. |
 
 The *repeat frame* is the repeat section, or the once section if that's empty. A tap sends
 `timing.ir_repeats` frames (at least one): the once section, then repeat frames. A hold sends
 repeat frames until release. With `pronto_toggle`, a consumer keeps one toggle state per device,
 flips it on each new press (not per frame) and sends the matching code.
 
-## Steps
+## `buttons`
 
-Power and inputs are lists of 1-16 steps.
+Object, optional. Overrides which command fills a remote button: `{ "menu": "Home", "info": null }`.
+A command name fills the button with that command; `null` leaves it empty. Every key must be a
+button in `buttons.json`, and every command named must exist.
 
-| Step | Meaning |
-|---|---|
-| `{ "command": "Home" }` | Press it (with its own `hold_ms`). |
-| `{ "command": "Home", "hold_ms": 2000 }` | Hold 1-10,000 ms. |
-| `{ "delay_ms": 200 }` | Wait 1-60,000 ms. |
+Buttons not overridden get their default from `buttons.json`: the first of the button's
+[candidates](#buttonsjson) that the profile has, ignoring case, or nothing.
 
-Named commands must exist. Consumers wait `timing.key_delay_ms` between commands.
+## `power`
 
-## Power
+Object, optional; absent means `none`.
 
-| Field | Value |
-|---|---|
-| `type` | `discrete` (with `on`, `off`), `toggle` (with only `toggle`) or `none`. |
-| `on`, `off`, `toggle` | Steps. |
-| `on_delay_ms` | 0-60,000: time after power on before the device takes commands. |
+| Field | Type | Value |
+|---|---|---|
+| `type` | string, required | `discrete` (with `on` and `off`), `toggle` (with only `toggle`) or `none`. |
+| `on`, `off`, `toggle` | [steps](#step) | The steps for each. |
+| `on_delay_ms` | integer | 0-60,000: time after power on before the device takes commands. |
 
 `on` should be safe to repeat, so prefer `discrete` with a real on or wake key. Power steps should
 not navigate menus; a device with no direct sleep is `none`. For a Bluetooth host, `on` is a wake key
 and `off` a sleep key.
 
-## Timing
+## `timing`
 
-All optional.
+Object, optional; every field is optional.
 
-| Field | Value |
-|---|---|
-| `key_delay_ms` | 0-5,000: minimum gap between commands. |
-| `input_delay_ms` | 0-60,000: wait after an input switch. |
-| `ir_repeats` | 0-20, default 1: frames per tap. IR only. |
+| Field | Type | Value |
+|---|---|---|
+| `key_delay_ms` | integer | 0-5,000: minimum gap between commands. |
+| `input_delay_ms` | integer | 0-60,000: wait after an input switch. |
+| `ir_repeats` | integer | 0-20, default 1: frames per tap. `ir` only. |
 
-## Inputs and channels
+## `inputs`
+
+Array, optional, up to 64. Each input selects one source directly:
 
 ```json
-"inputs": [{ "name": "HDMI 1", "steps": [{ "command": "InputHdmi1" }] }],
+"inputs": [{ "name": "HDMI 1", "steps": [{ "command": "InputHdmi1" }] }]
+```
+
+| Field | Type | Value |
+|---|---|---|
+| `name` | string, required | 1-64 characters, unique ignoring case. |
+| `steps` | [steps](#step), required | What selects it. |
+
+## `channels`
+
+Object, optional. How to dial a channel number; requires the commands `0`-`9`.
+
+```json
 "channels": { "digits": 3, "finish": "OK" }
 ```
 
-- `inputs`: up to 64, each a unique `name` (1-64 characters) and `steps` that select it.
-- `channels`: requires commands `0`-`9`. `digits` (1-4) zero-pads; absent sends as typed.
-  `start` and `finish` are commands sent before and after. A dash is `Dash`.
+| Field | Type | Value |
+|---|---|---|
+| `digits` | integer | 1-4: zero-pad to this many digits; absent sends the number as typed. |
+| `start`, `finish` | string | Commands sent before and after the digits; they must exist. |
 
-## Command names
+A sub-channel dash is the `Dash` command.
+
+## `meta`
+
+Object, optional. Notes for people; consumers may ignore them.
+
+| Field | Type | Value |
+|---|---|---|
+| `confidence` | string | `high` (tested), `medium` (a reliable mapping) or `low` (a guess). |
+| `sources` | array of strings | Where the information came from (each up to 300 characters). |
+| `notes` | array of strings | Anything else (each up to 500). |
+| `verify` | array of strings | What is still to be tested (each up to 300). |
+| `harmony` | object | For Harmony profiles: `global_device_id`, `device_type` (integers), `codeset` (string). |
+
+## Types
+
+### Step
+
+`power` and `inputs` use lists of 1-16 steps. Each step is one of:
+
+| Step | Meaning |
+|---|---|
+| `{ "command": "Home" }` | Press the command (with its own `hold_ms`). |
+| `{ "command": "Home", "hold_ms": 2000 }` | Hold it 1-10,000 ms. |
+| `{ "delay_ms": 200 }` | Wait 1-60,000 ms. |
+
+Named commands must exist. Consumers wait `timing.key_delay_ms` between commands.
+
+## Appendix
+
+### Command names
 
 Use these names for these keys; other names are allowed.
 
@@ -178,28 +264,31 @@ Use these names for these keys; other names are allowed.
 `Back` is one screen back, `Exit` leaves the menu or app, `Return` is a TV's Back key. `Home` is
 the home screen, `Menu` the device's menu. `PlayPause` is one key for both.
 
-## Remote buttons
+### `buttons.json`
 
-`buttons.json` maps remote buttons to commands:
+The version's `buttons.json` lists the remote buttons, one row each:
 
 ```json
 { "button": "back", "role": "watch", "candidates": ["Back", "Exit", "Return"] }
 ```
 
-`role` is `watch` (the device you watch) or `volume`. The button gets the first candidate the
-profile has, ignoring case, or stays empty. A profile's `buttons` overrides this:
-`{ "menu": "Home", "info": null }` (`null` leaves it empty). Keys must be in `buttons.json`.
+| Field | Value |
+|---|---|
+| `button` | The remote button's name. |
+| `role` | `watch` (the device you watch) or `volume`. |
+| `candidates` | Command names to try, in order. |
 
-## `meta`
+## Profile hash
 
-Notes for people; consumers may ignore them. `confidence` is `high` (tested), `medium` (a
-reliable mapping) or `low` (a guess). Also `sources`, `notes`, `verify` (still to test) and, for
-Harmony profiles, `harmony` (`global_device_id`, `device_type`, `codeset`).
+SHA-256 of the canonical form: keys sorted, no whitespace (RFC 8785 for this integer-only subset;
+Python: `json.dumps(doc, sort_keys=True, separators=(",", ":"), ensure_ascii=False)`). It isn't
+stored in the profile.
 
 ## Validation
 
-A profile conforms if it passes its version's `profile.schema.json` and every rule above; "should" is advice.
+A profile conforms if it passes its version's `profile.schema.json` and every rule above; "should"
+is advice.
 
 ---
 
-[← Docs](README.md) · Previous: [Using the profiles](using.md) · Next: [Changelog](changelog.md) →
+[← Docs](README.md) · Next: [Changelog](changelog.md) →

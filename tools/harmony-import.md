@@ -16,7 +16,7 @@ existing data without that flag, because it would lose every edit since).
 Every imported profile passed the validator (joined) at import time. The run report is
 `build/import-report.json`.
 
-The output is in storage form (docs/using.md): `profiles/harmony/<nnn>/<globalDeviceId>.json`
+The output is in storage form (profiles/README.md): `profiles/harmony/<nnn>/<globalDeviceId>.json`
 and `codesets/<xx>/<id>.json`.
 
 **Identity.** `id` is `harmony:<globalDeviceId>`, Logitech's permanent id. Every imported profile

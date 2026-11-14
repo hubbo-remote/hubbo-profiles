@@ -5,7 +5,7 @@ Usage (inside the tools image; see tools/bin/index): build_index.py <out-dir>   
   manufacturers.json   [{n, s, c, k}]: name, slug, device count, device counts by kind
   m/<slug>.json        one manufacturer's devices, [{id, m, k, p, n}]: id, model, kind, platform
                        and command count, sorted by model. A profile's path comes from its id
-                       (docs/using.md)
+                       (profiles/README.md)
   catalog.json         counts and the build date
 
 The index is generated, never committed: it's derived from the profiles, so a build makes it.

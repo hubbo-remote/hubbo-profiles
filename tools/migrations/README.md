@@ -16,7 +16,7 @@ A spec change lands as **one pull request (one commit on main)** holding all of 
 1. `docs/schema/v<N+1>/`: the new version's schemas and tables (copy `docs/schema/v<N>/`, then change it).
    `docs/schema/v<N>/` stays as it is, so documents that claim version N can still be checked.
 2. `docs/spec.md`: the new text, with the version in its header.
-3. `docs/changelog.md`: the version's entry: what changed, why, and what it means for profiles.
+3. `docs/changelog.md`: the version's entry: what changed, in a line or two.
 4. `tools/migrations/v<N>-to-v<N+1>.py`, defining either or both of:
    - `migrate_profile(doc) -> doc`: every profile file as stored (a split device has `codeset` in
      place of `commands`);

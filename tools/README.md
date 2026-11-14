@@ -20,7 +20,7 @@ installing. Run them from the repository root.
 ## Validate
 
 `tools/bin/validate` is the reference validator (`validate.py`); the checks are listed in
-[the spec](../docs/spec.md#validation), [Using the profiles](../docs/using.md#read-a-profile)
+[the spec](../docs/spec.md#validation), [the contributing guide](../CONTRIBUTING.md#fix-a-profile)
 (the repository) and [the schemas page](../docs/schema/README.md) (the tables). It also warns,
 without failing, above 32 KB and above the hub's 128 commands. A whole-tree run checks each codeset's commands once and
 every profile against the spec version it claims. CI ([`.github/workflows/validate.yml`](../.github/workflows/validate.yml))
@@ -36,7 +36,7 @@ a quick scan of every profile, and checks everything when `docs/schema/` or `too
 | File | Contents |
 |---|---|
 | `manufacturers.json` | `[{n, s, c, k}]`: name, slug, device count, device counts by kind. |
-| `m/<slug>.json` | One manufacturer's devices, `[{id, m, k, p, n}]`: id, model, kind, platform, command count. Sorted by model. The file path comes from the id ([Using the profiles](../docs/using.md#find-a-device)). |
+| `m/<slug>.json` | One manufacturer's devices, `[{id, m, k, p, n}]`: id, model, kind, platform, command count. Sorted by model. The file path comes from the id ([profiles/README.md](../profiles/README.md)). |
 | `catalog.json` | Counts and the build date. |
 
 It's derived from the profiles, so it's built, never committed. The catalog site and each release

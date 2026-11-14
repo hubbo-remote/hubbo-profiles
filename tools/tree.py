@@ -1,6 +1,6 @@
 """The repository's data tree: where profiles and codesets live, and how a profile is joined.
 
-docs/using.md ("Read a profile") describes the storage form:
+profiles/README.md and codesets/README.md describe the storage form:
   profiles/<source>/<slug>.json              one device, at the path its id gives (profile_path);
   profiles/harmony/<nnn>/<n>.json            `codeset: <id>` in place of `commands`, or the
                                              whole profile with its `commands`
@@ -92,7 +92,7 @@ def walk(folder):
 
 
 def profile_path(profile_id):
-    """Where a profile lives, from its id alone (docs/using.md, "Find a device"):
+    """Where a profile lives, from its id alone (profiles/README.md):
     harmony:<n> -> profiles/harmony/<n without its last three digits>/<n>.json (498661 -> 498/);
     anything else -> profiles/<source>/<slug>.json."""
     source, slug = profile_id.split(":", 1)
