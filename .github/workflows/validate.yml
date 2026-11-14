@@ -14,11 +14,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          # A pull request needs history back to its base, for the revision rule; a push needs none.
-          fetch-depth: ${{ github.event_name == 'pull_request' && 0 || 1 }}
+          fetch-depth: 0  # --since compares with an earlier commit (the revision rule needs it)
       - name: Validate the changes (the whole tree when schemas or tools change), and the revision rule
         if: github.event_name == 'pull_request'
         run: tools/bin/validate --since "origin/${{ github.base_ref }}"
-      - name: Validate the whole tree
+      - name: Validate the push's changes (everything when schemas or tools change, or on a first or force push)
         if: github.event_name == 'push'
-        run: tools/bin/validate
+        env:
+          BEFORE: ${{ github.event.before }}
+        run: |
+          if [ -n "$BEFORE" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ] \
+              && git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            tools/bin/validate --since "$BEFORE"
+          else
+            tools/bin/validate
+          fi
