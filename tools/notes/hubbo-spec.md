@@ -9,15 +9,17 @@ The site is `~/src/hubbo-site` (hubbo-site owns it).
 **Layout**
 - Root: README.md, LICENSE (CC0 legal code), CONTRIBUTING.md, profiles/, codesets/, docs/, tools/,
   .github/ (issue + PR templates, workflows/validate.yml for CI, unused until pushed).
-- docs/: README.md (index), using.md, spec.md, changelog.md, schema/README.md,
+- docs/: README.md (index), spec.md, changelog.md, schema/README.md,
   schema/v1/{profile,kinds,buttons}.schema.json + kinds.json + buttons.json. Pages have
   prev/next/docs nav. No tooling detail in docs/ or the README.
 - profiles/hubbo/*.json (hand-written, whole); profiles/harmony/<nnn>/<n>.json (nnn = n // 1000,
   3 digits; 318 folders) with `codeset` in place of commands; codesets/<xx>/<id>.json
   (id = sha256(canonical commands)[:16]). Paths derive from ids (tree.profile_path).
+  profiles/README.md and codesets/README.md explain the layout; tree.walk takes only *.json, and
+  --since ignores non-JSON paths there.
 - tools/: README.md (maintainer notes), notes/hubbo-spec.md (these notes; releases include only
   README, LICENSE, CONTRIBUTING, docs, profiles, codesets), bin/ (validate, rehash, migrate, index, release,
-  import-harmony, tools-image), tree.py, validate.py, migrate.py, build_index.py, release.py,
+  import-harmony, format, tools-image; lib.sh shared), tree.py, validate.py, migrate.py, build_index.py, release.py,
   import_harmony.py, harmony_render.py, harmony-import.md, migrations/README.md, Dockerfile
   (python:3.12.8-slim-bookworm + git, jsonschema 4.23.0; image tagged by the Dockerfile's hash).
 
@@ -54,10 +56,12 @@ Release archive (split form + index) 58 MB.
   pressMinRepeats; pronto_toggle rendered only when the bit-0 render matches the archive;
   hash = SHA-256 of canonical JSON. No aliases, no inheritance.
 
-- **Docs style (user, 2026-11-13):** the spec is a terse reference (Cargo/Flipper style): intro,
-  example, one section per object, a table, rules in one sentence each, no rationale. Process lives
-  in CONTRIBUTING; the storage form and Hubbo-specific notes live in docs/using.md. Section
-  headings are unnumbered; anchors: #commands, #command-names, #remote-buttons, #validation...
+- **Docs style (user, 2026-11-13):** the README, the spec, the changelog and the folder READMEs
+  are as short as they can be: no rationale, nothing that doesn't exist yet (no releases, index or
+  site in public docs; tools/README may mention them). The spec is a per-key reference: Fields
+  table, one section per top-level key in document order, Types (Step), Appendix (command names,
+  buttons.json), Profile hash, Validation. Changelog entries are a line or two ("Initial
+  version."). Process and the repository rules (file format, guarantees) live in CONTRIBUTING.
 
 ## Gotchas
 
