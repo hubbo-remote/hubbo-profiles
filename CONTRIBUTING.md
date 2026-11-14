@@ -91,8 +91,8 @@ doesn't, and needs no version or changelog entry.
 
 ## License
 
-Everything here is public domain under [CC0 1.0](LICENSE), and contributions are released the
-same way.
+Contributions are released under [CC0 1.0](LICENSE), like our own work here (see the
+[README](README.md#license)).
 
 ---
 

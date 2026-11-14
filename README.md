@@ -25,6 +25,28 @@ favorite old receiver running.
 - [Changelog](docs/changelog.md)
 - [Contributing](CONTRIBUTING.md)
 
+## Acknowledgements
+
+The Harmony profiles are converted from the
+[Logitech Harmony IR archive](https://github.com/pickysysadmin/logitech-harmony-ir-archive) by
+pickysysadmin. Thank you for preserving it.
+
+That archive was built with the help of these projects, and we're grateful to them too:
+
+- Logitech, for compiling all of these codes
+- [Flipper-IRDB](https://github.com/Lucaslhm/Flipper-IRDB)
+- [IrScrutinizer](https://github.com/bengtmartensson/IrScrutinizer)
+- [IrpTransmogrifier](https://github.com/bengtmartensson/IrpTransmogrifier)
+- [MakeHex](https://github.com/probonopd/MakeHex)
+- [irdb](https://github.com/probonopd/irdb)
+- [Remote Central](https://www.remotecentral.com/cgi-bin/codes/)
+- [harmony-hub-root](https://github.com/Ripthulhu/harmony-hub-root)
+
 ## License
 
-Everything here is public domain, under [CC0 1.0](LICENSE).
+Our contributions, meaning the specification, the schemas, the profile format and the conversion
+and organization of the data, are released under [CC0 1.0 Universal](LICENSE).
+
+The underlying IR codes originate with Logitech. We make no representation about their copyright
+status, and we're not in a position to license them. CC0 waives our rights, not anyone else's. If
+you're building something commercial on this, evaluate that yourself.
