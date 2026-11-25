@@ -8,7 +8,7 @@
 
 - [ ] I raised `revision` on every profile I changed
 - [ ] `meta.sources` says where the fix came from
-- [ ] Command names come from the vocabulary where one fits ([the spec](https://github.com/maddox/hubbo-profiles/blob/main/docs/spec.md#command-names))
+- [ ] Command names come from the vocabulary where one fits ([the spec](https://github.com/hubbo-remote/hubbo-profiles/blob/main/docs/spec.md#command-names))
 - [ ] For a spec change: the spec text, a new `docs/schema/v<N>/`, a changelog entry and the migrated profiles are all here
 
 Contributions are released under CC0 1.0 (public domain).

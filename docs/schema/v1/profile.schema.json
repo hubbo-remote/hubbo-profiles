@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://hubbo.dev/schema/profile/1.json",
+  "$id": "https://raw.githubusercontent.com/hubbo-remote/hubbo-profiles/main/docs/schema/v1/profile.schema.json",
   "title": "Hubbo device profile",
-  "description": "One device on one platform. See docs/spec.md. The validator (tools/validate.py) adds the checks a schema can't express: references, case-insensitive name clashes, pronto lengths and size.",
+  "description": "The shape of a device profile: one device on one platform.",
   "type": "object",
   "additionalProperties": false,
   "required": ["schema_version", "id", "revision", "source", "manufacturer", "model", "kind", "platform", "commands"],

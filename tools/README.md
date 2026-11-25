@@ -10,6 +10,7 @@ installing. Run them from the repository root.
 | `tools/bin/validate <paths>` | Check those files or folders; a codeset brings in every profile that uses it. |
 | `tools/bin/validate --since <ref>` | Check what changed since a git ref, plus the revision rule. CI runs this on pull requests. |
 | `tools/bin/validate --hashes [paths]` | Print `id<TAB>revision<TAB>sha256<TAB>path` per profile (for a consumer's sync; Hubbo uses `--hashes profiles/hubbo`). |
+| `tools/bin/profile <id>` | Print one device's complete profile (joined with its codeset), e.g. `tools/bin/profile harmony:274100 > apple-tv.json`. |
 | `tools/bin/format [paths]` | Rewrite codesets and split profiles in the file format (2-space indent, UTF-8, trailing newline); validate fails one that isn't. Hand-written profiles keep their layout. |
 | `tools/bin/rehash` | After a codeset is edited by hand: move it to its new name, repoint the profiles that use it (raising their revisions), delete unused codesets. |
 | `tools/bin/migrate tools/migrations/v<N>-to-v<N+1>.py` | Move every profile and codeset to a new spec version (see [migrations](migrations/README.md)). |
@@ -54,6 +55,7 @@ GitHub allows release assets up to 2 GB; the archive is far smaller.
 |---|---|
 | `tree.py` | The storage form: paths from ids, joining, content-addressed codesets, the file format. |
 | `validate.py` | The validator. |
+| `profile.py` | One device's complete profile. |
 | `build_index.py`, `release.py` | The index and the release archive. |
 | `migrate.py`, `migrations/` | Spec-version migrations and rehash. |
 | `import_harmony.py`, `harmony_render.py` | The Harmony import, and its renderer for toggle-bit codes. |
