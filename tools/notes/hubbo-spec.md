@@ -31,6 +31,11 @@ Release archive (split form + index) 58 MB.
 
 ## Decisions
 
+- **No reprocessing the catalog (user, 2026-11-13):** no full-tree validate, index rebuild,
+  rehash or import unless the lead asks. Use targeted checks: `validate profiles/hubbo`,
+  specific paths, `--since`, or a small throwaway repo. CI's push job also runs `--since` the
+  push's `before` commit (the whole tree only for schema/tools changes or a first/force push).
+
 - **Versioned spec** (user, 2026-11-13): every change bumps `schema_version`; each version's full
   definition lives in docs/schema/v<N>/ forever; data is always at the current version; a change
   ships as one PR/commit with text, schema folder, changelog, migration
@@ -77,6 +82,14 @@ Release archive (split form + index) 58 MB.
 
 ## Open items
 
-- **For the IR phase (hub side):** input names up to 64; profiles up to 256 KB; the IR sending rule
-  and per-device toggle state; 5,214 Harmony profiles exceed the hub's 128-command cap.
+- **IR phase (2026-11-24, hub design ~/src/hubbo/docs/design/ir.md):** spec's IR section now
+  spells out Pronto parsing, tap/hold/hold_ms frames, 0 = 1 for ir_repeats, toggle flips only
+  on commands with pronto_toggle, key_delay_ms measured end to start. `tools/bin/profile <id>`
+  prints one joined profile (the site's Download is the same join). Test fixtures were made in
+  the lead's scratchpad (NEC, RC5 toggle, SIRC x3), validated with check_doc.
+  Open: hub plans a 15-500 kHz carrier check; 5 codesets (words 0131/019F/01CD, 9-13.6 kHz,
+  164 codes) would be refused. ir_repeats 0 could become min 1 in a v2. Validator has no
+  standalone mode for a file outside the tree (placement check fails); use check_doc.
+  Also: input names up to 64; profiles up to 256 KB; 5,214 Harmony profiles exceed the hub's
+  128-command cap.
 - Streamers' Home-as-power-on sends an already-on streamer home on switches. Raised earlier.
