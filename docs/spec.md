@@ -151,10 +151,17 @@ The key is held down from press to release. Usages may repeat. There are no modi
 | `pronto` | string, required | Raw Pronto (`0000`), uppercase hex, single spaces; length matches the header; no zero durations. |
 | `pronto_toggle` | string | The same code with its toggle bit at 1. |
 
-The *repeat frame* is the repeat section, or the once section if that's empty. A tap sends
-`timing.ir_repeats` frames (at least one): the once section, then repeat frames. A hold sends
-repeat frames until release. With `pronto_toggle`, a consumer keeps one toggle state per device,
-flips it on each new press (not per frame) and sends the matching code.
+A Pronto code is hex words: `0000`, the frequency word F, the number of on/off pairs in the once
+section, the number in the repeat section, then the pairs, once section first. The carrier is
+1,000,000 / (F × 0.241246) Hz, and each duration counts carrier periods (F × 0.241246 µs). A
+section's last off duration is the gap after it; frames are sent back to back.
+
+The *repeat frame* is the repeat section, or the once section if that's empty. A tap sends the
+once section, then repeat frames up to `timing.ir_repeats` frames in all (0 and 1 send the once
+section alone). A hold sends what a tap sends, then repeat frames until release; with `hold_ms`,
+until that time has passed. A frame in flight always finishes. With `pronto_toggle`, a consumer
+keeps one toggle state per device, flips it on each new press of a command that has one (not per
+frame) and sends the matching code.
 
 ## `buttons`
 
@@ -185,9 +192,9 @@ Object, optional; every field is optional.
 
 | Field | Type | Value |
 |---|---|---|
-| `key_delay_ms` | integer | 0-5,000: minimum gap between commands. |
+| `key_delay_ms` | integer | 0-5,000: minimum gap from the end of one command to the next. |
 | `input_delay_ms` | integer | 0-60,000: wait after an input switch. |
-| `ir_repeats` | integer | 0-20, default 1: frames per tap. `ir` only. |
+| `ir_repeats` | integer | 0-20, default 1: frames per tap ([IR commands](#ir-commands-platform-ir)). `ir` only. |
 
 ## `inputs`
 
