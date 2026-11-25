@@ -1,0 +1,127 @@
+#!/usr/bin/env bash
+# Publish the catalog to the R2 bucket behind catalog.hubbo.tv, as the same tree the repo holds:
+# profiles/, codesets/, index/ (tools/bin/index) and spec/files/ (the current schema folder's JSON).
+# .github/workflows/publish.yml runs it on every push to main.
+#
+#   publish          what changed since the commit the bucket last recorded (commit.txt): validate
+#                    it (validate --since), upload the changed profiles and codesets, rebuild and
+#                    sync the index, sync the spec files if docs/schema/ changed, delete removed
+#                    files, then record HEAD
+#   publish --full   validate everything and sync every tree (recovery). Also what runs when the
+#                    bucket has no commit recorded, or it isn't an ancestor of HEAD
+#   --dry-run        rclone only reports what it would change; nothing is recorded
+#
+# Credentials come from the environment: CLOUDFLARE_ACCOUNT_ID, R2_ACCESS_KEY_ID and
+# R2_SECRET_ACCESS_KEY. PUBLISH_DEST=<dir> publishes into a local folder instead (for testing).
+set -euo pipefail
+. "$(dirname "$0")/lib.sh"
+cd "$root"
+
+full=0 dry=()
+for arg in "$@"; do
+  case "$arg" in
+    --full) full=1 ;;
+    --dry-run) dry=(--dry-run) ;;
+    *) echo "usage: tools/bin/publish [--full] [--dry-run]" >&2; exit 2 ;;
+  esac
+done
+[ -z "$(git status --porcelain)" ] || { echo "publish: the working tree has changes; publish a clean commit" >&2; exit 1; }
+
+SHORT='public, max-age=300'
+LONG='public, max-age=86400'
+image=rclone/rclone:1.76.0@sha256:7cbeec24a44f206067597c0368be4de90ae19a64d5113c7d1938bd737a81e466
+lists="$(mktemp -d)"
+trap 'rm -rf "$lists"' EXIT
+mounts=(-v "$root:/repo:ro" -v "$lists:/lists:ro")
+envs=()
+if [ -n "${PUBLISH_DEST:-}" ]; then
+  mkdir -p "$PUBLISH_DEST"
+  mounts+=(-v "$(cd "$PUBLISH_DEST" && pwd):/dest")
+  dest=/dest
+else
+  : "${CLOUDFLARE_ACCOUNT_ID:?}" "${R2_ACCESS_KEY_ID:?}" "${R2_SECRET_ACCESS_KEY:?}"
+  # No config file: the remote comes from these, passed to the container by name only.
+  export RCLONE_CONFIG_R2_TYPE=s3 RCLONE_CONFIG_R2_PROVIDER=Cloudflare RCLONE_CONFIG_R2_NO_CHECK_BUCKET=true
+  export RCLONE_CONFIG_R2_ENDPOINT="https://$CLOUDFLARE_ACCOUNT_ID.r2.cloudflarestorage.com"
+  export RCLONE_CONFIG_R2_ACCESS_KEY_ID="$R2_ACCESS_KEY_ID" RCLONE_CONFIG_R2_SECRET_ACCESS_KEY="$R2_SECRET_ACCESS_KEY"
+  for v in TYPE PROVIDER NO_CHECK_BUCKET ENDPOINT ACCESS_KEY_ID SECRET_ACCESS_KEY; do envs+=(-e "RCLONE_CONFIG_R2_$v"); done
+  dest=r2:hubbo
+fi
+
+rclone() {
+  docker run --rm -i -u "$(id -u):$(id -g)" -e HOME=/tmp -e RCLONE_CONFIG= ${envs[@]+"${envs[@]}"} "${mounts[@]}" \
+    -w /repo "$image" "$@"
+}
+# upload <cache> <rclone command and paths...>: with the catalog's headers.
+upload() {
+  local cache="$1"
+  shift
+  rclone "$@" --checksum --transfers 64 --checkers 64 \
+    --header-upload 'Content-Type: application/json' --header-upload "Cache-Control: $cache" \
+    --stats 60s --stats-one-line --stats-log-level NOTICE ${dry[@]+"${dry[@]}"}
+}
+step() {
+  local start=$SECONDS
+  echo "publish: $1"
+  shift
+  "$@"
+  echo "publish: done in $((SECONDS - start))s"
+}
+
+head="$(git rev-parse HEAD)"
+base=""
+if [ "$full" = 0 ]; then
+  if [ -n "$(rclone lsf "$dest" --files-only --max-depth 1 --include commit.txt)" ]; then
+    base="$(rclone cat "$dest/commit.txt" | tr -d '[:space:]')"
+  fi
+  if [ -z "$base" ] || ! git cat-file -e "$base^{commit}" 2>/dev/null || ! git merge-base --is-ancestor "$base" HEAD; then
+    echo "publish: the bucket's commit (${base:-none}) isn't an ancestor of HEAD; publishing everything"
+    base=""
+  elif [ "$base" = "$head" ]; then
+    echo "publish: $head is already published"
+    exit 0
+  fi
+fi
+
+schema="$(ls -d docs/schema/v[0-9]*/ | sort -V | tail -1)"
+if [ -z "$base" ]; then
+  step "validate everything" tools/bin/validate
+  step "index" tools/bin/index
+  step "codesets/" upload "$LONG" sync codesets "$dest/codesets" --fast-list --include '*.json'
+  step "profiles/" upload "$LONG" sync profiles "$dest/profiles" --fast-list --include '*.json'
+  step "index/" upload "$SHORT" sync build/index "$dest/index" --fast-list --include '*.json'
+  step "spec/files/ ($schema)" upload "$SHORT" sync "$schema" "$dest/spec/files" --include '*.json'
+else
+  echo "publish: ${base:0:10}..${head:0:10}"
+  step "validate the changes" tools/bin/validate --since "$base"
+  changed() { git diff --name-only --no-renames --diff-filter="$1" "$base" HEAD -- "$2/*.json" >"$lists/$3"; }
+  changed d codesets codesets.txt
+  changed d profiles profiles.txt
+  changed D profiles deleted-profiles.txt
+  changed D codesets deleted-codesets.txt
+  wc -l "$lists"/*.txt | sed '$d; s|/.*/||; s/^ */publish: /'
+  # Codesets before the profiles that use them, the index after both; deletions last.
+  for f in codesets profiles; do
+    if [ -s "$lists/$f.txt" ]; then
+      step "upload $f/" upload "$LONG" copy . "$dest" --files-from-raw "/lists/$f.txt" --no-traverse
+    fi
+  done
+  if ! git diff --quiet "$base" HEAD -- profiles codesets tools; then
+    step "index" tools/bin/index
+    step "index/" upload "$SHORT" sync build/index "$dest/index" --fast-list --include '*.json'
+  fi
+  if ! git diff --quiet "$base" HEAD -- docs/schema; then
+    step "spec/files/ ($schema)" upload "$SHORT" sync "$schema" "$dest/spec/files" --include '*.json'
+  fi
+  for f in profiles codesets; do
+    if [ -s "$lists/deleted-$f.txt" ]; then
+      step "delete from $f/" rclone delete "$dest" --files-from-raw "/lists/deleted-$f.txt" ${dry[@]+"${dry[@]}"}
+    fi
+  done
+fi
+
+if [ ${#dry[@]} = 0 ]; then
+  echo "$head" | rclone rcat "$dest/commit.txt" --header-upload 'Content-Type: text/plain' \
+    --header-upload 'Cache-Control: no-store'
+  echo "publish: recorded $head"
+fi

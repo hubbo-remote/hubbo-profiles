@@ -29,6 +29,23 @@ Full validate passes in about 2.5 min; `--since <ref>` checks changed files + re
 Git: 310k files, pack 97 MB, status 0.2 s, local clone 13.5 s; an edit commit adds ~nothing.
 Release archive (split form + index) 58 MB.
 
+## Publishing (2026-11-25, branch publish-action)
+
+- `.github/workflows/publish.yml` runs `tools/bin/publish` on push to main (concurrency
+  publish-catalog, queues) and by hand (input `full`). Secrets: CLOUDFLARE_ACCOUNT_ID,
+  R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY (env only, passed to the rclone container by name).
+- The bucket's `commit.txt` (no-store) is the last published commit; a run diffs from it, not
+  from the push's `before`, so failed/cancelled/replaced runs are caught up. Not an ancestor of
+  HEAD or missing -> full validate + full sync (also the first run, unless seeded).
+- Order: validate --since base, upload codesets then profiles (copy --files-from-raw
+  --no-traverse --checksum), index rebuild + sync (only if profiles/codesets/tools changed),
+  spec/files sync (only if docs/schema changed), deletes, record HEAD.
+- spec/files = verbatim docs/schema/v<latest>/*.json (the site's build only copies them), so it's
+  published from here. hubbo-site's `publish-catalog` is now redundant (hubbo-site's call).
+- rclone image pinned by digest in the script. `PUBLISH_DEST=<dir>` publishes to a local folder
+  (tested 21d9ba1b1c..e252f8caf9: 1 profile, index; validate --since 58 s, index 9-11 s).
+- Testing in a git worktree fails (the container can't see the main .git); use a local clone.
+
 ## Decisions
 
 - **No reprocessing the catalog (user, 2026-11-13):** no full-tree validate, index rebuild,

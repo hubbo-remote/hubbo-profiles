@@ -1,0 +1,45 @@
+# Publishes the catalog to catalog.hubbo.tv (the R2 bucket) on every push to main, with
+# tools/bin/publish: it validates and uploads only what changed since the commit the bucket last
+# recorded, so a failed or skipped run is caught up by the next one. Run it by hand with "full"
+# to validate everything and sync every tree.
+#
+# Needs the repo secrets CLOUDFLARE_ACCOUNT_ID, R2_ACCESS_KEY_ID and R2_SECRET_ACCESS_KEY
+# (an R2 token with Object Read & Write on the hubbo bucket).
+name: publish
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      full:
+        description: Validate everything and sync every tree (recovery)
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+# One publish at a time; a newer push waits for the running one rather than cancelling it.
+concurrency:
+  group: publish-catalog
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0  # the diff from the bucket's recorded commit, and validate --since
+
+      - name: Validate and publish the catalog
+        env:
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          FULL: ${{ inputs.full }}
+        run: |
+          if [ "$FULL" = true ]; then tools/bin/publish --full; else tools/bin/publish; fi

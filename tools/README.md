@@ -16,6 +16,7 @@ installing. Run them from the repository root.
 | `tools/bin/migrate tools/migrations/v<N>-to-v<N+1>.py` | Move every profile and codeset to a new spec version (see [migrations](migrations/README.md)). |
 | `tools/bin/index [dir]` | Build the search index into `build/index/` (not committed). |
 | `tools/bin/release [name]` | Build `build/release/<name>.tar.gz`: the committed tree plus a fresh index, for a GitHub release. |
+| `tools/bin/publish [--full]` | Publish to catalog.hubbo.tv: validate and upload what changed since the bucket's recorded commit (`--full`: everything). CI runs it on every push to main. |
 | `tools/bin/import-harmony` | The one-time Harmony import ([notes](harmony-import.md)). Refuses to run over existing data. |
 
 ## Validate
@@ -42,6 +43,18 @@ a quick scan of every profile, and checks everything when `docs/schema/` or `too
 
 It's derived from the profiles, so it's built, never committed. The catalog site and each release
 carry a copy.
+
+## Publishing
+
+[`.github/workflows/publish.yml`](../.github/workflows/publish.yml) runs `tools/bin/publish` on
+every push to main (one run at a time; a newer push waits). The R2 bucket `hubbo` (served as
+catalog.hubbo.tv) holds the repo's own tree: `profiles/` and `codesets/` (cached a day),
+`index/` and `spec/files/` (the current schema folder's JSON; 5 minutes), and `commit.txt`, the
+last published commit. A run validates `--since` that commit, uploads the changed profiles and
+codesets, rebuilds and syncs the index, syncs the spec files when `docs/schema/` changed, deletes
+removed files, then records HEAD. With no usable recorded commit, or run by hand with "full", it
+validates and syncs everything. Secrets: `CLOUDFLARE_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`,
+`R2_SECRET_ACCESS_KEY`.
 
 ## Releases
 
