@@ -12,7 +12,7 @@ remote that came with it is gone. You don't need to be a programmer: a clear rep
 
 ## Report a problem (no code needed)
 
-[Open an issue](https://github.com/maddox/hubbo-profiles/issues/new/choose) and pick a template:
+[Open an issue](https://github.com/hubbo-remote/hubbo-profiles/issues/new/choose) and pick a template:
 a button doesn't work, a device is missing, or something else is wrong. Give the manufacturer and
 model (usually on a sticker on the back), the profile you used and what happened.
 

@@ -1,6 +1,6 @@
 # Hubbo Device Profiles
 
-These are the device profiles that power [Hubbo](https://github.com/maddox/hubbo), an open
+These are the device profiles that power [Hubbo](https://github.com/hubbo-remote/hubbo), an open
 replacement for the Harmony Hub.
 
 ## Why we keep them

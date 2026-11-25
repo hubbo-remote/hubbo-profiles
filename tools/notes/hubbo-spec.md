@@ -2,8 +2,8 @@
 
 ## State (2026-11-13, two-repo phase)
 
-`~/src/hubbo-profiles` (was hubbo-devices; origin github.com/maddox/hubbo-profiles, private,
-nothing pushed): the open standard plus all profile data, CC0. Nothing committed this phase.
+`~/src/hubbo-profiles` (was hubbo-devices; origin github.com/hubbo-remote/hubbo-profiles):
+the open standard plus all profile data, CC0. Nothing committed this phase.
 The site is `~/src/hubbo-site` (hubbo-site owns it).
 
 **Layout**
